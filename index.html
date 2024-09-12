@@ -16,181 +16,154 @@
 	<link rel="preload" as="font" type="font/woff2" href="/fonts/Gotham-Book.woff2" crossorigin>
 	
 	<!-- Cloudflare Web Analytics -->
-	
 	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "312dee4bf0154ba29892b3a8c0e88ae1"}'></script>
-	
 	<!-- End Cloudflare Web Analytics -->
+
+	<!-- Internal Styles -->
 	<style>
-/* Center main content and reduce text block size */
-main {
-    text-align: center;
-    display: block; /* Remove flex to avoid full height */
-    margin: 0 auto;
-    max-width: 700px; /* Limit the width of the text block */
-    background-color: rgba(0, 0, 0, 0.6); /* Keep the background color */
-    padding: 20px;
-    color: white;
-}
+		/* Reset some basic elements */
+		body, h1, p, ul, li, a {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-main h1 {
-    font-size: 1.4em;
-    margin: 0.67em 0;
-    font-weight: bold;
-}
+		body {
+			font-family: "Gotham-Book", sans-serif;
+			overflow: hidden; /* Hide scrollbars */
+			height: 100%;
+			color: white;
+			background: url(images/Collage.webp) no-repeat center center fixed;
+			background-size: cover;
+		}
 
-main p {
-    width: 100%; /* Ensure paragraph takes the full width of the main block */
-    text-align: center;
-}
+		/* Center main content and reduce text block size */
+		main {
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+			padding: 20px;
+			max-width: 700px;
+			background-color: rgba(0, 0, 0, 0.6);
+			border: 2px solid red;
+			position: relative;
+			top: 30%;
+			transform: translateY(-30%);
+		}
 
-main h3 {
-    margin-top: 1em;
-}
+		main h1 {
+			font-size: 1.8em;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    width: 100%;
-    position: relative;
-}
+		main p {
+			font-size: 1em;
+			line-height: 1.6;
+			text-align: center;
+			margin-bottom: 20px;
+		}
 
-/* Centering navigation bar */
-nav {
-    text-align: center; /* Centering the nav content */
-    margin: 20px 0; /* Add some space around the nav */
-}
+		main h3 {
+			font-size: 1.2em;
+			margin-top: 1em;
+		}
 
-nav ul {
-    display: inline-block; /* Aligns the ul horizontally */
-    padding: 0;
-    list-style-type: none;
-}
+		/* Footer styling */
+		footer {
+			text-align: center;
+			padding: 10px 0;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			width: 100%;
+			position: relative;
+			bottom: 0;
+		}
 
-nav ul li {
-    display: inline; /* Makes the list items inline */
-    margin-right: 15px;
-}
+		/* Centering navigation bar */
+		nav {
+			text-align: center;
+			margin: 20px 0;
+		}
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+		nav ul {
+			display: inline-block;
+			padding: 0;
+			list-style-type: none;
+		}
 
-nav ul li a:hover {
-    color: #FE0002;
-}
+		nav ul li {
+			display: inline;
+			margin-right: 15px;
+		}
 
-		
-	/* unvisited link */
-	a:link {
-	 color: white;
-	 text-decoration: none;
-	}
+		nav ul li a {
+			color: white;
+			text-decoration: none;
+		}
 
-	/* vistited link */ 
-	a:visited {
-	 color: white;
-	 text-decoration: none;
-	}
+		nav ul li a:hover {
+			color: #FE0002;
+		}
 
-	/* mouse over link */
-	a:hover {
-	 color: #FE0002;
-	 text-decoration: none;
-	}
+		#logo {
+			position: absolute;
+			top: 25px;
+			left: 35px;
+		}
 
-	body {
-	   overflow: hidden; /* Hide scrollbars */
-	   height: 100%;
-	}
+		/* Links styling */
+		a:link, a:visited {
+			color: white;
+			text-decoration: none;
+		}
 
-	html { 
-	 background: url(images/Collage.webp) no-repeat center center fixed; 
-	 -webkit-background-size: cover;
-	 -moz-background-size: cover;
-	 -o-background-size: cover;
-	 background-size: cover;
-	}
-	   
-	/* Position text in the middle of the page/image */
-	.bg-text {
-	 background-color: rgb(0,0,0); /* Fallback color */
-	 background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
-	 color: white;
-	 font-weight: 500;
-	 font-size: 20px;
-	 font-family: "Gotham-Book";
-	 border: 2px solid red;
-    	display: inline-block;
-	 top: 40%;
-	 left: 50%;
-	 transform: translate(-50%, -50%);
-	 z-index: 2;
-	 width: 700px;
-	 padding: 10px;
-	 text-align: justify;
-	}
-
-	h1 { 
-	 display: block;
-	 font-size: 1.4em;
-	 margin-top: 0.67em;
-	 margin-bottom: 0.67em;
-	 margin-left: 0;
-	 margin-right: 0;
-	 font-weight: bold;
-	}
-	   
-	#logo a {
-	   position: absolute;
-	   top: 25px;
-	   left: 35px;
-	}
-		
+		a:hover {
+			color: #FE0002;
+			text-decoration: none;
+		}
 	</style>
-	
+
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-<header id="logo">
-    <a href="./"><img alt="Logo" width="154" height="30" src="images/Ampere%20Logo.webp"></a>
-    
-    <div class="menuToggler"> 
-        MENU
-    </div>
-</header>
-<nav id="header">
-    <ul>
-        <li><a href="what-are-load-banks">LOAD BANKS</a></li>
-        <li><a href="starline-tapbox-rental.html">STARLINE</a></li>
-        <li><a href="#">CABLES</a></li>
-        <li><a href="#">FLIR</a></li>
-        <li><a href="#">POWER QUALITY</a></li>
-        <li><a href="#">TRANSFORMERS</a></li>
-    </ul>
-</nav>
+	<!-- Header Section -->
+	<header id="logo">
+		<a href="./"><img alt="Logo" width="154" height="30" src="images/Ampere%20Logo.webp"></a>
+		<div class="menuToggler">MENU</div>
+	</header>
+
+	<!-- Navigation Section -->
+	<nav id="header">
+		<ul>
+			<li><a href="what-are-load-banks">LOAD BANKS</a></li>
+			<li><a href="starline-tapbox-rental.html">STARLINE</a></li>
+			<li><a href="#">CABLES</a></li>
+			<li><a href="#">FLIR</a></li>
+			<li><a href="#">POWER QUALITY</a></li>
+			<li><a href="#">TRANSFORMERS</a></li>
+		</ul>
+	</nav>
 	
-<main class="bg-text">
-    <h1 class="home_title">Designed <span>-</span> Innovative <span>-</span> Dynamic</h1>
-    <center><p>Ampere provides starline tapbox rentals, load banks, commissioning support, power quality studies, transformers, IR inspections, power cables, consulting and QA/QC. We can work with any AC/DC low-voltage (0-1000V) and medium-voltage (1kV – 34.5kV) projects.</p></center>center>
-    <center><h3>Call us today at 888-345-LOAD</h3></center>
-</main>
-	</div>
-	
-<footer id="footer">
-    <ul>
-        <li><a href="#">AMPERE &copy; 2024</a></li>
-        <li><a href="#">PRIVACY & LEGAL</a></li>
-        <li><a href="contact">CONTACT</a></li>
-    </ul>
-</footer>
-	
+	<!-- Main Content Section -->
+	<main>
+		<h1>Designed <span>-</span> Innovative <span>-</span> Dynamic</h1>
+		<p>Ampere provides starline tapbox rentals, load banks, commissioning support, power quality studies, transformers, IR inspections, power cables, consulting and QA/QC. We can work with any AC/DC low-voltage (0-1000V) and medium-voltage (1kV – 34.5kV) projects.</p>
+		<h3>Call us today at 888-345-LOAD</h3>
+	</main>
+
+	<!-- Footer Section -->
+	<footer id="footer">
+		<ul>
+			<li><a href="#">AMPERE &copy; 2024</a></li>
+			<li><a href="#">PRIVACY & LEGAL</a></li>
+			<li><a href="contact">CONTACT</a></li>
+		</ul>
+	</footer>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
