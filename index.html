@@ -21,15 +21,15 @@
 	
 	<!-- End Cloudflare Web Analytics -->
 	<style>
-		main {
-    text-align: center; /* Centering text horizontally */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ensure it takes full viewport height */
-    background-color: rgba(0, 0, 0, 0.6); /* Your background color */
-    padding: 10px;
+/* Center main content and reduce text block size */
+main {
+    text-align: center;
+    display: block; /* Remove flex to avoid full height */
+    margin: 0 auto;
+    max-width: 700px; /* Limit the width of the text block */
+    background-color: rgba(0, 0, 0, 0.6); /* Keep the background color */
+    padding: 20px;
+    color: white;
 }
 
 main h1 {
@@ -39,22 +39,26 @@ main h1 {
 }
 
 main p {
-    width: 70%; /* You can adjust the width for readability */
-    text-align: justify; /* Justify text */
-    color: white;
+    width: 100%; /* Ensure paragraph takes the full width of the main block */
+    text-align: justify;
 }
 
 main h3 {
     margin-top: 1em;
-    color: white;
 }
 
-/* Optional: Add some styling for the header and footer */
-header, footer {
+/* Footer styling */
+footer {
     text-align: center;
     padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
+/* Nav styling */
 nav ul {
     display: inline-flex;
     list-style-type: none;
@@ -73,6 +77,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #FE0002;
 }
+
 		
 	/* unvisited link */
 	a:link {
