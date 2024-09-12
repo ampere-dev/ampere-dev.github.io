@@ -37,36 +37,39 @@ body {
 	background-size: cover;
 }
 
-/* Center main content and reduce text block size */
+/* Center main content and reduce text block height */
 main {
-	flex: 1; /* This makes the main content take up all available space */
+	flex: 1;
 	text-align: center;
 	padding: 20px;
-	max-width: 700px;
+	max-width: 700px; /* Keep width reasonable */
 	margin: 0 auto;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6); /* Background color remains semi-transparent */
 	color: white;
+	border-radius: 10px; /* Optional: Adds rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+	display: inline-block; /* Ensure the background only fits around the content */
 }
 
+/* Adjust heading and paragraph spacing to reduce height */
 main h1 {
 	font-size: 1.8em;
-	margin-bottom: 20px;
+	margin-bottom: 10px; /* Reduce bottom margin */
 	font-weight: bold;
 }
 
 main p {
 	font-size: 1em;
-	line-height: 1.6;
-	text-align: center;
-	margin-bottom: 20px;
+	line-height: 1.4; /* Reduce line height to compact the text */
+	margin-bottom: 10px; /* Reduce bottom margin */
 }
 
 main h3 {
 	font-size: 1.2em;
-	margin-top: 1em;
+	margin-top: 10px; /* Reduce top margin */
+	margin-bottom: 0; /* Avoid extra space at the bottom */
 }
 
-/* Footer styling */
 /* Footer styling */
 footer {
 	text-align: center;
