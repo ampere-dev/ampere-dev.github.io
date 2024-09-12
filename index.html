@@ -38,18 +38,15 @@
 		}
 
 		/* Center main content and reduce text block size */
-		main {
-			text-align: center;
-			display: block;
-			margin: 0 auto;
-			padding: 20px;
-			max-width: 700px;
-			background-color: rgba(0, 0, 0, 0.6);
-			border: 2px solid red;
-			position: relative;
-			top: 30%;
-			transform: translateY(-30%);
-		}
+main {
+	flex: 1; /* This makes the main content take up all available space */
+	text-align: center;
+	padding: 20px;
+	max-width: 700px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+}
 
 		main h1 {
 			font-size: 1.8em;
