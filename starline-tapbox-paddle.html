@@ -1,213 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="https://ampere.dev/navbar2/starline-tapbox-paddle" rel="canonical">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/hamburgerdark.css">	
-<title>Starline TapBox Paddle | Ampere Development</title>
-<meta name="description" content="Replace damaged paddles due to arc-flash, shipping damage, or physical wear and tear." />
-<meta name="keywords" content="Starline Paddle Repair, Starline Repair, Tapbox Repair, Starline Tap Box Repair" />
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css?family=Krona One&display=swap" rel="stylesheet">
-	<!-- SCRIPTS USED FOR CAROUSEL -->
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starline Paddle Repair</title>
+    <link href="https://ampere.dev/navbar2/starline-tapbox-paddle" rel="canonical">
+    <meta name="description" content="Replace damaged paddles due to arc-flash, shipping damage, or physical wear and tear.">
+    <meta name="keywords" content="Starline Paddle Repair, Starline Repair, Tapbox Repair, Starline Tap Box Repair">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hamburgerdark.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- SCRIPTS END -->
-
     <style>
-
-/* unvisited link */
-a:link {
-  color: black;
-  text-decoration: none;
-}
-
-/* visited link */	
-a:visited {
-  color: black;
-}
-
-/* mouse over link */
-a:hover {
-  color: #FE0002;
-}
-	
-nav a:hover {
-  color: #FE0002;
-}
-	    
-h1 {
-  font-size: 1.5em;
-  margin-left: 25px;
-}
-	    
-h2 {
-  font-size: 1.5em;
-  margin-left: 25px;
-}
-	    
-h3.ex1 {
-  margin-left: 35px;
-}
-	    
-p.ex2 {
-  margin-left: 35px;
-}
-	    
-p.ex1 {
-  display: block;
-  color: black;
-  font-family: "Krona One", sans-serif; 
-  font-weight: 400;
-  font-size: 14px;
-}
-
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif"; 
-}
-
-#logo a {
-    position: absolute;
-    top: 25px;
-    left: 35px;
-}
-
-#header a {
-    padding: 0px 10px;
-    word-wrap: normal;
-    display: inline-block;
-    font-family: "Krona One", "Arial", "Lucida Grande", "sans-serif";
-    font-size: 14px;
-    margin-top: 25px;
-}
-
-#footer a { 
-    padding: 0px 10px;
-    word-wrap: normal;
-    display: inline-block;
-    font-size: 14px;
-   /*  margin-top: 800px; */
-    font-family: "Krona One", sans-serif;
-} 
-
-</style>
-<link rel="stylesheet" href="css/responsive.css">
+        body {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #444;
+            margin-left: 25px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        .pricing {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #FF0000;
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+        .row {
+            display: flex;
+        }
+        .carousel.box-carousel .box {
+            text-align: center;
+        }
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            color: #FE0002;
+        }
+    </style>
 </head>
 <body>
-<div id="logo">
+    <div id="logo">
         <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
-		<div class="menuToggler"> 
-			MENU
-		</div></div>
-<div id="header"><center>
-        <a href="what-are-load-banks">LOAD BANKS</a>
-        <a href="starline-tapbox-rental">STARLINE</a>
-        <a href="">CABLES</a>
-        <a href="">FLIR</a>
-        <a href="">POWER QUALITY</a>
-        <a href="">TRANSFORMERS</a>
-</div></center>
-        <!-- ICON SLIDER STARTS -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="carousel box-carousel d-none d-sm-block">
-                        <!-- SINGLE BOX CONTAINS ONE ICON -->
-                        <div class="box">
-                            <a href="starline-tapbox-rental"><img src="icons/tapbox.webp" alt="">Tap Box</a>
-                        </div>
-                        <div class="box">
-                            <a href="starline-tapbox-paddle"><img src="icons/stab.webp" alt="">Paddle</a>
-                        </div>
-                        <div class="box">
-                            <a href="starline-tapbox-propaddle"><img src="icons/stab.webp" alt="">Pro Paddle</a>
-                        </div>
-			<div class="box">
-                            <a href="starline-busway-commissioning"><img src="icons/cx.webp" alt="">Commissioning</a>
-                        </div>
-                    </div><!-- carousel-->
-                </div>
-                <!--col-->
+        <div class="menuToggler">MENU</div>
+    </div>
+    <div id="header">
+        <center>
+            <a href="what-are-load-banks">LOAD BANKS</a>
+            <a href="starline-tapbox-rental">STARLINE</a>
+            <a href="">CABLES</a>
+            <a href="">FLIR</a>
+            <a href="">POWER QUALITY</a>
+            <a href="">TRANSFORMERS</a>
+        </center>
+    </div>
+    <div class="container">
+        <h1>Starline Paddle Repair</h1>
+        <p><strong>Restore Your Starline Systems with Confidence</strong></p>
+        <p>When arc-flash incidents, shipping mishaps, or wear and tear compromise your equipment, Starline Paddle Repair offers a high-quality, durable replacement solution. Designed for precision and reliability, our paddles ensure seamless system operation.</p>
+
+        <h2>Premium Paddle Solution</h2>
+        <ul>
+            <li><strong>Sizes:</strong> 400A and 250A</li>
+            <li><strong>Material:</strong> Advanced thermoplastics offering impact resistance, rigidity, and lightweight design.</li>
+            <li><strong>Manufacturing:</strong> Produced using cutting-edge Fused Deposition Modeling (FDM) for enhanced strength and resilience compared to traditional injection molding.</li>
+        </ul>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Durability:</strong> Resistant to abrasion, crushing, and moderate temperatures.</li>
+            <li><strong>Chemical Resistance:</strong> Superior performance in various environments.</li>
+            <li><strong>UV Protection:</strong> Reliable in outdoor and high-exposure applications.</li>
+            <li><strong>Customizable Colors:</strong> Standard black with options for blue, orange, green, and red.</li>
+        </ul>
+
+        <h2>Technical Specifications</h2>
+        <ul>
+            <li><strong>Melt Temperature (Tm):</strong> 210&deg;C (410&deg;F)</li>
+            <li><strong>Heat Deflection Temperature (HDT):</strong> 60&deg;C (140&deg;F) at 0.45 MPa (65 PSI)</li>
+            <li><strong>Glass Transition Temperature (Tg):</strong> 60&deg;C (140&deg;F)</li>
+            <li><strong>Continuous Use Temperature (CUT):</strong> 50&deg;C (122&deg;F)</li>
+            <li><strong>Tensile Strength:</strong> 58 MPa (8,412 PSI)</li>
+        </ul>
+
+        <h2 class="pricing">Pricing</h2>
+        <p>$199 per set – Includes one pair of 400A or 250A paddles.</p>
+
+        <h2>Why Choose Starline Paddle Repair?</h2>
+        <ul>
+            <li><strong>Ready to Ship:</strong> Paddles are pre-manufactured, inventoried, and available for immediate dispatch.</li>
+            <li><strong>Built to Last:</strong> FDM construction ensures superior layer adhesion and material integrity.</li>
+            <li><strong>Engineered for Performance:</strong> Withstands high mechanical stress; parts are fastened with machine-grade screws for added stability.</li>
+            <li><strong>Customizable Design:</strong> Color options available to match your system's aesthetic.</li>
+        </ul>
+
+        <div class="row">
+            <div class="column">
+                <img src="images/Stab Halves.webp" alt="Stab1" style="width:100%">
             </div>
-            <!--row-->
-  </div>
-</body>
+            <div class="column">
+                <img src="images/Stab Assembly.webp" alt="Stab2" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/Stab3.webp" alt="Stab3" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/Stab4.webp" alt="Stab4" style="width:100%">
+            </div>
+        </div>
 
-<style>
-	
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif"; 
-}
-
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
-
-</style>
-</head>
-<body>
-
-<div style="text-align:left">
-  <h1>Starline Paddle Repair</h1>
-<p class="ex2">Replace damaged paddles due to arc-flash, shipping damage, or physical wear and tear</p>
-<p class="ex2">400A and 250A paddles available, in-stock and ready to ship</p>
-<p class="ex2">Don't wait a month for the parts to show up, call now!</p>
-<p class="ex2">Redesigned and sliced using Fused Deposition Modeling to provide superior impact resistance</p>
-<p class="ex2">Constructed from ‘green’ bio-thermoplastic providing a solid base framework</p>
-<p class="ex2">Available colors: (Black, Blue, Orange, Green, and Red) Other colors are subject to availability</p>
-<p class="ex2">Deformation and break resistant – Tolerant to moderate temperatures</p>
-<p class="ex2">Durability is medium to low</p>
-<p class="ex2">Low UV resistance</p>
-<p class="ex2">$50/set – Order a set of five and have spares on-hand</p>
-	</div>
-	
-  <h2>Technical Details</h2>
-
-<ul>
-  <li>Melt temperature (Tm) 145°C / 293°F</li>
-  <li>Heat Deflection temperature (HDT) 50°C / 122°F 0.45MPa / 66PSI</li>
-  <li>Glass Transition Temperature (Tg) 60°C / 140°F</li>
-  <li>Continuous Use Temperature (CUT) 40°C / 104°F</li>
-  <li>Tensile strength 40MPa / 5801.51PSI</li>
-</ul> 
-
-<!-- The four columns -->
-<div class="row">
-  <div class="column">
-    <img src="images/Stab Halves.webp" alt="Stab1" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/Stab Assembly.webp" alt="Stab2" style="width:100%" onclick="myFunction(this);">
-  </div></div>
-<div class="row">
-  <div class="column">
-    <img src="images/Stab3.webp" alt="Stab3" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/Stab4.webp" alt="Stab4" style="width:100%" onclick="myFunction(this);">
-  </div>
-</div>
-	
-<div id="footer"><center>
-    <a href="">AMPERE &copy; 2022</a>
-    <a href="">PRIVACY & LEGAL</a>
-    <a href="contact">CONTACT</a>
-	</center><div>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Don’t let damaged paddles disrupt your operations. Upgrade with Starline Paddle Repair replacements today!</strong></p>
+        </div>
+    </div>
+    <div id="footer">
+        <center>
+            <a href="">AMPERE &copy; 2024</a>
+            <a href="">PRIVACY & LEGAL</a>
+            <a href="contact">CONTACT</a>
+        </center>
+    </div>
 </body>
 </html>
