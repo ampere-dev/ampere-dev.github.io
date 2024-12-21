@@ -21,71 +21,121 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/main.js"></script>
     <style>
-        body {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #444;
-            margin-left: 25px;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        ul li {
-            margin: 5px 0;
-        }
-        .pricing {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #FF0000;
-        }
-        .contact {
-            margin-top: 20px;
-        }
-        .contact a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        .column {
-            float: left;
-            width: 25%;
-            padding: 10px;
-        }
-        .row {
-            display: flex;
-        }
-        .carousel.box-carousel .box {
-            text-align: center;
-        }
-        a:link {
-            color: black;
-            text-decoration: none;
-        }
-        a:visited {
-            color: black;
-        }
-        a:hover {
-            color: #FE0002;
-        }
-    </style>
+	    
+h1 {
+  font-size: 1.5em;
+}
+	    
+h3.ex1 {
+  margin: 35px;
+}
+	    
+p.ex2 {
+  margin: 35px;
+}
+	    
+p.ex1 {
+  display: block;
+  color: black;
+  font-family: "gotham-medium"; 
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* vistited link */	
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FE0002;
+}
+	 
+nav a:hover {
+  color: #FE0002;
+}
+
+#logo a {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+
+#header a {
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#footer a { 
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+   /*  margin-top: 800px; */
+}
+	    
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: ff0000;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+	    }
+</style>
 </head>
 <body>
     <div id="logo">
