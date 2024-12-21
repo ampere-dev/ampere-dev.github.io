@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://code.jquery.com" crossorigin>
 
     <!-- Favicon -->
-     <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
@@ -41,327 +41,174 @@
 </head>
 
 <style>
-	    
+/* Common styles */
 h1 {
+  background-color: #E5E5E5;
+  margin: 20px;
+  padding: 10px;
   font-size: 1.5em;
 }
-	    
-h3.ex1 {
-  margin: 35px;
-}
-	    
-p.ex2 {
-  margin: 35px;
-}
-	    
-p.ex1 {
-  display: block;
-  color: black;
-  font-family: "gotham-medium"; 
+
+h2 {
+  background-color: #E5E5E5;
+  margin: 20px;
+  padding: 10px;
 }
 
-/* unvisited link */
-a:link {
-  color: black;
+p {
+  margin: 20px;
+}
+
+ul {
+  margin: 20px;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
+  line-height: 1.6;
+}
+
+a {
   text-decoration: none;
-}
-
-/* vistited link */	
-a:visited {
   color: black;
 }
 
-/* mouse over link */
 a:hover {
   color: #FE0002;
 }
-	 
-nav a:hover {
-  color: #FE0002;
-}
 
-#logo a {
-    position: absolute;
-    top: 25px;
-    left: 35px;
-}
-
-#header a {
-    padding: 0px 10px;
-    word-wrap: normal;
-    display: inline-block;
-    margin-top: 25px;
-}
-
-#footer a { 
-    padding: 0px 10px;
-    word-wrap: normal;
-    display: inline-block;
-   /*  margin-top: 800px; */
-}
-	    
-* {
-  box-sizing: border-box;
-}
-
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-}
-
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
-
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
-}
-
-.button {
-  background-color: ff0000;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Main layout container */
+/* Layout styles */
 .content-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevent scrolling */
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Body content on the left */
 .body-content {
-  flex: 2; /* Occupy 2/3 of the width */
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
+  flex: 2;
   margin: 20px;
-  overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
+  overflow-y: auto;
 }
 
-/* Image container on the right with collage layout */
 .image-container {
-  flex: 1; /* Occupy 1/3 of the width */
+  flex: 1;
   display: grid;
   grid-template-areas:
     "img1 img2"
     "img3 img2"
     "img3 img4"
     "img5 img4";
-  gap: 10px; /* Add margin between images */
-  padding: 10px; /* Optional padding around the collage */
+  gap: 10px;
+  padding: 10px;
   box-sizing: border-box;
-  height: 100%; /* Full height of the container */
+  height: 100%;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures images fill their grid area */
-  cursor: pointer;
-  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-/* Specific layout for each image */
-.image-container img:nth-child(1) {
-  grid-area: img1;
-}
-
-.image-container img:nth-child(2) {
-  grid-area: img2;
-}
-
-.image-container img:nth-child(3) {
-  grid-area: img3;
-}
-
-.image-container img:nth-child(4) {
-  grid-area: img4;
-}
-
-.image-container img:nth-child(5) {
-  grid-area: img5;
-}
-
-/* Responsive Design */
+/* Responsive design */
 @media screen and (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
-    height: auto; /* Allow scrolling for smaller screens */
+    height: auto;
   }
 
   .body-content {
     flex: none;
-    width: 100%; /* Full width on small screens */
+    width: 100%;
     margin-bottom: 20px;
   }
 
   .image-container {
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5"; /* Stack images in a single column */
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5";
     flex: none;
-    width: 100%; /* Full width */
-    gap: 10px; /* Maintain gap for stacked layout */
-  }
-
-  .image-container img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
   }
-.carousel {
-  display: flex; /* Use flexbox to align boxes in a row */
-  justify-content: flex-start; /* Align items to the start of the row */
-  overflow-x: auto; /* Enable horizontal scrolling if needed */
-  white-space: nowrap; /* Prevent wrapping */
-  gap: 20px; /* Space between the boxes */
-  padding: 10px; /* Optional padding around the carousel */
-  scrollbar-width: thin; /* Custom scrollbar for Firefox */
 }
-
-.carousel::-webkit-scrollbar {
-  height: 8px; /* Scrollbar height */
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  background: #ccc; /* Scrollbar color */
-  border-radius: 10px; /* Scrollbar roundness */
-}
-
-.carousel .box {
-  flex: 0 0 auto; /* Prevent shrinking or wrapping */
-  width: 150px; /* Adjust box width as needed */
-  text-align: center;
-}
-
-.carousel .box img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 5px; /* Optional: Rounded corners for images */
-}
-}
-
 </style>
-</head>
+
 <body>
-    <div id="logo">
-        <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
-        <div class="menuToggler">MENU</div>
-    </div>
-    <div id="header"><center>
-            <a href="what-are-load-banks">LOAD BANKS</a>
-            <a href="starline-tapbox-rental">STARLINE</a>
-            <a href="">CABLES</a>
-            <a href="">FLIR</a>
-            <a href="">POWER QUALITY</a>
-            <a href="">TRANSFORMERS</a>
-        </center>
-    <div class="container">
-        <!-- ICON SLIDER STARTS -->
-<div class="carousel box-carousel">
-  <div class="box">
-    <a href="starline-tapbox-rental">
-      <img src="icons/tapbox.webp" alt="Tap Box">Tap Box
-    </a>
-  </div>
-  <div class="box">
-    <a href="starline-tapbox-paddle">
-      <img src="icons/stab.webp" alt="Paddle">Paddle
-    </a>
-  </div>
-  <div class="box">
-    <a href="starline-busway-commissioning">
-      <img src="icons/cx.webp" alt="Commissioning">Commissioning
-    </a>
-  </div>
+<div id="logo">
+    <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
+    <div class="menuToggler">MENU</div>
 </div>
-        <!-- ICON SLIDER ENDS -->
+<div id="header"><center>
+        <a href="what-are-load-banks">LOAD BANKS</a>
+        <a href="starline-tapbox-rental">STARLINE</a>
+        <a href="">CABLES</a>
+        <a href="">FLIR</a>
+        <a href="">POWER QUALITY</a>
+        <a href="">TRANSFORMERS</a>
+    </center>
+</div>
 <div class="content-wrapper">
-  <!-- Body content on the left -->
-  <div class="body-content">
-    <h1>Starline Paddle Repair</h1>
-    <p><strong>Restore Your Starline Systems with Confidence</strong></p>
-    <p>When arc-flash incidents, shipping mishaps, or wear and tear compromise your equipment, Starline Paddle Repair offers a high-quality, durable replacement solution. Designed for precision and reliability, our paddles ensure seamless system operation.</p>
+    <div class="body-content">
+        <h1>Starline Paddle Repair</h1>
+        <p><strong>Restore Your Starline Systems with Confidence</strong></p>
+        <p>When arc-flash incidents, shipping mishaps, or wear and tear compromise your equipment, Starline Paddle Repair offers a high-quality, durable replacement solution. Designed for precision and reliability, our paddles ensure seamless system operation.</p>
 
-    <h2>Premium Paddle Solution</h2>
-    <ul>
-      <li><strong>Sizes:</strong> 400A and 250A</li>
-      <li><strong>Material:</strong> Advanced thermoplastics offering impact resistance, rigidity, and lightweight design.</li>
-      <li><strong>Manufacturing:</strong> Produced using cutting-edge Fused Deposition Modeling (FDM) for enhanced strength and resilience compared to traditional injection molding.</li>
-    </ul>
+        <h2>Premium Paddle Solution</h2>
+        <ul>
+            <li><strong>Sizes:</strong> 400A and 250A</li>
+            <li><strong>Material:</strong> Advanced thermoplastics offering impact resistance, rigidity, and lightweight design.</li>
+            <li><strong>Manufacturing:</strong> Produced using cutting-edge Fused Deposition Modeling (FDM) for enhanced strength and resilience compared to traditional injection molding.</li>
+        </ul>
 
-    <h2>Key Features</h2>
-    <ul>
-      <li><strong>Durability:</strong> Resistant to abrasion, crushing, and moderate temperatures.</li>
-      <li><strong>Chemical Resistance:</strong> Superior performance in various environments.</li>
-      <li><strong>UV Protection:</strong> Reliable in outdoor and high-exposure applications.</li>
-      <li><strong>Customizable Colors:</strong> Standard black with options for blue, orange, green, and red.</li>
-    </ul>
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Durability:</strong> Resistant to abrasion, crushing, and moderate temperatures.</li>
+            <li><strong>Chemical Resistance:</strong> Superior performance in various environments.</li>
+            <li><strong>UV Protection:</strong> Reliable in outdoor and high-exposure applications.</li>
+            <li><strong>Customizable Colors:</strong> Standard black with options for blue, orange, green, and red.</li>
+        </ul>
 
-    <h2>Technical Specifications</h2>
-    <ul>
-      <li><strong>Melt Temperature (Tm):</strong> 210&deg;C (410&deg;F)</li>
-      <li><strong>Heat Deflection Temperature (HDT):</strong> 60&deg;C (140&deg;F) at 0.45 MPa (65 PSI)</li>
-      <li><strong>Glass Transition Temperature (Tg):</strong> 60&deg;C (140&deg;F)</li>
-      <li><strong>Continuous Use Temperature (CUT):</strong> 50&deg;C (122&deg;F)</li>
-      <li><strong>Tensile Strength:</strong> 58 MPa (8,412 PSI)</li>
-    </ul>
+        <h2>Technical Specifications</h2>
+        <ul>
+            <li><strong>Melt Temperature (Tm):</strong> 210&deg;C (410&deg;F)</li>
+            <li><strong>Heat Deflection Temperature (HDT):</strong> 60&deg;C (140&deg;F) at 0.45 MPa (65 PSI)</li>
+            <li><strong>Glass Transition Temperature (Tg):</strong> 60&deg;C (140&deg;F)</li>
+            <li><strong>Continuous Use Temperature (CUT):</strong> 50&deg;C (122&deg;F)</li>
+            <li><strong>Tensile Strength:</strong> 58 MPa (8,412 PSI)</li>
+        </ul>
 
-    <h2 class="pricing">Pricing</h2>
-    <p>$199 per set – Includes one pair of 400A or 250A paddles.</p>
+        <h2 class="pricing">Pricing</h2>
+        <p>$199 per set &ndash; Includes one pair of 400A or 250A paddles.</p>
 
-    <h2>Why Choose Starline Paddle Repair?</h2>
-    <ul>
-      <li><strong>Ready to Ship:</strong> Paddles are pre-manufactured, inventoried, and available for immediate dispatch.</li>
-      <li><strong>Built to Last:</strong> FDM construction ensures superior layer adhesion and material integrity.</li>
-      <li><strong>Engineered for Performance:</strong> Withstands high mechanical stress; parts are fastened with machine-grade screws for added stability.</li>
-      <li><strong>Customizable Design:</strong> Color options available to match your system's aesthetic.</li>
-    </ul>
-  </div>
-
-  <!-- Image container on the right -->
-  <div class="image-container">
-    <img src="images/Stab Halves.webp" alt="Stab1">
-    <img src="images/Stab Assembly.webp" alt="Stab2">
-    <img src="images/Stab3.webp" alt="Stab3">
-    <img src="images/Stab4.webp" alt="Stab4">
-  </div>
-</div>
-    <div id="footer">
-        <center>
-            <a href="">AMPERE &copy; 2024</a>
-            <a href="">PRIVACY & LEGAL</a>
-            <a href="contact">CONTACT</a>
-        </center>
+        <h2>Why Choose Starline Paddle Repair?</h2>
+        <ul>
+            <li><strong>Ready to Ship:</strong> Paddles are pre-manufactured, inventoried, and available for immediate dispatch.</li>
+            <li><strong>Built to Last:</strong> FDM construction ensures superior layer adhesion and material integrity.</li>
+            <li><strong>Engineered for Performance:</strong> Withstands high mechanical stress; parts are fastened with machine-grade screws for added stability.</li>
+            <li><strong>Customizable Design:</strong> Color options available to match your system's aesthetic.</li>
+        </ul>
     </div>
+    <div class="image-container">
+        <img src="images/Stab Halves.webp" alt="Stab1">
+        <img src="images/Stab Assembly.webp" alt="Stab2">
+        <img src="images/Stab3.webp" alt="Stab3">
+        <img src="images/Stab4.webp" alt="Stab4">
+    </div>
+</div>
+<div id="footer">
+    <center>
+        <a href="">AMPERE &copy; 2024</a>
+        <a href="">PRIVACY & LEGAL</a>
+        <a href="contact">CONTACT</a>
+    </center>
+</div>
 </body>
 </html>
