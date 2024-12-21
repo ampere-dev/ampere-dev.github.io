@@ -98,34 +98,57 @@ margin-top: 25px;
   box-sizing: border-box;
 }
 
-/* The grid: Adjusted to align images to the right */
-.row {
+/* Main layout container */
+.content-wrapper {
   display: flex;
-  justify-content: flex-end; /* Aligns all columns to the right */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
 }
 
-.column {
-  width: 20%;
-  padding: 10px;
+/* Body content on the left */
+.body-content {
+  flex: 1; /* Take up remaining space */
+  margin-right: 20px;
 }
 
-.column img {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
+/* Image columns on the right */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.image-container img {
+  width: 150px; /* Adjust the image size as needed */
   cursor: pointer;
 }
 
+/* Responsive design */
 @media screen and (max-width: 768px) {
-  .row {
+  .content-wrapper {
     flex-direction: column;
-    justify-content: flex-start; /* Stacks images vertically on smaller screens */
   }
 
-  .column {
-    width: 100%; /* Full-width for smaller screens */
+  .body-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 100px; /* Smaller image size for mobile */
   }
 }
+
 
 </style>
 	
@@ -148,48 +171,51 @@ margin-top: 25px;
 </body>
 </head>
 <body>
-<div class="row">
-  <div class="column">
+<div class="content-wrapper">
+  <!-- Body content on the left -->
+  <div class="body-content">
+    <p>Ampere is fully equipped and ready to assist with your load bank testing, rentals and infrared scanning needs. Your load bank rental equipment will be delivered where and when you need it, and will identify any thermal anomalies, extending equipment lifespan and ensuring optimal system performance, facility safety and operational sustainability.</p>
+
+    <h1>Starline Busway Commissioning</h1>
+    <ul>
+      <li>Deliver 100% of the rated system amperage for the client specified burn-in duration</li>
+      <li>Final visual inspection of safe system installation and verification of correct feed wiring</li>
+      <li>Validate meter operation and communication under load (if applicable)</li>
+      <li>Deliver test reports</li>
+    </ul>
+
+    <h2 class="ex2">Infrared Scanning</h2>
+    <ul>
+      <li>Thermal imaging of all busway components</li>
+      <li>Deliver detailed thermography report and photos</li>
+      <li>Full building IR scanning available</li>
+    </ul>
+
+    <h2 class="ex2">Load Bank Rentals</h2>
+    <ul>
+      <li>Flexible weekly and monthly rental contracts available</li>
+      <li>Rent Load Banks, Cable Sets and/or Plug-In Adapters to test your system</li>
+      <li>Estimated freight included in quotation (pick-up and delivery)</li>
+    </ul>
+
+    <p>Our personnel will fully commission any Starline project through load banking and thermography services.</p>
+    <ul>
+      <li>Load bank testing in combination with infrared scanning will confirm busway installation integrity and system operational performance</li>
+      <li>Proactive inspection, diagnosis, and reporting enable you to identify potential issues and take corrective action before an accident or a system failure occurs</li>
+      <li>Our service team can provide enhanced service plans that include periodic IR scanning based on your internal maintenance program</li>
+      <li>Perfect for all Starline Track Busway installations and Mission Critical Facilities</li>
+    </ul>
+  </div>
+
+  <!-- Image container on the right -->
+  <div class="image-container">
     <img src="/images/testing.webp" alt="Testing" onclick="myFunction(this);">
     <img src="/images/loadbank.webp" alt="Loadbank" onclick="myFunction(this);">
     <img src="/images/tapbox.webp" alt="Tapbox" onclick="myFunction(this);">
-  </div>
-  <div class="column">
     <img src="/images/flir.webp" alt="Flir" onclick="myFunction(this);">
     <img src="/images/tapbox2.webp" alt="Tapbox2" onclick="myFunction(this);">
   </div>
 </div>
-<p>Ampere is fully equipped and ready to assist with your load bank testing, rentals and infrared scanning needs. Your load bank rental equipment will be delivered where and when you need it, and will identify any thermal anomalies, extending equipment lifespan and ensuring optimal system performance, facility safety and operational sustainability.</p>
-
-<h1>Starline Busway Commissioning</h1>
-<ul>
-<li>Deliver 100% of the rated system amperage for the client specified burn-in duration</li>
-<li>Final visual inspection of safe system installation and verification of correct feed wiring</li>
-<li>Validate meter operation and communication under load (if applicable)</li>
-<li>Deliver test reports</li>
-</ul>
-
-<h2 class="ex2">Infrared Scanning</h2>
-<ul>
-<li>Thermal imaging of all busway components</li>
-<li>Deliver detailed thermography report and photos</li>
-<li>Full building IR scanning available</li>
-</ul>
-
-<h2 class="ex2">Load Bank Rentals</h2>
-<ul>
-<li>Flexible weekly and monthly rental contracts available</li>
-<li>Rent Load Banks, Cable Sets and/or Plug-In Adapters to test your system</li>
-<li>Estimated freight included in quotation (pick-up and delivery)</li>
-</ul>
-
-<p>Our personnel will fully commission any Starline project through load banking and thermography services.</p>
-<ul>
-<li>Load bank testing in combination with infrared scanning will confirm busway installation integrity and system operational performance</li>
-<li>Proactive inspection, diagnosis and, reporting enables you to identify potential issues and take corrective action before an accident or a system failure occurs</li>
-<li>Our service team can provide enhanced service plans that include periodic IR scanning based upon your internal maintenance program</li>
-<li>Perfect for all Starline Track Busway installations and Mission Critical Facilities</li>
-	</ul>
  
 <div id="footer"><center>
     <a href="">AMPERE &copy; 2024</a>
