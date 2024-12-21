@@ -77,6 +77,28 @@ a:hover {
   color: #FE0002;
 }
 
+.carousel {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+.carousel .box {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+.carousel .box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
 /* Layout styles */
 .content-wrapper {
   display: flex;
@@ -138,6 +160,10 @@ a:hover {
     flex: none;
     width: 100%;
   }
+
+  .carousel {
+    gap: 10px;
+  }
 }
 </style>
 
@@ -155,6 +181,27 @@ a:hover {
         <a href="">TRANSFORMERS</a>
     </center>
 </div>
+
+<!-- ICON SLIDER START -->
+<div class="carousel">
+    <div class="box">
+        <a href="starline-tapbox-rental">
+            <img src="icons/tapbox.webp" alt="Tap Box">Tap Box
+        </a>
+    </div>
+    <div class="box">
+        <a href="starline-tapbox-paddle">
+            <img src="icons/stab.webp" alt="Paddle">Paddle
+        </a>
+    </div>
+    <div class="box">
+        <a href="starline-busway-commissioning">
+            <img src="icons/cx.webp" alt="Commissioning">Commissioning
+        </a>
+    </div>
+</div>
+<!-- ICON SLIDER END -->
+
 <div class="content-wrapper">
     <div class="body-content">
         <h1>Starline Tapbox Rental</h1>
