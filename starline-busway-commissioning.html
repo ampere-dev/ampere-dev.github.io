@@ -109,21 +109,19 @@ margin-top: 25px;
 
 /* Body content on the left */
 .body-content {
-  flex: 1; /* Take up remaining space */
+  flex: 1; /* Take up the remaining space */
   margin-right: 20px;
 }
 
-/* Image columns on the right */
+/* Image container on the right */
 .image-container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
+  flex-direction: column; /* Stack images vertically */
+  gap: 10px; /* Space between images */
 }
 
 .image-container img {
-  width: 150px; /* Adjust the image size as needed */
+  width: 150px; /* Adjust the size of the images */
   cursor: pointer;
 }
 
@@ -138,16 +136,11 @@ margin-top: 25px;
     margin-bottom: 20px;
   }
 
-  .image-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .image-container img {
     width: 100px; /* Smaller image size for mobile */
   }
 }
+
 
 
 </style>
@@ -216,6 +209,7 @@ margin-top: 25px;
     <img src="/images/tapbox2.webp" alt="Tapbox2" onclick="myFunction(this);">
   </div>
 </div>
+
  
 <div id="footer"><center>
     <a href="">AMPERE &copy; 2024</a>
