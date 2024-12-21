@@ -134,6 +134,24 @@ nav a:hover {
   font-size: 18px;
 }
 
+/* Main layout container */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Body content on the left */
+.body-content {
+  flex: 2; /* Occupy 2/3 of the width */
+  margin: 20px;
+  overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
+}
+
 /* Image container on the right with collage layout */
 .image-container {
   flex: 1; /* Occupy 1/3 of the width */
@@ -203,6 +221,7 @@ nav a:hover {
     height: auto; /* Maintain aspect ratio */
   }
 }
+
 </style>
 </head>
 <body>
