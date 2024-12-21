@@ -109,19 +109,20 @@ margin-top: 25px;
 
 /* Body content on the left */
 .body-content {
-  flex: 1; /* Take up the remaining space */
+  flex: 1; /* Take up remaining space */
   margin-right: 20px;
 }
 
 /* Image container on the right */
 .image-container {
-  display: flex;
-  flex-direction: column; /* Stack images vertically */
-  gap: 10px; /* Space between images */
+  display: grid; /* Use grid for two-column layout */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Space between images */
 }
 
 .image-container img {
-  width: 300px; /* Adjust the size of the images */
+  width: 100%; /* Each image takes full column width */
+  height: auto; /* Maintain aspect ratio */
   cursor: pointer;
 }
 
@@ -136,10 +137,11 @@ margin-top: 25px;
     margin-bottom: 20px;
   }
 
-  .image-container img {
-    width: 100px; /* Smaller image size for mobile */
+  .image-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
   }
 }
+
 
 
 
