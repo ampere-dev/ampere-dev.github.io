@@ -125,9 +125,10 @@ margin-top: 25px;
     "img3 img2"
     "img3 img4"
     "img5 img4";
-  gap: 0; /* No space between blocks */
-  height: 100%; /* Full height of the container */
+  gap: 10px; /* Add margin between images */
+  padding: 10px; /* Optional padding around the collage */
   box-sizing: border-box;
+  height: 100%; /* Full height of the container */
 }
 
 .image-container img {
@@ -135,6 +136,7 @@ margin-top: 25px;
   height: 100%;
   object-fit: cover; /* Ensures images fill their grid area */
   cursor: pointer;
+  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
 }
 
 /* Specific layout for each image */
@@ -175,6 +177,7 @@ margin-top: 25px;
     grid-template-areas: "img1" "img2" "img3" "img4" "img5"; /* Stack images in a single column */
     flex: none;
     width: 100%; /* Full width */
+    gap: 10px; /* Maintain gap for stacked layout */
   }
 
   .image-container img {
@@ -182,8 +185,6 @@ margin-top: 25px;
     height: auto; /* Maintain aspect ratio */
   }
 }
-
-
 
 </style>
 </head>
