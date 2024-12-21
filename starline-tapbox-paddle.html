@@ -134,11 +134,75 @@ nav a:hover {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
+/* Image container on the right with collage layout */
+.image-container {
+  flex: 1; /* Occupy 1/3 of the width */
+  display: grid;
+  grid-template-areas:
+    "img1 img2"
+    "img3 img2"
+    "img3 img4"
+    "img5 img4";
+  gap: 10px; /* Add margin between images */
+  padding: 10px; /* Optional padding around the collage */
+  box-sizing: border-box;
+  height: 100%; /* Full height of the container */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill their grid area */
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
+}
+
+/* Specific layout for each image */
+.image-container img:nth-child(1) {
+  grid-area: img1;
+}
+
+.image-container img:nth-child(2) {
+  grid-area: img2;
+}
+
+.image-container img:nth-child(3) {
+  grid-area: img3;
+}
+
+.image-container img:nth-child(4) {
+  grid-area: img4;
+}
+
+.image-container img:nth-child(5) {
+  grid-area: img5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    height: auto; /* Allow scrolling for smaller screens */
   }
-	    }
+
+  .body-content {
+    flex: none;
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5"; /* Stack images in a single column */
+    flex: none;
+    width: 100%; /* Full width */
+    gap: 10px; /* Maintain gap for stacked layout */
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
 </style>
 </head>
 <body>
