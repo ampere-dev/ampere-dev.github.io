@@ -220,6 +220,37 @@ nav a:hover {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
   }
+.carousel {
+  display: flex; /* Use flexbox to align boxes in a row */
+  justify-content: flex-start; /* Align items to the start of the row */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  white-space: nowrap; /* Prevent wrapping */
+  gap: 20px; /* Space between the boxes */
+  padding: 10px; /* Optional padding around the carousel */
+  scrollbar-width: thin; /* Custom scrollbar for Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #ccc; /* Scrollbar color */
+  border-radius: 10px; /* Scrollbar roundness */
+}
+
+.carousel .box {
+  flex: 0 0 auto; /* Prevent shrinking or wrapping */
+  width: 150px; /* Adjust box width as needed */
+  text-align: center;
+}
+
+.carousel .box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px; /* Optional: Rounded corners for images */
+}
 }
 
 </style>
