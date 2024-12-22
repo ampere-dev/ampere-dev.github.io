@@ -12,25 +12,19 @@
     <!-- SEO -->
     <link rel="canonical" href="https://ampere.dev/starline-busway-commissioning" />
 
-    <!-- Performance Optimization -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
-    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
-
     <!-- Favicon -->
-    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/hamburgerdark.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hamburgerdark.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
@@ -39,240 +33,79 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
-	
-
-<style>
-
-p {
-  margin-left: 20px;
-}
-	
-h1 {
-  background-color: #E5E5E5; 
-  margin: 20px;
-  padding: 10px;
-  font-size: 1.17em;
-}
-	    
-h2.ex2 {
-  background-color: #E5E5E5; 
-  margin: 20px;
-  padding: 10px;
-  font-size: 1.17em;
-}
-
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
-}
-
-/* unvisited link */
-a:link {
-  color: black;
-  text-decoration: none;
-}
-
-/* visited link */	
-a:visited {
-  color: black;
-}
-
-/* mouse over link */
-a:hover {
-  color: #FE0002;
-}
-	
-nav a:hover {
-  color: #FE0002;
-}
-        
-#logo a {
-    position: absolute;
-    top: 25px;
-    left: 35px;
-}
-
-#header a {
-padding: 0px 10px;
-word-wrap: normal;
-display: inline-block;
-margin-top: 25px;
-}
-
-#footer a { 
-    padding: 0px 10px;
-    word-wrap: normal;
-    display: inline-block;
-   /*  margin-top: 800px; */
-}
-		
-* {
-  box-sizing: border-box;
-}
-
-/* Main layout container */
-.content-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevent scrolling */
-}
-
-/* Body content on the left */
-.body-content {
-  flex: 2; /* Occupy 2/3 of the width */
-  margin: 20px;
-  overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
-}
-
-/* Image container on the right with collage layout */
-.image-container {
-  flex: 1; /* Occupy 1/3 of the width */
-  display: grid;
-  grid-template-areas:
-    "img1 img2"
-    "img3 img2"
-    "img3 img4"
-    "img5 img4";
-  gap: 10px; /* Add margin between images */
-  padding: 10px; /* Optional padding around the collage */
-  box-sizing: border-box;
-  height: 100%; /* Full height of the container */
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fill their grid area */
-  cursor: pointer;
-  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
-}
-
-/* Specific layout for each image */
-.image-container img:nth-child(1) {
-  grid-area: img1;
-}
-
-.image-container img:nth-child(2) {
-  grid-area: img2;
-}
-
-.image-container img:nth-child(3) {
-  grid-area: img3;
-}
-
-.image-container img:nth-child(4) {
-  grid-area: img4;
-}
-
-.image-container img:nth-child(5) {
-  grid-area: img5;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column;
-    height: auto; /* Allow scrolling for smaller screens */
-  }
-
-  .body-content {
-    flex: none;
-    width: 100%; /* Full width on small screens */
-    margin-bottom: 20px;
-  }
-
-  .image-container {
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5"; /* Stack images in a single column */
-    flex: none;
-    width: 100%; /* Full width */
-    gap: 10px; /* Maintain gap for stacked layout */
-  }
-
-  .image-container img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-</style>
-</head>
 <body>
-<div id="logo">
-        <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
-		<div class="menuToggler"> 
-			MENU
-		</div></div>
-<div id="header"><center>
-        <a href="what-are-load-banks">LOAD BANKS</a>
-        <a href="starline-tapbox-rental">STARLINE</a>
-        <a href="">CABLES</a>
-        <a href="">FLIR</a>
-        <a href="">POWER QUALITY</a>
-        <a href="">TRANSFORMERS</a>
-</div></center>
+
+<header id="logo" role="banner">
+    <a href="./">
+        <img src="images/Ampere Logo.webp" alt="Ampere Logo" height="30">
+    </a>
+    <button class="menuToggler" aria-label="Toggle Menu">MENU</button>
+</header>
+
+<nav id="header" role="navigation">
+    <ul class="nav-list">
+        <li><a href="what-are-load-banks">LOAD BANKS</a></li>
+        <li><a href="starline-tapbox-rental">STARLINE</a></li>
+        <li><a href="#">CABLES</a></li>
+        <li><a href="#">FLIR</a></li>
+        <li><a href="#">POWER QUALITY</a></li>
+        <li><a href="#">TRANSFORMERS</a></li>
+    </ul>
+</nav>
+
+<main class="content-wrapper">
+    <!-- Body content -->
+    <section class="body-content" role="main">
+        <p>Ampere is fully equipped and ready to assist with your load bank testing, rentals, and infrared scanning needs. Your load bank rental equipment will be delivered where and when you need it, ensuring optimal system performance and facility safety.</p>
+
+        <h1>Starline Busway Commissioning</h1>
+        <ul>
+            <li>Deliver 100% of the rated system amperage for the client-specified burn-in duration</li>
+            <li>Final visual inspection of safe system installation and verification of correct feed wiring</li>
+            <li>Validate meter operation and communication under load (if applicable)</li>
+            <li>Deliver test reports</li>
+        </ul>
+
+        <h2>Infrared Scanning</h2>
+        <ul>
+            <li>Thermal imaging of all busway components</li>
+            <li>Deliver detailed thermography report and photos</li>
+            <li>Full building IR scanning available</li>
+        </ul>
+
+        <h2>Load Bank Rentals</h2>
+        <ul>
+            <li>Flexible weekly and monthly rental contracts available</li>
+            <li>Rent Load Banks, Cable Sets, and/or Plug-In Adapters to test your system</li>
+            <li>Estimated freight included in quotation (pick-up and delivery)</li>
+        </ul>
+
+        <p>Our personnel will fully commission any Starline project through load banking and thermography services.</p>
+        <ul>
+            <li>Load bank testing combined with infrared scanning confirms busway installation integrity and system operational performance</li>
+            <li>Proactive inspection and reporting allow corrective action before accidents occur</li>
+            <li>Enhanced service plans with periodic IR scanning tailored to your maintenance program</li>
+            <li>Ideal for all Starline Track Busway installations and Mission Critical Facilities</li>
+        </ul>
+    </section>
+
+    <!-- Image container -->
+    <aside class="image-container" role="complementary">
+        <img src="/images/testing.webp" alt="Testing equipment" onclick="myFunction(this);">
+        <img src="/images/loadbank.webp" alt="Load bank equipment" onclick="myFunction(this);">
+        <img src="/images/tapbox.webp" alt="Tapbox setup" onclick="myFunction(this);">
+        <img src="/images/flir.webp" alt="Flir device" onclick="myFunction(this);">
+        <img src="/images/tapbox2.webp" alt="Additional tapbox view" onclick="myFunction(this);">
+    </aside>
+</main>
+
+<footer id="footer" role="contentinfo">
+    <ul>
+        <li><a href="#">AMPERE &copy; 2024</a></li>
+        <li><a href="#">PRIVACY & LEGAL</a></li>
+        <li><a href="contact">CONTACT</a></li>
+    </ul>
+</footer>
+
 </body>
-</head>
-<body>
-<div class="content-wrapper">
-  <!-- Body content on the left -->
-  <div class="body-content">
-    <p>Ampere is fully equipped and ready to assist with your load bank testing, rentals and infrared scanning needs. Your load bank rental equipment will be delivered where and when you need it, and will identify any thermal anomalies, extending equipment lifespan and ensuring optimal system performance, facility safety and operational sustainability.</p>
-
-    <h1>Starline Busway Commissioning</h1>
-    <ul>
-      <li>Deliver 100% of the rated system amperage for the client specified burn-in duration</li>
-      <li>Final visual inspection of safe system installation and verification of correct feed wiring</li>
-      <li>Validate meter operation and communication under load (if applicable)</li>
-      <li>Deliver test reports</li>
-    </ul>
-
-    <h2 class="ex2">Infrared Scanning</h2>
-    <ul>
-      <li>Thermal imaging of all busway components</li>
-      <li>Deliver detailed thermography report and photos</li>
-      <li>Full building IR scanning available</li>
-    </ul>
-
-    <h2 class="ex2">Load Bank Rentals</h2>
-    <ul>
-      <li>Flexible weekly and monthly rental contracts available</li>
-      <li>Rent Load Banks, Cable Sets and/or Plug-In Adapters to test your system</li>
-      <li>Estimated freight included in quotation (pick-up and delivery)</li>
-    </ul>
-
-    <p>Our personnel will fully commission any Starline project through load banking and thermography services.</p>
-    <ul>
-      <li>Load bank testing in combination with infrared scanning will confirm busway installation integrity and system operational performance</li>
-      <li>Proactive inspection, diagnosis, and reporting enable you to identify potential issues and take corrective action before an accident or a system failure occurs</li>
-      <li>Our service team can provide enhanced service plans that include periodic IR scanning based on your internal maintenance program</li>
-      <li>Perfect for all Starline Track Busway installations and Mission Critical Facilities</li>
-    </ul>
-  </div>
-
-  <!-- Image container on the right -->
-  <div class="image-container">
-    <img src="/images/testing.webp" alt="Testing" onclick="myFunction(this);">
-    <img src="/images/loadbank.webp" alt="Loadbank" onclick="myFunction(this);">
-    <img src="/images/tapbox.webp" alt="Tapbox" onclick="myFunction(this);">
-    <img src="/images/flir.webp" alt="Flir" onclick="myFunction(this);">
-    <img src="/images/tapbox2.webp" alt="Tapbox2" onclick="myFunction(this);">
-  </div>
-</div>
-
- 
-<div id="footer"><center>
-    <a href="">AMPERE &copy; 2024</a>
-    <a href="">PRIVACY & LEGAL</a>
-    <a href="contact">CONTACT</a>
-	</center>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script src="js/main.js"></script>
-	</body>
-	
 </html>
