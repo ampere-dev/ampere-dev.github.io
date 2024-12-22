@@ -41,22 +41,22 @@
 </head>
 
 <style>
-/* Common styles */
+
+p {
+  margin-left: 20px;
+}
+	
 h1 {
-  background-color: #E5E5E5;
+  background-color: #E5E5E5; 
   margin: 20px;
   padding: 10px;
   font-size: 1.5em;
 }
-
-h2 {
-  background-color: #E5E5E5;
+	    
+h2.ex2 {
+  background-color: #E5E5E5; 
   margin: 20px;
   padding: 10px;
-}
-
-p {
-  margin: 20px;
 }
 
 ul {
@@ -67,75 +67,135 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-a {
+/* unvisited link */
+a:link {
+  color: black;
   text-decoration: none;
+}
+
+/* visited link */	
+a:visited {
   color: black;
 }
 
+/* mouse over link */
 a:hover {
   color: #FE0002;
 }
+	
+nav a:hover {
+  color: #FE0002;
+}
+        
+#logo a {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
 
-/* Layout styles */
+#header a {
+padding: 0px 10px;
+word-wrap: normal;
+display: inline-block;
+margin-top: 25px;
+}
+
+#footer a { 
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+   /*  margin-top: 800px; */
+}
+		
+* {
+  box-sizing: border-box;
+}
+
+/* Main layout container */
 .content-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0;
-  height: 100vh;
-  overflow: hidden;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
 }
 
+/* Body content on the left */
 .body-content {
-  flex: 2;
+  flex: 2; /* Occupy 2/3 of the width */
   margin: 20px;
-  overflow-y: auto;
+  overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
 }
 
+/* Image container on the right with collage layout */
 .image-container {
-  flex: 1;
+  flex: 1; /* Occupy 1/3 of the width */
   display: grid;
   grid-template-areas:
     "img1 img2"
     "img3 img2"
     "img3 img4"
     "img5 img4";
-  gap: 10px;
-  padding: 10px;
+  gap: 10px; /* Add margin between images */
+  padding: 10px; /* Optional padding around the collage */
   box-sizing: border-box;
-  height: 100%;
+  height: 100%; /* Full height of the container */
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
+  object-fit: cover; /* Ensures images fill their grid area */
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
 }
 
-/* Responsive design */
+/* Specific layout for each image */
+.image-container img:nth-child(1) {
+  grid-area: img1;
+}
+
+.image-container img:nth-child(2) {
+  grid-area: img2;
+}
+
+.image-container img:nth-child(3) {
+  grid-area: img3;
+}
+
+.image-container img:nth-child(4) {
+  grid-area: img4;
+}
+
+.image-container img:nth-child(5) {
+  grid-area: img5;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
-    height: auto;
+    height: auto; /* Allow scrolling for smaller screens */
   }
 
   .body-content {
     flex: none;
-    width: 100%;
+    width: 100%; /* Full width on small screens */
     margin-bottom: 20px;
   }
 
   .image-container {
-    grid-template-areas:
-      "img1"
-      "img2"
-      "img3"
-      "img4"
-      "img5";
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5"; /* Stack images in a single column */
     flex: none;
+    width: 100%; /* Full width */
+    gap: 10px; /* Maintain gap for stacked layout */
+  }
+
+  .image-container img {
     width: 100%;
+    height: auto; /* Maintain aspect ratio */
   }
 }
 </style>
