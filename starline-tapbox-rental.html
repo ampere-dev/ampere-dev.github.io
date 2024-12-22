@@ -201,9 +201,9 @@ margin-top: 25px;
 /* Container for carousel */
 .carousel {
   display: flex;  /* Use flexbox to arrange items side by side */
-  justify-content: space-between; /* Distribute items evenly */
+  justify-content: space-evenly; /* Evenly distribute items with less space */
   align-items: center; /* Vertically align items */
-  margin: 20px 0;  /* Optional: adjust margins */
+  margin: 0;  /* Remove any extra margins */
 }
 
 /* Each box containing the icon and text */
@@ -212,24 +212,28 @@ margin-top: 25px;
   flex-direction: column; /* Stack image and text vertically */
   align-items: center; /* Center content horizontally */
   text-align: center; /* Align text below the icon */
+  margin: 0 10px; /* Reduced space between items */
 }
 
+/* Icon size and spacing */
 .carousel img {
-  width: 50px; /* Set the icon size */
-  height: 50px; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Space between image and text */
+  width: 40px; /* Adjusted icon size */
+  height: 40px; /* Maintain aspect ratio */
+  margin-bottom: 5px; /* Reduced space between image and text */
 }
 
+/* Links styling */
 .carousel a {
   text-decoration: none; /* Remove underline from links */
   color: black; /* Change text color */
-  font-size: 14px; /* Adjust font size if necessary */
-  font-weight: bold; /* Optional: Make text bold */
+  font-size: 12px; /* Smaller font size */
+  font-weight: normal; /* Adjust font weight */
 }
 
 .carousel a:hover {
   color: #FE0002; /* Change color on hover */
 }
+
 </style>
 <body>
 <div id="logo">
