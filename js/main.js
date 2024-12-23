@@ -3,7 +3,7 @@ $(document).ready(function() {
         dots: false,            // No dots for navigation
         arrows: true,           // Enable arrows for navigation
         infinite: false,        // Disable infinite looping
-        centerMode: false,      // No centering
+        centerMode: true,      // No centering
         slidesToShow: 3,        // Adjust the number of visible items
         slidesToScroll: 1,      // Number of items to scroll at a time
         prevArrow: "<button type='button' class='mission-prev-arrow'><i class='fa fa-3x fa-chevron-circle-left'></i></button>",
