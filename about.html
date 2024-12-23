@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ampere.dev empowers developers, engineers, and businesses with tools, resources, and community-driven support to innovate with precision and efficiency." />
+<meta name="keywords" content="Ampere.dev, developer tools, engineering solutions, software development, innovation, technical resources, community support" />
+<title>About Ampere.dev | Empowering Innovation</title>
+
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://ampere.dev/about" />
+
+    <!-- Preload & Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+
+    <!-- Favicon -->
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/hamburgerdark.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script> <!-- Latest jQuery -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script> <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script> <!-- Bootstrap 5 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> <!-- Swiper.js -->
+    <script src="js/main.js" defer></script> <!-- Your custom JS -->
+
+    <style>
+/* Chapternav Container */
+.chapternav-container {
+    margin: 10px auto; /* Center the container */
+    max-width: 20%; /* Allow full width for scrolling */
+    display: flex;
+    justify-content: center; /* Center items */
+}
+
+/* Chapternav */
+.chapternav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    /*background-color: #f9f9f9;*/
+    /*border: 1px solid #ddd;*/
+    width: 100%; /* Ensure full-width container */
+}
+
+/* Scrolling Area */
+.chapternav-scroll {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    justify-content: center; /* Center content */
+    scrollbar-width: none; /* Firefox */
+    width: 100%; /* Full width for scrolling */
+}
+
+.chapternav-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* Chapternav Items */
+.chapternav-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-decoration: none;
+    color: #FE0002; /* Red font color */
+    font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    width: 80px; /* Increase width if needed */
+    height: 80px; /* Ensure consistent height */
+}
+
+/* Icon Styling */
+.chapternav-item img {
+    width: 40px; /* Icon size */
+    height: 40px; /* Maintain aspect ratio */
+    margin-bottom: 5px;
+}
+
+
+
+p {
+  margin-left: 20px;
+}
+	
+h1 {
+  background-color: #E5E5E5; 
+  margin: 20px;
+  padding: 10px;
+  font-size: 1.5em;
+}
+	    
+h2.ex2 {
+  background-color: #E5E5E5; 
+  margin: 20px;
+  padding: 10px;
+}
+
+ul {
+  margin: 20px;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */	
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FE0002;
+}
+	
+nav a:hover {
+  color: #FE0002;
+}
+        
+#logo a {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+
+#header a {
+padding: 0px 10px;
+word-wrap: normal;
+display: inline-block;
+margin-top: 25px;
+}
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+#footer img {
+    vertical-align: middle;
+}
+	
+* {
+  box-sizing: border-box;
+}
+
+/* Main layout container */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  height: auto;
+}
+
+/* Body content on the left */
+.body-content {
+  flex: 2; /* Occupy 2/3 of the width */
+  margin: 20px;
+  overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
+}
+
+/* Image container on the right with collage layout */
+.image-container {
+  flex: 1; /* Occupy 1/3 of the width */
+  display: grid;
+  grid-template-areas:
+    "img1 img2"
+    "img3 img2"
+    "img3 img4"
+    "img5 img4";
+  gap: 10px; /* Add margin between images */
+  padding: 10px; /* Optional padding around the collage */
+  box-sizing: border-box;
+  height: 100%; /* Full height of the container */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill their grid area */
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
+}
+
+/* Specific layout for each image */
+.image-container img:nth-child(1) {
+  grid-area: img1;
+}
+
+.image-container img:nth-child(2) {
+  grid-area: img2;
+}
+
+.image-container img:nth-child(3) {
+  grid-area: img3;
+}
+
+.image-container img:nth-child(4) {
+  grid-area: img4;
+}
+
+.image-container img:nth-child(5) {
+  grid-area: img5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    height: auto; /* Allow scrolling for smaller screens */
+  }
+
+  .body-content {
+    flex: none;
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 20px;
+  }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Logo and Header -->
+    <div id="logo">
+        <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
+
+    </div>
+    <div id="header">
+        <center>
+            <a href="what-are-load-banks">LOAD BANKS</a>
+            <a href="starline-tapbox-rental">STARLINE</a>
+            <a href="">CABLES</a>
+            <a href="">FLIR</a>
+            <a href="">POWER QUALITY</a>
+            <a href="">TRANSFORMERS</a>
+        </center>
+    </div>
+
+<main class="content-wrapper">
+    <!-- Body content -->
+    <section class="body-content" role="main">
+<section>
+    <h1>About</h1>
+    <p><strong>Designed, Innovative, Dynamic</strong> - Simple words with strong connotations. Our solutions are carefully crafted (designed) to address real-world challenges, blending functionality with user-centric excellence. We stay ahead of the curve by embracing bold ideas and pioneering approaches (innovative), ensuring that every tool, service, and insight we provide adds meaningful value. In a world of constant change, we remain agile and adaptable (dynamic), equipping developers, engineers, and businesses with the resources they need to thrive in an ever-evolving technological landscape. Together, these principles define who we are and how we empower our community to build a better future.</p>
+
+    <h1>Who</h1>
+    <p>Ampere.dev is built by a passionate team of developers, engineers, and industry experts who believe in the power of collaboration and open innovation. Rooted in being designed, innovative, and dynamic, our diverse team combines expertise in software development, hardware engineering, and systems integration. United by a shared goal, we strive to make high-quality tools, insights, and solutions accessible to everyone, empowering individuals and organizations to unlock their full potential.</p>
+
+    <h1>What</h1>
+    <ul>
+        <li><strong>Developer Tools:</strong> Whether you’re building a web app, optimizing system performance, or prototyping the next big thing, our tools are designed to streamline your workflow and maximize productivity.</li>
+        <li><strong>Knowledge Base:</strong> Explore a growing library of articles, tutorials, and technical guides covering a wide range of topics—from beginner basics to advanced industry techniques.</li>
+        <li><strong>Custom Solutions:</strong> Need tailored support for your unique challenges? Our team offers consultancy services and custom development to help you tackle complex problems with confidence.</li>
+        <li><strong>Community Engagement:</strong> We’re more than a platform—we’re a community. Join forums, participate in discussions, and collaborate with like-minded professionals who share your passion for innovation.</li>
+    </ul>
+
+    <h1>Vision</h1>
+    <p>We envision a future where technology is not a barrier but a bridge. Designed to inspire, driven by innovation, and dynamic in approach, our mission is to empower individuals and organizations with the right tools and knowledge. By doing so, we aim to unlock the full potential of innovation and bring transformative ideas to life.</p>
+
+    <h1>Why?</h1>
+    <ul>
+        <li><strong>Expertise You Can Trust:</strong> Decades of combined experience in software and hardware engineering.</li>
+        <li><strong>User-Centric Design:</strong> Every solution is crafted with the developer and end-user in mind.</li>
+        <li><strong>Continuous Evolution:</strong> We stay ahead of industry trends to ensure you have access to the latest and most effective technologies.</li>
+        <li><strong>Community-Driven:</strong> Your feedback and contributions shape our growth and direction.</li>
+    </ul>
+
+    <h1>Get in Touch</h1>
+    <p>We’d love to hear from you! Whether you have a question, need support, or want to collaborate, reach out to us today.</p>
+
+    <p>Together, let’s power the future of technology.</p>
+</section>
+
+</main>
+    <!-- Footer -->
+<div id="footer">
+    <center>
+        <a href="about">ABOUT</a> |
+        <a href="products">PRODUCTS</a> |
+        <a href="products">BLOG</a> |
+        <a href="privacy-legal">PRIVACY & LEGAL</a> |
+        <a href="contact">CONTACT</a>
+    </center>
+    <center>
+        <a href="" target="_blank">
+            <img src="icons/facebook-logo.png" alt="Facebook" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+        <a href="" target="_blank">
+            <img src="icons/logo-black.png" alt="X" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+        <a href="" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" style="width:25px; height:20px; margin:0 5px;">
+        </a>
+        <a href="" target="_blank">
+            <img src="icons/instagram-logo.png" alt="Instagram" style="width:30px; height:30px; margin:0 5px;">
+        </a>
+    </center>
+    <center>
+        <p>AMPERE &copy; 2025</p>
+    </center>
+</div>
+
+</body>
+</html>
 
