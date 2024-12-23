@@ -37,6 +37,7 @@ body {
 	color: white;
 	background: url(images/Collage.webp) no-repeat center center fixed;
 	background-size: cover;
+	flex: 1; /* Allow body to expand */
 }
 
 /* Center main content and reduce text block height */
@@ -49,7 +50,7 @@ main {
 	color: white;
 	border-radius: 10px; /* Optional: Adds rounded corners */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
-	display: inline-block; /* Ensure the background only fits around the content */
+    flex: 1; /* Take up remaining space */
 }
 
 /* Adjust heading and paragraph spacing to reduce height */
@@ -80,17 +81,24 @@ footer {
     margin-top: auto; /* Push footer to the bottom */
 }
 
-#footer a {
-    margin: 0 10px;
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: white;
     text-decoration: none;
 }
 
-#footer a:hover {
-    text-decoration: none;
-}
-
-#footer img {
-    vertical-align: middle;
+footer ul li a:hover {
+    color: #FE0002;
 }
 
 /* Centering navigation bar */
