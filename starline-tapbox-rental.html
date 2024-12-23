@@ -25,15 +25,20 @@
     <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
 
     <!-- Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/hamburgerdark.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="js/main.js" defer></script> <!-- Your custom JS -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script> <!-- Latest jQuery -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script> <!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script> <!-- Bootstrap 5 -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> <!-- Swiper.js -->
+<script src="js/main.js" defer></script> <!-- Your custom JS -->
+
 </head>
 <style>
 
@@ -191,83 +196,60 @@ margin-top: 25px;
     width: 100%;
     height: auto; /* Maintain aspect ratio */
   }
-    
-/* General Styling */
-body {
-  font-family: "Ubuntu", sans-serif;
-  margin: 0;
-  padding: 0;
+
+/* Carousel Container */
+.carousel {
+  display: flex; /* Arrange items side by side */
+  justify-content: space-evenly; /* Evenly distribute items */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  margin: 0 auto; /* Center the carousel within its container */
+  max-width: 50%; /* Prevent overflow */
+  padding: 10px; /* Add some inner spacing */
 }
 
-/* Chapternav Styling */
-.chapternav {
+/* Individual Box */
+.carousel {
   display: flex;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
+  justify-content: center; /* Center all items horizontally */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center carousel within parent container */
+  max-width: 100%;
   padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  text-align: center; /* Center text inside the carousel */
 }
 
-.chapternav-scroll {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 15px;
-  padding: 10px 0;
-  flex: 1;
-  scrollbar-width: none; /* Firefox */
+/* Icon Styling */
+.carousel img {
+  display: block; /* Ensures proper block behavior */
+  width: 40px; /* Set icon width */
+  height: 40px; /* Set icon height */
+  margin-bottom: 8px; /* Space between icon and text */
 }
 
-.chapternav-scroll::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+/* Link Styling */
+.carousel a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set text color */
+  font-size: 14px; /* Adjust text size */
+  font-weight: normal; /* Set normal font weight */
+  display: flex; /* Make the link a flex container */
+  flex-direction: column; /* Ensure icon and text are stacked */
+  align-items: center; /* Center content */
 }
 
-.chapternav-item {
-  flex-shrink: 0;
-  text-decoration: none;
-  color: #0071e3;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-  text-align: center;
+.carousel a:hover {
+  color: #FE0002; /* Change color on hover */
 }
 
-.chapternav-item:hover {
-  background-color: #f0f0f0;
-}
-
-.scroll-btn {
-  border: none;
-  background: none;
-  font-size: 20px;
-  padding: 10px;
-  cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.scroll-btn:disabled {
-  opacity: 0.2;
-  cursor: not-allowed;
-}
-
-.scroll-btn:hover:not(:disabled) {
-  opacity: 1;
-}
 </style>
 <body>
 <div id="logo">
     <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
     <div class="menuToggler">MENU</div>
 </div>
-<div id="header">
-    <center>
+<div id="header"><center>
         <a href="what-are-load-banks">LOAD BANKS</a>
         <a href="starline-tapbox-rental">STARLINE</a>
         <a href="">CABLES</a>
@@ -276,28 +258,60 @@ body {
         <a href="">TRANSFORMERS</a>
     </center>
 </div>
-
-<!-- CHAPTERNAV START -->
-<div class="chapternav">
-    <button class="scroll-btn left" aria-label="Scroll Left" disabled>&lt;</button>
-    <div class="chapternav-scroll">
-        <a href="#tapbox" class="chapternav-item">Tap Box</a>
-        <a href="#paddle" class="chapternav-item">Paddle</a>
-        <a href="#commissioning" class="chapternav-item">Commissioning</a>
-        <a href="#accessories" class="chapternav-item">Accessories</a>
-        <a href="#manuals" class="chapternav-item">Manuals</a>
-        <a href="#tools" class="chapternav-item">Tools</a>
+<!-- ICON SLIDER START -->
+<div class="carousel">
+    <div class="box">
+        <a href="starline-tapbox-rental">
+            <img src="icons/tapbox.webp" alt="Tap Box">
+            <span>Tap Box</span>
+        </a>
     </div>
-    <button class="scroll-btn right" aria-label="Scroll Right">&gt;</button>
+    <div class="box">
+        <a href="starline-tapbox-paddle">
+            <img src="icons/stab.webp" alt="Paddle">
+            <span>Paddle</span>
+        </a>
+    </div>
+    <div class="box">
+        <a href="starline-busway-commissioning">
+            <img src="icons/cx.webp" alt="Commissioning">
+            <span>Commissioning</span>
+        </a>
+    </div>
 </div>
-<!-- CHAPTERNAV END -->
+<!-- ICON SLIDER END -->
+
 
 <main class="content-wrapper">
     <!-- Body content -->
     <section class="body-content" role="main">
         <h1>Starline Tapbox Rental</h1>
-        <p>Tap-off boxes are essential for drawing power from a busway system...</p>
+        <p>Tap-off boxes are essential for drawing power from a busway system. These boxes feature a specialized plug head, commonly referred to as a <em>paddle</em>, which is inserted into the busway track slot. Once inserted, the tap-off box is twisted 90 degrees to establish an electrical connection. This action engages the paddle assembly blades with the busbar channel inside the busway track, forming a secure compression connection.</p>
+        <p>These tap-off boxes facilitate overhead power distribution networks by providing a seamless connection system. They are especially valuable for commissioning busways and verifying system operation when paired with a load bank and cables.</p>
+        <h1>Key Features and Specifications</h1>
+        <ul>
+            <li><strong>Compatibility</strong>: Designed for use with the B400T5 series busway.</li>
+            <li><strong>Electrical Rating</strong>: 600V, 400A.</li>
+            <li><strong>Compact and Portable</strong>:
+            <li><strong>Weight</strong>: 40 lbs.</li>
+            <li><strong>Dimensions</strong>: 8 x 12 x 20 inches (L x W x H).</li>
+        </ul>
+        <h1>Safety Guidelines</h1>
+        <p>To ensure maximum safety during installation and removal of the tap-off boxes:</p>
+        <ul>
+            <li>Adhere to <strong>NFPA 70E</strong> standards for electrical safety in the workplace.</li>
+            <li>Properly assess and mitigate arc flash and electrical hazards before engaging with the system.</li>
+            <li>Use appropriate personal protective equipment (PPE) and tools during all handling procedures.</li>
+        </ul>
+        <p><strong>Note</strong>: Always ensure the busway power distribution system is de-energized before connecting or disconnecting a tap-off box to prevent accidents.</p>
     </section>
+    <!-- Image container -->
+    <aside class="image-container" role="complementary">
+        <img src="images/Front T5400.webp" alt="Front">
+        <img src="images/Side T5400.webp" alt="Side">
+        <img src="images/Rear T5400.webp" alt="Rear">
+        <img src="images/Stab T5400.webp" alt="Stab">
+    </aside>
 </main>
 <div id="footer">
     <center>
@@ -306,40 +320,5 @@ body {
         <a href="contact">CONTACT</a>
     </center>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const chapternav = document.querySelector(".chapternav-scroll");
-    const btnLeft = document.querySelector(".scroll-btn.left");
-    const btnRight = document.querySelector(".scroll-btn.right");
-
-    // Update button states
-    const updateButtons = () => {
-        btnLeft.disabled = chapternav.scrollLeft === 0;
-        btnRight.disabled = chapternav.scrollLeft + chapternav.clientWidth >= chapternav.scrollWidth;
-    };
-
-    // Scroll left
-    btnLeft.addEventListener("click", () => {
-        chapternav.scrollBy({
-            left: -chapternav.clientWidth / 2,
-            behavior: "smooth",
-        });
-    });
-
-    // Scroll right
-    btnRight.addEventListener("click", () => {
-        chapternav.scrollBy({
-            left: chapternav.clientWidth / 2,
-            behavior: "smooth",
-        });
-    });
-
-    // Update buttons on scroll
-    chapternav.addEventListener("scroll", updateButtons);
-
-    // Initial button state
-    updateButtons();
-});
-</script>
 </body>
 </html>
