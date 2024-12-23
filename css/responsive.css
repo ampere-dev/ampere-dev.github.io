@@ -48,7 +48,7 @@
     padding: 10px;
     border: 1px solid rgb(24, 24, 24);
     z-index: 99;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Ubuntu", sans-serif;
   }
   .menuToggler span {
     display: block;
