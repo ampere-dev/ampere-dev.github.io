@@ -198,39 +198,47 @@ margin-top: 25px;
 
 /* Container for carousel */
 .carousel {
-  display: flex;  /* Use flexbox to arrange items side by side */
-  justify-content: space-evenly; /* Evenly distribute items with less space */
-  align-items: center; /* Vertically align items */
-  margin: 0;  /* Remove any extra margins */
+  display: flex; /* Arrange items side by side */
+  justify-content: space-evenly; /* Evenly distribute items */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  margin: 0 auto; /* Center the carousel in its container */
+  max-width: 100%; /* Ensure it doesn't overflow */
+  padding: 10px; /* Add some inner spacing */
 }
 
 /* Each box containing the icon and text */
 .carousel .box {
   display: flex;
-  flex-direction: column; /* Stack image and text vertically */
+  flex-direction: column; /* Stack icon and text vertically */
   align-items: center; /* Center content horizontally */
   text-align: center; /* Align text below the icon */
-  margin: 0 10px; /* Reduced space between items */
+  margin: 10px; /* Add space around each box */
+  width: 80px; /* Set a consistent width for alignment */
 }
 
 /* Icon size and spacing */
 .carousel img {
-  width: 40px; /* Adjusted icon size */
-  height: 40px; /* Maintain aspect ratio */
-  margin-bottom: 3px; /* Reduced space between image and text */
+  width: 40px; /* Set icon width */
+  height: 40px; /* Set icon height */
+  margin-bottom: 5px; /* Add space between the icon and text */
 }
 
 /* Links styling */
 .carousel a {
   text-decoration: none; /* Remove underline from links */
-  color: black; /* Change text color */
-  font-size: 12px; /* Smaller font size */
-  font-weight: normal; /* Adjust font weight */
+  color: black; /* Set default text color */
+  font-size: 12px; /* Set smaller text size */
+  font-weight: normal; /* Set normal font weight */
+  display: flex; /* Make the link a flex container */
+  flex-direction: column; /* Ensure icon and text are vertical */
+  align-items: center; /* Center content */
 }
 
 .carousel a:hover {
-  color: #FE0002; /* Change color on hover */
+  color: #FE0002; /* Set hover color */
 }
+
 </style>
 <body>
 <div id="logo">
@@ -250,21 +258,25 @@ margin-top: 25px;
 <div class="carousel">
     <div class="box">
         <a href="starline-tapbox-rental">
-            <img src="icons/tapbox.webp" alt="Tap Box">Tap Box
+            <img src="icons/tapbox.webp" alt="Tap Box">
+            <span>Tap Box</span>
         </a>
     </div>
     <div class="box">
         <a href="starline-tapbox-paddle">
-            <img src="icons/stab.webp" alt="Paddle">Paddle
+            <img src="icons/stab.webp" alt="Paddle">
+            <span>Paddle</span>
         </a>
     </div>
     <div class="box">
         <a href="starline-busway-commissioning">
-            <img src="icons/cx.webp" alt="Commissioning">Commissioning
+            <img src="icons/cx.webp" alt="Commissioning">
+            <span>Commissioning</span>
         </a>
     </div>
 </div>
 <!-- ICON SLIDER END -->
+
 <main class="content-wrapper">
     <!-- Body content -->
     <section class="body-content" role="main">
