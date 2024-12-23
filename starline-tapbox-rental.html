@@ -23,6 +23,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -33,14 +34,75 @@
     <link href="css/responsive.css" rel="stylesheet" />
 
     <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script> <!-- Latest jQuery -->
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script> <!-- Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script> <!-- Bootstrap 5 -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> <!-- Swiper.js -->
-<script src="js/main.js" defer></script> <!-- Your custom JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script> <!-- Latest jQuery -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script> <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script> <!-- Bootstrap 5 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> <!-- Swiper.js -->
+    <script src="js/main.js" defer></script> <!-- Your custom JS -->
 
-</head>
-<style>
+    <style>
+/* Chapternav Container */
+.chapternav-container {
+    margin: 10px auto; /* Center the container */
+    max-width: 20%; /* Allow full width for scrolling */
+    display: flex;
+    justify-content: center; /* Center items */
+}
+
+/* Chapternav */
+.chapternav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    /*background-color: #f9f9f9;*/
+    /*border: 1px solid #ddd;*/
+    width: 100%; /* Ensure full-width container */
+}
+
+/* Scrolling Area */
+.chapternav-scroll {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    justify-content: center; /* Center content */
+    scrollbar-width: none; /* Firefox */
+    width: 100%; /* Full width for scrolling */
+}
+
+.chapternav-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* Chapternav Items */
+.chapternav-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-decoration: none;
+    color: #FE0002; /* Red font color */
+    font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    width: 80px; /* Increase width if needed */
+    height: 80px; /* Ensure consistent height */
+}
+
+/* Icon Styling */
+.chapternav-item img {
+    width: 40px; /* Icon size */
+    height: 40px; /* Maintain aspect ratio */
+    margin-bottom: 5px;
+}
+
+
 
 p {
   margin-left: 20px;
@@ -197,21 +259,44 @@ margin-top: 25px;
     height: auto; /* Maintain aspect ratio */
   }
 
-</style>
+    </style>
+</head>
 <body>
-<div id="logo">
-    <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
-    <div class="menuToggler">MENU</div>
-</div>
-<div id="header"><center>
-        <a href="what-are-load-banks">LOAD BANKS</a>
-        <a href="starline-tapbox-rental">STARLINE</a>
-        <a href="">CABLES</a>
-        <a href="">FLIR</a>
-        <a href="">POWER QUALITY</a>
-        <a href="">TRANSFORMERS</a>
-    </center>
-</div>
+
+    <!-- Logo and Header -->
+    <div id="logo">
+        <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
+
+    </div>
+    <div id="header">
+        <center>
+            <a href="what-are-load-banks">LOAD BANKS</a>
+            <a href="starline-tapbox-rental">STARLINE</a>
+            <a href="">CABLES</a>
+            <a href="">FLIR</a>
+            <a href="">POWER QUALITY</a>
+            <a href="">TRANSFORMERS</a>
+        </center>
+    </div>
+
+    <div class="chapternav-container">
+        <div class="chapternav">
+            <div class="chapternav-scroll">
+                <a href="#tapbox" class="chapternav-item">
+                    <img src="icons/tapbox.webp" alt="Tap Box">
+                    <span>Tap Box</span>
+                </a>
+                <a href="#paddle" class="chapternav-item">
+                    <img src="icons/stab.webp" alt="Paddle">
+                    <span>Paddle</span>
+                </a>
+                <a href="#commissioning" class="chapternav-item">
+                    <img src="icons/cx.webp" alt="Commissioning">
+                    <span>Commissioning</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
 <main class="content-wrapper">
     <!-- Body content -->
@@ -244,12 +329,14 @@ margin-top: 25px;
         <img src="images/Stab T5400.webp" alt="Stab">
     </aside>
 </main>
-<div id="footer">
-    <center>
-        <a href="">AMPERE &copy; 2024</a>
-        <a href="">PRIVACY & LEGAL</a>
-        <a href="contact">CONTACT</a>
-    </center>
-</div>
+    <!-- Footer -->
+    <div id="footer">
+        <center>
+            <a href="">AMPERE &copy; 2024</a>
+            <a href="">PRIVACY & LEGAL</a>
+            <a href="contact">CONTACT</a>
+        </center>
+    </div>
+
 </body>
 </html>
