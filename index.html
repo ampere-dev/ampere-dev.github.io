@@ -21,7 +21,26 @@
 
 	<!-- Internal Styles -->
 	<style>
-/* Reset some basic elements */
+
+/* Overlay to darken entire page */
+html::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+    z-index: 1; /* Ensure it covers all elements */
+    pointer-events: none; /* Allow interactions with underlying content */
+}
+
+/* Adjust stacking of other elements */
+body, main, header, nav, footer {
+    position: relative;
+    z-index: 2; /* Bring these elements above the overlay */
+}
+		
 html, body {
 	height: 100%;
 	margin: 0;
