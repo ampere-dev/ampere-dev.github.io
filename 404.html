@@ -7,87 +7,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://ampere.dev/" />
     <title>404 - Page Not Found | Ampere</title>
-	<style>
-* {
-  box-sizing: border-box;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-h1 {
-    text-align:center;
-}
-	
-body {
-  margin: 0;
-  font-family: "Ubuntu", "sans-serif";
-  font-weight: 300;
-  font-size: 15px;*/
-  overflow: hidden; /* Hide scrollbars */
-}	
+        body {
+            margin: 0;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            background: #000;
+            color: #fff;
+        }
 
-#myVideo {
-  width: 105%; 
-  height: 100%;
-  z-index: -1;
-  background-size: contain;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
+        #myVideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
 
-/* Position text in the middle of the page/image */
-.bg-text0 {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
-  color: white;
-  font-family: "Helvetica Neue", sans-serif;
-  border: 2px solid red;
-  position: fixed;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  padding: 10px;
-  text-align: justify;
-}
+        .content-wrapper {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-.bg-text1 {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
-  color: white;
-  font-family: "Helvetica Neue", sans-serif;
-  border: 2px solid red;
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  padding: 10px;
-  text-align: justify;
-}
-</style>
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 1px solid #ff4c4c;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 20px;
+            max-width: 600px;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 1.5rem;
+            }
+
+            .content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<video autoplay allowfullscreen muted loop id="myVideo">
-  <source src="video/Resistor burning .webm" type="video/webm">
-  Your browser does not support HTML5 video.
-</video>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/Resistor burning.webm" type="video/webm">
+        Your browser does not support HTML5 video.
+    </video>
 
-<div class="bg-text0"
-	<center><h1>404 - Page Not Found</h1></center>
+    <div class="content-wrapper">
+        <div class="content">
+            <h1>404 - Page Not Found</h1>
+            <p>
+                In honor of this moment, let’s take 24 seconds to watch this 68Ω, 5% tolerance resistor achieve its maximum capacity.
+            </p>
+        </div>
 
-<p>In honour of this, lets take precisely 24-seconds to watch this 68Ω 5% tolerance resistor achieve maximum capacity.</p>
-  
-<p>One of the most irritating things on the internet has to be the ‘404 Not Found’ error message. The message is a HTTP standard response code generated when a user attempts to follow a broken or dead link.
+        <div class="content">
+            <p>
+                One of the most frustrating things on the internet has to be the ‘404 Not Found’ error message. This HTTP standard response code appears when a user encounters a broken or dead link.
+            </p>
+            <p>
+                While the explanation might seem straightforward, the origin of the error code has an interesting twist. As legend has it, the term dates back to the 1980s, when scientists at CERN worked on what would become the World Wide Web.
+            </p>
+        </div>
 
-<p>This explanation might be pretty straight forward, but could there be more to the story?
-	</div>
-<div class="bg-text1"	
-<p>As legend has it, the origin of the error message has a very interesting story dating all the way back to the 1980s when a group of scientists at CERN (Switzerland) started working on what would become the World Wide Web. In order to achieve this goal, the scientists worked to create a database infrastructure that offered open access to data in various formats.
-
-<p>The World Wide Web’s central database was located in the office on the fourth floor of a building — room 404 to be exact. Inside the office, two or three people were tasked with manually locating requested files and transferring them over the network to the person who made the request. But not all requests could be fulfilled, because of problems such as people entering the wrong file name. When these problems became more common, the people that made the faulty request were met with a standard message: “Room 404: file not found”.
-
-<p>The technology would eventually allow the manual processes to become automated, but the error message adopted to be the HTTP standard response code would keep the room number. Sorry, but I couldn't resist sharing this.</p>
-</div>
+        <div class="content">
+            <p>
+                The central database was located in an office on the fourth floor — room 404, to be exact. Inside, a team manually located and transferred requested files over the network. When requests couldn’t be fulfilled (e.g., due to typos), users were met with the message: “Room 404: file not found.”
+            </p>
+            <p>
+                This quirky story stayed with the HTTP error code standard. Now, every time you see a 404 error, you’re encountering a piece of internet history!
+            </p>
+        </div>
+    </div>
 
 </body>
 </html>
