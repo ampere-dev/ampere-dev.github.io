@@ -208,12 +208,15 @@ margin-top: 25px;
 }
 
 /* Individual Box */
-.carousel .box {
+.carousel {
   display: flex;
-  flex-direction: column; /* Stack icon and text vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Align text below the icon */
-  margin: 10px; /* Space around each box */
+  justify-content: center; /* Center all items horizontally */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center carousel within parent container */
+  max-width: 100%;
+  padding: 10px;
+  text-align: center; /* Center text inside the carousel */
 }
 
 /* Icon Styling */
