@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://ampere.dev/starline-tapbox-paddle.html">
+  <title>Redirecting to Another page in HTML</title>
+  <!-- Redirecting to another page using meta tag -->
+  <meta http-equiv="refresh" content="5; url =https://ampere.dev/starline-tapbox-paddle.html" />
 </head>
+
 <body>
-    <p>If not redirected, click <a href="https://ampere.dev/starline-tapbox-paddle.html">here</a>.</p>
+  <h3>
+    Redirecting to Another page in HTML
+  </h3>
+  <p><strong>Note:</strong> If your browser supports Refresh, you'll be
+    redirected to the updated webpage, in 5 seconds.
+  </p>
 </body>
+
 </html>
