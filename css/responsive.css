@@ -26,6 +26,10 @@
         transition: all 0.3s ease; /* Smooth animation */
     }
 
+    .menuToggler:hover {
+    background: rgba(0, 0, 0, 0.1); /* Subtle grey on hover */
+    }
+
     /* Transform hamburger into "X" when active */
     .menuToggler.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
