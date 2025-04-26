@@ -19,10 +19,10 @@
 
     .menuToggler span {
         display: block;
-        height: 2px;
-        background-color: rgb(24, 24, 24); /* Black for visibility */
-        margin: 5px 5px; /* Tighter spacing */
-        width: 20px; /* Consistent width */
+        height: 3px; /* Slightly thicker lines for better visibility */
+        background-color: #000000; /* Explicit black */
+        margin: 4px 5px; /* Adjust spacing if needed */
+        width: 22px; /* Slightly wider for balance */
         transition: all 0.3s ease; /* Smooth animation */
     }
 
