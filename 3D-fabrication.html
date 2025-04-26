@@ -146,19 +146,32 @@ nav a:hover {
     overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
 }
 
-/* Video container on the right */
-.video-container {
+/* Media container on the right (for video and image) */
+.media-container {
     flex: 1; /* Occupy 1/3 of the width */
     margin: 20px;
-    max-width: 400px; /* Limit the width of the video */
-    overflow: hidden; /* Prevent overflow */
+    max-width: 400px; /* Limit the width of the media */
+    display: flex;
+    flex-direction: column; /* Stack video and image vertically */
+    gap: 20px; /* Space between video and image */
 }
 
-.video-container video, .video-container iframe {
+/* Video styles */
+.media-container video {
     width: 100%;
     height: auto;
     border-radius: 8px; /* Optional: Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for aesthetics */
+    opacity: 0; /* Start with 0 opacity for fade-in */
+    animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
+}
+
+/* Image styles */
+.media-container img.content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Match video's rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match video's shadow */
     opacity: 0; /* Start with 0 opacity for fade-in */
     animation: fadeIn 2s ease-in forwards; /* Apply fade-in animation */
 }
@@ -186,14 +199,15 @@ nav a:hover {
         margin-bottom: 20px;
     }
 
-    .video-container {
+    .media-container {
         flex: none;
         width: 100%;
         max-width: 100%; /* Full width on smaller screens */
         margin: 0 20px 20px 20px;
     }
 
-    .video-container video, .video-container iframe {
+    .media-container video,
+    .media-container img.content-image {
         width: 100%;
         height: auto;
     }
@@ -222,72 +236,67 @@ nav a:hover {
         
         <p>From one-off prototypes to small-batch production runs, our dedicated team ensures unparalleled quality, efficiency, and reliability. Trust us to bring your ideas to life with precision-engineered solutions that drive innovation.</p>
         
-<h1>Why We Exist</h1>
-<p>At our core, we believe in empowering innovators to shape the future. Our purpose is to transform your ideas into reality with precision and passion, driving progress across industries like aerospace, medical devices, and automotive. We don’t just fabricate parts; we craft solutions that inspire and enable breakthroughs.</p>
+        <h1>Why We Exist</h1>
+        <p>At our core, we believe in empowering innovators to shape the future. Our purpose is to transform your ideas into reality with precision and passion, driving progress across industries like aerospace, medical devices, and automotive. We don’t just fabricate parts; we craft solutions that inspire and enable breakthroughs.</p>
 
-<h1>How We Deliver</h1>
-<ul>
-    <li><strong>Advanced Technology:</strong> We harness state-of-the-art 3D printing and CNC machining to deliver unmatched precision, ensuring every component meets the highest standards.</li>
-    <li><strong>Industry Versatility:</strong> We tailor our fabrication solutions to the unique needs of diverse sectors, fueling innovation wherever it’s needed.</li>
-    <li><strong>Rapid Turnaround:</strong> We streamline production to accelerate your timeline, delivering exceptional quality at the speed of your vision.</li>
-    <li><strong>End-to-End Partnership:</strong> From initial concept to final product, we’re your dedicated partner, guiding you with expertise and commitment.</li>
-</ul>
-<p>Choose us because we’re driven by a purpose bigger than parts—your success is our inspiration.</p>
+        <h1>How We Deliver</h1>
+        <ul>
+            <li><strong>Advanced Technology:</strong> We harness state-of-the-art 3D printing and CNC machining to deliver unmatched precision, ensuring every component meets the highest standards.</li>
+            <li><strong>Industry Versatility:</strong> We tailor our fabrication solutions to the unique needs of diverse sectors, fueling innovation wherever it’s needed.</li>
+            <li><strong>Rapid Turnaround:</strong> We streamline production to accelerate your timeline, delivering exceptional quality at the speed of your vision.</li>
+            <li><strong>End-to-End Partnership:</strong> From initial concept to final product, we’re your dedicated partner, guiding you with expertise and commitment.</li>
+        </ul>
+        <p>Choose us because we’re driven by a purpose bigger than parts—your success is our inspiration.</p>
 
-<h1>Technical Build Specifications</h1>
-<p>Our advanced fabrication capabilities are designed to meet the rigorous demands of prototyping and small-batch production across industries such as aerospace, medical devices, automotive, and more. Below is a detailed overview of our technical specifications, ensuring precision, flexibility, and reliability for your projects.</p>
+        <h1>Technical Build Specifications</h1>
+        <p>Our advanced fabrication capabilities are designed to meet the rigorous demands of prototyping and small-batch production across industries such as aerospace, medical devices, automotive, and more. Below is a detailed overview of our technical specifications, ensuring precision, flexibility, and reliability for your projects.</p>
 
-<h1>Build Volume</h1>
-<p><strong>Maximum Dimensions:</strong> Up to 500 x 500 x 500 mm (19.7 x 19.7 x 19.7 inches)</p>
-<ul>
-    <li>Our expansive build volume accommodates a wide range of component sizes, from intricate small parts to larger assemblies.</li>
-    <li>Ideal for producing complex prototypes, functional parts, or multi-component assemblies in a single build, reducing assembly time and ensuring dimensional consistency.</li>
-</ul>
+        <h1>Build Volume</h1>
+        <p><strong>Maximum Dimensions:</strong> Up to 500 x 500 x 500 mm (19.7 x 19.7 x 19.7 inches)</p>
+        <ul>
+            <li>Our expansive build volume accommodates a wide range of component sizes, from intricate small parts to larger assemblies.</li>
+            <li>Ideal for producing complex prototypes, functional parts, or multi-component assemblies in a single build, reducing assembly time and ensuring dimensional consistency.</li>
+        </ul>
 
-<h1>Material Options</h1>
-<p><strong>Available Materials:</strong> ABS, PLA, Nylon, Aluminum (additional materials available upon request)</p>
-<ul>
-    <li><strong>ABS (Acrylonitrile Butadiene Styrene):</strong> Durable, impact-resistant thermoplastic suitable for functional prototypes and end-use parts with moderate heat resistance.</li>
-    <li><strong>PLA (Polylactic Acid):</strong> Eco-friendly, biodegradable material ideal for high-detail prototypes and non-functional display models.</li>
-    <li><strong>Nylon:</strong> High-strength, flexible material with excellent wear and chemical resistance, perfect for mechanical components and dynamic applications.</li>
-    <li><strong>Aluminum:</strong> Lightweight, corrosion-resistant metal for precision CNC-machined parts, offering superior strength-to-weight ratio for aerospace and automotive applications.</li>
-    <li>Custom material options can be sourced to meet specific project requirements, ensuring compatibility with your application’s mechanical, thermal, or aesthetic needs.</li>
-</ul>
+        <h1>Material Options</h1>
+        <p><strong>Available Materials:</strong> ABS, PLA, Nylon, Aluminum (additional materials available upon request)</p>
+        <ul>
+            <li><strong>ABS (Acrylonitrile Butadiene Styrene):</strong> Durable, impact-resistant thermoplastic suitable for functional prototypes and end-use parts with moderate heat resistance.</li>
+            <li><strong>PLA (Polylactic Acid):</strong> Eco-friendly, biodegradable material ideal for high-detail prototypes and non-functional display models.</li>
+            <li><strong>Nylon:</strong> High-strength, flexible material with excellent wear and chemical resistance, perfect for mechanical components and dynamic applications.</li>
+            <li><strong>Aluminum:</strong> Lightweight, corrosion-resistant metal for precision CNC-machined parts, offering superior strength-to-weight ratio for aerospace and automotive applications.</li>
+            <li>Custom material options can be sourced to meet specific project requirements, ensuring compatibility with your application’s mechanical, thermal, or aesthetic needs.</li>
+        </ul>
 
-<h1>Resolution</h1>
-<p><strong>Layer Thickness:</strong> ±0.1 mm (100 microns)</p>
-<ul>
-    <li>Our high-resolution 3D printing and CNC machining processes achieve fine layer thicknesses, delivering smooth surface finishes and intricate details.</li>
-    <li>Precision within ±0.1 mm ensures tight tolerances for functional components, minimizing post-processing and enabling seamless integration into assemblies.</li>
-    <li>Suitable for applications requiring high dimensional accuracy, such as medical device components or aerospace fittings.</li>
-</ul>
+        <h1>Resolution</h1>
+        <p><strong>Layer Thickness:</strong> ±0.1 mm (100 microns)</p>
+        <ul>
+            <li>Our high-resolution 3D printing and CNC machining processes achieve fine layer thicknesses, delivering smooth surface finishes and intricate details.</li>
+            <li>Precision within ±0.1 mm ensures tight tolerances for functional components, minimizing post-processing and enabling seamless integration into assemblies.</li>
+            <li>Suitable for applications requiring high dimensional accuracy, such as medical device components or aerospace fittings.</li>
+        </ul>
 
-<h1>Lead Time</h1>
-<p><strong>Prototype Delivery:</strong> 3-7 business days (dependent on project complexity and material selection)</p>
-<ul>
-    <li>Streamlined workflows and advanced machinery enable rapid production, ensuring prototypes are delivered quickly to accelerate your development cycle.</li>
-    <li>Small-batch production lead times are optimized for efficiency, with expedited options available for urgent projects.</li>
-    <li>Real-time project tracking and dedicated support keep you informed, ensuring on-time delivery without compromising quality.</li>
-</ul>
+        <h1>Lead Time</h1>
+        <p><strong>Prototype Delivery:</strong> 3-7 business days (dependent on project complexity and material selection)</p>
+        <ul>
+            <li>Streamlined workflows and advanced machinery enable rapid production, ensuring prototypes are delivered quickly to accelerate your development cycle.</li>
+            <li>Small-batch production lead times are optimized for efficiency, with expedited options available for urgent projects.</li>
+            <li>Real-time project tracking and dedicated support keep you informed, ensuring on-time delivery without compromising quality.</li>
+        </ul>
 
-<h1>Why These Specifications Matter</h1>
-<p>Our technical capabilities are built to empower innovation. With a robust build volume, diverse material options, high-resolution output, and fast lead times, we provide the flexibility to tackle projects of varying complexity. Backed by ISO 9001 compliance, our processes ensure that every part we produce is crafted with precision and reliability, giving you confidence to push the boundaries of what’s possible.</p>
-<p>Contact us to discuss how our technical specifications can be tailored to your specific project needs, from rapid prototyping to production-ready components.</p>
+        <h1>Why These Specifications Matter</h1>
+        <p>Our technical capabilities are built to empower innovation. With a robust build volume, diverse material options, high-resolution output, and fast lead times, we provide the flexibility to tackle projects of varying complexity. Backed by ISO 9001 compliance, our processes ensure that every part we produce is crafted with precision and reliability, giving you confidence to push the boundaries of what’s possible.</p>
+        <p>Contact us to discuss how our technical specifications can be tailored to your specific project needs, from rapid prototyping to production-ready components.</p>
     </div>
-    <div class="video-container">
+    <div class="media-container">
         <video muted loop loading="lazy" poster="/images/Ampere Logo.webp" id="delayedVideo">
             <source src="/video/Ball Bearing.webm" type="video/webm">
-            <!-- Optional MP4 fallback (uncomment and replace with actual MP4 path if available) -->
-            <!-- <source src="/videos/Ball Bearing.mp4" type="video/mp4"> -->
-            Sorry, your browser cannot play this video. Please check if the file path '/videos/Ball Bearing.webm' is correct or try a different browser.
+            Sorry, your browser cannot play this video. Please check if the file path '/video/Ball Bearing.webm' is correct or try a different browser.
         </video>
-    </div>
-    <div class="image-container">
         <img src="/images/3dprint.webp" alt="3D Fabrication" class="content-image">
     </div>
 </div>
 <!-- Footer Section -->
-<!-- Footer -->
 <div id="footer">
     <center>
         <a href="about">ABOUT</a> |
