@@ -44,60 +44,58 @@
     <link href="css/responsive.css" rel="stylesheet" />
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script> <!-- Latest jQuery -->
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script> <!-- Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script> <!-- Bootstrap 5 -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> <!-- Swiper.js -->
-    <script src="js/main.js" defer></script> <!-- Your custom JS -->
-	
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <style>
-
 p {
-  margin-left: 20px;
+    margin-left: 20px;
 }
-	
+
 h1 {
-  background-color: #E5E5E5; 
-  margin: 20px;
-  padding: 10px;
-  font-size: 1.5em;
+    background-color: #E5E5E5;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5em;
 }
-	    
+
 h2.ex2 {
-  background-color: #E5E5E5; 
-  margin: 20px;
-  padding: 10px;
+    background-color: #E5E5E5;
+    margin: 20px;
+    padding: 10px;
 }
 
 ul {
-  margin: 20px;
+    margin: 20px;
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 /* unvisited link */
 a:link {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
-/* visited link */	
+/* visited link */
 a:visited {
-  color: black;
+    color: black;
 }
 
 /* mouse over link */
 a:hover {
-  color: #FE0002;
+    color: #FE0002;
 }
-	
+
 nav a:hover {
-  color: #FE0002;
+    color: #FE0002;
 }
-        
+
 #logo a {
     position: absolute;
     top: 25px;
@@ -105,64 +103,78 @@ nav a:hover {
 }
 
 #header a {
-padding: 0px 10px;
-word-wrap: normal;
-display: inline-block;
-margin-top: 25px;
-}
-
-#footer a { 
     padding: 0px 10px;
     word-wrap: normal;
     display: inline-block;
-   /*  margin-top: 800px; */
+    margin-top: 25px;
 }
-		
+
+#footer a {
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+}
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Main layout container */
 .content-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0;
-  height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    height: auto;
 }
 
 /* Body content on the left */
 .body-content {
-  flex: 2; /* Occupy 2/3 of the width */
-  margin: 20px;
-  overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
+    flex: 2; /* Occupy 2/3 of the width */
+    margin: 20px;
+    overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
+}
+
+/* Video container on the right */
+.video-container {
+    flex: 1; /* Occupy 1/3 of the width */
+    margin: 20px;
+    max-width: 400px; /* Limit the width of the video */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.video-container video, .video-container iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for aesthetics */
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column;
-    height: auto; /* Allow scrolling for smaller screens */
-  }
+    .content-wrapper {
+        flex-direction: column;
+        height: auto; /* Allow scrolling for smaller screens */
+    }
 
-  .body-content {
-    flex: none;
-    width: 100%; /* Full width on small screens */
-    margin-bottom: 20px;
-  }
+    .body-content {
+        flex: none;
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px;
+    }
 
-  .image-container {
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5"; /* Stack images in a single column */
-    flex: none;
-    width: 100%; /* Full width */
-    gap: 10px; /* Maintain gap for stacked layout */
-  }
+    .video-container {
+        flex: none;
+        width: 100%;
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 0 20px 20px 20px;
+    }
 
-  .image-container img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-  }
+    .video-container video, .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
 }
 </style>
 <body>
@@ -177,7 +189,7 @@ margin-top: 25px;
         <a href="">FLIR</a>
         <a href="">POWER QUALITY</a>
         <a href="">TRANSFORMERS</a>
-	<a href="3D-fabrication">3D FABRICATION</a>
+        <a href="3D-fabrication">3D FABRICATION</a>
     </center>
 </div>
 <div class="content-wrapper">
@@ -185,16 +197,14 @@ margin-top: 25px;
         <h1>3D Fabrication Solutions</h1>
         <p><strong>Innovate and Build with Precision</strong></p>
         <p>Ampere Development delivers advanced 3D fabrication services, expertly tailored to meet your prototyping and manufacturing demands. Utilizing cutting-edge 3D printing and CNC machining technologies, we produce high-precision components with exceptional speed and accuracy for industries including aerospace, medical devices, automotive, and beyond.</p>
-
-	<p>From one-off prototypes to small-batch production runs, our dedicated team ensures unparalleled quality, efficiency, and reliability. Trust Ampere Development to bring your ideas to life with precision-engineered solutions that drive innovation.</p>
-
+        <p>From one-off prototypes to small-batch production runs, our dedicated team ensures unparalleled quality, efficiency, and reliability. Trust Ampere Development to bring your ideas to life with precision-engineered solutions that drive innovation.</p>
         <h1>Why Choose Ampere Development?</h1>
-    <ul>
-      <li>Advanced Technology: State-of-the-art 3D printing and CNC machining for superior precision.</li>
-      <li>Industry Versatility: Serving diverse sectors with customized fabrication solutions.</li>
-      <li>Rapid Turnaround: Fast-tracked production without compromising quality.</li>
-      <li>End-to-End Support: From concept to completion, we’re with you every step of the way.</li>
-    </ul>
+        <ul>
+            <li>Advanced Technology: State-of-the-art 3D printing and CNC machining for superior precision.</li>
+            <li>Industry Versatility: Serving diverse sectors with customized fabrication solutions.</li>
+            <li>Rapid Turnaround: Fast-tracked production without compromising quality.</li>
+            <li>End-to-End Support: From concept to completion, we’re with you every step of the way.</li>
+        </ul>
         <h1>Technical Build Specifications</h1>
         <ul>
             <li>Build Volume: Up to 500 x 500 x 500 mm</li>
@@ -204,12 +214,18 @@ margin-top: 25px;
             <li>Certifications: ISO 9001 compliant</li>
         </ul>
     </div>
+    <div class="video-container">
+        <video controls>
+            <source src="path/to/your/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </div>
 <div id="footer">
     <center>
-        <a href="">AMPERE &copy; 2025</a>
+        <a href="">AMPERE © 2025</a>
         <a href="">PRIVACY & LEGAL</a>
-        <a href="contact">CONTACT</a>
+        aldehyde href="contact">CONTACT</a>
     </center>
 </div>
 </body>
