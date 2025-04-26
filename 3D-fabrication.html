@@ -51,22 +51,15 @@
 </head>
 <body>
     <!-- Navigation -->
-    <!-- Logo and Header -->
-    <div id="logo">
-        <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
-
-    </div>
-    <div id="header">
-        <center>
-            <a href="what-are-load-banks">LOAD BANKS</a>
-            <a href="starline-tapbox-rental">STARLINE</a>
-            <a href="">CABLES</a>
-            <a href="">FLIR</a>
-            <a href="">POWER QUALITY</a>
-            <a href="">TRANSFORMERS</a>
-            <a href="3D-fabrication.html">3D FABRICATION</a>
-        </center>
-    </div>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="load-banks.html">Load Banks</a>
+            <a href="starline-tapbox-rental.html">Starline Tapbox Rental</a>
+            <a href="3d-fabrication.html">3D Fabrication</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <div class="hero">
@@ -93,13 +86,12 @@
         </ul>
 
         <!-- Image Carousel -->
-    <!-- Image Carousel -->
-    <div class="carousel">
-        <div><img src="https://images.pexels.com/photos/5996973/pexels-photo-5996973.jpeg" alt="3D Printed Prototype"></div>
-        <div><img src="https://images.pexels.com/photos/5996977/pexels-photo-5996977.jpeg" alt="CNC Machined Part"></div>
-        <div><img src="https://images.pexels.com/photos/5996981/pexels-photo-5996981.jpeg" alt="Metal Alloy Component"></div>
-        <div><img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Design Consultation"></div>
-    </div>
+        <div class="carousel">
+            <div><img src="https://images.pexels.com/photos/5996973/pexels-photo-5996973.jpeg" alt="3D Printed Prototype"></div>
+            <div><img src="https://images.pexels.com/photos/5996977/pexels-photo-5996977.jpeg" alt="CNC Machined Part"></div>
+            <div><img src="https://images.pexels.com/photos/5996981/pexels-photo-5996981.jpeg" alt="Metal Alloy Component"></div>
+            <div><img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Design Consultation"></div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -186,7 +178,7 @@
 
         /* unvisited link */
         a:link {
-            color: black;
+            color: black obc;
             text-decoration: none;
         }
 
@@ -221,6 +213,28 @@
             padding: 0px 10px;
             word-wrap: normal;
             display: inline-block;
+        }
+
+        /* Carousel Image Sizing */
+        .carousel img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .carousel div {
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+
+        .slick-list {
+            margin: 0 -10px;
         }
     </style>
 
