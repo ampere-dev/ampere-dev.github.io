@@ -115,6 +115,16 @@ nav a:hover {
     display: inline-block;
 }
 
+/* Add spacing for social media icons in the footer */
+#footer img {
+    vertical-align: middle; /* Align icons with text */
+}
+
+/* Add some padding to the footer for better spacing */
+#footer {
+    padding: 10px 0;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -227,19 +237,43 @@ nav a:hover {
         </ul>
     </div>
     <div class="video-container">
-        <video muted loop loading="lazy" poster="/images/Ampere Logo.webp" id="delayedVideo">
-            <source src="/video/Ball Bearing.webm" type="video/webm">
+        <video muted loop loading="lazy" poster="/images/video-poster.jpg" id="delayedVideo">
+            <source src="/videos/Ball Bearing.webm" type="video/webm">
             <!-- Optional MP4 fallback (uncomment and replace with actual MP4 path if available) -->
             <!-- <source src="/videos/Ball Bearing.mp4" type="video/mp4"> -->
             Sorry, your browser cannot play this video. Please check if the file path '/videos/Ball Bearing.webm' is correct or try a different browser.
         </video>
     </div>
 </div>
+<!-- Footer Section -->
+<!-- Footer -->
 <div id="footer">
     <center>
-        <a href="">AMPERE © 2025</a>
-        <a href="">PRIVACY & LEGAL</a>
+        <a href="about">ABOUT</a> |
+        <a href="products">PRODUCTS</a> |
+        <a href="products">SERVICES</a> |
+        <a href="products">BLOG</a> |
+        <a href="privacy-legal">PRIVACY & LEGAL</a> |
         <a href="contact">CONTACT</a>
+    </center>
+</div>
+<div id="footer">
+    <center>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="icons/facebook-logo.png" alt="Facebook" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+        <a href="https://x.com" target="_blank">
+            <img src="icons/logo-white.png" alt="X" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" style="width:25px; height:20px; margin:0 5px;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="icons/instagram-white-icon.png" alt="Instagram" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+    </center>
+    <center>
+        <p>AMPERE © 2025</p>
     </center>
 </div>
 <script>
