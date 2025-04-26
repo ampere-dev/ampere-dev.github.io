@@ -218,5 +218,18 @@ a:hover {
         <p>AMPERE &copy; 2025</p>
     </center>
 </div>
+
+<!-- JavaScript for Hamburger Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggler = document.querySelector('.menuToggler');
+            const header = document.querySelector('#header');
+
+            menuToggler.addEventListener('click', function () {
+                menuToggler.classList.toggle('active');
+                header.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
