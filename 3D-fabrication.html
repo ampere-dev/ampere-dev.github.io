@@ -139,50 +139,6 @@ margin-top: 25px;
   overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
 }
 
-/* Image container on the right with collage layout */
-.image-container {
-  flex: 1; /* Occupy 1/3 of the width */
-  display: grid;
-  grid-template-areas:
-    "img1 img2"
-    "img3 img2"
-    "img3 img4"
-    "img5 img4";
-  gap: 10px; /* Add margin between images */
-  padding: 10px; /* Optional padding around the collage */
-  box-sizing: border-box;
-  height: 100%; /* Full height of the container */
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fill their grid area */
-  cursor: pointer;
-  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
-}
-
-/* Specific layout for each image */
-.image-container img:nth-child(1) {
-  grid-area: img1;
-}
-
-.image-container img:nth-child(2) {
-  grid-area: img2;
-}
-
-.image-container img:nth-child(3) {
-  grid-area: img3;
-}
-
-.image-container img:nth-child(4) {
-  grid-area: img4;
-}
-
-.image-container img:nth-child(5) {
-  grid-area: img5;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .content-wrapper {
@@ -247,12 +203,6 @@ margin-top: 25px;
             <li>Lead Time: 3-7 days for prototypes</li>
             <li>Certifications: ISO 9001 compliant</li>
         </ul>
-    </div>
-    <div class="image-container">
-        <img src="images/Stab Halves.webp" alt="Stab1">
-        <img src="images/Stab Assembly.webp" alt="Stab2">
-        <img src="images/Stab3.webp" alt="Stab3">
-        <img src="images/Stab4.webp" alt="Stab4">
     </div>
 </div>
 <div id="footer">
