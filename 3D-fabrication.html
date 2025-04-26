@@ -225,38 +225,62 @@
             overflow: hidden;
         }
 
+        .carousel {
+            width: 100%;
+        }
+
         .carousel img {
             width: 100%;
-            height: 300px;
+            height: 400px;
             object-fit: cover;
             display: block;
         }
 
         .carousel div {
-            width: 600px;
-            height: 300px;
+            width: 800px;
+            height: 400px;
             overflow: hidden;
             margin: 0 auto;
         }
 
         .slick-slide {
-            margin: 0 10px;
+            margin: 0 20px;
         }
 
         .slick-list {
-            margin: 0 -10px;
+            margin: 0 -20px;
         }
 
-        /* Center carousel content within full-width container */
-        .carousel {
-            max-width: 1920px;
-            margin: 0 auto;
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .carousel div {
+                width: 600px;
+                height: 300px;
+            }
+            .carousel img {
+                height: 300px;
+            }
         }
 
         @media (max-width: 768px) {
             .carousel div {
                 width: 100%;
                 max-width: 600px;
+                height: 300px;
+            }
+            .carousel img {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel div {
+                width: 100%;
+                max-width: 400px;
+                height: 200px;
+            }
+            .carousel img {
+                height: 200px;
             }
         }
     </style>
@@ -276,6 +300,12 @@
                 autoplaySpeed: 3000,
                 arrows: true,
                 responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
                     {
                         breakpoint: 768,
                         settings: {
