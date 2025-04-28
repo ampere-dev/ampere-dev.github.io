@@ -55,41 +55,58 @@
             float: right;
         }
         #toc_container {
-            background: #f9f9f9 none repeat scroll 0 0;
-            border: 2px solid red;
-            font-size: 95%;
-            margin: 0; /* No margins */
-            padding: 10px; /* Minimal padding */
-            width: 300px; /* Fixed width for TOC */
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            padding: 15px;
+            width: 250px;
+            position: sticky;
+            top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .toc_title {
             font-weight: 700;
             text-align: center;
+            margin-bottom: 10px;
+            font-size: 16px;
         }
-        #toc_container li, #toc_container ul.ex2, #toc_container ul.ex2 li {
-            list-style: outside none none !important;
+        .toc_list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc_list li {
+            margin: 5px 0;
+            padding-left: 10px;
+        }
+        .toc_list a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.2s;
+        }
+        .toc_list a:hover {
+            color: #FE0002;
         }
         .container-flex {
             display: flex;
-            gap: 20px; /* Space between TOC and content */
-            margin: 0; /* Remove all margins */
-            padding: 0; /* Remove all padding */
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .content-wrapper {
-            flex: 1; /* Take remaining space */
+            flex: 1;
         }
         main {
-            padding: 0; /* Remove padding from main */
-            margin: 0; /* Remove margin from main */
+            padding: 0;
         }
-        /* Override potential Bootstrap container padding */
         .container, .container-fluid {
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
-        /* Override original table styles */
         table:not(.load-bank-table) {
-            font-family: "Ubuntu", "sans-serif";
+            font-family: "Ubuntu", sans-serif;
             font-weight: 400;
             font-size: 14px;
             border-collapse: collapse;
@@ -109,12 +126,11 @@
         tr:nth-child(even):not(.load-bank-table tr) {
             background-color: #dddddd;
         }
-        /* New table styles for load banks */
         .load-bank-table {
             width: 100%;
             border-collapse: collapse;
             min-width: 600px;
-            font-family: "Ubuntu", "sans-serif";
+            font-family: "Ubuntu", sans-serif;
             font-size: 13px;
         }
         .load-bank-table th, .load-bank-table td {
@@ -161,7 +177,8 @@
                 flex-direction: column;
             }
             #toc_container {
-                width: 100%; /* Full width on mobile */
+                width: 100%;
+                position: static;
             }
             .load-bank-table th, .load-bank-table td {
                 padding: 8px;
@@ -170,31 +187,25 @@
         }
         h1 {
             background-color: #E5E5E5;
-            margin: 20px;
+            margin: 20px 0;
             padding: 10px;
             font-size: 1.5em;
         }
         p.ex2 {
-            margin: 0 10px 10px 0; /* Reduced margins for tight alignment */
+            margin: 0 0 10px 0;
             text-align: justify;
         }
         ul {
             margin-left: 40px;
         }
         body {
-            font-family: "Ubuntu", "sans-serif";
-            margin: 0; /* Remove default body margin */
+            font-family: "Ubuntu", sans-serif;
+            margin: 0;
         }
-        /* unvisited link */
-        a:link {
+        a:link, a:visited {
             color: black;
             text-decoration: none;
         }
-        /* visited link */
-        a:visited {
-            color: black;
-        }
-        /* mouse over link */
         a:hover {
             color: #FE0002;
         }
@@ -207,18 +218,15 @@
             left: 35px;
         }
         #header a {
-            padding: 0px 10px;
-            word-wrap: normal;
+            padding: 0 10px;
             display: inline-block;
             margin-top: 25px;
         }
         #footer a {
-            padding: 0px 10px;
-            word-wrap: normal;
+            padding: 0 10px;
             display: inline-block;
         }
     </style>
-    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <div id="logo">
