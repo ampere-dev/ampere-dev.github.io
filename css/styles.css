@@ -59,6 +59,7 @@ body:not(.home) .body-content li {
     width: 200px; /* Desired width, adjust as needed */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Space below each image */
+    margin-right: 20px;
 }
 
 /* Header styles */
