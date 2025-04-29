@@ -8,20 +8,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
-    color: #000000; /* Default: black text for non-home pages */
-    background-color: #FFFFFF; /* Default: light background */
+    color: #000000; /* Default: black text */
+    background-color: #FFFFFF; /* Default: white background */
 }
 
 body.home {
-    color: #FFFFFF; /* White text for index page */
-    background-color: #333333; /* Dark background for index page */
+    color: #FFFFFF; /* White text for index */
+    background-color: #333333; /* Dark background for index */
 }
 
 .page-wrapper {
-    flex: 1 0 auto; /* Grow to push footer to bottom */
+    flex: 1 0 auto; /* Push footer to bottom */
 }
 
 a {
     color: inherit; /* Links inherit parent color */
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
