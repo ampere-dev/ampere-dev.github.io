@@ -2,3 +2,19 @@
   box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    color: white; /* If white text is site-wide */
+}
+
+a:link, a:visited {
+    color: white; /* If white links are site-wide */
+    text-decoration: none;
+}
