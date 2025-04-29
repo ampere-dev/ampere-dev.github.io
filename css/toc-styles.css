@@ -12,12 +12,14 @@
     box-sizing: border-box;
 }
 
-/* Ensure parent container allows wrapping */
+/* Wrapper for TOC and content to ensure float context */
 .toc_container_wrapper {
     overflow: visible;
     clear: none;
     display: block;
     width: 100%;
+    max-width: 1200px; /* Matches common Bootstrap container width */
+    margin: 0 auto; /* Center the content */
 }
 
 /* Style for body text to ensure wrapping */
@@ -25,9 +27,10 @@
     overflow: visible;
     clear: none;
     margin-left: 290px; /* TOC width (250px) + margin-right (20px) + buffer */
+    box-sizing: border-box;
 }
 
-/* Clearfix to prevent layout issues */
+/* Clearfix for wrapper */
 .toc_container_wrapper::after {
     content: "";
     display: table;
@@ -66,6 +69,13 @@
 .toc_list.ex2 li a:hover {
     color: #ff0000;
     background-color: #f9f9f9;
+}
+
+/* Override Bootstrap margins for wrapped content */
+.toc_content h1,
+.toc_content p {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 /* Responsive adjustments */
