@@ -1,43 +1,97 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://ampere.dev/</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://ampere.dev/</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://ampere.dev/what-are-load-banks</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ampere.dev/index.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ampere.dev/starline-tapbox-rental</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ampere.dev/what-are-load-banks.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ampere.dev/contact</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://ampere.dev/starline-tapbox-rental.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ampere.dev/documents/ASCO%20Avtron%201000%20Series%20Load%20Bank.pdf</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ampere.dev/cables.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ampere.dev/starline-tapbox-paddle</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ampere.dev/flir.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ampere.dev/starline-tapbox-propaddle</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ampere.dev/power-quality.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://ampere.dev/starline-busway-commissioning</loc>
-<lastmod>2020-11-16T04:17:59+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://ampere.dev/transformers.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://ampere.dev/3D-fabrication.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/about.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/blog.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/contact.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/documents/ASCO%20Avtron%201000%20Series%20Load%20Bank.pdf</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/starline-tapbox-paddle.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/starline-busway-commissioning.html</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/about</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/contact</loc>
+  <lastmod>2025-04-29T19:34:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
