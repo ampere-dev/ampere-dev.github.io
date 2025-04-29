@@ -15,3 +15,18 @@
     height: 20px;
     margin: 0 5px;
 }
+
+#footer {
+    text-align: center; /* Centers inline and inline-block elements */
+}
+
+#footer > div {
+    display: inline-block; /* Ensures each child div respects text-align */
+    margin: 0 auto; /* Centers block-level elements if needed */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: center; /* Centers icons horizontally */
+    gap: 10px; /* Adds spacing between icons */
+}
