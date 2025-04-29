@@ -1,1 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Power quality solutions for stable and efficient electrical systems. Learn more at Ampere Development.">
+    <meta name="keywords" content="power quality, electrical stability, power monitoring, energy efficiency">
+    <meta name="author" content="Ampere Development">
+    <title>Power Quality | Ampere Development</title>
 
+    <!-- SEO -->
+    <link rel="canonical" href="https://ampere.dev/power-quality">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Power Quality | Ampere Development">
+    <meta property="og:description" content="Explore power quality solutions for stable and efficient electrical systems.">
+    <meta property="og:url" content="https://ampere.dev/power-quality">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ampere.dev/images/og-power-quality.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Power Quality | Ampere Development">
+    <meta name="twitter:description" content="Learn about power quality solutions at Ampere Development.">
+    <meta name="twitter:image", content="https://ampere.dev/images/og-power-quality.jpg">
+
+    <!-- Preload & Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+
+    <!-- Favicon -->
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/hamburgerdark.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<style>
+p {
+    margin-left: 20px;
+}
+
+h1 {
+    background-color: #E5E5E5;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+h2.ex2 {
+    background-color: #E5E5E5;
+    margin: 20px;
+    padding: 10px;
+}
+
+ul {
+    margin: 20px;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FE0002;
+}
+
+nav a:hover {
+    color: #FE0002;
+}
+
+#logo a {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+
+#header a {
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#footer a {
+    padding: 0px 10px;
+    word-wrap: normal;
+    display: inline-block;
+}
+
+/* Add spacing for social media icons in the footer */
+#footer img {
+    vertical-align: middle;
+}
+
+/* Add some padding to the footer for better spacing */
+#footer {
+    padding: 10px 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main layout container */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    height: auto;
+}
+
+/* Body content on the left */
+.body-content {
+    flex: 2;
+    margin: 20px;
+    overflow-y: auto;
+}
+
+/* Media container on the right (for video and image) */
+.media-container {
+    flex: 1;
+    margin: 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Video styles */
+.media-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+/* Image styles */
+.media-container img.content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .body-content {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .media-container {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 20px 20px 20px;
+    }
+
+    .media-container video,
+    .media-container img.content-image {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+<body>
+<div id="logo">
+    <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
+    <div class="menuToggler">MENU</div>
+</div>
+<div id="header"><center>
+        <a href="what-are-load-banks">LOAD BANKS</a>
+        <a href="starline-tapbox-rental">STARLINE</a>
+        <a href="cables">CABLES</a>
+        <a href="flir">FLIR</a>
+        <a href="power-quality">POWER QUALITY</a>
+        <a href="transformers">TRANSFORMERS</a>
+        <a href="3D-fabrication">3D FABRICATION</a>
+    </center>
+</div>
+<div class="content-wrapper">
+    <div class="body-content">
+        <h1>Power Quality Solutions</h1>
+        <p><strong>Stable and Efficient Systems</strong></p>
+        <p>Our power quality solutions ensure stable and efficient electrical systems for industrial and commercial applications. We provide advanced monitoring, analysis, and mitigation tools to address issues like voltage sags, harmonics, and power factor inefficiencies.</p>
+        
+        <p>Optimize your operations with our comprehensive power quality services.</p>
+        
+        <h1>Why Choose Our Solutions</h1>
+        <ul>
+            <li><strong>Real-Time Monitoring:</strong> Continuous analysis to detect and resolve power issues.</li>
+            <li><strong>Custom Mitigation:</strong> Tailored solutions for harmonics, surges, and power factor correction.</li>
+            <li><strong>Energy Efficiency:</strong> Reduces energy waste and lowers operational costs.</li>
+            <li><strong>Expert Support:</strong> Dedicated team for installation, training, and maintenance.</li>
+        </ul>
+        
+        <h1>Technical Specifications</h1>
+        <p><strong>Monitoring Parameters:</strong> Voltage, Current, Harmonics, Power Factor</p>
+        <p><strong>Accuracy:</strong> ±0.5% for voltage and current</p>
+        <p><strong>Connectivity:</strong> Ethernet, Modbus, SCADA</p>
+        <p><strong>Reporting:</strong> Detailed analytics and compliance reports</p>
+        <p>Contact us to enhance your power quality and system reliability.</p>
+    </div>
+    <div class="media-container">
+        <video muted loop loading="lazy" poster="/images/Ampere Logo.webp" id="delayedVideo">
+            <source src="/video/power-quality.webm" type="video/webm">
+            Sorry, your browser cannot play this video.
+        </video>
+        <img src="/images/power-quality.jpg" alt="Power Quality" class="content-image">
+    </div>
+</div>
+<!-- Footer Section -->
+<div id="footer">
+    <center>
+        <a href="about">ABOUT</a> |
+        <a href="products">PRODUCTS</a> |
+        <a href="products">SERVICES</a> |
+        <a href="products">BLOG</a> |
+        <a href="privacy-legal">PRIVACY & LEGAL</a> |
+        <a href="contact">CONTACT</a>
+    </center>
+</div>
+<div id="footer">
+    <center>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="icons/facebook-logo.png" alt="Facebook" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+        <a href="https://x.com" target="_blank">
+            <img src="icons/logo-black.png" alt="X" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" style="width:25px; height:20px; margin:0 5px;">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="icons/instagram-logo.png" alt="Instagram" style="width:20px; height:20px; margin:0 5px;">
+        </a>
+    </center>
+    <center>
+        <p>AMPERE © 2025</p>
+    </center>
+</div>
+<script>
+    window.addEventListener('load', () => {
+        const video = document.getElementById('delayedVideo');
+        setTimeout(() => {
+            video.play().catch(error => {
+                console.error('Video playback failed:', error);
+            });
+        }, 3000);
+    });
+</script>
+</body>
+</html>
