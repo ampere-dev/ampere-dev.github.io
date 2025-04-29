@@ -1,1 +1,60 @@
+/* Chapternav Container */
+.chapternav-container {
+    margin: 10px auto; /* Center the container */
+    /*max-width: 20%; */
+    display: flex;
+    justify-content: center; /* Center items */
+}
 
+/* Chapternav */
+.chapternav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    /*background-color: #f9f9f9;*/
+    /*border: 1px solid #ddd;*/
+    width: 100%; /* Ensure full-width container */
+}
+
+/* Scrolling Area */
+.chapternav-scroll {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    justify-content: center; /* Center content */
+    scrollbar-width: none; /* Firefox */
+    width: 100%; /* Full width for scrolling */
+}
+
+.chapternav-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* Chapternav Items */
+.chapternav-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-decoration: none;
+    color: #FE0002; /* Red font color */
+    font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    width: 80px; /* Increase width if needed */
+    height: 80px; /* Ensure consistent height */
+}
+
+/* Icon Styling */
+.chapternav-item img {
+    width: 40px; /* Icon size */
+    height: 40px; /* Maintain aspect ratio */
+    margin-bottom: 5px;
+}
