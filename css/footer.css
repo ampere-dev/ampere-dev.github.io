@@ -11,7 +11,7 @@
     box-shadow: none !important;
     outline: none !important;
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Above overlay */
 }
 
 .home #footer {
@@ -21,6 +21,22 @@
 
 .home #footer * {
     color: #FFFFFF !important; /* Ensure all footer text is white */
+}
+
+/* Override responsive.css positioning */
+@media all and (max-width: 1150px) {
+    #footer {
+        position: relative !important; /* Restore sticky behavior */
+        margin-top: 0 !important; /* Remove extra margin */
+        bottom: 0;
+    }
+}
+
+@media all and (max-width: 500px) {
+    #footer {
+        font-size: 12px;
+        padding: 20px !important; /* Restore padding */
+    }
 }
 
 #footer > div {
