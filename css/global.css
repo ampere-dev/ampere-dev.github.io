@@ -10,11 +10,21 @@ html, body {
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
-    color: white; /* If white text is site-wide */
+  color: #000; /* Black for other pages */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* White font color for index.html */
+body.home {
+  color: #fff; /* White for index.html */
 }
 
 a:link, a:visited {
     color: white; /* If white links are site-wide */
     text-decoration: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
