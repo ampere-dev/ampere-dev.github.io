@@ -1,16 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    color: #000; /* Black for non-home pages */
-    background-color: #fff; /* Light background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
+    color: #000000; /* Default: black text for non-home pages */
+    background-color: #FFFFFF; /* Default: light background */
 }
 
 body.home {
-    color: #fff; /* White for index.html */
-    background-color: #333; /* Dark background for readability */
+    color: #FFFFFF; /* White text for index page */
+    background-color: #333333; /* Dark background for index page */
 }
 
-/* Ensure links inherit body color unless overridden */
+.page-wrapper {
+    flex: 1 0 auto; /* Grow to push footer to bottom */
+}
+
 a {
-    color: inherit;
-    text-decoration: none;
+    color: inherit; /* Links inherit parent color */
+    text-decoration: none; /* Remove underline */
 }
