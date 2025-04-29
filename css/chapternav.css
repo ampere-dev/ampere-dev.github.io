@@ -57,12 +57,6 @@
     filter: grayscale(100%); /* Make icon black by default */
 }
 
-/* Hover Effect for Icon */
-.chapternav-item:hover img {
-    filter: none; /* Remove grayscale to show original colors */
-    filter: hue-rotate(0deg) saturate(100%) brightness(50%) sepia(100%) hue-rotate(-50deg); /* Adjust to red */
-}
-
 /* Hover Effect for Text */
 .chapternav-item:hover {
     color: #FE0002 !important; /* Red hover for text */
