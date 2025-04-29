@@ -4,7 +4,6 @@
     align-items: center; /* Center children horizontally */
     text-align: center; /* Center text for inline elements */
     padding: 20px; /* Add spacing around footer */
-    color: inherit; /* Inherit text color from body */
 }
 
 #footer > div {
