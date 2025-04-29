@@ -30,3 +30,21 @@
     justify-content: center; /* Centers icons horizontally */
     gap: 10px; /* Adds spacing between icons */
 }
+
+#footer {
+    display: flex; /* Use flexbox for the footer container */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text for inline elements */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
+
+#footer > div {
+    margin: 10px 0; /* Add vertical spacing between sections */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: center; /* Center icons horizontally */
+    gap: 10px; /* Space between icons */
+}
