@@ -18,7 +18,6 @@
     clear: none;
     display: block;
     width: 100%;
-    max-width: 1200px; /* Matches common Bootstrap container width */
     margin: 0 auto; /* Center the content */
 }
 
