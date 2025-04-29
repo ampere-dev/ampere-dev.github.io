@@ -48,3 +48,8 @@
     justify-content: center; /* Center icons horizontally */
     gap: 10px; /* Space between icons */
 }
+
+.social-icons img {
+    width: 20px; /* Consistent width */
+    height: 20px; /* Consistent height */
+}
