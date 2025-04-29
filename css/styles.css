@@ -27,3 +27,17 @@ body:not(.home) .body-content p,
 body:not(.home) .body-content li {
     color: #000 !important; /* Force black for other pages */
 }
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center images */
+}
+
+.image-container img {
+    max-width: 100%; /* Prevent overflow */
+    width: 200px; /* Desired width, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below each image */
+}
