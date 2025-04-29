@@ -1,27 +1,17 @@
 #footer {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 10px 0;
+    color: inherit; /* Inherit from body */
 }
 
-#footer a {
-    margin: 0 5px;
+.footer-links a {
+    color: inherit;
 }
 
-#footer p {
-    margin: 10px 0;
+.footer-links a:hover {
+    color: #FE0002; /* Match header hover color */
 }
 
-nav ul li a:hover {
-    color: #FE0002;
-}
-
-.social-icons {
-    margin: 10px 0;
-}
-
-.social-icons a {
-    display: inline-block;
+.social-icon {
+    width: 20px;
+    height: 20px;
     margin: 0 5px;
 }
