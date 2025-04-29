@@ -1,52 +1,29 @@
 #footer {
-    color: inherit; /* Inherit from body */
-}
-
-.footer-links a {
-    color: inherit;
-}
-
-.footer-links a:hover {
-    color: #FE0002; /* Match header hover color */
-}
-
-.social-icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-}
-
-#footer {
-    text-align: center; /* Centers inline and inline-block elements */
-}
-
-#footer > div {
-    display: inline-block; /* Ensures each child div respects text-align */
-    margin: 0 auto; /* Centers block-level elements if needed */
-}
-
-.social-icons {
-    display: flex; /* Use flexbox for social icons */
-    justify-content: center; /* Centers icons horizontally */
-    gap: 10px; /* Adds spacing between icons */
-}
-
-#footer {
     display: flex; /* Use flexbox for the footer container */
-    flex-direction: column; /* Stack children vertically */
+    flexed-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally */
     text-align: center; /* Center text for inline elements */
-    padding: 20px; /* Optional: Add padding for spacing */
+    padding: 20px; /* Add spacing around footer */
+    color: inherit; /* Inherit text color from body */
 }
 
 #footer > div {
-    margin: 10px 0; /* Add vertical spacing between sections */
+    margin: 10px 0; /* Vertical spacing between sections */
+}
+
+#footer a {
+    color: inherit; /* Inherit link color */
+    text-decoration: none; /* Optional: Remove underline for cleaner look */
+}
+
+#footer a:hover {
+    color: #FE0002; /* Hover color to match header */
 }
 
 .social-icons {
-    display: flex; /* Use flexbox for social icons */
+    display: flex; /* Flexbox for social icons */
     justify-content: center; /* Center icons horizontally */
-    gap: 10px; /* Space between icons */
+    gap: 10px; /* Spacing between icons */
 }
 
 .social-icons img {
