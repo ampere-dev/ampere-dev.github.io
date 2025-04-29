@@ -61,7 +61,7 @@ body:not(.home) .body-content li {
     margin-bottom: 10px; /* Space below each image */
 }
 
-/* Header styles (from previous context) */
+/* Header styles */
 header {
     position: relative;
     z-index: 2;
@@ -117,7 +117,7 @@ body:not(.home) #footer {
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
-    position: relative; /* Compatible with flexbox */
+    position: relative;
     z-index: 2;
 }
 
@@ -181,7 +181,10 @@ body.home #footer * {
     text-decoration: none;
 }
 
-.footer-links a:hover {
+/* Fix hover color with higher specificity */
+.footer-links a:hover,
+body.home #footer .footer-links a:hover,
+body:not(.home) #footer .footer-links a:hover {
     color: #FE0002 !important;
 }
 
