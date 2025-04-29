@@ -55,15 +55,36 @@ body.home #footer * {
     margin: 10px 0;
 }
 
+/* Footer links styling (merged with header-like spacing) */
+.footer-links {
+    text-align: center;
+}
+
+.footer-links ul {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 15px; /* Matches header's nav-menu spacing */
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
+
 .footer-links a {
-    color: inherit;
+    color: inherit; /* Inherits from #footer (black for non-home, white for home) */
     text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: #FE0002 !important;
+    color: #FE0002 !important; /* Red hover, matching header */
 }
 
+/* Social icons styling */
 .social-icons {
     display: flex;
     justify-content: center;
