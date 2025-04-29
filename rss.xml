@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Current Trends - Ampere Development</title>
+        <link>http://example.com/</link>
+        <description>A simple, minimalistic blog</description>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 29 Apr 2025 12:00:00 GMT</lastBuildDate>
+        <item>
+            <title>First Post</title>
+            <link>http://example.com/#post1</link>
+            <description>This is the first blog post. It's intentionally simple and to the point.</description>
+            <pubDate>Tue, 29 Apr 2025 10:00:00 GMT</pubDate>
+            <guid>http://example.com/#post1</guid>
+        </item>
+        <item>
+            <title>Second Post</title>
+            <link>http://example.com/#post2</link>
+            <description>Another minimal post, keeping things clean and focused.</description>
+            <pubDate>Mon, 28 Apr 2025 10:00:00 GMT</pubDate>
+            <guid>http://example.com/#post2</guid>
+        </item>
+    </channel>
+</rss>
