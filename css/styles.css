@@ -13,3 +13,17 @@
 .body-content h1 {
     color: inherit;
 }
+
+body.home .body-content,
+body.home .body-content h1,
+body.home .body-content p,
+body.home .body-content li {
+    color: #fff !important; /* Force white for index.html */
+}
+
+body:not(.home) .body-content,
+body:not(.home) .body-content h1,
+body:not(.home) .body-content p,
+body:not(.home) .body-content li {
+    color: #000 !important; /* Force black for other pages */
+}
