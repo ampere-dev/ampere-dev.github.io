@@ -13,6 +13,10 @@
     margin: 10px 0;
 }
 
+nav ul li a:hover {
+    color: #FE0002;
+}
+
 .social-icons {
     margin: 10px 0;
 }
