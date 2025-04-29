@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Trends</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        nav a:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        .abstract {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .search-container {
+            margin: 20px 0;
+        }
+        #search {
+            padding: 8px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        article {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        article h2 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+        }
+        article h2 a {
+            color: #000;
+            text-decoration: none;
+        }
+        article h2 a:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        article time {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        article p {
+            margin: 10px 0;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Current Trends</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/rss.xml">RSS</a>
+        </nav>
+    </header>
+
+    <p class="abstract">
+        Current Trends is a minimalist blog dedicated to exploring the latest developments and insights across technology, culture, and innovation. Through concise, focused posts, it aims to inform and inspire readers with a clear, uncluttered perspective on what's shaping our world today.
+    </p>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search posts..." oninput="searchPosts()">
+    </div>
+
+    <main>
+        <article class="post">
+            <h2><a href="#post1">First Post</a></h2>
+            <time datetime="2025-04-29">April 29, 2025</time>
+            <p>This is the first blog post. It's intentionally simple and to the point.</p>
+        </article>
+        <article class="post">
+            <h2><a href="#post2">Second Post</a></h2>
+            <time datetime="2025-04-28">April 28, 2025</time>
+            <p>Another minimal post, keeping things clean and focused.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 Current Trends</p>
+    </footer>
+
+    <script>
+        function searchPosts() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const posts = document.getElementsByClassName('post');
+            Array.from(posts).forEach(post => {
+                const text = post.textContent.toLowerCase();
+                post.classList.toggle('hidden', !text.includes(query));
+            });
+        }
+    </script>
+</body>
+</html>
