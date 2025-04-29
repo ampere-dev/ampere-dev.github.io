@@ -1,33 +1,46 @@
-#footer {
+/* Default footer styles for non-home pages */
+body:not(.home) #footer {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 20px;
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #000000 !important;
+    background-color: #FFFFFF !important;
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
     position: relative;
-    z-index: 2; /* Above overlay */
+    z-index: 2;
 }
 
-.home #footer {
+/* Footer styles for index.html (home page) */
+body.home #footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
     color: #FFFFFF !important;
     background-color: #333333 !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    position: relative;
+    z-index: 2;
 }
 
-.home #footer * {
+body.home #footer * {
     color: #FFFFFF !important; /* Ensure all footer text is white */
 }
 
 /* Override responsive.css positioning */
 @media all and (max-width: 1150px) {
     #footer {
-        position: relative !important; /* Restore sticky behavior */
-        margin-top: 0 !important; /* Remove extra margin */
+        position: relative !important;
+        margin-top: 0 !important;
         bottom: 0;
     }
 }
@@ -35,7 +48,7 @@
 @media all and (max-width: 500px) {
     #footer {
         font-size: 12px;
-        padding: 20px !important; /* Restore padding */
+        padding: 20px !important;
     }
 }
 
