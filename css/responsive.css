@@ -166,3 +166,12 @@
         padding: 10px;
     }
 }
+
+@media (max-width: 768px) {
+    body.home {
+        color: #fff; /* Maintain white for index.html */
+    }
+    body:not(.home) {
+        color: #000; /* Maintain black for other pages */
+    }
+}
