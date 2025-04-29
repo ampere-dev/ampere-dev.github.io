@@ -37,6 +37,29 @@
     clear: both;
 }
 
+/* Style for the image */
+.toc_content img.ex2 {
+    float: right;
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    margin: 15px 0 15px 15px;
+    box-sizing: border-box;
+}
+
+/* Override Bootstrap margins for wrapped content */
+.toc_content h1,
+.toc_content p {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Ensure paragraphs with images don’t add extra margins */
+.toc_content p:has(img.ex2) {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .toc_title {
     font-weight: 600;
     font-size: 16px;
@@ -71,13 +94,6 @@
     background-color: #f9f9f9;
 }
 
-/* Override Bootstrap margins for wrapped content */
-.toc_content h1,
-.toc_content p {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     #toc_container {
@@ -89,6 +105,13 @@
 
     .toc_content {
         margin-left: 0;
+    }
+
+    .toc_content img.ex2 {
+        float: none;
+        max-width: 100%;
+        margin: 10px auto;
+        display: block;
     }
 
     .toc_title {
