@@ -10,6 +10,8 @@
     max-width: 250px;
     padding: 15px;
     box-sizing: border-box;
+    position: sticky;
+    top: 20px; /* Distance from top of viewport when sticky */
 }
 
 /* Wrapper for TOC and content to ensure float context */
@@ -18,14 +20,17 @@
     clear: none;
     display: block;
     width: 100%;
+    padding: 0;
 }
 
-/* Style for body text to ensure wrapping */
+/* Style for body text to ensure wrapping and full width */
 .toc_content {
     overflow: visible;
     clear: none;
-    margin-left: 290px; /* TOC width (250px) + margin-right (20px) + buffer */
+    margin-left: 290px; /* Clears TOC (250px + 20px margin + buffer) */
+    margin-right: 0;
     box-sizing: border-box;
+    width: auto;
 }
 
 /* Clearfix for wrapper */
@@ -38,24 +43,34 @@
 /* Style for the image */
 .toc_content img.ex2 {
     float: right;
-    max-width: 480px;
+    max-width: 400px;
     width: 100%;
     height: auto;
     margin: 15px 0 15px 15px;
     box-sizing: border-box;
 }
 
-/* Override Bootstrap margins for wrapped content */
+/* Override Bootstrap and other margins for wrapped content */
 .toc_content h1,
 .toc_content p {
     margin-left: 0 !important;
     margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* Ensure paragraphs with images don’t add extra margins */
 .toc_content p:has(img.ex2) {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+/* Style for text paragraphs to ensure full width */
+.toc_content p.ex2 {
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    text-align: justify;
+    width: auto;
 }
 
 .toc_title {
@@ -99,10 +114,13 @@
         max-width: 100%;
         margin: 10px auto;
         padding: 10px;
+        position: static; /* Disable sticky on mobile */
     }
 
     .toc_content {
         margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 
     .toc_content img.ex2 {
