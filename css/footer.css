@@ -1,31 +1,38 @@
 #footer {
-    display: flex; /* Use flexbox for the footer container */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    text-align: center; /* Center text for inline elements */
-    padding: 20px; /* Add spacing around footer */
+    flex-shrink: 0; /* Prevent footer from shrinking */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ Rosy;
+    text-align: center;
+    padding: 20px;
+    color: #000000; /* Default text color: black for other pages */
+}
+
+.home #footer {
+    color: #FFFFFF; /* White text for index page */
 }
 
 #footer > div {
-    margin: 10px 0; /* Vertical spacing between sections */
+    margin: 10px 0;
 }
 
 .footer-links a {
-    color: inherit; /* Inherit link color */
-    text-decoration: none; /* Optional: Remove underline for cleaner look */
+    color: inherit; /* Inherit color from #footer (black or white) */
+    text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: #FE0002; /* Hover color to match header */
+    color: #FE0002; /* Red hover effect */
 }
 
 .social-icons {
-    display: flex; /* Flexbox for social icons */
-    justify-content: center; /* Center icons horizontally */
-    gap: 10px; /* Spacing between icons */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-icons img {
-    width: 20px; /* Consistent width */
-    height: 20px; /* Consistent height */
+    width: 20px;
+    height: 20px;
 }
