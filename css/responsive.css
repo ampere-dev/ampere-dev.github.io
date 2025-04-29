@@ -175,3 +175,14 @@
         color: #000; /* Maintain black for other pages */
     }
 }
+
+@media (max-width: 768px) {
+    .image-container img {
+        width: 150px; /* Smaller for tablets */
+    }
+}
+@media (max-width: 576px) {
+    .image-container img {
+        width: 100px; /* Smaller for phones */
+    }
+}
