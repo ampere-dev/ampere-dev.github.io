@@ -1,30 +1,16 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 body {
-  color: #000; /* Black for other pages */
-  font-family: 'Ubuntu', sans-serif;
+    color: #000; /* Black for non-home pages */
+    background-color: #fff; /* Light background */
+    font-family: 'Ubuntu', sans-serif;
 }
 
-/* White font color for index.html */
 body.home {
-  color: #fff; /* White for index.html */
+    color: #fff; /* White for index.html */
+    background-color: #333; /* Dark background for readability */
 }
 
-a:link, a:visited {
-    color: white; /* If white links are site-wide */
-    text-decoration: none;
-}
-
+/* Ensure links inherit body color unless overridden */
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
