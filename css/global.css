@@ -1,31 +1,31 @@
 html, body {
-       height: 100%;
-       margin: 0;
-       padding: 0; /* Remove any padding */
-   }
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-   body {
-       display: flex;
-       flex-direction: column;
-       min-height: 100vh;
-       font-family: 'Ubuntu', sans-serif;
-       color: #000000;
-       background-color: #FFFFFF;
-       border: none !important; /* Prevent grey borders */
-   }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: none !important;
+}
 
-   body.home {
-       color: #FFFFFF;
-       background-color: #333333; /* Fallback for index */
-   }
+body.home {
+    color: #FFFFFF;
+    background-color: #333333; /* Fallback for index */
+}
 
-   .page-wrapper {
-       flex: 1 0 auto;
-       background-color: transparent !important; /* Prevent grey */
-       border: none !important;
-   }
+.page-wrapper {
+    flex: 1 0 auto;
+    background-color: transparent !important;
+    border: none !important;
+}
 
-   a {
-       color: inherit;
-       text-decoration: none;
-   }
+a {
+    color: inherit;
+    text-decoration: none;
+}
