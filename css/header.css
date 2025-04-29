@@ -1,7 +1,6 @@
-
 header {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 #logo {
@@ -17,6 +16,7 @@ nav {
     z-index: 2;
 }
 
+/* Support <nav ul li> structure (if used in index.html) */
 nav ul {
     display: inline-block;
     padding: 0;
@@ -28,11 +28,20 @@ nav ul li {
     margin-right: 15px;
 }
 
-nav ul li a {
-    color: white;
+/* Default styles for navigation links (black for non-home pages) */
+nav ul li a,
+nav.header-nav a {
+    color: #000; /* Black for starline-tapbox-rental.html and other pages */
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: #FE0002;
+nav ul li a:hover,
+nav.header-nav a:hover {
+    color: #FE0002; /* Red hover color */
+}
+
+/* White text for index.html */
+body.home nav ul li a,
+body.home nav.header-nav a {
+    color: #fff; /* White for index.html */
 }
