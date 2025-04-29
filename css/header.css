@@ -1,9 +1,7 @@
 
-/* css/header.css */
-
 header {
     position: relative;
-    z-index: 2; /* Bring header above the overlay */
+    z-index: 2; 
 }
 
 #logo {
@@ -16,7 +14,7 @@ nav {
     text-align: center;
     margin: 20px 0;
     position: relative;
-    z-index: 2; /* Bring nav above the overlay */
+    z-index: 2;
 }
 
 nav ul {
