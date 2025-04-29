@@ -1,6 +1,6 @@
 #footer {
     display: flex; /* Use flexbox for the footer container */
-    flexed-direction: column; /* Stack children vertically */
+    flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally */
     text-align: center; /* Center text for inline elements */
     padding: 20px; /* Add spacing around footer */
@@ -11,12 +11,12 @@
     margin: 10px 0; /* Vertical spacing between sections */
 }
 
-#footer a {
+.footer-links a {
     color: inherit; /* Inherit link color */
     text-decoration: none; /* Optional: Remove underline for cleaner look */
 }
 
-#footer a:hover {
+.footer-links a:hover {
     color: #FE0002; /* Hover color to match header */
 }
 
