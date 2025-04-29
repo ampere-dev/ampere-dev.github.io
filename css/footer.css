@@ -1,16 +1,17 @@
 #footer {
-    flex-shrink: 0; /* Prevent footer from shrinking */
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
- Rosy;
     text-align: center;
     padding: 20px;
-    color: #000000; /* Default text color: black for other pages */
+    color: #000000; /* Black text for other pages */
+    background-color: #FFFFFF; /* White background for other pages */
 }
 
 .home #footer {
-    color: #FFFFFF; /* White text for index page */
+    color: #FFFFFF; /* White text for index */
+    background-color: #333333; /* Dark background for index */
 }
 
 #footer > div {
@@ -18,12 +19,12 @@
 }
 
 .footer-links a {
-    color: inherit; /* Inherit color from #footer (black or white) */
+    color: inherit; /* Inherit from #footer */
     text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: #FE0002; /* Red hover effect */
+    color: #FE0002; /* Red hover */
 }
 
 .social-icons {
@@ -35,4 +36,8 @@
 .social-icons img {
     width: 20px;
     height: 20px;
+}
+
+.social-icons a {
+    filter: none; /* Prevent grey filter on icons */
 }
