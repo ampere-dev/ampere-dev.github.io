@@ -1,7 +1,6 @@
 /* Chapternav Container */
 .chapternav-container {
     margin: 10px auto; /* Center the container */
-    /*max-width: 20%; */
     display: flex;
     justify-content: center; /* Center items */
 }
@@ -12,8 +11,6 @@
     align-items: center;
     overflow: hidden;
     padding: 10px;
-    /*background-color: #f9f9f9;*/
-    /*border: 1px solid #ddd;*/
     width: 100%; /* Ensure full-width container */
 }
 
@@ -57,4 +54,16 @@
     width: 40px; /* Icon size */
     height: 40px; /* Maintain aspect ratio */
     margin-bottom: 5px;
+    filter: grayscale(100%); /* Make icon black by default */
+}
+
+/* Hover Effect for Icon */
+.chapternav-item:hover img {
+    filter: none; /* Remove grayscale to show original colors */
+    filter: hue-rotate(0deg) saturate(100%) brightness(50%) sepia(100%) hue-rotate(-50deg); /* Adjust to red */
+}
+
+/* Hover Effect for Text */
+.chapternav-item:hover {
+    color: #FE0002 !important; /* Red hover for text */
 }
