@@ -92,7 +92,6 @@
 .toc_list.ex2 li a {
     color: #333;
     text-decoration: none;
-    padding: 5px 10px;
     border-radius: 4px;
     display: block;
     transition: color 0.2s ease;
