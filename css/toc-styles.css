@@ -5,23 +5,22 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
-    margin: 20px 10px;
     padding: 15px;
     box-sizing: border-box;
     position: sticky;
     top: 20px;
     z-index: 100;
-    width: calc(100% - 20px);
+    max-width: 250px; /* Restrict TOC width to avoid covering content */
 }
 
 .toc_container_wrapper {
-    margin: 0 10px;
-    overflow: visible;
-    display: block;
+    display: flex; /* Use flexbox to position TOC and content side by side */
+    margin: 0 10px; /* Small margins on left and right */
+    gap: 20px; /* Space between TOC and content */
 }
 
 .toc_content {
-    margin: 0 10px;
+    flex: 1; /* Content takes remaining space */
     box-sizing: border-box;
 }
 
@@ -96,18 +95,19 @@
 
 @media screen and (max-width: 768px) {
     #toc_container {
+        max-width: 100%; /* Full width on mobile */
         margin: 10px;
         padding: 10px;
-        position: static;
-        width: calc(100% - 20px);
+        position: static; /* Disable sticky on mobile */
     }
 
     .toc_container_wrapper {
+        flex-direction: column; /* Stack TOC and content vertically */
         margin: 0 10px;
     }
 
     .toc_content {
-        margin: 0 10px;
+        margin: 0;
     }
 
     .toc_content img.ex2 {
