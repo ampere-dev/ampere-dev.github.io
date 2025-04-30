@@ -1,6 +1,5 @@
 /* Chapternav Container */
 .chapternav-container {
-    margin: 10px auto; /* Center the container */
     display: flex;
     justify-content: center; /* Center items */
 }
