@@ -124,6 +124,7 @@
         article h2 {
             font-size: 1.75rem;
             margin-bottom: 0.5rem;
+            cursor: pointer;
         }
 
         article h2 a {
@@ -170,6 +171,16 @@
 
         .hidden {
             display: none;
+        }
+
+        .post-content {
+            max-height: 1000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .collapsed .post-content {
+            max-height: 0;
         }
 
         @media (max-width: 600px) {
@@ -223,35 +234,36 @@
 
     <main>
         <article class="post">
-            <h2><a href="#Mr-Wonderfuls-AI-Power-Play">Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!</a></h2>
-            <time datetime="2025-04-29">April 29, 2025</time>
-            <p>Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future! Here’s why his plan is as bold as his Shark Tank zingers—and why you should be paying attention.</p>
+            <h2 onclick="togglePost(this)"><a href="#Mr-Wonderfuls-AI-Power-Play">Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!</a></h2>
+            <div class="post-content">
+                <time datetime="2025-04-29">April 29, 2025</time>
+                <p>Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future! Here’s why his plan is as bold as his Shark Tank zingers—and why you should be paying attention.</p>
 
-            <h3>A.I. and Data Centers: The Gold Rush of the 2020s</h3>
-            <p>If you’re 25 and hungry for opportunity, Mr. Wonderful’s dropping wisdom like it’s a Shark Tank pitch: A.I. implementation and data center development are where the money’s at. Small businesses are tripping over themselves to adopt A.I. but don’t know where to start. That’s your cue—swoop in, solve their problems, and cash in. Meanwhile, data centers are the backbone of this tech tsunami. With hyperscalers like Tesla, Microsoft, and Google gobbling up capacity faster than you can say “cloud computing,” real estate and tech are colliding in the most lucrative way possible. As O’Leary puts it, “This is where the future’s heading. Don’t miss it.”</p>
+                <h3>A.I. and Data Centers: The Gold Rush of the 2020s</h3>
+                <p>If you’re 25 and hungry for opportunity, Mr. Wonderful’s dropping wisdom like it’s a Shark Tank pitch: A.I. implementation and data center development are where the money’s at. Small businesses are tripping over themselves to adopt A.I. but don’t know where to start. That’s your cue—swoop in, solve their problems, and cash in. Meanwhile, data centers are the backbone of this tech tsunami. With hyperscalers like Tesla, Microsoft, and Google gobbling up capacity faster than you can say “cloud computing,” real estate and tech are colliding in the most lucrative way possible. As O’Leary puts it, “This is where the future’s heading. Don’t miss it.”</p>
 
-            <h3>Alberta’s Got Gas, But North Dakota’s Got Guts</h3>
+                <h3>Alberta’s Got Gas, But North Dakota’s Got Guts</h3>
+                <p>While O’Leary’s raising $70 billion to build the world’s lowest-cost, highest-efficiency data center in Alberta—powered by abundant natural gas and a premier who’s all-in—North Dakota’s stealing the spotlight. Why? It’s got the land, the power, and the leadership to make A.I. and data centers thrive. With 45 GW on the table, North Dakota’s ready to power the A.I. revolution like nobody’s business. O’Leary’s already investing here, and he’s shouting it from the rooftops (or at least on AM 1100 The Flag): “Data centers, A.I., agtech, drones—North Dakota’s wide open for business!”</p>
 
-            <p>While O’Leary’s raising $70 billion to build the world’s lowest-cost, highest-efficiency data center in Alberta—powered by abundant natural gas and a premier who’s all-in—North Dakota’s stealing the spotlight. Why? It’s got the land, the power, and the leadership to make A.I. and data centers thrive. With 45 GW on the table, North Dakota’s ready to power the A.I. revolution like nobody’s business. O’Leary’s already investing here, and he’s shouting it from the rooftops (or at least on AM 1100 The Flag): “Data centers, A.I., agtech, drones—North Dakota’s wide open for business!”</p>
+                <h3>China’s Out, North Dakota’s In</h3>
+                <p>Mr. Wonderful’s not mincing words: China’s been “stealing from American entrepreneurs for years,” and it’s time they face the music. Meanwhile, North Dakota’s rolling out the red carpet for innovation. Forget the Great Wall—think Great Plains, where A.I., data centers, and agtech are about to make waves. O’Leary’s betting big, and he’s got the receipts to prove it.</p>
 
-            <h3>China’s Out, North Dakota’s In</h3>
-            <p>Mr. Wonderful’s not mincing words: China’s been “stealing from American entrepreneurs for years,” and it’s time they face the music. Meanwhile, North Dakota’s rolling out the red carpet for innovation. Forget the Great Wall—think Great Plains, where A.I., data centers, and agtech are about to make waves. O’Leary’s betting big, and he’s got the receipts to prove it.</p>
+                <h3>Watch Mr. Wonderful Break It Down</h3>
+                <p>Don’t just take our word for it—check out O’Leary laying out the vision himself in this video from AM 1100 The Flag. It’s got all the energy of a Shark Tank deal about to close:</p>
 
-            <h3>Watch Mr. Wonderful Break It Down</h3>
-            <p>Don’t just take our word for it—check out O’Leary laying out the vision himself in this video from AM 1100 The Flag. It’s got all the energy of a Shark Tank deal about to close:</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dKkdor6_rw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
 
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dKkdor6_rw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Why North Dakota? Why Now?</h3>
+                <p>
+                    <strong>Power Galore:</strong> 45 GW of juice to keep A.I. and data centers humming.<br>
+                    <strong>Land for Days:</strong> Wide-open spaces perfect for sprawling tech campuses.<br>
+                    <strong>Leadership with Vision:</strong> North Dakota’s ready to play ball and win the A.I. race.<br>
+                    <strong>Mr. Wonderful’s Stamp of Approval:</strong> If O’Leary’s investing, you know it’s legit.
+                </p>
+                <p>So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!</p>
             </div>
-
-            <h3>Why North Dakota? Why Now?</h3>
-            <p>
-                <strong>Power Galore:</strong> 45 GW of juice to keep A.I. and data centers humming.<br>
-                <strong>Land for Days:</strong> Wide-open spaces perfect for sprawling tech campuses.<br>
-                <strong>Leadership with Vision:</strong> North Dakota’s ready to play ball and win the A.I. race.<br>
-                <strong>Mr. Wonderful’s Stamp of Approval:</strong> If O’Leary’s investing, you know it’s legit.
-            </p>
-            <p>So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!</p>
         </article>
     </main>
 
@@ -267,6 +279,11 @@
                 const text = post.textContent.toLowerCase();
                 post.classList.toggle('hidden', !text.includes(query));
             });
+        }
+
+        function togglePost(titleElement) {
+            const article = titleElement.closest('article');
+            article.classList.toggle('collapsed');
         }
     </script>
 </body>
