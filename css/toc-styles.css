@@ -1,7 +1,6 @@
 #toc_container {
     background: #fff;
-    border: 1px
-    border-color: #FE0002;
+    border: 1px solid #FE0002; /* Updated border color */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: "Ubuntu", sans-serif;
