@@ -11,7 +11,8 @@
     padding: 15px;
     box-sizing: border-box;
     position: sticky;
-    top: 20px; /* Distance from top of viewport when sticky */
+    top: 20px; /* Stick 20px from top of viewport */
+    z-index: 100; /* Ensure TOC stays above other content */
 }
 
 /* Wrapper for TOC and content to ensure float context */
@@ -20,6 +21,8 @@
     clear: none;
     display: block;
     width: 100%;
+    max-width: 1200px; /* Matches Bootstrap container width */
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -30,7 +33,7 @@
     margin-left: 290px; /* Clears TOC (250px + 20px margin + buffer) */
     margin-right: 0;
     box-sizing: border-box;
-    width: auto;
+    width: auto; /* Full available width */
 }
 
 /* Clearfix for wrapper */
@@ -46,17 +49,32 @@
     max-width: 400px;
     width: 100%;
     height: auto;
-    margin: 15px 15px 15px 15px;
+    margin: 15px 0 15px 15px;
     box-sizing: border-box;
 }
 
-/* Override Bootstrap and other margins for wrapped content */
-.toc_content h1,
+/* Override provided and Bootstrap styles for content */
+.toc_content h1 {
+    margin: 20px 0 20px 0 !important; /* Keep top/bottom, remove left/right */
+    padding: 10px !important;
+    background-color: #E5E5E5 !important;
+    font-size: 1.5em !important;
+}
+
+.toc_content h2.ex2 {
+    margin: 20px 0 20px 0 !important; /* Keep top/bottom, remove left/right */
+    padding: 10px !important;
+    background-color: #E5E5E5 !important;
+}
+
 .toc_content p {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    margin: 0 0 10px 0 !important; /* Override p { margin-left: 20px; } */
+    padding: 0 !important;
+}
+
+.toc_content ul {
+    margin: 20px 0 20px 20px !important; /* Keep left margin for indentation */
+    padding: 0 !important;
 }
 
 /* Ensure paragraphs with images don’t add extra margins */
@@ -128,6 +146,14 @@
         max-width: 100%;
         margin: 10px auto;
         display: block;
+    }
+
+    .toc_content h1,
+    .toc_content h2.ex2,
+    .toc_content p,
+    .toc_content ul {
+        margin: 10px 0 !important; /* Simplify margins on mobile */
+        padding: 0 !important;
     }
 
     .toc_title {
