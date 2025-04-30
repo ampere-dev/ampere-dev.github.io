@@ -35,197 +35,211 @@
 <!-- Fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ubuntu:wght@400;700&display=swap">
 
-    <!-- Stylesheets -->
+<!-- Stylesheets -->
 <link rel="stylesheet" href="css/footer.css">
 
+<style>
+    :root {
+        --primary-color: #333;
+        --accent-color: #ff0000;
+        --border-color: #ddd;
+        --background-color: #f5f5f5;
+    }
 
-    <style>
-        :root {
-            --primary-color: #333;
-            --accent-color: #ff0000;
-            --border-color: #ddd;
-            --background-color: #f5f5f5;
-        }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        line-height: 1.6;
+        color: var(--primary-color);
+        background: var(--background-color);
+    }
 
+    header {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
+
+    .abstract {
+        font-size: 1rem;
+        color: #555;
+        margin: 1.5rem 0;
+        font-style: italic;
+        max-width: 700px;
+    }
+
+    .search-container {
+        margin: 1.5rem 0;
+    }
+
+    #search {
+        padding: 0.75rem;
+        width: 100%;
+        max-width: 350px;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.2s ease;
+    }
+
+    #search:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+
+    article {
+        margin-bottom: 2.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    article h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
+
+    article h2 a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    article h2 a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
+
+    article time {
+        display: block;
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    article p {
+        margin: 0.75rem 0;
+    }
+
+    article h3 {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 0.5rem;
+    }
+
+    .quote {
+        font-style: italic;
+        color: #555;
+        border-left: 4px solid #007BFF;
+        padding-left: 10px;
+        margin: 15px 0;
+    }
+
+    .author {
+        text-align: right;
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+    }
+
+    footer {
+        margin-top: 3rem;
+        text-align: center;
+        color: #666;
+        font-size: 0.9rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .post-content {
+        height: auto;
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+    }
+
+    .collapsed .post-content {
+        height: 0;
+    }
+
+    @media (max-width: 600px) {
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-            line-height: 1.6;
-            color: var(--primary-color);
-            background: var(--background-color);
-        }
-
-        header {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
+            padding: 1rem;
         }
 
         h1 {
-            font-size: 2.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        nav a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.2s ease;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-
-        .abstract {
-            font-size: 1rem;
-            color: #555;
-            margin: 1.5rem 0;
-            font-style: italic;
-            max-width: 700px;
-        }
-
-        .search-container {
-            margin: 1.5rem 0;
-        }
-
-        #search {
-            padding: 0.75rem;
-            width: 100%;
-            max-width: 350px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-size: 1rem;
-            transition: border-color 0.2s ease;
-        }
-
-        #search:focus {
-            outline: none;
-            border-color: var(--accent-color);
-        }
-
-        article {
-            margin-bottom: 2.5rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #eee;
+            font-size: 1.75rem;
         }
 
         article h2 {
-            font-size: 1.75rem;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
+            font-size: 1.5rem;
         }
 
-        article h2 a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        article h2 a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-
-        article time {
-            display: block;
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-        }
-
-        article p {
-            margin: 0.75rem 0;
-        }
-
-        article h3 {
-            font-size: 1.25rem;
-            margin: 1.5rem 0 0.5rem;
-        }
-
-        .video-container {
-            display: flex;
-            justify-content: center;
-            margin: 1.5rem 0;
-        }
-
-        footer {
-            margin-top: 3rem;
-            text-align: center;
-            color: #666;
-            font-size: 0.9rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .post-content {
+        .video-container iframe {
+            width: 100%;
             height: auto;
-            overflow: hidden;
-            transition: height 0.3s ease-out;
         }
-
-        .collapsed .post-content {
-            height: 0;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 1.75rem;
-            }
-
-            article h2 {
-                font-size: 1.5rem;
-            }
-
-            .video-container iframe {
-                width: 100%;
-                height: auto;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
     <div id="logo">
-    <a href="./index.html" aria-label="Return to Ampere Development Homepage">
-        <picture>
-            <source srcset="images/Ampere-Logo.webp" type="image/webp">
-            <img src="images/Ampere-Logo.png" alt="Ampere Development Logo" width="154" height="30">
-        </picture>
-    </a>
+        <a href="./index.html" aria-label="Return to Ampere Development Homepage">
+            <picture>
+                <source srcset="images/Ampere-Logo.webp" type="image/webp">
+                <img src="images/Ampere-Logo.png" alt="Ampere Development Logo" width="154" height="30">
+            </picture>
+        </a>
+    </div>
     <header>
-<nav>
-    <a href="/load-banks.html">LOAD BANKS</a>
-    <a href="/starline-tapbox-rental.html">STARLINE</a> 
-    <a href="/cables.html">CABLES</a>
-    <a href="/flir.html">FLIR</a>
-    <a href="/power-quality.html">POWER QUALITY</a>
-    <a href="/transformers.html">TRANSFORMERS</a>
-    <a href="/3d-fabrication.html">3D FABRICATION</a>
-    <a href="/rss.xml">RSS</a>
-</nav>
+        <nav>
+            <a href="/load-banks.html">LOAD BANKS</a>
+            <a href="/starline-tapbox-rental.html">STARLINE</a> 
+            <a href="/cables.html">CABLES</a>
+            <a href="/flir.html">FLIR</a>
+            <a href="/power-quality.html">POWER QUALITY</a>
+            <a DRAMERS.html">TRANSFORMERS</a>
+            <a href="/3d-fabrication.html">3D FABRICATION</a>
+            <a href="/rss.xml">RSS</a>
+        </nav>
     </header>
 
     <p class="abstract">
@@ -269,10 +283,27 @@
                 <p>So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!</p>
             </div>
         </article>
-     <article class="post">
-            <h2 onclick="togglePost(this)"><a href="#TEST">TEST</a></h2>
+        <article class="post">
+            <h2 onclick="togglePost(this)"><a href="#AI-Supremacy-Race">Nvidia CEO Jensen Huang on U.S.-China AI Race and the Trade Jobs Boom</a></h2>
             <div class="post-content">
                 <time datetime="2025-04-30">April 30, 2025</time>
+                <p>At the Hill and Valley Forum in Washington, D.C., Nvidia CEO Jensen Huang delivered a stark warning about the intensifying AI supremacy race between the U.S. and China, while highlighting AI’s transformative potential to revolutionize industries and create a surge in trade jobs.</p>
+                
+                <h3>A Fierce, Infinite AI Race</h3>
+                <p>In an interview with CNBC’s <em>Squawk on the Street</em>, Huang emphasized the closeness of the competition. <span class="quote">“China is right behind us. We’re very, very close,”</span> he said, framing the rivalry as a long-term endeavor. <span class="quote">“This is a long-term, an infinite race. In the world of life, there’s no two-minute drill or end of the quarter.”</span> His remarks underscore the high stakes of AI development, with both nations investing heavily in the technology that promises to reshape global economies.</p>
+                
+                <h3>AI’s Industrial Transformation</h3>
+                <p>During a conversation with Jacob Helberg, Under Secretary of State for Economic Growth, Energy, and the Environment nominee, Huang outlined AI’s impact on manufacturing. He predicted a shift toward autonomous systems across industries. <span class="quote">“Every company that makes things today—whether lawnmowers or construction machinery—will shift from manual to autonomous or semi-autonomous systems,”</span> he said. This transition will require “AI factories” to produce the software that powers these systems, alongside traditional factories building physical products.</p>
+                
+                <h3>A Net-Positive for Jobs</h3>
+                <p>Huang acknowledged that AI will disrupt the labor market but argued its overall impact will be positive. <span class="quote">“New jobs will be created, some jobs will be lost, every job will be changed,”</span> he said, pointing to San Francisco’s AI-driven economic revival as evidence. The shift from human-coded software on CPUs to machine-learning-generated code on GPUs is creating new roles in data curation and AI safety. <span class="quote">“All of that technology is being invented right now, and it creates tons of jobs,”</span> Huang noted.</p>
+                
+                <h3>The Rise of AI Factories</h3>
+                <p>The most significant opportunity, according to Huang, lies in the construction of “AI factories”—massive facilities that convert electricity into computational intelligence. These factories represent a new industrial frontier, with a single one-gigawatt facility costing $60 billion, comparable to Boeing’s annual revenue. Huang described plans for even larger 7-10 gigawatt factories, which will drive demand for skilled labor. <span class="quote">“You need carpenters, steelworkers, masons, mechanical and electrical engineers, plumbers, and IT specialists,”</span> he said, estimating a three-year construction cycle per factory.</p>
+                
+                <p>Huang’s vision paints a future where AI not only fuels technological innovation but also revitalizes the skilled trades, creating a new wave of economic opportunities.</p>
+                
+                <p class="author">— Reported based on remarks by Jensen Huang at the Hill and Valley Forum, April 2025</p>
             </div>
         </article>
     </main>
