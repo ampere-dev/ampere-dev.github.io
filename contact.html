@@ -64,9 +64,22 @@
         </nav>
     </header>
 
-    <main>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfU5daOQRyscUvhZA5DLT0W82tFtD0tJ3ZF0uQ6vBQ80C7Hog/viewform?embedded=true" width="640" height="2000" frameborder="0" marginheight="0" marginwidth="0" style="display: block; margin: 0 auto;">Loading…</iframe>
-    </main>
+<style>
+    .google-form-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+    .google-form-wrapper iframe {
+        margin-bottom: -60px;
+        height: 2060px;
+        max-width: 100%;
+    }
+</style>
+<main>
+    <div class="google-form-wrapper">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfU5daOQRyscUvhZA5DLT0W82tFtD0tJ3ZF0uQ6vBQ80C7Hog/viewform?embedded=true" width="640" height="2060" frameborder="0" marginheight="0" marginwidth="0" style="display: block; margin: 0 auto; margin-bottom: -60px;">Loading…</iframe>
+    </div>
+</main>
 
     <footer id="footer">
         <div class="footer-links">
