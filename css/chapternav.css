@@ -17,10 +17,8 @@
 /* Scrolling Area */
 .chapternav-scroll {
     display: flex;
-    gap: 15px;
     overflow-x: auto; /* Enable horizontal scrolling */
     scroll-behavior: smooth;
-    padding: 10px 0;
     justify-content: center; /* Center content */
     scrollbar-width: none; /* Firefox */
     width: 100%; /* Full width for scrolling */
