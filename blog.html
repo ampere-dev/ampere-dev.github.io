@@ -174,13 +174,13 @@
         }
 
         .post-content {
-            max-height: 1000px;
+            height: auto;
             overflow: hidden;
-            transition: max-height 0.3s ease-out;
+            transition: height 0.3s ease-out;
         }
 
         .collapsed .post-content {
-            max-height: 0;
+            height: 0;
         }
 
         @media (max-width: 600px) {
@@ -283,7 +283,28 @@
 
         function togglePost(titleElement) {
             const article = titleElement.closest('article');
-            article.classList.toggle('collapsed');
+            const content = article.querySelector('.post-content');
+            
+            if (article.classList.contains('collapsed')) {
+                // Expanding: set height to content's scrollHeight
+                content.style.height = content.scrollHeight + 'px';
+                article.classList.remove('collapsed');
+            } else {
+                // Collapsing: set height to 0
+                content.style.height = content.scrollHeight + 'px';
+                setTimeout(() => {
+                    content.style.height = '0';
+                }, 10); // Small delay to ensure transition triggers
+                article.classList.add('collapsed');
+            }
+            
+            // Reset height to auto after transition to handle dynamic content
+            content.addEventListener('transitionend', function handler() {
+                if (!article.classList.contains('collapsed')) {
+                    content.style.height = 'auto';
+                }
+                content.removeEventListener('transitionend', handler);
+            });
         }
     </script>
 </body>
