@@ -141,8 +141,13 @@
 </style>
 <body>
 <div id="logo">
-    <a href="./"><img src="images/Ampere Logo.webp" alt="Logo" height="30"></a>
-    <div class="menuToggler">MENU</div>
+    <a href="./index.html" aria-label="Return to Ampere Development Homepage">
+        <picture>
+            <source srcset="images/Ampere-Logo.webp" type="image/webp">
+            <img src="images/Ampere-Logo.png" alt="Ampere Development Logo" width="154" height="30">
+        </picture>
+    </a>
+    <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
 </div>
         <nav id="header" class="nav-menu">
             <ul>
