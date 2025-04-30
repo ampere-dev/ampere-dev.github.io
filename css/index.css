@@ -49,3 +49,9 @@ main h3 {
     margin-bottom: 10px;
     letter-spacing: 0.05em;
 }
+
+h2.tagline {
+  font-style: italic !important;
+  color: #6c757d !important;
+  margin-bottom: 1rem;
+}
