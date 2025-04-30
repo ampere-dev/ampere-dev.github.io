@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ampere.dev empowers developers, engineers, and businesses with tools, resources, and community-driven support to innovate with precision and efficiency." />
-<meta name="keywords" content="Ampere.dev, developer tools, engineering solutions, software development, innovation, technical resources, community support" />
-<title>About Ampere.dev | Empowering Innovation</title>
-
+    <meta name="description" content="Ampere.dev empowers developers and businesses with innovative tools, resources, and community support for precision and efficiency.">
+    <title>About Ampere.dev | Empowering Innovation</title>
 
     <!-- SEO -->
     <link rel="canonical" href="https://ampere.dev/about" />
@@ -16,205 +14,127 @@
     <!-- Preload & Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
-    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
     <!-- Favicon -->
     <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script> <!-- Latest jQuery -->
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script> <!-- Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script> <!-- Bootstrap 5 -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script> <!-- Swiper.js -->
-    <script src="js/main.js" defer></script> <!-- Your custom JS -->
-
-
-/* Main layout container */
-.content-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0;
-  height: auto;
-}
-
-/* Body content on the left */
-.body-content {
-  flex: 2; /* Occupy 2/3 of the width */
-  margin: 20px;
-  overflow-y: auto; /* Allow vertical scrolling within the body content, if needed */
-}
-
-/* Image container on the right with collage layout */
-.image-container {
-  flex: 1; /* Occupy 1/3 of the width */
-  display: grid;
-  grid-template-areas:
-    "img1 img2"
-    "img3 img2"
-    "img3 img4"
-    "img5 img4";
-  gap: 10px; /* Add margin between images */
-  padding: 10px; /* Optional padding around the collage */
-  box-sizing: border-box;
-  height: 100%; /* Full height of the container */
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fill their grid area */
-  cursor: pointer;
-  border-radius: 5px; /* Optional: Add rounded corners for a softer look */
-}
-
-/* Specific layout for each image */
-.image-container img:nth-child(1) {
-  grid-area: img1;
-}
-
-.image-container img:nth-child(2) {
-  grid-area: img2;
-}
-
-.image-container img:nth-child(3) {
-  grid-area: img3;
-}
-
-.image-container img:nth-child(4) {
-  grid-area: img4;
-}
-
-.image-container img:nth-child(5) {
-  grid-area: img5;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column;
-    height: auto; /* Allow scrolling for smaller screens */
-  }
-
-  .body-content {
-    flex: none;
-    width: 100%; /* Full width on small screens */
-    margin-bottom: 20px;
-  }
-
-
-
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM9f1l" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-
-<div id="logo">
-    <a href="./index.html" aria-label="Return to Ampere Development Homepage">
-        <picture>
-            <source srcset="images/Ampere-Logo.webp" type="image/webp">
-            <img src="images/Ampere-Logo.png" alt="Ampere Development Logo" width="154" height="30">
-        </picture>
-    </a>
-    <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-</div>
-
-    </div>
+    <header>
+        <div id="logo">
+            <a href="./index.html" aria-label="Return to Ampere.dev Homepage">
+                <picture>
+                    <source srcset="images/Ampere-Logo.webp" type="image/webp">
+                    <img src="images/Ampere-Logo.png" alt="Ampere.dev Logo" width="154" height="30">
+                </picture>
+            </a>
+            <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0" aria-expanded="false">☰</div>
+        </div>
         <nav id="header" class="nav-menu">
             <ul>
-                <li><a href="what-are-load-banks.html">LOAD BANKS</a></li>
-                <li><a href="starline-tapbox-rental.html">STARLINE</a></li>
-                <li><a href="cables.html">CABLES</a></li>
+                <li><a href="what-are-load-banks.html">Load Banks</a></li>
+                <li><a href="starline-tapbox-rental.html">Starline</a></li>
+                <li><a href="cables.html">Cables</a></li>
                 <li><a href="flir.html">FLIR</a></li>
-                <li><a href="power-quality.html">POWER QUALITY</a></li>
-                <li><a href="transformers.html">TRANSFORMERS</a></li>
-                <li><a href="3D-fabrication.html">3D FABRICATION</a></li>
+                <li><a href="power-quality.html">Power Quality</a></li>
+                <li><a href="transformers.html">Transformers</a></li>
+                <li><a href="3D-fabrication.html">3D Fabrication</a></li>
             </ul>
         </nav>
+    </header>
 
-<main class="content-wrapper">
-    <!-- Body content -->
-    <section class="body-content" role="main">
-<section>
-    <h1>About</h1>
-    <p><strong>Designed, Innovative, Dynamic</strong> - Simple words with strong connotations. Our solutions are carefully crafted (designed) to address real-world challenges, blending functionality with user-centric excellence. We stay ahead of the curve by embracing bold ideas and pioneering approaches (innovative), ensuring that every tool, service, and insight we provide adds meaningful value. In a world of constant change, we remain agile and adaptable (dynamic), equipping developers, engineers, and businesses with the resources they need to thrive in an ever-evolving technological landscape. Together, these principles define who we are and how we empower our community to build a better future.</p>
+    <main class="content-wrapper">
+        <!-- Body content -->
+        <section class="body-content" role="main">
+            <h1>About Ampere.dev</h1>
+            <h2>Our Approach</h2>
+            <p><strong>Designed, Innovative, Dynamic</strong> - Our solutions are carefully crafted to address real-world challenges, blending functionality with user-centric excellence. We embrace bold ideas and pioneering approaches, ensuring every tool, service, and insight adds meaningful value. In a world of constant change, we remain agile, equipping developers, engineers, and businesses with resources to thrive.</p>
 
-    <h1>Who</h1>
-    <p>Ampere.dev is built by a passionate team of developers, engineers, and industry experts who believe in the power of collaboration and open innovation. Rooted in being designed, innovative, and dynamic, our diverse team combines expertise in software development, hardware engineering, and systems integration. United by a shared goal, we strive to make high-quality tools, insights, and solutions accessible to everyone, empowering individuals and organizations to unlock their full potential.</p>
+            <h2>Who We Are</h2>
+            <p>Ampere.dev is built by a passionate team of developers, engineers, and experts who believe in collaboration and open innovation. Our diverse team combines expertise in software development, hardware engineering, and systems integration to make high-quality tools and solutions accessible to all.</p>
 
-    <h1>What</h1>
-    <ul>
-        <li><strong>Developer Tools:</strong> Whether you’re building a web app, optimizing system performance, or prototyping the next big thing, our tools are designed to streamline your workflow and maximize productivity.</li>
-        <li><strong>Knowledge Base:</strong> Explore a growing library of articles, tutorials, and technical guides covering a wide range of topics—from beginner basics to advanced industry techniques.</li>
-        <li><strong>Custom Solutions:</strong> Need tailored support for your unique challenges? Our team offers consultancy services and custom development to help you tackle complex problems with confidence.</li>
-        <li><strong>Community Engagement:</strong> We’re more than a platform—we’re a community. Join forums, participate in discussions, and collaborate with like-minded professionals who share your passion for innovation.</li>
-    </ul>
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Developer Tools:</strong> Streamline your workflow and maximize productivity with tools for web apps, system optimization, and prototyping.</li>
+                <li><strong>Knowledge Base:</strong> Explore articles, tutorials, and guides covering beginner to advanced topics.</li>
+                <li><strong>Custom Solutions:</strong> Get tailored consultancy and development services for complex challenges.</li>
+                <li><strong>Community Engagement:</strong> Join forums, discussions, and collaborate with professionals passionate about innovation.</li>
+            </ul>
 
-    <h1>Vision</h1>
-    <p>We envision a future where technology is not a barrier but a bridge. Designed to inspire, driven by innovation, and dynamic in approach, our mission is to empower individuals and organizations with the right tools and knowledge. By doing so, we aim to unlock the full potential of innovation and bring transformative ideas to life.</p>
+            <h2>Our Vision</h2>
+            <p>We envision technology as a bridge, not a barrier. Our mission is to empower individuals and organizations with tools and knowledge to unlock innovation and bring transformative ideas to life.</p>
 
-    <h1>Why?</h1>
-    <ul>
-        <li><strong>Expertise You Can Trust:</strong> Decades of combined experience in software and hardware engineering.</li>
-        <li><strong>User-Centric Design:</strong> Every solution is crafted with the developer and end-user in mind.</li>
-        <li><strong>Continuous Evolution:</strong> We stay ahead of industry trends to ensure you have access to the latest and most effective technologies.</li>
-        <li><strong>Community-Driven:</strong> Your feedback and contributions shape our growth and direction.</li>
-    </ul>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Expertise You Can Trust:</strong> Decades of experience in software and hardware engineering.</li>
+                <li><strong>User-Centric Design:</strong> Solutions crafted with developers and end-users in mind.</li>
+                <li><strong>Continuous Evolution:</strong> Access to the latest technologies and industry trends.</li>
+                <li><strong>Community-Driven:</strong> Your feedback shapes our growth.</li>
+            </ul>
 
-    <h1>Get in Touch</h1>
-    <p>We’d love to hear from you! Whether you have a question, need support, or want to collaborate, reach out to us today.</p>
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Whether you have a question, need support, or want to collaborate, reach out today.</p>
+            <p>Together, let’s power the future of technology.</p>
+        </section>
 
-    <p>Together, let’s power the future of technology.</p>
-</section>
-
-</main>
+        <!-- Image collage -->
+        <aside class="image-container">
+            <img src="images/placeholder1.jpg" alt="Developer working on code">
+            <img src="images/placeholder2.jpg" alt="Innovative technology showcase">
+            <img src="images/placeholder3.jpg" alt="Team collaboration meeting">
+            <img src="images/placeholder4.jpg" alt="Hardware engineering project">
+            <img src="images/placeholder5.jpg" alt="Community event at Ampere.dev">
+        </aside>
+    </main>
 
     <footer id="footer">
         <div class="footer-links">
             <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="privacy-legal.html">PRIVACY & LEGAL</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="privacy-legal.html">Privacy & Legal</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit Ampere.dev on Facebook">
+                <img src="icons/facebook-logo.png" alt="">
             </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo">
+            <a href="https://x.com" target="_blank" rel="noopener" aria-label="Visit Ampere.dev on X">
+                <img src="icons/logo-black.png" alt="">
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Visit Ampere.dev on LinkedIn">
+                <img src="images/linkedin.png" alt="">
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/instagram-logo.png" alt="Instagram logo">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit Ampere.dev on Instagram">
+                <img src="icons/instagram-logo.png" alt="">
             </a>
         </div>
         <div>
             <p>AMPERE © 2025</p>
         </div>
     </footer>
-
 </body>
 </html>
-
