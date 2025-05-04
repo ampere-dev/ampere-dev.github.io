@@ -65,15 +65,21 @@
     </header>
 
 <style>
-    .google-form-wrapper {
-        position: relative;
-        overflow: hidden;
-    }
-    .google-form-wrapper iframe {
-        margin-bottom: -100px;
-        height: 1800px;
-        max-width: 100%;
-    }
+.google-form-wrapper {
+    position: relative;
+    overflow: hidden; /* Ensures no overflow content is visible */
+}
+.google-form-wrapper iframe {
+    margin-bottom: -100px; /* Hides the Google Forms footer text */
+    height: 1800px; /* Keep your adjusted height */
+    max-width: 100%;
+    width: 100%; /* Ensures iframe fits container */
+    scrollbar-width: none; /* Firefox: Hides scrollbar */
+    -ms-overflow-style: none; /* IE/Edge: Hides scrollbar */
+}
+.google-form-wrapper iframe::-webkit-scrollbar {
+    display: none; /* Chrome/Safari: Hides scrollbar */
+}
 </style>
 <main>
     <div class="google-form-wrapper">
