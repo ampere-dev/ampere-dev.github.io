@@ -60,12 +60,10 @@ h2.tagline {
   background-color: #dc3545 !important; /* Bootstrap danger red */
   border-color: #dc3545 !important;
   color: white !important;
+  margin-right: 10px;
 }
 .btn-primary:hover {
   background-color: #c82333 !important; /* Darker red on hover */
   border-color: #c82333 !important;
   color: white !important;
-}
-.btn-spacing {
-    margin-right: 10px;
 }
