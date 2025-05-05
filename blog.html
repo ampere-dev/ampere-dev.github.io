@@ -105,20 +105,21 @@
         margin: 1rem 0;
     }
 
-    #search {
-        padding: 0.75rem;
-        width: 100%;
-        max-width: 350px;
-        border: 1px solid var(--border-color);
-        border-radius: 6px;
-        font-size: 1rem;
-        transition: border-color 0.2s ease;
-    }
+#search {
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid var(--accent-color); /* Red border using #ff0000 */
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease; /* Added box-shadow for smoother focus effect */
+}
 
-    #search:focus {
-        outline: none;
-        border-color: var(--accent-color);
-    }
+#search:focus {
+    outline: none;
+    border-color: var(--accent-color); /* Maintain red border on focus */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3); /* Optional: subtle red glow for focus */
+}
 
     article {
         margin-bottom: 1.5rem;
