@@ -32,19 +32,18 @@
     <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/footer.css">
-<link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
@@ -54,8 +53,6 @@
     <script src="js/main.js" defer></script>
 </head>
 <style>
-
-
 /* Main layout container */
 .content-wrapper {
     display: flex;
@@ -113,6 +110,33 @@
     }
 }
 
+/* Transformer types grid */
+.transformer-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.transformer-types div {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transformer-types h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #004aad;
+}
+
+.transformer-types p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .content-wrapper {
@@ -138,6 +162,10 @@
         width: 100%;
         height: auto;
     }
+
+    .transformer-types {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 <body>
@@ -150,17 +178,17 @@
     </a>
     <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
 </div>
-        <nav id="header" class="nav-menu">
-            <ul>
-                <li><a href="what-are-load-banks.html">LOAD BANKS</a></li>
-                <li><a href="starline-tapbox-rental.html">STARLINE</a></li>
-                <li><a href="cables.html">CABLES</a></li>
-                <li><a href="flir.html">FLIR</a></li>
-                <li><a href="power-quality.html">POWER QUALITY</a></li>
-                <li><a href="transformers.html">TRANSFORMERS</a></li>
-                <li><a href="3D-fabrication.html">3D FABRICATION</a></li>
-            </ul>
-        </nav>
+<nav id="header" class="nav-menu">
+    <ul>
+        <li><a href="what-are-load-banks.html">LOAD BANKS</a></li>
+        <li><a href="starline-tapbox-rental.html">STARLINE</a></li>
+        <li><a href="cables.html">CABLES</a></li>
+        <li><a href="flir.html">FLIR</a></li>
+        <li><a href="power-quality.html">POWER QUALITY</a></li>
+        <li><a href="transformers.html">TRANSFORMERS</a></li>
+        <li><a href="3D-fabrication.html">3D FABRICATION</a></li>
+    </ul>
+</nav>
 <div class="content-wrapper">
     <div class="body-content">
         <h1>Transformer Solutions</h1>
@@ -169,12 +197,12 @@
         
         <p>From step-up to step-down transformers, we provide customized solutions to optimize your power systems.</p>
         
-        <h1>Why Choose Our Transformers</h1>
+        <h1>Why Choose Us</h1>
         <ul>
-            <li><strong>High Efficiency:</strong> Minimizes energy loss for cost-effective operation.</li>
-            <li><strong>Robust Design:</strong> Engineered for harsh environments and long service life.</li>
-            <li><strong>Custom Solutions:</strong> Tailored voltage ratings and configurations to meet your needs.</li>
-            <li><strong>Compliance:</strong> Adheres to IEEE, ANSI, and IEC standards.</li>
+            <li><strong>Extensive Sourcing:</strong> We source from countless vendors and dealers, saving you time and money.</li>
+            <li><strong>Best Price Assistance:</strong> Our network ensures you get the most competitive prices for your transformer needs.</li>
+            <li><strong>Custom Solutions:</strong> Tailored voltage ratings and configurations to meet your specific requirements.</li>
+            <li><strong>Industry Compliance:</strong> All sourced transformers adhere to IEEE, ANSI, and IEC standards.</li>
         </ul>
         
         <h1>Technical Specifications</h1>
@@ -182,7 +210,56 @@
         <p><strong>Voltage Classes:</strong> 600V to 230kV</p>
         <p><strong>Cooling Types:</strong> ONAN, ONAF, Dry-Type</p>
         <p><strong>Frequency:</strong> 50/60 Hz</p>
-        <p>Contact us to explore our transformer solutions for your power needs.</p>
+        
+        <h1>Services</h1>
+        <ul>
+            <li>Sell Surplus</li>
+            <li>Quote New</li>
+            <li>Repair</li>
+            <li>Rentals</li>
+        </ul>
+        
+        <h1>Transformer Types</h1>
+        <div class="transformer-types">
+            <div>
+                <h3>3-Ph Padmount</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>1-Ph Padmount</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>Polemount</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>Substation</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>Low Voltage Dry-Type</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>Medium Voltage Dry-Type</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>Cast Coil</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>Pad-Mounted Switchgear</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+            <div>
+                <h3>Metal-Enclosed Switchgear</h3>
+                <p>Green liquid filled padmounted transformer</p>
+            </div>
+        </div>
+        
+        <p><a href="mailto:info@ampere.dev">Contact us</a> to explore our transformer solutions for your power needs.</p>
     </div>
     <div class="media-container">
         <video muted loop loading="lazy" poster="/images/Ampere Logo.webp" id="delayedVideo">
@@ -193,35 +270,35 @@
     </div>
 </div>
 
-    <footer id="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="products.html">PRODUCTS</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="privacy-legal.html">PRIVACY & LEGAL</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/instagram-logo.png" alt="Instagram logo">
-            </a>
-        </div>
-        <div>
-            <p>AMPERE © 2025</p>
-        </div>
-    </footer>
+<footer id="footer">
+    <div class="footer-links">
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="privacy-legal.html">PRIVACY & LEGAL</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">
+            <img src="icons/facebook-logo.png" alt="Facebook logo">
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener">
+            <img src="icons/logo-black.png" alt="X logo">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+            <img src="icons/linkedin.png" alt="LinkedIn logo">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">
+            <img src="icons/instagram-logo.png" alt="Instagram logo">
+        </a>
+    </div>
+    <div>
+        <p>AMPERE © 2025</p>
+    </div>
+</footer>
 <script>
     window.addEventListener('load', () => {
         const video = document.getElementById('delayedVideo');
