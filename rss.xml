@@ -1,40 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-    <channel>
-        <title>Current Trends - Ampere Development</title>
-        <link>http://example.com/</link>
-        <description>A simple, minimalistic blog</description>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 29 Apr 2025 12:00:00 GMT</lastBuildDate>
-        <item>
-            <title>Mr. Wonderful’s A.I. Power Trip: 45 GW to Make North Dakota Sparkle</title>
-            <link>http://example.com/#post1</link>
-            <description>Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!
-Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future! Here’s why his plan is as bold as his Shark Tank zingers—and why you should be paying attention.
+  <channel>
+    <title>Ampere Insights - Ampere Development</title>
+    <link>https://ampere.dev/blog</link>
+    <description>Ampere Insights delivers sharp, expert posts on power systems, load banks, transformers &amp; 3D fabrication for energy and industry professionals.</description>
+    <lastBuildDate>Mon, 05 May 2025 00:00:00 GMT</lastBuildDate>
+    <language>en-us</language>
 
-A.I. and Data Centers: The Gold Rush of the 2020s
-If you’re 25 and hungry for opportunity, Mr. Wonderful’s dropping wisdom like it’s a Shark Tank pitch: A.I. implementation and data center development are where the money’s at. Small businesses are tripping over themselves to adopt A.I. but don’t know where to start. That’s your cue—swoop in, solve their problems, and cash in. Meanwhile, data centers are the backbone of this tech tsunami. With hyperscalers like Tesla, Microsoft, and Google gobbling up capacity faster than you can say “cloud computing,” real estate and tech are colliding in the most lucrative way possible. As O’Leary puts it, “This is where the future’s heading. Don’t miss it.”
+    <item>
+      <title>Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers</title>
+      <link>https://ampere.dev/blog#Data-Center-Innovation</link>
+      <guid>https://ampere.dev/blog#Data-Center-Innovation</guid>
+      <pubDate>Sat, 03 May 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[The data center industry is undergoing a transformative shift, driven by the demands of artificial intelligence (AI) and the need for sustainable, high-performance infrastructure. In this dynamic landscape, Avtron Power Solutions is making waves with its innovative load bank solutions, as highlighted in an upcoming episode of Planet TV Studios’ New Frontiers, set to air in Q3 2025.]]></description>
+    </item>
 
-Alberta’s Got Gas, But North Dakota’s Got Guts
-While O’Leary’s raising $70 billion to build the world’s lowest-cost, highest-efficiency data center in Alberta—powered by abundant natural gas and a premier who’s all-in—North Dakota’s stealing the spotlight. Why? It’s got the land, the power, and the leadership to make A.I. and data centers thrive. With 45 GW on the table, North Dakota’s ready to power the A.I. revolution like nobody’s business. O’Leary’s already investing here, and he’s shouting it from the rooftops (or at least on AM 1100 The Flag): “Data centers, A.I., agtech, drones—North Dakota’s wide open for business!”
+    <item>
+      <title>The AI-Driven Data Center Boom: Balancing Innovation and Sustainability</title>
+      <link>https://ampere.dev/blog#AI-Data-Centers</link>
+      <guid>https://ampere.dev/blog#AI-Data-Centers</guid>
+      <pubDate>Fri, 02 May 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[The demand for data center infrastructure is surging, driven by the explosive growth of artificial intelligence (AI). A recent Colliers report projects a 160% increase in data center demand, with $57 billion invested in the sector in 2024 alone.]]></description>
+    </item>
 
-China’s Out, North Dakota’s In
-Mr. Wonderful’s not mincing words: China’s been “stealing from American entrepreneurs for years,” and it’s time they face the music. Meanwhile, North Dakota’s rolling out the red carpet for innovation. Forget the Great Wall—think Great Plains, where A.I., data centers, and agtech are about to make waves. O’Leary’s betting big, and he’s got the receipts to prove it.
+    <item>
+      <title>America’s Energy Deficit and Trump’s National Energy Emergency Declaration</title>
+      <link>https://ampere.dev/blog#Energy-Crisis-Coal</link>
+      <guid>https://ampere.dev/blog#Energy-Crisis-Coal</guid>
+      <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[The United States faces a growing energy deficit, driven by surging demand from data centers and the decommissioning of coal plants, while China ramps up its coal-fired power capacity. President Donald Trump’s declaration of a national energy emergency aims to address this gap by boosting domestic energy production, particularly coal, leveraging America’s vast reserves.]]></description>
+    </item>
 
-Watch Mr. Wonderful Break It Down
-Don’t just take our word for it—check out O’Leary laying out the vision himself in this video from AM 1100 The Flag. It’s got all the energy of a Shark Tank deal about to close:
+    <item>
+      <title>Nvidia CEO Jensen Huang on U.S.-China AI Race and the Trade Jobs Boom</title>
+      <link>https://ampere.dev/blog#AI-Supremacy-Race</link>
+      <guid>https://ampere.dev/blog#AI-Supremacy-Race</guid>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[At the Hill and Valley Forum in Washington, D.C., Nvidia CEO Jensen Huang delivered a stark warning about the intensifying AI supremacy race between the U.S. and China, while highlighting AI’s transformative potential to revolutionize industries and create a surge in trade jobs.]]></description>
+    </item>
 
-<div style="text-align: center;"> <iframe width="560" height="315" src="https://www.youtube.com/embed/dKkdor6_rw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-Why North Dakota? Why Now?
-Power Galore: 45 GW of juice to keep A.I. and data centers humming.
-Land for Days: Wide-open spaces perfect for sprawling tech campuses.
-Leadership with Vision: North Dakota’s ready to play ball and win the A.I. race.
-Mr. Wonderful’s Stamp of Approval: If O’Leary’s investing, you know it’s legit.
-So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!
- </description>
-            <pubDate>Tue, 29 Apr 2025 10:00:00 GMT</pubDate>
-            <guid>http://example.com/#post1</guid>
-        </item>
- 
-    </channel>
+    <item>
+      <title>Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!</title>
+      <link>https://ampere.dev/blog#Mr-Wonderfuls-AI-Power-Play</link>
+      <guid>https://ampere.dev/blog#Mr-Wonderfuls-AI-Power-Play</guid>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future!]]></description>
+    </item>
+
+  </channel>
 </rss>
