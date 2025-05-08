@@ -89,23 +89,25 @@
 
 /* Specific layout for each image */
 .image-container img:nth-child(1) {
-  grid-area: img1;
+  animation-delay: 0s;
 }
-
 .image-container img:nth-child(2) {
-  grid-area: img2;
+  animation-delay: 0.5s;
 }
-
 .image-container img:nth-child(3) {
-  grid-area: img3;
+  animation-delay: 1s;
 }
-
 .image-container img:nth-child(4) {
-  grid-area: img4;
+  animation-delay: 1.5s;
 }
 
-.image-container img:nth-child(5) {
-  grid-area: img5;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Responsive Design */
@@ -122,16 +124,20 @@
   }
 
   .image-container {
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5"; /* Stack images in a single column */
+    grid-template-areas: "img1" "img2" "img3" "img4"; /* Stack images in a single column */
     flex: none;
     width: 100%; /* Full width */
     gap: 10px; /* Maintain gap for stacked layout */
   }
 
-  .image-container img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-  }
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0; /* Start with invisible images */
+  animation: fadeIn 2s ease-in forwards;
 }
 </style>
 <body>
