@@ -4,13 +4,10 @@ Sitemap: https://ampere.dev/sitemap.xml
 # Rules for all crawlers
 User-agent: *
 Allow: /                      # Explicitly allow all content
-Disallow: /admin/             # Block admin or sensitive areas
+Disallow: /admin/             # Block admin areas (adjust to your site’s structure)
 Disallow: /login/             # Block login pages
-Disallow: /wp-admin/          # Block WordPress admin (if applicable)
-Disallow: /?*                 # Block URL parameters to avoid duplicate content
-Disallow: /*.pdf$             # Block PDF files (optional, if not SEO-relevant)
-Disallow: /private/           # Block private or staging directories
-Crawl-delay: 10               # Optional: Slow down aggressive crawlers (in seconds)
+Disallow: /?*                 # Block URL parameters to avoid duplicates
+Disallow: /private/           # Block private or staging areas
 
 # Block specific unwanted bots
 User-agent: nibbler
@@ -20,12 +17,5 @@ User-agent: MJ12bot
 Disallow: /
 
 User-agent: AhrefsBot
-Disallow: /
-
-# Block AI data scrapers (optional, based on SEO goals)
-User-agent: GPTBot
-Disallow: /
-
-User-agent: Anthropic-Web-Crawler
 Disallow: /
 
