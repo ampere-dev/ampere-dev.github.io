@@ -55,7 +55,7 @@
     <style>
         :root {
             --primary-color: #333;
-            --accent-color: #ff0000; /* Kept red as per current code */
+            --accent-color: #ff0000;
             --border-color: #ddd;
             --background-color: #f5f5f5;
         }
@@ -68,7 +68,7 @@
 
         body {
             font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 1200px; /* Increased for sidebar */
+            max-width: 1200px;
             margin: 0 auto;
             padding: 1.5rem 1rem;
             line-height: 1.6;
@@ -149,7 +149,7 @@
 
         .content-wrapper {
             display: grid;
-            grid-template-columns: 2fr 1fr; /* Main content: 2/3, Sidebar: 1/3 */
+            grid-template-columns: 2fr 1fr;
             gap: 2rem;
         }
 
@@ -214,7 +214,7 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             margin: 1.5rem 0;
@@ -358,6 +358,64 @@
             height: 0;
         }
 
+        /* Pagination Styles */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .pagination-btn {
+            padding: 0.5rem 1rem;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+            background: var(--primary-color);
+        }
+
+        .pagination-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .page-numbers {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .page-number {
+            padding: 0.5rem 1rem;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .page-number:hover {
+            background: var(--accent-color);
+            color: #fff;
+        }
+
+        .page-number.active {
+            background: var(--accent-color);
+            color: #fff;
+            font-weight: bold;
+        }
+
         @media (max-width: 800px) {
             .content-wrapper {
                 grid-template-columns: 1fr;
@@ -415,118 +473,91 @@
 
     <div class="content-wrapper">
         <main>
-    <article class="post collapsed">
-    <div id="Amazon-Nuclear-SMR"></div>
-    <h2 onclick="togglePost(this)"><a href="#Amazon-Nuclear-SMR">Amazon’s $500M Bet on Nuclear SMRs: Powering the AI Data Center Boom</a></h2>
-    <div class="post-content">
-        <time datetime="2025-05-10">May 10, 2025</time>
-        <p>Amazon is diving headfirst into nuclear energy, announcing a $500 million investment in small modular reactors (SMRs) to fuel its growing data center empire, as reported by The Register. With AI-driven energy demands soaring, the tech giant is partnering with X-energy, Energy Northwest, and Dominion Energy to develop SMR projects aiming for 5 gigawatts of carbon-free power by 2039. This article explores Amazon’s nuclear ambitions, the promise of SMRs, and the challenges ahead. <a href="https://www.theregister.com/2024/10/16/amazon_nuclear_smr/" target="_blank">Read the full Register article</a>.</p>
-        
-        <h3>Amazon’s Nuclear Push</h3>
-        <p>Amazon’s investment includes a $500 million Series-C funding round for X-energy, a leader in SMR technology, to accelerate reactor development. The company is also supporting three new nuclear projects, including a feasibility study with Energy Northwest in Washington state and an SMR project near Dominion Energy’s North Anna nuclear station in Virginia. These initiatives aim to deliver reliable, carbon-free energy to meet the surging power needs of AWS data centers. <a href="https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-projects-small-modular-reactors" target="_blank">Learn more about Amazon’s nuclear strategy</a>.</p>
-        
-        <h3>The Promise of Small Modular Reactors</h3>
-        <p>SMRs are compact nuclear reactors designed for faster construction and deployment closer to power grids compared to traditional plants. Amazon highlights their potential for “faster build times” and scalability, with X-energy’s Xe-100 reactors targeting 320 megawatts initially, expandable to 960 megawatts—enough to power over 770,000 homes. AWS CEO Matt Garman emphasizes nuclear’s role in achieving Amazon’s net-zero carbon goal by 2040. <a href="https://www.x-energy.com/technology" target="_blank">Explore X-energy’s SMR technology</a>.</p>
-        
-        <h3>Addressing AI Data Center Energy Demands</h3>
-        <p>The AI boom is pushing data center energy consumption to new heights, with estimates suggesting data centers could account for 9% of U.S. electricity by 2030. Amazon’s SMR projects, alongside its earlier $650 million acquisition of a nuclear-powered data center in Pennsylvania, reflect a strategic shift toward reliable, 24/7 clean energy sources to support AI workloads. <a href="https://www.energytech.com/renewables/article/55112998/data-center-take-on-world-nuclear-day-amazon-is-banking-on-future-reactors" target="_blank">Read about data center energy trends</a>.</p>
-        
-        <h3>Industry-Wide Nuclear Momentum</h3>
-        <p>Amazon isn’t alone in its nuclear pivot. Google has partnered with Kairos Power for SMRs, Microsoft signed a deal to restart Three Mile Island, and Oracle secured permits for SMR-powered data centers. These moves signal a growing industry consensus that nuclear energy, particularly SMRs, is critical for meeting AI-driven power demands while maintaining sustainability goals. <a href="https://www.nytimes.com/2024/10/16/business/energy-environment/amazon-google-microsoft-nuclear-energy.html" target="_blank">Discover Big Tech’s nuclear investments</a>.</p>
-        
-        <h3>Challenges and Criticisms</h3>
-        <p>Despite the enthusiasm, SMRs face hurdles. No commercial SMRs are operational in the U.S., with only NuScale’s design approved by the Nuclear Regulatory Commission. Critics argue SMRs are costly and produce radioactive waste, while projects like NuScale’s Idaho initiative have collapsed due to financial issues. Regulatory delays and public perception also pose risks. <a href="https://www.reuters.com/business/energy/amazoncom-joins-push-nuclear-power-meet-data-center-demand-2024-10-16/" target="_blank">Learn about SMR challenges</a>.</p>
-        
-        <h3>Looking Ahead</h3>
-        <p>Amazon’s SMR investments mark a bold step toward redefining data center power infrastructure. With projects targeting the early 2030s and a goal of 5 gigawatts by 2039, the company is betting on nuclear to bridge the gap between AI growth and sustainability. As regulatory and technical challenges loom, Amazon’s partnerships with X-energy and utilities could set a precedent for the industry. <a href="https://www.ans.org/news/article-5696/amazon-investing-in-smrs-to-deploy-5-gw-by-2039/" target="_blank">Explore Amazon’s 5GW nuclear goal</a>.</p>
-        
-        <p class="author">— Reported based on The Register and industry insights, May 2025</p>
-    </div>
-</article>
-    <article class="post collapsed">
-    <div id="AI-Data-Center-Growth"></div>
-    <h2 onclick="togglePost(this)"><a href="#AI-Data-Center-Growth">Global AI Data Centers: Growth Continues Amid Amazon and Microsoft Adjustments</a></h2>
-    <div class="post-content">
-        <time datetime="2025-05-10">May 10, 2025</time>
-        <p>Despite recent adjustments by tech giants Amazon and Microsoft, the global AI data center market continues its robust expansion, driven by the escalating demand for artificial intelligence (AI) infrastructure. According to a Wells Fargo research note, both companies have paused or slowed certain data center projects, yet the broader industry remains resilient. This article delves into the dynamics of this growth, Microsoft’s strategic shifts, and the enduring momentum in the AI data center sector. <a href="https://www.nextbigfuture.com/2025/05/global-ai-data-centers-keep-growing-despite-adjustments-from-amazon-and-microsoft.html" target="_blank">Read the full NextBigFuture article</a>.</p>
-        
-        <h3>Microsoft’s Strategic Adjustments</h3>
-        <p>Microsoft has made headlines with reports of canceling 2GW of non-binding Letters of Intent (LOIs) for data center leases. However, this represents only a fraction of their activity, as the company holds approximately 5GW of pre-leased capacity under binding contracts set to commence operations between 2025 and 2028. In mid-2024, Microsoft was in talks with nearly every major vendor for additional capacity but has since frozen new leasing activity. Instead, the company is ramping up self-build efforts, acquiring tens of thousands of acres globally and securing gigawatts of power for future sites. <a href="https://www.datacenterdynamics.com/en/news/microsoft-to-spend-80bn-on-ai-data-centers-in-2025/" target="_blank">Learn more about Microsoft’s AI investments</a>.</p>
-        
-        <h3>Amazon’s Pause on Colocation</h3>
-        <p>Amazon Web Services (AWS) has also adjusted its data center strategy, pausing discussions on some colocated data center projects, according to industry sources cited by Wells Fargo. Despite this, Amazon’s overall capital expenditure remains substantial, with plans to invest $100 billion in 2025, a significant increase from $83 billion in 2024, primarily to bolster AI infrastructure. This reflects Amazon’s commitment to maintaining leadership in the cloud and AI markets. <a href="https://www.nextbigfuture.com/2025/02/amazon-increase-ai-and-cloud-spending-to-100-billion-in-2025/" target="_blank">Explore Amazon’s 2025 spending plans</a>.</p>
-        
-        <h3>Industry-Wide Growth and Resilience</h3>
-        <p>The broader AI data center market is far from slowing down. Industry analyses, such as those from SemiAnalysis, indicate that despite Microsoft’s pause on new leases, their self-build initiatives and existing contracts ensure continued growth. Other major players, including Google ($75 billion) and Meta ($65 billion), are also increasing capital expenditures, contributing to a projected $320 billion in AI infrastructure spending by the top four companies in 2025. This underscores the sector’s resilience amid strategic recalibrations. <a href="https://www.cnbc.com/2025/04/27/ai-data-center-boom-isnt-going-bust-but-the-pause-is-trending-at-big-tech-companies.html" target="_blank">Read about the AI data center boom</a>.</p>
-        
-        <h3>Opportunities for Equipment Suppliers</h3>
-        <p>The ongoing data center expansion creates significant opportunities for equipment suppliers like Vertiv, which benefit from the demand for cooling, power management, and other critical infrastructure components. Even with Microsoft’s 1.5GW self-build pause, their global construction and existing contracts drive substantial activity for suppliers. This trend extends to other providers scaling up to meet AI-driven compute demands. <a href="https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/ai-power-expanding-data-center-capacity-to-meet-growing-demand" target="_blank">Discover opportunities in data center supply chains</a>.</p>
-        
-        <h3>Economic and Strategic Implications</h3>
-        <p>The adjustments by Amazon and Microsoft highlight a shift toward aligning capital expenditures with economic demand, as noted in industry commentary. While public demand for AI services is high, economic demand—what users are willing to pay for—requires careful calibration. This strategic reallocation, rather than a retreat, ensures sustainable growth. The involvement of other players like OpenAI and Oracle in projects like the $500 billion Stargate initiative further signals long-term confidence in AI infrastructure. <a href="https://www.nextbigfuture.com/2025/03/xai-expansion-to-1-million-gpus-late-in-2025-or-early-2026/" target="_blank">Learn about the Stargate project</a>.</p>
-        
-        <h3>Looking Ahead</h3>
-        <p>The AI data center market is poised for continued growth, with 2025 marking a pivotal year for infrastructure scaling. As companies like Microsoft and Amazon refine their strategies, the industry’s focus on self-builds, energy efficiency, and sustainable power solutions will shape its trajectory. With billions in investments and innovations driving the sector, AI data centers remain a cornerstone of the global tech landscape. <a href="https://www.nextbigfuture.com/2024/04/2-trillion-ai-data-center-market/" target="_blank">Explore the $2 trillion AI data center market</a>.</p>
-        
-        <p class="author">— Reported based on NextBigFuture and industry insights, May 2025</p>
-    </div>
-</article>
             <article class="post collapsed">
-    <div id="Data-Center-Outlook"></div>
-    <h2 onclick="togglePost(this)"><a href="#Data-Center-Outlook">2025 Global Data Center Outlook: Powering the AI Revolution</a></h2>
-    <div class="post-content">
-        <time datetime="2025-05-10">May 10, 2025</time>
-        <p>The data center industry is poised for unprecedented growth in 2025, driven by the insatiable demand for artificial intelligence (AI) and high-performance computing (HPC). According to JLL’s 2025 Global Data Center Outlook, the sector is expected to expand at a phenomenal pace, with a projected compound annual growth rate (CAGR) of 15-20% through 2027. This article explores the key trends, challenges, and opportunities shaping the future of data centers, with a focus on AI innovation, power infrastructure, and sustainable energy solutions. <a href="https://www.jll.com/en-us/insights/data-center-outlook" target="_blank">Read the full JLL report</a>.</p>
-        
-        <h3>The AI Revolution and Data Center Demand</h3>
-        <p>At the heart of the data center boom lies the rapid advancement in semiconductor technology, particularly graphics processing units (GPUs). Tasks that once took 32 hours can now be completed in just one second, enabling AI models to train on increasingly large datasets. This acceleration is enhancing the value of the AI ecosystem, fueling innovation, and driving demand for data center capacity. Tech companies, the largest occupiers of data center space, are leveraging this power to meet their aggressive net-zero targets while scaling their operations. <a href="https://www.nvidia.com/en-us/data-center/gpu-technology/" target="_blank">Learn more about GPU advancements</a>.</p>
-        <p>The rise of generative AI is also transforming data center design. Higher rack density, liquid cooling adoption, and energy efficiency improvements are becoming critical to support AI workloads. As the digital economy and data storage needs grow, data centers are evolving to meet these demands, with providers exploring new markets to overcome limitations in power and land availability. <a href="https://www.datacenterknowledge.com/cooling/liquid-cooling-ai-data-centers" target="_blank">Explore liquid cooling trends</a>.</p>
-        
-        <h3>Power Infrastructure Challenges</h3>
-        <p>Despite the sector’s growth, power infrastructure bottlenecks remain a significant hurdle. Power scarcity and extended timelines for building transmission lines are major impediments to data center development, particularly as the industry expands into new geographies. Utilities are addressing this by becoming more selective in approving Purchase Power Agreements (PPAs), using thorough intake forms and application fees to prioritize well-funded projects. While this helps allocate resources efficiently, it does not resolve the long lead times for infrastructure development. <a href="https://www.datacenterfrontier.com/energy/article/11429511/power-constraints-challenge-data-center-growth" target="_blank">Read about power constraints</a>.</p>
-        <p>These challenges are compounded by the strain on traditional power grids, which struggle to keep up with the energy demands of AI and HPC applications. As a result, data center operators are seeking innovative solutions to ensure reliable and scalable power supplies. <a href="https://www.energy.gov/eere/amo/data-centers-and-energy" target="_blank">Learn about energy demands in data centers</a>.</p>
-        
-        <h3>Nuclear Power: A Sustainable Solution</h3>
-        <p>Nuclear power is emerging as a preferred solution to meet the energy demands of data centers. Offering a clean and reliable alternative to traditional grids, nuclear energy aligns with the sustainability goals of tech companies while addressing power scarcity. The enthusiasm for nuclear power is growing, particularly for AI-driven data centers, as it supports both high energy requirements and net-zero ambitions. This shift toward nuclear energy is expected to play a pivotal role in shaping the future of data center development. <a href="https://www.world-nuclear-news.org/Articles/Nuclear-power-for-data-centres" target="_blank">Discover nuclear power for data centers</a>.</p>
-        
-        <h3>Strategic Opportunities for Growth</h3>
-        <p>Amid these challenges, opportunities abound for data center investors, developers, and operators. JLL’s report highlights the importance of strategic site selection, energy procurement, and innovative design to overcome supply constraints. Flexible, long-term leases are becoming the norm, allowing users to adapt to evolving technology needs over 5 to 10 years. Additionally, emerging markets are gaining attention as operators seek locations with available power and land to support expansion. <a href="https://www.jll.com/en-us/services/industries/data-centers" target="_blank">Explore JLL’s data center services</a>.</p>
-        <p>Collaborating with real estate experts, such as JLL’s research team, can provide valuable market insights and strategic advice to navigate this dynamic landscape. From colocation site selection to facility management, end-to-end solutions are essential for optimizing data center strategies. <a href="https://www.jll.com/en-us/insights" target="_blank">Access more JLL insights</a>.</p>
-        
-        <h3>Conclusion</h3>
-        <p>The data center industry is at a critical juncture, with AI and HPC driving unprecedented demand. While power infrastructure challenges persist, solutions like nuclear energy and selective PPA approvals are paving the way for sustainable growth. By embracing innovation and strategic planning, stakeholders can seize the opportunities presented by this rapidly evolving sector. For more insights, download JLL’s 2025 Global Data Center Outlook report or connect with their research team to shape your data center strategy. <a href="https://www.jll.com/en-us/contact-us" target="_blank">Contact JLL’s research team</a>.</p>
-        
-        <p class="author">— Reported based on JLL’s 2025 Global Data Center Outlook, May 2025</p>
-    </div>
-</article>
+                <div id="Amazon-Nuclear-SMR"></div>
+                <h2 onclick="togglePost(this)"><a href="#Amazon-Nuclear-SMR">Amazon’s $500M Bet on Nuclear SMRs: Powering the AI Data Center Boom</a></h2>
+                <div class="post-content">
+                    <time datetime="2025-05-10">May 10, 2025</time>
+                    <p>Amazon is diving headfirst into nuclear energy, announcing a $500 million investment in small modular reactors (SMRs) to fuel its growing data center empire, as reported by The Register. With AI-driven energy demands soaring, the tech giant is partnering with X-energy, Energy Northwest, and Dominion Energy to develop SMR projects aiming for 5 gigawatts of carbon-free power by 2039. This article explores Amazon’s nuclear ambitions, the promise of SMRs, and the challenges ahead. <a href="https://www.theregister.com/2024/10/16/amazon_nuclear_smr/" target="_blank">Read the full Register article</a>.</p>
+                    <h3>Amazon’s Nuclear Push</h3>
+                    <p>Amazon’s investment includes a $500 million Series-C funding round for X-energy, a leader in SMR technology, to accelerate reactor development. The company is also supporting three new nuclear projects, including a feasibility study with Energy Northwest in Washington state and an SMR project near Dominion Energy’s North Anna nuclear station in Virginia. These initiatives aim to deliver reliable, carbon-free energy to meet the surging power needs of AWS data centers. <a href="https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-projects-small-modular-reactors" target="_blank">Learn more about Amazon’s nuclear strategy</a>.</p>
+                    <h3>The Promise of Small Modular Reactors</h3>
+                    <p>SMRs are compact nuclear reactors designed for faster construction and deployment closer to power grids compared to traditional plants. Amazon highlights their potential for “faster build times” and scalability, with X-energy’s Xe-100 reactors targeting 320 megawatts initially, expandable to 960 megawatts—enough to power over 770,000 homes. AWS CEO Matt Garman emphasizes nuclear’s role in achieving Amazon’s net-zero carbon goal by 2040. <a href="https://www.x-energy.com/technology" target="_blank">Explore X-energy’s SMR technology</a>.</p>
+                    <h3>Addressing AI Data Center Energy Demands</h3>
+                    <p>The AI boom is pushing data center energy consumption to new heights, with estimates suggesting data centers could account for 9% of U.S. electricity by 2030. Amazon’s SMR projects, alongside its earlier $650 million acquisition of a nuclear-powered data center in Pennsylvania, reflect a strategic shift toward reliable, 24/7 clean energy sources to support AI workloads. <a href="https://www.energytech.com/renewables/article/55112998/data-center-take-on-world-nuclear-day-amazon-is-banking-on-future-reactors" target="_blank">Read about data center energy trends</a>.</p>
+                    <h3>Industry-Wide Nuclear Momentum</h3>
+                    <p>Amazon isn’t alone in its nuclear pivot. Google has partnered with Kairos Power for SMRs, Microsoft signed a deal to restart Three Mile Island, and Oracle secured permits for SMR-powered data centers. These moves signal a growing industry consensus that nuclear energy, particularly SMRs, is critical for meeting AI-driven power demands while maintaining sustainability goals. <a href="https://www.nytimes.com/2024/10/16/business/energy-environment/amazon-google-microsoft-nuclear-energy.html" target="_blank">Discover Big Tech’s nuclear investments</a>.</p>
+                    <h3>Challenges and Criticisms</h3>
+                    <p>Despite the enthusiasm, SMRs face hurdles. No commercial SMRs are operational in the U.S., with only NuScale’s design approved by the Nuclear Regulatory Commission. Critics argue SMRs are costly and produce radioactive waste, while projects like NuScale’s Idaho initiative have collapsed due to financial issues. Regulatory delays and public perception also pose risks. <a href="https://www.reuters.com/business/energy/amazoncom-joins-push-nuclear-power-meet-data-center-demand-2024-10-16/" target="_blank">Learn about SMR challenges</a>.</p>
+                    <h3>Looking Ahead</h3>
+                    <p>Amazon’s SMR investments mark a bold step toward redefining data center power infrastructure. With projects targeting the early 2030s and a goal of 5 gigawatts by 2039, the company is betting on nuclear to bridge the gap between AI growth and sustainability. As regulatory and technical challenges loom, Amazon’s partnerships with X-energy and utilities could set a precedent for the industry. <a href="https://www.ans.org/news/article-5696/amazon-investing-in-smrs-to-deploy-5-gw-by-2039/" target="_blank">Explore Amazon’s 5GW nuclear goal</a>.</p>
+                    <p class="author">— Reported based on The Register and industry insights, May 2025</p>
+                </div>
+            </article>
             <article class="post collapsed">
-    <div id="Modular-Substations"></div>
-    <h2 onclick="togglePost(this)"><a href="#Modular-Substations">The Rise of Modular Substations: Revolutionizing Power Infrastructure</a></h2>
-    <div class="post-content">
-        <time datetime="2025-05-05">May 5, 2025</time>
-        <p>While modular data centers, pioneered by companies like Sun Microsystems and Dell in the mid-2000s, transformed IT infrastructure, a new wave of innovation is reshaping power distribution: modular substations. These pre-fabricated, flexible units offer the same functions as traditional substations but with enhanced efficiency, scalability, and rapid deployment. <a href="https://www.millc.com/" target="_blank">Miller Industries</a> is at the forefront of this revolution, delivering cutting-edge solutions for modern energy needs. This article explores the innovations, benefits, and market trends driving the modular substation boom.</p>
-        
-        <h3>The Rise of Modular Substations</h3>
-        <p>Modular substations are gaining traction as a game-changer in power infrastructure, offering faster installation and greater flexibility than conventional substations. According to a <a href="https://www.360iresearch.com/library/intelligence/modular-substation" target="_blank">360iResearch report</a>, the modular substation market is projected to grow by USD 28.84 billion at a CAGR of 7.25% by 2030, driven by the need for scalable and efficient power solutions. From urban grids to remote industrial sites, these units are addressing the global demand for reliable electricity with minimal downtime.</p>
-        
-        <h3>Key Innovations Driving Adoption</h3>
-        <p>Innovations in modular substation design are accelerating their adoption. <a href="https://esfrosolutions.com/solutions" target="_blank">Esfro Solutions’ Powerskid</a> exemplifies the plug-and-play approach, enabling rapid deployment with minimal on-site work. Similarly, <a href="https://www.flexairmi.com/" target="_blank">Flex Air’s 10,000 kVA (5.6MW) modular substation</a> reduces labor costs through off-site manufacturing, minimizing disruptions during installation. These advancements, including compact designs and advanced monitoring systems, make modular substations ideal for dynamic energy demands in industries like utilities and renewables.</p>
-        
-        <h3>Sustainability and Scalability Benefits</h3>
-        <p>Modular substations are uniquely suited to support sustainable energy systems. As noted by <a href="https://datahorizzonresearch.com/blog/modular-substation-market" target="_blank">DataHorizzon Research</a>, their flexibility accommodates the variability of renewable energy sources like solar and wind, enabling smoother grid integration. Their scalability allows operators to expand capacity without extensive retrofitting, making them a cost-effective choice for urban settings and growing energy demands. By reducing construction waste and energy losses, modular substations align with global sustainability goals.</p>
-        
-        <h3>Market Trends and Growth Projections</h3>
-        <p>The modular substation market is shaped by trends like cost-efficiency, rapid deployment, and enhanced reliability. <a href="https://www.gminsights.com/industry-analysis/modular-substation-market" target="_blank">Global Market Insights</a> highlights their long-term benefits, such as reduced operational downtime and improved safety, which are driving adoption in power utilities and industrial applications. With a projected market size of USD 47.69 billion by 2032 at a CAGR of 7.7%, the industry is poised for robust growth, fueled by urbanization and electrification initiatives.</p>
-        
-        <h3>Challenges and Opportunities</h3>
-        <p>Despite their advantages, modular substations face challenges, including higher initial costs compared to traditional setups. However, their quick installation and flexibility offer significant opportunities, particularly in urban areas and temporary setups like construction sites or disaster recovery. As outlined in industry analyses by <a href="https://www.mordorintelligence.com/industry-reports/modular-substation-market" target="_blank">Mordor Intelligence</a>, the Asia-Pacific region, with its rapid urbanization, is expected to lead market growth, creating opportunities for innovative designs tailored to dense environments.</p>
-        
-        <h3>Looking Ahead</h3>
-        <p>The future of modular substations is bright, with their role in global electrification and sustainability becoming increasingly vital. As investments in renewable energy and smart grids accelerate, modular substations will provide the backbone for resilient, efficient power systems. <a href="https://www.futuremarketinsights.com/reports/modular-substation-market" target="_blank">Future Market Insights</a> projects the market to reach USD 48 billion by 2034, underscoring their potential to transform energy infrastructure. By addressing challenges and embracing innovation, the industry can power a sustainable, electrified future.</p>
-        
-        <p class="author">— Reported based on industry insights and market research, May 2025</p>
-    </div>
-</article>
+                <div id="AI-Data-Center-Growth"></div>
+                <h2 onclick="togglePost(this)"><a href="#AI-Data-Center-Growth">Global AI Data Centers: Growth Continues Amid Amazon and Microsoft Adjustments</a></h2>
+                <div class="post-content">
+                    <time datetime="2025-05-10">May 10, 2025</time>
+                    <p>Despite recent adjustments by tech giants Amazon and Microsoft, the global AI data center market continues its robust expansion, driven by the escalating demand for artificial intelligence (AI) infrastructure. According to a Wells Fargo research note, both companies have paused or slowed certain data center projects, yet the broader industry remains resilient. This article delves into the dynamics of this growth, Microsoft’s strategic shifts, and the enduring momentum in the AI data center sector. <a href="https://www.nextbigfuture.com/2025/05/global-ai-data-centers-keep-growing-despite-adjustments-from-amazon-and-microsoft.html" target="_blank">Read the full NextBigFuture article</a>.</p>
+                    <h3>Microsoft’s Strategic Adjustments</h3>
+                    <p>Microsoft has made headlines with reports of canceling 2GW of non-binding Letters of Intent (LOIs) for data center leases. However, this represents only a fraction of their activity, as the company holds approximately 5GW of pre-leased capacity under binding contracts set to commence operations between 2025 and 2028. In mid-2024, Microsoft was in talks with nearly every major vendor for additional capacity but has since frozen new leasing activity. Instead, the company is ramping up self-build efforts, acquiring tens of thousands of acres globally and securing gigawatts of power for future sites. <a href="https://www.datacenterdynamics.com/en/news/microsoft-to-spend-80bn-on-ai-data-centers-in-2025/" target="_blank">Learn more about Microsoft’s AI investments</a>.</p>
+                    <h3>Amazon’s Pause on Colocation</h3>
+                    <p>Amazon Web Services (AWS) has also adjusted its data center strategy, pausing discussions on some colocated data center projects, according to industry sources cited by Wells Fargo. Despite this, Amazon’s overall capital expenditure remains substantial, with plans to invest $100 billion in 2025, a significant increase from $83 billion in 2024, primarily to bolster AI infrastructure. This reflects Amazon’s commitment to maintaining leadership in the cloud and AI markets. <a href="https://www.nextbigfuture.com/2025/02/amazon-increase-ai-and-cloud-spending-to-100-billion-in-2025/" target="_blank">Explore Amazon’s 2025 spending plans</a>.</p>
+                    <h3>Industry-Wide Growth and Resilience</h3>
+                    <p>The broader AI data center market is far from slowing down. Industry analyses, such as those from SemiAnalysis, indicate that despite Microsoft’s pause on new leases, their self-build initiatives and existing contracts ensure continued growth. Other major players, including Google ($75 billion) and Meta ($65 billion), are also increasing capital expenditures, contributing to a projected $320 billion in AI infrastructure spending by the top four companies in 2025. This underscores the sector’s resilience amid strategic recalibrations. <a href="https://www.cnbc.com/2025/04/27/ai-data-center-boom-isnt-going-bust-but-the-pause-is-trending-at-big-tech-companies.html" target="_blank">Read about the AI data center boom</a>.</p>
+                    <h3>Opportunities for Equipment Suppliers</h3>
+                    <p>The ongoing data center expansion creates significant opportunities for equipment suppliers like Vertiv, which benefit from the demand for cooling, power management, and other critical infrastructure components. Even with Microsoft’s 1.5GW self-build pause, their global construction and existing contracts drive substantial activity for suppliers. This trend extends to other providers scaling up to meet AI-driven compute demands. <a href="https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/ai-power-expanding-data-center-capacity-to-meet-growing-demand" target="_blank">Discover opportunities in data center supply chains</a>.</p>
+                    <h3>Economic and Strategic Implications</h3>
+                    <p>The adjustments by Amazon and Microsoft highlight a shift toward aligning capital expenditures with economic demand, as noted in industry commentary. While public demand for AI services is high, economic demand—what users are willing to pay for—requires careful calibration. This strategic reallocation, rather than a retreat, ensures sustainable growth. The involvement of other players like OpenAI and Oracle in projects like the $500 billion Stargate initiative further signals long-term confidence in AI infrastructure. <a href="https://www.nextbigfuture.com/2025/03/xai-expansion-to-1-million-gpus-late-in-2025-or-early-2026/" target="_blank">Learn about the Stargate project</a>.</p>
+                    <h3>Looking Ahead</h3>
+                    <p>The AI data center market is poised for continued growth, with 2025 marking a pivotal year for infrastructure scaling. As companies like Microsoft and Amazon refine their strategies, the industry’s focus on self-builds, energy efficiency, and sustainable power solutions will shape its trajectory. With billions in investments and innovations driving the sector, AI data centers remain a cornerstone of the global tech landscape. <a href="https://www.nextbigfuture.com/2024/04/2-trillion-ai-data-center-market/" target="_blank">Explore the $2 trillion AI data center market</a>.</p>
+                    <p class="author">— Reported based on NextBigFuture and industry insights, May 2025</p>
+                </div>
+            </article>
+            <article class="post collapsed">
+                <div id="Data-Center-Outlook"></div>
+                <h2 onclick="togglePost(this)"><a href="#Data-Center-Outlook">2025 Global Data Center Outlook: Powering the AI Revolution</a></h2>
+                <div class="post-content">
+                    <time datetime="2025-05-10">May 10, 2025</time>
+                    <p>The data center industry is poised for unprecedented growth in 2025, driven by the insatiable demand for artificial intelligence (AI) and high-performance computing (HPC). According to JLL’s 2025 Global Data Center Outlook, the sector is expected to expand at a phenomenal pace, with a projected compound annual growth rate (CAGR) of 15-20% through 2027. This article explores the key trends, challenges, and opportunities shaping the future of data centers, with a focus on AI innovation, power infrastructure, and sustainable energy solutions. <a href="https://www.jll.com/en-us/insights/data-center-outlook" target="_blank">Read the full JLL report</a>.</p>
+                    <h3>The AI Revolution and Data Center Demand</h3>
+                    <p>At the heart of the data center boom lies the rapid advancement in semiconductor technology, particularly graphics processing units (GPUs). Tasks that once took 32 hours can now be completed in just one second, enabling AI models to train on increasingly large datasets. This acceleration is enhancing the value of the AI ecosystem, fueling innovation, and driving demand for data center capacity. Tech companies, the largest occupiers of data center space, are leveraging this power to meet their aggressive net-zero targets while scaling their operations. <a href="https://www.nvidia.com/en-us/data-center/gpu-technology/" target="_blank">Learn more about GPU advancements</a>.</p>
+                    <p>The rise of generative AI is also transforming data center design. Higher rack density, liquid cooling adoption, and energy efficiency improvements are becoming critical to support AI workloads. As the digital economy and data storage needs grow, data centers are evolving to meet these demands, with providers exploring new markets to overcome limitations in power and land availability. <a href="https://www.datacenterknowledge.com/cooling/liquid-cooling-ai-data-centers" target="_blank">Explore liquid cooling trends</a>.</p>
+                    <h3>Power Infrastructure Challenges</h3>
+                    <p>Despite the sector’s growth, power infrastructure bottlenecks remain a significant hurdle. Power scarcity and extended timelines for building transmission lines are major impediments to data center development, particularly as the industry expands into new geographies. Utilities are addressing this by becoming more selective in approving Purchase Power Agreements (PPAs), using thorough intake forms and application fees to prioritize well-funded projects. While this helps allocate resources efficiently, it does not resolve the long lead times for infrastructure development. <a href="https://www.datacenterfrontier.com/energy/article/11429511/power-constraints-challenge-data-center-growth" target="_blank">Read about power constraints</a>.</p>
+                    <p>These challenges are compounded by the strain on traditional power grids, which struggle to keep up with the energy demands of AI and HPC applications. As a result, data center operators are seeking innovative solutions to ensure reliable and scalable power supplies. <a href="https://www.energy.gov/eere/amo/data-centers-and-energy" target="_blank">Learn about energy demands in data centers</a>.</p>
+                    <h3>Nuclear Power: A Sustainable Solution</h3>
+                    <p>Nuclear power is emerging as a preferred solution to meet the energy demands of data centers. Offering a clean and reliable alternative to traditional grids, nuclear energy aligns with the sustainability goals of tech companies while addressing power scarcity. The enthusiasm for nuclear power is growing, particularly for AI-driven data centers, as it supports both high energy requirements and net-zero ambitions. This shift toward nuclear energy is expected to play a pivotal role in shaping the future of data center development. <a href="https://www.world-nuclear-news.org/Articles/Nuclear-power-for-data-centres" target="_blank">Discover nuclear power for data centers</a>.</p>
+                    <h3>Strategic Opportunities for Growth</h3>
+                    <p>Amid these challenges, opportunities abound for data center investors, developers, and operators. JLL’s report highlights the importance of strategic site selection, energy procurement, and innovative design to overcome supply constraints. Flexible, long-term leases are becoming the norm, allowing users to adapt to evolving technology needs over 5 to 10 years. Additionally, emerging markets are gaining attention as operators seek locations with available power and land to support expansion. <a href="https://www.jll.com/en-us/services/industries/data-centers" target="_blank">Explore JLL’s data center services</a>.</p>
+                    <p>Collaborating with real estate experts, such as JLL’s research team, can provide valuable market insights and strategic advice to navigate this dynamic landscape. From colocation site selection to facility management, end-to-end solutions are essential for optimizing data center strategies. <a href="https://www.jll.com/en-us/insights" target="_blank">Access more JLL insights</a>.</p>
+                    <h3>Conclusion</h3>
+                    <p>The data center industry is at a critical juncture, with AI and HPC driving unprecedented demand. While power infrastructure challenges persist, solutions like nuclear energy and selective PPA approvals are paving the way for sustainable growth. By embracing innovation and strategic planning, stakeholders can seize the opportunities presented by this rapidly evolving sector. For more insights, download JLL’s 2025 Global Data Center Outlook report or connect with their research team to shape your data center strategy. <a href="https://www.jll.com/en-us/contact-us" target="_blank">Contact JLL’s research team</a>.</p>
+                    <p class="author">— Reported based on JLL’s 2025 Global Data Center Outlook, May 2025</p>
+                </div>
+            </article>
+            <article class="post collapsed">
+                <div id="Modular-Substations"></div>
+                <h2 onclick="togglePost(this)"><a href="#Modular-Substations">The Rise of Modular Substations: Revolutionizing Power Infrastructure</a></h2>
+                <div class="post-content">
+                    <time datetime="2025-05-05">May 5, 2025</time>
+                    <p>While modular data centers, pioneered by companies like Sun Microsystems and Dell in the mid-2000s, transformed IT infrastructure, a new wave of innovation is reshaping power distribution: modular substations. These pre-fabricated, flexible units offer the same functions as traditional substations but with enhanced efficiency, scalability, and rapid deployment. <a href="https://www.millc.com/" target="_blank">Miller Industries</a> is at the forefront of this revolution, delivering cutting-edge solutions for modern energy needs. This article explores the innovations, benefits, and market trends driving the modular substation boom.</p>
+                    <h3>The Rise of Modular Substations</h3>
+                    <p>Modular substations are gaining traction as a game-changer in power infrastructure, offering faster installation and greater flexibility than conventional substations. According to a <a href="https://www.360iresearch.com/library/intelligence/modular-substation" target="_blank">360iResearch report</a>, the modular substation market is projected to grow by USD 28.84 billion at a CAGR of 7.25% by 2030, driven by the need for scalable and efficient power solutions. From urban grids to remote industrial sites, these units are addressing the global demand for reliable electricity with minimal downtime.</p>
+                    <h3>Key Innovations Driving Adoption</h3>
+                    <p>Innovations in modular substation design are accelerating their adoption. <a href="https://esfrosolutions.com/solutions" target="_blank">Esfro Solutions’ Powerskid</a> exemplifies the plug-and-play approach, enabling rapid deployment with minimal on-site work. Similarly, <a href="https://www.flexairmi.com/" target="_blank">Flex Air’s 10,000 kVA (5.6MW) modular substation</a> reduces labor costs through off-site manufacturing, minimizing disruptions during installation. These advancements, including compact designs and advanced monitoring systems, make modular substations ideal for dynamic energy demands in industries like utilities and renewables.</p>
+                    <h3>Sustainability and Scalability Benefits</h3>
+                    <p>Modular substations are uniquely suited to support sustainable energy systems. As noted by <a href="https://datahorizzonresearch.com/blog/modular-substation-market" target="_blank">DataHorizzon Research</a>, their flexibility accommodates the variability of renewable energy sources like solar and wind, enabling smoother grid integration. Their scalability allows operators to expand capacity without extensive retrofitting, making them a cost-effective choice for urban settings and growing energy demands. By reducing construction waste and energy losses, modular substations align with global sustainability goals.</p>
+                    <h3>Market Trends and Growth Projections</h3>
+                    <p>The modular substation market is shaped by trends like cost-efficiency, rapid deployment, and enhanced reliability. <a href="https://www.gminsights.com/industry-analysis/modular-substation-market" target="_blank">Global Market Insights</a> highlights their long-term benefits, such as reduced operational downtime and improved safety, which are driving adoption in power utilities and industrial applications. With a projected market size of USD 47.69 billion by 2032 at a CAGR of 7.7%, the industry is poised for robust growth, fueled by urbanization and electrification initiatives.</p>
+                    <h3>Challenges and Opportunities</h3>
+                    <p>Despite their advantages, modular substations face challenges, including higher initial costs compared to traditional setups. However, their quick installation and flexibility offer significant opportunities, particularly in urban areas and temporary setups like construction sites or disaster recovery. As outlined in industry analyses by <a href="https://www.mordorintelligence.com/industry-reports/modular-substation-market" target="_blank">Mordor Intelligence</a>, the Asia-Pacific region, with its rapid urbanization, is expected to lead market growth, creating opportunities for innovative designs tailored to dense environments.</p>
+                    <h3>Looking Ahead</h3>
+                    <p>The future of modular substations is bright, with their role in global electrification and sustainability becoming increasingly vital. As investments in renewable energy and smart grids accelerate, modular substations will provide the backbone for resilient, efficient power systems. <a href="https://www.futuremarketinsights.com/reports/modular-substation-market" target="_blank">Future Market Insights</a> projects the market to reach USD 48 billion by 2034, underscoring their potential to transform energy infrastructure. By addressing challenges and embracing innovation, the industry can power a sustainable, electrified future.</p>
+                    <p class="author">— Reported based on industry insights and market research, May 2025</p>
+                </div>
+            </article>
             <article class="post collapsed" id="Data-Center-Innovation">
                 <h2 onclick="togglePost(this)"><a href="#Data-Center-Innovation">Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers</a></h2>
                 <div class="post-content">
@@ -634,6 +665,13 @@
                     <p>So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!</p>
                 </div>
             </article>
+
+            <!-- Pagination Container -->
+            <div class="pagination" role="navigation" aria-label="Pagination">
+                <button class="pagination-btn" id="prev-btn" disabled aria-label="Previous page">Previous</button>
+                <div id="page-numbers" class="page-numbers"></div>
+                <button class="pagination-btn" id="next-btn" aria-label="Next page">Next</button>
+            </div>
         </main>
 
         <aside role="complementary">
@@ -694,6 +732,7 @@
     </footer>
 
     <script>
+        // Existing Functions
         function searchPosts() {
             const query = document.getElementById('search').value.toLowerCase().trim();
             const posts = document.querySelectorAll('.post');
@@ -701,7 +740,7 @@
             posts.forEach(post => {
                 const text = post.textContent.toLowerCase();
                 const matches = text.includes(query);
-                post.classList.toggle('hidden', !matches);
+                post.classList.toggle('hidden', !matches && query !== '');
                 if (matches) hasResults = true;
             });
             let noResults = document.querySelector('.no-results');
@@ -711,7 +750,11 @@
                 noResults.textContent = 'No results found.';
                 document.querySelector('main').appendChild(noResults);
             }
-            noResults.style.display = hasResults ? 'none' : 'block';
+            noResults.style.display = hasResults || query === '' ? 'none' : 'block';
+
+            // Reset pagination when search is performed
+            currentPage = 1;
+            setupPagination();
         }
 
         function togglePost(titleElement) {
@@ -736,6 +779,70 @@
                 content.removeEventListener('transitionend', handler);
             });
         }
+
+        // Pagination Logic
+        const articlesPerPage = 5;
+        let currentPage = 1;
+
+        function setupPagination() {
+            const articles = document.querySelectorAll('.post');
+            const totalArticles = articles.length;
+            const totalPages = Math.ceil(totalArticles / articlesPerPage);
+            const pageNumbersContainer = document.getElementById('page-numbers');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            function displayArticles(page) {
+                const start = (page - 1) * articlesPerPage;
+                const end = start + articlesPerPage;
+
+                articles.forEach((article, index) => {
+                    const isVisible = index >= start && index < end && !article.classList.contains('hidden');
+                    article.classList.toggle('hidden', !isVisible);
+                });
+
+                document.querySelectorAll('.page-number').forEach(btn => {
+                    btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+                });
+
+                prevBtn.disabled = page === 1;
+                nextBtn.disabled = page === totalPages;
+                prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+                nextBtn.setAttribute('aria-disabled', page === totalPages ? 'true' : 'false');
+            }
+
+            pageNumbersContainer.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.className = 'page-number';
+                pageBtn.dataset.page = i;
+                pageBtn.textContent = i;
+                pageBtn.setAttribute('aria-label', `Page ${i}`);
+                pageBtn.addEventListener('click', () => {
+                    currentPage = i;
+                    displayArticles(currentPage);
+                });
+                pageNumbersContainer.appendChild(pageBtn);
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayArticles(currentPage);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayArticles(currentPage);
+                }
+            });
+
+            displayArticles(currentPage);
+        }
+
+        document.addEventListener('DOMContentLoaded', setupPagination);
     </script>
 </body>
 </html>
