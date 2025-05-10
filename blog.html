@@ -737,12 +737,21 @@
             const query = document.getElementById('search').value.toLowerCase().trim();
             const posts = document.querySelectorAll('.post');
             let hasResults = false;
+
+            // Track visible articles for pagination
+            const visibleArticles = [];
             posts.forEach(post => {
                 const text = post.textContent.toLowerCase();
                 const matches = text.includes(query);
-                post.classList.toggle('hidden', !matches && query !== '');
-                if (matches) hasResults = true;
+                if (matches || query === '') {
+                    visibleArticles.push(post);
+                    post.classList.remove('hidden');
+                    hasResults = true;
+                } else {
+                    post.classList.add('hidden');
+                }
             });
+
             let noResults = document.querySelector('.no-results');
             if (!noResults) {
                 noResults = document.createElement('p');
@@ -752,9 +761,9 @@
             }
             noResults.style.display = hasResults || query === '' ? 'none' : 'block';
 
-            // Reset pagination when search is performed
+            // Reset pagination and update with visible articles
             currentPage = 1;
-            setupPagination();
+            setupPagination(visibleArticles);
         }
 
         function togglePost(titleElement) {
@@ -784,9 +793,8 @@
         const articlesPerPage = 5;
         let currentPage = 1;
 
-        function setupPagination() {
-            const articles = document.querySelectorAll('.post');
-            const totalArticles = articles.length;
+        function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+            const totalArticles = visibleArticles.length;
             const totalPages = Math.ceil(totalArticles / articlesPerPage);
             const pageNumbersContainer = document.getElementById('page-numbers');
             const prevBtn = document.getElementById('prev-btn');
@@ -796,21 +804,31 @@
                 const start = (page - 1) * articlesPerPage;
                 const end = start + articlesPerPage;
 
-                articles.forEach((article, index) => {
-                    const isVisible = index >= start && index < end && !article.classList.contains('hidden');
-                    article.classList.toggle('hidden', !isVisible);
+                // Hide all articles initially
+                document.querySelectorAll('.post').forEach(article => {
+                    article.classList.add('hidden');
                 });
 
+                // Show only articles for the current page
+                visibleArticles.forEach((article, index) => {
+                    if (index >= start && index < end) {
+                        article.classList.remove('hidden');
+                    }
+                });
+
+                // Update page number buttons
                 document.querySelectorAll('.page-number').forEach(btn => {
                     btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
                 });
 
+                // Update button states
                 prevBtn.disabled = page === 1;
-                nextBtn.disabled = page === totalPages;
+                nextBtn.disabled = page === totalPages || totalPages === 0;
                 prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
-                nextBtn.setAttribute('aria-disabled', page === totalPages ? 'true' : 'false');
+                nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
             }
 
+            // Generate page number buttons
             pageNumbersContainer.innerHTML = '';
             for (let i = 1; i <= totalPages; i++) {
                 const pageBtn = document.createElement('button');
@@ -825,6 +843,16 @@
                 pageNumbersContainer.appendChild(pageBtn);
             }
 
+            // Handle no results case
+            if (totalPages === 0) {
+                pageNumbersContainer.innerHTML = '';
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                prevBtn.setAttribute('aria-disabled', 'true');
+                nextBtn.setAttribute('aria-disabled', 'true');
+            }
+
+            // Event listeners for Previous and Next buttons
             prevBtn.addEventListener('click', () => {
                 if (currentPage > 1) {
                     currentPage--;
@@ -839,10 +867,12 @@
                 }
             });
 
+            // Display articles for the current page
             displayArticles(currentPage);
         }
 
-        document.addEventListener('DOMContentLoaded', setupPagination);
+        // Initialize pagination on page load
+        document.addEventListener('DOMContentLoaded', () => setupPagination());
     </script>
 </body>
 </html>
