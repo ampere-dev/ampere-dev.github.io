@@ -106,10 +106,28 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-    <!-- Header Section -->
-    <header id="logo">
-        <a href="/"><img alt="Ampere Logo" width="154" height="30" src="images/Ampere%20Logo.webp"></a>
+<body class="home">
+    <header>
+<div id="logo">
+    <a href="./index.html" aria-label="Return to Ampere Development Homepage">
+        <picture>
+            <source srcset="images/Ampere-Logo.webp" type="image/webp">
+            <img src="images/Ampere-Logo.png" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
+        </picture>
+    </a>
+    <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+</div>
+        <nav id="header" class="nav-menu">
+            <ul>
+                <li><a href="what-are-load-banks.html">LOAD BANKS</a></li>
+                <li><a href="starline-tapbox-rental.html">STARLINE</a></li>
+                <li><a href="cables.html">CABLES</a></li>
+                <li><a href="flir.html">FLIR</a></li>
+                <li><a href="power-quality.html">POWER QUALITY</a></li>
+                <li><a href="transformers.html">TRANSFORMERS</a></li>
+                <li><a href="3D-fabrication.html">3D FABRICATION</a></li>
+            </ul>
+        </nav>
     </header>
 
     <video autoplay allowfullscreen muted loop id="myVideo">
