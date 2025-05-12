@@ -2,6 +2,7 @@
 .chapternav-container {
     display: flex;
     justify-content: center; /* Center items */
+    position: relative; /* For absolute positioning of arrows */
 }
 
 /* Chapternav */
@@ -41,8 +42,8 @@
     border-radius: 5px;
     background-color: #fff;
     text-align: center;
-    width: 90px; /* Increase width if needed */
-    height: 80px; /* Ensure consistent height */
+    width: 90px; /* Item width */
+    height: 80px; /* Consistent height */
 }
 
 /* Icon Styling */
@@ -56,4 +57,33 @@
 /* Hover Effect for Text */
 .chapternav-item:hover {
     color: #FE0002 !important; /* Red hover for text */
+}
+
+/* Arrow Buttons */
+.chapternav-arrow {
+    display: none; /* Hidden by default, shown via JS */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chapternav-arrow-left {
+    left: 5px;
+}
+
+.chapternav-arrow-right {
+    right: 5px;
+}
+
+.chapternav-arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
