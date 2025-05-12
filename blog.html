@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers & 3D fabrication for industry pros.">
@@ -9,7 +8,6 @@
     <meta name="author" content="Ampere Development">
     <title>Ampere Insights - Ampere Development</title>
 
-    <!-- SEO -->
     <link rel="canonical" href="https://ampere.dev/blog.html">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Ampere Insights - Ampere Development">
@@ -22,7 +20,6 @@
     <meta name="twitter:description" content="Explore power systems, load banks, transformers & 3D fabrication with concise, expert insights from Ampere Development’s industry blog.">
     <meta name="twitter:image" content="https://ampere.dev/images/og-blog.jpg">
 
-    <!-- Structured Data for First Article -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -38,18 +35,13 @@
     }
     </script>
 
-    <!-- Preload & Performance -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
-    <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
-
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/footer.css">
 
     <style>
@@ -358,7 +350,6 @@
             height: 0;
         }
 
-        /* Pagination Styles */
         .pagination {
             display: flex;
             justify-content: center;
@@ -817,6 +808,14 @@
             </article>
 
             <!-- Pagination Container -->
+           
+
+
+
+
+
+
+
             <div class="pagination" role="navigation" aria-label="Pagination">
                 <button class="pagination-btn" id="prev-btn" disabled aria-label="Previous page">Previous</button>
                 <div id="page-numbers" class="page-numbers"></div>
@@ -824,26 +823,23 @@
             </div>
         </main>
 
-<aside role="complementary">
-    <div class="sidebar-section newsletter">
-        <h3>Stay Updated</h3>
-        <p>Subscribe for the latest tech trends and insights.</p>
-        <form action="https://dev.us20.list-manage.com/subscribe/post?u=4263b89e85da75617458bbc4a&id=6733ce5ab9&f_id=009dc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-            <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required value="">
-            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                <input type="text" name="b_4263b89e85da75617458bbc4a_6733ce5ab9" tabindex="-1" value="">
+        <aside role="complementary">
+            <div class="sidebar-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for the latest tech trends and insights.</p>
+                <form action="https://dev.us20.list-manage.com/subscribe/post?u=4263b89e85da75617458bbc4a&id=6733ce5ab9&f_id=009dc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required value="">
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_4263b89e85da75617458bbc4a_6733ce5ab9" tabindex="-1" value="">
+                    </div>
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
+                </form>
             </div>
-            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
-        </form>
-    </div>
-</aside>
 
-
-<div class="sidebar-section related-posts">
-    <h3>Related Posts</h3>
-    <ul id="related-posts-list"></ul>
-</div>
+            <div class="sidebar-section related-posts">
+                <h3>Related Posts</h3>
+                <ul id="related-posts-list"></ul>
+            </div>
 
             <div class="sidebar-section share">
                 <h3>Share This Page</h3>
@@ -883,221 +879,210 @@
         </div>
     </footer>
 
-<script>
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0]='EMAIL';ftypes[0]='email';
+            fnames[1]='FNAME';ftypes[1]='text';
+            fnames[2]='LNAME';ftypes[2]='text';
+            fnames[3]='ADDRESS';ftypes[3]='address';
+            fnames[4]='PHONE';ftypes[4]='phone';
+            fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+            fnames[6]='COMPANY';ftypes[6]='text';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
     <script>
+        function searchPosts() {
+            const query = document.getElementById('search').value.toLowerCase().trim();
+            const posts = document.querySelectorAll('.post');
+            let hasResults = false;
 
-    
-    // Existing Functions
-    function searchPosts() {
-        const query = document.getElementById('search').value.toLowerCase().trim();
-        const posts = document.querySelectorAll('.post');
-        let hasResults = false;
-
-        // Track visible articles for pagination
-        const visibleArticles = [];
-        posts.forEach(post => {
-            const text = post.textContent.toLowerCase();
-            const matches = text.includes(query);
-            if (matches || query === '') {
-                visibleArticles.push(post);
-                post.classList.remove('hidden');
-                hasResults = true;
-            } else {
-                post.classList.add('hidden');
-            }
-        });
-
-        let noResults = document.querySelector('.no-results');
-        if (!noResults) {
-            noResults = document.createElement('p');
-            noResults.className = 'no-results';
-            noResults.textContent = 'No results found.';
-            document.querySelector('main').appendChild(noResults);
-        }
-        noResults.style.display = hasResults || query === '' ? 'none' : 'block';
-
-        // Reset pagination and update with visible articles
-        currentPage = 1;
-        setupPagination(visibleArticles);
-    }
-
-    function togglePost(titleElement) {
-        const article = titleElement.closest('article');
-        const content = article.querySelector('.post-content');
-        
-        if (article.classList.contains('collapsed')) {
-            content.style.height = content.scrollHeight + 'px';
-            article.classList.remove('collapsed');
-        } else {
-            content.style.height = content.scrollHeight + 'px';
-            setTimeout(() => {
-                content.style.height = '0';
-            }, 10);
-            article.classList.add('collapsed');
-        }
-        
-        content.addEventListener('transitionend', function handler() {
-            if (!article.classList.contains('collapsed')) {
-                content.style.height = 'auto';
-            }
-            content.removeEventListener('transitionend', handler);
-        });
-    }
-
-    // Pagination Logic
-    const articlesPerPage = 5;
-    let currentPage = 1;
-
-    function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
-        const totalArticles = visibleArticles.length;
-        const totalPages = Math.ceil(totalArticles / articlesPerPage);
-        const pageNumbersContainer = document.getElementById('page-numbers');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-
-        function displayArticles(page) {
-            const start = (page - 1) * articlesPerPage;
-            const end = start + articlesPerPage;
-
-            // Hide all articles initially
-            document.querySelectorAll('.post').forEach(article => {
-                article.classList.add('hidden');
-            });
-
-            // Show only articles for the current page
-            visibleArticles.forEach((article, index) => {
-                if (index >= start && index < end) {
-                    article.classList.remove('hidden');
-                }
-            });
-
-            // Update page number buttons
-            document.querySelectorAll('.page-number').forEach(btn => {
-                btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-            });
-
-            // Update button states
-            prevBtn.disabled = page === 1;
-            nextBtn.disabled = page === totalPages || totalPages === 0;
-            prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
-            nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
-        }
-
-        // Generate page number buttons
-        pageNumbersContainer.innerHTML = '';
-        for (let i = 1; i <= totalPages; i++) {
-            const pageBtn = document.createElement('button');
-            pageBtn.className = 'page-number';
-            pageBtn.dataset.page = i;
-            pageBtn.textContent = i;
-            pageBtn.setAttribute('aria-label', `Page ${i}`);
-            pageBtn.addEventListener('click', () => {
-                currentPage = i;
-                displayArticles(currentPage);
-            });
-            pageNumbersContainer.appendChild(pageBtn);
-        }
-
-        // Handle no results case
-        if (totalPages === 0) {
-            pageNumbersContainer.innerHTML = '';
-            prevBtn.disabled = true;
-            nextBtn.disabled = true;
-            prevBtn.setAttribute('aria-disabled', 'true');
-            nextBtn.setAttribute('aria-disabled', 'true');
-        }
-
-        // Event listeners for Previous and Next buttons
-        prevBtn.addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                displayArticles(currentPage);
-            }
-        });
-
-        nextBtn.addEventListener('click', () => {
-            if (currentPage < totalPages) {
-                currentPage++;
-                displayArticles(currentPage);
-            }
-        });
-
-        // Display articles for the current page
-        displayArticles(currentPage);
-    }
-
-    // New Function: Update Related Posts
-    function updateRelatedPosts() {
-        const relatedPostsList = document.getElementById('related-posts-list');
-        const articles = Array.from(document.querySelectorAll('.post'));
-        const maxRelated = 3; // Number of related posts to show
-
-        // Clear existing list
-        relatedPostsList.innerHTML = '';
-
-        // Get all articles with their tags and titles
-        const articleData = articles.map(article => {
-            const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
-            const title = article.querySelector('h2 a').textContent;
-            const link = article.querySelector('h2 a').getAttribute('href');
-            return { article, tags, title, link };
-        });
-
-        // Select related posts (most shared tags, then most recent)
-        const allTags = [...new Set(articleData.flatMap(data => data.tags))];
-        const relatedArticles = [];
-
-        // For each tag, count how many articles share it
-        allTags.forEach(tag => {
-            const taggedArticles = articleData.filter(data => data.tags.includes(tag));
-            taggedArticles.forEach(data => {
-                const existing = relatedArticles.find(ra => ra.link === data.link);
-                if (!existing) {
-                    relatedArticles.push({
-                        ...data,
-                        score: taggedArticles.length // Score based on tag popularity
-                    });
+            const visibleArticles = [];
+            posts.forEach(post => {
+                const text = post.textContent.toLowerCase();
+                const matches = text.includes(query);
+                if (matches || query === '') {
+                    visibleArticles.push(post);
+                    post.classList.remove('hidden');
+                    hasResults = true;
                 } else {
-                    existing.score += taggedArticles.length;
+                    post.classList.add('hidden');
                 }
             });
-        });
 
-        // Sort by score (most shared tags) and then by recency (index in articles)
-        relatedArticles.sort((a, b) => {
-            if (b.score === a.score) {
-                const aIndex = articles.indexOf(a.article);
-                const bIndex = articles.indexOf(b.article);
-                return aIndex - bIndex; // More recent (lower index) comes first
+            let noResults = document.querySelector('.no-results');
+            if (!noResults) {
+                noResults = document.createElement('p');
+                noResults.className = 'no-results';
+                noResults.textContent = 'No results found.';
+                document.querySelector('main').appendChild(noResults);
             }
-            return b.score - a.score; // Higher score comes first
-        });
+            noResults.style.display = hasResults || query === '' ? 'none' : 'block';
 
-        // Add up to maxRelated articles to the list
-        relatedArticles.slice(0, maxRelated).forEach(data => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = data.link;
-            a.textContent = data.title;
-            li.appendChild(a);
-            relatedPostsList.appendChild(li);
-        });
-
-        // If no related posts, show a fallback message
-        if (relatedArticles.length === 0) {
-            const li = document.createElement('li');
-            li.textContent = 'No related posts available.';
-            relatedPostsList.appendChild(li);
+            currentPage = 1;
+            setupPagination(visibleArticles);
         }
-    }
 
-    // Initialize pagination and related posts on page load
-    document.addEventListener('DOMContentLoaded', () => {
-        setupPagination();
-        updateRelatedPosts();
-    });
-</script>
+        function togglePost(titleElement) {
+            const article = titleElement.closest('article');
+            const content = article.querySelector('.post-content');
+            
+            if (article.classList.contains('collapsed')) {
+                content.style.height = content.scrollHeight + 'px';
+                article.classList.remove('collapsed');
+            } else {
+                content.style.height = content.scrollHeight + 'px';
+                setTimeout(() => {
+                    content.style.height = '0';
+                }, 10);
+                article.classList.add('collapsed');
+            }
+            
+            content.addEventListener('transitionend', function handler() {
+                if (!article.classList.contains('collapsed')) {
+                    content.style.height = 'auto';
+                }
+                content.removeEventListener('transitionend', handler);
+            });
+        }
+
+        const articlesPerPage = 5;
+        let currentPage = 1;
+
+        function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+            const totalArticles = visibleArticles.length;
+            const totalPages = Math.ceil(totalArticles / articlesPerPage);
+            const pageNumbersContainer = document.getElementById('page-numbers');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            function displayArticles(page) {
+                const start = (page - 1) * articlesPerPage;
+                const end = start + articlesPerPage;
+
+                document.querySelectorAll('.post').forEach(article => {
+                    article.classList.add('hidden');
+                });
+
+                visibleArticles.forEach((article, index) => {
+                    if (index >= start && index < end) {
+                        article.classList.remove('hidden');
+                    }
+                });
+
+                document.querySelectorAll('.page-number').forEach(btn => {
+                    btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+                });
+
+                prevBtn.disabled = page === 1;
+                nextBtn.disabled = page === totalPages || totalPages === 0;
+                prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+                nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
+            }
+
+            pageNumbersContainer.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.className = 'page-number';
+                pageBtn.dataset.page = i;
+                pageBtn.textContent = i;
+                pageBtn.setAttribute('aria-label', `Page ${i}`);
+                pageBtn.addEventListener('click', () => {
+                    currentPage = i;
+                    displayArticles(currentPage);
+                });
+                pageNumbersContainer.appendChild(pageBtn);
+            }
+
+            if (totalPages === 0) {
+                pageNumbersContainer.innerHTML = '';
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                prevBtn.setAttribute('aria-disabled', 'true');
+                nextBtn.setAttribute('aria-disabled', 'true');
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayArticles(currentPage);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayArticles(currentPage);
+                }
+            });
+
+            displayArticles(currentPage);
+        }
+
+        function updateRelatedPosts() {
+            const relatedPostsList = document.getElementById('related-posts-list');
+            const articles = Array.from(document.querySelectorAll('.post'));
+            const maxRelated = 3;
+
+            relatedPostsList.innerHTML = '';
+
+            const articleData = articles.map(article => {
+                const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
+                const title = article.querySelector('h2 a').textContent;
+                const link = article.querySelector('h2 a').getAttribute('href');
+                return { article, tags, title, link };
+            });
+
+            const allTags = [...new Set(articleData.flatMap(data => data.tags))];
+            const relatedArticles = [];
+
+            allTags.forEach(tag => {
+                const taggedArticles = articleData.filter(data => data.tags.includes(tag));
+                taggedArticles.forEach(data => {
+                    const existing = relatedArticles.find(ra => ra.link === data.link);
+                    if (!existing) {
+                        relatedArticles.push({
+                            ...data,
+                            score: taggedArticles.length
+                        });
+                    } else {
+                        existing.score += taggedArticles.length;
+                    }
+                });
+            });
+
+            relatedArticles.sort((a, b) => {
+                if (b.score === a.score) {
+                    const aIndex = articles.indexOf(a.article);
+                    const bIndex = articles.indexOf(b.article);
+                    return aIndex - bIndex;
+                }
+                return b.score - a.score;
+            });
+
+            relatedArticles.slice(0, maxRelated).forEach(data => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = data.link;
+                a.textContent = data.title;
+                li.appendChild(a);
+                relatedPostsList.appendChild(li);
+            });
+
+            if (relatedArticles.length === 0) {
+                const li = document.createElement('li');
+                li.textContent = 'No related posts available.';
+                relatedPostsList.appendChild(li);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupPagination();
+            updateRelatedPosts();
+        });
+    </script>
 </body>
 </html>
