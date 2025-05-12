@@ -1,51 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ampere Insights - Ampere Development</title>
-    <link>https://ampere.dev/blog</link>
-    <description>Ampere Insights delivers sharp, expert posts on power systems, load banks, transformers &amp; 3D fabrication for energy and industry professionals.</description>
-    <lastBuildDate>Mon, 05 May 2025 00:00:00 GMT</lastBuildDate>
+    <link>https://ampere.dev/blog.html</link>
+    <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-
+    <lastBuildDate>Mon, 12 May 2025 10:00:00 GMT</lastBuildDate>
+    <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google’s 1 MW IT Rack Plans: Redefining AI Data Centre Power and Cooling</title>
+      <link>https://ampere.dev/blog.html#Google-1MW-Rack-Plans</link>
+      <guid>https://ampere.dev/blog.html#Google-1MW-Rack-Plans</guid>
+      <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+      <description>Google is pushing the boundaries of data centre design with plans for 1-megawatt (MW) IT racks, leveraging the electric vehicle (EV) supply chain to revolutionize power delivery and cooling infrastructure, as detailed in a May 2025 report by The Register.</description>
+    </item>
+    <item>
+      <title>The AI Data Centre Boom: Balancing Growth and Sustainability in 2025</title>
+      <link>https://ampere.dev/blog.html#AI-Data-Centre-Potential</link>
+      <guid>https://ampere.dev/blog.html#AI-Data-Centre-Potential</guid>
+      <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+      <description>The global AI boom is driving an unprecedented surge in hyperscale data centre development, with Moody’s Ratings forecasting a 20% annual capacity increase after 2028.</description>
+    </item>
+    <item>
+      <title>New Data Center Developments in the USA: Powering the AI Revolution in 2025</title>
+      <link>https://ampere.dev/blog.html#USA-Data-Center-Developments</link>
+      <guid>https://ampere.dev/blog.html#USA-Data-Center-Developments</guid>
+      <pubDate>Mon, 12 May 2025 00:00:00 GMT</pubDate>
+      <description>The United States is witnessing an unprecedented surge in data center construction, fueled by the escalating demand for artificial intelligence (AI) and cloud computing infrastructure.</description>
+    </item>
+    <item>
+      <title>Google’s Nuclear Ambitions: Powering AI Data Centers with Advanced Reactors</title>
+      <link>https://ampere.dev/blog.html#Google-Nuclear-Power</link>
+      <guid>https://ampere.dev/blog.html#Google-Nuclear-Power</guid>
+      <pubDate>Sun, 11 May 2025 00:00:00 GMT</pubDate>
+      <description>Google is intensifying its push into nuclear energy to meet the soaring power demands of its AI-driven data centers, announcing a strategic partnership with Elementl Power to develop three advanced nuclear sites and a prior deal with Kairos Power for small modular reactors (SMRs).</description>
+    </item>
+    <item>
+      <title>Data Centers Bypassing the Grid: Nuclear Power Fuels the AI Boom</title>
+      <link>https://ampere.dev/blog.html#Data-Centers-Nuclear-Power</link>
+      <guid>https://ampere.dev/blog.html#Data-Centers-Nuclear-Power</guid>
+      <pubDate>Sun, 11 May 2025 00:00:00 GMT</pubDate>
+      <description>As artificial intelligence (AI) drives unprecedented energy demands, tech giants are bypassing traditional power grids to secure reliable, carbon-free energy for their data centers.</description>
+    </item>
+    <item>
+      <title>Amazon’s $500M Bet on Nuclear SMRs: Powering the AI Data Center Boom</title>
+      <link>https://ampere.dev/blog.html#Amazon-Nuclear-SMR</link>
+      <guid>https://ampere.dev/blog.html#Amazon-Nuclear-SMR</guid>
+      <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
+      <description>Amazon is diving headfirst into nuclear energy, announcing a $500 million investment in small modular reactors (SMRs) to fuel its growing data center empire, as reported by The Register.</description>
+    </item>
+    <item>
+      <title>Global AI Data Centers: Growth Continues Amid Amazon and Microsoft Adjustments</title>
+      <link>https://ampere.dev/blog.html#AI-Data-Center-Growth</link>
+      <guid>https://ampere.dev/blog.html#AI-Data-Center-Growth</guid>
+      <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
+      <description>Despite recent adjustments by tech giants Amazon and Microsoft, the global AI data center market continues its robust expansion, driven by the escalating demand for artificial intelligence (AI) infrastructure.</description>
+    </item>
+    <item>
+      <title>2025 Global Data Center Outlook: Powering the AI Revolution</title>
+      <link>https://ampere.dev/blog.html#Data-Center-Outlook</link>
+      <guid>https://ampere.dev/blog.html#Data-Center-Outlook</guid>
+      <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
+      <description>The data center industry is poised for unprecedented growth in 2025, driven by the insatiable demand for artificial intelligence (AI) and high-performance computing (HPC).</description>
+    </item>
+    <item>
+      <title>The Rise of Modular Substations: Revolutionizing Power Infrastructure</title>
+      <link>https://ampere.dev/blog.html#Modular-Substations</link>
+      <guid>https://ampere.dev/blog.html#Modular-Substations</guid>
+      <pubDate>Mon, 05 May 2025 00:00:00 GMT</pubDate>
+      <description>While modular data centers, pioneered by companies like Sun Microsystems and Dell in the mid-2000s, transformed IT infrastructure, a new wave of innovation is reshaping power distribution: modular substations.</description>
+    </item>
     <item>
       <title>Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers</title>
-      <link>https://ampere.dev/blog#Data-Center-Innovation</link>
-      <guid>https://ampere.dev/blog#Data-Center-Innovation</guid>
+      <link>https://ampere.dev/blog.html#Data-Center-Innovation</link>
+      <guid>https://ampere.dev/blog.html#Data-Center-Innovation</guid>
       <pubDate>Sat, 03 May 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[The data center industry is undergoing a transformative shift, driven by the demands of artificial intelligence (AI) and the need for sustainable, high-performance infrastructure. In this dynamic landscape, Avtron Power Solutions is making waves with its innovative load bank solutions, as highlighted in an upcoming episode of Planet TV Studios’ New Frontiers, set to air in Q3 2025.]]></description>
+      <description>The data center industry is undergoing a transformative shift, driven by the demands of artificial intelligence (AI) and the need for sustainable, high-performance infrastructure.</description>
     </item>
-
     <item>
       <title>The AI-Driven Data Center Boom: Balancing Innovation and Sustainability</title>
-      <link>https://ampere.dev/blog#AI-Data-Centers</link>
-      <guid>https://ampere.dev/blog#AI-Data-Centers</guid>
+      <link>https://ampere.dev/blog.html#AI-Data-Centers</link>
+      <guid>https://ampere.dev/blog.html#AI-Data-Centers</guid>
       <pubDate>Fri, 02 May 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[The demand for data center infrastructure is surging, driven by the explosive growth of artificial intelligence (AI). A recent Colliers report projects a 160% increase in data center demand, with $57 billion invested in the sector in 2024 alone.]]></description>
+      <description>The demand for data center infrastructure is surging, driven by the explosive growth of artificial intelligence (AI).</description>
     </item>
-
     <item>
       <title>America’s Energy Deficit and Trump’s National Energy Emergency Declaration</title>
-      <link>https://ampere.dev/blog#Energy-Crisis-Coal</link>
-      <guid>https://ampere.dev/blog#Energy-Crisis-Coal</guid>
+      <link>https://ampere.dev/blog.html#Energy-Crisis-Coal</link>
+      <guid>https://ampere.dev/blog.html#Energy-Crisis-Coal</guid>
       <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[The United States faces a growing energy deficit, driven by surging demand from data centers and the decommissioning of coal plants, while China ramps up its coal-fired power capacity. President Donald Trump’s declaration of a national energy emergency aims to address this gap by boosting domestic energy production, particularly coal, leveraging America’s vast reserves.]]></description>
+      <description>The United States faces a growing energy deficit, driven by surging demand from data centers and the decommissioning of coal plants, while China ramps up its coal-fired power capacity.</description>
     </item>
-
-    <item>
-      <title>Nvidia CEO Jensen Huang on U.S.-China AI Race and the Trade Jobs Boom</title>
-      <link>https://ampere.dev/blog#AI-Supremacy-Race</link>
-      <guid>https://ampere.dev/blog#AI-Supremacy-Race</guid>
-      <pubDate>Wed, 30 Apr 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[At the Hill and Valley Forum in Washington, D.C., Nvidia CEO Jensen Huang delivered a stark warning about the intensifying AI supremacy race between the U.S. and China, while highlighting AI’s transformative potential to revolutionize industries and create a surge in trade jobs.]]></description>
-    </item>
-
-    <item>
-      <title>Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!</title>
-      <link>https://ampere.dev/blog#Mr-Wonderfuls-AI-Power-Play</link>
-      <guid>https://ampere.dev/blog#Mr-Wonderfuls-AI-Power-Play</guid>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 GMT</pubDate>
-      <description><![CDATA[Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future!]]></description>
-    </item>
-
   </channel>
 </rss>
