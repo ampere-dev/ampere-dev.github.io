@@ -1,200 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capacitive Load Bank Rental | Power Testing Solutions</title>
-    <meta name="description" content="Rent high-quality capacitive load banks for precise power system testing. Reliable, portable, and customizable solutions for your testing needs.">
-    <link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/chapternav.css">
-<link rel="stylesheet" href="css/footer.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background: #004aad;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            background: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #004aad;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #007bff;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1931&auto=format&fit=crop') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 5rem 1rem;
-        }
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .content {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .content h2 {
-            color: #004aad;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .content p {
-            margin-bottom: 1rem;
-        }
-        .content ul {
-            list-style: disc;
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-        .cta {
-            text-align: center;
-            padding: 2rem;
-            background: #f4f4f4;
-        }
-        .cta a {
-            background: #004aad;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .cta a:hover {
-            background: #007bff;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        @media (max-width: 768px) {
-            header h1, .hero h2 {
-                font-size: 1.8rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Capacitive Load Banks - Ampere Development</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<div id="logo">
-    <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-        <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
-    </a>
-</div>
-    <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-</div>
-        <nav id="header" class="nav-menu">
-            <ul>
-                <li><a href="what-are-load-banks.html">LOAD BANKS</a></li>
-                <li><a href="starline-tapbox-rental.html">STARLINE</a></li>
-                <li><a href="cables.html">CABLES</a></li>
-                <li><a href="flir.html">FLIR</a></li>
-                <li><a href="power-quality.html">POWER QUALITY</a></li>
-                <li><a href="transformers.html">TRANSFORMERS</a></li>
-                <li><a href="3D-fabrication.html">3D FABRICATION</a></li>
-            </ul>
-        </nav>
-    <header>
-        <h1>Capacitive Load Bank Rental</h1>
-    </header>
-    <section class="hero">
-        <h2>Rent Reliable Capacitive Load Banks</h2>
-        <p>Test your power systems with our high-quality, portable capacitive load banks. Perfect for simulating leading power factor loads in advanced testing scenarios.</p>
-    </section>
-    <section class="content">
-        <h2>What Are Capacitive Load Banks?</h2>
-        <p>Capacitive load banks simulate reactive electrical loads with a leading power factor, commonly found in systems with capacitors or electronics. They are used to test the performance and stability of power systems under conditions that mimic capacitive loads, ensuring generators, UPS systems, and other equipment operate efficiently.</p>
-        
-        <h2>Why Rent a Capacitive Load Bank?</h2>
-        <p>Renting a capacitive load bank offers a cost-effective and flexible solution for testing power systems with specific reactive load requirements. Our rental services provide:</p>
-        <ul>
-            <li>High-quality, well-maintained capacitive load banks in various capacities</li>
-            <li>Portable and user-friendly designs for on-site testing</li>
-            <li>Customizable load configurations to meet precise testing needs</li>
-            <li>Expert technical support and setup assistance</li>
-            <li>Flexible short-term and long-term rental options</li>
-        </ul>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-blue-800 text-white py-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="flex items-center">
+        <span class="text-2xl font-bold">Ampere Development</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#load-banks" class="hover:underline">Load Banks</a>
+        <a href="#starline-cables" class="hover:underline">Starline Cables</a>
+        <a href="#flir" class="hover:underline">FLIR</a>
+        <a href="#power-quality" class="hover:underline">Power Quality</a>
+        <a href="#transformers" class="hover:underline">Transformers</a>
+        <a href="#3d-fabrication" class="hover:underline">3D Fabrication</a>
+      </div>
+      <button class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </nav>
 
-        <h2>Applications of Capacitive Load Banks</h2>
-        <p>Our capacitive load banks are ideal for a range of industries and testing applications, including:</p>
-        <ul>
-            <li>Testing generators under leading power factor conditions</li>
-            <li>Validating UPS systems with capacitive load profiles</li>
-            <li>Data center power system testing with electronic loads</li>
-            <li>Renewable energy system diagnostics</li>
-            <li>Industrial applications involving capacitor banks or sensitive electronics</li>
-        </ul>
-    </section>
-    <section class="cta">
-        <h2>Ready to Rent a Capacitive Load Bank?</h2>
-        <p>Contact us today to discuss your testing needs and get a quote for our capacitive load bank rental services.</p>
-        <a href="#contact">Get a Quote</a>
-    </section>
-<footer id="footer">
-    <div class="footer-links">
-        <ul>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="privacy-legal.html">PRIVACY & LEGAL</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+  <!-- Hero Section -->
+  <header class="bg-blue-600 text-white py-12 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-5xl font-bold mb-4">Master Your Power Systems—Rent Capacitive Load Banks Today!</h1>
+      <p class="text-2xl mb-6">High-Performance Testing for Capacitors, Electronics, and Advanced Power Scenarios</p>
+      <a href="mailto:sales@ampere.dev" class="inline-block bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg">Get Your Free Quote Now!</a>
     </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/instagram-logo.png" alt="Instagram logo">
-            </a>
-        </div>
-    <div>
-        <p>AMPERE © 2025</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto py-12 px-4">
+    <!-- Problem Section -->
+    <section id="problem" class="mb-12 bg-blue-100 p-8 rounded-lg">
+      <h2 class="text-4xl font-bold mb-4 text-blue-800">Are Capacitive Loads Threatening Your Power Reliability?</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        In today’s high-tech world, power systems face unique challenges from capacitive loads like electronics and capacitor banks. An untested generator or UPS system could fail under these conditions, leading to costly downtime, equipment damage, or even critical system failures. Can you risk your data center, renewable energy system, or industrial operation grinding to a halt?
+      </p>
+      <p class="text-gray-700 text-lg leading-relaxed mt-4">
+        Capacitive load banks are the gold standard for testing power systems with leading power factor loads. But purchasing one outright is expensive and often impractical. Ampere Development’s capacitive load bank rentals offer a smarter, cost-effective solution, giving you access to cutting-edge testing equipment without the hefty price tag. Test with confidence and keep your systems running flawlessly.
+      </p>
+      <a href="mailto:sales@ampere.dev" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Start Testing with Confidence Today!</a>
+    </section>
+
+    <!-- Why Rent Section -->
+    <section id="why-rent" class="mb-12">
+      <h2 class="text-4xl font-bold mb-4 text-blue-800">Why Rent a Capacitive Load Bank from Ampere?</h2>
+      <p class="text-gray-700 text-lg">
+        Ampere Development’s capacitive load bank rentals are designed to make advanced power testing easy, affordable, and reliable. We provide everything you need to validate your systems under capacitive load conditions, saving you time, money, and worry while ensuring peak performance.
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 text-lg mt-4">
+        <li><strong>Top-Tier Equipment:</strong> High-quality, well-maintained load banks for precise capacitive load testing.</li>
+        <li><strong>Portable and Simple:</strong> User-friendly designs for hassle-free on-site testing, anywhere you need it.</li>
+        <li><strong>Custom Configurations:</strong> Tailored load setups to meet your exact testing requirements.</li>
+        <li><strong>Expert Support:</strong> Dedicated technical assistance and setup guidance from our experienced team.</li>
+        <li><strong>Flexible Rentals:</strong> Short-term or long-term options to fit your project and budget.</li>
+      </ul>
+      <a href="https://www.ampere.dev" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Rent Your Load Bank Today!</a>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="mb-12">
+      <h2 class="text-4xl font-bold mb-4 text-blue-800">Trusted Across High-Tech Industries</h2>
+      <p class="text-gray-700 text-lg">
+        Ampere’s capacitive load banks are the choice of professionals in industries requiring precise power testing under leading power factor conditions. Whether you’re commissioning new systems or maintaining critical infrastructure, our load banks ensure your equipment is ready for the challenge.
+      </p>
+      <ul class="list-disc pl-6 text-gray-700 text-lg mt-4">
+        <li><strong>Generators:</strong> Test performance under leading power factor loads for maximum reliability.</li>
+        <li><strong>UPS Systems:</strong> Validate stability with capacitive load profiles in critical applications.</li>
+        <li><strong>Data Centers:</strong> Ensure power reliability for electronic-heavy systems.</li>
+        <li><strong>Renewable Energy:</strong> Diagnose solar, wind, or battery systems with capacitive loads.</li>
+        <li><strong>Industrial Plants:</strong> Protect capacitor banks and sensitive electronics with rigorous testing.</li>
+      </ul>
+      <a href="mailto:sales@ampere.dev" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Find Your Industry’s Testing Solution</a>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="mb-12 bg-yellow-100 p-8 rounded-lg text-center">
+      <h2 class="text-4xl font-bold mb-4 text-blue-800">Don’t Let Capacitive Loads Catch You Off Guard!</h2>
+      <p class="text-gray-700 text-lg mb-4">
+        Our capacitive load banks are in high demand—reserve yours now before they’re gone! Contact Ampere Development for a free, no-obligation quote tailored to your testing needs. Act fast to safeguard your power systems and avoid costly failures.
+      </p>
+      <a href="mailto:sales@ampere.dev" class="inline-block bg-blue-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-blue-700 text-lg">Get Your Free Quote Today!</a>
+      <p class="text-gray-700 text-lg mt-4">
+        Visit <a href="https://www.ampere.dev" class="text-blue-600 underline">www.ampere.dev</a> or email <a href="mailto:sales@ampere.dev" class="text-blue-600 underline">sales@ampere.dev</a> to get started.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="mb-12">
+      <h2 class="text-4xl font-bold mb-4 text-blue-800">Why Choose Ampere Development?</h2>
+      <p class="text-gray-700 text-lg">
+        At Ampere Development, we’re committed to powering your success. With extensive expertise in power system solutions, we provide capacitive load banks that deliver unmatched precision and reliability for industries like data centers, renewable energy, and manufacturing. We’re more than a rental provider—we’re your partner in ensuring your power systems are unstoppable.
+      </p>
+      <a href="https://www.ampere.dev" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Learn More About Ampere</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://facebook.com" class="text-white hover:text-gray-300">Facebook</a>
+        <a href="https://x.com" class="text-white hover:text-gray-300">X</a>
+        <a href="https://linkedin.com" class="text-white hover:text-gray-300">LinkedIn</a>
+        <a href="https://instagram.com" class="text-white hover:text-gray-300">Instagram</a>
+      </div>
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#about" class="text-white hover:underline">About</a>
+        <a href="#products" class="text-white hover:underline">Products</a>
+        <a href="#services" class="text-white hover:underline">Services</a>
+        <a href="#blog" class="text-white hover:underline">Blog</a>
+        <a href="#privacy" class="text-white hover:underline">Privacy & Legal</a>
+        <a href="#contact" class="text-white hover:underline">Contact</a>
+      </div>
+      <p class="text-lg">AMPERE © 2025</p>
+      <p class="mt-2">Contact: <a href="mailto:sales@ampere.dev" class="underline">sales@ampere.dev</a> | <a href="https://www.ampere.dev" class="underline">www.ampere.dev</a></p>
     </div>
-</footer>
+  </footer>
 </body>
 </html>
