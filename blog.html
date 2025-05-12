@@ -524,7 +524,7 @@
         <p class="author">— Reported based on DataCenterKnowledge, The Register, and industry insights, May 2025</p>
     </div>
 </article>
-            <article class="post collapsed">
+            <article class="post collapsed" data-tags="AI, Data Centers, Nuclear Power">
                 <div id="Amazon-Nuclear-SMR"></div>
                 <h2 onclick="togglePost(this)"><a href="#Amazon-Nuclear-SMR">Amazon’s $500M Bet on Nuclear SMRs: Powering the AI Data Center Boom</a></h2>
                 <div class="post-content">
@@ -545,7 +545,7 @@
                     <p class="author">— Reported based on The Register and industry insights, May 2025</p>
                 </div>
             </article>
-            <article class="post collapsed">
+            <article class="post collapsed" data-tags="AI, Data Centers">
                 <div id="AI-Data-Center-Growth"></div>
                 <h2 onclick="togglePost(this)"><a href="#AI-Data-Center-Growth">Global AI Data Centers: Growth Continues Amid Amazon and Microsoft Adjustments</a></h2>
                 <div class="post-content">
@@ -566,7 +566,7 @@
                     <p class="author">— Reported based on NextBigFuture and industry insights, May 2025</p>
                 </div>
             </article>
-            <article class="post collapsed">
+            <article class="post collapsed" data-tags="AI, Data Centers, Sustainability">
                 <div id="Data-Center-Outlook"></div>
                 <h2 onclick="togglePost(this)"><a href="#Data-Center-Outlook">2025 Global Data Center Outlook: Powering the AI Revolution</a></h2>
                 <div class="post-content">
@@ -588,7 +588,7 @@
                     <p class="author">— Reported based on JLL’s 2025 Global Data Center Outlook, May 2025</p>
                 </div>
             </article>
-            <article class="post collapsed">
+            <article class="post collapsed" data-tags="Power Infrastructure, Sustainability">
                 <div id="Modular-Substations"></div>
                 <h2 onclick="togglePost(this)"><a href="#Modular-Substations">The Rise of Modular Substations: Revolutionizing Power Infrastructure</a></h2>
                 <div class="post-content">
@@ -609,7 +609,8 @@
                     <p class="author">— Reported based on industry insights and market research, May 2025</p>
                 </div>
             </article>
-            <article class="post collapsed" id="Data-Center-Innovation">
+                <article class="post collapsed" data-tags="Data Centers, Load Banks">
+                <div id="Data-Center-Innovation"></div>
                 <h2 onclick="togglePost(this)"><a href="#Data-Center-Innovation">Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers</a></h2>
                 <div class="post-content">
                     <time datetime="2025-05-03">May 3, 2025</time>
@@ -629,7 +630,8 @@
                     <p class="author">— Reported based on industry insights and Avtron Power Solutions announcements, May 2025</p>
                 </div>
             </article>
-            <article class="post collapsed" id="AI-Data-Centers">
+                <article class="post collapsed" data-tags="AI, Data Centers, Sustainability">
+                <div id="AI-Data-Centers"></div>
                 <h2 onclick="togglePost(this)"><a href="#AI-Data-Centers">The AI-Driven Data Center Boom: Balancing Innovation and Sustainability</a></h2>
                 <div class="post-content">
                     <time datetime="2025-05-02">May 2, 2025</time>
@@ -649,7 +651,8 @@
                     <p class="author">— Reported based on industry data and Colliers research, May 2025</p>
                 </div>
             </article>
-            <article class="post collapsed" id="Energy-Crisis-Coal">
+                <article class="post collapsed" data-tags="Energy, Coal, Data Centers">
+                <div id="Energy-Crisis-Coal"></div>
                 <h2 onclick="togglePost(this)"><a href="#Energy-Crisis-Coal">America’s Energy Deficit and Trump’s National Energy Emergency Declaration</a></h2>
                 <div class="post-content">
                     <time datetime="2025-05-01">May 1, 2025</time>
@@ -668,7 +671,8 @@
                     <p class="author">— Reported based on industry data and White House announcements, May 2025</p>
                 </div>
             </article>
-            <article class="post collapsed" id="AI-Supremacy-Race">
+<article class="post collapsed" data-tags="AI, Industry Trends">
+        <div id="AI-Supremacy-Race"></div>
                 <h2 onclick="togglePost(this)"><a href="#AI-Supremacy-Race">Nvidia CEO Jensen Huang on U.S.-China AI Race and the Trade Jobs Boom</a></h2>
                 <div class="post-content">
                     <time datetime="2025-04-30">April 30, 2025</time>
@@ -690,7 +694,8 @@
                     <p class="author">— Reported based on remarks by Jensen Huang at the Hill and Valley Forum, April 2025</p>
                 </div>
             </article>
-            <article class="post collapsed" id="Mr-Wonderfuls-AI-Power-Play">
+                <article class="post collapsed" data-tags="AI, Data Centers, Industry Trends">
+                <div id="Mr-Wonderfuls-AI-Power-Play"></div>
                 <h2 onclick="togglePost(this)"><a href="#Mr-Wonderfuls-AI-Power-Play">Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!</a></h2>
                 <div class="post-content">
                     <time datetime="2025-04-29">April 29, 2025</time>
@@ -778,148 +783,216 @@
         </div>
     </footer>
 
-    <script>
-        // Existing Functions
-        function searchPosts() {
-            const query = document.getElementById('search').value.toLowerCase().trim();
-            const posts = document.querySelectorAll('.post');
-            let hasResults = false;
+<script>
+    // Existing Functions
+    function searchPosts() {
+        const query = document.getElementById('search').value.toLowerCase().trim();
+        const posts = document.querySelectorAll('.post');
+        let hasResults = false;
 
-            // Track visible articles for pagination
-            const visibleArticles = [];
-            posts.forEach(post => {
-                const text = post.textContent.toLowerCase();
-                const matches = text.includes(query);
-                if (matches || query === '') {
-                    visibleArticles.push(post);
-                    post.classList.remove('hidden');
-                    hasResults = true;
-                } else {
-                    post.classList.add('hidden');
-                }
-            });
-
-            let noResults = document.querySelector('.no-results');
-            if (!noResults) {
-                noResults = document.createElement('p');
-                noResults.className = 'no-results';
-                noResults.textContent = 'No results found.';
-                document.querySelector('main').appendChild(noResults);
-            }
-            noResults.style.display = hasResults || query === '' ? 'none' : 'block';
-
-            // Reset pagination and update with visible articles
-            currentPage = 1;
-            setupPagination(visibleArticles);
-        }
-
-        function togglePost(titleElement) {
-            const article = titleElement.closest('article');
-            const content = article.querySelector('.post-content');
-            
-            if (article.classList.contains('collapsed')) {
-                content.style.height = content.scrollHeight + 'px';
-                article.classList.remove('collapsed');
+        // Track visible articles for pagination
+        const visibleArticles = [];
+        posts.forEach(post => {
+            const text = post.textContent.toLowerCase();
+            const matches = text.includes(query);
+            if (matches || query === '') {
+                visibleArticles.push(post);
+                post.classList.remove('hidden');
+                hasResults = true;
             } else {
-                content.style.height = content.scrollHeight + 'px';
-                setTimeout(() => {
-                    content.style.height = '0';
-                }, 10);
-                article.classList.add('collapsed');
+                post.classList.add('hidden');
             }
-            
-            content.addEventListener('transitionend', function handler() {
-                if (!article.classList.contains('collapsed')) {
-                    content.style.height = 'auto';
-                }
-                content.removeEventListener('transitionend', handler);
+        });
+
+        let noResults = document.querySelector('.no-results');
+        if (!noResults) {
+            noResults = document.createElement('p');
+            noResults.className = 'no-results';
+            noResults.textContent = 'No results found.';
+            document.querySelector('main').appendChild(noResults);
+        }
+        noResults.style.display = hasResults || query === '' ? 'none' : 'block';
+
+        // Reset pagination and update with visible articles
+        currentPage = 1;
+        setupPagination(visibleArticles);
+    }
+
+    function togglePost(titleElement) {
+        const article = titleElement.closest('article');
+        const content = article.querySelector('.post-content');
+        
+        if (article.classList.contains('collapsed')) {
+            content.style.height = content.scrollHeight + 'px';
+            article.classList.remove('collapsed');
+        } else {
+            content.style.height = content.scrollHeight + 'px';
+            setTimeout(() => {
+                content.style.height = '0';
+            }, 10);
+            article.classList.add('collapsed');
+        }
+        
+        content.addEventListener('transitionend', function handler() {
+            if (!article.classList.contains('collapsed')) {
+                content.style.height = 'auto';
+            }
+            content.removeEventListener('transitionend', handler);
+        });
+    }
+
+    // Pagination Logic
+    const articlesPerPage = 5;
+    let currentPage = 1;
+
+    function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+        const totalArticles = visibleArticles.length;
+        const totalPages = Math.ceil(totalArticles / articlesPerPage);
+        const pageNumbersContainer = document.getElementById('page-numbers');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function displayArticles(page) {
+            const start = (page - 1) * articlesPerPage;
+            const end = start + articlesPerPage;
+
+            // Hide all articles initially
+            document.querySelectorAll('.post').forEach(article => {
+                article.classList.add('hidden');
             });
+
+            // Show only articles for the current page
+            visibleArticles.forEach((article, index) => {
+                if (index >= start && index < end) {
+                    article.classList.remove('hidden');
+                }
+            });
+
+            // Update page number buttons
+            document.querySelectorAll('.page-number').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+            });
+
+            // Update button states
+            prevBtn.disabled = page === 1;
+            nextBtn.disabled = page === totalPages || totalPages === 0;
+            prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+            nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
         }
 
-        // Pagination Logic
-        const articlesPerPage = 5;
-        let currentPage = 1;
+        // Generate page number buttons
+        pageNumbersContainer.innerHTML = '';
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement('button');
+            pageBtn.className = 'page-number';
+            pageBtn.dataset.page = i;
+            pageBtn.textContent = i;
+            pageBtn.setAttribute('aria-label', `Page ${i}`);
+            pageBtn.addEventListener('click', () => {
+                currentPage = i;
+                displayArticles(currentPage);
+            });
+            pageNumbersContainer.appendChild(pageBtn);
+        }
 
-        function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
-            const totalArticles = visibleArticles.length;
-            const totalPages = Math.ceil(totalArticles / articlesPerPage);
-            const pageNumbersContainer = document.getElementById('page-numbers');
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-
-            function displayArticles(page) {
-                const start = (page - 1) * articlesPerPage;
-                const end = start + articlesPerPage;
-
-                // Hide all articles initially
-                document.querySelectorAll('.post').forEach(article => {
-                    article.classList.add('hidden');
-                });
-
-                // Show only articles for the current page
-                visibleArticles.forEach((article, index) => {
-                    if (index >= start && index < end) {
-                        article.classList.remove('hidden');
-                    }
-                });
-
-                // Update page number buttons
-                document.querySelectorAll('.page-number').forEach(btn => {
-                    btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-                });
-
-                // Update button states
-                prevBtn.disabled = page === 1;
-                nextBtn.disabled = page === totalPages || totalPages === 0;
-                prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
-                nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
-            }
-
-            // Generate page number buttons
+        // Handle no results case
+        if (totalPages === 0) {
             pageNumbersContainer.innerHTML = '';
-            for (let i = 1; i <= totalPages; i++) {
-                const pageBtn = document.createElement('button');
-                pageBtn.className = 'page-number';
-                pageBtn.dataset.page = i;
-                pageBtn.textContent = i;
-                pageBtn.setAttribute('aria-label', `Page ${i}`);
-                pageBtn.addEventListener('click', () => {
-                    currentPage = i;
-                    displayArticles(currentPage);
-                });
-                pageNumbersContainer.appendChild(pageBtn);
-            }
-
-            // Handle no results case
-            if (totalPages === 0) {
-                pageNumbersContainer.innerHTML = '';
-                prevBtn.disabled = true;
-                nextBtn.disabled = true;
-                prevBtn.setAttribute('aria-disabled', 'true');
-                nextBtn.setAttribute('aria-disabled', 'true');
-            }
-
-            // Event listeners for Previous and Next buttons
-            prevBtn.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    displayArticles(currentPage);
-                }
-            });
-
-            nextBtn.addEventListener('click', () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    displayArticles(currentPage);
-                }
-            });
-
-            // Display articles for the current page
-            displayArticles(currentPage);
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+            prevBtn.setAttribute('aria-disabled', 'true');
+            nextBtn.setAttribute('aria-disabled', 'true');
         }
 
-        // Initialize pagination on page load
-        document.addEventListener('DOMContentLoaded', () => setupPagination());
-    </script>
+        // Event listeners for Previous and Next buttons
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                displayArticles(currentPage);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayArticles(currentPage);
+            }
+        });
+
+        // Display articles for the current page
+        displayArticles(currentPage);
+    }
+
+    // New Function: Update Related Posts
+    function updateRelatedPosts() {
+        const relatedPostsList = document.getElementById('related-posts-list');
+        const articles = Array.from(document.querySelectorAll('.post'));
+        const maxRelated = 3; // Number of related posts to show
+
+        // Clear existing list
+        relatedPostsList.innerHTML = '';
+
+        // Get all articles with their tags and titles
+        const articleData = articles.map(article => {
+            const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
+            const title = article.querySelector('h2 a').textContent;
+            const link = article.querySelector('h2 a').getAttribute('href');
+            return { article, tags, title, link };
+        });
+
+        // Select related posts (most shared tags, then most recent)
+        const allTags = [...new Set(articleData.flatMap(data => data.tags))];
+        const relatedArticles = [];
+
+        // For each tag, count how many articles share it
+        allTags.forEach(tag => {
+            const taggedArticles = articleData.filter(data => data.tags.includes(tag));
+            taggedArticles.forEach(data => {
+                const existing = relatedArticles.find(ra => ra.link === data.link);
+                if (!existing) {
+                    relatedArticles.push({
+                        ...data,
+                        score: taggedArticles.length // Score based on tag popularity
+                    });
+                } else {
+                    existing.score += taggedArticles.length;
+                }
+            });
+        });
+
+        // Sort by score (most shared tags) and then by recency (index in articles)
+        relatedArticles.sort((a, b) => {
+            if (b.score === a.score) {
+                const aIndex = articles.indexOf(a.article);
+                const bIndex = articles.indexOf(b.article);
+                return aIndex - bIndex; // More recent (lower index) comes first
+            }
+            return b.score - a.score; // Higher score comes first
+        });
+
+        // Add up to maxRelated articles to the list
+        relatedArticles.slice(0, maxRelated).forEach(data => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = data.link;
+            a.textContent = data.title;
+            li.appendChild(a);
+            relatedPostsList.appendChild(li);
+        });
+
+        // If no related posts, show a fallback message
+        if (relatedArticles.length === 0) {
+            const li = document.createElement('li');
+            li.textContent = 'No related posts available.';
+            relatedPostsList.appendChild(li);
+        }
+    }
+
+    // Initialize pagination and related posts on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        setupPagination();
+        updateRelatedPosts();
+    });
+</script>
 </body>
 </html>
