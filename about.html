@@ -34,12 +34,16 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Custom Styles for Right-Aligned Images -->
+    <!-- Custom Styles for Wider Page and Two-by-Two Images -->
     <style>
+        .container {
+            max-width: 1400px; /* Wider page layout */
+        }
         .image-container {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two images per row */
             gap: 15px;
+            align-items: start;
         }
         .image-container figure {
             margin: 0;
@@ -49,15 +53,27 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+            object-fit: cover;
         }
         .image-container figcaption {
             font-size: 0.9rem;
             color: #555;
             margin-top: 5px;
         }
+        /* Center the last image if there's an odd number */
+        .image-container figure:last-child:nth-child(odd) {
+            grid-column: span 2;
+            max-width: 50%;
+            margin: 0 auto;
+        }
         @media (max-width: 767px) {
             .image-container {
+                grid-template-columns: 1fr; /* Single column on mobile */
                 margin-top: 20px;
+            }
+            .image-container figure:last-child:nth-child(odd) {
+                grid-column: auto;
+                max-width: 100%;
             }
         }
     </style>
@@ -123,28 +139,28 @@
                 </section>
 
                 <!-- Image collage -->
-<aside class="image-container col-lg-4">
-    <figure>
-        <img src="images/developer.webp" alt="Developer working on code" loading="lazy">
-        <figcaption>A developer coding innovative solutions.</figcaption>
-    </figure>
-    <figure>
-        <img src="images/innovation.webp" alt="Innovative technology showcase" loading="lazy">
-        <figcaption>Showcasing cutting-edge technology.</figcaption>
-    </figure>
-    <figure>
-        <img src="images/meeting.webp" alt="Team collaboration meeting" loading="lazy">
-        <figcaption>Team collaborating in a dynamic meeting.</figcaption>
-    </figure>
-    <figure>
-        <img src="images/engineering.webp" alt="Hardware engineering project" loading="lazy">
-        <figcaption>Engineers working on a hardware project.</figcaption>
-    </figure>
-    <figure>
-        <img src="images/community.webp" alt="Community event at Ampere" loading="lazy">
-        <figcaption>Engaging community event at Ampere.</figcaption>
-    </figure>
-</aside>
+                <aside class="image-container col-lg-4">
+                    <figure>
+                        <img src="images/developer.webp" alt="Engineer working on power systems" loading="lazy">
+                        <figcaption>Designing reliable power solutions.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/innovation.webp" alt="Innovative load bank technology" loading="lazy">
+                        <figcaption>Showcasing cutting-edge power testing.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/meeting.webp" alt="Team planning power solutions" loading="lazy">
+                        <figcaption>Collaborating on power reliability.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/engineering.webp" alt="Power system engineering" loading="lazy">
+                        <figcaption>Building robust power infrastructure.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/community.webp" alt="Power industry professionals" loading="lazy">
+                        <figcaption>Connecting power experts.</figcaption>
+                    </figure>
+                </aside>
             </div>
         </div>
     </main>
