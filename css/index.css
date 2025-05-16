@@ -56,14 +56,36 @@ h2.tagline {
   margin-bottom: 1rem;
 }
 
-.btn-primary {
-  background-color: #dc3545 !important; /* Bootstrap danger red */
-  border-color: #dc3545 !important;
-  color: white !important;
-  margin-right: 10px;
+.btn-red {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: #ffffff !important;
 }
-.btn-primary:hover {
-  background-color: #c82333 !important; /* Darker red on hover */
-  border-color: #c82333 !important;
-  color: white !important;
+
+.btn-white {
+    background-color: #ffffff !important;
+    border-color: #000000 !important;
+    color: #000000 !important;
+}
+
+.btn-blue {
+    background-color: #0000ff !important;
+    border-color: #0000ff !important;
+    color: #ffffff !important;
+}
+
+/* Optional: Custom hover effects to enhance user experience */
+.btn-red:hover {
+    background-color: #cc0000 !important;
+    border-color: #cc0000 !important;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0 !important;
+    border-color: #000000 !important;
+}
+
+.btn-blue:hover {
+    background-color: #0000cc !important;
+    border-color: #0000cc !important;
 }
