@@ -1,6 +1,5 @@
-Static HTML Website
- 
-This repository hosts a lightweight, static website built with standard HTML, CSS, and JavaScript. The site is designed to [briefly describe purpose, e.g., serve as a personal portfolio, informational page, or small business site] and is hosted on GitHub Pages for easy deployment and accessibility.
+Ampere.dev Static Website
+This repository hosts a lightweight, static website for ampere.dev, built with standard HTML, CSS, and JavaScript. The site serves as a professional landing page to showcase the ampere.dev project and its capabilities. It is hosted on GitHub Pages for seamless deployment and accessibility.
 Table of Contents
 
 Features
@@ -15,18 +14,22 @@ Features
 Static and Lightweight: Built with plain HTML, CSS, and JavaScript for fast loading and minimal overhead.
 Responsive Design: Adapts to various screen sizes, including desktops, tablets, and mobiles.
 Easy to Customize: Simple file structure for quick edits to content or styling.
-[Add more features, e.g., "Accessible design" or "Embedded media support"]
+Accessible Design: Follows WCAG guidelines to ensure accessibility for all users.
+Embedded Media Support: Supports images, videos, and other media for enhanced content presentation.
 
 Installation
 To run the website locally, follow these steps:
 
-Clone the repository:git clone https://github.com/your-username/your-repo-name.git
+Clone the repository:
+git clone https://github.com/your-username/ampere.dev.git
 
 
-Navigate to the project directory:cd your-repo-name
+Navigate to the project directory:
+cd ampere.dev
 
 
 Open the website:
+
 Open index.html in a web browser (e.g., double-click the file or drag it into Chrome/Firefox).
 Alternatively, serve the files locally using a simple HTTP server:python -m http.server 8000
 
@@ -51,7 +54,7 @@ Go to Settings > Pages in your GitHub repository.
 Under "Source," select the main branch and the / (root) folder, then click "Save."
 
 
-Visit the live site at https://your-username.github.io/your-repo-name (may take a few minutes to propagate).
+Visit the live site at https://your-username.github.io/ampere.dev (may take a few minutes to propagate).
 
 
 
@@ -74,4 +77,4 @@ For questions or feedback, reach out via:
 GitHub Issues: Open an issue
 Email: your-email@example.com
 
-Thank you for exploring this project! 🌐
+Thank you for exploring the ampere.dev project! 🌐
