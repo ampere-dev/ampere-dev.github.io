@@ -9,112 +9,192 @@
 
 <url>
   <loc>https://ampere.dev/</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ampere.dev/what-are-load-banks.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/starline-tapbox-rental.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/cables.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/flir.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/power-quality.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/transformers.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/3D-fabrication.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/contact.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/about.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/products.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/services.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/blog.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/privacy-legal.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ampere.dev/resistive-load-bank-rental.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/reactive-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ampere.dev/inductive-load-bank-rental.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ampere.dev/capacitive-load-bank-rental.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/resistive-reactive-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/electronic-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/direct-current-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/medium-voltage-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/server-simulating-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/non-linear-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/400hz-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/regenerative-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/water-cooled-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/trailer-mounted-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/portable-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/resonant-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/wye-configured-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/lab-testing-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ampere.dev/microgrid-load-bank-rental.html</loc>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ampere.dev/documents/ASCO%20Avtron%201000%20Series%20Load%20Bank.pdf</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ampere.dev/starline-tapbox-paddle.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ampere.dev/starline-busway-commissioning.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ampere.dev/starline-hanger.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://ampere.dev/index.html</loc>
-  <lastmod>2025-05-12T13:10:27+00:00</lastmod>
+  <lastmod>2025-05-16T12:38:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
