@@ -126,45 +126,39 @@
             <p>To contact us, please provide your email, first and last name, phone number, company name, address, job or project location (city, state), and a short description of your inquiry or testing application, all of which are required. Additionally, include technical requirements such as the distance between the equipment and load banks (feet/meters), expected rental period (daily, weekly, monthly), type of equipment to be tested, who will perform the tests, how heat will be dissipated (vertical or horizontal), delivery location, whether system design or operation assistance is needed, and the date the equipment is required on site.</p>
             
             <div class="quote-request__form">
-                <form method="post" action="/contact" accept-charset="UTF-8" id="quote-request-form">
-                    <!-- CSRF Token (Replace with actual token from your backend) -->
-                    <input type="hidden" name="CRAFT_CSRF_TOKEN" value="SAMPLE_CSRF_TOKEN">
-                    <input type="hidden" name="action" value="recaptcha/recaptcha/verify-submission">
-                    <input type="hidden" name="verified-action" value="contact-form/send">
-                    <input type="hidden" name="action" value="contact-form/send">
-
+                <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="fromName" name="fromName" placeholder="Your name" required>
+                            <input type="text" class="form-control" id="fromName" name="name" placeholder="Your name" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="date" name="message[date]" placeholder="Date needed" required>
+                            <input type="text" class="form-control" id="date" name="date_needed" placeholder="Date needed" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="company" name="message[company]" placeholder="Your company" required>
+                            <input type="text" class="form-control" id="company" name="company" placeholder="Your company" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="duration" name="message[duration]" placeholder="Duration (e.g. 10 days, 1 month)" required>
+                            <input type="text" class="form-control" id="duration" name="duration" placeholder="Duration (e.g. 10 days, 1 month)" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="tel" class="form-control" id="phone" name="message[phone]" placeholder="Phone" required>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="equipment" name="message[equipment]" placeholder="Equipment needed" required>
+                            <input type="text" class="form-control" id="equipment" name="equipment" placeholder="Equipment needed" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="email" class="form-control" id="fromEmail" name="fromEmail" placeholder="Email" required>
+                            <input type="email" class="form-control" id="fromEmail" name="_replyto" placeholder="Email" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="city" name="message[city]" placeholder="City, State" required>
+                            <input type="text" class="form-control" id="city" name="city_state" placeholder="City, State" required>
                         </div>
                         <div class="col-md-12">
-                            <textarea class="form-control" id="message" name="message[body]" placeholder="Message"></textarea>
+                            <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
                         </div>
                         <!-- Honeypot Field -->
-                        <input type="text" class="form-management" id="form-management" name="form-management">
+                        <input type="text" class="form-management" id="form-management" name="_form_management">
                         <div class="col-md-6">
-                            <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey=6Lfq5z0rAAAAAPDYHYges9N4IQnRBMVe-gzMjFbe data-theme="light"></div>
+                            <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-theme="light"></div>
                         </div>
                         <div class="col-md-6">
                             <button type="submit" class="btn btn-primary">Submit to Request a Quote</button>
@@ -236,18 +230,19 @@
                     return;
                 }
 
-                // Simulate form submission (replace with actual AJAX call to your backend)
+                // Submit form via AJAX to Formspree
                 $.ajax({
                     url: $form.attr('action'),
                     method: 'POST',
                     data: $form.serialize(),
+                    dataType: 'json',
                     success: function(response) {
                         $messageDiv.html('<p class="text-success">Thank you for your submission! We will get back to you soon.</p>');
                         $form[0].reset();
                         grecaptcha.reset();
                     },
                     error: function(xhr) {
-                        $messageDiv.html('<p class="error-message">An error occurred. Please try again later.</p>');
+                        $messageDiv.html('<p class="error-message">An error occurred: ' + xhr.status + ' ' + xhr.statusText + '. Please try again later.</p>');
                     }
                 });
             });
