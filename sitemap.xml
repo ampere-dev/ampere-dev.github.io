@@ -8,7 +8,7 @@
   <url>
     <loc>https://ampere.dev/</loc>
     <lastmod>2025-05-16T15:02:00-04:00</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
@@ -80,7 +80,7 @@
   <url>
     <loc>https://ampere.dev/blog</loc>
     <lastmod>2025-05-16T15:02:00-04:00</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
