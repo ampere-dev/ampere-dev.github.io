@@ -45,13 +45,19 @@
         .cta-button:hover { background-color: #0056b3; }
         .carousel-section { max-width: 600px; margin: 20px auto; }
         .carousel img { width: 100%; height: auto; }
-        .benefits-section, .testimonials-section, .faq-section, .cta-section { padding: 20px; }
-        .benefits-section h2, .testimonials-section h2, .faq-section h2, .cta-section h2 { font-size: 1.8rem; margin-bottom: 15px; }
+        .benefits-section, .pricing-section, .testimonials-section, .faq-section, .cta-section { padding: 20px; }
+        .benefits-section h2, .pricing-section h2, .testimonials-section h2, .faq-section h2, .cta-section h2 { font-size: 1.8rem; margin-bottom: 15px; }
+        .pricing-section table { width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; }
+        .pricing-section th, .pricing-section td { padding: 12px; text-align: center; border: 1px solid #ddd; }
+        .pricing-section th { background-color: #007bff; color: white; }
+        .pricing-section tr:nth-child(even) { background-color: #f8f9fa; }
         .testimonials-section blockquote { font-style: italic; margin: 10px 0; }
         .faq-section p { margin: 10px 0; }
         @media (max-width: 768px) {
             .hero-section h1 { font-size: 1.8rem; }
             .carousel-section { max-width: 100%; }
+            .pricing-section table { font-size: 0.9rem; }
+            .pricing-section th, .pricing-section td { padding: 8px; }
         }
     </style>
 </head>
@@ -76,7 +82,7 @@
 
     <div class="chapternav-container">
         <div class="chapternav">
-            <div class="chapternav-scroll">
+            throldiv class="chapternav-scroll">
                 <a href="https://ampere.dev/starline-tapbox-rental" class="chapternav-item">
                     <img src="icons/tapbox.webp" alt="Tap Box">
                     <span>Tap Box</span>
@@ -110,7 +116,7 @@
             <div class="carousel">
                 <img src="images/tapbox_floor.webp" alt="Starline Tapbox Front View" loading="lazy">
             </div>
-            <p style="text-align: center; margin-top: 10px;">See the Starline Tapbox in action – 480V power, made simple.</p>
+            <p style="text-align: center; margin-top: 10px;">We regularly have units in stock, order now to secure yours!</p>
         </section>
 
         <!-- Benefits Section -->
@@ -122,6 +128,48 @@
                 <li><strong>Portable Powerhouse</strong>: Weighs only 40 lbs. with compact 8 x 12 x 20-inch dimensions, saving time and labor.</li>
                 <li><strong>Safety First</strong>: Meets NFPA 70E standards, ensuring safe and reliable operation.</li>
             </ul>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" role="complementary">
+            <h2>Rental Pricing for Starline Tapboxes</h2>
+            <p>Flexible and affordable rates to power your project, big or small. Save more with bulk rentals and longer terms!</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Per Day</th>
+                        <th scope="col">Per Week</th>
+                        <th scope="col">Per Month</th>
+                        <th scope="col">Per Quarter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1–9</td>
+                        <td>$125.00</td>
+                        <td>$250.00</td>
+                        <td>$750.00</td>
+                        <td>$1,875.00</td>
+                    </tr>
+                    <tr>
+                        <td>10–19</td>
+                        <td>$87.50</td>
+                        <td>$175.00</td>
+                        <td>$525.00</td>
+                        <td>$1,312.50</td>
+                    </tr>
+                    <tr>
+                        <td>≥20</td>
+                        <td>$56.25</td>
+                        <td>$112.50</td>
+                        <td>$340.00</td>
+                        <td>$843.75</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; margin-top: 15px;">Ready to rent? Contact us for a custom quote or reserve your tapboxes today!</p>
+            <a href="https://ampere.dev/contact" class="cta-button" aria-label="Get a Custom Quote for Starline Tapbox Rentals" style="display: block; margin: 10px auto; text-align: center;">Get a Quote</a>
         </section>
 
         <!-- CTA Section -->
@@ -136,6 +184,10 @@
             <h2>Trusted by Industry Leaders</h2>
             <blockquote>“Ampere’s Starline Tapbox Rentals saved us days during our data center commissioning. The plug-and-play design was a game-changer!” – John D., Electrical Contractor</blockquote>
             <blockquote>“Reliable and easy to use at 480V. We’ll be renting again for our next project.” – Sarah M., Facility Manager</blockquote>
+            <blockquote>“Delivered right on time, right-ready-reliable. Ampere’s tapboxes kept our project on schedule, and we’ll be renting again!” – Mark T., Project Engineer</blockquote>
+            <blockquote>“The Starline Tapbox was a lifesaver for our temporary power setup. Quick to install and rock-solid at 480V – Ampere’s service is top-notch160;– Lisa R., Industrial Electrician</blockquote>
+            <blockquote>“We needed a solution fast, and Ampere delivered. Their tapboxes are compact, safe, and perfect for our busway testing. Highly recommend!” – David K., Data Center Operations Manager</blockquote>
+            <blockquote>“No hassle, no delays. Ampere’s tapboxes worked flawlessly for our manufacturing plant upgrade. We’re already planning our next rental.” – Emily S., Facilities Director</blockquote>
         </section>
 
         <!-- FAQ Section -->
