@@ -1,188 +1,207 @@
+/* Define custom properties for reusable values */
+:root {
+  --primary-color: #fff;
+  --accent-color: #fe0002;
+  --text-color: #000;
+  --menu-width: 250px;
+  --toggler-size: 22px;
+  --transition-speed: 0.3s;
+}
+
+/* Global box-sizing for consistency */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure smooth scrolling and no unwanted overflow */
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Hide menu toggler by default */
 .menuToggler {
+  display: none;
+}
+
+/* Responsive styles for screens <= 1150px */
+@media (max-width: 1150px) {
+  .menuToggler {
+    display: block;
+    background: transparent;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #181818;
+    z-index: 100; /* Higher z-index for visibility */
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    transition: background var(--transition-speed) ease;
+  }
+
+  .menuToggler span {
+    display: block;
+    height: 3px;
+    background: var(--text-color);
+    margin: 5px 0;
+    width: var(--toggler-size);
+    transition: transform var(--transition-speed) ease, opacity var(--transition-speed) ease;
+  }
+
+  .menuToggler:hover,
+  .menuToggler:focus-visible {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  /* Accessibility: Focus state for keyboard navigation */
+  .menuToggler:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+
+  /* Hamburger to "X" transformation */
+  .menuToggler.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menuToggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menuToggler.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  #logo {
+    position: static;
+    height: 100px;
+    text-align: center;
+  }
+
+  #header {
+    position: fixed;
+    width: var(--menu-width);
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    left: calc(-1 * var(--menu-width));
+    top: 0;
+    overflow-y: auto;
+    color: var(--primary-color);
+    padding-top: 50px;
+    transition: left var(--transition-speed) ease;
+    z-index: 10;
+  }
+
+  #header.active {
+    left: 0;
+  }
+
+  #header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #header li {
+    margin: 0;
+  }
+
+  #header a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(228, 228, 228, 0.6);
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+  }
+
+  #header a:hover,
+  #header a:focus-visible {
+    color: var(--accent-color);
+  }
+
+  #header a:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+
+  .bg-text {
+    max-width: 90%;
+    margin: 100px auto 0;
+    position: static;
+  }
+
+  #footer {
+    position: static;
+    margin-top: 50px;
+  }
+
+  img,
+  table,
+  iframe {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Smaller screens <= 768px */
+@media (max-width: 768px) {
+  .menuToggler {
+    top: 20px;
+  }
+
+  body.home {
+    color: var(--primary-color);
+  }
+  body:not(.home) {
+    color: var(--text-color);
+  }
+
+  .image-container img {
+    width: clamp(100px, 20vw, 150px); /* Responsive image sizing */
+  }
+
+  p.ex2,
+  h1 {
+    margin-inline: 0; /* Logical property for RTL support */
+  }
+
+  #toc_container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .responsive-table {
+    overflow-x: auto;
+  }
+
+  .home_title span {
     display: none;
+  }
 }
 
-@media all and (max-width: 1150px) {
-    .menuToggler {
-        display: block;
-        background: transparent; /* Remove the greyish background */
-        position: fixed;
-        top: 30px;
-        right: 20px;
-        border-radius: 5px;
-        padding: 10px;
-        border: 1px solid rgb(24, 24, 24);
-        z-index: 99;
-        font-family: "Ubuntu", sans-serif;
-        cursor: pointer; /* Indicate clickable */
-    }
+/* Smallest screens <= 500px */
+@media (max-width: 500px) {
+  .bg-text h3 {
+    font-size: clamp(16px, 4vw, 18px);
+  }
 
-    .menuToggler span {
-        display: block;
-        height: 3px; /* Slightly thicker lines for better visibility */
-        background-color: #000000; /* Explicit black */
-        margin: 4px 5px; /* Adjust spacing if needed */
-        width: 22px; /* Slightly wider for balance */
-        transition: all 0.3s ease; /* Smooth animation */
-    }
+  .bg-text p {
+    font-size: clamp(14px, 3.5vw, 16px);
+    line-height: 1.4;
+  }
 
-    .menuToggler:hover {
-    background: rgba(0, 0, 0, 0.1); /* Subtle grey on hover */
-    }
+  #footer {
+    font-size: clamp(10px, 3vw, 12px);
+    padding: 0;
+  }
 
-    /* Transform hamburger into "X" when active */
-    .menuToggler.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .menuToggler.active span:nth-child(2) {
-        opacity: 0;
-    }
-    .menuToggler.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-    }
+  h2.ex2 {
+    padding: 10px;
+  }
 
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        overflow: auto;
-    }
-
-    #logo {
-        position: static;
-        height: 100px;
-        text-align: center; /* Center logo on mobile */
-    }
-
-    #header {
-        position: fixed;
-        width: 250px;
-        background: rgba(0, 0, 0, 0.9); /* Darker for contrast */
-        height: 100vh;
-        left: -250px; /* Match width */
-        top: 0;
-        overflow: auto;
-        color: #fff;
-        padding-top: 50px;
-        transition: left 0.5s ease; /* Smooth slide */
-        z-index: 10; /* Above potential overlays */
-    }
-
-    #header.active {
-        left: 0;
-    }
-
-    #header ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    #header li {
-        margin: 0;
-    }
-
-    #header a {
-        display: block;
-        text-align: left;
-        padding: 15px 20px; /* Better touch targets */
-        margin-top: 0;
-        color: #fff;
-        border-bottom: 1px solid rgba(228, 228, 228, 0.6);
-        font-size: 1.2em; /* Larger text for readability */
-        text-decoration: none;
-    }
-
-    #header a:hover {
-        color: #FE0002; /* Match hover color */
-    }
-
-    .bg-text {
-        max-width: 90%;
-        height: initial;
-        position: static;
-        transform: none;
-        margin-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #footer {
-        position: static;
-        margin-top: 50px;
-        bottom: 0;
-    }
-
-    img,
-    table,
-    iframe {
-        max-width: 100%;
-    }
-}
-
-@media all and (max-width: 700px) {
-    .menuToggler {
-        top: 20px;
-    }
-
-    p.ex2,
-    h1 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #toc_container {
-        max-width: 90%;
-        margin: 0 auto;
-        float: none;
-    }
-
-    .responsive-table {
-        overflow: auto;
-    }
-
-    .home_title span {
-        display: none;
-    }
-}
-
-@media all and (max-width: 500px) {
-    .bg-text h3 {
-        font-size: 18px;
-    }
-
-    .bg-text p {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
-    #footer {
-        font-size: 12px;
-        padding: 0;
-    }
-
-    h2.ex2 {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    body.home {
-        color: #fff; /* Maintain white for index.html */
-    }
-    body:not(.home) {
-        color: #000; /* Maintain black for other pages */
-    }
-}
-
-@media (max-width: 768px) {
-    .image-container img {
-        width: 150px; /* Smaller for tablets */
-    }
-}
-@media (max-width: 576px) {
-    .image-container img {
-        width: 100px; /* Smaller for phones */
-    }
+  .image-container img {
+    width: clamp(80px, 15vw, 100px);
+  }
 }
