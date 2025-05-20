@@ -38,6 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
@@ -49,50 +50,30 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Inline CSS for Updated Sections -->
+    <!-- Inline CSS from Template -->
     <style>
-        .hero-section { background-color: #f8f9fa; padding: 40px 20px; text-align: center; }
-        .hero-section h1 { font-size: 2.5rem; margin-bottom: 20px; }
-        a.cta-button {
-            display: block !important;
-            padding: 12px 24px !important;
-            background-color: #007bff !important;
-            color: #ffffff !important;
-            text-decoration: none !important;
-            border-radius: 5px !important;
-            font-weight: 500 !important;
-            margin: 10px auto !important;
-            text-align: center !important;
-            min-width: 120px !important;
-            min-height: 40px !important;
-            border: 1px solid #0056b3 !important;
-            transition: background-color 0.3s ease !important;
+        /* Override button styles */
+        a.bg-blue-600, 
+        a[class*="bg-blue-600"],
+        button.bg-blue-600 {
+            background-color: #ff0000 !important;
         }
-        a.cta-button:hover {
-            background-color: #0056b3 !important;
-            color: #ffffff !important;
+        a.bg-blue-600:hover,
+        a[class*="bg-blue-600"]:hover,
+        button.bg-blue-600:hover {
+            background-color: #cc0000 !important;
         }
-        .content-section { padding: 20px; }
-        .image-container { max-width: 100%; display: grid; grid-template-areas: "img1 img2" "img3 img2" "img3 img4"; gap: 10px; box-sizing: border-box; }
-        .image-container img { width: 100%; height: 100%; object-fit: cover; border-radius: 5px; opacity: 0; animation: fadeIn 2s ease-in forwards; }
-        .image-container img:nth-child(1) { grid-area: img1; animation-delay: 0s; }
-        .image-container img:nth-child(2) { grid-area: img2; animation-delay: 0.5s; }
-        .image-container img:nth-child(3) { grid-area: img3; animation-delay: 1s; }
-        .image-container img:nth-child(4) { grid-area: img4; animation-delay: 1.5s; }
-        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
-        .right-column { padding-left: 20px; }
-        .benefits-section, .pricing-section, .faq-section { padding: 20px 0; }
-        .benefits-section h2, .pricing-section h2, .faq-section h2 { font-size: 1.8rem; margin-bottom: 15px; }
-        .faq-section p { margin: 10px 0; }
-        @media (max-width: 768px) {
-            .hero-section h1 { font-size: 1.8rem; }
-            .right-column { padding-left: 0; padding-top: 20px; }
-            .image-container { grid-template-areas: "img1" "img2" "img3" "img4"; }
-            .image-container img { height: auto; animation-delay: 0s; }
+        /* Ensure white background */
+        body {
+            background-color: #ffffff !important;
+        }
+        /* Ensure header h1 is black */
+        header h1 {
+            color: #000000 !important;
         }
     </style>
 </head>
-<body>
+<body class="bg-white font-sans">
     <div id="logo">
         <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
             <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
@@ -134,72 +115,120 @@
         </div>
     </div>
 
-    <main class="content-wrapper">
-        <!-- Hero Section -->
-        <section class="hero-section" role="banner">
-            <h1>Starline Paddle Repair – Restore Your System Fast</h1>
-            <p>Damaged paddles from arc-flash, shipping, or wear and tear? Our patent-pending paddle replacements restore your Starline busway system with durable, precision-manufactured solutions. Get back to peak performance – request a quote today!</p>
-            <a href="https://ampere.dev/contact" class="cta-button btn" aria-label="Request a Quote for Starline Paddle Repair">Request a Quote</a>
+    <!-- Header -->
+    <header class="py-8 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-bold mb-2">Starline Paddle & Tapbox Repair – Fix Damaged Paddles Fast!</h1>
+            <p class="text-2xl">Durable, Precision-Crafted Replacements for Your Mission-Critical Power Systems</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-12 px-4">
+        <!-- Struggling with Damaged Paddles? -->
+        <section id="damaged-paddles" class="mb-12 bg-blue-100 p-8 rounded-lg flex flex-col md:flex-row items-start">
+            <div class="md:w-2/3">
+                <h2 class="text-4xl font-bold mb-4 text-blue-800">Struggling with Damaged Paddles? You’re Not Alone!</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    If you’re managing a Starline T5 Track Busway in a data center, industrial plant, or critical facility, damaged paddles from arc-flash, shipping, or wear can cripple your power distribution. A single faulty paddle can cause costly downtime, unsafe conditions, and expensive repairs, leaving your operations at risk.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mt-4">
+                    Ampere’s Starline Paddle Replacements are the ultimate solution for the T5 series (250–1250 amp). Crafted from a proprietary high-impact polymer using advanced additive manufacturing, these patent-pending replacements offer unmatched durability and precision. Designed for the B400T5 busway, they ensure a secure fit and reliable performance, eliminating the risk of system failure.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mt-4">
+                    Don’t let damaged paddles disrupt your facility. Upgrade to Ampere’s paddle replacements today and restore your system with confidence. Act now—your power infrastructure deserves the best!
+                </p>
+                <a href="https://ampere.dev/contact" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Order Now and Restore Reliability!</a>
+            </div>
+            <img src="/images/Stab_Assembly.webp" alt="Starline Paddle Assembly" loading="lazy" class="md:w-1/3 mt-4 md:mt-0 md:ml-6 rounded-lg shadow-md">
         </section>
 
-         <!-- Benefits Section -->
-<section class="benefits-section" role="main">
-    <h2>Why Choose Our Paddle Repair Solutions?</h2>
-    <p><strong>Restore Your Starline Systems with Confidence</strong></p>
-    <p>Our reliable and durable replacements ensure your system runs at its best, no matter the cause of damage.</p>
-    <ul>
-        <li><strong>Advanced Materials</strong>: Crafted from a proprietary high-impact polymer for exceptional durability in harsh conditions.</li>
-        <li><strong>Precision Manufacturing</strong>: Proprietary additive manufacturing delivers uniform strength and superior finish, outperforming traditional methods.</li>
-        <li><strong>Built to Last</strong>: High mechanical stress resistance with machine-grade screws for robust, long-lasting assembly.</li>
-        <li><strong>Reliable Performance</strong>: Premium materials and advanced processes ensure consistent operation in demanding environments.</li>
-        <li><strong>Customizable</strong>: Available in various colors to match your system, with readily sourced components to avoid OEM delays.</li>
-        <li><strong>Cost-Effective</strong>: Flexible customization at $100 per set, delivering high quality tailored to your system’s needs.</li>
-    </ul>
-</section>
-<h2>Technical Specifications</h2>
-<ul>
-    <li><strong>Continuous Use Temperature (CUT):</strong> 80°C (176°F), reliable for demanding electrical systems.</li>
-    <li><strong>Tensile Strength (All Axes):</strong> 49 MPa (7,106 PSI), precision-engineered for uniform durability.</li>
-    <li><strong>Notched Izod Impact Strength:</strong> 3.5 kJ/m² (1.7 ft-lb/in), tough against impacts and arc-flash stresses.</li>
-</ul>
+        <!-- Product Description -->
+        <section id="product-description" class="mb-12 flex flex-col md:flex-row items-start">
+            <div class="md:w-2/3">
+                <h2 class="text-3xl font-bold mb-4 text-blue-800">Why Ampere Paddle Replacements Are Your Best Choice</h2>
+                <p class="text-gray-700 text-lg">
+                    Ampere Paddle Replacements are engineered for Starline T5 Track Busway systems, delivering superior performance in data centers, factories, and critical facilities. These aren’t just repairs—they’re upgrades. Designed for the B400T5 series (250–1250 amp), they restore your busway with precision and durability, ensuring uninterrupted power distribution.
+                </p>
+                <p class="text-gray-700 text-lg mt-4">
+                    With Ampere, you get paddles that last, saving you time and money. Available in multiple colors or with laser-etched branding, our replacements combine style and functionality. Don’t rely on fragile OEM parts—choose the paddles trusted by industry professionals.
+                </p>
+                <a href="https://ampere.dev/contact" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Shop Now at Ampere</a>
+            </div>
+            <img src="/images/Stab_Halves.webp" alt="Starline Paddle Halves" loading="lazy" class="md:w-1/3 mt-4 md:mt-0 md:ml-6 rounded-lg shadow-md">
         </section>
 
-        <!-- Content Section with Image Container and Right Column -->
-        <section class="content-section">
-            <div class="container">
-                <div class="row">
-                    <!-- Left Column: Image Container -->
-                    <div class="col-md-6 image-container" role="complementary">
-                        <img src="images/Stab Halves.webp" alt="Starline Paddle Halves" loading="lazy">
-                        <img src="images/Stab Assembly.webp" alt="Starline Paddle Assembly" loading="lazy">
-                        <img src="images/Stab3.webp" alt="Starline Paddle Component" loading="lazy">
-                        <img src="images/Stab4.webp" alt="Starline Paddle Close-Up" loading="lazy">
-                    </div>
+        <!-- Price -->
+        <section id="price" class="mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-blue-800">Unbeatable Value for Lasting Repairs</h2>
+            <p class="text-gray-700 text-2xl">Only <span class="font-bold">$100 per set delivered!</span></p>
+            <p class="text-gray-700 text-lg mt-2">Bulk discounts available—stock up and save big on large orders!</p>
+            <a href="https://ampere.dev/contact" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Contact Sales for Bulk Pricing</a>
+        </section>
 
-                    <!-- Right Column: Pricing, CTA, FAQs -->
-                    <div class="col-md-6 right-column">
-                        <!-- Pricing Section -->
-                        <div class="pricing-section">
-                            <h2>Pricing for Starline Paddle Replacements</h2>
-                            <p>Flexible and affordable rates to restore your system, big or small. Save more with bulk orders!</p>
-                            <p><strong>$100 per set.</strong></p>
-                            <p style="text-align: center; margin-top: 15px;">Ready to repair? Contact us for a custom quote or order your paddle replacements today!</p>
-                            <a href="https://ampere.dev/contact" class="cta-button btn" aria-label="Get a Custom Quote for Starline Paddle Replacements">Get a Quote</a>
-                        </div>
+        <!-- Features -->
+        <section id="features" class="mb-12 flex flex-col md:flex-row items-start">
+            <div class="md:w-2/3">
+                <h2 class="text-3xl font-bold mb-4 text-blue-800">5 Reasons to Choose Ampere Paddle Replacements</h2>
+                <ul class="list-disc pl-6 text-gray-700 text-lg">
+                    <li><strong>Advanced Materials:</strong> Proprietary high-impact polymer ensures durability in harsh conditions.</li>
+                    <li><strong>Precision Manufacturing:</strong> Advanced additive manufacturing delivers uniform strength and superior finish.</li>
+                    <li><strong>Built to Last:</strong> High stress resistance with machine-grade screws for robust assembly.</li>
+                    <li><strong>Perfect Fit:</strong> Fully compatible with Starline B400T5 busway systems (250–1250 amp).</li>
+                    <li><strong>Reliable Performance:</strong> Consistent operation in demanding environments, resisting arc-flash and wear.</li>
+                </ul>
+                <a href="https://ampere.dev/contact" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Get Your Paddles Today!</a>
+            </div>
+            <img src="/images/Stab3.webp" alt="Starline Paddle Component" loading="lazy" class="md:w-1/3 mt-4 md:mt-0 md:ml-6 rounded-lg shadow-md">
+        </section>
 
-                        <!-- FAQ Section -->
-                        <div class="faq-section">
-                            <h2>Frequently Asked Questions</h2>
-                            <p><strong>Q: What Starline systems are compatible with your paddles?</strong><br>A: Our paddles are designed for Starline B400T5 series busways, ensuring seamless integration.</p>
-                            <p><strong>Q: Can you repair paddles damaged by arc-flash?</strong><br>A: Yes, our replacements are built to restore systems affected by arc-flash, wear, or shipping damage.</p>
-                            <p><strong>Q: How quickly can I get a replacement paddle?</strong><br>A: Order today, and we’ll deliver within 48 hours (subject to availability).</p>
-                        </div>
-                    </div>
+        <!-- Customization Options -->
+        <section id="customization" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-blue-800">Make It Yours: Customize Your Paddles</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-2">Finish</h3>
+                    <p class="text-gray-700 text-lg">
+                        Choose from multiple color options to match your facility’s aesthetic or enhance visibility. Our durable finishes withstand harsh conditions while adding a professional look.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-2">Labeling</h3>
+                    <p class="text-gray-700 text-lg">
+                        Personalize your paddles with laser-etched details—your company name, logo, or QR code. Ensure easy identification and showcase your brand with every replacement.
+                    </p>
+                </div>
+            </div>
+            <a href="https://ampere.dev/contact" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Inquire About Customization</a>
+        </section>
+
+        <!-- Order & Shipping -->
+        <section id="order-shipping" class="mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-blue-800">Order Your Ampere Paddle Replacements Today!</h2>
+            <p class="text-gray-700 text-lg">
+                Restore your Starline T5 Track Busway with Ampere Paddle Replacements. Enjoy fast, reliable worldwide shipping (delivery within 48 hours in the U.S., subject to availability) at standard rates. Need bulk? Ask about discounts!
+            </p>
+            <a href="https://ampere.dev/contact" class="inline-block mt-6 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700">Contact Us Today!</a>
+        </section>
+
+        <!-- FAQs -->
+        <section id="faqs" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-blue-800">Frequently Asked Questions</h2>
+            <div class="flex flex-col gap-4">
+                <div>
+                    <p class="text-gray-700 text-lg"><strong>Q: What Starline systems are compatible with your paddles?</strong><br>A: Our paddles are designed for Starline B400T5 series busways, ensuring seamless integration.</p>
+                </div>
+                <div>
+                    <p class="text-gray-700 text-lg"><strong>Q: Can you repair paddles damaged by arc-flash?</strong><br>A: Yes, our replacements are built to restore systems affected by arc-flash, wear, or shipping damage.</p>
+                </div>
+                <div>
+                    <p class="text-gray-700 text-lg"><strong>Q: How quickly can I get a replacement paddle?</strong><br>A: Order today, and we’ll deliver within 48 hours (subject to availability).</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer id="footer">
         <div class="footer-links">
             <ul>
