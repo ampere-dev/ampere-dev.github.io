@@ -1308,29 +1308,29 @@
                 <button class="pagination-btn" id="next-btn" aria-label="Next page">Next</button>
             </div>
         </main>
-
         <aside role="complementary">
             <div class="sidebar-section newsletter">
                 <h3>Stay Updated</h3>
                 <p>Subscribe for the latest tech trends and insights.</p>
                 <form action="https://dev.us20.list-manage.com/subscribe/post?u=4263b89e85da75617458bbc4a&id=6733ce5ab9&f_id=009dc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                    <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required value="">
+                    <label for="mce-EMAIL" class="hidden">Email Address</label>
+                    <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required aria-required="true">
                     <div aria-hidden="true" style="position: absolute; left: -5000px;">
                         <input type="text" name="b_4263b89e85da75617458bbc4a_6733ce5ab9" tabindex="-1" value="">
                     </div>
-                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" aria-label="Subscribe to newsletter">Subscribe</button>
                 </form>
             </div>
 
-<div class="sidebar-section related-posts">
-    <h3>Explore Topics</h3>
-    <div id="word-map" class="word-map"></div>
-</div>
+            <div class="sidebar-section related-posts">
+                <h3>Explore Topics</h3>
+                <div id="word-map" class="word-map"></div>
+            </div>
 
             <div class="sidebar-section share">
                 <h3>Share This Page</h3>
-                <a href="https://x.com/intent/tweet?url=https://ampere.dev/blog&text=Explore the latest in power systems and AI at Ampere Insights! #DataCenters #PowerSystems" target="_blank">Share on X</a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ampere.dev/blog" target="_blank">Share on LinkedIn</a>
+                <a href="https://x.com/intent/tweet?url=https://ampere.dev/blog&text=Explore the latest in power systems and AI at Ampere Insights! #DataCenters #PowerSystems" target="_blank" rel="noopener" aria-label="Share on X">Share on X</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ampere.dev/blog" target="_blank" rel="noopener" aria-label="Share on LinkedIn">Share on LinkedIn</a>
             </div>
         </aside>
     </div>
@@ -1347,370 +1347,336 @@
             </ul>
         </div>
         <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
+                <img src="https://ampere.dev/icons/facebook-logo.png" alt="Facebook logo" loading="lazy">
             </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo">
+            <a href="https://x.com" target="_blank" rel="noopener" aria-label="Visit our X page">
+                <img src="https://ampere.dev/icons/logo-black.png" alt="X logo" loading="lazy">
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Visit our LinkedIn page">
+                <img src="https://ampere.dev/icons/linkedin.png" alt="LinkedIn logo" loading="lazy">
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/Instagram_Glyph_Black.png" alt="Instagram logo">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page">
+                <img src="https://ampere.dev/icons/Instagram_Glyph_Black.png" alt="Instagram logo" loading="lazy">
             </a>
         </div>
         <div>
             <p>AMPERE © 2025</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">
-function searchPosts() {
-    if (!document.querySelector('main')) return;
-    const query = document.getElementById('search').value.toLowerCase().trim();
-    const posts = document.querySelectorAll('.post');
-    let hasResults = false;
 
-    const visibleArticles = [];
-    posts.forEach(post => {
-        const text = post.textContent.toLowerCase();
-        const matches = text.includes(query);
-        if (matches || query === '') {
-            visibleArticles.push(post);
-            post.classList.remove('hidden');
-            hasResults = true;
-        } else {
-            post.classList.add('hidden');
-        }
-    });
+    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" integrity="sha256-..." crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            const ARTICLES_PER_PAGE = 10;
+            let currentPage = 1;
+            let searchTimeout = null;
 
-    let noResults = document.querySelector('.no-results');
-    if (!noResults) {
-        noResults = document.createElement('p');
-        noResults.className = 'no-results';
-        noResults.textContent = 'No results found.';
-        document.querySelector('main').appendChild(noResults);
-    }
-    noResults.style.display = hasResults || query === '' ? 'none' : 'block';
-
-    currentPage = 1;
-    setupPagination(visibleArticles);
-    updateWordMap();
-}
-
-function togglePost(titleElement) {
-    const article = titleElement.closest('article');
-    const content = article.querySelector('.post-content');
-    
-    if (article.classList.contains('collapsed')) {
-        content.style.height = content.scrollHeight + 'px';
-        article.classList.remove('collapsed');
-    } else {
-        content.style.height = content.scrollHeight + 'px';
-        setTimeout(() => {
-            content.style.height = '0';
-        }, 10);
-        article.classList.add('collapsed');
-    }
-    
-    content.addEventListener('transitionend', function handler() {
-        if (!article.classList.contains('collapsed')) {
-            content.style.height = 'auto';
-        }
-        content.removeEventListener('transitionend', handler);
-    });
-}
-
-const articlesPerPage = 10; // Changed from 5 to 10
-let currentPage = 1;
-
-function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
-    const totalArticles = visibleArticles.length;
-    const totalPages = Math.ceil(totalArticles / articlesPerPage);
-    const pageNumbersContainer = document.getElementById('page-numbers');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-
-    function displayArticles(page) {
-        const start = (page - 1) * articlesPerPage;
-        const end = start + articlesPerPage;
-
-        document.querySelectorAll('.post').forEach(article => {
-            article.classList.add('hidden');
-        });
-
-        visibleArticles.forEach((article, index) => {
-            if (index >= start && index < end) {
-                article.classList.remove('hidden');
+            function sanitizeInput(input) {
+                const div = document.createElement('div');
+                div.textContent = input;
+                return div.innerHTML;
             }
-        });
 
-        document.querySelectorAll('.page-number').forEach(btn => {
-            btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-        });
+            function searchPosts() {
+                if (!document.querySelector('main')) return;
+                const query = sanitizeInput(document.getElementById('search').value.toLowerCase().trim());
+                const posts = document.querySelectorAll('.post');
+                let hasResults = false;
 
-        prevBtn.disabled = page === 1;
-        nextBtn.disabled = page === totalPages || totalPages === 0;
-        prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
-        nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
-    }
+                const visibleArticles = [];
+                posts.forEach(post => {
+                    const text = post.textContent.toLowerCase();
+                    const matches = text.includes(query);
+                    if (matches || query === '') {
+                        visibleArticles.push(post);
+                        post.classList.remove('hidden');
+                        hasResults = true;
+                    } else {
+                        post.classList.add('hidden');
+                    }
+                });
 
-    pageNumbersContainer.innerHTML = '';
-    for (let i = 1; i <= totalPages; i++) {
-        const pageBtn = document.createElement('button');
-        pageBtn.className = 'page-number';
-        pageBtn.dataset.page = i;
-        pageBtn.textContent = i;
-        pageBtn.setAttribute('aria-label', `Page ${i}`);
-        pageBtn.addEventListener('click', () => {
-            currentPage = i;
-            displayArticles(currentPage);
-        });
-        pageNumbersContainer.appendChild(pageBtn);
-    }
-
-    if (totalPages === 0) {
-        pageNumbersContainer.innerHTML = '';
-        prevBtn.disabled = true;
-        nextBtn.disabled = true;
-        prevBtn.setAttribute('aria-disabled', 'true');
-        nextBtn.setAttribute('aria-disabled', 'true');
-    }
-
-    prevBtn.addEventListener('click', () => {
-        if (currentPage > 1) {
-            currentPage--;
-            displayArticles(currentPage);
-        }
-    });
-
-    nextBtn.addEventListener('click', () => {
-        if (currentPage < totalPages) {
-            currentPage++;
-            displayArticles(currentPage);
-        }
-    });
-
-    displayArticles(currentPage);
-}
-
-function updateWordMap() {
-    const wordMapContainer = document.getElementById('word-map');
-    const articles = Array.from(document.querySelectorAll('.post:not(.hidden)'));
-    const maxWords = 20;
-
-    const wordCounts = {};
-    const wordToArticles = {};
-
-    articles.forEach(article => {
-        const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim().toLowerCase()) : [];
-        const titleElement = article.querySelector('h2 a');
-        const title = titleElement?.textContent || '';
-        const link = titleElement?.getAttribute('href') || '';
-
-        if (!title || !link || link.trim() === '') {
-            console.warn('Invalid article data:', { title, link, article });
-            return;
-        }
-
-        tags.forEach(tag => {
-            const words = tag.split(/\s+/);
-            words.forEach(word => {
-                if (!wordCounts[word]) {
-                    wordCounts[word] = 0;
-                    wordToArticles[word] = [];
+                let noResults = document.querySelector('.no-results');
+                if (!noResults) {
+                    noResults = document.createElement('p');
+                    noResults.className = 'no-results';
+                    noResults.textContent = 'No results found.';
+                    document.querySelector('main').appendChild(noResults);
                 }
-                wordCounts[word]++;
-                if (!wordToArticles[word].some(a => a.link === link)) {
-                    wordToArticles[word].push({ title, link });
+                noResults.style.display = hasResults || query === '' ? 'none' : 'block';
+
+                currentPage = 1;
+                setupPagination(visibleArticles);
+                updateWordMap();
+            }
+
+            function debounceSearch() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(searchPosts, 300);
+            }
+
+            function togglePost(titleElement) {
+                const article = titleElement.closest('article');
+                const content = article.querySelector('.post-content');
+                
+                if (article.classList.contains('collapsed')) {
+                    content.style.height = content.scrollHeight + 'px';
+                    article.classList.remove('collapsed');
+                } else {
+                    content.style.height = content.scrollHeight + 'px';
+                    setTimeout(() => {
+                        content.style.height = '0';
+                    }, 10);
+                    article.classList.add('collapsed');
                 }
+                
+                content.addEventListener('transitionend', function handler() {
+                    if (!article.classList.contains('collapsed')) {
+                        content.style.height = 'auto';
+                    }
+                    content.removeEventListener('transitionend', handler);
+                }, { once: true });
+            }
+
+            function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+                const totalArticles = visibleArticles.length;
+                const totalPages = Math.ceil(totalArticles / ARTICLES_PER_PAGE);
+                const pageNumbersContainer = document.getElementById('page-numbers');
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+
+                function displayArticles(page) {
+                    const start = (page - 1) * ARTICLES_PER_PAGE;
+                    const end = start + ARTICLES_PER_PAGE;
+
+                    document.querySelectorAll('.post').forEach(article => {
+                        article.classList.add('hidden');
+                    });
+
+                    visibleArticles.forEach((article, index) => {
+                        if (index >= start && index < end) {
+                            article.classList.remove('hidden');
+                        }
+                    });
+
+                    document.querySelectorAll('.page-number').forEach(btn => {
+                        btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+                    });
+
+                    prevBtn.disabled = page === 1;
+                    nextBtn.disabled = page === totalPages || totalPages === 0;
+                    prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+                    nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
+                }
+
+                pageNumbersContainer.innerHTML = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageBtn = document.createElement('button');
+                    pageBtn.className = 'page-number';
+                    pageBtn.dataset.page = i;
+                    pageBtn.textContent = i;
+                    pageBtn.setAttribute('aria-label', `Page ${i}`);
+                    pageBtn.addEventListener('click', () => {
+                        currentPage = i;
+                        displayArticles(currentPage);
+                    });
+                    pageNumbersContainer.appendChild(pageBtn);
+                }
+
+                if (totalPages === 0) {
+                    pageNumbersContainer.innerHTML = '';
+                    prevBtn.disabled = true;
+                    nextBtn.disabled = true;
+                    prevBtn.setAttribute('aria-disabled', 'true');
+                    nextBtn.setAttribute('aria-disabled', 'true');
+                }
+
+                prevBtn.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        displayArticles(currentPage);
+                    }
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        displayArticles(currentPage);
+                    }
+                });
+
+                displayArticles(currentPage);
+            }
+
+            function updateWordMap() {
+                const wordMapContainer = document.getElementById('word-map');
+                const articles = Array.from(document.querySelectorAll('.post:not(.hidden)'));
+                const maxWords = 20;
+
+                const wordCounts = {};
+                const wordToArticles = {};
+
+                articles.forEach(article => {
+                    const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim().toLowerCase()) : [];
+                    const titleElement = article.querySelector('h2 a');
+                    const title = titleElement?.textContent || '';
+                    const link = titleElement?.getAttribute('href') || '';
+
+                    if (!title || !link || link.trim() === '') {
+                        console.warn('Invalid article data:', { title, link, article });
+                        return;
+                    }
+
+                    tags.forEach(tag => {
+                        const words = tag.split(/\s+/);
+                        words.forEach(word => {
+                            if (!wordCounts[word]) {
+                                wordCounts[word] = 0;
+                                wordToArticles[word] = [];
+                            }
+                            wordCounts[word]++;
+                            if (!wordToArticles[word].some(a => a.link === link)) {
+                                wordToArticles[word].push({ title, link });
+                            }
+                        });
+                    });
+                });
+
+                const sortedWords = Object.keys(wordCounts)
+                    .sort((a, b) => wordCounts[b] - wordCounts[a])
+                    .slice(0, maxWords);
+
+                wordMapContainer.innerHTML = '';
+
+                if (sortedWords.length === 0) {
+                    const noWords = document.createElement('p');
+                    noWords.textContent = 'No topics available.';
+                    wordMapContainer.appendChild(noWords);
+                    return;
+                }
+
+                const counts = sortedWords.map(word => wordCounts[word]);
+                const maxCount = Math.max(...counts);
+                const minCount = Math.min(...counts);
+                const range = maxCount - minCount || 1;
+
+                sortedWords.forEach(word => {
+                    const count = wordCounts[word];
+                    const relatedArticles = wordToArticles[word];
+
+                    if (!relatedArticles.length) {
+                        console.warn(`No articles found for word: ${word}`);
+                        return;
+                    }
+
+                    const sizeLevel = Math.ceil(((count - minCount) / range) * 4) + 1;
+                    const wordElement = document.createElement('a');
+                    wordElement.className = `word-size-${sizeLevel}`;
+                    wordElement.textContent = word;
+                    wordElement.setAttribute('aria-label', `Explore articles tagged with ${word}`);
+
+                    if (relatedArticles.length === 1) {
+                        wordElement.href = relatedArticles[0].link;
+                    } else {
+                        wordElement.href = '#';
+                        wordElement.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            showModal(word, relatedArticles);
+                        });
+                    }
+
+                    wordMapContainer.appendChild(wordElement);
+                });
+            }
+
+            function showModal(word, articles) {
+                document.querySelectorAll('.word-modal, .modal-overlay').forEach(el => el.remove());
+
+                const overlay = document.createElement('div');
+                overlay.className = 'modal-overlay';
+                document.body.appendChild(overlay);
+
+                const modal = document.createElement('div');
+                modal.className = 'word-modal';
+                modal.setAttribute('aria-modal', 'true');
+                modal.setAttribute('role', 'dialog');
+                modal.setAttribute('aria-label', `Articles tagged with ${word}`);
+                modal.tabIndex = -1;
+
+                const content = document.createElement('div');
+                content.className = 'modal-content';
+
+                const title = document.createElement('h4');
+                title.textContent = `Articles tagged with "${word}"`;
+                content.appendChild(title);
+
+                const list = document.createElement('ul');
+                articles.forEach(article => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = article.link;
+                    a.textContent = article.title;
+                    a.addEventListener('click', () => {
+                        modal.remove();
+                        overlay.remove();
+                    });
+                    li.appendChild(a);
+                    list.appendChild(li);
+                });
+                content.appendChild(list);
+
+                const closeButton = document.createElement('button');
+                closeButton.textContent = 'Close';
+                closeButton.className = 'modal-close';
+                closeButton.setAttribute('aria-label', 'Close modal');
+                closeButton.addEventListener('click', () => {
+                    modal.remove();
+                    overlay.remove();
+                });
+                content.appendChild(closeButton);
+
+                modal.appendChild(content);
+                document.body.appendChild(modal);
+
+                overlay.addEventListener('click', () => {
+                    modal.remove();
+                    overlay.remove();
+                });
+
+                modal.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        modal.remove();
+                        overlay.remove();
+                    }
+                });
+
+                modal.focus();
+
+                // Trap focus within modal
+                const focusableElements = modal.querySelectorAll('a, button');
+                const firstFocusable = focusableElements[0];
+                const lastFocusable = focusableElements[focusableElements.length - 1];
+
+                modal.addEventListener('keydown', (e) => {
+                    if (e.key === 'Tab') {
+                        if (e.shiftKey && document.activeElement === firstFocusable) {
+                            e.preventDefault();
+                            lastFocusable.focus();
+                        } else if (!e.shiftKey && document.activeElement === lastFocusable) {
+                            e.preventDefault();
+                            firstFocusable.focus();
+                        }
+                    }
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                setupPagination();
+                updateWordMap();
+                document.getElementById('search').addEventListener('input', debounceSearch);
             });
-        });
-    });
-
-    const sortedWords = Object.keys(wordCounts)
-        .sort((a, b) => wordCounts[b] - wordCounts[a])
-        .slice(0, maxWords);
-
-    wordMapContainer.innerHTML = '';
-
-    if (sortedWords.length === 0) {
-        const noWords = document.createElement('p');
-        noWords.textContent = 'No topics available.';
-        wordMapContainer.appendChild(noWords);
-        return;
-    }
-
-    const counts = sortedWords.map(word => wordCounts[word]);
-    const maxCount = Math.max(...counts);
-    const minCount = Math.min(...counts);
-    const range = maxCount - minCount || 1;
-
-    sortedWords.forEach(word => {
-        const count = wordCounts[word];
-        const relatedArticles = wordToArticles[word];
-
-        if (!relatedArticles.length) {
-            console.warn(`No articles found for word: ${word}`);
-            return;
-        }
-
-        const sizeLevel = Math.ceil(((count - minCount) / range) * 4) + 1;
-        const wordElement = document.createElement('a');
-        wordElement.className = `word-size-${sizeLevel}`;
-        wordElement.textContent = word;
-        wordElement.setAttribute('aria-label', `Explore articles tagged with ${word}`);
-
-        if (relatedArticles.length === 1) {
-            wordElement.href = relatedArticles[0].link;
-        } else {
-            wordElement.href = '#';
-            wordElement.addEventListener('click', (e) => {
-                e.preventDefault();
-                showModal(word, relatedArticles);
-            });
-        }
-
-        wordMapContainer.appendChild(wordElement);
-    });
-}
-
-function showModal(word, articles) {
-    document.querySelectorAll('.word-modal, .modal-overlay').forEach(el => el.remove());
-
-    const overlay = document.createElement('div');
-    overlay.className = 'modal-overlay';
-    document.body.appendChild(overlay);
-
-    const modal = document.createElement('div');
-    modal.className = 'word-modal';
-    modal.setAttribute('aria-modal', 'true');
-    modal.setAttribute('role', 'dialog');
-    modal.setAttribute('aria-label', `Articles tagged with ${word}`);
-
-    const content = document.createElement('div');
-    content.className = 'modal-content';
-
-    const title = document.createElement('h4');
-    title.textContent = `Articles tagged with "${word}"`;
-    content.appendChild(title);
-
-    const list = document.createElement('ul');
-    articles.forEach(article => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = article.link;
-        a.textContent = article.title;
-        a.addEventListener('click', () => {
-            modal.remove();
-            overlay.remove();
-        });
-        li.appendChild(a);
-        list.appendChild(li);
-    });
-    content.appendChild(list);
-
-    const closeButton = document.createElement('button');
-    closeButton.textContent = 'Close';
-    closeButton.className = 'modal-close';
-    closeButton.setAttribute('aria-label', 'Close modal');
-    closeButton.addEventListener('click', () => {
-        modal.remove();
-        overlay.remove();
-    });
-    content.appendChild(closeButton);
-
-    modal.appendChild(content);
-    document.body.appendChild(modal);
-
-    overlay.addEventListener('click', () => {
-        modal.remove();
-        overlay.remove();
-    });
-
-    modal.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            modal.remove();
-            overlay.remove();
-        }
-    });
-
-    modal.focus();
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    setupPagination();
-    updateWordMap();
-});
-
-const style = document.createElement('style');
-style.textContent = `
-    .modal-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-    }
-    .word-modal {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #fff;
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 1rem;
-        z-index: 1001;
-        max-width: 500px;
-        width: 90%;
-        max-height: 80vh;
-        overflow-y: auto;
-    }
-    .modal-content {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .modal-content h4 {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        color: var(--primary-color);
-    }
-    .modal-content ul {
-        list-style: none;
-    }
-    .modal-content li {
-        margin: 0.5rem 0;
-    }
-    .modal-close {
-        align-self: flex-end;
-        padding: 0.5rem 1rem;
-        background: var(--accent-color);
-        color: #fff;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: background 0.2s ease;
-    }
-    .modal-close:hover {
-        background: var(--primary-color);
-    }
-    @media (max-width: 600px) {
-        .word-modal {
-            width: 95%;
-            max-width: 400px;
-        }
-        .modal-content h4 {
-            font-size: 1rem;
-        }
-    }
-`;
-document.head.appendChild(style);
+        })();
     </script>
 </body>
 </html>
