@@ -1,1 +1,95 @@
+(function () {
+    const ARTICLES_PER_PAGE = 10;
+    let currentPage = 1;
+    let searchTimeout = null;
 
+    function sanitizeInput(input) {
+        const div = document.createElement('div');
+        div.textContent = input;
+        return div.innerHTML;
+    }
+
+    function searchPosts() {
+        if (!document.querySelector('main')) return;
+        const query = sanitizeInput(document.getElementById('search').value.toLowerCase().trim());
+        const posts = document.querySelectorAll('.post');
+        let hasResults = false;
+
+        const visibleArticles = [];
+        posts.forEach(post => {
+            const text = post.textContent.toLowerCase();
+            const matches = text.includes(query);
+            if (matches || query === '') {
+                visibleArticles.push(post);
+                post.classList.remove('hidden');
+                hasResults = true;
+            } else {
+                post.classList.add('hidden');
+            }
+        });
+
+        let noResults = document.querySelector('.no-results');
+        if (!noResults) {
+            noResults = document.createElement('p');
+            noResults.className = 'no-results';
+            noResults.textContent = 'No results found.';
+            document.querySelector('main').appendChild(noResults);
+        }
+        noResults.style.display = hasResults || query === '' ? 'none' : 'block';
+
+        currentPage = 1;
+        setupPagination(visibleArticles);
+        updateWordMap();
+    }
+
+    function debounceSearch() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(searchPosts, 300);
+    }
+
+    function togglePost(titleElement) {
+        const article = titleElement.closest('article');
+        const content = article.querySelector('.post-content');
+        
+        if (article.classList.contains('collapsed')) {
+            content.style.height = content.scrollHeight + 'px';
+            article.classList.remove('collapsed');
+        } else {
+            content.style.height = content.scrollHeight + 'px';
+            setTimeout(() => {
+                content.style.height = '0';
+            }, 10);
+            article.classList.add('collapsed');
+        }
+        
+        content.addEventListener('transitionend', function handler() {
+            if (!article.classList.contains('collapsed')) {
+                content.style.height = 'auto';
+            }
+            content.removeEventListener('transitionend', handler);
+        }, { once: true });
+    }
+
+    function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+        const totalArticles = visibleArticles.length;
+        const totalPages = Math.ceil(totalArticles / ARTICLES_PER_PAGE);
+        const pageNumbersContainer = document.getElementById('page-numbers');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function displayArticles(page) {
+            const start = (page - 1) * ARTICLES_PER_PAGE;
+            const end = start + ARTICLES_PER_PAGE;
+
+            document.querySelectorAll('.post').forEach(article => {
+                article.classList.add('hidden');
+            });
+
+            visibleArticles.forEach((article, index) => {
+                if (index >= start && index < end) {
+                    article.classList.remove('hidden');
+                }
+            });
+
+            document.querySelectorAll('.page-number').forEach(btn => {
+                btn.classList.toggle('active', parseInt
