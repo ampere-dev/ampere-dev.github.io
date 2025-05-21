@@ -144,81 +144,6 @@
             gap: 2rem;
         }
 
-        main {
-            margin-bottom: 1.5rem;
-        }
-
-        article {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        article h2 {
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-        }
-
-        article h2 a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        article h2 a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-
-        article time {
-            display: block;
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-        }
-
-        article p {
-            margin: 0.75rem 0;
-        }
-
-        article h3 {
-            font-family: 'Krona One', sans-serif;
-            font-size: 1rem;
-            margin: 1.5rem 0 0.5rem;
-        }
-
-        .quote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #007BFF;
-            padding-left: 10px;
-            margin: 15px 0;
-        }
-
-        .author {
-            text-align: right;
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 1.5rem 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
         aside {
             background: #fff;
             padding: 1.5rem;
@@ -424,105 +349,55 @@
             h1 {
                 font-size: 1.75rem;
             }
-
-            article h2 {
-                font-size: 1.5rem;
-            }
         }
-    .word-map {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        padding: 0.5rem 0;
-        font-family: 'Ubuntu', sans-serif;
-    }
 
-    .word-map a {
-        color: var(--primary-color);
-        text-decoration: none;
-        padding: 0.2rem 0.4rem;
-        border-radius: 4px;
-        transition: color 0.2s ease, transform 0.2s ease;
-        white-space: nowrap;
-    }
-
-    .word-map a:hover {
-        color: var(--accent-color);
-        background: #f0f0f0;
-        transform: scale(1.05);
-    }
-
-    /* Font size scaling based on frequency (adjust as needed) */
-    .word-size-1 { font-size: 0.9rem; }
-    .word-size-2 { font-size: 1.1rem; }
-    .word-size-3 { font-size: 1.3rem; }
-    .word-size-4 { font-size: 1.5rem; }
-    .word-size-5 { font-size: 1.7rem; }
-
-    @media (max-width: 600px) {
         .word-map {
-            gap: 0.3rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+            font-family: 'Ubuntu', sans-serif;
         }
-        .word-size-1 { font-size: 0.8rem; }
-        .word-size-2 { font-size: 1.0rem; }
-        .word-size-3 { font-size: 1.2rem; }
-        .word-size-4 { font-size: 1.4rem; }
-        .word-size-5 { font-size: 1.6rem; }
-    }
-    const style = document.createElement('style');
-style.textContent = `
-    .word-container {
-        position: relative;
-        display: inline-block;
-    }
-    .word-dropdown {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #fff;
-        border: 1px solid var(--border-color);
-        border-radius: 6px;
-        padding: 0.5rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        z-index: 10;
-        max-width: 300px;
-        min-width: 200px;
-    }
-    .word-dropdown h4 {
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-        color: var(--primary-color);
-    }
-    .word-dropdown ul {
-        list-style: none;
-    }
-    .word-dropdown li {
-        margin: 0.3rem 0;
-    }
-    .word-dropdown a {
-        color: var(--primary-color);
-        text-decoration: none;
-        font-size: 0.85rem;
-    }
-    .word-dropdown a:hover {
-        color: var(--accent-color);
-        text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-        .word-dropdown {
-            max-width: 200px;
+
+        .word-map a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            transition: color 0.2s ease, transform 0.2s ease;
+            white-space: nowrap;
         }
-    }
-`;
-document.head.appendChild(style);
+
+        .word-map a:hover {
+            color: var(--accent-color);
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        .word-size-1 { font-size: 0.9rem; }
+        .word-size-2 { font-size: 1.1rem; }
+        .word-size-3 { font-size: 1.3rem; }
+        .word-size-4 { font-size: 1.5rem; }
+        .word-size-5 { font-size: 1.7rem; }
+
+        @media (max-width: 600px) {
+            .word-map {
+                gap: 0.3rem;
+            }
+            .word-size-1 { font-size: 0.8rem; }
+            .word-size-2 { font-size: 1.0rem; }
+            .word-size-3 { font-size: 1.2rem; }
+            .word-size-4 { font-size: 1.4rem; }
+            .word-size-5 { font-size: 1.6rem; }
+        }
     </style>
 </head>
 <body>
-<div id="logo">
-    <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-        <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
-    </a>
-</div>
+    <div id="logo">
+        <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+            <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
+        </a>
+    </div>
     <header role="banner">
         <nav role="navigation">
             <a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a>
@@ -536,10 +411,37 @@ document.head.appendChild(style);
         </nav>
     </header>
 
-<h1 style="display: inline;">Ampere Insights</h1><span> is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</span>
+    <h1 style="display: inline;">Ampere Insights</h1><span> is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</span>
 
     <div class="search-container">
         <input type="text" id="search" placeholder="Search posts..." oninput="searchPosts()">
+    </div>
+
+    <div class="content-wrapper">
+        <aside role="complementary">
+            <div class="sidebar-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe for the latest tech trends and insights.</p>
+                <form action="https://dev.us20.list-manage.com/subscribe/post?u=4263b89e85da75617458bbc4a&id=6733ce5ab9&f_id=009dc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required value="">
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_4263b89e85da75617458bbc4a_6733ce5ab9" tabindex="-1" value="">
+                    </div>
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="sidebar-section related-posts">
+                <h3>Explore Topics</h3>
+                <div id="word-map" class="word-map"></div>
+            </div>
+
+            <div class="sidebar-section share">
+                <h3>Share This Page</h3>
+                <a href="https://x.com/intent/tweet?url=https://ampere.dev/blog&text=Explore the latest in power systems and AI at Ampere Insights! #DataCenters #PowerSystems" target="_blank">Share on X</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ampere.dev/blog" target="_blank">Share on LinkedIn</a>
+            </div>
+        </aside>
     </div>
 
     <div class="content-wrapper">
@@ -1420,266 +1322,354 @@ document.head.appendChild(style);
         var $mcj = jQuery.noConflict(true);
     </script>
     <script>
-function searchPosts() {
-    const query = document.getElementById('search').value.toLowerCase().trim();
-    const posts = document.querySelectorAll('.post');
-    let hasResults = false;
+        function searchPosts() {
+            const query = document.getElementById('search').value.toLowerCase().trim();
+            const posts = document.querySelectorAll('.post');
+            let hasResults = false;
 
-    const visibleArticles = [];
-    posts.forEach(post => {
-        const text = post.textContent.toLowerCase();
-        const matches = text.includes(query);
-        if (matches || query === '') {
-            visibleArticles.push(post);
-            post.classList.remove('hidden');
-            hasResults = true;
-        } else {
-            post.classList.add('hidden');
-        }
-    });
+            const visibleArticles = [];
+            posts.forEach(post => {
+                const text = post.textContent.toLowerCase();
+                const matches = text.includes(query);
+                if (matches || query === '') {
+                    visibleArticles.push(post);
+                    post.classList.remove('hidden');
+                    hasResults = true;
+                } else {
+                    post.classList.add('hidden');
+                }
+            });
 
-    let noResults = document.querySelector('.no-results');
-    if (!noResults) {
-        noResults = document.createElement('p');
-        noResults.className = 'no-results';
-        noResults.textContent = 'No results found.';
-        document.querySelector('main').appendChild(noResults);
-    }
-    noResults.style.display = hasResults || query === '' ? 'none' : 'block';
-
-    currentPage = 1;
-    setupPagination(visibleArticles);
-    updateWordMap(); // Refresh word map after filtering
-}
-
-function togglePost(titleElement) {
-    const article = titleElement.closest('article');
-    const content = article.querySelector('.post-content');
-    
-    if (article.classList.contains('collapsed')) {
-        content.style.height = content.scrollHeight + 'px';
-        article.classList.remove('collapsed');
-    } else {
-        content.style.height = content.scrollHeight + 'px';
-        setTimeout(() => {
-            content.style.height = '0';
-        }, 10);
-        article.classList.add('collapsed');
-    }
-    
-    content.addEventListener('transitionend', function handler() {
-        if (!article.classList.contains('collapsed')) {
-            content.style.height = 'auto';
-        }
-        content.removeEventListener('transitionend', handler);
-    });
-}
-
-const articlesPerPage = 5;
-let currentPage = 1;
-
-function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
-    const totalArticles = visibleArticles.length;
-    const totalPages = Math.ceil(totalArticles / articlesPerPage);
-    const pageNumbersContainer = document.getElementById('page-numbers');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-
-    function displayArticles(page) {
-        const start = (page - 1) * articlesPerPage;
-        const end = start + articlesPerPage;
-
-        document.querySelectorAll('.post').forEach(article => {
-            article.classList.add('hidden');
-        });
-
-        visibleArticles.forEach((article, index) => {
-            if (index >= start && index < end) {
-                article.classList.remove('hidden');
+            let noResults = document.querySelector('.no-results');
+            if (!noResults) {
+                noResults = document.createElement('p');
+                noResults.className = 'no-results';
+                noResults.textContent = 'No results found.';
+                document.querySelector('main').appendChild(noResults);
             }
-        });
+            noResults.style.display = hasResults || query === '' ? 'none' : 'block';
 
-        document.querySelectorAll('.page-number').forEach(btn => {
-            btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-        });
-
-        prevBtn.disabled = page === 1;
-        nextBtn.disabled = page === totalPages || totalPages === 0;
-        prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
-        nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
-    }
-
-    pageNumbersContainer.innerHTML = '';
-    for (let i = 1; i <= totalPages; i++) {
-        const pageBtn = document.createElement('button');
-        pageBtn.className = 'page-number';
-        pageBtn.dataset.page = i;
-        pageBtn.textContent = i;
-        pageBtn.setAttribute('aria-label', `Page ${i}`);
-        pageBtn.addEventListener('click', () => {
-            currentPage = i;
-            displayArticles(currentPage);
-        });
-        pageNumbersContainer.appendChild(pageBtn);
-    }
-
-    if (totalPages === 0) {
-        pageNumbersContainer.innerHTML = '';
-        prevBtn.disabled = true;
-        nextBtn.disabled = true;
-        prevBtn.setAttribute('aria-disabled', 'true');
-        nextBtn.setAttribute('aria-disabled', 'true');
-    }
-
-    prevBtn.addEventListener('click', () => {
-        if (currentPage > 1) {
-            currentPage--;
-            displayArticles(currentPage);
-        }
-    });
-
-    nextBtn.addEventListener('click', () => {
-        if (currentPage < totalPages) {
-            currentPage++;
-            displayArticles(currentPage);
-        }
-    });
-
-    displayArticles(currentPage);
-}
-
-function updateWordMap() {
-    const wordMapContainer = document.getElementById('word-map');
-    const articles = Array.from(document.querySelectorAll('.post:not(.hidden)'));
-    const maxWords = 20;
-
-    // Collect all tags and split into words
-    const wordCounts = {};
-    const wordToArticles = {};
-
-    articles.forEach(article => {
-        const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim().toLowerCase()) : [];
-        const title = article.querySelector('h2 a')?.textContent || '';
-        const link = article.querySelector('h2 a')?.getAttribute('href') || '';
-
-        if (!title || !link) {
-            console.warn('Article missing title or link:', article);
-            return;
+            currentPage = 1;
+            setupPagination(visibleArticles);
+            updateWordMap();
         }
 
-        tags.forEach(tag => {
-            // Split multi-word tags into individual words
-            const words = tag.split(/\s+/);
-            words.forEach(word => {
-                if (!wordCounts[word]) {
-                    wordCounts[word] = 0;
-                    wordToArticles[word] = [];
+        function togglePost(titleElement) {
+            const article = titleElement.closest('article');
+            const content = article.querySelector('.post-content');
+            
+            if (article.classList.contains('collapsed')) {
+                content.style.height = content.scrollHeight + 'px';
+                article.classList.remove('collapsed');
+            } else {
+                content.style.height = content.scrollHeight + 'px';
+                setTimeout(() => {
+                    content.style.height = '0';
+                }, 10);
+                article.classList.add('collapsed');
+            }
+            
+            content.addEventListener('transitionend', function handler() {
+                if (!article.classList.contains('collapsed')) {
+                    content.style.height = 'auto';
                 }
-                wordCounts[word]++;
-                // Avoid duplicate articles for the same word
-                if (!wordToArticles[word].some(a => a.link === link)) {
-                    wordToArticles[word].push({ title, link });
-                }
-            });
-        });
-    });
-
-    // Get top 20 words by frequency
-    const sortedWords = Object.keys(wordCounts)
-        .sort((a, b) => wordCounts[b] - wordCounts[a])
-        .slice(0, maxWords);
-
-    // Clear the word map container
-    wordMapContainer.innerHTML = '';
-
-    if (sortedWords.length === 0) {
-        const noWords = document.createElement('p');
-        noWords.textContent = 'No topics available.';
-        wordMapContainer.appendChild(noWords);
-        return;
-    }
-
-    // Calculate max and min counts for font scaling
-    const counts = sortedWords.map(word => wordCounts[word]);
-    const maxCount = Math.max(...counts);
-    const minCount = Math.min(...counts);
-    const range = maxCount - minCount || 1; // Avoid division by zero
-
-    // Render the word map
-    sortedWords.forEach(word => {
-        const count = wordCounts[word];
-        const relatedArticles = wordToArticles[word];
-
-        if (!relatedArticles.length) {
-            console.warn(`No articles found for word: ${word}`);
-            return;
-        }
-
-        // Scale font size between 1 and 5 based on frequency
-        const sizeLevel = Math.ceil(((count - minCount) / range) * 4) + 1;
-        const wordContainer = document.createElement('div');
-        wordContainer.className = 'word-container';
-
-        const wordElement = document.createElement('a');
-        wordElement.className = `word-size-${sizeLevel}`;
-        wordElement.textContent = word;
-        wordElement.setAttribute('aria-label', `Explore articles tagged with ${word}`);
-
-        if (relatedArticles.length === 1) {
-            wordElement.href = relatedArticles[0].link;
-        } else {
-            wordElement.href = '#';
-            wordElement.addEventListener('click', (e) => {
-                e.preventDefault();
-                toggleDropdown(wordContainer, word, relatedArticles);
+                content.removeEventListener('transitionend', handler);
             });
         }
 
-        wordContainer.appendChild(wordElement);
-        wordMapContainer.appendChild(wordContainer);
-    });
-}
+        const articlesPerPage = 5;
+        let currentPage = 1;
 
-function toggleDropdown(wordContainer, word, articles) {
-    // Remove existing dropdowns
-    document.querySelectorAll('.word-dropdown').forEach(d => d.remove());
+        function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+            const totalArticles = visibleArticles.length;
+            const totalPages = Math.ceil(totalArticles / articlesPerPage);
+            const pageNumbersContainer = document.getElementById('page-numbers');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
 
-    // Create dropdown
-    const dropdown = document.createElement('div');
-    dropdown.className = 'word-dropdown';
-    dropdown.setAttribute('aria-label', `Articles tagged with ${word}`);
+            function displayArticles(page) {
+                const start = (page - 1) * articlesPerPage;
+                const end = start + articlesPerPage;
 
-    const title = document.createElement('h4');
-    title.textContent = `Tagged with "${word}"`;
-    dropdown.appendChild(title);
+                document.querySelectorAll('.post').forEach(article => {
+                    article.classList.add('hidden');
+                });
 
-    const list = document.createElement('ul');
-    articles.forEach(article => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = article.link;
-        a.textContent = article.title;
-        li.appendChild(a);
-        list.appendChild(li);
-    });
-    dropdown.appendChild(list);
+                visibleArticles.forEach((article, index) => {
+                    if (index >= start && index < end) {
+                        article.classList.remove('hidden');
+                    }
+                });
 
-    wordContainer.appendChild(dropdown);
+                document.querySelectorAll('.page-number').forEach(btn => {
+                    btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+                });
 
-    // Close dropdown when clicking outside
-    const closeDropdown = (e) => {
-        if (!wordContainer.contains(e.target)) {
-            dropdown.remove();
-            document.removeEventListener('click', closeDropdown);
+                prevBtn.disabled = page === 1;
+                nextBtn.disabled = page === totalPages || totalPages === 0;
+                prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+                nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
+            }
+
+            pageNumbersContainer.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.className = 'page-number';
+                pageBtn.dataset.page = i;
+                pageBtn.textContent = i;
+                pageBtn.setAttribute('aria-label', `Page ${i}`);
+                pageBtn.addEventListener('click', () => {
+                    currentPage = i;
+                    displayArticles(currentPage);
+                });
+                pageNumbersContainer.appendChild(pageBtn);
+            }
+
+            if (totalPages === 0) {
+                pageNumbersContainer.innerHTML = '';
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                prevBtn.setAttribute('aria-disabled', 'true');
+                nextBtn.setAttribute('aria-disabled', 'true');
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayArticles(currentPage);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayArticles(currentPage);
+                }
+            });
+
+            displayArticles(currentPage);
         }
-    };
-    setTimeout(() => document.addEventListener('click', closeDropdown), 0);
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-    setupPagination();
-    updateWordMap();
-});
+        function updateWordMap() {
+            const wordMapContainer = document.getElementById('word-map');
+            const articles = Array.from(document.querySelectorAll('.post:not(.hidden)'));
+            const maxWords = 20;
+
+            const wordCounts = {};
+            const wordToArticles = {};
+
+            articles.forEach(article => {
+                const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim().toLowerCase()) : [];
+                const titleElement = article.querySelector('h2 a');
+                const title = titleElement?.textContent || '';
+                const link = titleElement?.getAttribute('href') || '';
+
+                if (!title || !link || link === '#') {
+                    console.warn('Invalid article data:', { title, link, article });
+                    return;
+                }
+
+                tags.forEach(tag => {
+                    const words = tag.split(/\s+/);
+                    words.forEach(word => {
+                        if (!wordCounts[word]) {
+                            wordCounts[word] = 0;
+                            wordToArticles[word] = [];
+                        }
+                        wordCounts[word]++;
+                        if (!wordToArticles[word].some(a => a.link === link)) {
+                            wordToArticles[word].push({ title, link });
+                        }
+                    });
+                });
+            });
+
+            const sortedWords = Object.keys(wordCounts)
+                .sort((a, b) => wordCounts[b] - wordCounts[a])
+                .slice(0, maxWords);
+
+            wordMapContainer.innerHTML = '';
+
+            if (sortedWords.length === 0) {
+                const noWords = document.createElement('p');
+                noWords.textContent = 'No topics available.';
+                wordMapContainer.appendChild(noWords);
+                return;
+            }
+
+            const counts = sortedWords.map(word => wordCounts[word]);
+            const maxCount = Math.max(...counts);
+            const minCount = Math.min(...counts);
+            const range = maxCount - minCount || 1;
+
+            sortedWords.forEach(word => {
+                const count = wordCounts[word];
+                const relatedArticles = wordToArticles[word];
+
+                if (!relatedArticles.length) {
+                    console.warn(`No articles found for word: ${word}`);
+                    return;
+                }
+
+                const sizeLevel = Math.ceil(((count - minCount) / range) * 4) + 1;
+                const wordElement = document.createElement('a');
+                wordElement.className = `word-size-${sizeLevel}`;
+                wordElement.textContent = word;
+                wordElement.setAttribute('aria-label', `Explore articles tagged with ${word}`);
+
+                if (relatedArticles.length === 1) {
+                    wordElement.href = relatedArticles[0].link;
+                } else {
+                    wordElement.href = '#';
+                    wordElement.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        showModal(word, relatedArticles);
+                    });
+                }
+
+                wordMapContainer.appendChild(wordElement);
+            });
+        }
+
+        function showModal(word, articles) {
+            document.querySelectorAll('.word-modal, .modal-overlay').forEach(el => el.remove());
+
+            const overlay = document.createElement('div');
+            overlay.className = 'modal-overlay';
+            document.body.appendChild(overlay);
+
+            const modal = document.createElement('div');
+            modal.className = 'word-modal';
+            modal.setAttribute('aria-modal', 'true');
+            modal.setAttribute('role', 'dialog');
+            modal.setAttribute('aria-label', `Articles tagged with ${word}`);
+
+            const content = document.createElement('div');
+            content.className = 'modal-content';
+
+            const title = document.createElement('h4');
+            title.textContent = `Articles tagged with "${word}"`;
+            content.appendChild(title);
+
+            const list = document.createElement('ul');
+            articles.forEach(article => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = article.link;
+                a.textContent = article.title;
+                a.addEventListener('click', () => {
+                    modal.remove();
+                    overlay.remove();
+                });
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+            content.appendChild(list);
+
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'Close';
+            closeButton.className = 'modal-close';
+            closeButton.setAttribute('aria-label', 'Close modal');
+            closeButton.addEventListener('click', () => {
+                modal.remove();
+                overlay.remove();
+            });
+            content.appendChild(closeButton);
+
+            modal.appendChild(content);
+            document.body.appendChild(modal);
+
+            overlay.addEventListener('click', () => {
+                modal.remove();
+                overlay.remove();
+            });
+
+            modal.focus();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupPagination();
+            updateWordMap();
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+            .modal-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+            }
+            .word-modal {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #fff;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                padding: 1rem;
+                z-index: 1001;
+                max-width: 500px;
+                width: 90%;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+            .modal-content {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .modal-content h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+                color: var(--primary-color);
+            }
+            .modal-content ul {
+                list-style: none;
+            }
+            .modal-content li {
+                margin: 0.5rem 0;
+            }
+            .modal-content a {
+                color: var(--primary-color);
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+            .modal-content a:hover {
+                color: var(--accent-color);
+                text-decoration: underline;
+            }
+            .modal-close {
+                align-self: flex-end;
+                padding: 0.5rem 1rem;
+                background: var(--accent-color);
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background 0.2s ease;
+            }
+            .modal-close:hover {
+                background: var(--primary-color);
+            }
+            @media (max-width: 600px) {
+                .word-modal {
+                    width: 95%;
+                    max-width: 400px;
+                }
+                .modal-content h4 {
+                    font-size: 1rem;
+                }
+                .modal-content a {
+                    font-size: 0.85rem;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>
