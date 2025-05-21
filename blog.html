@@ -7,7 +7,6 @@
     <meta name="description" content="Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers & 3D fabrication for industry pros.">
     <meta name="author" content="Ampere Development">
     <title>Ampere Insights | Ampere Development</title>
-
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Ampere Insights | Ampere Development">
     <meta property="og:description" content="Ampere Insights delivers sharp, expert posts on power systems, load banks, transformers & 3D fabrication for energy and industry professionals.">
@@ -22,24 +21,20 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers",
-        "author": {
+        "@type": "Blog",
+        "name": "Ampere Insights",
+        "description": "Ampere Insights delivers expert posts on power systems, load banks, transformers, and 3D fabrication for energy and industry professionals.",
+        "publisher": {
             "@type": "Organization",
             "name": "Ampere Development"
         },
-        "datePublished": "2025-05-03",
-        "description": "Explore Avtron Power Solutions’ innovative load bank solutions for data centers, featured in New Frontiers, airing Q3 2025.",
-        "image": "https://ampere.dev/images/og-blog.jpg"
+        "url": "https://ampere.dev/blog"
     }
     </script>
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-
+    <link rel="icon" href="https://ampere.dev/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://ampere.dev/images/apple-touch-icon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -49,6 +44,8 @@
             --accent-color: #ff0000;
             --border-color: #ddd;
             --background-color: #f5f5f5;
+            --font-size-base: 1rem;
+            --spacing-unit: 1rem;
         }
 
         * {
@@ -58,17 +55,17 @@
         }
 
         body {
-            font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Ubuntu', sans-serif;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1.5rem 1rem;
+            padding: calc(var(--spacing-unit) * 1.5) var(--spacing-unit);
             line-height: 1.6;
             color: var(--primary-color);
             background: var(--background-color);
         }
 
         #logo {
-            margin-bottom: 1.5rem;
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
         }
 
         #logo img {
@@ -78,8 +75,8 @@
 
         header {
             border-bottom: 1px solid var(--accent-color);
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
+            padding-bottom: calc(var(--spacing-unit) * 1.5);
+            margin-bottom: calc(var(--spacing-unit) * 2);
         }
 
         h1 {
@@ -87,31 +84,32 @@
             font-size: 2rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
+            display: inline;
         }
 
         nav {
             display: flex;
-            gap: 1.5rem;
+            gap: calc(var(--spacing-unit) * 1.5);
         }
 
         nav a {
             color: var(--primary-color);
             text-decoration: none;
-            font-size: 1rem;
+            font-size: var(--font-size-base);
             padding: 0.5rem;
             transition: color 0.2s ease, transform 0.2s ease;
         }
 
-        nav a:hover {
+        nav a:hover, nav a:focus {
             color: var(--accent-color);
             text-decoration: underline;
             transform: scale(1.05);
         }
 
         .abstract {
-            font-size: 1rem;
+            font-size: var(--font-size-base);
             color: #555;
-            margin: 1rem auto;
+            margin: var(--spacing-unit) auto;
             font-style: italic;
             max-width: 900px;
             text-align: justify;
@@ -119,7 +117,7 @@
         }
 
         .search-container {
-            margin: 1rem 0;
+            margin: var(--spacing-unit) 0;
         }
 
         #search {
@@ -128,7 +126,7 @@
             max-width: 350px;
             border: 1px solid var(--accent-color);
             border-radius: 6px;
-            font-size: 1rem;
+            font-size: var(--font-size-base);
             transition: border-color 0.2s ease, box-shadow 0.2s ease;
         }
 
@@ -141,22 +139,22 @@
         .content-wrapper {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 2rem;
+            gap: calc(var(--spacing-unit) * 2);
         }
 
         aside {
             background: #fff;
-            padding: 1.5rem;
+            padding: calc(var(--spacing-unit) * 1.5);
             border: 1px solid var(--border-color);
             border-radius: 8px;
         }
 
         .sidebar-section {
-            margin-bottom: 2rem;
+            margin-bottom: calc(var(--spacing-unit) * 2);
         }
 
         .sidebar-section h3 {
-            font-family: 'Krona One', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
             font-size: 1.25rem;
             margin-bottom: 0.75rem;
         }
@@ -171,7 +169,7 @@
             padding: 0.75rem;
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            font-size: 1rem;
+            font-size: var(--font-size-base);
         }
 
         .newsletter button {
@@ -180,12 +178,12 @@
             color: #fff;
             border: none;
             border-radius: 6px;
-            font-size: 1rem;
+            font-size: var(--font-size-base);
             cursor: pointer;
             transition: background 0.2s ease;
         }
 
-        .newsletter button:hover {
+        .newsletter button:hover, .newsletter button:focus {
             background: var(--primary-color);
         }
 
@@ -203,7 +201,7 @@
             transition: color 0.2s ease;
         }
 
-        .related-posts a:hover {
+        .related-posts a:hover, .related-posts a:focus {
             color: var(--accent-color);
             text-decoration: underline;
         }
@@ -217,26 +215,26 @@
             transition: color 0.2s ease;
         }
 
-        .share a:hover {
+        .share a:hover, .share a:focus {
             color: var(--primary-color);
             text-decoration: underline;
         }
 
         footer {
-            margin-top: 2rem;
+            margin-top: calc(var(--spacing-unit) * 2);
             text-align: center;
             color: #666;
             font-size: 0.9rem;
-            padding-top: 1rem;
+            padding-top: var(--spacing-unit);
             border-top: 1px solid var(--border-color);
         }
 
         .footer-links ul {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: calc(var(--spacing-unit) * 1.5);
             list-style: none;
-            margin-bottom: 1rem;
+            margin-bottom: var(--spacing-unit);
         }
 
         .footer-links a {
@@ -244,15 +242,15 @@
             text-decoration: none;
         }
 
-        .footer-links a:hover {
+        .footer-links a:hover, .footer-links a:focus {
             color: var(--accent-color);
         }
 
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
+            gap: var(--spacing-unit);
+            margin-bottom: var(--spacing-unit);
         }
 
         .social-icons img {
@@ -269,19 +267,20 @@
             overflow: hidden;
             transition: height 0.3s ease-out;
         }
-        .post-content a:link {
-    color: var(--primary-color); /* #333 */
-    text-decoration: none;
-}
-.post-content a:visited {
-    color: var(--accent-color); /* #ff0000 */
-    text-decoration: none;
-}
-.post-content a:hover,
-.post-content a:active {
-    color: var(--accent-color); /* #ff0000 */
-    text-decoration: underline;
-}
+
+        .post-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .post-content a:visited {
+            color: var(--accent-color);
+        }
+
+        .post-content a:hover, .post-content a:focus, .post-content a:active {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
 
         .collapsed .post-content {
             height: 0;
@@ -292,7 +291,7 @@
             justify-content: center;
             align-items: center;
             gap: 0.5rem;
-            margin-top: 2rem;
+            margin-top: calc(var(--spacing-unit) * 2);
             font-family: 'Ubuntu', sans-serif;
         }
 
@@ -302,12 +301,12 @@
             color: #fff;
             border: none;
             border-radius: 6px;
-            font-size: 1rem;
+            font-size: var(--font-size-base);
             cursor: pointer;
             transition: background 0.2s ease;
         }
 
-        .pagination-btn:hover:not(:disabled) {
+        .pagination-btn:hover:not(:disabled), .pagination-btn:focus:not(:disabled) {
             background: var(--primary-color);
         }
 
@@ -328,12 +327,12 @@
             border-radius: 6px;
             color: var(--primary-color);
             text-decoration: none;
-            font-size: 1rem;
+            font-size: var(--font-size-base);
             cursor: pointer;
             transition: background 0.2s ease, color 0.2s ease;
         }
 
-        .page-number:hover {
+        .page-number:hover, .page-number:focus {
             background: var(--accent-color);
             color: #fff;
         }
@@ -344,26 +343,6 @@
             font-weight: bold;
         }
 
-        @media (max-width: 800px) {
-            .content-wrapper {
-                grid-template-columns: 1fr;
-            }
-
-            aside {
-                margin-top: 2rem;
-            }
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 1.75rem;
-            }
-        }
-
         .word-map {
             display: flex;
             flex-wrap: wrap;
@@ -372,35 +351,31 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
-.word-map a {
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    transition: color 0.2s ease, transform 0.2s ease;
-    white-space: nowrap;
-}
+        .word-map a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            transition: color 0.2s ease, transform 0.2s ease;
+            white-space: nowrap;
+        }
 
-.word-map a:hover,
-.word-map a:visited,
-.word-map a:active {
-    color: var(--accent-color);
-    background: #f0f0f0;
-    transform: scale(1.05);
-}
+        .word-map a:hover, .word-map a:focus, .word-map a:active {
+            color: var(--accent-color);
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
 
-.modal-content a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-}
+        .modal-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
 
-.modal-content a:hover,
-.modal-content a:visited,
-.modal-content a:active {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
+        .modal-content a:hover, .modal-content a:focus, .modal-content a:active {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
 
         .word-size-1 { font-size: 0.9rem; }
         .word-size-2 { font-size: 1.1rem; }
@@ -408,32 +383,113 @@
         .word-size-4 { font-size: 1.5rem; }
         .word-size-5 { font-size: 1.7rem; }
 
+        @media (max-width: 800px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                margin-top: calc(var(--spacing-unit) * 2);
+            }
+        }
+
         @media (max-width: 600px) {
+            body {
+                padding: var(--spacing-unit);
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
             .word-map {
                 gap: 0.3rem;
             }
+
             .word-size-1 { font-size: 0.8rem; }
             .word-size-2 { font-size: 1.0rem; }
             .word-size-3 { font-size: 1.2rem; }
             .word-size-4 { font-size: 1.4rem; }
             .word-size-5 { font-size: 1.6rem; }
         }
-            .post-content a {
-        color: var(--primary-color);
-        text-decoration: none;
-    }
-    .post-content a:hover,
-    .post-content a:visited,
-    .post-content a:active {
-        color: var(--accent-color);
-        text-decoration: underline;
-    }
+
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .word-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: var(--spacing-unit);
+            z-index: 1001;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .modal-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .modal-content ul {
+            list-style: none;
+        }
+
+        .modal-content li {
+            margin: 0.5rem 0;
+        }
+
+        .modal-close {
+            align-self: flex-end;
+            padding: 0.5rem 1rem;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .modal-close:hover, .modal-close:focus {
+            background: var(--primary-color);
+        }
+
+        @media (max-width: 600px) {
+            .word-modal {
+                width: 95%;
+                max-width: 400px;
+            }
+
+            .modal-content h4 {
+                font-size: var(--font-size-base);
+            }
+        }
     </style>
 </head>
 <body>
     <div id="logo">
         <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-            <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
+            <img src="https://ampere.dev/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
         </a>
     </div>
     <header role="banner">
@@ -445,14 +501,14 @@
             <a href="https://ampere.dev/power-quality">POWER QUALITY</a>
             <a href="https://ampere.dev/transformers">TRANSFORMERS</a>
             <a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a>
-            <a href="/rss.xml">RSS FEED</a>
+            <a href="https://ampere.dev/rss.xml">RSS FEED</a>
         </nav>
     </header>
 
-    <h1 style="display: inline;">Ampere Insights</h1><span> is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</span>
+    <h1>Ampere Insights</h1><span> is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</span>
 
     <div class="search-container">
-        <input type="text" id="search" placeholder="Search posts..." oninput="searchPosts()">
+        <input type="text" id="search" placeholder="Search posts..." aria-label="Search blog posts" oninput="searchPosts()">
     </div>
 
     <div class="content-wrapper">
