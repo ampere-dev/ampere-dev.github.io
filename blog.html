@@ -7,6 +7,7 @@
     <meta name="description" content="Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers & 3D fabrication for industry pros.">
     <meta name="author" content="Ampere Development">
     <title>Ampere Insights | Ampere Development</title>
+
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Ampere Insights | Ampere Development">
     <meta property="og:description" content="Ampere Insights delivers sharp, expert posts on power systems, load banks, transformers & 3D fabrication for energy and industry professionals.">
@@ -21,30 +22,421 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Ampere Insights",
-        "description": "Ampere Insights delivers expert posts on power systems, load banks, transformers, and 3D fabrication for energy and industry professionals.",
-        "publisher": {
+        "@type": "Article",
+        "headline": "Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers",
+        "author": {
             "@type": "Organization",
             "name": "Ampere Development"
         },
-        "url": "https://ampere.dev/blog"
+        "datePublished": "2025-05-03",
+        "description": "Explore Avtron Power Solutions’ innovative load bank solutions for data centers, featured in New Frontiers, airing Q3 2025.",
+        "image": "https://ampere.dev/images/og-blog.jpg"
     }
     </script>
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="icon" href="https://ampere.dev/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://ampere.dev/images/apple-touch-icon.png">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/ampere-insights-blog.css">
+
+    <style>
+        :root {
+            --primary-color: #333;
+            --accent-color: #ff0000;
+            --border-color: #ddd;
+            --background-color: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background: var(--background-color);
+        }
+
+        #logo {
+            margin-bottom: 1.5rem;
+        }
+
+        #logo img {
+            max-width: 154px;
+            height: auto;
+        }
+
+        header {
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+            transform: scale(1.05);
+        }
+
+        .abstract {
+            font-size: 1rem;
+            color: #555;
+            margin: 1rem auto;
+            font-style: italic;
+            max-width: 900px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .search-container {
+            margin: 1rem 0;
+        }
+
+        #search {
+            padding: 0.75rem;
+            width: 100%;
+            max-width: 350px;
+            border: 1px solid var(--accent-color);
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #search:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        main {
+            margin-bottom: 1.5rem;
+        }
+
+        article {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        article h2 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        article h2 a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        article h2 a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        article time {
+            display: block;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        article p {
+            margin: 0.75rem 0;
+        }
+
+        article h3 {
+            font-family: 'Krona One', sans-serif;
+            font-size: 1rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #007BFF;
+            padding-left: 10px;
+            margin: 15px 0;
+        }
+
+        .author {
+            text-align: right;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 1.5rem 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        aside {
+            background: #fff;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-section h3 {
+            font-family: 'Krona One', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .newsletter form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .newsletter button {
+            padding: 0.75rem;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .newsletter button:hover {
+            background: var(--primary-color);
+        }
+
+        .related-posts ul {
+            list-style: none;
+        }
+
+        .related-posts li {
+            margin: 0.5rem 0;
+        }
+
+        .related-posts a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .related-posts a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .share a {
+            display: block;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            transition: color 0.2s ease;
+        }
+
+        .share a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-links ul {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .post-content {
+            height: auto;
+            overflow: hidden;
+            transition: height 0.3s ease-out;
+        }
+
+        .collapsed .post-content {
+            height: 0;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .pagination-btn {
+            padding: 0.5rem 1rem;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+            background: var(--primary-color);
+        }
+
+        .pagination-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .page-numbers {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .page-number {
+            padding: 0.5rem 1rem;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .page-number:hover {
+            background: var(--accent-color);
+            color: #fff;
+        }
+
+        .page-number.active {
+            background: var(--accent-color);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 800px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                margin-top: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            article h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="logo">
-        <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-            <img src="https://ampere.dev/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
-        </a>
-    </div>
+<div id="logo">
+    <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+        <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
+    </a>
+</div>
     <header role="banner">
         <nav role="navigation">
             <a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a>
@@ -54,15 +446,14 @@
             <a href="https://ampere.dev/power-quality">POWER QUALITY</a>
             <a href="https://ampere.dev/transformers">TRANSFORMERS</a>
             <a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a>
-            <a href="https://ampere.dev/rss.xml">RSS FEED</a>
+            <a href="/rss.xml">RSS FEED</a>
         </nav>
     </header>
 
-    <h1>Ampere Insights</h1>
-    <span class="abstract">is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</span>
+<h1 style="display: inline;">Ampere Insights</h1><span> is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</span>
 
     <div class="search-container">
-        <input type="text" id="search" placeholder="Search posts..." aria-label="Search blog posts" oninput="searchPosts()">
+        <input type="text" id="search" placeholder="Search posts..." oninput="searchPosts()">
     </div>
 
     <div class="content-wrapper">
@@ -856,35 +1247,43 @@
             </article>
 
             <!-- Pagination Container -->
+           
+
+
+
+
+
+
+
             <div class="pagination" role="navigation" aria-label="Pagination">
                 <button class="pagination-btn" id="prev-btn" disabled aria-label="Previous page">Previous</button>
                 <div id="page-numbers" class="page-numbers"></div>
                 <button class="pagination-btn" id="next-btn" aria-label="Next page">Next</button>
             </div>
         </main>
+
         <aside role="complementary">
             <div class="sidebar-section newsletter">
                 <h3>Stay Updated</h3>
                 <p>Subscribe for the latest tech trends and insights.</p>
                 <form action="https://dev.us20.list-manage.com/subscribe/post?u=4263b89e85da75617458bbc4a&id=6733ce5ab9&f_id=009dc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                    <label for="mce-EMAIL" class="hidden">Email Address</label>
-                    <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required aria-required="true">
+                    <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required value="">
                     <div aria-hidden="true" style="position: absolute; left: -5000px;">
                         <input type="text" name="b_4263b89e85da75617458bbc4a_6733ce5ab9" tabindex="-1" value="">
                     </div>
-                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" aria-label="Subscribe to newsletter">Subscribe</button>
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
                 </form>
             </div>
 
             <div class="sidebar-section related-posts">
-                <h3>Explore Topics</h3>
-                <div id="word-map" class="word-map"></div>
+                <h3>Related Posts</h3>
+                <ul id="related-posts-list"></ul>
             </div>
 
             <div class="sidebar-section share">
                 <h3>Share This Page</h3>
-                <a href="https://x.com/intent/tweet?url=https://ampere.dev/blog&text=Explore the latest in power systems and AI at Ampere Insights! #DataCenters #PowerSystems" target="_blank" rel="noopener" aria-label="Share on X">Share on X</a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ampere.dev/blog" target="_blank" rel="noopener" aria-label="Share on LinkedIn">Share on LinkedIn</a>
+                <a href="https://x.com/intent/tweet?url=https://ampere.dev/blog&text=Explore the latest in power systems and AI at Ampere Insights! #DataCenters #PowerSystems" target="_blank">Share on X</a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ampere.dev/blog" target="_blank">Share on LinkedIn</a>
             </div>
         </aside>
     </div>
@@ -901,17 +1300,17 @@
             </ul>
         </div>
         <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
-                <img src="https://ampere.dev/icons/facebook-logo.png" alt="Facebook logo" loading="lazy">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                <img src="icons/facebook-logo.png" alt="Facebook logo">
             </a>
-            <a href="https://x.com" target="_blank" rel="noopener" aria-label="Visit our X page">
-                <img src="https://ampere.dev/icons/logo-black.png" alt="X logo" loading="lazy">
+            <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="icons/logo-black.png" alt="X logo">
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Visit our LinkedIn page">
-                <img src="https://ampere.dev/icons/linkedin.png" alt="LinkedIn logo" loading="lazy">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                <img src="icons/linkedin.png" alt="LinkedIn logo">
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page">
-                <img src="https://ampere.dev/icons/Instagram_Glyph_Black.png" alt="Instagram logo" loading="lazy">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                <img src="icons/Instagram_Glyph_Black.png" alt="Instagram logo">
             </a>
         </div>
         <div>
@@ -919,7 +1318,210 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script src="js/ampere-insights-blog.js"></script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0]='EMAIL';ftypes[0]='email';
+            fnames[1]='FNAME';ftypes[1]='text';
+            fnames[2]='LNAME';ftypes[2]='text';
+            fnames[3]='ADDRESS';ftypes[3]='address';
+            fnames[4]='PHONE';ftypes[4]='phone';
+            fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+            fnames[6]='COMPANY';ftypes[6]='text';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+    <script>
+        function searchPosts() {
+            const query = document.getElementById('search').value.toLowerCase().trim();
+            const posts = document.querySelectorAll('.post');
+            let hasResults = false;
+
+            const visibleArticles = [];
+            posts.forEach(post => {
+                const text = post.textContent.toLowerCase();
+                const matches = text.includes(query);
+                if (matches || query === '') {
+                    visibleArticles.push(post);
+                    post.classList.remove('hidden');
+                    hasResults = true;
+                } else {
+                    post.classList.add('hidden');
+                }
+            });
+
+            let noResults = document.querySelector('.no-results');
+            if (!noResults) {
+                noResults = document.createElement('p');
+                noResults.className = 'no-results';
+                noResults.textContent = 'No results found.';
+                document.querySelector('main').appendChild(noResults);
+            }
+            noResults.style.display = hasResults || query === '' ? 'none' : 'block';
+
+            currentPage = 1;
+            setupPagination(visibleArticles);
+        }
+
+        function togglePost(titleElement) {
+            const article = titleElement.closest('article');
+            const content = article.querySelector('.post-content');
+            
+            if (article.classList.contains('collapsed')) {
+                content.style.height = content.scrollHeight + 'px';
+                article.classList.remove('collapsed');
+            } else {
+                content.style.height = content.scrollHeight + 'px';
+                setTimeout(() => {
+                    content.style.height = '0';
+                }, 10);
+                article.classList.add('collapsed');
+            }
+            
+            content.addEventListener('transitionend', function handler() {
+                if (!article.classList.contains('collapsed')) {
+                    content.style.height = 'auto';
+                }
+                content.removeEventListener('transitionend', handler);
+            });
+        }
+
+        const articlesPerPage = 5;
+        let currentPage = 1;
+
+        function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+            const totalArticles = visibleArticles.length;
+            const totalPages = Math.ceil(totalArticles / articlesPerPage);
+            const pageNumbersContainer = document.getElementById('page-numbers');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            function displayArticles(page) {
+                const start = (page - 1) * articlesPerPage;
+                const end = start + articlesPerPage;
+
+                document.querySelectorAll('.post').forEach(article => {
+                    article.classList.add('hidden');
+                });
+
+                visibleArticles.forEach((article, index) => {
+                    if (index >= start && index < end) {
+                        article.classList.remove('hidden');
+                    }
+                });
+
+                document.querySelectorAll('.page-number').forEach(btn => {
+                    btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+                });
+
+                prevBtn.disabled = page === 1;
+                nextBtn.disabled = page === totalPages || totalPages === 0;
+                prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+                nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
+            }
+
+            pageNumbersContainer.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const pageBtn = document.createElement('button');
+                pageBtn.className = 'page-number';
+                pageBtn.dataset.page = i;
+                pageBtn.textContent = i;
+                pageBtn.setAttribute('aria-label', `Page ${i}`);
+                pageBtn.addEventListener('click', () => {
+                    currentPage = i;
+                    displayArticles(currentPage);
+                });
+                pageNumbersContainer.appendChild(pageBtn);
+            }
+
+            if (totalPages === 0) {
+                pageNumbersContainer.innerHTML = '';
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                prevBtn.setAttribute('aria-disabled', 'true');
+                nextBtn.setAttribute('aria-disabled', 'true');
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayArticles(currentPage);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayArticles(currentPage);
+                }
+            });
+
+            displayArticles(currentPage);
+        }
+
+        function updateRelatedPosts() {
+            const relatedPostsList = document.getElementById('related-posts-list');
+            const articles = Array.from(document.querySelectorAll('.post'));
+            const maxRelated = 3;
+
+            relatedPostsList.innerHTML = '';
+
+            const articleData = articles.map(article => {
+                const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
+                const title = article.querySelector('h2 a').textContent;
+                const link = article.querySelector('h2 a').getAttribute('href');
+                return { article, tags, title, link };
+            });
+
+            const allTags = [...new Set(articleData.flatMap(data => data.tags))];
+            const relatedArticles = [];
+
+            allTags.forEach(tag => {
+                const taggedArticles = articleData.filter(data => data.tags.includes(tag));
+                taggedArticles.forEach(data => {
+                    const existing = relatedArticles.find(ra => ra.link === data.link);
+                    if (!existing) {
+                        relatedArticles.push({
+                            ...data,
+                            score: taggedArticles.length
+                        });
+                    } else {
+                        existing.score += taggedArticles.length;
+                    }
+                });
+            });
+
+            relatedArticles.sort((a, b) => {
+                if (b.score === a.score) {
+                    const aIndex = articles.indexOf(a.article);
+                    const bIndex = articles.indexOf(b.article);
+                    return aIndex - bIndex;
+                }
+                return b.score - a.score;
+            });
+
+            relatedArticles.slice(0, maxRelated).forEach(data => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = data.link;
+                a.textContent = data.title;
+                li.appendChild(a);
+                relatedPostsList.appendChild(li);
+            });
+
+            if (relatedArticles.length === 0) {
+                const li = document.createElement('li');
+                li.textContent = 'No related posts available.';
+                relatedPostsList.appendChild(li);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setupPagination();
+            updateRelatedPosts();
+        });
+    </script>
 </body>
 </html>
