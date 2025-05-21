@@ -359,20 +359,35 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
-        .word-map a {
-            color: var(--primary-color);
-            text-decoration: none;
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            transition: color 0.2s ease, transform 0.2s ease;
-            white-space: nowrap;
-        }
+.word-map a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    transition: color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
 
-        .word-map a:hover {
-            color: var(--accent-color);
-            background: #f0f0f0;
-            transform: scale(1.05);
-        }
+.word-map a:hover,
+.word-map a:visited,
+.word-map a:active {
+    color: var(--accent-color);
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.modal-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.modal-content a:hover,
+.modal-content a:visited,
+.modal-content a:active {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
 
         .word-size-1 { font-size: 0.9rem; }
         .word-size-2 { font-size: 1.1rem; }
