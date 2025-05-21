@@ -429,6 +429,46 @@
                 font-size: 1.5rem;
             }
         }
+    .word-map {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .word-map a {
+        color: var(--primary-color);
+        text-decoration: none;
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        transition: color 0.2s ease, transform 0.2s ease;
+        white-space: nowrap;
+    }
+
+    .word-map a:hover {
+        color: var(--accent-color);
+        background: #f0f0f0;
+        transform: scale(1.05);
+    }
+
+    /* Font size scaling based on frequency (adjust as needed) */
+    .word-size-1 { font-size: 0.9rem; }
+    .word-size-2 { font-size: 1.1rem; }
+    .word-size-3 { font-size: 1.3rem; }
+    .word-size-4 { font-size: 1.5rem; }
+    .word-size-5 { font-size: 1.7rem; }
+
+    @media (max-width: 600px) {
+        .word-map {
+            gap: 0.3rem;
+        }
+        .word-size-1 { font-size: 0.8rem; }
+        .word-size-2 { font-size: 1.0rem; }
+        .word-size-3 { font-size: 1.2rem; }
+        .word-size-4 { font-size: 1.4rem; }
+        .word-size-5 { font-size: 1.6rem; }
+    }
     </style>
 </head>
 <body>
