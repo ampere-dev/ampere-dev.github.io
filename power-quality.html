@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character Encoding -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="description" content="Power quality solutions for stable and efficient electrical systems. Learn more at Ampere Development.">
     <meta name="author" content="Ampere Development">
+    <meta name="robots" content="index, follow">
     <title>Power Quality | Ampere Development</title>
 
     <!-- SEO -->
-    <meta name="robots" content="index, follow">
     <meta property="og:title" content="Power Quality | Ampere Development">
     <meta property="og:description" content="Explore power quality solutions for stable and efficient electrical systems.">
     <meta property="og:url" content="https://ampere.dev/power-quality">
@@ -19,37 +17,20 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Power Quality | Ampere Development">
     <meta name="twitter:description" content="Learn about power quality solutions at Ampere Development.">
-    <meta name="twitter:image", content="https://ampere.dev/images/power-quality.webp">
-
-    <!-- Preload & Performance -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
-    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+    <meta name="twitter:image" content="https://ampere.dev/images/power-quality.webp">
 
     <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Fonts and Preconnect -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="js/main.js" defer></script>
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
@@ -59,179 +40,255 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+    </style>
 </head>
-<style>
-
-
-/* Main layout container */
-.content-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0;
-    height: auto;
-}
-
-/* Body content on the left */
-.body-content {
-    flex: 2;
-    margin: 20px;
-    overflow-y: auto;
-}
-
-/* Media container on the right (for video and image) */
-.media-container {
-    flex: 1;
-    margin: 20px;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Video styles */
-.media-container video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
-}
-
-/* Image styles */
-.media-container img.content-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .body-content {
-        flex: none;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .media-container {
-        flex: none;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 20px 20px 20px;
-    }
-
-    .media-container video,
-    .media-container img.content-image {
-        width: 100%;
-        height: auto;
-    }
-}
-</style>
-<body>
-<div id="logo">
-    <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-        <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
-    </a>
-</div>
-    <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-</div>
-        <nav id="header" class="nav-menu">
-            <ul>
-                <li><a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a></li>
-                <li><a href="https://ampere.dev/starline-tapbox-rental">STARLINE</a></li>
-                <li><a href="https://ampere.dev/cables">CABLES</a></li>
-                <li><a href="https://ampere.dev/flir">FLIR</a></li>
-                <li><a href="https://ampere.dev/power-quality">POWER QUALITY</a></li>
-                <li><a href="https://ampere.dev/transformers">TRANSFORMERS</a></li>
-                <li><a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a></li>
-            </ul>
-        </nav>
-<div class="content-wrapper">
-    <div class="body-content">
-        <h1>Power Quality Solutions</h1>
-        <p><strong>Stable and Efficient Systems</strong></p>
-        <p>Our power quality solutions ensure stable and efficient electrical systems for industrial and commercial applications. We provide advanced monitoring, analysis, and mitigation tools to address issues like voltage sags, harmonics, and power factor inefficiencies.</p>
-        
-        <p>Optimize your operations with our comprehensive power quality services.</p>
-        
-        <h2>Why Choose Our Solutions</h2>
-        <ul>
-            <li><strong>Real-Time Monitoring:</strong> Continuous analysis to detect and resolve power issues.</li>
-            <li><strong>Custom Mitigation:</strong> Tailored solutions for harmonics, surges, and power factor correction.</li>
-            <li><strong>Energy Efficiency:</strong> Reduces energy waste and lowers operational costs.</li>
-            <li><strong>Expert Support:</strong> Dedicated team for installation, training, and maintenance.</li>
-        </ul>
-        
-        <h2>Technical Specifications</h2>
-        <p><strong>Monitoring Parameters:</strong> Voltage, Current, Harmonics, Power Factor</p>
-        <p><strong>Accuracy:</strong> ±0.5% for voltage and current</p>
-        <p><strong>Connectivity:</strong> Ethernet, Modbus, SCADA</p>
-        <p><strong>Reporting:</strong> Detailed analytics and compliance reports</p>
-        <p>Contact us to enhance your power quality and system reliability.</p>
-    </div>
-    <div class="media-container">
-        </video>
-    </div>
-</div>
-
-    <footer id="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="https://ampere.dev/about">ABOUT</a></li>
-                <li><a href="https://ampere.dev/products">PRODUCTS</a></li>
-                <li><a href="https://ampere.dev/services">SERVICES</a></li>
-                <li><a href="https://ampere.dev/blog">BLOG</a></li>
-                <li><a href="https://ampere.dev/privacy-legal">PRIVACY & LEGAL</a></li>
-                <li><a href="https://ampere.dev/contact">CONTACT</a></li>
-            </ul>
+<body class="font-ubuntu bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div id="logo">
+                <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                    <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
+                </a>
+            </div>
+            <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+            <nav id="header" class="nav-menu hidden md:flex space-x-6">
+                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
+                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
+                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
+                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-blue-600 font-medium">FLIR</a>
+                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-blue-600 font-medium">POWER QUALITY</a>
+                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-blue-600 font-medium">TRANSFORMERS</a>
+                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-blue-600 font-medium">3D FABRICATION</a>
+            </nav>
         </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/instagram-logo.png" alt="Instagram logo">
-            </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Ensure Stable Power with Precision!</h1>
+            <p class="text-xl mb-6">Discover Ampere Development’s Power Quality Solutions – Engineered for Efficient and Reliable Electrical Systems</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Get Your Power Quality Solution Now!</a>
         </div>
-        <div>
-            <p>AMPERE © 2025</p>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Are Power Issues Disrupting Your Operations?</h2>
+            <p class="text-lg mb-4">Voltage sags, harmonics, and poor power factor can cause equipment failures, downtime, and increased energy costs in industrial and commercial settings. Don’t let unstable power compromise your efficiency!</p>
+            <p class="text-lg font-semibold">Ampere Development’s power quality solutions deliver real-time monitoring and tailored mitigation to keep your systems running smoothly.</p>
+        </div>
+    </section>
+
+    <!-- Chapternav -->
+    <section class="py-8 bg-gray-200 sticky top-14 z-10">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-center space-x-4 md:space-x-8">
+                <a href="#monitoring" class="text-blue-900 font-semibold hover:underline">Real-Time Monitoring</a>
+                <a href="#mitigation" class="text-blue-900 font-semibold hover:underline">Custom Mitigation</a>
+                <a href="#analysis" class="text-blue-900 font-semibold hover:underline">Power Analysis</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Power Quality Solutions Sections -->
+    <section id="monitoring" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Real-Time Monitoring</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Continuous Analysis for Proactive Power Management</p>
+                    <p class="text-lg text-center mb-6">Our advanced monitoring systems track voltage, current, harmonics, and power factor in real time, detecting issues before they disrupt your operations.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>±0.5% accuracy for voltage and current measurements.</li>
+                        <li>Ethernet, Modbus, and SCADA connectivity.</li>
+                        <li>Instant alerts for power anomalies.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Start Monitoring Now!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/power-quality1.webp" alt="Power Quality Monitoring" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mitigation" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Custom Mitigation</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Tailored Solutions for Power Issues</p>
+                    <p class="text-lg text-center mb-6">We provide customized solutions to address harmonics, voltage surges, and power factor inefficiencies, ensuring stable and efficient electrical systems.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Harmonic filters for clean power delivery.</li>
+                        <li>Surge protection to safeguard equipment.</li>
+                        <li>Power factor correction to reduce energy costs.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Get Custom Mitigation!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <video muted loop loading="lazy" poster="/images/Ampere-Logo.webp" id="delayedVideo" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                        <source src="/video/power-quality.webm" type="video/webm">
+                        Sorry, your browser cannot play this video. Please check if the file path '/video/power-quality.webm' is correct or try a different browser.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analysis" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Power Analysis</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Detailed Insights for Optimal Performance</p>
+                    <p class="text-lg text-center mb-6">Our comprehensive analysis tools provide detailed reports on power quality, helping you optimize systems and ensure compliance with industry standards.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Detailed analytics on voltage, current, and harmonics.</li>
+                        <li>Compliance reports for regulatory requirements.</li>
+                        <li>Expert support for data interpretation and action plans.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Request Power Analysis!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/power-quality2.webp" alt="Power Quality Analysis" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Why Choose Ampere’s Power Quality Solutions?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Real-Time Monitoring</h3>
+                    <p>Continuous analysis to detect and resolve power issues before they cause downtime.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Energy Efficiency</h3>
+                    <p>Reduces energy waste and lowers operational costs with optimized power systems.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Expert Support</h3>
+                    <p>Dedicated team for installation, training, and maintenance to ensure success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Technical Specifications</h2>
+            <div class="max-w-2xl mx-auto">
+                <ul class="list-none text-lg">
+                    <li><strong>Monitoring Parameters:</strong> Voltage, Current, Harmonics, Power Factor</li>
+                    <li><strong>Accuracy:</strong> ±0.5% for voltage and current</li>
+                    <li><strong>Connectivity:</strong> Ethernet, Modbus, SCADA</li>
+                    <li><strong>Reporting:</strong> Detailed analytics and compliance reports</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded">
+                    <p class="italic">“Ampere’s power quality monitoring saved us from costly downtime. Highly reliable!”</p>
+                    <p class="mt-2 font-bold">– David P., Plant Manager</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded">
+                    <p class="italic">“Their harmonic mitigation solutions improved our system efficiency significantly.”</p>
+                    <p class="mt-2 font-bold">– Lisa T., Electrical Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Don’t Let Power Issues Slow You Down!</h2>
+            <p class="text-lg mb-6">Contact Ampere Development today to get your custom power quality solutions for any application.</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Request a Quote Now!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="footer-links">
+                    <ul class="flex flex-col md:flex-row gap-4">
+                        <li><a href="https://ampere.dev/about" class="hover:text-blue-400">ABOUT</a></li>
+                        <li><a href="https://ampere.dev/products" class="hover:text-blue-400">PRODUCTS</a></li>
+                        <li><a href="https://ampere.dev/services" class="hover:text-blue-400">SERVICES</a></li>
+                        <li><a href="https://ampere.dev/blog" class="hover:text-blue-400">BLOG</a></li>
+                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-blue-400">PRIVACY & LEGAL</a></li>
+                        <li><a href="https://ampere.dev/contact" class="hover:text-blue-400">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons flex gap-4">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <img src="icons/facebook-logo.png" alt="Facebook logo" class="h-6">
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener">
+                        <img src="icons/logo-black.png" alt="X logo" class="h-6">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                        <img src="icons/linkedin.png" alt="LinkedIn logo" class="h-6">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                        <img src="icons/instagram-logo.png" alt="Instagram logo" class="h-6">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <p>AMPERE © 2025</p>
+            </div>
         </div>
     </footer>
-<script>
-    window.addEventListener('load', () => {
-        const video = document.getElementById('delayedVideo');
-        setTimeout(() => {
-            video.play().catch(error => {
-                console.error('Video playback failed:', error);
+
+    <script>
+        // Delay video playback by 3 seconds
+        window.addEventListener('load', () => {
+            const videos = document.querySelectorAll('#delayedVideo');
+            videos.forEach(video => {
+                setTimeout(() => {
+                    video.play().catch(error => {
+                        console.error('Video playback failed:', error);
+                    });
+                }, 3000);
             });
-        }, 3000);
-    });
-</script>
+        });
+
+        // Toggle mobile menu
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
