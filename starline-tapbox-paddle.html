@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character Encoding -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="description" content="Fast Starline paddle and tapbox repair for arc-flash, shipping, or wear damage. Durable solutions for data centers and industrial systems. Get a quote!">
     <meta name="author" content="Ampere Development">
     <meta name="robots" content="index, follow">
     <title>Starline Paddle & Tapbox Repair | Ampere Development</title>
 
-    <!-- Open Graph Tags -->
+    <!-- SEO -->
     <meta property="og:title" content="Starline Paddle & Tapbox Repair | Ampere Development">
     <meta property="og:description" content="Fast Starline paddle and tapbox repair for arc-flash, shipping, or wear damage. Durable solutions for data centers and industrial systems. Get a quote!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ampere.dev/starline-tapbox-paddle">
     <meta property="og:image" content="https://ampere.dev/images/Stab_Assembly.webp">
     <meta property="og:site_name" content="Ampere Development">
-
-    <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Starline Paddle & Tapbox Repair | Ampere Development">
     <meta name="twitter:description" content="Fast Starline paddle and tapbox repair for arc-flash, shipping, or wear damage. Durable solutions for data centers and industrial systems. Get a quote!">
@@ -28,35 +24,14 @@
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Fonts and Preconnect -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/chapternav.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Inline CSS -->
-    <style>
-        .custom-btn {
-            background-color: #ff0000;
-        }
-        .custom-btn:hover {
-            background-color: #cc0000;
-        }
-        @media (max-width: 768px) {
-            .menuToggler {
-                display: block;
-            }
-        }
-    </style>
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
@@ -66,199 +41,302 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+        .chapternav-container {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            position: sticky;
+            top: 4rem;
+            z-index: 10;
+        }
+        .chapternav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            overflow-x: auto;
+            padding: 0.5rem;
+        }
+        .chapternav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #1f2937;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            transition: background-color 0.3s ease;
+        }
+        .chapternav-item:hover {
+            background-color: #e5e7eb;
+        }
+        .chapternav-item img {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-bottom: 0.25rem;
+        }
+        @media (max-width: 768px) {
+            .chapternav {
+                justify-content: flex-start;
+            }
+            .chapternav-item {
+                font-size: 0.8rem;
+                padding: 0.25rem;
+            }
+            .chapternav-item img {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    </style>
 </head>
-<body class="bg-white font-sans">
-    <div id="logo">
-        <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-            <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
-        </a>
-    </div>
-    <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-    <nav id="header" class="nav-menu">
-        <ul>
-            <li><a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a></li>
-            <li><a href="https://ampere.dev/starline-tapbox-rental">STARLINE</a></li>
-            <li><a href="https://ampere.dev/cables">CABLES</a></li>
-            <li><a href="https://ampere.dev/flir">FLIR</a></li>
-            <li><a href="https://ampere.dev/power-quality">POWER QUALITY</a></li>
-            <li><a href="https://ampere.dev/transformers">TRANSFORMERS</a></li>
-            <li><a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a></li>
-        </ul>
-    </nav>
-
-    <div class="chapternav-container">
-        <div class="chapternav">
-            <div class="chapternav-scroll">
-                <a href="https://ampere.dev/starline-tapbox-rental" class="chapternav-item">
-                    <img src="icons/tapbox.webp" alt="Tap Box">
-                    <span>Tap Box</span>
-                </a>
-                <a href="https://ampere.dev/starline-tapbox-paddle" class="chapternav-item">
-                    <img src="icons/stab.webp" alt="Paddle">
-                    <span>Paddle</span>
-                </a>
-                <a href="https://ampere.dev/starline-busway-commissioning" class="chapternav-item">
-                    <img src="icons/cx.webp" alt="Commissioning">
-                    <span>Commissioning</span>
-                </a>
-                <a href="https://ampere.dev/starline-hanger" class="chapternav-item">
-                    <img src="icons/hanger.webp" alt="Hanger">
-                    <span>Hanger Clip</span>
+<body class="font-ubuntu bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div id="logo">
+                <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                    <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
                 </a>
             </div>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="py-8 text-center">
-        <div class="container mx-auto px-4">
-            <h1 class="text-5xl font-bold mb-2 text-black">Starline Paddle & Tapbox Repair</h1>
-            <h2 class="text-4xl font-bold mb-2">Fix Damaged Paddles Fast!</h2>
-            <p class="text-2xl text-gray-700">Durable, Precision-Crafted Replacements for Your Mission-Critical Power Systems</p>
+            <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+            <nav id="header" class="nav-menu hidden md:flex space-x-6">
+                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
+                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
+                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
+                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-blue-600 font-medium">FLIR</a>
+                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-blue-600 font-medium">POWER QUALITY</a>
+                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-blue-600 font-medium">TRANSFORMERS</a>
+                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-blue-600 font-medium">3D FABRICATION</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto py-12 px-4">
-        <!-- Premium Electrical Solutions -->
-        <section id="premium-solutions" class="mb-12 bg-blue-100 p-8 rounded-lg flex flex-col md:flex-row items-start gap-6">
-            <div class="md:w-2/3">
-                <h2 class="text-4xl font-bold mb-4 text-blue-800">Premium Electrical Solutions for Starline Systems</h2>
-                <p class="text-gray-700 text-lg leading-relaxed">
-                    Upgrade or repair your electrical infrastructure with our high-quality proprietary nylon paddle replacements, designed for B400T5 busway systems (250–1250 amp). Engineered for precision and durability, our components are crafted using advanced materials and manufacturing techniques to ensure superior performance and reliability. With a fast lead time of 4-5 days, we deliver robust solutions for demanding environments.
-                </p>
-                <a href="https://ampere.dev/contact" class="inline-block mt-6 custom-btn text-white font-bold py-3 px-6 rounded-lg">Order Now and Restore Reliability!</a>
-            </div>
-            <img src="/images/Stab_Assembly.webp" alt="Starline Paddle Assembly" loading="lazy" class="md:w-1/3 rounded-lg shadow-md">
-        </section>
+    <!-- Chapternav -->
+    <div class="chapternav-container">
+        <div class="chapternav">
+            <a href="https://ampere.dev/starline-tapbox-rental" class="chapternav-item">
+                <img src="icons/tapbox.webp" alt="Tap Box">
+                <span>Tap Box</span>
+            </a>
+            <a href="https://ampere.dev/starline-tapbox-paddle" class="chapternav-item">
+                <img src="icons/stab.webp" alt="Paddle">
+                <span>Paddle</span>
+            </a>
+            <a href="https://ampere.dev/starline-busway-commissioning" class="chapternav-item">
+                <img src="icons/cx.webp" alt="Commissioning">
+                <span>Commissioning</span>
+            </a>
+            <a href="https://ampere.dev/starline-hanger" class="chapternav-item">
+                <img src="icons/hanger.webp" alt="Hanger">
+                <span>Hanger Clip</span>
+            </a>
+        </div>
+    </div>
 
-        <!-- Advanced Material Technology -->
-        <section id="material-technology" class="mb-12 flex flex-col md:flex-row items-start gap-6">
-            <div class="md:w-2/3">
-                <h2 class="text-3xl font-bold mb-4 text-blue-800">Advanced Material Technology</h2>
-                <p class="text-gray-700 text-lg leading-relaxed">
-                    The Xylon-V12-KRT material represents a breakthrough in high-performance polymer engineering. Processed through the innovative Kinetic Resonance Technique, it exhibits exceptional tensile strength and thermal stability, ideal for aerospace and biomedical applications. Its molecular structure ensures unparalleled dimensional accuracy and surface finish, surpassing traditional fabrication methods. Xylon-V12-KRT enables rapid prototyping and production of complex geometries, revolutionizing industries requiring lightweight yet durable components.
-                </p>
-                <div class="mt-6">
-                    <h3 class="text-2xl font-semibold mb-2">Material and Base Finish</h3>
-                    <p class="text-gray-700 text-lg">
-                        Proprietary Xylon-V12-KRT, renowned for its exceptional strength, thermal resistance, and consistent quality. Tumbled - Jet-Black Pigmented for a sleek, professional appearance with enhanced uniformity and durability. (Other colors available upon request.)
-                    </p>
-                </div>
-                <div class="mt-6">
-                    <h3 class="text-2xl font-semibold mb-2">Custom Installation</h3>
-                    <p class="text-gray-700 text-lg">
-                        Thermo-Bonded Anchors ensure secure and reliable fastening for seamless integration into your systems.
-                    </p>
-                </div>
-            </div>
-            <img src="/images/Stab_Halves.webp" alt="Starline Paddle Halves" loading="lazy" class="md:w-1/3 rounded-lg shadow-md">
-        </section>
+    <!-- Hero Section -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Restore Your Starline Systems Fast!</h1>
+            <p class="text-xl mb-6">Precision-Crafted Paddle and Tapbox Repairs for Arc-Flash, Wear, or Shipping Damage</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Get a Quote Now!</a>
+        </div>
+    </section>
 
-        <!-- Ampere Paddle Replacements -->
-        <section id="paddle-replacements" class="mb-12 flex flex-col md:flex-row items-start gap-6">
-            <div class="md:w-2/3">
-                <h2 class="text-3xl font-bold mb-4 text-blue-800">Ampere Paddle Replacements for Starline B400T5</h2>
-                <h3 class="text-2xl font-semibold mb-2">Reasons to Choose Ampere Paddle Replacements</h3>
-                <p class="text-gray-700 text-lg">
-                    Our proprietary high-impact polymer ensures durability in harsh conditions. Advanced additive manufacturing delivers uniform strength and superior finish. High stress resistance with machine-grade screws provides robust assembly. Fully compatible with Starline B400T5 busway systems (250–1250 amp). Resists arc-flash and wear for consistent operation.
-                </p>
-                <h3 class="text-2xl font-semibold mb-2 mt-4">Why Choose Our Components?</h3>
-                <p class="text-gray-700 text-lg">
-                    Xylon-V12-KRT and proprietary polymers offer exceptional strength. Bead Blast - Dyed Black and Vapor Smooth finishes provide professional aesthetics. Heat set inserts and machine-grade screws ensure secure assembly. Designed for Starline V41, V8, and B400T5 busway systems. Ready to ship in 4-5 days.
-                </p>
-                <p class="text-gray-700 text-lg mt-4">
-                    Only $799 per set delivered! Bulk discounts available—stock up and save on large orders!
-                </p>
-                <a href="https://ampere.dev/contact" class="inline-block mt-6 custom-btn text-white font-bold py-3 px-6 rounded-lg">Contact Sales for Bulk Pricing</a>
-            </div>
-            <img src="/images/Stab3.webp" alt="Starline Paddle Component" loading="lazy" class="md:w-1/3 rounded-lg shadow-md">
-        </section>
+    <!-- Problem Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Is Damaged Equipment Disrupting Your Power Systems?</h2>
+            <p class="text-lg mb-4">Arc-flash, shipping damage, or wear can compromise Starline paddles and tapboxes, leading to downtime and safety risks in data centers and industrial setups. Don’t let faulty components halt your operations!</p>
+            <p class="text-lg font-semibold">Ampere Development’s repair solutions use advanced materials and fast lead times to restore your systems reliably.</p>
+        </div>
+    </section>
 
-        <!-- Customization Options -->
-        <section id="customization" class="mb-12">
-            <h2 class="text-3xl font-bold mb-4 text-blue-800">Make It Yours: Customize Your Paddles</h2>
+    <!-- Paddle Repair Sections -->
+    <section id="premium-solutions" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row gap-8">
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-semibold mb-2">Finish</h3>
-                    <p class="text-gray-700 text-lg">
-                        Choose from multiple color options to match your facility’s aesthetic or enhance visibility. Our durable finishes withstand harsh conditions while adding a professional look.
-                    </p>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Premium Paddle Replacements</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">High-Quality Repairs for Starline B400T5 Systems</p>
+                    <p class="text-lg text-center mb-6">Our proprietary nylon paddle replacements for B400T5 busways (250–1250 amp) are engineered for durability and precision, ensuring seamless performance in demanding environments.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Fully compatible with Starline B400T5 busways.</li>
+                        <li>Resists arc-flash and wear for reliable operation.</li>
+                        <li>Fast lead time: 4-5 days for delivery.</li>
+                        <li>Only $799 per set, with bulk discounts available.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Order Now!</a>
+                    </div>
                 </div>
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-semibold mb-2">Labeling</h3>
-                    <p class="text-gray-700 text-lg">
-                        Personalize your paddles with laser-etched details—your company name, logo, or QR code. Ensure easy identification and showcase your brand with every replacement.
-                    </p>
-                </div>
-            </div>
-            <a href="https://ampere.dev/contact" class="inline-block mt-6 custom-btn text-white font-bold py-3 px-6 rounded-lg">Inquire About Customization</a>
-        </section>
-
-        <!-- Order & Shipping -->
-        <section id="order-shipping" class="mb-12 text-center">
-            <h2 class="text-3xl font-bold mb-4 text-blue-800">Order Your Ampere Paddle Replacements Today!</h2>
-            <p class="text-gray-700 text-lg">
-                Restore your Starline T5 Track Busway with Ampere Paddle Replacements. Enjoy fast, reliable worldwide shipping (delivery within 48 hours in the U.S., subject to availability) at standard rates. Need bulk? Ask about discounts!
-            </p>
-            <a href="https://ampere.dev/contact" class="inline-block mt-6 custom-btn text-white font-bold py-3 px-6 rounded-lg">Contact Us Today!</a>
-        </section>
-
-        <!-- FAQs -->
-        <section id="faqs" class="mb-12">
-            <h2 class="text-3xl font-bold mb-4 text-blue-800">Frequently Asked Questions</h2>
-            <div class="flex flex-col gap-4">
-                <div>
-                    <p class="text-gray-700 text-lg"><strong>Q: What Starline systems are compatible with your paddles?</strong><br>A: Our paddles are designed for Starline B400T5 series busways, ensuring seamless integration.</p>
-                </div>
-                <div>
-                    <p class="text-gray-700 text-lg"><strong>Q: Can you repair paddles damaged by arc-flash?</strong><br>A: Yes, our replacements are built to restore systems affected by arc-flash, wear, or shipping damage.</p>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/Stab_Assembly.webp" alt="Starline Paddle Assembly" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="material-technology" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Advanced Material Technology</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Xylon-V12-KRT for Superior Performance</p>
+                    <p class="text-lg text-center mb-6">Our paddles use Xylon-V12-KRT, a high-performance polymer with exceptional tensile strength and thermal stability, processed via Kinetic Resonance Technique for unmatched durability.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Proprietary Xylon-V12-KRT for strength and resistance.</li>
+                        <li>Jet-Black pigmented, tumbled finish (other colors available).</li>
+                        <li>Thermo-Bonded Anchors for secure installation.</li>
+                        <li>Ideal for aerospace, biomedical, and industrial applications.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Inquire About Materials!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/Stab_Halves.webp" alt="Starline Paddle Halves" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="customization" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Customization Options</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Personalize Your Paddle Replacements</p>
+                    <p class="text-lg text-center mb-6">Make your paddles unique with custom finishes and labeling to match your facility’s needs or brand identity.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Multiple color options for aesthetic or visibility.</li>
+                        <li>Laser-etched company name, logo, or QR code.</li>
+                        <li>Durable finishes for harsh environments.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Customize Your Paddles!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/Stab3.webp" alt="Starline Paddle Component" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Why Choose Ampere’s Paddle Repairs?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Fast Lead Time</h3>
+                    <p>Ready to ship in 4-5 days to minimize downtime.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Durable Materials</h3>
+                    <p>Xylon-V12-KRT and proprietary polymers for lasting performance.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Cost-Effective</h3>
+                    <p>Only $799 per set, with bulk discounts available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Technical Specifications</h2>
+            <div class="max-w-2xl mx-auto">
+                <ul class="list-none text-lg">
+                    <li><strong>Compatibility:</strong> Starline B400T5 busways (250–1250 amp)</li>
+                    <li><strong>Material:</strong> Xylon-V12-KRT polymer</li>
+                    <li><strong>Finish:</strong> Jet-Black tumbled (custom colors available)</li>
+                    <li><strong>Fasteners:</strong> Thermo-Bonded Anchors, machine-grade screws</li>
+                    <li><strong>Lead Time:</strong> 4-5 days</li>
+                    <li><strong>Price:</strong> $799 per set (bulk discounts available)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded">
+                    <p class="italic">“Ampere’s paddle replacements restored our data center’s busway in days. Top-notch quality!”</p>
+                    <p class="mt-2 font-bold">– Michael T., Data Center Manager</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded">
+                    <p class="italic">“The Xylon-V12-KRT paddles are incredibly durable. Fast delivery and great service!”</p>
+                    <p class="mt-2 font-bold">– Sarah L., Industrial Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Don’t Let Damaged Paddles Slow You Down!</h2>
+            <p class="text-lg mb-6">Contact Ampere Development today for fast, durable Starline paddle and tapbox repair solutions.</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Request a Quote Now!</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="https://ampere.dev/about">ABOUT</a></li>
-                <li><a href="https://ampere.dev/products">PRODUCTS</a></li>
-                <li><a href="https://ampere.dev/services">SERVICES</a></li>
-                <li><a href="https://ampere.dev/blog">BLOG</a></li>
-                <li><a href="https://ampere.dev/privacy-legal">PRIVACY & LEGAL</a></li>
-                <li><a href="https://ampere.dev/contact">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener" aria-label="Follow us on X">
-                <img src="icons/logo-black.png" alt="X logo">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
-                <img src="icons/instagram-logo.png" alt="Instagram logo">
-            </a>
-        </div>
-        <div>
-            <p>AMPERE © 2025</p>
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="footer-links">
+                    <ul class="flex flex-col md:flex-row gap-4">
+                        <li><a href="https://ampere.dev/about" class="hover:text-blue-400">ABOUT</a></li>
+                        <li><a href="https://ampere.dev/products" class="hover:text-blue-400">PRODUCTS</a></li>
+                        <li><a href="https://ampere.dev/services" class="hover:text-blue-400">SERVICES</a></li>
+                        <li><a href="https://ampere.dev/blog" class="hover:text-blue-400">BLOG</a></li>
+                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-blue-400">PRIVACY & LEGAL</a></li>
+                        <li><a href="https://ampere.dev/contact" class="hover:text-blue-400">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons flex gap-4">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
+                        <img src="icons/facebook-logo.png" alt="Facebook logo" class="h-6">
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="Follow us on X">
+                        <img src="icons/logo-black.png" alt="X logo" class="h-6">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn">
+                        <img src="icons/linkedin.png" alt="LinkedIn logo" class="h-6">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+                        <img src="icons/instagram-logo.png" alt="Instagram logo" class="h-6">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <p>AMPERE © 2025</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
     <script>
-        $(document).ready(function() {
-            $('.menuToggler').on('click keypress', function(e) {
-                if (e.type === 'click' || e.which === 13 || e.which === 32) {
-                    $('.nav-menu').toggleClass('active');
-                    e.preventDefault();
-                }
-            });
+        // Toggle mobile menu
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('hidden');
         });
     </script>
 </body>
