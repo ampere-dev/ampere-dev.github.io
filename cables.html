@@ -34,25 +34,32 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Header -->
-    <header>
-        <div id="logo">
+<header class="bg-white shadow">
+    <div class="container mx-auto px-4 flex items-center justify-between py-4">
+        <!-- Logo (remove if flir.html has no logo) -->
+        <div id="logo" class="flex-shrink-0">
             <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-                <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
+                <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" class="h-8" loading="lazy">
             </a>
         </div>
-        <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-        <nav id="header" class="nav-menu">
-            <ul>
-                <li><a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a></li>
-                <li><a href="https://ampere.dev/starline-tapbox-rental">STARLINE</a></li>
-                <li><a href="https://ampere.dev/cables">CABLES</a></li>
-                <li><a href="https://ampere.dev/flir">FLIR</a></li>
-                <li><a href="https://ampere.dev/power-quality">POWER QUALITY</a></li>
-                <li><a href="https://ampere.dev/transformers">TRANSFORMERS</a></li>
-                <li><a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a></li>
+        <!-- Hamburger Menu (visible only on mobile) -->
+        <div class="menuToggler hidden md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">
+            ☰
+        </div>
+        <!-- Navigation -->
+        <nav id="header" class="nav-menu hidden md:flex md:items-center">
+            <ul class="flex flex-col md:flex-row md:space-x-6">
+                <li><a href="https://ampere.dev/what-are-load-banks" class="text-blue-900 hover:underline">LOAD BANKS</a></li>
+                <li><a href="https://ampere.dev/starline-tapbox-rental" class="text-blue-900 hover:underline">STARLINE</a></li>
+                <li><a href="https://ampere.dev/cables" class="text-blue-900 hover:underline">CABLES</a></li>
+                <li><a href="https://ampere.dev/flir" class="text-blue-900 hover:underline">FLIR</a></li>
+                <li><a href="https://ampere.dev/power-quality" class="text-blue-900 hover:underline">POWER QUALITY</a></li>
+                <li><a href="https://ampere.dev/transformers" class="text-blue-900 hover:underline">TRANSFORMERS</a></li>
+                <li><a href="https://ampere.dev/3D-fabrication" class="text-blue-900 hover:underline">3D FABRICATION</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="bg-blue-800 text-white py-16 text-center">
@@ -238,5 +245,10 @@
         <p>AMPERE © 2025</p>
     </div>
 </footer>
+<script>
+    document.querySelector('.menuToggler').addEventListener('click', () => {
+        document.querySelector('.nav-menu').classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
