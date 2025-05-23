@@ -1,0 +1,139 @@
+/* Merged global.css and styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: none !important;
+}
+
+body.home {
+    color: #FFFFFF;
+    background-color: #333333;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: #E5E5E5;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+h2.ex2 {
+    background-color: #E5E5E5;
+    margin: 20px;
+    padding: 10px;
+}
+
+p {
+    margin: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.body-content {
+    flex: 1;
+    min-width: 300px;
+    color: inherit;
+}
+
+.body-content h1 {
+    color: inherit;
+}
+
+body.home .body-content,
+body.home .body-content h1,
+body.home .body-content p,
+body.home .body-content li {
+    color: #fff !important;
+}
+
+body:not(.home) .body-content,
+body:not(.home) .body-content h1,
+body:not(.home) .body-content p,
+body:not(.home) .body-content li {
+    color: #000 !important;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+body:not(.home) #footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #000000 !important;
+    background-color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    position: relative;
+    z-index: 2;
+}
+
+body.home #footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    position: relative;
+    z-index: 2;
+}
+
+body.home #footer * {
+    color: #FFFFFF !important;
+}
+
+.footer-links a:hover,
+body.home #footer .footer-links a:hover,
+body:not(.home) #footer .footer-links a:hover {
+    color: #FE0002 !important;
+}
