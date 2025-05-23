@@ -57,13 +57,13 @@ header {
 .nav-menu a {
     color: #000000; /* Black for non-home pages */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .home .nav-menu a {
     color: #FFFFFF; /* White for index.html */
     text-direction: none;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .nav-menu a:hover {
