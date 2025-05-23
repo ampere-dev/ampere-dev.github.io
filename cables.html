@@ -23,17 +23,24 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Header -->
-    <header class="bg-blue-900 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <img src="https://ampere.dev/images/Ampere-Logo.webp" alt="Ampere Development Logo" class="h-12">
-            <nav class="space-x-4">
-                <a href="https://ampere.dev/about" class="hover:underline">About</a>
-                <a href="https://ampere.dev/products" class="hover:underline">Products</a>
-                <a href="https://ampere.dev/services" class="hover:underline">Services</a>
-                <a href="https://ampere.dev/blog" class="hover:underline">Blog</a>
-                <a href="https://ampere.dev/contact" class="hover:underline">Contact</a>
-            </nav>
+    <header>
+        <div id="logo">
+            <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
+            </a>
         </div>
+        <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+        <nav id="header" class="nav-menu">
+            <ul>
+                <li><a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a></li>
+                <li><a href="https://ampere.dev/starline-tapbox-rental">STARLINE</a></li>
+                <li><a href="https://ampere.dev/cables">CABLES</a></li>
+                <li><a href="https://ampere.dev/flir">FLIR</a></li>
+                <li><a href="https://ampere.dev/power-quality">POWER QUALITY</a></li>
+                <li><a href="https://ampere.dev/transformers">TRANSFORMERS</a></li>
+                <li><a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
