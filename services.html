@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character Encoding -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<meta name="description" content="Explore Ampere Development's expert services, including load bank rentals, Starline tapbox rentals, and professional load testing. Contact us to learn more.">    <meta name="robots" content="index, follow">
+    <meta name="description" content="Explore Ampere Development's expert services, including load bank rentals, Starline tapbox rentals, and professional load testing. Contact us to learn more.">
+    <meta name="robots" content="index, follow">
     <title>Services | Ampere Development</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        <!-- Favicon -->
+    <!-- SEO -->
+    <meta property="og:title" content="Services | Ampere Development">
+    <meta property="og:description" content="Explore Ampere Development's expert services, including load bank rentals, Starline tapbox rentals, and professional load testing. Contact us to learn more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ampere.dev/services">
+    <meta property="og:image" content="https://ampere.dev/images/commissioning.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services | Ampere Development">
+    <meta name="twitter:description" content="Explore Ampere Development's expert services, including load bank rentals, Starline tapbox rentals, and professional load testing.">
+    <meta name="twitter:image" content="https://ampere.dev/images/commissioning.webp">
+
+    <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Fonts and Preconnect -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-        <!-- Stylesheets -->
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
+
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
     <script>
@@ -35,127 +39,219 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 font-sans">
-    <!-- Navigation Bar -->
-    <nav class="bg-blue-900 text-white p-4 sticky top-0 z-10 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold">Ampere Development</a>
-            <div class="space-x-6">
-                <a href="https://ampere.dev/" class="hover:text-blue-300">Home</a>
-                <a href="https://ampere.dev/products" class="text-blue-300 font-semibold">Products</a>
-                <a href="https://ampere.dev/about" class="hover:text-blue-300">About</a>
-                <a href="https://ampere.dev/contact" class="hover:text-blue-300">Contact</a>
+<body class="font-ubuntu bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div id="logo">
+                <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                    <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
+                </a>
             </div>
+            <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+            <nav id="header" class="nav-menu hidden md:flex space-x-6">
+                <a href="https://ampere.dev" class="text-gray-600 hover:text-blue-600 font-medium">HOME</a>
+                <a href="https://ampere.dev/products" class="text-gray-600 hover:text-blue-600 font-medium">PRODUCTS</a>
+                <a href="https://ampere.dev/services" class="text-blue-600 font-medium">SERVICES</a>
+                <a href="https://ampere.dev/about" class="text-gray-600 hover:text-blue-600 font-medium">ABOUT</a>
+                <a href="https://ampere.dev/contact" class="text-gray-600 hover:text-blue-600 font-medium">CONTACT</a>
+                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
+                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
+                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
+                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-blue-600 font-medium">FLIR</a>
+                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-blue-600 font-medium">POWER QUALITY</a>
+                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-blue-600 font-medium">TRANSFORMERS</a>
+                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-blue-600 font-medium">3D FABRICATION</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="bg-blue-800 text-white py-20">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto">
-                Leverage our expertise in electrical engineering and power systems to ensure your projects are efficient, reliable, and future-ready.
-            </p>
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Expert Electrical Services</h1>
+            <p class="text-xl mb-6">Comprehensive Solutions for Power System Reliability and Efficiency</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Discover Our Services!</a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="py-16">
+    <!-- Problem Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Facing Power System Challenges?</h2>
+            <p class="text-lg mb-4">Unreliable setups, compliance issues, or inefficient systems can disrupt your operations in data centers, industrial plants, or critical facilities. Don’t let these hurdles slow you down!</p>
+            <p class="text-lg font-semibold">Ampere Development’s expert services ensure your power infrastructure is robust, compliant, and optimized for performance.</p>
+        </div>
+    </section>
+
+    <!-- Service Sections -->
+    <section id="commissioning-support" class="py-12 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Comprehensive Service Solutions</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Commissioning Support -->
-                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
-                    <i class="fas fa-check-circle text-blue-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Commissioning Support</h3>
-                    <p class="text-gray-600">
-                        Expert guidance for system setup, testing, and validation. We ensure your power infrastructure is operational and compliant from the start.
-                    </p>
-                    <a href="https://ampere.dev/contact" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">Get Support</a>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Commissioning Support</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Seamless System Setup and Validation</p>
+                    <p class="text-lg text-center mb-6">Our commissioning experts guide you through system setup, testing, and validation, ensuring your power infrastructure is operational and compliant from day one.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Comprehensive testing for system reliability.</li>
+                        <li>Ensures compliance with industry standards.</li>
+                        <li>Ideal for data centers and critical facilities.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Get Support!</a>
+                    </div>
                 </div>
-                <!-- Consulting -->
-                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
-                    <i class="fas fa-clipboard-check text-blue-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Consulting</h3>
-                    <p class="text-gray-600">
-                        Tailored consulting services for low- and medium-voltage projects. From design to execution, we optimize your electrical systems for performance.
-                    </p>
-                    <a href="https://ampere.dev/contact" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">Consult Now</a>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/commissioning.webp" alt="Commissioning support" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
                 </div>
-                <!-- QA/QC -->
-                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
-                    <i class="fas fa-shield-alt text-blue-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Quality Assurance & Control</h3>
-                    <p class="text-gray-600">
-                        Rigorous QA/QC processes to ensure your systems meet the highest standards. We deliver reliability and compliance for critical infrastructure.
-                    </p>
-                    <a href="https://ampere.dev/contact" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="consulting" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Consulting</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Tailored Expertise for Your Projects</p>
+                    <p class="text-lg text-center mb-6">Our consulting services optimize low- and medium-voltage projects, from design to execution, ensuring peak performance and efficiency.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Custom solutions for unique project needs.</li>
+                        <li>Expert guidance from experienced engineers.</li>
+                        <li>Enhances system performance and longevity.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Consult Now!</a>
+                    </div>
                 </div>
-                <!-- Power Quality & Thermal Studies -->
-                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
-                    <i class="fas fa-thermometer-half text-blue-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Power Quality & Thermal Studies</h3>
-                    <p class="text-gray-600">
-                        Advanced analysis to optimize power quality and thermal performance. Identify and resolve issues to enhance system efficiency and longevity.
-                    </p>
-                    <a href="https://ampere.dev/contact" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">Request Analysis</a>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/consulting.webp" alt="Consulting services" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
                 </div>
-                <!-- 3D Fabrication -->
-                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
-                    <i class="fas fa-cubes text-blue-600 text-3xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">3D Fabrication</h3>
-                    <p class="text-gray-600">
-                        Custom 3D fabrication for specialized components and prototypes. Precision-engineered solutions for unique project requirements.
-                    </p>
-                    <a href="https://ampere.dev/contact" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="qa-qc" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Quality Assurance & Control</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Ensuring Excellence in Every System</p>
+                    <p class="text-lg text-center mb-6">Our rigorous QA/QC processes guarantee that your power systems meet the highest standards of reliability and compliance.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Thorough inspections for system integrity.</li>
+                        <li>Compliance with industry regulations.</li>
+                        <li>Delivers peace of mind for critical infrastructure.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Learn More!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/qaqc.webp" alt="Quality assurance and control" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Why Choose Ampere’s Services?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Expertise</h3>
+                    <p>Backed by a team of seasoned electrical engineers.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Reliability</h3>
+                    <p>Ensuring systems are robust and compliant.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Customization</h3>
+                    <p>Tailored solutions for your unique needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded shadow">
+                    <p class="italic">“Ampere’s commissioning support ensured our system was up and running flawlessly from day one!”</p>
+                    <p class="mt-2 font-bold">– Michael R., Data Center Manager</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <p class="italic">“Their QA/QC services gave us confidence in our power infrastructure. Top-notch expertise!”</p>
+                    <p class="mt-2 font-bold">– Sarah K., Industrial Engineer</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="bg-blue-900 text-white py-16">
-        <div class="container mx-auto text-center">
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4">Partner with Us for Success</h2>
-            <p class="text-lg max-w-xl mx-auto mb-8">
-                Reach out to our team to explore how our services can elevate your electrical engineering projects.
-            </p>
-            <a href="https://ampere.dev/contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-                Contact Us
-            </a>
+            <p class="text-lg mb-6">Reach out to explore how Ampere’s services can elevate your electrical engineering projects.</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Contact Us!</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-    <div class="footer-links">
-            <ul>
-                <li><a href="https://ampere.dev/about">ABOUT</a></li>
-                <li><a href="https://ampere.dev/products">PRODUCTS</a></li>
-                <li><a href="https://ampere.dev/services">SERVICES</a></li>
-                <li><a href="https://ampere.dev/blog">BLOG</a></li>
-                <li><a href="https://ampere.dev/privacy-legal">PRIVACY & LEGAL</a></li>
-                <li><a href="https://ampere.dev/contact">CONTACT</a></li>
-            </ul>
-    </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/instagram-logo.png" alt="Instagram logo">
-            </a>
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="footer-links">
+                    <ul class="flex flex-col md:flex-row gap-4">
+                        <li><a href="https://ampere.dev/about" class="hover:text-blue-400">ABOUT</a></li>
+                        <li><a href="https://ampere.dev/products" class="hover:text-blue-400">PRODUCTS</a></li>
+                        <li><a href="https://ampere.dev/services" class="hover:text-blue-400">SERVICES</a></li>
+                        <li><a href="https://ampere.dev/blog" class="hover:text-blue-400">BLOG</a></li>
+                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-blue-400">PRIVACY & LEGAL</a></li>
+                        <li><a href="https://ampere.dev/contact" class="hover:text-blue-400">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons flex gap-4">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <img src="/icons/facebook-logo.png" alt="Facebook logo" class="h-6">
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener">
+                        <img src="/icons/logo-black.png" alt="X logo" class="h-6">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                        <img src="/icons/linkedin.png" alt="LinkedIn logo" class="h-6">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                        <img src="/icons/instagram-logo.png" alt="Instagram logo" class="h-6">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <p>AMPERE © 2025</p>
+            </div>
         </div>
-    <div>
-        <p>AMPERE © 2025</p>
-    </div>
-</footer>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
