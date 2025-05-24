@@ -1,89 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character Encoding -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="description" content="Ampere empowers businesses with cutting-edge load bank solutions for reliable power systems, testing, and commissioning.">
+    <meta name="robots" content="index, follow">
     <title>About Ampere | Powering Reliability</title>
 
     <!-- SEO -->
-    <meta name="robots" content="index, follow">
-
-    <!-- Preload & Performance -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <meta property="og:title" content="About Ampere | Powering Reliability">
+    <meta property="og:description" content="Ampere empowers businesses with cutting-edge load bank solutions for reliable power systems, testing, and commissioning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ampere.dev/about">
+    <meta property="og:image" content="https://ampere.dev/images/developer.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Ampere | Powering Reliability">
+    <meta name="twitter:description" content="Ampere empowers businesses with cutting-edge load bank solutions for reliable power systems, testing, and commissioning.">
+    <meta name="twitter:image" content="https://ampere.dev/images/developer.webp">
 
     <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Fonts and Preconnect -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Custom Styles for Wider Page and Two-by-Two Images -->
-    <style>
-        .container {
-            max-width: 1400px; /* Wider page layout */
-        }
-        .image-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two images per row */
-            gap: 15px;
-            align-items: start;
-        }
-        .image-container figure {
-            margin: 0;
-            text-align: center;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-        .image-container figcaption {
-            font-size: 0.9rem;
-            color: #555;
-            margin-top: 5px;
-        }
-        /* Center the last image if there's an odd number */
-        .image-container figure:last-child:nth-child(odd) {
-            grid-column: span 2;
-            max-width: 50%;
-            margin: 0 auto;
-        }
-        @media (max-width: 767px) {
-            .image-container {
-                grid-template-columns: 1fr; /* Single column on mobile */
-                margin-top: 20px;
-            }
-            .image-container figure:last-child:nth-child(odd) {
-                grid-column: auto;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM9f1l" crossorigin="anonymous" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
-    <script src="js/main.js" defer></script>
-
-        <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -91,116 +39,244 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+    </style>
 </head>
-<body>
-    <div id="logo">
-        <a href="https://ampere.dev" aria-label="Return to Ampere Homepage">
-            <img src="/images/Ampere-Logo.webp" alt="Ampere Logo" width="154" height="30" loading="lazy">
-        </a>
-    </div>
-    <div class="menuToggler" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-    <nav id="header" class="nav-menu">
-            <ul>
-                <li><a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a></li>
-                <li><a href="https://ampere.dev/starline-tapbox-rental">STARLINE</a></li>
-                <li><a href="https://ampere.dev/cables">CABLES</a></li>
-                <li><a href="https://ampere.dev/flir">FLIR</a></li>
-                <li><a href="https://ampere.dev/power-quality">POWER QUALITY</a></li>
-                <li><a href="https://ampere.dev/transformers">TRANSFORMERS</a></li>
-                <li><a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a></li>
-            </ul>
-    </nav>
+<body class="font-ubuntu bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div id="logo">
+                <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                    <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
+                </a>
+            </div>
+            <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+            <nav id="header" class="nav-menu hidden md:flex space-x-6">
+                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
+                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
+                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
+                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-blue-600 font-medium">FLIR</a>
+                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-blue-600 font-medium">POWER QUALITY</a>
+                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-blue-600 font-medium">TRANSFORMERS</a>
+                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-blue-600 font-medium">3D FABRICATION</a>
+            </nav>
+        </div>
+    </header>
 
-    <main class="content-wrapper">
-        <div class="container">
-            <div class="row">
-                <!-- Main content -->
-                <section class="body-content col-lg-8" role="main">
-                    <h1>Dominate Power Reliability with Our Load Bank Solutions</h1>
-                    <p><strong>Sick of power failures draining your profits?</strong> Ampere’s load bank solutions are your ticket to bulletproof generators, UPS systems, and critical power sources. Our resistive, reactive, and combined load banks (0–1000V AC/DC, up to 34.5kV medium-voltage) simulate real-world demands with surgical precision. Eliminate downtime, prevent wet-stacking, and power your operations with confidence—starting today.</p>
+    <!-- Hero Section -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Powering Your Reliability!</h1>
+            <p class="text-xl mb-6">Ampere Delivers Cutting-Edge Load Bank Solutions for Unstoppable Power Systems</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Connect with Us Today!</a>
+        </div>
+    </section>
 
-                    <h1>The Team That Keeps Your Power On</h1>
-                    <p>Ampere is driven by a crack team of electrical engineers and power system pros who live to solve your toughest challenges. With decades of expertise in load bank design, testing, and commissioning, we deliver solutions that protect data centers, hospitals, and industrial plants from costly outages. When you work with us, you’re backed by the best in the business.</p>
+    <!-- Problem Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Are Power Failures Costing You?</h2>
+            <p class="text-lg mb-4">Unreliable power systems can lead to costly outages, downtime, and equipment damage in data centers, hospitals, and industrial facilities. Don’t let power issues hold your business back!</p>
+            <p class="text-lg font-semibold">Ampere’s load bank solutions ensure your power systems are tested, optimized, and ready for any challenge.</p>
+        </div>
+    </section>
 
-                    <h1>Power Up with These Load Bank Essentials</h1>
-                    <ul>
-                        <li><strong>Resistive Load Banks:</strong> Slam generators with 100% kW loads to test cooling, fuel, and exhaust systems at unity power factor.</li>
-                        <li><strong>Reactive Load Banks:</strong> Mimic lagging or leading power factors (0.8pf or custom) with inductive/capacitive units for full kVA testing.</li>
-                        <li><strong>Starline Tapbox Rentals:</strong> Seamlessly integrate with load banks for flexible power distribution in temporary or emergency setups.</li>
-                        <li><strong>Commissioning Expertise:</strong> Get power quality studies and thermal inspections to ensure your systems thrive under pressure.</li>
+    <!-- About Ampere Sections -->
+    <section id="our-mission" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Our Mission</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Unstoppable Power for Your Success</p>
+                    <p class="text-lg text-center mb-6">At Ampere, we’re dedicated to making power a guarantee, not a gamble. Our load bank solutions catch issues before they cause failures, protecting your operations from costly outages.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Prevent downtime with precise load testing.</li>
+                        <li>Ensure reliability for data centers and industrial plants.</li>
+                        <li>Empower businesses with tailored power solutions.</li>
                     </ul>
-
-                    <h1>Our Vision: Unstoppable Power for You</h1>
-                    <p>Power shouldn’t be a gamble—it should be a guarantee. At Ampere, we’re obsessed with equipping you with load bank solutions that catch issues before they cripple your operations. From data centers to industrial plants, our tools make reliability your superpower.</p>
-
-                    <h1>Why Ampere Is Your Power Partner</h1>
-                    <ul>
-                        <li><strong>Rock-Solid Expertise:</strong> Decades of proven success in low- and medium-voltage power testing.</li>
-                        <li><strong>Tailored Precision:</strong> Custom resistive, inductive, or capacitive load banks built for your unique needs.</li>
-                        <li><strong>Flawless Performance:</strong> Fan-forced cooling (1000+ CFM) and rigorous QA/QC for safe, dependable operation.</li>
-                        <li><strong>Rapid Rentals:</strong> Portable or stationary load banks ready to roll 24/7, wherever you are.</li>
-                    </ul>
-
-                    <h1>Stop Risking Outages—Contact Us NOW!</h1>
-                    <p>A single power failure can cost you a fortune. Don’t let it happen. Reach out to Ampere today for load bank rentals, custom solutions, or expert commissioning. Our team is ready to make your power systems unstoppable. <strong>Call or email us now</strong> to secure your future!</p>
-                    <p><strong>Act TODAY—your next outage could be tomorrow!</strong></p>
-                </section>
-
-                <!-- Image collage -->
-                <aside class="image-container col-lg-4">
-                    <figure>
-                        <img src="images/developer.webp" alt="Engineer working on power systems" loading="lazy">
-                        <figcaption>Designing reliable power solutions.</figcaption>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Learn More!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <figure class="text-center">
+                        <img src="/images/developer.webp" alt="Engineer working on power systems" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                        <figcaption class="text-sm text-gray-600 mt-2">Designing reliable power solutions.</figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/innovation.webp" alt="Innovative load bank technology" loading="lazy">
-                        <figcaption>Showcasing cutting-edge power testing.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/meeting.webp" alt="Team planning power solutions" loading="lazy">
-                        <figcaption>Collaborating on power reliability.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/engineering.webp" alt="Power system engineering" loading="lazy">
-                        <figcaption>Building robust power infrastructure.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/community.webp" alt="Power industry professionals" loading="lazy">
-                        <figcaption>Connecting power experts.</figcaption>
-                    </figure>
-                </aside>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer id="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="https://ampere.dev/about">ABOUT</a></li>
-                <li><a href="https://ampere.dev/products">PRODUCTS</a></li>
-                <li><a href="https://ampere.dev/services">SERVICES</a></li>
-                <li><a href="https://ampere.dev/blog">BLOG</a></li>
-                <li><a href="https://ampere.dev/privacy-legal">PRIVACY & LEGAL</a></li>
-                <li><a href="https://ampere.dev/contact">CONTACT</a></li>
-            </ul>
+    <section id="our-team" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Our Team</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Experts in Power Reliability</p>
+                    <p class="text-lg text-center mb-6">Ampere is powered by a team of electrical engineers and power system specialists with decades of experience in load bank design, testing, and commissioning.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Proven expertise in low- and medium-voltage testing.</li>
+                        <li>Skilled in solving complex power challenges.</li>
+                        <li>Committed to your operational success.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Meet Our Experts!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <figure class="text-center">
+                        <img src="/images/meeting.webp" alt="Team planning power solutions" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                        <figcaption class="text-sm text-gray-600 mt-2">Collaborating on power reliability.</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo" loading="lazy">
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo" loading="lazy">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo" loading="lazy">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/Instagram_Glyph_Black.png" alt="Instagram logo" loading="lazy">
-            </a>
+    </section>
+
+    <section id="our-solutions" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Our Solutions</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Load Bank Essentials for Power Assurance</p>
+                    <p class="text-lg text-center mb-6">We offer a range of load bank solutions, from resistive and reactive testing to Starline Tapbox rentals, ensuring your power systems are ready for any demand.</p>
+                    <ul class="list-disc list-inside mx-auto max-w-2xl text-lg">
+                        <li>Resistive load banks for 100% kW testing.</li>
+                        <li>Reactive load banks for kVA and power factor testing.</li>
+                        <li>Starline Tapbox rentals for flexible power distribution.</li>
+                        <li>Commissioning with power quality and thermal inspections.</li>
+                    </ul>
+                    <div class="text-center mt-6">
+                        <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Explore Our Solutions!</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <figure class="text-center">
+                        <img src="/images/innovation.webp" alt="Innovative load bank technology" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                        <figcaption class="text-sm text-gray-600 mt-2">Showcasing cutting-edge power testing.</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>AMPERE © 2025</p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Why Choose Ampere?</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gray-100 p-6 rounded shadow">
+                            <h3 class="text-xl font-bold mb-2">Expertise</h3>
+                            <p>Decades of experience in power system testing and commissioning.</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded shadow">
+                            <h3 class="text-xl font-bold mb-2">Precision</h3>
+                            <p>Custom load banks tailored to your specific needs.</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded shadow">
+                            <h3 class="text-xl font-bold mb-2">Reliability</h3>
+                            <p>Rigorous QA/QC and fan-forced cooling for safe operation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <figure class="text-center">
+                        <img src="/images/engineering.webp" alt="Power system engineering" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                        <figcaption class="text-sm text-gray-600 mt-2">Building robust power infrastructure.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded shadow">
+                            <p class="italic">“Ampere’s load bank solutions ensured our data center’s power system was rock-solid. Their expertise is unmatched!”</p>
+                            <p class="mt-2 font-bold">– Sarah T., Data Center Manager</p>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow">
+                            <p class="italic">“Their commissioning services caught issues early, saving us from costly outages. Highly reliable!”</p>
+                            <p class="mt-2 font-bold">– Mark L., Industrial Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <figure class="text-center">
+                        <img src="/images/community.webp" alt="Power industry professionals" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                        <figcaption class="text-sm text-gray-600 mt-2">Connecting power experts.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Stop Risking Power Outages!</h2>
+            <p class="text-lg mb-6">Contact Ampere Development today to secure your power systems with our expert load bank solutions.</p>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Get Started Now!</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="footer-links">
+                    <ul class="flex flex-col md:flex-row gap-4">
+                        <li><a href="https://ampere.dev/about" class="hover:text-blue-400">ABOUT</a></li>
+                        <li><a href="https://ampere.dev/products" class="hover:text-blue-400">PRODUCTS</a></li>
+                        <li><a href="https://ampere.dev/services" class="hover:text-blue-400">SERVICES</a></li>
+                        <li><a href="https://ampere.dev/blog" class="hover:text-blue-400">BLOG</a></li>
+                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-blue-400">PRIVACY & LEGAL</a></li>
+                        <li><a href="https://ampere.dev/contact" class="hover:text-blue-400">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons flex gap-4">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <img src="icons/facebook-logo.png" alt="Facebook logo" class="h-6" loading="lazy">
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener">
+                        <img src="icons/logo-black.png" alt="X logo" class="h-6" loading="lazy">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                        <img src="icons/linkedin.png" alt="LinkedIn logo" class="h-6" loading="lazy">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                        <img src="icons/instagram-logo.png" alt="Instagram logo" class="h-6" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <p>AMPERE © 2025</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
