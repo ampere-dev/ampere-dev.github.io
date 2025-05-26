@@ -1,101 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character Encoding -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Page Metadata -->
-    <title>Contact Us | Ampere Development</title>
     <meta name="description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
-
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Contact Us | Ampere Development">
-    <meta property="og:description" content="Reach out to Ampere Development for inquiries or support at 888-345-LOAD.">
-    <meta property="og:image" content="https://ampere.dev/images/Ampere-Logo.png">
-    <meta property="og:url" content="https://ampere.dev/contact">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us | Ampere Development</title>
 
     <!-- SEO -->
+    <meta property="og:title" content="Contact Us | Ampere Development">
+    <meta property="og:description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ampere.dev/contact">
+    <meta property="og:image" content="https://ampere.dev/images/contact.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Ampere Development">
+    <meta name="twitter:description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
+    <meta name="twitter:image" content="https://ampere.dev/images/contact.webp">
 
     <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Fonts and Preconnect -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Custom Styles for Quote Request Form -->
-    <style>
-        .quote-request__section {
-            padding: 2rem 0;
-        }
-        .quote-request__headline {
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        .quote-request__form .form-control {
-            border: 1px solid #ccc;
-            border-radius: 0.25rem;
-            padding: 0.75rem;
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1rem;
-        }
-        .quote-request__form .form-control:focus {
-            border-color: #007bff;
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-            outline: none;
-        }
-        .quote-request__form textarea.form-control {
-            resize: vertical;
-            min-height: 100px;
-        }
-        .quote-request__form .btn-primary {
-            background-color: #dc3545;
-            border-color: #dc3545;
-            font-family: 'Ubuntu', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 0.75rem 1.5rem;
-            width: 100%;
-        }
-        .quote-request__form .btn-primary:hover {
-            background-color: #c82333;
-            border-color: #c82333;
-        }
-        .quote-request__form .has-danger {
-            border-color: #dc3545 !important;
-        }
-        .quote-request__form .error-message {
-            color: #dc3545;
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-        }
-        .form-management {
-            display: none;
-        }
-        @media (max-width: 767px) {
-            .quote-request__form .col-md-6 {
-                margin-bottom: 1rem;
-            }
-        }
-    </style>
-        <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -103,155 +39,230 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+        /* Form validation styles */
+        .has-danger {
+            border-color: #dc3545 !important;
+        }
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        /* Hide honeypot field */
+        .form-management {
+            display: none;
+        }
+    </style>
 </head>
-
-<body>
-    <header>
-        <div id="logo">
-            <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-                <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
-            </a>
+<body class="font-ubuntu bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div id="logo">
+                <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                    <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
+                </a>
+            </div>
+            <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+            <nav id="header" class="nav-menu hidden md:flex space-x-6">
+                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
+                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
+                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
+                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-blue-600 font-medium">FLIR</a>
+                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-blue-600 font-medium">POWER QUALITY</a>
+                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-blue-600 font-medium">TRANSFORMERS</a>
+                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-blue-600 font-medium">3D FABRICATION</a>
+            </nav>
         </div>
-        <button class="menuToggler" aria-label="Toggle navigation menu" aria-expanded="false" type="button">☰</button>
-        <nav id="header" class="nav-menu" role="navigation">
-            <ul>
-                <li><a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a></li>
-                <li><a href="https://ampere.dev/starline-tapbox-rental">STARLINE</a></li>
-                <li><a href="https://ampere.dev/cables">CABLES</a></li>
-                <li><a href="https://ampere.dev/flir">FLIR</a></li>
-                <li><a href="https://ampere.dev/power-quality">POWER QUALITY</a></li>
-                <li><a href="https://ampere.dev/transformers">TRANSFORMERS</a></li>
-                <li><a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main class="container">
-        <section class="quote-request__section">
-            <h1>Contact Us</h1>
-            <p>We’re thrilled at the opportunity to connect with you! Whether you’re seeking answers to questions, eager to share feedback, or simply want to explore how we can collaborate, our dedicated team is ready to assist. Fill out the form below or call us at <a href="tel:8883455623" style="color: inherit;">888-345-LOAD</a>. We value every message and promise to respond promptly to ensure your experience is seamless and personalized. Let’s start the conversation and see where it takes us!</p>
-            <p>To contact us, please provide your email, first and last name, phone number, company name, address, job or project location (city, state), and a short description of your inquiry or testing application, all of which are required. Additionally, include technical requirements such as the distance between the equipment and load banks (feet/meters), expected rental period (daily, weekly, monthly), type of equipment to be tested, who will perform the tests, how heat will be dissipated (vertical or horizontal), delivery location, whether system design or operation assistance is needed, and the date the equipment is required on site.</p>
-            
-            <div class="quote-request__form">
-                <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" id="fromName" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" id="date" name="date_needed" placeholder="Date needed" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" id="company" name="company" placeholder="Your company" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" id="duration" name="duration" placeholder="Duration (e.g. 10 days, 1 month)" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" id="equipment" name="equipment" placeholder="Equipment needed" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" id="fromEmail" name="_replyto" placeholder="Email" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" id="city" name="city_state" placeholder="City, State" required>
-                        </div>
-                        <div class="col-md-12">
-                            <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
-                        </div>
-                        <!-- Honeypot Field -->
-                        <input type="text" class="form-management" id="form-management" name="_form_management">
-                        <div class="col-md-6">
-                            <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
-                        </div>
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary">Submit to Request a Quote</button>
-                        </div>
-                    </div>
-                </form>
-                <div id="form-message" class="mt-3"></div>
-            </div>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+            <p class="text-xl mb-6">Connect with Ampere Development for Inquiries, Sales, or Support</p>
+            <a href="#contact-form" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Contact Us Now!</a>
+        </div>
+    </section>
 
-    <footer id="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="https://ampere.dev/about">ABOUT</a></li>
-                <li><a href="https://ampere.dev/products">PRODUCTS</a></li>
-                <li><a href="https://ampere.dev/services">SERVICES</a></li>
-                <li><a href="https://ampere.dev/blog">BLOG</a></li>
-                <li><a href="https://ampere.dev/privacy-legal">PRIVACY & LEGAL</a></li>
-                <li><a href="https://ampere.dev/contact">CONTACT</a></li>
-            </ul>
+    <!-- Introduction Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Let’s Start the Conversation</h2>
+            <p class="text-lg mb-4 max-w-2xl mx-auto">Whether you have questions, need a quote, or want to explore collaboration, our team is here to assist. Fill out the form below or call us at <a href="tel:8883455623" class="text-blue-600 hover:underline">888-345-LOAD</a>. We respond promptly to ensure a seamless experience.</p>
         </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                <img src="icons/facebook-logo.png" alt="Facebook logo">
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener">
-                <img src="icons/logo-black.png" alt="X logo">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                <img src="icons/linkedin.png" alt="LinkedIn logo">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                <img src="icons/Instagram_Glyph_Black.png" alt="Instagram logo">
-            </a>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-center mb-6">Request a Quote</h2>
+                    <p class="text-lg text-center mb-4 font-semibold">Provide Your Details</p>
+                    <p class="text-lg text-center mb-6 max-w-2xl mx-auto">Please include your contact information, company details, and project requirements. We’ll get back to you swiftly with tailored solutions.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromName" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="date" name="date_needed" placeholder="Date Needed" required>
+                                </div>
+                                <div>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Your Company" required>
+                                </div>
+                                <div>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required>
+                                </div>
+                                <div>
+                                    <input type="tel" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone" required>
+                                </div>
+                                <div>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed" required>
+                                </div>
+                                <div>
+                                    <input type="email" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="city" name="city_state" placeholder="City, State" required>
+                                </div>
+                                <div class="md:col-span-2">
+                                    <textarea class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                                </div>
+                                <!-- Honeypot Field -->
+                                <input type="text" class="form-management" id="form-management" name="_form_management">
+                                <div>
+                                    <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600 uppercase">Submit Quote Request</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="form-message" class="mt-4"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col gap-6">
+                    <img src="/images/contact.webp" alt="Contact support" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                </div>
+            </div>
         </div>
-        <div>
-            <p>AMPERE © 2025</p>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Need Immediate Assistance?</h2>
+            <p class="text-lg mb-6">Call us at <a href="tel:8883455623" class="text-yellow-500 hover:underline">888-345-LOAD</a> or submit the form above to connect with our team.</p>
+            <a href="#contact-form" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Send a Message</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="footer-links">
+                    <ul class="flex flex-col md:flex-row gap-4">
+                        <li><a href="https://ampere.dev/about" class="hover:text-blue-400">ABOUT</a></li>
+                        <li><a href="https://ampere.dev/products" class="hover:text-blue-400">PRODUCTS</a></li>
+                        <li><a href="https://ampere.dev/services" class="hover:text-blue-400">SERVICES</a></li>
+                        <li><a href="https://ampere.dev/blog" class="hover:text-blue-400">BLOG</a></li>
+                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-blue-400">PRIVACY & LEGAL</a></li>
+                        <li><a href="https://ampere.dev/contact" class="hover:text-blue-400">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons flex gap-4">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                        <img src="icons/facebook-logo.webp" alt="Facebook logo" class="h-6">
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener">
+                        <img src="icons/logo-white.webp" alt="X logo" class="h-6">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+                        <img src="icons/linkedin.webp" alt="LinkedIn logo" class="h-6">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                        <img src="icons/Instagram_White.webp" alt="Instagram logo" class="h-6">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <p>AMPERE © 2025</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8iQ==" crossorigin="anonymous"></script>
-    <script defer src="https://www.google.com/recaptcha/api.js"></script>
-    <script defer src="js/main.js"></script>
-    <!-- Form Submission Script -->
     <script>
-        $(document).ready(function() {
-            $('#quote-request-form').on('submit', function(e) {
+        // Toggle mobile menu
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scroll to contact form
+        document.querySelectorAll('a[href="#contact-form"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                var $form = $(this);
-                var $messageDiv = $('#form-message');
+                document.querySelector('#contact-form').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
 
-                // Basic client-side validation
-                var isValid = true;
-                $form.find('input[required], textarea[required]').each(function() {
-                    if (!$(this).val()) {
-                        $(this).addClass('has-danger');
-                        isValid = false;
-                    } else {
-                        $(this).removeClass('has-danger');
-                    }
-                });
+        // Form submission with client-side validation
+        document.getElementById('quote-request-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const messageDiv = document.getElementById('form-message');
+            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+            let isValid = true;
 
-                if (!isValid) {
-                    $messageDiv.html('<p class="error-message">Please fill out all required fields.</p>');
-                    return;
+            // Client-side validation
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('has-danger');
+                    isValid = false;
+                } else {
+                    field.classList.remove('has-danger');
                 }
+            });
 
-                // Submit form via AJAX to Formspree
-                $.ajax({
-                    url: $form.attr('action'),
-                    method: 'POST',
-                    data: $form.serialize(),
-                    dataType: 'json',
-                    success: function(response) {
-                        $messageDiv.html('<p class="text-success">Thank you for your submission! We will get back to you soon.</p>');
-                        $form[0].reset();
-                        grecaptcha.reset();
-                    },
-                    error: function(xhr) {
-                        $messageDiv.html('<p class="error-message">An error occurred: ' + xhr.status + ' ' + xhr.statusText + '. Please try again later.</p>');
-                    }
-                });
+            if (!isValid) {
+                messageDiv.innerHTML = '<p class="error-message">Please fill out all required fields.</p>';
+                return;
+            }
+
+            // Submit form via Fetch API to Formspree
+            fetch(form.action, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(new FormData(form)).toString()
+            })
+            .then(response => response.json())
+            .then(data => {
+                messageDiv.innerHTML = '<p class="text-green-600">Thank you for your submission! We will get back to you soon.</p>';
+                form.reset();
+                if (typeof grecaptcha !== 'undefined') {
+                    grecaptcha.reset();
+                }
+            })
+            .catch(error => {
+                messageDiv.innerHTML = '<p class="error-message">An error occurred. Please try again later.</p>';
+                console.error('Form submission error:', error);
             });
         });
     </script>
