@@ -12,11 +12,11 @@
     <meta property="og:description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ampere.dev/contact">
-    <meta property="og:image" content="https://ampere.dev/images/contact.webp">
+    <meta property="og:image" content="https://ampere.dev/images/Ampere-Logo.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact Us | Ampere Development">
     <meta name="twitter:description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
-    <meta name="twitter:image" content="https://ampere.dev/images/contact.webp">
+    <meta name="twitter:image" content="https://ampere.dev/images/Ampere-Logo.webp">
 
     <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -42,14 +42,6 @@
     <!-- reCAPTCHA -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .animate-fade-in {
-            opacity: 0;
-            animation: fadeIn 2s ease-in forwards;
-        }
         /* Form validation styles */
         .has-danger {
             border-color: #dc3545 !important;
@@ -107,57 +99,50 @@
     <!-- Contact Form Section -->
     <section id="contact-form" class="py-12 bg-gray-100">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-8">
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold text-center mb-6">Request a Quote</h2>
-                    <p class="text-lg text-center mb-4 font-semibold">Provide Your Details</p>
-                    <p class="text-lg text-center mb-6 max-w-2xl mx-auto">Please include your contact information, company details, and project requirements. We’ll get back to you swiftly with tailored solutions.</p>
-                    <div class="bg-white p-6 rounded-lg shadow-md">
-                        <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-4">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromName" name="name" placeholder="Your Name" required>
-                                </div>
-                                <div>
-                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="date" name="date_needed" placeholder="Date Needed" required>
-                                </div>
-                                <div>
-                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Your Company" required>
-                                </div>
-                                <div>
-                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required>
-                                </div>
-                                <div>
-                                    <input type="tel" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone" required>
-                                </div>
-                                <div>
-                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed" required>
-                                </div>
-                                <div>
-                                    <input type="email" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="Email" required>
-                                </div>
-                                <div>
-                                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="city" name="city_state" placeholder="City, State" required>
-                                </div>
-                                <div class="md:col-span-2">
-                                    <textarea class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Message" rows="5"></textarea>
-                                </div>
-                                <!-- Honeypot Field -->
-                                <input type="text" class="form-management" id="form-management" name="_form_management">
-                                <div>
-                                    <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
-                                </div>
-                                <div>
-                                    <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600 uppercase">Submit Quote Request</button>
-                                </div>
-                            </div>
-                        </form>
-                        <div id="form-message" class="mt-4"></div>
+            <h2 class="text-3xl font-bold text-center mb-6">Request a Quote</h2>
+            <p class="text-lg text-center mb-4 font-semibold">Provide Your Details</p>
+            <p class="text-lg text-center mb-6 max-w-2xl mx-auto">Please include your contact information, company details, and project requirements. We’ll get back to you swiftly with tailored solutions.</p>
+            <div class="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+                <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromName" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="date" name="date_needed" placeholder="Date Needed" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Your Company" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required>
+                        </div>
+                        <div>
+                            <input type="tel" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed" required>
+                        </div>
+                        <div>
+                            <input type="email" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="city" name="city_state" placeholder="City, State" required>
+                        </div>
+                        <div class="md:col-span-2">
+                            <textarea class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                        </div>
+                        <!-- Honeypot Field -->
+                        <input type="text" class="form-management" id="form-management" name="_form_management">
+                        <div>
+                            <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600 uppercase">Submit Quote Request</button>
+                        </div>
                     </div>
-                </div>
-                <div class="md:w-1/3 flex flex-col gap-6">
-                    <img src="/images/contact.webp" alt="Contact support" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
-                </div>
+                </form>
+                <div id="form-message" class="mt-4"></div>
             </div>
         </div>
     </section>
