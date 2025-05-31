@@ -18,42 +18,71 @@
     <meta name="twitter:description" content="Schedule a consultation with Ampere Development for expert load bank rentals, Starline tapbox rentals, and load testing services.">
     <meta name="twitter:image" content="https://ampere.dev/images/Ampere-Logo.webp">
 
+
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Schedule a Consultation",
-        "description": "Schedule a consultation with Ampere Development for expert load bank rentals, Starline tapbox rentals, and load testing services. Book your appointment today.",
-        "url": "https://ampere.dev/booking",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Ampere Development",
-            "url": "https://ampere.dev",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://ampere.dev/images/Ampere-Logo.webp"
-            }
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Consultation for Load Bank and Tapbox Rentals",
+    "name": "Schedule a Consultation with Ampere Development",
+    "description": "Book a consultation with Ampere Development for expert load bank rentals, Starline tapbox rentals, and load testing services. Get personalized advice tailored to your needs.",
+    "url": "https://ampere.dev/booking",
+    "provider": {
+        "@type": "Organization",
+        "name": "Ampere Development",
+        "url": "https://ampere.dev",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://ampere.dev/images/Ampere-Logo.webp"
         },
-        "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://ampere.dev"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Consulting",
-                    "item": "https://ampere.dev/booking"
-                }
+        "telephone": "888-345-LOAD",
+        "email": "sales@ampere.dev"
+    },
+    "offers": {
+        "@type": "Offer",
+        "name": "Free Initial Consultation",
+        "description": "A 30-minute free consultation to discuss your load testing and rental needs.",
+        "price": "$0.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2025-05-31"
+    },
+    "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://ampere.dev/booking",
+            "inLanguage": "en",
+            "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
             ]
+        },
+        "result": {
+            "@type": "Reservation",
+            "name": "Consultation Booking"
         }
+    },
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ampere.dev"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Consulting",
+                "item": "https://ampere.dev/booking"
+            }
+        ]
     }
-    </script>
+}
+</script>
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://ampere.dev/booking">
