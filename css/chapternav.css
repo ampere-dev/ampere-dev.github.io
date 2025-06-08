@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    width: 100%; /* Ensure full-width container */
+    width: 80%; /* Ensure full-width container */
 }
 
 /* Scrolling Area */
@@ -43,7 +43,7 @@
     background-color: #fff;
     text-align: center;
     width: 90px; /* Item width */
-    height: 80px; /* Consistent height */
+    height: 90px; /* Consistent height */
 }
 
 /* Icon Styling */
