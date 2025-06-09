@@ -73,7 +73,9 @@
 
     <link rel="stylesheet" href="css/footer.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2/1.2.2/wordcloud2.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="/js/wordcloud2.js"></script>
+
 
     <style>
         :root {
@@ -1904,51 +1906,78 @@
 
             displayArticles(currentPage);
         }
-            function generateWordCloud() {
+        function generateWordCloud() {
+            const svg = document.getElementById('word-cloud-svg');
+            if (!svg) {
+                console.error('SVG element #word-cloud-svg not found');
+                return;
+            }
             const articles = Array.from(document.querySelectorAll('.post'));
             const tagCounts = {};
-
-            // Collect and count tags from articles
             articles.forEach(article => {
                 const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
+                console.log('Article tags:', tags);
                 tags.forEach(tag => {
                     tagCounts[tag] = (tagCounts[tag] || 0) + 1;
                 });
             });
+            console.log('Tag counts:', tagCounts);
+            const words = Object.entries(tagCounts).map(([tag, count]) => ({
+                text: tag.replace(/-/g, ' '),
+                size: count * 15
+            }));
+            console.log('Words:', words);
+            if (words.length === 0) {
+                console.warn('No tags found for word cloud');
+                d3.select(svg).append('text')
+                    .attr('x', 10)
+                    .attr('y', 100)
+                    .text('No tags available');
+                return;
+            }
 
-            // Prepare word cloud data: [word, weight]
-            const wordList = Object.entries(tagCounts).map(([tag, count]) => [
-                tag.replace(/-/g, ' '), // Replace hyphens with spaces for readability
-                count * 10 // Scale count for better visualization
-            ]);
+            const width = 300; // Adjust based on sidebar width
+            const height = 200;
+            d3.select(svg)
+                .attr('width', width)
+                .attr('height', height);
 
-            // Configure and render word cloud
-            if (wordList.length > 0) {
-                WordCloud(document.getElementById('word-cloud-canvas'), {
-                    list: wordList,
-                    gridSize: 8,
-                    weightFactor: 3,
-                    fontFamily: 'Ubuntu, sans-serif',
-                    color: 'random-dark',
-                    backgroundColor: '#fff',
-                    rotateRatio: 0.5,
-                    rotationSteps: 2,
-                    shuffle: true,
-                    drawOutOfBound: false,
-                    shrinkToFit: true,
-                    click: function(item) {
-                        // On click, filter posts by tag
+            d3.layout.cloud()
+                .size([width, height])
+                .words(words)
+                .padding(5)
+                .rotate(() => ~~(Math.random() * 2) * 90)
+                .font('Ubuntu')
+                .fontSize(d => d.size)
+                .on('end', draw)
+                .start();
+
+            function draw(words) {
+                d3.select(svg)
+                    .append('g')
+                    .attr('transform', `translate(${width / 2},${height / 2})`)
+                    .selectAll('text')
+                    .data(words)
+                    .enter()
+                    .append('text')
+                    .attr('class', 'word')
+                    .style('font-size', d => `${d.size}px`)
+                    .style('font-family', 'Ubuntu')
+                    .style('fill', () => `hsl(${Math.random() * 360}, 50%, 30%)`)
+                    .attr('text-anchor', 'middle')
+                    .attr('transform', d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
+                    .text(d => d.text)
+                    .on('click', function(event, d) {
                         const searchInput = document.getElementById('search');
-                        searchInput.value = item[0].replace(/ /g, '-'); // Restore hyphens for search
+                        searchInput.value = d.text.replace(/ /g, '-');
                         searchPosts();
-                    }
-                });
+                    });
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             setupPagination();
-            generateWordCloud(); // Replace updateRelatedPosts with generateWordCloud
+            generateWordCloud();
         });
     </script>
 </body>
