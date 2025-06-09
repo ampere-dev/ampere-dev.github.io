@@ -73,10 +73,6 @@
 
     <link rel="stylesheet" href="css/footer.css">
 
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="/js/wordcloud2.js"></script>
-
-
     <style>
         :root {
             --primary-color: #333;
@@ -487,6 +483,7 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
+    <script src="/js/wordcloud2.js"></script>
 </head>
 <body>
 <div id="logo">
@@ -1722,8 +1719,8 @@
             </div>
 
             <div class="sidebar-section word-cloud-section">
-            <h3>Popular Topics</h3>
-            <canvas id="word-cloud-canvas"></canvas>
+                <h3>Popular Topics</h3>
+                <canvas id="word-cloud-canvas"></canvas>
             </div>
 
             <div class="sidebar-section share">
@@ -1779,206 +1776,196 @@
         }(jQuery));
         var $mcj = jQuery.noConflict(true);
     </script>
-    <script>
-        function searchPosts() {
-            const query = document.getElementById('search').value.toLowerCase().trim();
-            const posts = document.querySelectorAll('.post');
-            let hasResults = false;
+<script>
+    function searchPosts() {
+        const query = document.getElementById('search').value.toLowerCase().trim();
+        const posts = document.querySelectorAll('.post');
+        let hasResults = false;
 
-            const visibleArticles = [];
-            posts.forEach(post => {
-                const text = post.textContent.toLowerCase();
-                const matches = text.includes(query);
-                if (matches || query === '') {
-                    visibleArticles.push(post);
-                    post.classList.remove('hidden');
-                    hasResults = true;
-                } else {
-                    post.classList.add('hidden');
-                }
-            });
-
-            let noResults = document.querySelector('.no-results');
-            if (!noResults) {
-                noResults = document.createElement('p');
-                noResults.className = 'no-results';
-                noResults.textContent = 'No results found.';
-                document.querySelector('main').appendChild(noResults);
-            }
-            noResults.style.display = hasResults || query === '' ? 'none' : 'block';
-
-            currentPage = 1;
-            setupPagination(visibleArticles);
-        }
-
-        function togglePost(titleElement) {
-            const article = titleElement.closest('article');
-            const content = article.querySelector('.post-content');
-            
-            if (article.classList.contains('collapsed')) {
-                content.style.height = content.scrollHeight + 'px';
-                article.classList.remove('collapsed');
+        const visibleArticles = [];
+        posts.forEach(post => {
+            const text = post.textContent.toLowerCase();
+            const matches = text.includes(query);
+            if (matches || query === '') {
+                visibleArticles.push(post);
+                post.classList.remove('hidden');
+                hasResults = true;
             } else {
-                content.style.height = content.scrollHeight + 'px';
-                setTimeout(() => {
-                    content.style.height = '0';
-                }, 10);
-                article.classList.add('collapsed');
+                post.classList.add('hidden');
             }
-            
-            content.addEventListener('transitionend', function handler() {
-                if (!article.classList.contains('collapsed')) {
-                    content.style.height = 'auto';
-                }
-                content.removeEventListener('transitionend', handler);
-            });
-        }
-
-        const articlesPerPage = 5;
-        let currentPage = 1;
-
-        function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
-            const totalArticles = visibleArticles.length;
-            const totalPages = Math.ceil(totalArticles / articlesPerPage);
-            const pageNumbersContainer = document.getElementById('page-numbers');
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-
-            function displayArticles(page) {
-                const start = (page - 1) * articlesPerPage;
-                const end = start + articlesPerPage;
-
-                document.querySelectorAll('.post').forEach(article => {
-                    article.classList.add('hidden');
-                });
-
-                visibleArticles.forEach((article, index) => {
-                    if (index >= start && index < end) {
-                        article.classList.remove('hidden');
-                    }
-                });
-
-                document.querySelectorAll('.page-number').forEach(btn => {
-                    btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-                });
-
-                prevBtn.disabled = page === 1;
-                nextBtn.disabled = page === totalPages || totalPages === 0;
-                prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
-                nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
-            }
-
-            pageNumbersContainer.innerHTML = '';
-            for (let i = 1; i <= totalPages; i++) {
-                const pageBtn = document.createElement('button');
-                pageBtn.className = 'page-number';
-                pageBtn.dataset.page = i;
-                pageBtn.textContent = i;
-                pageBtn.setAttribute('aria-label', `Page ${i}`);
-                pageBtn.addEventListener('click', () => {
-                    currentPage = i;
-                    displayArticles(currentPage);
-                });
-                pageNumbersContainer.appendChild(pageBtn);
-            }
-
-            if (totalPages === 0) {
-                pageNumbersContainer.innerHTML = '';
-                prevBtn.disabled = true;
-                nextBtn.disabled = true;
-                prevBtn.setAttribute('aria-disabled', 'true');
-                nextBtn.setAttribute('aria-disabled', 'true');
-            }
-
-            prevBtn.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    displayArticles(currentPage);
-                }
-            });
-
-            nextBtn.addEventListener('click', () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    displayArticles(currentPage);
-                }
-            });
-
-            displayArticles(currentPage);
-        }
-        function generateWordCloud() {
-            const svg = document.getElementById('word-cloud-svg');
-            if (!svg) {
-                console.error('SVG element #word-cloud-svg not found');
-                return;
-            }
-            const articles = Array.from(document.querySelectorAll('.post'));
-            const tagCounts = {};
-            articles.forEach(article => {
-                const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
-                console.log('Article tags:', tags);
-                tags.forEach(tag => {
-                    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-                });
-            });
-            console.log('Tag counts:', tagCounts);
-            const words = Object.entries(tagCounts).map(([tag, count]) => ({
-                text: tag.replace(/-/g, ' '),
-                size: count * 15
-            }));
-            console.log('Words:', words);
-            if (words.length === 0) {
-                console.warn('No tags found for word cloud');
-                d3.select(svg).append('text')
-                    .attr('x', 10)
-                    .attr('y', 100)
-                    .text('No tags available');
-                return;
-            }
-
-            const width = 300; // Adjust based on sidebar width
-            const height = 200;
-            d3.select(svg)
-                .attr('width', width)
-                .attr('height', height);
-
-            d3.layout.cloud()
-                .size([width, height])
-                .words(words)
-                .padding(5)
-                .rotate(() => ~~(Math.random() * 2) * 90)
-                .font('Ubuntu')
-                .fontSize(d => d.size)
-                .on('end', draw)
-                .start();
-
-            function draw(words) {
-                d3.select(svg)
-                    .append('g')
-                    .attr('transform', `translate(${width / 2},${height / 2})`)
-                    .selectAll('text')
-                    .data(words)
-                    .enter()
-                    .append('text')
-                    .attr('class', 'word')
-                    .style('font-size', d => `${d.size}px`)
-                    .style('font-family', 'Ubuntu')
-                    .style('fill', () => `hsl(${Math.random() * 360}, 50%, 30%)`)
-                    .attr('text-anchor', 'middle')
-                    .attr('transform', d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
-                    .text(d => d.text)
-                    .on('click', function(event, d) {
-                        const searchInput = document.getElementById('search');
-                        searchInput.value = d.text.replace(/ /g, '-');
-                        searchPosts();
-                    });
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            setupPagination();
-            generateWordCloud();
         });
-    </script>
+
+        let noResults = document.querySelector('.no-results');
+        if (!noResults) {
+            noResults = document.createElement('p');
+            noResults.className = 'no-results';
+            noResults.textContent = 'No results found.';
+            document.querySelector('main').appendChild(noResults);
+        }
+        noResults.style.display = hasResults || query === '' ? 'none' : 'block';
+
+        currentPage = 1;
+        setupPagination(visibleArticles);
+    }
+
+    function togglePost(titleElement) {
+        const article = titleElement.closest('article');
+        const content = article.querySelector('.post-content');
+        
+        if (article.classList.contains('collapsed')) {
+            content.style.height = content.scrollHeight + 'px';
+            article.classList.remove('collapsed');
+        } else {
+            content.style.height = content.scrollHeight + 'px';
+            setTimeout(() => {
+                content.style.height = '0';
+            }, 10);
+            article.classList.add('collapsed');
+        }
+        
+        content.addEventListener('transitionend', function handler() {
+            if (!article.classList.contains('collapsed')) {
+                content.style.height = 'auto';
+            }
+            content.removeEventListener('transitionend', handler);
+        });
+    }
+
+    const articlesPerPage = 5;
+    let currentPage = 1;
+
+    function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+        const totalArticles = visibleArticles.length;
+        const totalPages = Math.ceil(totalArticles / articlesPerPage);
+        const pageNumbersContainer = document.getElementById('page-numbers');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function displayArticles(page) {
+            const start = (page - 1) * articlesPerPage;
+            const end = start + articlesPerPage;
+
+            document.querySelectorAll('.post').forEach(article => {
+                article.classList.add('hidden');
+            });
+
+            visibleArticles.forEach((article, index) => {
+                if (index >= start && index < end) {
+                    article.classList.remove('hidden');
+                }
+            });
+
+            document.querySelectorAll('.page-number').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+            });
+
+            prevBtn.disabled = page === 1;
+            nextBtn.disabled = page === totalPages || totalPages === 0;
+            prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+            nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
+        }
+
+        pageNumbersContainer.innerHTML = '';
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement('button');
+            pageBtn.className = 'page-number';
+            pageBtn.dataset.page = i;
+            pageBtn.textContent = i;
+            pageBtn.setAttribute('aria-label', `Page ${i}`);
+            pageBtn.addEventListener('click', () => {
+                currentPage = i;
+                displayArticles(currentPage);
+            });
+            pageNumbersContainer.appendChild(pageBtn);
+        }
+
+        if (totalPages === 0) {
+            pageNumbersContainer.innerHTML = '';
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+            prevBtn.setAttribute('aria-disabled', 'true');
+            nextBtn.setAttribute('aria-disabled', 'true');
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                displayArticles(currentPage);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayArticles(currentPage);
+            }
+        });
+
+        displayArticles(currentPage);
+    }
+
+    function generateWordCloud() {
+        const canvas = document.getElementById('word-cloud-canvas');
+        if (!canvas) {
+            console.error('Canvas element #word-cloud-canvas not found');
+            return;
+        }
+
+        const articles = Array.from(document.querySelectorAll('.post'));
+        const tagCounts = {};
+
+        // Extract tags from articles
+        articles.forEach(article => {
+            const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
+            tags.forEach(tag => {
+                tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+            });
+        });
+
+        // Convert tag counts to wordcloud2.js format
+        const words = Object.entries(tagCounts).map(([tag, count]) => [
+            tag.replace(/-/g, ' '), // Replace hyphens with spaces for display
+            count * 20 // Scale count for size
+        ]);
+
+        if (words.length === 0) {
+            console.warn('No tags found for word cloud');
+            const ctx = canvas.getContext('2d');
+            ctx.font = '16px Ubuntu';
+            ctx.fillStyle = '#333';
+            ctx.textAlign = 'center';
+            ctx.fillText('No tags available', canvas.width / 2, canvas.height / 2);
+            return;
+        }
+
+        // Configure wordcloud2.js
+        WordCloud(canvas, {
+            list: words,
+            fontFamily: 'Ubuntu',
+            fontWeight: 'normal',
+            color: function() {
+                return `hsl(${Math.random() * 360}, 50%, 30%)`;
+            },
+            rotateRatio: 0.5,
+            rotationSteps: 2,
+            gridSize: 8,
+            drawOutOfBound: false,
+            shrinkToFit: true,
+            clearCanvas: true,
+            backgroundColor: '#fff',
+            click: function(item) {
+                const searchInput = document.getElementById('search');
+                searchInput.value = item[0].replace(/ /g, '-'); // Convert back to hyphenated form
+                searchPosts();
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setupPagination();
+        generateWordCloud();
+    });
+</script>
+
 </body>
 </html>
