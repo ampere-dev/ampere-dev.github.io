@@ -73,6 +73,8 @@
 
     <link rel="stylesheet" href="css/footer.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2/1.2.2/wordcloud2.min.js"></script>
+
     <style>
         :root {
             --primary-color: #333;
@@ -458,6 +460,21 @@
             article h2 {
                 font-size: 1.5rem;
             }
+        }
+                .word-cloud-section {
+            margin-bottom: 2rem;
+        }
+        .word-cloud-section h3 {
+            font-family: 'Krona One', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        #word-cloud-canvas {
+            width: 100%;
+            height: 200px;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
         }
     </style>
         <!-- Google Tag Manager -->
@@ -1682,14 +1699,6 @@
             </article>
 
             <!-- Pagination Container -->
-           
-
-
-
-
-
-
-
             <div class="pagination" role="navigation" aria-label="Pagination">
                 <button class="pagination-btn" id="prev-btn" disabled aria-label="Previous page">Previous</button>
                 <div id="page-numbers" class="page-numbers"></div>
@@ -1710,9 +1719,9 @@
                 </form>
             </div>
 
-            <div class="sidebar-section related-posts">
-                <h3>Related Posts</h3>
-                <ul id="related-posts-list"></ul>
+            <div class="sidebar-section word-cloud-section">
+            <h3>Popular Topics</h3>
+            <canvas id="word-cloud-canvas"></canvas>
             </div>
 
             <div class="sidebar-section share">
@@ -1895,67 +1904,51 @@
 
             displayArticles(currentPage);
         }
-
-        function updateRelatedPosts() {
-            const relatedPostsList = document.getElementById('related-posts-list');
+            function generateWordCloud() {
             const articles = Array.from(document.querySelectorAll('.post'));
-            const maxRelated = 3;
+            const tagCounts = {};
 
-            relatedPostsList.innerHTML = '';
-
-            const articleData = articles.map(article => {
+            // Collect and count tags from articles
+            articles.forEach(article => {
                 const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
-                const title = article.querySelector('h2 a').textContent;
-                const link = article.querySelector('h2 a').getAttribute('href');
-                return { article, tags, title, link };
-            });
-
-            const allTags = [...new Set(articleData.flatMap(data => data.tags))];
-            const relatedArticles = [];
-
-            allTags.forEach(tag => {
-                const taggedArticles = articleData.filter(data => data.tags.includes(tag));
-                taggedArticles.forEach(data => {
-                    const existing = relatedArticles.find(ra => ra.link === data.link);
-                    if (!existing) {
-                        relatedArticles.push({
-                            ...data,
-                            score: taggedArticles.length
-                        });
-                    } else {
-                        existing.score += taggedArticles.length;
-                    }
+                tags.forEach(tag => {
+                    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
                 });
             });
 
-            relatedArticles.sort((a, b) => {
-                if (b.score === a.score) {
-                    const aIndex = articles.indexOf(a.article);
-                    const bIndex = articles.indexOf(b.article);
-                    return aIndex - bIndex;
-                }
-                return b.score - a.score;
-            });
+            // Prepare word cloud data: [word, weight]
+            const wordList = Object.entries(tagCounts).map(([tag, count]) => [
+                tag.replace(/-/g, ' '), // Replace hyphens with spaces for readability
+                count * 10 // Scale count for better visualization
+            ]);
 
-            relatedArticles.slice(0, maxRelated).forEach(data => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = data.link;
-                a.textContent = data.title;
-                li.appendChild(a);
-                relatedPostsList.appendChild(li);
-            });
-
-            if (relatedArticles.length === 0) {
-                const li = document.createElement('li');
-                li.textContent = 'No related posts available.';
-                relatedPostsList.appendChild(li);
+            // Configure and render word cloud
+            if (wordList.length > 0) {
+                WordCloud(document.getElementById('word-cloud-canvas'), {
+                    list: wordList,
+                    gridSize: 8,
+                    weightFactor: 3,
+                    fontFamily: 'Ubuntu, sans-serif',
+                    color: 'random-dark',
+                    backgroundColor: '#fff',
+                    rotateRatio: 0.5,
+                    rotationSteps: 2,
+                    shuffle: true,
+                    drawOutOfBound: false,
+                    shrinkToFit: true,
+                    click: function(item) {
+                        // On click, filter posts by tag
+                        const searchInput = document.getElementById('search');
+                        searchInput.value = item[0].replace(/ /g, '-'); // Restore hyphens for search
+                        searchPosts();
+                    }
+                });
             }
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             setupPagination();
-            updateRelatedPosts();
+            generateWordCloud(); // Replace updateRelatedPosts with generateWordCloud
         });
     </script>
 </body>
