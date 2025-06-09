@@ -5,8 +5,22 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jun 2025 04:43:20 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Jun 2025 13:20:04 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI’s Objection to NYT’s Data Preservation Order: Balancing AI Innovation and Privacy</title>
+      <link>https://ampere.dev/blog.html#OpenAI-NYT-Preservation-Objection</link>
+      <guid>https://ampere.dev/blog.html#OpenAI-NYT-Preservation-Objection</guid>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
+      <description>On June 6, 2025, OpenAI filed an objection to a May 13, 2025, preservation order issued by Magistrate Judge Ona T. Wang in the U.S. District Court for the Southern District of New York, addressing a copyright infringement lawsuit brought by The New York Times (NYT) and other publishers (Case Nos. 1:25-md-03143-SHS-OTW, 1:23-cv-11195-SHS-OTW). The order mandates OpenAI to preserve all ChatGPT output log data, including user prompts and responses, even those slated for deletion, creating significant technical and privacy challenges. OpenAI argues the order is overly broad, technically infeasible, and conflicts with user privacy commitments, with implications for AI data centers and grid resilience. This article examines OpenAI’s technical arguments, the lawsuit’s context, and broader impacts on the AI industry.</description>
+    </item>
+    <item>
+      <title>U.S. Data Center Boom: Buildouts and Grid Resilience with Ampere’s Solutions</title>
+      <link>https://ampere.dev/blog.html#US-Data-Center-Buildouts</link>
+      <guid>https://ampere.dev/blog.html#US-Data-Center-Buildouts</guid>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 GMT</pubDate>
+      <description>The U.S. data center industry is experiencing unprecedented growth, driven by AI and cloud computing demands, with major buildouts transforming regions like Arizona, Texas, and Louisiana. A March 10, 2024, Liberty Nation article warns of the grid’s vulnerability due to aging infrastructure and surging power needs, exacerbated by these projects. Ampere Development’s services—load banks, Starline cables, FLIR infrared inspections, power quality monitoring, transformers, and 3D fabrication—are critical for ensuring reliability in these buildouts. This article explores major U.S. data center projects, grid challenges, and how Ampere’s solutions enhance resilience.</description>
+    </item>
     <item>
       <title>Is the U.S. Power Grid Becoming More Vulnerable? The Role of Medium-Voltage Load Banks</title>
       <link>https://ampere.dev/blog.html#US-Power-Grid-Vulnerability</link>
