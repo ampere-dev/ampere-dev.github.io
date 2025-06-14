@@ -5,8 +5,43 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jun 2025 13:20:04 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jun 2025 02:37:28 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>U.S. Data Center Powerhouses: The Five Fastest-Growing Hubs Fueling AI and Cloud Computing</title>
+      <link>https://ampere.dev/blog.html#US-Data-Center-Powerhouses</link>
+      <guid>https://ampere.dev/blog.html#US-Data-Center-Powerhouses</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 GMT</pubDate>
+      <description>A November 12, 2024, Upwind industry research report, "U.S. Data Center Powerhouses: The 5 Fastest-Growing Hubs," highlights the rapid expansion of U.S. data centers, driven by surging demand for AI, cloud computing, and digital services. Regions like Las Vegas/Reno, Salt Lake City, Phoenix, Atlanta, and Northern Virginia are leading the charge, transforming local economies while straining power grids. With data centers consuming 1.5% of global electricity, their growth is spurring investments in renewable and nuclear energy. This article explores the top five fastest-growing U.S. data center hubs, their power requirements, economic impacts, and energy challenges, incorporating insights from Upwind’s report and illustrative visuals like maps and charts.</description>
+    </item>
+    <item>
+      <title>Project Blue: Secretive Data Center Complex Sparks Debate in Southeast Tucson</title>
+      <link>https://ampere.dev/blog.html#Project-Blue-Tucson</link>
+      <guid>https://ampere.dev/blog.html#Project-Blue-Tucson</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 GMT</pubDate>
+      <description>A June 9, 2025, Arizona Daily Star article reports that Pima County’s Board of Supervisors is set to vote on June 17, 2025, on a proposed multi-billion-dollar data center complex, codenamed Project Blue, planned for a 290-acre county-owned site near the Pima County Fairgrounds in southeast Tucson. The project, shrouded in secrecy due to a nondisclosure agreement (NDA), could include 8 to 10 data centers, raising concerns about water and electricity use. Supervisors demand transparency before approving the $20.8 million land sale and zoning changes. This article explores Project Blue’s scope, resource concerns, economic promises, and the transparency debate surrounding its development.</description>
+    </item>
+    <item>
+      <title>Data Centers: A Growing Factor in Arizona’s Water Budget</title>
+      <link>https://ampere.dev/blog.html#Arizona-Data-Centers-Water</link>
+      <guid>https://ampere.dev/blog.html#Arizona-Data-Centers-Water</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 GMT</pubDate>
+      <description>A April 2, 2025, Circle of Blue article highlights the rising water demands of data centers in Arizona, a small but growing factor in the state’s water budget. As the Phoenix Valley emerges as a major data center hub, driven by AI and cloud computing, projects like Tract’s Buckeye Tech Corridor are reshaping land use and straining water resources in one of the driest regions of the U.S. With Arizona’s data centers projected to consume 905 million gallons of water in 2025, this article explores their impact, regulatory guardrails, technological innovations, and the broader implications for water management in a drought-prone state.</description>
+    </item>
+    <item>
+      <title>Arizona’s Data Center Boom: Straining the Grid Amid AI-Driven Growth</title>
+      <link>https://ampere.dev/blog.html#Arizona-Data-Center-Energy</link>
+      <guid>https://ampere.dev/blog.html#Arizona-Data-Center-Energy</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 GMT</pubDate>
+      <description>A April 16, 2025, Axios Phoenix article reports that Arizona’s Phoenix Valley, a leading data center hub, is grappling with soaring energy demands driven by artificial intelligence (AI) and cloud computing. With data centers potentially doubling their electricity consumption to 16.5% of the state’s total by 2030, the Arizona Corporation Commission has opened a formal review to address the strain on the power grid. This article explores Arizona’s data center expansion, its energy challenges, potential solutions like on-site power generation, and the implications for grid resilience in supporting AI-driven growth.</description>
+    </item>
+    <item>
+      <title>High-Voltage Cable Shortage: A Bottleneck for Clean Energy and Grid Resilience</title>
+      <link>https://ampere.dev/blog.html#High-Voltage-Cable-Shortage</link>
+      <guid>https://ampere.dev/blog.html#High-Voltage-Cable-Shortage</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 GMT</pubDate>
+      <description>The U.S. power grid faces a critical constraint as high-voltage electricity cables, essential for connecting renewable energy sources and supporting grid modernization, are in short supply. A June 13, 2025, industry report highlights that manufacturing facilities are booked for years, with demand outstripping supply due to the clean energy transition, trade barriers, and overdue grid upgrades. The International Energy Agency (IEA) estimates that 80 million kilometers of grid infrastructure must be built by 2040 to meet clean energy targets, equivalent to rebuilding the global grid in just 15 years. This article explores the cable shortage’s impact on renewable energy integration, the role of high-voltage direct current (HVDC) technology, and how medium voltage load bank testing enhances grid stability.</description>
+    </item>
     <item>
       <title>OpenAI’s Objection to NYT’s Data Preservation Order: Balancing AI Innovation and Privacy</title>
       <link>https://ampere.dev/blog.html#OpenAI-NYT-Preservation-Objection</link>
