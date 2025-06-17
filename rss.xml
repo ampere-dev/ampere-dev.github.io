@@ -5,8 +5,22 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Jun 2025 02:37:28 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jun 2025 01:32:03 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Centers Pose Threat to U.S. Electric Grids, NERC Warns</title>
+      <link>https://ampere.dev/blog.html#Data-Centers-Grid-Threat</link>
+      <guid>https://ampere.dev/blog.html#Data-Centers-Grid-Threat</guid>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 GMT</pubDate>
+      <description>A June 13, 2025, DataCenterKnowledge article reports that the North American Electric Reliability Corporation (NERC) has issued a rare warning, identifying large data centers as one of the greatest near-term risks to U.S. electric grid reliability. The rapid expansion of AI and cryptocurrency mining facilities, outpacing power plant and transmission line development, threatens system stability, with significant outages already occurring in Northern Virginia. NERC’s 2025 State of Reliability Technical Assessment calls for urgent action to integrate these energy-intensive facilities smoothly. This article explores NERC’s findings, the impact of data centers on grid stability, and proposed solutions, drawing on the technical assessment available at NERC’s 2025 State of Reliability Technical Assessment.</description>
+    </item>
+    <item>
+      <title>North American Data Center Boom: AI Drives Major Expansions in 2025</title>
+      <link>https://ampere.dev/blog.html#North-American-Data-Center-Expansion</link>
+      <guid>https://ampere.dev/blog.html#North-American-Data-Center-Expansion</guid>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 GMT</pubDate>
+      <description>Despite rumors of a slowdown, North America’s data center sector is surging in 2025, fueled by AI’s insatiable demand for computing power. A June 2025 industry report highlights major land acquisitions and projects by Amazon Web Services (AWS), NTT, and others, with significant developments in Arizona, Texas, and Canada. AWS CEO Matt Garman confirmed the company’s aggressive expansion, while NTT acquired land in Hillsboro, Oregon, and Phoenix, Arizona. This article explores key North American data center projects, their power demands, renewable energy integration, and grid resilience challenges, focusing on the AI-driven growth in the U.S. and Canada.</description>
+    </item>
     <item>
       <title>U.S. Data Center Powerhouses: The Five Fastest-Growing Hubs Fueling AI and Cloud Computing</title>
       <link>https://ampere.dev/blog.html#US-Data-Center-Powerhouses</link>
