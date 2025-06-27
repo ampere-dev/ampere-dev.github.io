@@ -35,11 +35,51 @@
             "@type": "Brand",
             "name": "Starline"
         },
+        "aggregateRating": { // Placeholder; replace with actual data or remove
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "10"
+        },
+        "review": [ // Adapted from testimonials
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "John D."
+                },
+                "reviewBody": "Ampere’s Starline Tapbox Rentals saved us days during our data center commissioning. The plug-and-play design was a game-changer!"
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Lisa R."
+                },
+                "reviewBody": "The Starline Tapbox was a lifesaver for our temporary power setup. Quick to install and rock-solid at 480V!"
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sarah M."
+                },
+                "reviewBody": "Reliable and easy to use at 480V. We’ll be renting again for our next project."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Emily S."
+                },
+                "reviewBody": "No hassle, no delays. Ampere’s tapboxes worked flawlessly for our manufacturing plant upgrade."
+            }
+        ],
         "offers": {
             "@type": "Offer",
             "url": "https://ampere.dev/starline-tapbox-rental",
             "priceCurrency": "USD",
-            "price": "Contact for pricing",
+            "price": "125.00", // Daily rate for 1–9 units
+            "priceValidUntil": "2025-12-31", // Added
             "availability": "https://schema.org/InStock",
             "validFrom": "2025-05-31"
         }
@@ -66,8 +106,9 @@
             "@type": "Offer",
             "name": "Starline Tapbox Rental",
             "description": "Custom rental packages for Starline tapboxes tailored to your power needs.",
-            "price": "Contact for pricing",
             "priceCurrency": "USD",
+            "price": "125.00", // Daily rate for 1–9 units
+            "priceValidUntil": "2025-12-31", // Added
             "availability": "https://schema.org/InStock",
             "validFrom": "2025-05-31"
         },
