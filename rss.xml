@@ -5,8 +5,36 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Jun 2025 01:32:03 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jul 2025 02:18:15 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EGSA’s Load Bank Certification: Elevating Skills in Power Generation</title>
+      <link>https://ampere.dev/blog.html#EGSA-Load-Bank-Certification</link>
+      <guid>https://ampere.dev/blog.html#EGSA-Load-Bank-Certification</guid>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 GMT</pubDate>
+      <description>The Electrical Generating Systems Association (EGSA) has launched a Load Bank Certification course, designed to enhance the skills of professionals in the on-site power generation industry. Detailed on EGSA’s education page (egsa.org/Education/Load-Bank-Certification), this 2.5-day program combines hands-on and classroom training to cover critical topics such as load bank operation, safety protocols, and performance testing. Aimed at technicians and engineers working with power systems, the course concludes with a comprehensive performance and written certification exam, ensuring participants are well-equipped to maintain and optimize load banks in real-world applications.</description>
+    </item>
+    <item>
+      <title>Google’s Data Center Energy Surge: AI and the Path to Sustainability</title>
+      <link>https://ampere.dev/blog.html#Google-Data-Center-Energy</link>
+      <guid>https://ampere.dev/blog.html#Google-Data-Center-Energy</guid>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 GMT</pubDate>
+      <description>Google’s 2024 sustainability report, detailed on TechCrunch (techcrunch.com), reveals a dramatic doubling of its data center energy consumption in just four years, reaching 30.8 million megawatt-hours (MWh) in 2024 from 14.4 million MWh in 2020. This surge, driven by the rapid expansion of AI and cloud computing, underscores the escalating energy demands of modern data centers. With data centers now accounting for 95.8% of Google’s total electricity use, the report highlights the critical challenge of balancing technological growth with environmental responsibility. The insights from Google’s sustainability efforts offer a compelling look at how innovation and renewable energy strategies are shaping the future of the tech industry.</description>
+    </item>
+    <item>
+      <title>Empowering Safety: Insights from Pam Tompkins’ SET Solutions Training</title>
+      <link>https://ampere.dev/blog.html#SET-Solutions-Safety-Training</link>
+      <guid>https://ampere.dev/blog.html#SET-Solutions-Safety-Training</guid>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 GMT</pubDate>
+      <description>Attending a safety training seminar led by Pam Tompkins, President and CEO of SET Solutions, was a transformative experience that underscored the critical importance of workplace safety in the electric power industry. With over 40 years of expertise, Pam’s passion for the trade and her steadfast commitment to worker safety were evident throughout the session. The seminar, aligned with SET Solutions’ mission to provide specialized assessment, consulting, and training services, covered essential topics such as OSHA 29 CFR 1910.269 compliance, hazard identification, and human performance improvement. Pam’s dynamic teaching approach, blending real-world scenarios with actionable strategies, made complex safety concepts engaging and practical, empowering attendees to implement robust safety systems in their workplaces.</description>
+    </item>
+    <item>
+      <title>Cove Architecture Unveils World’s First AI-Designed Data Center in Colorado</title>
+      <link>https://ampere.dev/blog.html#AI-Designed-Data-Center</link>
+      <guid>https://ampere.dev/blog.html#AI-Designed-Data-Center</guid>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 GMT</pubDate>
+      <description>On June 17, 2025, Cove Architecture, an Atlanta-based firm, announced a groundbreaking achievement: the completion of a 10,000-square-foot data center in Hartsel, Colorado, designed entirely by an agentic AI platform in just 30 days, a process that typically takes months. As reported by DataCenterKnowledge, this project marks an industry first, leveraging AI to streamline architectural planning for AI-driven data centers. With the global data center market facing unprecedented demand from AI workloads, Cove’s innovation signals a transformative shift in design efficiency. This article explores the project’s details, AI’s role in its design, implications for the industry, and challenges ahead, drawing on insights from Cove’s milestone.</description>
+    </item>
     <item>
       <title>Data Centers Pose Threat to U.S. Electric Grids, NERC Warns</title>
       <link>https://ampere.dev/blog.html#Data-Centers-Grid-Threat</link>
