@@ -5,8 +5,22 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Jul 2025 02:18:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jul 2025 03:28:39 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Surging Transformer Demand and Aging Grids: Challenges and Solutions for America’s Power Infrastructure</title>
+      <link>https://ampere.dev/blog.html#Transformer-Demand-Aging-Grids</link>
+      <guid>https://ampere.dev/blog.html#Transformer-Demand-Aging-Grids</guid>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
+      <description>America’s electrical grid is under unprecedented strain, grappling with aging infrastructure and a dramatic surge in transformer demand driven by new technologies and energy transitions. With 55% of the nation’s distribution transformers exceeding 33 years of age and demand projected to increase by up to 260% by 2050 due to electric vehicles (EVs), data centers, and renewable energy projects, the U.S. faces a critical challenge in maintaining a reliable power supply. This article explores the dual pressures of an aging grid and escalating transformer demand, their impacts on infrastructure projects, and actionable strategies to address these issues, drawing on insights from industry trends and legislative efforts like the CIRCUIT Act.</description>
+    </item>
+    <item>
+      <title>Navigating the Build America, Buy America Act: A Guide for Infrastructure Projects</title>
+      <link>https://ampere.dev/blog.html#BABA-Compliance-Guide</link>
+      <guid>https://ampere.dev/blog.html#BABA-Compliance-Guide</guid>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 GMT</pubDate>
+      <description>The Build America, Buy America Act (BABAA), enacted in November 2021 as part of the Infrastructure Investment and Jobs Act, represents a pivotal shift in federal procurement policy, aiming to bolster domestic manufacturing and supply chains. Effective since May 14, 2022, BABAA mandates that federally funded infrastructure projects—spanning roads, bridges, harbors, airports, and utilities—use products manufactured in the United States, with at least 55% of the component costs sourced domestically. This article delves into the intricacies of BABAA, its implications for the electrical transformer industry, and strategies for navigating compliance amidst supply chain challenges and rising tariffs.</description>
+    </item>
     <item>
       <title>EGSA’s Load Bank Certification: Elevating Skills in Power Generation</title>
       <link>https://ampere.dev/blog.html#EGSA-Load-Bank-Certification</link>
