@@ -7,17 +7,17 @@
 
     <!-- Page Metadata -->
     <title>Privacy & Legal | Ampere Development</title>
-    <meta name="description" content="Review Ampere Development's privacy policy and legal terms for load bank rentals, Starline tapbox rentals, and load testing services. Learn more today.">
+    <meta name="description" content="Review Ampere Development's privacy policy, terms of service, and operational policies for load bank rentals, Starline tapbox rentals, and load testing services.">
     
     <!-- SEO -->
     <meta property="og:title" content="Privacy & Legal | Ampere Development">
-    <meta property="og:description" content="Review Ampere Development's privacy policy and legal terms for load bank rentals, Starline tapbox rentals, and load testing services.">
+    <meta property="og:description" content="Review Ampere Development's privacy policy, terms of service, and operational policies for load bank rentals, Starline tapbox rentals, and load testing services.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ampere.dev/privacy-legal">
     <meta property="og:image" content="https://ampere.dev/images/privacy.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Privacy & Legal | Ampere Development">
-    <meta name="twitter:description" content="Review Ampere Development's privacy policy and legal terms for load bank rentals, Starline tapbox rentals, and load testing services.">
+    <meta name="twitter:description" content="Review Ampere Development's privacy policy, terms of service, and operational policies for load bank rentals, Starline tapbox rentals, and load testing services.">
     <meta name="twitter:image" content="https://ampere.dev/images/privacy.webp">
 
     <!-- Canonical Tag -->
@@ -53,6 +53,19 @@
             opacity: 0;
             animation: fadeIn 2s ease-in forwards;
         }
+        .faq-toggle {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .faq-toggle:hover {
+            background-color: #f3f4f6;
+        }
+        .faq-content {
+            display: none;
+        }
+        .faq-content.active {
+            display: block;
+        }
     </style>
 </head>
 <body class="font-ubuntu bg-gray-100 text-gray-800">
@@ -66,6 +79,7 @@
             </div>
             <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
             <nav id="header" class="nav-menu hidden md:flex space-x-6">
+               bastion://nav-menu
                 <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
                 <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
                 <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
@@ -82,7 +96,7 @@
         <div class="container mx-auto px-4">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Privacy & Legal</h1>
             <p class="text-xl mb-6">Our Commitment to Your Privacy and Legal Transparency</p>
-            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Contact Us with Questions!</a>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Contact Us</a>
         </div>
     </section>
 
@@ -90,7 +104,7 @@
     <section class="py-12 bg-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Trust and Transparency</h2>
-            <p class="text-lg mb-4">At Ampere Development, we are committed to fostering trust through transparent practices and safeguarding your privacy. Whether you're renting load banks, Starline tapboxes, or utilizing our load testing services, we aim to provide clarity on how we handle your information, operate our services, and uphold our legal and ethical responsibilities. Below, we outline our policies in detail to ensure you feel confident in partnering with us.</p>
+            <p class="text-lg mb-4">At Ampere Development, we prioritize trust through transparent practices and robust privacy protections. Whether you’re renting load banks, Starline tapboxes, or utilizing our load testing services, we aim to provide clear information about how we handle your data, deliver our services, and uphold our legal and ethical responsibilities. Below, we outline our policies to ensure confidence in partnering with us.</p>
         </div>
     </section>
 
@@ -101,61 +115,61 @@
                 <div class="md:w-2/3">
                     <h2 class="text-3xl font-bold text-center mb-6">Privacy Policy</h2>
                     <p class="text-lg text-center mb-4 font-semibold">Protecting Your Information</p>
-                    <p class="text-lg mb-6">Your privacy is a top priority. This section explains how we collect, use, store, and protect your personal and business information when you interact with Ampere Development.</p>
+                    <p class="text-lg mb-6">Your privacy is our priority. This section explains how we collect, use, store, and protect your personal and business information when you engage with Ampere Development.</p>
                     
                     <h3 class="text-2xl font-semibold mb-2">1. Information We Collect</h3>
-                    <p class="text-lg mb-4">We collect information to provide and improve our load bank rentals, Starline tapbox rentals, and load testing services. This may include:</p>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li><strong>Personal Information</strong>: Name, email address, phone number, and billing details provided when you request a quote, place an order, or contact us.</li>
-                        <li><strong>Business Information</strong>: Company name, address, and industry details to tailor our services to your needs.</li>
-                        <li><strong>Usage Data</strong>: Information about how you interact with our website, such as IP addresses, browser types, and pages visited, collected via cookies and analytics tools.</li>
-                        <li><strong>Service-Related Data</strong>: Technical details about the equipment rented or tested, such as load bank specifications or test results, to ensure proper service delivery.</li>
+                    <p class="text-lg mb-4">We collect information to deliver and enhance our load bank rentals, Starline tapbox rentals, and load testing services, including:</p>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li><strong>Personal Information</strong>: Name, email, phone number, and billing details provided when requesting quotes, placing orders, or contacting us.</li>
+                        <li><strong>Business Information</strong>: Company name, address, and industry details to customize our services.</li>
+                        <li><strong>Usage Data</strong>: Website interactions (e.g., IP addresses, browser types, pages visited) collected via cookies and analytics tools.</li>
+                        <li><strong>Service-Related Data</strong>: Technical details (e.g., load bank specifications—details about equipment capacity and settings—or test results) to ensure proper service delivery.</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">2. How We Use Your Information</h3>
                     <p class="text-lg mb-4">We use your information to:</p>
-                    <ul class="list-disc list-inside text-lg mb-4">
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
                         <li>Process rental agreements and service requests.</li>
-                        <li>Communicate with you about your orders, updates, or support inquiries.</li>
-                        <li>Improve our website, services, and customer experience through analytics.</li>
-                        <li>Comply with legal obligations, such as tax reporting or safety regulations.</li>
-                        <li>Send optional marketing communications (with your consent, and you can opt out at any time).</li>
+                        <li>Communicate about orders, updates, or support inquiries.</li>
+                        <li>Improve our website and services through analytics.</li>
+                        <li>Comply with legal obligations (e.g., tax reporting, safety regulations).</li>
+                        <li>Send optional marketing communications (with your consent; opt out via unsubscribe links in emails or by emailing <a href="mailto:privacy@ampere.dev" class="text-blue-600 hover:underline">privacy@ampere.dev</a>).</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">3. Data Protection</h3>
-                    <p class="text-lg mb-4">We implement robust security measures to protect your data, including:</p>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li>Encryption of sensitive information during transmission and storage.</li>
-                        <li>Access controls to limit who can view your data within our organization.</li>
-                        <li>Regular security audits to identify and address vulnerabilities.</li>
+                    <p class="text-lg mb-4">We implement robust security measures, including:</p>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li><strong>Encryption</strong>: Sensitive data is encrypted during transmission and storage.</li>
+                        <li><strong>Access Controls</strong>: Data access is restricted to authorized personnel within our organization.</li>
+                        <li><strong>Security Audits</strong>: Regular audits identify and address vulnerabilities.</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">4. Data Sharing</h3>
-                    <p class="text-lg mb-4">We do not sell or share your personal information with third parties except in the following cases:</p>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li><strong>Service Providers</strong>: Trusted partners who assist with payment processing, equipment delivery, or website analytics, bound by strict confidentiality agreements.</li>
-                        <li><strong>Legal Requirements</strong>: When required by law, such as in response to a court order or regulatory request.</li>
-                        <li><strong>Business Transfers</strong>: In the event of a merger or acquisition, your data may be transferred to the new entity under the same privacy protections.</li>
+                    <p class="text-lg mb-4">We do not sell your personal information. Sharing occurs only with:</p>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li><strong>Service Providers</strong>: Trusted partners for payment processing, equipment delivery, or analytics, bound by confidentiality agreements.</li>
+                        <li><strong>Legal Requirements</strong>: When required by law (e.g., court orders, regulatory requests).</li>
+                        <li><strong>Business Transfers</strong>: In mergers or acquisitions, data may be transferred with equivalent privacy protections.</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">5. Your Rights</h3>
                     <p class="text-lg mb-4">You have the right to:</p>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li>Access the personal information we hold about you.</li>
-                        <li>Request corrections to inaccurate or incomplete data.</li>
-                        <li>Request deletion of your data (subject to legal retention requirements).</li>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li>Access your personal information.</li>
+                        <li>Request corrections to inaccurate data.</li>
+                        <li>Request deletion of your data (subject to legal retention requirements, e.g., tax records retained for 7 years).</li>
                         <li>Opt out of marketing communications at any time.</li>
                     </ul>
-                    <p class="text-lg mb-4">To exercise these rights, contact us at privacy@ampere.dev. We will respond promptly in accordance with applicable data protection laws.</p>
+                    <p class="text-lg mb-4">To exercise these rights, contact <a href="mailto:privacy@ampere.dev" class="text-blue-600 hover:underline">privacy@ampere.dev</a>. We respond promptly per applicable data protection laws.</p>
 
                     <h3 class="text-2xl font-semibold mb-2">6. Cookies and Tracking</h3>
-                    <p class="text-lg mb-4">Our website uses cookies to enhance your experience. You can manage cookie preferences through your browser settings. For details, see our <a href="#" class="text-blue-600 hover:underline">Cookie Policy</a>.</p>
+                    <p class="text-lg mb-4">Our website uses cookies to improve your experience (e.g., remembering preferences). Manage cookie settings via your browser or view our <a href="https://ampere.dev/cookie-policy" class="text-blue-600 hover:underline">Cookie Policy</a>.</p>
 
                     <h3 class="text-2xl font-semibold mb-2">7. Changes to This Policy</h3>
-                    <p class="text-lg mb-4">We may update this policy periodically to reflect changes in our services or legal requirements. Changes will be posted here. <strong>Effective Date:</strong> May 23, 2025</p>
+                    <p class="text-lg mb-4"><strong>Effective Date:</strong> May 23, 2025. We may update this policy to reflect service or legal changes. Updates will be posted here.</p>
                 </div>
                 <div class="md:w-1/3 flex flex-col gap-6">
-                    <img src="/images/privacy_security.webp" alt="Privacy and security" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                    <img src="/images/privacy_security.webp" alt="Illustration of privacy and security measures" class="w-full h-auto rounded-lg shadow-md animate-fade-in" loading="lazy">
                 </div>
             </div>
         </div>
@@ -168,43 +182,43 @@
                 <div class="md:w-2/3">
                     <h2 class="text-3xl font-bold text-center mb-6">Terms of Service</h2>
                     <p class="text-lg text-center mb-4 font-semibold">Clear Terms for Our Services</p>
-                    <p class="text-lg mb-6">Our terms of service govern the rental of load banks, Starline tapboxes, and the provision of load testing services. These terms ensure clarity and fairness for all parties.</p>
+                    <p class="text-lg mb-6">Our terms govern the rental of load banks, Starline tapboxes, and load testing services, ensuring clarity and fairness.</p>
 
                     <h3 class="text-2xl font-semibold mb-2">1. Rental Agreements</h3>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li><strong>Eligibility</strong>: Renters must be 18 or older and authorized to enter binding contracts on behalf of their organization.</li>
-                        <li><strong>Rental Period</strong>: The rental period begins on the delivery date and ends on the agreed-upon return date. Extensions require prior approval.</li>
-                        <li><strong>Pricing and Payment</strong>: Rental fees are outlined in your quote or agreement. Payment is due upon receipt unless otherwise specified. Late payments may incur fees.</li>
-                        <li><strong>Equipment Use</strong>: Equipment must be used only for its intended purpose by qualified personnel. Misuse may result in additional charges or termination of the agreement.</li>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li><strong>Eligibility</strong>: Renters must be 18+ and authorized to enter binding contracts for their organization.</li>
+                        <li><strong>Rental Period</strong>: Begins on delivery and ends on the agreed return date. Extensions require prior approval.</li>
+                        <li><strong>Pricing and Payment</strong>: Fees are outlined in your quote or agreement. Payment is due upon receipt unless specified. Late payments may incur fees.</li>
+                        <li><strong>Equipment Use</strong>: Equipment must be used only for its intended purpose by qualified personnel (trained operators). Misuse may result in charges or agreement termination.</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">2. Load Testing Services</h3>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li><strong>Scope</strong>: Services include setup, operation, and reporting by our certified technicians, tailored to your specifications.</li>
-                        <li><strong>Safety</strong>: Clients must provide a safe working environment and comply with all applicable regulations. Ampere Development adheres to OSHA and industry safety standards.</li>
-                        <li><strong>Deliverables</strong>: Test results and reports are provided in PDF format within 5 business days after testing.</li>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li><strong>Scope</strong>: Includes setup, operation, and reporting by certified technicians, tailored to your needs.</li>
+                        <li><strong>Safety</strong>: Clients must provide a safe work environment and comply with regulations. We adhere to OSHA (Occupational Safety and Health Administration) and industry standards.</li>
+                        <li><strong>Deliverables</strong>: Test results and PDF reports delivered within 5 business days post-testing.</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">3. Responsibilities</h3>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li><strong>Client Responsibilities</strong>: Ensure proper site access, provide necessary utilities (e.g., power or water), and return equipment in good condition (normal wear and tear excepted).</li>
-                        <li><strong>Ampere Development Responsibilities</strong>: Deliver equipment in working order, provide technical support, and perform services as agreed.</li>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li><strong>Client Responsibilities</strong>: Provide site access, necessary utilities (e.g., power, water), and return equipment in good condition (normal wear excepted).</li>
+                        <li><strong>Ampere Development Responsibilities</strong>: Deliver functional equipment, provide technical support, and perform agreed services.</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">4. Liability and Insurance</h3>
-                    <ul class="list-disc list-inside text-lg mb-4">
-                        <li><strong>Damage or Loss</strong>: Clients are responsible for equipment damage or loss due to negligence or improper use. Ampere Development provides optional insurance coverage (contact us for details).</li>
-                        <li><strong>Limitation of Liability</strong>: Ampere Development is not liable for indirect damages, such as lost profits, arising from equipment use or service performance, except as required by law.</li>
+                    <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                        <li><strong>Damage or Loss</strong>: Clients are liable for equipment damage or loss due to negligence. Optional insurance is available (contact <a href="mailto:support@ampere.dev" class="text-blue-600 hover:underline">support@ampere.dev</a>).</li>
+                        <li><strong>Limitation of Liability</strong>: We are not liable for indirect damages (e.g., lost profits) unless required by law.</li>
                     </ul>
 
                     <h3 class="text-2xl font-semibold mb-2">5. Cancellation and Refunds</h3>
-                    <p class="text-lg mb-4">Cancellations must be made 48 hours before the rental start date to avoid fees. Refunds are processed within 14 days for eligible cancellations.</p>
+                    <p class="text-lg mb-4">Cancellations require 48 hours’ notice before the rental start date to avoid fees. Refunds are processed within 14 days for eligible cancellations.</p>
 
                     <h3 class="text-2xl font-semibold mb-2">6. Governing Law</h3>
-                    <p class="text-lg mb-4">These terms are governed by the laws of [Insert Jurisdiction]. Disputes will be resolved in the courts of [Insert Jurisdiction].</p>
+                    <p class="text-lg mb-4">These terms shall be governed by and construed in accordance with the laws of the state or region where the incident or service location occurs. Any disputes arising under or in connection with these terms shall be subject to the exclusive jurisdiction of the courts of the state or region where the incident or service location occurs.</p>
                 </div>
                 <div class="md:w-1/3 flex flex-col gap-6">
-                    <img src="/images/legal_transparency.webp" alt="Legal transparency" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                    <img src="/images/legal_transparency.webp" alt="Illustration of legal transparency" class "w-full h-auto rounded-lg shadow-md animate-fade-in" loading="lazy">
                 </div>
             </div>
         </div>
@@ -217,24 +231,66 @@
                 <div class="md:w-2/3">
                     <h2 class="text-3xl font-bold text-center mb-6">Operational Policies</h2>
                     <p class="text-lg text-center mb-4 font-semibold">Ensuring Smooth Service Delivery</p>
-                    <p class="text-lg mb-6">To ensure smooth service delivery, we maintain the following operational policies:</p>
+                    <p class="text-lg mb-6">Our policies ensure reliable service for load bank and Starline tapbox rentals and load testing:</p>
 
                     <h3 class="text-2xl font-semibold mb-2">1. Equipment Maintenance</h3>
-                    <p class="text-lg mb-4">All load banks and Starline tapboxes are inspected, tested, and maintained to meet manufacturer standards before delivery. Clients must report any equipment issues immediately to support@ampere.dev for prompt resolution.</p>
+                    <p class="text-lg mb-4">All load banks and Starline tapboxes are inspected, tested, and maintained to manufacturer standards before delivery. Report issues to <a href="mailto:support@ampere.dev" class="text-blue-600 hover:underline">support@ampere.dev</a> for prompt resolution.</p>
 
                     <h3 class="text-2xl font-semibold mb-2">2. Delivery and Pickup</h3>
-                    <p class="text-lg mb-4">Delivery and pickup schedules are coordinated with you in advance. Additional fees may apply for expedited or non-standard delivery. Clients must ensure site accessibility for delivery vehicles and equipment.</p>
+                    <p class="text-lg mb-4">Schedules are coordinated in advance. Expedited or non-standard delivery may incur fees. Clients must ensure site accessibility for delivery vehicles and equipment.</p>
 
                     <h3 class="text-2xl font-semibold mb-2">3. Support and Assistance</h3>
-                    <p class="text-lg mb-4">Our team is available Monday through Friday, 8 AM to 5 PM, for technical support and troubleshooting. On-site support for load testing services is included; additional support may incur fees.</p>
+                    <p class="text-lg mb-4">Technical support is available Monday–Friday, 8 AM–5 PM. On-site support for load testing is included; additional support may incur fees.</p>
 
                     <h3 class="text-2xl font-semibold mb-2">4. Environmental Responsibility</h3>
-                    <p class="text-lg mb-4">We strive to minimize our environmental impact by using energy-efficient equipment and recycling materials where possible. Clients are encouraged to follow best practices for sustainable equipment use.</p>
+                    <p class="text-lg mb-4">We minimize environmental impact through energy-efficient load banks and recycling of packaging materials. Clients are encouraged to use equipment sustainably.</p>
                 </div>
                 <div class="md:w-1/3 flex flex-col gap-6">
-                    <img src="/images/operational_efficiency.webp" alt="Operational efficiency" class="w-full h-auto rounded-lg shadow-md animate-fade-in">
+                    <img src="/images/operational_efficiency.webp" alt="Illustration of operational efficiency" class="w-full h-auto rounded-lg shadow-md animate-fade-in" loading="lazy">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+            <p class="text-lg text-center mb-6">Find answers to common questions about our privacy, terms, and services.</p>
+            <div class="space-y-4">
+                <div class="faq-item">
+                    <h3 class="text-xl font-semibold faq-toggle p-4 bg-gray-100 rounded-lg">What happens if equipment is damaged during rental?</h3>
+                    <div class="faq-content text-lg p-4">
+                        <p>Clients are responsible for damage due to negligence or improper use. You can opt for our insurance coverage to mitigate risks. Contact <a href="mailto:support@ampere.dev" class="text-blue-600 hover:underline">support@ampere.dev</a> for details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="text-xl font-semibold faq-toggle p-4 bg-gray-100 rounded-lg">How do I opt out of marketing communications?</h3>
+                    <div class="faq-content text-lg p-4">
+                        <p>Use the unsubscribe link in our emails or email <a href="mailto:privacy@ampere.dev" class="text-blue-600 hover:underline">privacy@ampere.dev</a> to opt out at any time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="text-xl font-semibold faq-toggle p-4 bg-gray-100 rounded-lg">What are cookies, and how can I manage them?</h3>
+                    <div class="faq-content text-lg p-4">
+                        <p>Cookies are small files that enhance your website experience (e.g., remembering preferences). Manage them via your browser settings or review our <a href="https://ampere.dev/cookie-policy" class="text-blue-600 hover:underline">Cookie Policy</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary Section -->
+    <section id="glossary" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Glossary of Terms</h2>
+            <p class="text-lg text-center mb-6">Understand key terms used in our policies.</p>
+            <ul class="list-disc list-inside text-lg mb-4 space-y-2">
+                <li><strong>Load Bank</strong>: A device used to test power sources by simulating electrical loads.</li>
+                <li><strong>Starline Tapbox</strong>: A modular power distribution system for flexible electrical connections.</li>
+                <li><strong>OSHA</strong>: Occupational Safety and Health Administration, a U.S. agency setting workplace safety standards.</li>
+                <li><strong>Qualified Personnel</strong>: Trained operators with expertise in handling our equipment safely.</li>
+            </ul>
         </div>
     </section>
 
@@ -242,9 +298,9 @@
     <section id="contact" class="py-12 bg-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-            <p class="text-lg mb-6">If you have questions about our privacy practices, terms of service, or operational policies, we’re here to help. Reach out to us at:</p>
-            <ul class="list-none text-lg mb-6">
-                <li><strong>Email</strong>: support@ampere.dev</li>
+            <p class="text-lg mb-6">For questions about our privacy practices, terms, or policies, contact:</p>
+            <ul class="list-none text-lg mb-6 space-y-2">
+                <li><strong>Email</strong>: <a href="mailto:support@ampere.dev" class="text-blue-600 hover:underline">support@ampere.dev</a></li>
                 <li><strong>Phone</strong>: (888) 345-LOAD</li>
             </ul>
         </div>
@@ -255,7 +311,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-4">Have Questions About Our Policies?</h2>
             <p class="text-lg mb-6">Contact our team for clarity on our privacy policy, terms of service, or to learn more about our services.</p>
-            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Get in Touch!</a>
+            <a href="https://ampere.dev/contact" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Get in Touch</a>
         </div>
     </section>
 
@@ -274,17 +330,17 @@
                     </ul>
                 </div>
                 <div class="social-icons flex gap-4">
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener">
-                        <img src="icons/facebook-logo.webp" alt="Facebook logo" class="h-6">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
+                        <img src="icons/facebook-logo.webp" alt="Facebook logo" class="h-6" loading="lazy">
                     </a>
-                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener">
-                        <img src="icons/logo-white.webp" alt="X logo" class="h-6">
+                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener" aria-label="Visit our X profile">
+                        <img src="icons/logo-white.webp" alt="X logo" class="h-6" loading="lazy">
                     </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
-                        <img src="icons/linkedin.webp" alt="LinkedIn logo" class="h-6">
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Visit our LinkedIn page">
+                        <img src="icons/linkedin.webp" alt="LinkedIn logo" class="h-6" loading="lazy">
                     </a>
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener">
-                        <img src="icons/Instagram_White.webp" alt="Instagram logo" class="h-6">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page">
+                        <img src="icons/Instagram_White.webp" alt="Instagram logo" class="h-6" loading="lazy">
                     </a>
                 </div>
             </div>
@@ -298,6 +354,15 @@
         // Toggle mobile menu
         document.querySelector('.menuToggler').addEventListener('click', () => {
             document.querySelector('.nav-menu').classList.toggle('hidden');
+        });
+
+        // Toggle FAQ sections
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                content.classList.toggle('active');
+                toggle.setAttribute('aria-expanded', content.classList.contains('active'));
+            });
         });
     </script>
 </body>
