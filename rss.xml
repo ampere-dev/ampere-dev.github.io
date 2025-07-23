@@ -5,8 +5,36 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jul 2025 03:28:39 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jul 2025 20:54:51 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grid at Breaking Point: AI Data Centers Push U.S. Power System to the Limit</title>
+      <link>https://ampere.dev/blog.html#Grid-Maxed-Out</link>
+      <guid>https://ampere.dev/blog.html#Grid-Maxed-Out</guid>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 GMT</pubDate>
+      <description>The surge in artificial intelligence (AI) is driving a massive increase in electricity demand, pushing America’s largest power grid, PJM Interconnection, to its limits. Serving 65 million people across 13 states and Washington, D.C., PJM has issued repeated “Maximum Generation” and “Load Management” alerts this summer as heatwaves and AI data centers strain capacity. With no spare power to meet this unprecedented demand, electricity prices are soaring, and the threat of blackouts looms. Here’s why the grid is maxed out and what it means for consumers.</description>
+    </item>
+    <item>
+      <title>The AI Boom Is Sending Your Electricity Bills Through the Roof</title>
+      <link>https://ampere.dev/blog.html#AI-Power-Crisis</link>
+      <guid>https://ampere.dev/blog.html#AI-Power-Crisis</guid>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 GMT</pubDate>
+      <description>The relentless rise of artificial intelligence (AI) is transforming industries, but it’s also driving an unprecedented surge in electricity demand across the United States. The nation’s largest power grid, PJM Interconnection, which serves 65 million people across 13 states and Washington, D.C., is struggling to keep up. As data centers powering AI applications multiply, electricity costs are soaring to record highs, and consumers are left footing the bill. Here’s a deep dive into why your utility bills are climbing and what it means for the future.</description>
+    </item>
+    <item>
+      <title>America’s Looming Electricity Crisis: Rationing on the Horizon?</title>
+      <link>https://ampere.dev/blog.html#Americas-Electricity-Crisis</link>
+      <guid>https://ampere.dev/blog.html#Americas-Electricity-Crisis</guid>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 GMT</pubDate>
+      <description>As global electricity demand is projected to double over the next two decades, the United States faces an unprecedented challenge to its energy infrastructure. This growth, unseen since the post-World War II era, is driven by the rise of AI-driven data centers, advanced manufacturing, and the push for electric vehicles. However, the nation’s aging electrical grid and shifting energy policies are struggling to keep pace, raising concerns about potential electricity rationing in the future.</description>
+    </item>
+    <item>
+      <title>PJM Interconnection’s Maximum Generation Alert: Navigating Grid Strain Amid Soaring Temperatures</title>
+      <link>https://ampere.dev/blog.html#PJM-Maximum-Generation-Alert</link>
+      <guid>https://ampere.dev/blog.html#PJM-Maximum-Generation-Alert</guid>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 GMT</pubDate>
+      <description>On July 16, 2025, PJM Interconnection, the largest U.S. power grid operator serving 65 million people across 13 states and Washington, D.C., issued a Maximum Generation Alert and Load Management Alert as temperatures soared across the eastern U.S. With a peak demand forecast of approximately 145,000 MW, PJM ordered all available generation resources to operate at full capacity to meet surging electricity needs driven by extreme heat. This alert, part of PJM’s procedural measures, signals tightening grid conditions and potential curtailments of power exports to neighboring regions, while advising transmission and generation owners to defer maintenance. The alert underscores broader challenges facing the U.S. power grid, including aging infrastructure, rising demand, and the complex transition from fossil fuels to renewable energy sources.</description>
+    </item>
     <item>
       <title>Surging Transformer Demand and Aging Grids: Challenges and Solutions for America’s Power Infrastructure</title>
       <link>https://ampere.dev/blog.html#Transformer-Demand-Aging-Grids</link>
