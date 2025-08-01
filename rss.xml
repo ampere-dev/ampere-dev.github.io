@@ -5,8 +5,22 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jul 2025 20:54:51 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 06:17:49 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI-Driven Data Center Revolution: Reshaping Supply Chains for High-Density Racks</title>
+      <link>https://ampere.dev/blog.html#AI-Data-Center-Supply-Chain-Evolution</link>
+      <guid>https://ampere.dev/blog.html#AI-Data-Center-Supply-Chain-Evolution</guid>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The rise of artificial intelligence (AI) and high-performance computing (HPC) is transforming data center infrastructure, pushing operators to adopt power-intensive technologies like 1 MW IT racks. These advancements, driven by the need to support next-generation AI workloads, are reshaping not only data center architecture but also the supply chains that sustain them. With hyperscalers projected to control 60% of global data center capacity by 2030, the urgency to deliver scalable, resilient, and agile supply chains has never been greater.</description>
+    </item>
+    <item>
+      <title>North American Data Center Boom: Hyperscalers Drive Unprecedented Expansion</title>
+      <link>https://ampere.dev/blog.html#North-American-Data-Center-Expansion</link>
+      <guid>https://ampere.dev/blog.html#North-American-Data-Center-Expansion</guid>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The North American data center market is experiencing a historic surge, fueled by the explosive growth of artificial intelligence (AI) and cloud computing. Hyperscalers—major cloud service providers like Amazon, Google, and Microsoft—are projected to command 60% of global data center capacity by 2030, according to recent industry analysis. This month, these industry giants, along with other key players, announced significant new projects across the United States, signaling a transformative era for digital infrastructure, economic growth, and energy demands.</description>
+    </item>
     <item>
       <title>Grid at Breaking Point: AI Data Centers Push U.S. Power System to the Limit</title>
       <link>https://ampere.dev/blog.html#Grid-Maxed-Out</link>
