@@ -5,8 +5,22 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Aug 2025 06:17:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 15:19:59 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grid on the Brink: PJM’s 2026/2027 Auction Signals Urgent Need for Reliable Power</title>
+      <link>https://ampere.dev/blog.html#PJM-Auction-Crisis-2025</link>
+      <guid>https://ampere.dev/blog.html#PJM-Auction-Crisis-2025</guid>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+      <description>On July 22, 2025, PJM Interconnection, the largest U.S. grid operator serving 67 million people across 13 states and Washington, D.C., released the results of its 2026/2027 Base Residual Auction (BRA). The outcome was a stark warning: capacity prices hit the Federal Energy Regulatory Commission (FERC) cap of $329.17 per megawatt-day (MW-day) across all zones, a 22% increase from the previous year’s $269.92/MW-day. This unprecedented price spike, totaling $16.1 billion in capacity payments, underscores a growing crisis in America’s power grid, driven by surging demand, retiring baseload generation, and delays in new capacity. The auction results highlight the critical role of coal and other dispatchable energy sources in maintaining grid reliability.</description>
+    </item>
+    <item>
+      <title>Tracking America’s Energy Evolution: Insights from the 2023 LLNL Energy Flow Chart</title>
+      <link>https://ampere.dev/blog.html#US-Energy-Flows-2023</link>
+      <guid>https://ampere.dev/blog.html#US-Energy-Flows-2023</guid>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The United States’ energy landscape is undergoing a profound transformation, as detailed in the 2023 U.S. energy flow chart released by Lawrence Livermore National Laboratory (LLNL). These charts, known as Sankey diagrams, have been a cornerstone of energy analysis since the 1970s, offering a visual representation of the nation’s energy production, consumption, and waste. The 2023 chart, available at flowcharts.llnl.gov, reveals a total energy consumption of 93.6 quadrillion British Thermal Units (BTUs), or quads, with significant shifts toward cleaner energy sources and a reduction in fossil fuel use, signaling progress in the nation’s decarbonization efforts.</description>
+    </item>
     <item>
       <title>The AI-Driven Data Center Revolution: Reshaping Supply Chains for High-Density Racks</title>
       <link>https://ampere.dev/blog.html#AI-Data-Center-Supply-Chain-Evolution</link>
