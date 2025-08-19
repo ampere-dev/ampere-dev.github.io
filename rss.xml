@@ -5,8 +5,36 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Aug 2025 15:19:59 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 19 Aug 2025 11:02:16 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Navigating the Trillion-Dollar Data Center Challenge: Lessons from Visionary Focus</title>
+      <link>https://ampere.dev/blog.html#Trillion-Dollar-Data-Center</link>
+      <guid>https://ampere.dev/blog.html#Trillion-Dollar-Data-Center</guid>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The global data center industry is on the cusp of a transformative era, with capital expenditures projected to exceed $1 trillion by 2030, driven by the explosive growth of AI-driven workloads. At Data Center World 2025, Omdia analyst Vlad Galabov outlined the sector’s critical challenges—power distribution, cooling, and talent shortages—while emphasizing that these hurdles are solvable with innovative solutions and long-term thinking. Drawing inspiration from Steve Jobs and Elon Musk’s mastery of signal-to-noise ratio planning and relentless focus, this article explores how the data center industry can navigate this trillion-dollar challenge with clarity and precision.</description>
+    </item>
+    <item>
+      <title>US Grid Watchdog: Data Centers Must Bring Their Own Power to Ease Grid Strain</title>
+      <link>https://ampere.dev/blog.html#Data-Center-Power-Crisis</link>
+      <guid>https://ampere.dev/blog.html#Data-Center-Power-Crisis</guid>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The rapid expansion of data centers, driven by the AI boom, is pushing America’s largest power grid to its breaking point. PJM Interconnection, serving 65 million people across 13 states from Virginia to Illinois, lacks the capacity to support new data centers, according to Monitoring Analytics, the grid’s independent watchdog. In a significant escalation, their latest quarterly report recommends that large data centers be required to generate their own power, signaling a critical shift in how the industry must address its soaring energy demands.</description>
+    </item>
+    <item>
+      <title>Ampere Insights: Navigating Record-Breaking Data Center Demand Amid Critical Grid Limitations</title>
+      <link>https://ampere.dev/blog.html#Data-Center-Power-Crisis</link>
+      <guid>https://ampere.dev/blog.html#Data-Center-Power-Crisis</guid>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The North American data center market is booming, fueled by the explosive growth of AI-driven workloads and digital infrastructure. Yet, this unprecedented demand is colliding with severe grid constraints, creating a challenging environment for operators and investors. Drawing on insights from JLL’s midyear 2025 data center market report, this article examines the power bottlenecks, short-term workarounds, and long-term opportunities shaping the future of the industry.</description>
+    </item>
+    <item>
+      <title>HyperGrid: Powering the AI Revolution with Nuclear Energy in Texas</title>
+      <link>https://ampere.dev/blog.html#HyperGrid-AI-Nuclear-Campus</link>
+      <guid>https://ampere.dev/blog.html#HyperGrid-AI-Nuclear-Campus</guid>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 GMT</pubDate>
+      <description>In a bold move to address the surging energy demands of artificial intelligence (AI), Fermi America has partnered with South Korea’s Hyundai Engineering &amp; Construction (E&amp;C) to develop the HyperGrid, a groundbreaking 5,769-acre energy and AI campus near Amarillo, Texas. This ambitious project, backed by former Texas Governor and U.S. Energy Secretary Rick Perry and investor Toby Neugebauer, aims to deliver up to 11 gigawatts (GW) of power by integrating nuclear, natural gas, solar, and battery storage, positioning Texas as a global leader in AI infrastructure. With construction set to begin in 2026, the HyperGrid could redefine how data centers meet the energy needs of next-generation computing.</description>
+    </item>
     <item>
       <title>Grid on the Brink: PJM’s 2026/2027 Auction Signals Urgent Need for Reliable Power</title>
       <link>https://ampere.dev/blog.html#PJM-Auction-Crisis-2025</link>
