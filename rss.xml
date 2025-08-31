@@ -5,8 +5,22 @@
     <link>https://ampere.dev/blog.html</link>
     <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Aug 2025 11:02:16 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 31 Aug 2025 23:02:03 GMT</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Journey with Autonomous Drones in Long-Range Transmission Line Inspections</title>
+      <link>https://ampere.dev/blog.html#Drone-Inspection-Journey</link>
+      <guid>https://ampere.dev/blog.html#Drone-Inspection-Journey</guid>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 GMT</pubDate>
+      <description>I recently read an article from POWER Magazine titled "The Role of Autonomous Drones in Long-Range Transmission Line Inspections," authored by Paul Harty, director and drone pilot at Sky Scan Surveys. It transported me back to 2011–2013 when I first conceived the idea of using autonomous drones to inspect long-distance transmission lines. At the time, I was captivated by the potential of drones to revolutionize utility operations, making inspections safer, more cost-effective, and rich with actionable data. Seeing these concepts now gaining traction in the industry feels like a validation of those early musings. Back then, the technology was nascent, and regulatory hurdles seemed daunting, but I envisioned a future where drones could navigate rugged terrains, collect precise data, and reduce human risk. Today, that vision is becoming reality, and it’s exciting to reflect on how far we’ve come as of this moment. Read the POWER Magazine article</description>
+    </item>
+    <item>
+      <title>Trump’s Emergency Action to Save the Grid: Addressing the AI-Driven Energy Crisis</title>
+      <link>https://ampere.dev/blog.html#Trump-Grid-Reliability</link>
+      <guid>https://ampere.dev/blog.html#Trump-Grid-Reliability</guid>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 GMT</pubDate>
+      <description>As the United States grapples with an unprecedented surge in electricity demand driven by AI data centers, the nation’s largest power grid, PJM Interconnection, is teetering on the edge of collapse. On August 28, 2025, the Department of Energy (DOE), under President Donald Trump’s leadership, issued an emergency order to extend the operation of units at the Pennsylvania Eddystone Generating Station, a critical step to prevent blackouts in the PJM region. This move highlights a growing energy crisis, exacerbated by policies that favored intermittent renewable energy over reliable baseload sources. With hyperscale AI data centers pushing grid limits, experts estimate the U.S. needs a 100-fold increase in power plant capacity to ensure grid resiliency. This article delves into the technical and economic dimensions of the crisis and Trump’s response.</description>
+    </item>
     <item>
       <title>Navigating the Trillion-Dollar Data Center Challenge: Lessons from Visionary Focus</title>
       <link>https://ampere.dev/blog.html#Trillion-Dollar-Data-Center</link>
