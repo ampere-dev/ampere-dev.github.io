@@ -5,8 +5,22 @@
   <link>https://ampere.dev/blog.html</link>
   <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 13 Sep 2025 02:07:53 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 09 Oct 2025 01:33:00 GMT</lastBuildDate>
   <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+   <title>Duke Energy's Ambitious Resource Plans: Gas, Nuclear, Solar, and Storage Projects to Power Growth Through 2035</title>
+   <link>https://ampere.dev/blog.html#Duke-Energy-Resource-Plans</link>
+   <guid>https://ampere.dev/blog.html#Duke-Energy-Resource-Plans</guid>
+   <pubDate>Tue, 07 Oct 2025 15:45:00 GMT</pubDate>
+   <description>Duke Energy, one of the largest utilities in the U.S., is embarking on a comprehensive overhaul of its generation portfolio to address surging electricity demand from data centers, manufacturing, and economic growth across its service territories in the Carolinas, Florida, Indiana, Ohio, and Kentucky. The company's 2025 Carolinas Resource Plan, filed October 1, highlights additions of 9.7 GW in natural gas, over 1.1 GW in nuclear, 7.9 GW in solar, and 7.9 GW in battery storage by 2033-2037, alongside delayed coal retirements. Similar initiatives in other states include solar expansions in Florida and resource planning in Indiana and Kentucky. This article explores Duke's diverse projects, the integration of localized LNG-fueled stations for reliability, and the crucial commissioning processes to bring them online efficiently amid a national grid strain projected to require 104 GW of new capacity by 2030. These efforts align with federal policies promoting fossil fuels and nuclear while ensuring affordability and resilience. [Power Magazine: Duke Energy Plan Includes New Gas-Fired Plants]</description>
+  </item>
+  <item>
+   <title>Xcel Energy's 5-GW Gas-Fired Expansion: A National Model for Bolstering Grid Reliability Amid Surging Demands</title>
+   <link>https://ampere.dev/blog.html#Xcel-Energy-5GW-Expansion</link>
+   <guid>https://ampere.dev/blog.html#Xcel-Energy-5GW-Expansion</guid>
+   <pubDate>Tue, 07 Oct 2025 14:30:00 GMT</pubDate>
+   <description>Xcel Energy's ambitious plan to add over 5 GW of new capacity in Texas and New Mexico, including significant natural gas-fired plants, underscores the urgent need for reliable, dispatchable power across the Continental United States (CONUS). With the retirement of coal plants and skyrocketing demand from AI data centers, electric vehicles, and extreme weather events, utilities nationwide are racing to deploy gas-fired solutions. This article delves into Xcel's strategy, extrapolates similar installations across CONUS, and highlights the critical role of localized LNG-fueled stations for rapid deployment. It also emphasizes the importance of efficient commissioning processes to bring these projects online swiftly and safely, averting potential blackouts that could cost billions. Drawing from recent developments, such as over 100 proposed gas plants in Texas alone and federal pushes for fossil fuel infrastructure, the push for gas-fired power is a pragmatic response to grid strains, offering flexibility far superior to intermittent renewables in the short term. [Power Magazine: Xcel Plans New Gas-Fired Plants]</description>
+  </item>
   <item>
    <title>America's Grid is Nearing Its Breaking Point: The Urgent Call for Rapid LNG and Nuclear Solutions</title>
    <link>https://ampere.dev/blog.html#Americas-Grid-Breaking-Point</link>
