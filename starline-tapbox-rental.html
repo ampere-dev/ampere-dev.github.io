@@ -559,22 +559,17 @@
                 height: 2rem;
             }
         }
-        /* FAQ Styles */
-        .open .faq-panel {
-            max-height: 1000px; /* Adjust based on content */
-        }
-        .open .fas.fa-chevron-down {
-            transform: rotate(180deg);
-        }
-        /* FAQ Accordion */
+/* FAQ Accordion - CLEAN & WORKING */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
+
 .open .faq-answer {
-    max-height: 450px; /* Adjust if content is taller */
+    max-height: 500px; /* Safe for all 8 FAQs */
 }
+
 .open .fa-chevron-down {
     transform: rotate(180deg);
 }
