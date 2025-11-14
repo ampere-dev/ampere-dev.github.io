@@ -563,11 +563,16 @@
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, padding 0s 0.3s;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .open .faq-answer {
-    max-height: 500px; /* Safe for all 8 FAQs */
+    max-height: 500px;
+    padding-top: 1.5rem;   /* pt-6 */
+    padding-bottom: 1rem;  /* pb-4 */
+    transition: max-height 0.3s ease, padding 0s;
 }
 
 .open .fa-chevron-down {
