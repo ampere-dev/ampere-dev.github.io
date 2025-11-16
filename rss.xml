@@ -5,8 +5,15 @@
   <link>https://ampere.dev/blog.html</link>
   <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
   <language>en-us</language>
-  <lastBuildDate>Thu, 09 Oct 2025 01:33:00 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 16 Nov 2025 17:24:17 GMT</lastBuildDate>
   <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+   <title>The Electric Grid's New Era: Data Centers, Battery Storage, and Rising Volatility</title>
+   <link>https://ampere.dev/blog.html#Electric-Grid-New-Era</link>
+   <guid>https://ampere.dev/blog.html#Electric-Grid-New-Era</guid>
+   <pubDate>Sun, 16 Nov 2025 12:10:00 GMT</pubDate>
+   <description>Energy gatherings across the country this fall—from renewable trade shows in Nevada to sustainability forums in the Northeast, Texas hubs, and Texas tech events—all circled back to a single pressure point: electricity supply. The focus wasn't just on volume, but on consistency, dependability, and the intense demands now testing systems designed decades ago. The real hurdle for expanding data centers isn't only locking in massive power allocations. It's handling consumption that shifts wildly from one moment to the next. As artificial intelligence and high-performance computing scale to unprecedented levels, the electric grid faces a fundamental transformation—one that demands new tools, new thinking, and new infrastructure.</description>
+  </item>
   <item>
    <title>Duke Energy's Ambitious Resource Plans: Gas, Nuclear, Solar, and Storage Projects to Power Growth Through 2035</title>
    <link>https://ampere.dev/blog.html#Duke-Energy-Resource-Plans</link>
