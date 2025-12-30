@@ -5,8 +5,22 @@
   <link>https://ampere.dev/blog.html</link>
   <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
   <language>en-us</language>
-  <lastBuildDate>Sat, 13 Dec 2025 12:43:40 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 30 Dec 2025 19:11:21 GMT</lastBuildDate>
   <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+   <title>NVIDIA's 800-Volt Revolution: The Massive Overhaul Coming to Global Data Centers</title>
+   <link>https://ampere.dev/blog.html#NVIDIA-800V-Revolution-Data-Centers-2025</link>
+   <guid>https://ampere.dev/blog.html#NVIDIA-800V-Revolution-Data-Centers-2025</guid>
+   <pubDate>Tue, 30 Dec 2025 12:00:00 GMT</pubDate>
+   <description>NVIDIA's GB200 NVL72 rack design highlights, featuring the 800V DC power architecture for high-density AI computing. (Image: NVIDIA)</description>
+  </item>
+  <item>
+   <title>Why High-Impedance Transformers Are Becoming Essential in Data Center Projects</title>
+   <link>https://ampere.dev/blog.html#High-Impedance-Transformers-Data-Centers-2025</link>
+   <guid>https://ampere.dev/blog.html#High-Impedance-Transformers-Data-Centers-2025</guid>
+   <pubDate>Tue, 30 Dec 2025 12:00:00 GMT</pubDate>
+   <description>A modern high-capacity distribution transformer during factory testing – note the extensive radiator banks and cooling fans required for continuous heavy loading in data center applications.</description>
+  </item>
   <item>
    <title>North American Data Center Surge: AI-Driven Expansions and Holiday Cheer in the Industry</title>
    <link>https://ampere.dev/blog.html#North-America-Data-Center-Surge-2025</link>
