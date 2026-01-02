@@ -1,12 +1,17 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
- <channel>
-  <title>Ampere Insights - Ampere Development</title>
-  <link>https://ampere.dev/blog.html</link>
-  <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers &amp; 3D fabrication for industry pros.</description>
-  <language>en-us</language>
-  <lastBuildDate>Tue, 30 Dec 2025 19:11:21 GMT</lastBuildDate>
-  <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+  <channel>
+    <title>Ampere Insights - Ampere Development</title>
+    <link>https://ampere.dev/blog.html</link>
+    <description>Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers, and 3D fabrication for industry professionals.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2026 00:00:00 GMT</lastBuildDate>  <!-- Updated to current date -->
+    <pubDate>Wed, 01 Jan 2026 00:00:00 GMT</pubDate>  <!-- Optional but recommended -->
+    <managingEditor>dsmith@ampere.dev (Douglas Smith)</managingEditor>  <!-- Fixed format -->
+    <webMaster>dsmith@ampere.dev (Douglas Smith)</webMaster>  <!-- Fixed format -->
+    <generator>Ampere Development</generator>  <!-- Optional nice touch -->
+    <docs>https://www.rssboard.org/rss-specification</docs>  <!-- Optional but standard -->
+    <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
   <item>
    <title>NVIDIA's 800-Volt Revolution: The Massive Overhaul Coming to Global Data Centers</title>
    <link>https://ampere.dev/blog.html#NVIDIA-800V-Revolution-Data-Centers-2025</link>
