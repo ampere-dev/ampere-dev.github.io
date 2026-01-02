@@ -3,19 +3,40 @@ Sitemap: https://ampere.dev/sitemap.xml
 
 # Rules for all crawlers
 User-agent: *
-Allow: /                      # Explicitly allow all content
-Disallow: /admin/             # Block admin areas (adjust to your site’s structure)
-Disallow: /login/             # Block login pages
-Disallow: /?*                 # Block URL parameters to avoid duplicates
-Disallow: /private/           # Block private or staging areas
+Allow: / 
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
 
-# Block specific unwanted bots
+# Block OpenAI/ChatGPT crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Additional AI crawler blocks (as of 2026)
+User-agent: anthropic-ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+
+# Unwanted bots
 User-agent: nibbler
 Disallow: /
-
 User-agent: MJ12bot
 Disallow: /
-
 User-agent: AhrefsBot
 Disallow: /
-
