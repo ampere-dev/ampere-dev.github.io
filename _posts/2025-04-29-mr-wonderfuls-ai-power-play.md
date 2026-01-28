@@ -8,19 +8,19 @@ excerpt: Kevin O’Leary dives into A.I. with a massive 45 GW plan in North Dako
 
 April 29, 2025
 
-Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future! Here’s why his plan is as bold as his Shark Tank zingers—and why you should be paying attention [](https://www.valleynewslive.com/2023/03/21/kevin-oleary-make-major-investment-north-dakota/).
+Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future! Here’s why his plan is as bold as his Shark Tank zingers—and why you should be paying attention.
 
 ### A.I. and Data Centers: The Gold Rush of the 2020s
 
-If you’re 25 and hungry for opportunity, Mr. Wonderful’s dropping wisdom like it’s a Shark Tank pitch: A.I. implementation and data center development are where the money’s at. Small businesses are tripping over themselves to adopt A.I. but don’t know where to start. That’s your cue—swoop in, solve their problems, and cash in. Meanwhile, data centers are the backbone of this tech tsunami. With hyperscalers like Tesla, Microsoft, and Google gobbling up capacity faster than you can say “cloud computing,” real estate and tech are colliding in the most lucrative way possible. As O’Leary puts it, “This is where the future’s heading. Don’t miss it” [](https://www.datacenterfrontier.com/wonder-valley-and-the-great-ai-pivot-kevin-olearys-bold-data-center-play/).
+If you’re 25 and hungry for opportunity, Mr. Wonderful’s dropping wisdom like it’s a Shark Tank pitch: A.I. implementation and data center development are where the money’s at. Small businesses are tripping over themselves to adopt A.I. but don’t know where to start. That’s your cue—swoop in, solve their problems, and cash in. Meanwhile, data centers are the backbone of this tech tsunami. With hyperscalers like Tesla, Microsoft, and Google gobbling up capacity faster than you can say “cloud computing,” real estate and tech are colliding in the most lucrative way possible. As O’Leary puts it, “This is where the future’s heading. Don’t miss it”.
 
 ### Alberta’s Got Gas, But North Dakota’s Got Guts
 
-While O’Leary’s raising $70 billion to build the world’s lowest-cost, highest-efficiency data center in Alberta—powered by abundant natural gas and a premier who’s all-in [](https://blogs.und.edu/und-today/2024/02/kevin-oleary-president-armacost-talk-tech-business-and-north-dakota/).
+While O’Leary’s raising $70 billion to build the world’s lowest-cost, highest-efficiency data center in Alberta—powered by abundant natural gas and a premier who’s all-in.
 
 ### China’s Out, North Dakota’s In
 
-Mr. Wonderful’s not mincing words: China’s been “stealing from American entrepreneurs for years,” and it’s time they face the music. Meanwhile, North Dakota’s rolling out the red carpet for innovation. Forget the Great Wall—think Great Plains, where A.I., data centers, and agtech are about to make waves. O’Leary’s betting big, and he’s got the receipts to prove it [](https://www.reuters.com/technology/us-china-ai-race-intensifies-2025-04-28/).
+Mr. Wonderful’s not mincing words: China’s been “stealing from American entrepreneurs for years,” and it’s time they face the music. Meanwhile, North Dakota’s rolling out the red carpet for innovation. Forget the Great Wall—think Great Plains, where A.I., data centers, and agtech are about to make waves. O’Leary’s betting big, and he’s got the receipts to prove it.
 
 ### Watch Mr. Wonderful Break It Down
 
@@ -35,7 +35,7 @@ Don’t just take our word for it—check out O’Leary laying out the vision hi
 - **Power Galore:** 45 GW of juice to keep A.I. and data centers humming.
 - **Land for Days:** Wide-open spaces perfect for sprawling tech campuses.
 - **Leadership with Vision:** North Dakota’s ready to play ball and win the A.I. race.
-- **Mr. Wonderful’s Stamp of Approval:** If O’Leary’s investing, you know it’s legit [](https://kevinoleary.com/the-wonder-fund-kevin-oleary-partnership-looks-to-help-north-dakotas-entrepreneurs/).
+- **Mr. Wonderful’s Stamp of Approval:** If O’Leary’s investing, you know it’s legit.
 
 So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!
 
