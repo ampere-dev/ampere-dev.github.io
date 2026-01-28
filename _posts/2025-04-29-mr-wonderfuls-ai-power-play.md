@@ -38,3 +38,13 @@ Don’t just take our word for it—check out O’Leary laying out the vision hi
 - **Mr. Wonderful’s Stamp of Approval:** If O’Leary’s investing, you know it’s legit [](https://kevinoleary.com/the-wonder-fund-kevin-oleary-partnership-looks-to-help-north-dakotas-entrepreneurs/).
 
 So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!
+
+### Sources & Further Reading
+
+https://www.valleynewslive.com/2023/03/21/kevin-oleary-make-major-investment-north-dakota/
+https://www.datacenterfrontier.com/hyperscale/article/55285747/wonder-valley-and-the-great-ai-pivot-kevin-olearys-bold-data-center-play
+https://calgaryherald.com/opinion/columnists/varcoe-kevin-oleary-proposes-ai-data-centre-park-alberta
+https://www.techrepublic.com/article/news-ai-data-center-canada-shark-tank-kevin-oleary
+https://olearyventures.com/north-dakota
+https://blogs.und.edu/und-today/2024/02/kevin-oleary-president-armacost-talk-n-d-tech-business
+https://www.am1100theflag.com/news/oleary-north-dakota-on-the-catbird-seat-of-two-trends-relating-to-investment
