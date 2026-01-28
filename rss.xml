@@ -13,6 +13,13 @@
     <docs>https://www.rssboard.org/rss-specification</docs>  <!-- Optional but standard -->
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
    <item>
+   <title>The Rise of 800VDC in Data Centers: Balancing Efficiency, Scalability, and Challenges</title>
+   <link>https://ampere.dev/blog.html#The-Rise-of-800VDC-in-Data-Centers-Balancing-Efficiency-Scalability-and-Challenges</link>
+   <guid>https://ampere.dev/blog.html#The-Rise-of-800VDC-in-Data-Centers-Balancing-Efficiency-Scalability-and-Challenges</guid>
+   <pubDate>Wed, 28 Jan 2026 05:00:00 GMT</pubDate>
+   <description>Why the industry is moving toward 800VDC for next-generation AI factories • Benefits, major challenges, safety concerns and detailed commissioning realities at every level • Posted by Douglas Insights</description>
+  </item> 
+   <item>
    <title>Understanding Electrical Load Types and Why They Matter for Load Bank Testing</title>
    <link>https://ampere.dev/blog.html#Understanding-Electrical-Load-Types-Load-Bank-Testing</link>
    <guid>https://ampere.dev/blog.html#Understanding-Electrical-Load-Types-Load-Bank-Testing</guid>
