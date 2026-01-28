@@ -6,7 +6,7 @@ categories: [AI, Data Centers, Industry Trends]
 excerpt: Kevin O’Leary dives into A.I. with a massive 45 GW plan in North Dakota—here’s why it matters for the future of data centers and opportunity.
 ---
 
-April 29, 2025
+April 29, 2025 
 
 Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future! Here’s why his plan is as bold as his Shark Tank zingers—and why you should be paying attention.
 
@@ -39,7 +39,7 @@ Don’t just take our word for it—check out O’Leary laying out the vision hi
 
 So, whether you’re a 25-year-old hustler ready to help small businesses conquer A.I. or an investor eyeing the next big thing, North Dakota’s calling. Mr. Wonderful’s already there, powering up 45 GW of pure opportunity. Don’t get left in the dark!
 
-### Sources & Further Reading
+### Sources & Further Reading 
 
 - [Kevin O’Leary To Make Major Investment in North Dakota](https://www.valleynewslive.com/2023/03/21/kevin-oleary-make-major-investment-north-dakota/)
 - [Wonder Valley and the Great AI Pivot: Kevin O’Leary’s Bold Data Center Play](https://www.datacenterfrontier.com/hyperscale/article/55285747/wonder-valley-and-the-great-ai-pivot-kevin-olearys-bold-data-center-play)
