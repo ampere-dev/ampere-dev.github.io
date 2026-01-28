@@ -41,10 +41,10 @@ So, whether you’re a 25-year-old hustler ready to help small businesses conque
 
 ### Sources & Further Reading
 
-<https://www.valleynewslive.com/2023/03/21/kevin-oleary-make-major-investment-north-dakota/>
-https://www.datacenterfrontier.com/hyperscale/article/55285747/wonder-valley-and-the-great-ai-pivot-kevin-olearys-bold-data-center-play
-https://calgaryherald.com/opinion/columnists/varcoe-kevin-oleary-proposes-ai-data-centre-park-alberta
-https://www.techrepublic.com/article/news-ai-data-center-canada-shark-tank-kevin-oleary
-https://olearyventures.com/north-dakota
-https://blogs.und.edu/und-today/2024/02/kevin-oleary-president-armacost-talk-n-d-tech-business
-https://www.am1100theflag.com/news/oleary-north-dakota-on-the-catbird-seat-of-two-trends-relating-to-investment
+- [Kevin O’Leary To Make Major Investment in North Dakota](https://www.valleynewslive.com/2023/03/21/kevin-oleary-make-major-investment-north-dakota/)
+- [Wonder Valley and the Great AI Pivot: Kevin O’Leary’s Bold Data Center Play](https://www.datacenterfrontier.com/hyperscale/article/55285747/wonder-valley-and-the-great-ai-pivot-kevin-olearys-bold-data-center-play)
+- [Varcoe: Kevin O'Leary proposes 'Wonder Valley' in Alberta](https://calgaryherald.com/opinion/columnists/varcoe-kevin-oleary-proposes-ai-data-centre-park-alberta)
+- [Shark Tank's Mr. Wonderful is Building the World’s Largest AI Data Center in Canada](https://www.techrepublic.com/article/news-ai-data-center-canada-shark-tank-kevin-oleary)
+- [North Dakota Development Fund – O'Leary Ventures](https://olearyventures.com/north-dakota)
+- [Kevin O’Leary, President Armacost talk tech, business and North Dakota](https://blogs.und.edu/und-today/2024/02/kevin-oleary-president-armacost-talk-n-d-tech-business)
+- [O’Leary: North Dakota ‘on the catbird seat’ of two trends relating to investment](https://www.am1100theflag.com/news/oleary-north-dakota-on-the-catbird-seat-of-two-trends-relating-to-investment)
