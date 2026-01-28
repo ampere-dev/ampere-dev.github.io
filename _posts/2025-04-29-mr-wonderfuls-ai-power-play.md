@@ -41,7 +41,7 @@ So, whether you’re a 25-year-old hustler ready to help small businesses conque
 
 ### Sources & Further Reading
 
-https://www.valleynewslive.com/2023/03/21/kevin-oleary-make-major-investment-north-dakota/
+<https://www.valleynewslive.com/2023/03/21/kevin-oleary-make-major-investment-north-dakota/>
 https://www.datacenterfrontier.com/hyperscale/article/55285747/wonder-valley-and-the-great-ai-pivot-kevin-olearys-bold-data-center-play
 https://calgaryherald.com/opinion/columnists/varcoe-kevin-oleary-proposes-ai-data-centre-park-alberta
 https://www.techrepublic.com/article/news-ai-data-center-canada-shark-tank-kevin-oleary
