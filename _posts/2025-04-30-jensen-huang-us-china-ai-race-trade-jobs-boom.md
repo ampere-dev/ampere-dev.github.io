@@ -66,7 +66,7 @@ Huang’s message is clear: AI fuels innovation **and** revitalizes skilled trad
 Catch the energy live from the Hill and Valley Forum—Huang unpacks the global AI race, AI factories, and their massive impact on industries and jobs:
 
 <div class="video-container">
-<iframe loading="lazy" src="https://www.youtube.com/embed/E2o9O0EVouA" title="Jensen Huang at Hill and Valley Forum on AI and trade jobs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/E2o9O0EVouA" title="Jensen Huang at Hill and Valley Forum on AI and trade jobs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 — Reported based on remarks by Jensen Huang at the Hill and Valley Forum, April 2025
