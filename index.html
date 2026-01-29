@@ -107,6 +107,83 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Custom Styles for Animated Slack Button -->
+    <style>
+        .slack-button-wrapper {
+            position: relative;
+            width: 320px;
+            height: 80px;
+            perspective: 1000px;
+            display: inline-block; /* To fit with other buttons */
+            margin: 10px 0; /* Spacing like other buttons */
+        }
+        
+        .slack-button {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #4A154B 0%, #2c0a2f 100%);
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s;
+            animation: 
+                float 8s ease-in-out infinite,
+                jitter 0.15s infinite alternate;
+            z-index: 2;
+            padding: 10px; /* For text wrapping */
+            text-align: center;
+            box-sizing: border-box;
+        }
+        
+        .slack-button:hover {
+            animation: 
+                float 8s ease-in-out infinite,
+                jitter-hover 0.12s infinite alternate;
+            transform: scale(1.05);
+        }
+        
+        /* Respect reduced motion preference */
+        @media (prefers-reduced-motion: reduce) {
+            .slack-button,
+            .slack-button:hover {
+                animation: float 8s ease-in-out infinite;
+            }
+        }
+        
+        .slack-logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+            flex-shrink: 0; /* Prevent logo shrinking */
+        }
+        
+        .slack-text {
+            font-size: 1rem; /* Adjust for longer text */
+            line-height: 1.2;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+            50% { transform: translateY(-20px) rotateX(4deg) rotateY(2deg); }
+        }
+        
+        @keyframes jitter {
+            0%   { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(1.2px, 0.8px) scale(1.015); }
+        }
+        
+        @keyframes jitter-hover {
+            0%   { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(2px, 1.5px) scale(1.03); }
+        }
+    </style>
+
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
     <script>
@@ -152,7 +229,17 @@
     <a href="https://ampere.dev/contact" class="btn btn-primary btn-white">Contact An Expert</a>
     <a href="https://ampere.dev/booking" class="btn btn-primary btn-blue">Schedule Consultation</a>
     <a href="https://ampere.dev/starline-tapbox-rental" class="btn btn-primary">Rent Starline Tap Boxes</a>
-    <a href="https://join.slack.com/t/amperedev/shared_invite/zt-3onhno1ti-DdAy4jc~vSABBNdJr6Lysw" class="btn btn-slack">Click to join our Slack workspace instantly—no approval needed. <br> Great for quick questions, inquiries or assistance!</a>
+    <a href="https://join.slack.com/t/amperedev/shared_invite/zt-3onhno1ti-DdAy4jc~vSABBNdJr6Lysw" class="slack-button-wrapper" target="_blank" rel="noopener noreferrer">
+        <div class="slack-button btn btn-slack">
+            <svg class="slack-logo" viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.5 0C12.3 0 0 12.3 0 27.5s12.3 27.5 27.5 27.5h13.8v-27.5c0-15.2-12.3-27.5-27.5-27.5z" fill="#36C5F0"/>
+                <path d="M68.8 0c-15.2 0-27.5 12.3-27.5 27.5v13.8h27.5c15.2 0 27.5-12.3 27.5-27.5S84 0 68.8 0z" fill="#2EB67D"/>
+                <path d="M96.3 41.3H82.5v27.5c0 15.2 12.3 27.5 27.5 27.5s27.5-12.3 27.5-27.5-12.3-27.5-27.5-27.5z" fill="#ECB22E"/>
+                <path d="M55 68.8v-13.8H27.5c-15.2 0-27.5 12.3-27.5 27.5s12.3 27.5 27.5 27.5 27.5-12.3 27.5-27.5z" fill="#E01E5A"/>
+            </svg>
+            <span class="slack-text">Click to join our Slack workspace instantly—no approval needed. <br> Great for quick questions, inquiries or assistance!</span>
+        </div>
+    </a>
     <h3>Call us today at 888-345-LOAD</h3>
 </div>
     </main>
