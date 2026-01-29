@@ -9,7 +9,7 @@ excerpt: Higher %Z (7–9%) is now standard in data center specs to limit fault 
 December 30, 2025
 
 <div style="float:right; margin: 0 0 20px 20px; width:350px;">
-  <img src="https://s3.mordorintelligence.com/united-states-large-power-transformer-market/united-states-large-power-transformer-market-1760014620274-major-players.webp" alt="Large three-phase power transformer in a factory setting with radiators, bushings, and cooling fans visible" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/transformer_repair.webp" alt="Large three-phase power transformer in a factory setting with radiators, bushings, and cooling fans visible" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">A modern high-capacity distribution transformer during factory testing – note the extensive radiator banks and cooling fans required for continuous heavy loading in data center applications. (Image: Mordor Intelligence)</p>
 </div>
 
@@ -26,7 +26,7 @@ Transformer percent impedance (%Z) is essentially the built-in leakage reactance
 A 5% impedance unit can allow up to 20× full-load current during a fault. Raise that to 8%, and it drops to roughly 12.5×—often enough to bring the required interrupting rating down a full frame size on the LV gear, saving real money and simplifying coordination.
 
 <div style="float:left; margin: 0 20px 20px 0; width:320px;">
-  <img src="https://webuildpower.com/wp-content/uploads/2024/10/P1013000.jpg" alt="Close-up of transformer nameplate showing impedance highlighted" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/images/transformer_nameplate.webp" alt="Close-up of transformer nameplate showing impedance highlighted" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">Transformer nameplate clearly showing impedance (%Z) values – typical of older designs around 4–6%. Modern data center specifications now routinely call for 7–9%. (Image: Central Moloney / We Build Power)</p>
 </div>
 
