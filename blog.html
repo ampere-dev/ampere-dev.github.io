@@ -522,67 +522,10 @@
     <time datetime="2026-01-13">January 13, 2026</time>
     <p>Short teaser: Resistive, inductive, and capacitive loads each stress power systems differently—get them wrong in load bank testing and hidden issues like voltage dips, harmonics, or start failures stay undetected. Ampere Development explains why mixed RLC simulation is essential for reliable generators and UPS. <a href="/blog/electrical-load-types-load-bank-testing/">Read more →</a></p>
 </article>
-<article class="post collapsed" data-tags="nvidia, 800v dc, data centers, ai infrastructure, capex, commissioning, power distribution, bloom energy">
-    <div id="NVIDIA-800V-Revolution-Data-Centers-2025"></div>
-    <h2 onclick="togglePost(this)"><a href="#NVIDIA-800V-Revolution-Data-Centers-2025">NVIDIA's 800-Volt Revolution: The Massive Overhaul Coming to Global Data Centers</a></h2>
-    <div class="post-content">
-        <time datetime="2025-12-30T12:00">December 30, 2025</time>
-        
-        <div style="float:right; margin: 0 0 20px 20px; width:350px;">
-            <img src="https://developer.nvidia.com/blog/wp-content/uploads/2024/10/nvidia-gb200-ocp-submission-highlights-1.png" alt="NVIDIA GB200 NVL72 rack architecture diagram showing 800V DC power integration" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">NVIDIA's GB200 NVL72 rack design highlights, featuring the 800V DC power architecture for high-density AI computing. (Image: NVIDIA)</p>
-        </div>
-
-        <p>I’ve been working on various data center projects this year, including a lot of BMS (Building Management System) and EPMS (Electrical Power Management System) upgrades, and power distribution keeps dominating the conversations. A couple of weeks ago, I was meeting with a client’s lead electrical engineer to review their upcoming AI expansion plans. He leaned back and said, “With NVIDIA driving this 800V DC push, we’re going to have to rethink our entire power backbone. It’s a big upfront hit, but the efficiency jump is undeniable.” That discussion really drove home how this shift to high-voltage DC is triggering what might be the largest infrastructure overhaul the data center industry has ever seen.</p>
-
-        <h3>The 800V Revolution: Why It Matters Now</h3>
-        <p>NVIDIA’s Blackwell platform, particularly the GB200 series, is the catalyst. AI workloads are pushing rack densities to 100–500 kW and beyond, far beyond what traditional 480V AC systems were designed for. Switching to 800V DC reduces current, cuts copper requirements by up to 50%, and pushes conversion efficiency past 98% by eliminating multiple AC-to-DC stages. Ecosystem partners like Delta, Eaton, and Infineon are already delivering compatible power supplies and converters.</p>
-        <p>The engineer sketched a quick power flow on his whiteboard: “Direct conversion to 800V DC closer to the rack means fewer losses and better handling of AI’s power spikes.” For facilities chasing massive compute scale, this isn’t a nice-to-have—it’s becoming a necessity.</p>
-
-        <h3>How 800V DC Delivers the Efficiency Gains</h3>
-        <p>The real magic is in simplifying the power path and slashing losses at every step:</p>
-        <ul>
-            <li><strong>Fewer conversion stages:</strong> Traditional AC systems go through multiple AC-DC and DC-DC conversions (often 4–5 steps from grid to GPU), each losing 2–5%. 800V DC typically requires just one major conversion at the facility level, then efficient DC-DC step-down at the rack. Result: <strong>up to 5–7% improvement in end-to-end efficiency</strong>.</li>
-            <li><strong>Lower current, lower I²R losses:</strong> Delivering the same power at higher voltage means dramatically reduced current—often 40–50% less copper needed in busways and cables, with resistive losses dropping accordingly.</li>
-            <li><strong>No AC-specific inefficiencies:</strong> DC avoids skin effect, reactive power, and harmonic issues common in high-power AC distribution.</li>
-            <li><strong>Simpler rack design:</strong> Fewer bulky PSUs and cooling fans per server tray → less internal heat, higher reliability, and more space for compute.</li>
-        </ul>
-        <p>At gigawatt-scale AI facilities, these gains compound into massive energy and cost savings while enabling the extreme densities tomorrow’s models demand.</p>
-
-        <div style="float:left; margin: 0 20px 20px 0; width:350px;">
-            <img src="https://assets-us-01.kc-usercontent.com/9356d81c-702c-0042-524f-7fe8fac0d95f/f92dda2c-b60d-4ed5-83dc-57c1dd5e25eb/Figure%201-update.png" alt="High-voltage DC power distribution diagram in modern AI data centers" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">Simplified HVDC power distribution flow, minimizing conversion losses in AI-optimized data centers. (Image: onsemi)</p>
-        </div>
-
-        <h3>A Perfect Synergy: 800V DC and On-Site Power Generation</h3>
-        <p>This 800V shift aligns beautifully with another trend I’m seeing in my BMS and EPMS upgrade work: the move toward resilient, on-site primary power. NVIDIA moving to 800V DC is a perfect match for Bloom Energy’s native 800V DC solid oxide fuel cells. No wasteful conversions, faster setup in just a few months, and simple off-grid (or behind-the-meter) power for AI data centers. Bloom’s systems output DC directly, feeding seamlessly into the new architecture while providing always-on reliability that the grid alone can’t guarantee in many regions.</p>
-
-        <div style="float:right; margin: 0 0 20px 20px; width:350px;">
-            <img src="https://www.power-eng.com/wp-content/uploads/2021/07/Bloom-Energy-servers.jpg" alt="Bloom Energy Servers (solid oxide fuel cell units) in an outdoor installation" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">Bloom Energy Servers delivering clean, resilient on-site power. (Image: Power Engineering)</p>
-        </div>
-
-        <h3>The Global Infrastructure Impact</h3>
-        <p>Worldwide, data centers are facing major retrofits and new-build redesigns. Many existing facilities aren’t ready for these power levels—requiring upgrades to transformers, switchgear, busways, and PDUs. In tight-grid markets, this may drive adoption of on-site HVDC substations or hybrid energy setups. Cooling is evolving too, with higher densities accelerating liquid cooling rollouts.</p>
-
-        <h3>CAPEX Realities: The Numbers Are Eye-Watering</h3>
-        <p>Capital spending is exploding. Forecasts show global data center infrastructure investment surpassing $1 trillion by 2030, with AI-related upgrades driving 40–50% of it. Converting a mid-sized facility to 800V DC can easily add $50–100 million in power system costs alone.</p>
-        <p>During our review, the client’s finance lead chimed in: “We’re budgeting an extra 20% for the HVDC transition. It stings short-term, but the OPEX savings—10–20% lower energy costs—should pay it back in 3–5 years.” Big tech players like Microsoft, Google, and Meta are committing hundreds of billions through 2030 to make it happen.</p>
-
-        <div style="float:right; margin: 0 0 20px 20px; width:350px;">
-            <img src="https://iot-analytics.com/wp-content/uploads/2025/11/Data-Center-Infrastructure-Market-2025-2030-vf.png" alt="Projected CAPEX growth chart for AI-driven data center infrastructure 2025-2030" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">AI-driven surge in global data center infrastructure CAPEX through 2030. (Image: IoT Analytics)</p>
-        </div>
-
-        <h3>Future Commissioning Challenges Post-2025</h3>
-        <p>Commissioning these new systems will look very different. Traditional testing methods won’t cut it—we’ll need specialized 800V DC load banks capable of simulating megawatt-scale AI load profiles safely. A commissioning engineer I spoke with recently said, “For upcoming projects, we’re already sourcing 800V-rated load banks that can ramp to hundreds of kW per rack with liquid cooling options. It’s adding complexity and time, but it’s essential for reliable turnover.”</p>
-        <p>Expect commissioning budgets to rise 15–25% due to the added safety protocols, specialized equipment, and extended integrated testing phases.</p>
-
-        <h3>Final Thoughts from Recent Projects</h3>
-        <p>After multiple design reviews, client discussions, and hands-on BMS/EPMS work this year, it’s clear: NVIDIA’s 800V initiative is reshaping the entire data center power landscape. The upfront investment and engineering effort are substantial, but the long-term gains in efficiency, density, and resiliency are compelling. If you’re planning expansions or new builds, factoring in 800V DC—and complementary on-site solutions—early will save headaches later. The revolution is underway.</p>
-
-        <p class="author">— Insights from recent data center client meetings and industry updates, December 2025</p>
-    </div>
+<article>
+    <h2><a href="/blog/nvidia-800v-revolution-data-centers/">NVIDIA's 800-Volt Revolution: The Massive Overhaul Coming to Global Data Centers</a></h2>
+    <time datetime="2025-12-30">December 30, 2025</time>
+    <p>Short teaser: NVIDIA's 800V DC push for GB200/Blackwell racks slashes copper by 50%, boosts efficiency 5-7%, and pairs with Bloom Energy fuel cells for resilient on-site power—but CAPEX jumps $50-100M+ per facility and commissioning gets more complex. <a href="/blog/nvidia-800v-revolution-data-centers/">Read more →</a></p>
 </article>
 <article class="post collapsed" data-tags="data centers, transformers, impedance, fault current, electrical design, hyperscale, power distribution">
     <div id="High-Impedance-Transformers-Data-Centers-2025"></div>
