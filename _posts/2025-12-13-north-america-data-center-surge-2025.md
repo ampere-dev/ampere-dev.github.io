@@ -10,7 +10,7 @@ December 13, 2025
 
 <div style="float:right; margin: 0 0 20px 20px; width:300px;">
   <img src="/images/7x24.webp" alt="7x24 Exchange DC Chapter Holiday Party in Leesburg, Virginia" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">Attendees networking at the 7x24 Exchange DC Chapter's 14th Annual Holiday Party, Golf Club at Lansdowne, Leesburg, VA – December 10, 2025 (Image: The New Republic / data center industry visual)</p>
+  <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">Attendees networking at the 7x24 Exchange DC Chapter's 14th Annual Holiday Party, Golf Club at Lansdowne, Leesburg, VA – December 10, 2025</p>
 </div>
 
 As the year draws to a close, the North American data center market is closing out 2025 on a high note, fueled by unprecedented investments in AI infrastructure, hyperscale facilities, and sustainable energy solutions. With hyperscalers like Google, Meta, and Microsoft pouring billions into new campuses, the region continues to solidify its position as a global hub for digital innovation. This month's developments underscore a market projected to grow at a compound annual rate exceeding 10% through the decade, driven by exploding demand for computational power. Amid the construction cranes and groundbreaking ceremonies, the data center community also found time to celebrate the season, highlighted by the 7x24 Exchange DC Chapter's festive gathering in Virginia.
