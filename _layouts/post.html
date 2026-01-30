@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg prose-headings:font-bold prose-a:text-blue-600">
+  <header class="mb-10">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">{{ page.title }}</h1>
+    <p class="text-gray-600 text-lg">
+      {{ page.date | date: "%B %d, %Y" }}
+      {% if page.author %} • {{ page.author }}{% endif %}
+    </p>
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="mt-8 rounded-xl shadow-lg w-full">
+    {% endif %}
+  </header>
+
+  <div class="mb-12">
+    {{ content }}
+  </div>
+
+  <!-- Optional extras: tags, back link, related posts -->
+  <div class="mt-16 pt-8 border-t border-gray-200">
+    <a href="/blog" class="inline-flex items-center text-blue-600 hover:underline text-lg">
+      ← Back to all Insights
+    </a>
+  </div>
+</article>

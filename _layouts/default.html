@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}  <!-- Your existing head snippet loads meta, CSS, scripts, etc. -->
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="bg-white border-b sticky top-0 z-10 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <a href="/" class="flex items-center">
+        <img src="/images/Ampere-Logo.webp" alt="Ampere Development" class="h-10 w-auto">
+      </a>
+      <nav class="hidden md:flex space-x-8 text-lg">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/blog" class="hover:text-blue-600 font-semibold">Insights</a>
+        <!-- Add more: Products, About, Contact, etc. as needed -->
+      </nav>
+      <!-- Mobile menu toggle if you want to add later -->
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="min-h-screen">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-lg font-bold mb-4">Ampere Development</h3>
+        <p class="text-gray-400">Powering the future of efficient AI compute.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="/blog" class="hover:underline text-gray-300">All Insights</a></li>
+          <li><a href="/privacy" class="hover:underline text-gray-300">Privacy Policy</a></li>
+          <!-- Add more links -->
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Connect</h3>
+        <!-- Social icons/links here -->
+      </div>
+    </div>
+    <div class="text-center mt-8 pt-6 border-t border-gray-800 text-gray-500 text-sm">
+      © {{ 'now' | date: "%Y" }} Ampere Development. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
