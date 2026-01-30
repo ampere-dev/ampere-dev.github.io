@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The Rise of 800VDC: Powering the Next Era of AI Factories with Massive Efficiency Gains!"
 date: 2026-01-28
 categories: [800VDC, High-Voltage DC, Data Centers, AI Factories, NVIDIA, Efficiency]

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "NVIDIA's 800-Volt Revolution: The Massive Overhaul Coming to Global Data Centers"
 date: 2025-12-30
 categories: [NVIDIA, 800V DC, Data Centers, AI Infrastructure, CAPEX, Commissioning, Power Distribution, Bloom Energy]

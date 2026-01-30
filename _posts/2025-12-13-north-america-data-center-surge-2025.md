@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "North American Data Center Surge: AI-Driven Expansions and Holiday Cheer in the Industry"
 date: 2025-12-13
 categories: [Data Center Construction, Hyperscale, AI Data Centers, Virginia Data Centers, North Carolina, Nuclear Power, Sustainability, 7x24 Exchange]

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!"
 date: 2025-04-29
 categories: [AI, Data Centers, Industry Trends]

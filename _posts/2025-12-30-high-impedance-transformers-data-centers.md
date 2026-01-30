@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Why High-Impedance Transformers Are Becoming Essential in Data Center Projects"
 date: 2025-12-30
 categories: [Data Centers, Transformers, Impedance, Fault Current, Electrical Design, Hyperscale, Power Distribution]

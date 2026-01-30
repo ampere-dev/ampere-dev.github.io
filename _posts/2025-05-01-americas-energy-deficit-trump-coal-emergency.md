@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "America’s Energy Deficit: Trump Declares National Energy Emergency to Unleash Coal Power!"
 date: 2025-05-01
 categories: [Energy, Coal, Data Centers, Policy]

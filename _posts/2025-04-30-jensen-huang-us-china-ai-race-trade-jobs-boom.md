@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Nvidia’s Jensen Huang Sounds the Alarm: The Infinite AI Race with China & the Trade Jobs Boom!"
 date: 2025-04-30
 categories: [AI, Industry Trends, Manufacturing, Jobs]

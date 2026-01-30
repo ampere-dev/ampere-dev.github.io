@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Understanding Electrical Load Types: Why Resistive, Inductive & Capacitive Matter for Load Bank Testing"
 date: 2026-01-13
 categories: [Load Bank Testing, Generator Testing, Resistive Load, Inductive Load, Capacitive Load, Backup Power, Commissioning]
