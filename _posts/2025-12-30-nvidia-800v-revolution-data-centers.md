@@ -6,8 +6,6 @@ categories: [NVIDIA, 800V DC, Data Centers, AI Infrastructure, CAPEX, Commission
 excerpt: NVIDIA's push for 800V DC in Blackwell/GB200 systems is forcing a rethink of power backbones—slashing copper use by up to 50%, boosting efficiency 5-7%, and pairing perfectly with on-site fuel cells like Bloom Energy's. Upfront CAPEX hits hard ($50-100M+ per facility), but OPEX savings and density gains make it essential for AI scale.
 ---
 
-December 30, 2025
-
 <div style="float:right; margin: 0 0 20px 20px; width:350px;">
   <img src="https://developer.nvidia.com/blog/wp-content/uploads/2024/10/nvidia-gb200-ocp-submission-highlights-1.png" alt="NVIDIA GB200 NVL72 rack architecture diagram showing 800V DC power integration" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">NVIDIA's GB200 NVL72 rack design highlights, featuring the 800V DC power architecture for high-density AI computing. (Image: NVIDIA)</p>

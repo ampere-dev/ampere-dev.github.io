@@ -6,8 +6,6 @@ categories: [AI, Industry Trends, Manufacturing, Jobs]
 excerpt: Nvidia CEO Jensen Huang warns the U.S.-China AI race is neck-and-neck and infinite—while spotlighting massive opportunities in AI factories and a resurgence of high-paying skilled trade jobs.
 ---
 
-April 30, 2025 
-
 Buckle up—Nvidia CEO Jensen Huang just dropped some serious truth bombs at the Hill and Valley Forum in Washington, D.C. The U.S.-China AI supremacy race is fierce, never-ending, and closer than most realize. But here's the exciting part: AI isn't just disrupting—it's igniting a massive industrial transformation and creating a boom in trade jobs that could rival the biggest economic shifts in history.
 
 ### The Infinite AI Race: China Is Breathing Down Our Neck

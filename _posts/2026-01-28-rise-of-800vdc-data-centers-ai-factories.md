@@ -5,9 +5,6 @@ date: 2026-01-28
 categories: [800VDC, High-Voltage DC, Data Centers, AI Factories, NVIDIA, Efficiency]
 excerpt: As AI racks hit megawatt scales, 800VDC is emerging as the game-changer—slashing copper use, boosting efficiency up to 5%+, and enabling hyper-dense GPU deployments. NVIDIA leads the charge for 2027 rollouts, but safety, costs, and commissioning hurdles loom large.
 ---
-
-January 28, 2026
-
 **Posted by Ampere Development Team**
 
 Buckle up—the AI boom is pushing data centers into uncharted territory. Rack power demands are exploding from tens of kW to megawatts, overwhelming traditional 48VDC or 400VAC setups. Enter **800VDC** (high-voltage direct current) architectures: championed by NVIDIA, ABB, Vertiv, Schneider Electric, and semiconductor leaders. This shift delivers physics-defying efficiency, reduced cabling, and scalability for AI factories—but it comes with real trade-offs. Full deployments are eyeing NVIDIA's Kyber rack-scale systems starting in 2027.

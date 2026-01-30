@@ -6,8 +6,6 @@ categories: [Energy, Coal, Data Centers, Policy]
 excerpt: Surging AI-driven data center demand creates a massive 45 GW power gap—while China builds coal plants at record pace. Trump’s emergency declaration aims to revive U.S. coal and tap $9 trillion in reserves to meet the crisis.
 ---
 
-May 1, 2025
-
 Buckle up—America’s grid is staring down a serious energy crunch. Explosive growth in AI, cloud computing, and data centers is slamming the power system with massive new demand, while coal plants keep closing and China races ahead with coal-fired capacity. Enter President Trump’s bold move: declaring a **national energy emergency** to supercharge domestic production, especially coal, and tap into America’s enormous reserves.
 
 ### The 45 GW Energy Deficit: Data Centers Are Eating the Grid

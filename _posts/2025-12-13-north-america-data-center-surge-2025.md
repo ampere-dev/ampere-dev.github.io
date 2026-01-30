@@ -6,8 +6,6 @@ categories: [Data Center Construction, Hyperscale, AI Data Centers, Virginia Dat
 excerpt: North America's data center boom continues with billions in AI/hyperscale investments—from Virginia's 900 MW campuses to Meta's Wisconsin AI facility and Google's nuclear reactor plans—while the 7x24 Exchange DC Chapter celebrated the season with its festive holiday party.
 ---
 
-December 13, 2025
-
 <div style="float:right; margin: 0 0 20px 20px; width:300px;">
   <img src="/images/7x24.webp" alt="7x24 Exchange DC Chapter Holiday Party in Leesburg, Virginia" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">Attendees networking at the 7x24 Exchange DC Chapter's 14th Annual Holiday Party, Golf Club at Lansdowne, Leesburg, VA.</p>

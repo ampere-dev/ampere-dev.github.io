@@ -6,8 +6,6 @@ categories: [Data Centers, Transformers, Impedance, Fault Current, Electrical De
 excerpt: Higher %Z (7–9%) is now standard in data center specs to limit fault currents, protect LV switchgear, and avoid costly upgrades—driven by denser grids and massive AI loads. A quiet but game-changing shift in transformer design.
 ---
 
-December 30, 2025
-
 <div style="float:right; margin: 0 0 20px 20px; width:350px;">
   <img src="/images/transformer_repair.webp" alt="Large three-phase power transformer in a factory setting with radiators, bushings, and cooling fans visible" style="width:100%; height:auto; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <p style="text-align:center; font-size:0.9em; color:#666; margin-top:8px;">A modern high-capacity distribution transformer during factory testing – note the extensive radiator banks and cooling fans required for continuous heavy loading in data center applications. (Image: Mordor Intelligence)</p>
