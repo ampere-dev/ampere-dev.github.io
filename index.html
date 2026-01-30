@@ -19,72 +19,72 @@
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
- {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-            "@type": "Organization",
-            "name": "Ampere Development",
-            "url": "https://ampere.dev",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://ampere.dev/images/Ampere-Logo.webp"
-            },
-            "telephone": "+1-888-345-LOAD",
-            "email": "sales@ampere.dev",
-            "description": "Ampere Development provides innovative load bank rentals, Starline tapbox rentals, load testing services, power quality studies, transformers, and 3D fabrication for AC/DC low-voltage and medium-voltage projects.",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Customer Service",
-                "telephone": "+1-888-345-LOAD",
-                "email": "sales@ampere.dev"
-            },
-            "sameAs": [
-                "https://www.facebook.com/AmpereDevelopment",
-                "https://x.com/LoadbankPro",
-                "https://www.linkedin.com/company/ampere-development",
-                "https://www.instagram.com/ampere.dev"
-            ],
-            "potentialAction": {
-                "@type": "ReserveAction",
-                "target": {
-                    "@type": "EntryPoint",
-                    "urlTemplate": "https://ampere.dev/booking",
-                    "inLanguage": "en",
-                    "actionPlatform": [
-                        "http://schema.org/DesktopWebPlatform",
-                        "http://schema.org/MobileWebPlatform"
-                    ]
-                },
-                "result": {
-                    "@type": "Reservation",
-                    "name": "Book a Consultation"
-                }
-            }
-        },
-        {
-            "@type": "WebSite",
-            "url": "https://ampere.dev",
-            "name": "Ampere Development",
-            "description": "Explore load bank rentals, Starline tapbox rentals, and load testing services at Ampere Development.",
-            "publisher": {
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
                 "@type": "Organization",
-                "name": "Ampere Development"
-            }
-        },
-        {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://ampere.dev"
+                "name": "Ampere Development",
+                "url": "https://ampere.dev",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://ampere.dev/images/Ampere-Logo.webp"
+                },
+                "telephone": "+1-888-345-LOAD",
+                "email": "sales@ampere.dev",
+                "description": "Ampere Development provides innovative load bank rentals, Starline tapbox rentals, load testing services, power quality studies, transformers, and 3D fabrication for AC/DC low-voltage and medium-voltage projects.",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Customer Service",
+                    "telephone": "+1-888-345-LOAD",
+                    "email": "sales@ampere.dev"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/AmpereDevelopment",
+                    "https://x.com/LoadbankPro",
+                    "https://www.linkedin.com/company/ampere-development",
+                    "https://www.instagram.com/ampere.dev"
+                ],
+                "potentialAction": {
+                    "@type": "ReserveAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://ampere.dev/booking",
+                        "inLanguage": "en",
+                        "actionPlatform": [
+                            "http://schema.org/DesktopWebPlatform",
+                            "http://schema.org/MobileWebPlatform"
+                        ]
+                    },
+                    "result": {
+                        "@type": "Reservation",
+                        "name": "Book a Consultation"
+                    }
                 }
-            ]
-        }
-    ]
-}
+            },
+            {
+                "@type": "WebSite",
+                "url": "https://ampere.dev",
+                "name": "Ampere Development",
+                "description": "Explore load bank rentals, Starline tapbox rentals, and load testing services at Ampere Development.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Ampere Development"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://ampere.dev"
+                    }
+                ]
+            }
+        ]
+    }
     </script>
 
     <!-- Canonical Tag -->
@@ -111,11 +111,11 @@
     <style>
         .slack-button-wrapper {
             position: relative;
-            width: 320px;
+            width: 320px;                    /* narrower → fits nicely on ~two lines */
             height: 80px;
             perspective: 1000px;
-            display: inline-block; /* To fit with other buttons */
-            margin: 10px 0; /* Spacing like other buttons */
+            display: inline-block;
+            margin: 10px 0;
         }
         
         .slack-button {
@@ -128,59 +128,38 @@
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: bold;
             text-decoration: none;
             transition: transform 0.3s;
-            animation: 
-                float 8s ease-in-out infinite,
-                jitter 0.15s infinite alternate;
+            animation: float 8s ease-in-out infinite;  /* only gentle float remains */
             z-index: 2;
-            padding: 10px; /* For text wrapping */
+            padding: 12px 20px;
             text-align: center;
             box-sizing: border-box;
+            line-height: 1.3;
         }
         
         .slack-button:hover {
-            animation: 
-                float 8s ease-in-out infinite,
-                jitter-hover 0.12s infinite alternate;
-            transform: scale(1.05);
+            transform: scale(1.06);
         }
         
         /* Respect reduced motion preference */
         @media (prefers-reduced-motion: reduce) {
             .slack-button,
             .slack-button:hover {
-                animation: float 8s ease-in-out infinite;
+                animation: none;
             }
         }
         
-        .slack-logo {
-            width: 40px;
-            height: 40px;
-            margin-right: 12px;
-            flex-shrink: 0; /* Prevent logo shrinking */
-        }
-        
         .slack-text {
-            font-size: 1rem; /* Adjust for longer text */
-            line-height: 1.2;
+            font-size: 1.05rem;
+            line-height: 1.35;
         }
         
         @keyframes float {
             0%, 100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
-            50% { transform: translateY(-20px) rotateX(4deg) rotateY(2deg); }
-        }
-        
-        @keyframes jitter {
-            0%   { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(1.2px, 0.8px) scale(1.015); }
-        }
-        
-        @keyframes jitter-hover {
-            0%   { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(2px, 1.5px) scale(1.03); }
+            50% { transform: translateY(-18px) rotateX(3deg) rotateY(1.5deg); }
         }
     </style>
 
@@ -213,36 +192,41 @@
             </ul>
         </nav>
     </header>
+
     <main>
-<div class="collage-background">
-    <h1>Load Bank Rental and Testing Solutions</h1>
-    <h2>Designed Innovative Dynamic</h2>
-    <h3>Innovative Load Bank Rental Services</h3>
-    <p>Ampere Development provides innovative <strong>load bank rental</strong> and load testing services for data centers, renewable energy, and industrial projects. Our <strong>load bank rental</strong> solutions ensure reliable power systems through expert testing and commissioning.</p>
-    <h3>Comprehensive Power Testing Solutions</h3>
-    <p>Our load banks support AC/DC low-voltage (0–1000V) and medium-voltage (1kV–34.5kV) applications. We complement our <strong>load bank rental</strong> services with Starline tapbox rentals, power quality studies, transformers, power cables, and 3D fabrication, delivering efficiency and compliance for your projects.</p>
-    <h3>Starline Tapbox Rentals</h3>
-    <p>Ampere provides <strong>Starline tapbox rentals</strong> for seamless busway integration. Our TBT5G-250/400-4G compatible units deliver 400A at 480V, ideal for data center commissioning and load testing. In-stock and ready to ship—starting at $125/week.</p>
-    <h3>Applications Across Industries</h3>
-    <p>From data centers to renewable energy facilities, our load bank rental services are tailored to meet diverse needs. Our expert load bank testing ensures your power systems perform reliably under real-world conditions.</p>
-    <a href="https://ampere.dev/what-are-load-banks" class="btn btn-primary btn-red">Learn About Load Testing</a>
-    <a href="https://ampere.dev/contact" class="btn btn-primary btn-white">Contact An Expert</a>
-    <a href="https://ampere.dev/booking" class="btn btn-primary btn-blue">Schedule Consultation</a>
-    <a href="https://ampere.dev/starline-tapbox-rental" class="btn btn-primary">Rent Starline Tap Boxes</a>
-    <a href="https://join.slack.com/t/amperedev/shared_invite/zt-3onhno1ti-DdAy4jc~vSABBNdJr6Lysw" class="slack-button-wrapper" target="_blank" rel="noopener noreferrer">
-        <div class="slack-button btn btn-slack">
-            <svg class="slack-logo" viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27.5 0C12.3 0 0 12.3 0 27.5s12.3 27.5 27.5 27.5h13.8v-27.5c0-15.2-12.3-27.5-27.5-27.5z" fill="#36C5F0"/>
-                <path d="M68.8 0c-15.2 0-27.5 12.3-27.5 27.5v13.8h27.5c15.2 0 27.5-12.3 27.5-27.5S84 0 68.8 0z" fill="#2EB67D"/>
-                <path d="M96.3 41.3H82.5v27.5c0 15.2 12.3 27.5 27.5 27.5s27.5-12.3 27.5-27.5-12.3-27.5-27.5-27.5z" fill="#ECB22E"/>
-                <path d="M55 68.8v-13.8H27.5c-15.2 0-27.5 12.3-27.5 27.5s12.3 27.5 27.5 27.5 27.5-12.3 27.5-27.5z" fill="#E01E5A"/>
-            </svg>
-            <span class="slack-text">Click to join our Slack workspace instantly—no approval needed. <br> Great for quick questions, inquiries or assistance!</span>
+        <div class="collage-background">
+            <h1>Load Bank Rental and Testing Solutions</h1>
+            <h2>Designed Innovative Dynamic</h2>
+            <h3>Innovative Load Bank Rental Services</h3>
+            <p>Ampere Development provides innovative <strong>load bank rental</strong> and load testing services for data centers, renewable energy, and industrial projects. Our <strong>load bank rental</strong> solutions ensure reliable power systems through expert testing and commissioning.</p>
+            
+            <h3>Comprehensive Power Testing Solutions</h3>
+            <p>Our load banks support AC/DC low-voltage (0–1000V) and medium-voltage (1kV–34.5kV) applications. We complement our <strong>load bank rental</strong> services with Starline tapbox rentals, power quality studies, transformers, power cables, and 3D fabrication, delivering efficiency and compliance for your projects.</p>
+            
+            <h3>Starline Tapbox Rentals</h3>
+            <p>Ampere provides <strong>Starline tapbox rentals</strong> for seamless busway integration. Our TBT5G-250/400-4G compatible units deliver 400A at 480V, ideal for data center commissioning and load testing. In-stock and ready to ship—starting at $125/week.</p>
+            
+            <h3>Applications Across Industries</h3>
+            <p>From data centers to renewable energy facilities, our load bank rental services are tailored to meet diverse needs. Our expert load bank testing ensures your power systems perform reliably under real-world conditions.</p>
+
+            <a href="https://ampere.dev/what-are-load-banks" class="btn btn-primary btn-red">Learn About Load Testing</a>
+            <a href="https://ampere.dev/contact" class="btn btn-primary btn-white">Contact An Expert</a>
+            <a href="https://ampere.dev/booking" class="btn btn-primary btn-blue">Schedule Consultation</a>
+            <a href="https://ampere.dev/starline-tapbox-rental" class="btn btn-primary">Rent Starline Tap Boxes</a>
+
+            <a href="https://join.slack.com/t/amperedev/shared_invite/zt-3onhno1ti-DdAy4jc~vSABBNdJr6Lysw" 
+               class="slack-button-wrapper" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="slack-button btn btn-slack">
+                    <span class="slack-text">Click to join our Slack workspace instantly—no approval needed.<br>Great for quick questions, inquiries or assistance!</span>
+                </div>
+            </a>
+
+            <h3>Call us today at 888-345-LOAD</h3>
         </div>
-    </a>
-    <h3>Call us today at 888-345-LOAD</h3>
-</div>
     </main>
+
     <footer id="footer">
         <div class="footer-links">
             <ul>
@@ -263,6 +247,7 @@
             <p>AMPERE © 2026</p>
         </div>
     </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const menuToggler = document.querySelector('.menuToggler');
