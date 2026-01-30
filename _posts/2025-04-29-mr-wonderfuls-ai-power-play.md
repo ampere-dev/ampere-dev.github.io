@@ -4,9 +4,7 @@ title: "Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!"
 date: 2025-04-29
 categories: [AI, Data Centers, Industry Trends]
 excerpt: Kevin O’Leary dives into A.I. with a massive 45 GW plan in North Dakota—here’s why it matters for the future of data centers and opportunity.
----
-
-April 29, 2025 
+--- 
 
 Buckle up, because Kevin O’Leary, aka Mr. Wonderful, is diving headfirst into the A.I. revolution, and he’s got his sights set on North Dakota with a jaw-dropping 45 GW of power to fuel the future! Here’s why his plan is as bold as his Shark Tank zingers—and why you should be paying attention.
 
