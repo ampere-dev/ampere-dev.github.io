@@ -1,0 +1,200 @@
+---
+layout: default
+title: Ampere Insights | Ampere Development
+description: Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers & 3D fabrication for industry pros.
+permalink: /blog
+---
+
+<div class="content-wrapper max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="text-4xl font-bold mb-4">Ampere Insights</h1>
+  <p class="abstract text-lg text-gray-600 mb-8">
+    is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.
+  </p>
+
+  <div class="search-container mb-8">
+    <input type="text" id="search" placeholder="Search posts..." oninput="searchPosts()" class="w-full max-w-md p-3 border border-red-500 rounded-lg focus:outline-none focus:border-red-700 focus:ring-2 focus:ring-red-500">
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <main class="md:col-span-2">
+      {% for post in site.posts %}
+        <article class="post mb-8 pb-6 border-b border-gray-200" data-tags="{{ post.tags | join: ',' }}">
+          <h2 class="text-2xl font-semibold mb-2 cursor-pointer" onclick="togglePost(this)">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-sm text-gray-500 block mb-4">
+            {{ post.date | date: "%B %d, %Y" }}
+          </time>
+          <div class="post-content prose prose-lg max-w-none collapsed">
+            {{ post.excerpt }}
+            <a href="{{ post.url | relative_url }}" class="text-blue-600 hover:underline">Read more →</a>
+          </div>
+        </article>
+      {% endfor %}
+
+      <p class="no-results hidden text-center text-gray-500 mt-8">No results found.</p>
+
+      <div class="pagination flex justify-center items-center gap-2 mt-12">
+        <button id="prev-btn" class="pagination-btn disabled:bg-gray-300" aria-label="Previous Page">Previous</button>
+        <div id="page-numbers" class="page-numbers flex gap-2"></div>
+        <button id="next-btn" class="pagination-btn disabled:bg-gray-300" aria-label="Next Page">Next</button>
+      </div>
+    </main>
+
+    <aside class="sidebar-section bg-white p-6 border border-gray-200 rounded-lg md:col-span-1">
+      <div class="newsletter mb-8">
+        <h3 class="text-xl font-bold mb-4">Stay Updated</h3>
+        <p class="text-gray-600 mb-4">Subscribe for the latest tech trends and insights.</p>
+        <form action="https://dev.us20.list-manage.com/subscribe/post?u=4263b89e85da75617458bbc4a&id=6733ce5ab9&f_id=009dc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <input type="email" name="EMAIL" placeholder="Enter your email" class="w-full p-3 border border-gray-300 rounded-lg mb-2" id="mce-EMAIL" required value="">
+          <div aria-hidden="true" style="position: absolute; left: -5000px;">
+            <input type="text" name="b_4263b89e85da75617458bbc4a_6733ce5ab9" tabindex="-1" value="">
+          </div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="w-full p-3 bg-red-500 text-white rounded-lg hover:bg-gray-800">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="word-cloud-section mb-8">
+        <h3 class="text-xl font-bold mb-4">Popular Topics</h3>
+        <canvas id="word-cloud-canvas" class="w-full h-48 bg-white border border-gray-200 rounded-lg"></canvas>
+      </div>
+
+      <div class="share">
+        <h3 class="text-xl font-bold mb-4">Share This Page</h3>
+        <a href="https://x.com/intent/tweet?url=https://ampere.dev/blog&text=Explore the latest in power systems and AI at Ampere Insights! #DataCenters #PowerSystems" target="_blank" class="block text-red-500 hover:underline mb-2">Share on X</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ampere.dev/blog" target="_blank" class="block text-red-500 hover:underline">Share on LinkedIn</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0]='EMAIL';ftypes[0]='email';
+    fnames[1]='FNAME';ftypes[1]='text';
+    fnames[2]='LNAME';ftypes[2]='text';
+    fnames[3]='ADDRESS';ftypes[3]='address';
+    fnames[4]='PHONE';ftypes[4]='phone';
+    fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+    fnames[6]='COMPANY';ftypes[6]='text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+
+<script>
+  // Your existing search, toggle, pagination, and word cloud scripts – adapted slightly for Jekyll classes/selectors
+  function searchPosts() {
+    const query = document.getElementById('search').value.toLowerCase().trim();
+    const posts = document.querySelectorAll('.post');
+    let hasResults = false;
+    const visibleArticles = [];
+    posts.forEach(post => {
+      const text = post.textContent.toLowerCase();
+      const matches = text.includes(query);
+      if (matches || query === '') {
+        visibleArticles.push(post);
+        post.classList.remove('hidden');
+        hasResults = true;
+      } else {
+        post.classList.add('hidden');
+      }
+    });
+    const noResults = document.querySelector('.no-results');
+    noResults.classList.toggle('hidden', hasResults || query === '');
+    currentPage = 1;
+    setupPagination(visibleArticles);
+  }
+
+  function togglePost(titleElement) {
+    const article = titleElement.closest('article');
+    const content = article.querySelector('.post-content');
+    if (article.classList.contains('collapsed')) {
+      content.style.height = content.scrollHeight + 'px';
+      article.classList.remove('collapsed');
+    } else {
+      content.style.height = content.scrollHeight + 'px';
+      setTimeout(() => { content.style.height = '0'; }, 10);
+      article.classList.add('collapsed');
+    }
+    content.addEventListener('transitionend', function handler() {
+      if (!article.classList.contains('collapsed')) content.style.height = 'auto';
+      content.removeEventListener('transitionend', handler);
+    });
+  }
+
+  const articlesPerPage = 5;
+  let currentPage = 1;
+  function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
+    const totalArticles = visibleArticles.length;
+    const totalPages = Math.ceil(totalArticles / articlesPerPage);
+    const pageNumbersContainer = document.getElementById('page-numbers');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    function displayArticles(page) {
+      const start = (page - 1) * articlesPerPage;
+      const end = start + articlesPerPage;
+      document.querySelectorAll('.post').forEach(article => article.classList.add('hidden'));
+      visibleArticles.slice(start, end).forEach(article => article.classList.remove('hidden'));
+      document.querySelectorAll('.page-number').forEach(btn => btn.classList.toggle('active', parseInt(btn.dataset.page) === page));
+      prevBtn.disabled = page === 1;
+      nextBtn.disabled = page === totalPages || totalPages === 0;
+    }
+    pageNumbersContainer.innerHTML = '';
+    for (let i = 1; i <= totalPages; i++) {
+      const pageBtn = document.createElement('button');
+      pageBtn.className = 'page-number';
+      pageBtn.dataset.page = i;
+      pageBtn.textContent = i;
+      pageBtn.addEventListener('click', () => {
+        currentPage = i;
+        displayArticles(currentPage);
+      });
+      pageNumbersContainer.appendChild(pageBtn);
+    }
+    prevBtn.addEventListener('click', () => { if (currentPage > 1) { currentPage--; displayArticles(currentPage); } });
+    nextBtn.addEventListener('click', () => { if (currentPage < totalPages) { currentPage++; displayArticles(currentPage); } });
+    displayArticles(currentPage);
+  }
+
+  function generateWordCloud() {
+    const canvas = document.getElementById('word-cloud-canvas');
+    if (!canvas) return;
+    const tagCounts = {};
+    document.querySelectorAll('.post').forEach(article => {
+      const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
+      tags.forEach(tag => { tagCounts[tag] = (tagCounts[tag] || 0) + 1; });
+    });
+    const words = Object.entries(tagCounts).map(([tag, count]) => [tag.replace(/-/g, ' '), count * 20]);
+    if (words.length === 0) {
+      const ctx = canvas.getContext('2d');
+      ctx.font = '16px Ubuntu';
+      ctx.fillStyle = '#333';
+      ctx.textAlign = 'center';
+      ctx.fillText('No tags available', canvas.width / 2, canvas.height / 2);
+      return;
+    }
+    WordCloud(canvas, {
+      list: words,
+      fontFamily: 'Ubuntu',
+      color: () => `hsl(${Math.random() * 360}, 50%, 30%)`,
+      rotateRatio: 0.5,
+      rotationSteps: 2,
+      gridSize: 8,
+      drawOutOfBound: false,
+      shrinkToFit: true,
+      backgroundColor: '#fff',
+      click: item => {
+        document.getElementById('search').value = item[0].replace(/ /g, '-');
+        searchPosts();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setupPagination();
+    generateWordCloud();
+  });
+</script>
