@@ -148,26 +148,6 @@
             line-height: 1.6;
         }
 
-        .search-container {
-            margin: 1rem 0;
-        }
-
-        #search {
-            padding: 0.75rem;
-            width: 100%;
-            max-width: 350px;
-            border: 1px solid var(--accent-color);
-            border-radius: 6px;
-            font-size: 1rem;
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        #search:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
-        }
-
         .content-wrapper {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -505,10 +485,6 @@
     </header>
 
 <h1 style="display: inline;">Ampere Insights</h1><span> is a streamlined blog dedicated to unpacking the latest advancements and solutions in power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</span>
-
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search posts..." oninput="searchPosts()">
-    </div>
 
     <div class="content-wrapper">
         <main>
@@ -2556,29 +2532,7 @@
             </div>
         </main> 
 
-        <aside role="complementary">
-            <div class="sidebar-section newsletter">
-                <h3>Stay Updated</h3>
-                <p>Subscribe for the latest tech trends and insights.</p>
-                <form action="https://dev.us20.list-manage.com/subscribe/post?u=4263b89e85da75617458bbc4a&id=6733ce5ab9&f_id=009dc2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                    <input type="email" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL" required value="">
-                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                        <input type="text" name="b_4263b89e85da75617458bbc4a_6733ce5ab9" tabindex="-1" value="">
-                    </div>
-                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button">Subscribe</button>
-                </form>
-            </div>
-
-            <div class="sidebar-section word-cloud-section">
-                <h3>Popular Topics</h3>
-                <canvas id="word-cloud-canvas"></canvas>
-            </div>
-
-            <div class="sidebar-section share">
-                <h3>Share This Page</h3>
-                <a href="https://x.com/intent/tweet?url=https://ampere.dev/blog&text=Explore the latest in power systems and AI at Ampere Insights! #DataCenters #PowerSystems" target="_blank">Share on X</a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://ampere.dev/blog" target="_blank">Share on LinkedIn</a>
-            </div>
+            
         </aside>
     </div>
 
@@ -2619,11 +2573,6 @@
         var $mcj = jQuery.noConflict(true);
     </script>
 <script>
-    function searchPosts() {
-        const query = document.getElementById('search').value.toLowerCase().trim();
-        const posts = document.querySelectorAll('.post');
-        let hasResults = false;
-
         const visibleArticles = [];
         posts.forEach(post => {
             const text = post.textContent.toLowerCase();
@@ -2648,7 +2597,6 @@
 
         currentPage = 1;
         setupPagination(visibleArticles);
-    }
 
     function togglePost(titleElement) {
         const article = titleElement.closest('article');
@@ -2744,63 +2692,6 @@
         });
 
         displayArticles(currentPage);
-    }
-
-    function generateWordCloud() {
-        const canvas = document.getElementById('word-cloud-canvas');
-        if (!canvas) {
-            console.error('Canvas element #word-cloud-canvas not found');
-            return;
-        }
-
-        const articles = Array.from(document.querySelectorAll('.post'));
-        const tagCounts = {};
-
-        // Extract tags from articles
-        articles.forEach(article => {
-            const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
-            tags.forEach(tag => {
-                tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-            });
-        });
-
-        // Convert tag counts to wordcloud2.js format
-        const words = Object.entries(tagCounts).map(([tag, count]) => [
-            tag.replace(/-/g, ' '), // Replace hyphens with spaces for display
-            count * 20 // Scale count for size
-        ]);
-
-        if (words.length === 0) {
-            console.warn('No tags found for word cloud');
-            const ctx = canvas.getContext('2d');
-            ctx.font = '16px Ubuntu';
-            ctx.fillStyle = '#333';
-            ctx.textAlign = 'center';
-            ctx.fillText('No tags available', canvas.width / 2, canvas.height / 2);
-            return;
-        }
-
-        // Configure wordcloud2.js
-        WordCloud(canvas, {
-            list: words,
-            fontFamily: 'Ubuntu',
-            fontWeight: 'normal',
-            color: function() {
-                return `hsl(${Math.random() * 360}, 50%, 30%)`;
-            },
-            rotateRatio: 0.5,
-            rotationSteps: 2,
-            gridSize: 8,
-            drawOutOfBound: false,
-            shrinkToFit: true,
-            clearCanvas: true,
-            backgroundColor: '#fff',
-            click: function(item) {
-                const searchInput = document.getElementById('search');
-                searchInput.value = item[0].replace(/ /g, '-'); // Convert back to hyphenated form
-                searchPosts();
-            }
-        });
     }
 
     document.addEventListener('DOMContentLoaded', () => {
