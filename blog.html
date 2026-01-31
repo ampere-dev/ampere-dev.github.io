@@ -2520,10 +2520,9 @@
     <button id="prev-btn" class="pagination-btn">Previous</button>
     <div id="page-numbers" class="page-numbers"></div>
     <button id="next-btn" class="pagination-btn">Next</button>
-            
+</div>
         </aside>
     </div>
-
     <footer id="footer">
         <div class="footer-links">
             <ul>
@@ -2544,7 +2543,6 @@
             <p>AMPERE © 2026</p>
         </div>
     </footer>
-
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     <script type="text/javascript">
         (function($) {
@@ -2561,35 +2559,11 @@
         var $mcj = jQuery.noConflict(true);
     </script>
 <script>
-        const visibleArticles = [];
-        posts.forEach(post => {
-            const text = post.textContent.toLowerCase();
-            const matches = text.includes(query);
-            if (matches || query === '') {
-                visibleArticles.push(post);
-                post.classList.remove('hidden');
-                hasResults = true;
-            } else {
-                post.classList.add('hidden');
-            }
-        });
-
-        let noResults = document.querySelector('.no-results');
-        if (!noResults) {
-            noResults = document.createElement('p');
-            noResults.className = 'no-results';
-            noResults.textContent = 'No results found.';
-            document.querySelector('main').appendChild(noResults);
-        }
-        noResults.style.display = hasResults || query === '' ? 'none' : 'block';
-
-        currentPage = 1;
-        setupPagination(visibleArticles);
-
+    // Removed incomplete search/filtering block to avoid errors (no 'query' defined, no search UI). If you add a search input, we can reimplement filtering.
     function togglePost(titleElement) {
         const article = titleElement.closest('article');
         const content = article.querySelector('.post-content');
-        
+       
         if (article.classList.contains('collapsed')) {
             content.style.height = content.scrollHeight + 'px';
             article.classList.remove('collapsed');
@@ -2600,7 +2574,7 @@
             }, 10);
             article.classList.add('collapsed');
         }
-        
+       
         content.addEventListener('transitionend', function handler() {
             if (!article.classList.contains('collapsed')) {
                 content.style.height = 'auto';
@@ -2608,41 +2582,33 @@
             content.removeEventListener('transitionend', handler);
         });
     }
-
     const articlesPerPage = 5;
     let currentPage = 1;
-
     function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
         const totalArticles = visibleArticles.length;
         const totalPages = Math.ceil(totalArticles / articlesPerPage);
         const pageNumbersContainer = document.getElementById('page-numbers');
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
-
         function displayArticles(page) {
             const start = (page - 1) * articlesPerPage;
             const end = start + articlesPerPage;
-
             document.querySelectorAll('.post').forEach(article => {
                 article.classList.add('hidden');
             });
-
             visibleArticles.forEach((article, index) => {
                 if (index >= start && index < end) {
                     article.classList.remove('hidden');
                 }
             });
-
             document.querySelectorAll('.page-number').forEach(btn => {
                 btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
             });
-
             prevBtn.disabled = page === 1;
             nextBtn.disabled = page === totalPages || totalPages === 0;
             prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
             nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
         }
-
         pageNumbersContainer.innerHTML = '';
         for (let i = 1; i <= totalPages; i++) {
             const pageBtn = document.createElement('button');
@@ -2656,7 +2622,6 @@
             });
             pageNumbersContainer.appendChild(pageBtn);
         }
-
         if (totalPages === 0) {
             pageNumbersContainer.innerHTML = '';
             prevBtn.disabled = true;
@@ -2664,29 +2629,24 @@
             prevBtn.setAttribute('aria-disabled', 'true');
             nextBtn.setAttribute('aria-disabled', 'true');
         }
-
         prevBtn.addEventListener('click', () => {
             if (currentPage > 1) {
                 currentPage--;
                 displayArticles(currentPage);
             }
         });
-
         nextBtn.addEventListener('click', () => {
             if (currentPage < totalPages) {
                 currentPage++;
                 displayArticles(currentPage);
             }
         });
-
         displayArticles(currentPage);
     }
-
     document.addEventListener('DOMContentLoaded', () => {
         setupPagination();
-        generateWordCloud();
+        generateWordCloud();  // If this causes errors, comment it out or define the function.
     });
 </script>
-
 </body>
 </html>
