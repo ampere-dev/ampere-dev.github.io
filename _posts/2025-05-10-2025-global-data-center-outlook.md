@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "2025 Global Data Center Outlook: Powering the AI Revolution"
 date: 2025-05-10
 categories: [AI, Data Centers, Sustainability]

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Global AI Data Centers: Growth Continues Amid Amazon and Microsoft Adjustments"
 date: 2025-05-10
 categories: [AI, Data Centers]

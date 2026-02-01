@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The AI-Driven Data Center Boom: Balancing Innovation and Sustainability"
 date: 2025-05-02
 categories: [AI, Data Centers, Sustainability]

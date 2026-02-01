@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The AI Data Centre Boom: Balancing Growth and Sustainability in 2025"
 date: 2025-05-12
 categories: [data centers, AI, hyperscale, energy, sustainability]

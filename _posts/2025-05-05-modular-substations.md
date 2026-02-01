@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The Rise of Modular Substations: Revolutionizing Power Infrastructure"
 date: 2025-05-05
 categories: [Power Infrastructure, Sustainability]

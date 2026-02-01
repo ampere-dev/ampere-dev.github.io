@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Google’s 1 MW IT Rack Plans: Redefining AI Data Centre Power and Cooling"
 date: 2025-05-12
 categories: [data centers, AI, rack density, energy, cooling infrastructure]

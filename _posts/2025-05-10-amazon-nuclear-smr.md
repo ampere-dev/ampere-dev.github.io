@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Amazon’s $500M Bet on Nuclear SMRs: Powering the AI Data Center Boom"
 date: 2025-05-10
 categories: [AI, Data Centers, Nuclear Power]

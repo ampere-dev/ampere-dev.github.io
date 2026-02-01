@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Data Centers Bypassing the Grid: Nuclear Power Fuels the AI Boom"
 date: 2025-05-11
 categories: [AI, Data Centers, Nuclear Power, Sustainability, Energy]

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers"
 date: 2025-05-03
 categories: [Data Centers, Load Banks]
