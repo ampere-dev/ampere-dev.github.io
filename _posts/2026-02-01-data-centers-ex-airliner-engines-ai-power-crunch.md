@@ -6,8 +6,6 @@ categories: [AI, Data Centers, Power Infrastructure, Grid Constraints, Sustainab
 excerpt: As AI drives massive energy demand, data centers are repurposing retired jet engines into trailer-mounted generators to bridge grid delays, offering rapid deployment but raising emissions and efficiency concerns.
 ---
 
-February 01, 2026
-
 The explosive growth of artificial intelligence (AI) is pushing data centers to their limits, with energy demands outpacing traditional grid infrastructure. In a creative response to this crisis, operators are repurposing retired commercial aircraft engines as emergency generators, bolting them onto trailers to generate up to 48 MW of electricity per unit. As detailed in a recent Tom's Hardware report, these aeroderivative gas turbines—cast-offs from Boeing 767s and Airbus A310s—are becoming a lifeline for AI facilities facing multi-year delays in grid connections. This article explores the technology, its applications, implications for AI sustainability, and the broader challenges of commissioning large power plants to meet long-term demands.
 
 ### The AI Power Crunch: Why Data Centers Are Turning to Jet Engines
