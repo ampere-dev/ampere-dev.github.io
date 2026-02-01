@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Data Centers Turn to Ex-Airliner Engines: A Stopgap Solution Amid AI's Power Crunch"
 date: 2026-02-01
 categories: [AI, Data Centers, Power Infrastructure, Grid Constraints, Sustainability]
