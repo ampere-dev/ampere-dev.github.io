@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Duke Energy's Ambitious Resource Plans: Gas, Nuclear, Solar, and Storage Projects to Power Growth Through 2035"
 date: 2025-10-07
 categories: [US grid, natural gas, nuclear power, solar energy, battery storage, coal delays, energy demand, grid reliability, AI data centers, LNG microgeneration]

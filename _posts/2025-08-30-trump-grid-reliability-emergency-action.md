@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Trump’s Emergency Action to Save the Grid: Addressing the AI-Driven Energy Crisis"
 date: 2025-08-30
 categories: [PJM Interconnection, AI data centers, grid reliability, power generation, electricity costs, energy policy]

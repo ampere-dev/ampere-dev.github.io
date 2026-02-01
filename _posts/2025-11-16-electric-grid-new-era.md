@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The Electric Grid's New Era: Data Centers, Battery Storage, and Rising Volatility"
 date: 2025-11-16
 categories: [US grid, data centers, AI volatility, battery storage, flow batteries, grid reliability, NERC, large loads, load banks, energy demand]

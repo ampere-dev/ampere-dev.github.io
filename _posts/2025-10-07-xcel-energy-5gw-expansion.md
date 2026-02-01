@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Xcel Energy's 5-GW Gas-Fired Expansion: A National Model for Bolstering Grid Reliability Amid Surging Demands"
 date: 2025-10-07
 categories: [US grid, natural gas, energy expansion, Texas, New Mexico, LNG microgeneration, grid reliability, AI data centers, power plant commissioning]

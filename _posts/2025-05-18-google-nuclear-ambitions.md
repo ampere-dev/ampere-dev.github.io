@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Google’s Nuclear Ambitions: Powering AI Data Centers with Advanced Reactors"
 date: 2025-05-18
 categories: [AI, Data Centers, Nuclear Power, Sustainability]

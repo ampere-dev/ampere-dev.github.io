@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "New Data Center Developments in the USA: Powering the AI Revolution in 2025"
 date: 2025-05-18
 categories: [data centers, AI, cloud computing, data center construction, energy, USA]

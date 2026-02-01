@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Hitachi Energy’s Historic $1 Billion Investment to Power America’s AI Future with Grid Infrastructure"
 date: 2025-09-08
 categories: [Hitachi Energy, AI data centers, grid infrastructure, power transformers, SMRs, energy investment, job creation]

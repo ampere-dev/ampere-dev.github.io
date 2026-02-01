@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "US Grid Watchdog: Data Centers Must Bring Their Own Power to Ease Grid Strain"
 date: 2025-08-19
 categories: [PJM Interconnection, AI data centers, grid capacity, power generation, electricity costs, energy infrastructure]

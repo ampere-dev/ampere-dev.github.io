@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Replacing Ancient Windows with Linux: Modernizing Legacy Systems for AI and Automation"
 date: 2025-05-18
 categories: [data centers, AI, Linux, legacy Windows, building automation, stability]

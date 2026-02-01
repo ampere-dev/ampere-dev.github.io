@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The Energy Transition Fallacy: Renewables, AI, and America’s Power Deficit"
 date: 2025-05-18
 categories: [data centers, AI, renewables, nuclear power, coal, energy]

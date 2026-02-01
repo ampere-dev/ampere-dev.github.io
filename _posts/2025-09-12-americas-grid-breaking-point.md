@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "America's Grid is Nearing Its Breaking Point: The Urgent Call for Rapid LNG and Nuclear Solutions"
 date: 2025-09-12
 categories: [US grid, AI data centers, energy demand, transmission issues, LNG microgeneration, nuclear power, grid reliability]

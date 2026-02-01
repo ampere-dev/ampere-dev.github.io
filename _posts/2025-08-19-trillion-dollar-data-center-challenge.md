@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Navigating the Trillion-Dollar Data Center Challenge: Lessons from Visionary Focus"
 date: 2025-08-19
 categories: [data centers, AI, power infrastructure, grid constraints, sustainability, innovation]

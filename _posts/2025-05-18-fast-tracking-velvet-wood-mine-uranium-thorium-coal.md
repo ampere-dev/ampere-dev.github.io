@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Fast-Tracking Velvet-Wood Mine: Uranium, Thorium, and Coal in America’s AI-Driven Energy Strategy"
 date: 2025-05-18
 categories: [data centers, AI, uranium, thorium, coal, energy, national security, USA]

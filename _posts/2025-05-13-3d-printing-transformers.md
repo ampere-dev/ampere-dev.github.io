@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: post
+
 title: "3D Printing Transformers: Revolutionizing Power System Fabrication"
 date: 2025-05-13
 categories: [3D printing, additive manufacturing, transformers, power systems, sustainability]

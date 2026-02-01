@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "High-Power Fiber Laser Cutting: Revolutionizing Electrical Component Fabrication"
 date: 2025-05-18
 categories: [fiber laser cutting, electrical components, manufacturing, precision, sustainability]

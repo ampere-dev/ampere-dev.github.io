@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Mitsubishi Doubles Gas Turbine Production to Meet Explosive Demand from AI Data Centers"
 date: 2025-09-05
 categories: [Mitsubishi Heavy Industries, gas turbines, AI data centers, energy demand, SMRs, grid reliability, power generation]
