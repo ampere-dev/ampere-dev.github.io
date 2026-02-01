@@ -2134,7 +2134,7 @@
         function displayArticles(page) {
             const start = (page - 1) * articlesPerPage;
             const end = start + articlesPerPage;
-            document.querySelectorAll('.teaser-content').forEach(article => {
+            document.querySelectorAll('.post').forEach(article => {
                 article.classList.add('hidden');
             });
             visibleArticles.forEach((article, index) => {
