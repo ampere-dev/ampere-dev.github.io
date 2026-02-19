@@ -68,133 +68,120 @@ permalink: /blog
   </div>
 </div>
 
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script type="text/javascript">
-  (function($) {
-    window.fnames = new Array();
-    window.ftypes = new Array();
-    fnames[0]='EMAIL';ftypes[0]='email';
-    fnames[1]='FNAME';ftypes[1]='text';
-    fnames[2]='LNAME';ftypes[2]='text';
-    fnames[3]='ADDRESS';ftypes[3]='address';
-    fnames[4]='PHONE';ftypes[4]='phone';
-    fnames[5]='BIRTHDAY';ftypes[5]='birthday';
-    fnames[6]='COMPANY';ftypes[6]='text';
-  }(jQuery));
-  var $mcj = jQuery.noConflict(true);
-</script>
-
 <script>
-  // Your existing search, toggle, pagination, and word cloud scripts – adapted slightly for Jekyll classes/selectors
-  function searchPosts() {
-    const query = document.getElementById('search').value.toLowerCase().trim();
-    const posts = document.querySelectorAll('.post');
-    let hasResults = false;
-    const visibleArticles = [];
-    posts.forEach(post => {
-      const text = post.textContent.toLowerCase();
-      const matches = text.includes(query);
-      if (matches || query === '') {
-        visibleArticles.push(post);
-        post.classList.remove('hidden');
-        hasResults = true;
-      } else {
-        post.classList.add('hidden');
-      }
-    });
-    const noResults = document.querySelector('.no-results');
-    noResults.classList.toggle('hidden', hasResults || query === '');
-    currentPage = 1;
-    setupPagination(visibleArticles);
-  }
-
-  function togglePost(titleElement) {
-    const article = titleElement.closest('article');
-    const content = article.querySelector('.post-content');
-    if (article.classList.contains('collapsed')) {
-      content.style.height = content.scrollHeight + 'px';
-      article.classList.remove('collapsed');
-    } else {
-      content.style.height = content.scrollHeight + 'px';
-      setTimeout(() => { content.style.height = '0'; }, 10);
-      article.classList.add('collapsed');
+    // Toggle function (unchanged)
+    function togglePost(titleElement) {
+        const article = titleElement.closest('article');
+        const content = article.querySelector('.teaser-content');
+        
+        if (article.classList.contains('collapsed')) {
+            content.style.height = content.scrollHeight + 'px';
+            article.classList.remove('collapsed');
+        } else {
+            content.style.height = content.scrollHeight + 'px';
+            setTimeout(() => {
+                content.style.height = '0';
+            }, 10);
+            article.classList.add('collapsed');
+        }
+        
+        content.addEventListener('transitionend', function handler() {
+            if (!article.classList.contains('collapsed')) {
+                content.style.height = 'auto';
+            }
+            content.removeEventListener('transitionend', handler);
+        });
     }
-    content.addEventListener('transitionend', function handler() {
-      if (!article.classList.contains('collapsed')) content.style.height = 'auto';
-      content.removeEventListener('transitionend', handler);
-    });
-  }
 
-  const articlesPerPage = 5;
-  let currentPage = 1;
-  function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
-    const totalArticles = visibleArticles.length;
-    const totalPages = Math.ceil(totalArticles / articlesPerPage);
-    const pageNumbersContainer = document.getElementById('page-numbers');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    function displayArticles(page) {
-      const start = (page - 1) * articlesPerPage;
-      const end = start + articlesPerPage;
-      document.querySelectorAll('.post').forEach(article => article.classList.add('hidden'));
-      visibleArticles.slice(start, end).forEach(article => article.classList.remove('hidden'));
-      document.querySelectorAll('.page-number').forEach(btn => btn.classList.toggle('active', parseInt(btn.dataset.page) === page));
-      prevBtn.disabled = page === 1;
-      nextBtn.disabled = page === totalPages || totalPages === 0;
-    }
-    pageNumbersContainer.innerHTML = '';
-    for (let i = 1; i <= totalPages; i++) {
-      const pageBtn = document.createElement('button');
-      pageBtn.className = 'page-number';
-      pageBtn.dataset.page = i;
-      pageBtn.textContent = i;
-      pageBtn.addEventListener('click', () => {
-        currentPage = i;
-        displayArticles(currentPage);
-      });
-      pageNumbersContainer.appendChild(pageBtn);
-    }
-    prevBtn.addEventListener('click', () => { if (currentPage > 1) { currentPage--; displayArticles(currentPage); } });
-    nextBtn.addEventListener('click', () => { if (currentPage < totalPages) { currentPage++; displayArticles(currentPage); } });
-    displayArticles(currentPage);
-  }
+    // Config: change this number to control posts per page (5 or 10 recommended)
+    const articlesPerPage = 10;  // ← set to 5 if you prefer shorter pages
+    let currentPage = 1;
 
-  function generateWordCloud() {
-    const canvas = document.getElementById('word-cloud-canvas');
-    if (!canvas) return;
-    const tagCounts = {};
-    document.querySelectorAll('.post').forEach(article => {
-      const tags = article.dataset.tags ? article.dataset.tags.split(',').map(tag => tag.trim()) : [];
-      tags.forEach(tag => { tagCounts[tag] = (tagCounts[tag] || 0) + 1; });
-    });
-    const words = Object.entries(tagCounts).map(([tag, count]) => [tag.replace(/-/g, ' '), count * 20]);
-    if (words.length === 0) {
-      const ctx = canvas.getContext('2d');
-      ctx.font = '16px Ubuntu';
-      ctx.fillStyle = '#333';
-      ctx.textAlign = 'center';
-      ctx.fillText('No tags available', canvas.width / 2, canvas.height / 2);
-      return;
-    }
-    WordCloud(canvas, {
-      list: words,
-      fontFamily: 'Ubuntu',
-      color: () => `hsl(${Math.random() * 360}, 50%, 30%)`,
-      rotateRatio: 0.5,
-      rotationSteps: 2,
-      gridSize: 8,
-      drawOutOfBound: false,
-      shrinkToFit: true,
-      backgroundColor: '#fff',
-      click: item => {
-        document.getElementById('search').value = item[0].replace(/ /g, '-');
-        searchPosts();
-      }
-    });
-  }
+    function setupPagination() {
+        // Get ALL article elements (teasers + full embedded posts)
+        const allArticles = Array.from(document.querySelectorAll('article.post'));
+        const totalArticles = allArticles.length;
+        const totalPages = Math.ceil(totalArticles / articlesPerPage);
+        
+        const pageNumbersContainer = document.getElementById('page-numbers');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
 
-  document.addEventListener('DOMContentLoaded', () => {
-    setupPagination();
-    generateWordCloud();
-  });
+        function displayPage(page) {
+            const start = (page - 1) * articlesPerPage;
+            const end = start + articlesPerPage;
+
+            // 1. Hide EVERYTHING first
+            allArticles.forEach(article => {
+                article.classList.add('hidden');
+                article.classList.add('collapsed');           // force collapsed state
+                const content = article.querySelector('.teaser-content');
+                if (content) {
+                    content.style.height = '0';               // ensure zero height
+                }
+            });
+
+            // 2. Show only articles for current page
+            allArticles.slice(start, end).forEach(article => {
+                article.classList.remove('hidden');
+                // Keep collapsed — user must click title to expand
+                // (no auto-expand here — matches your request)
+            });
+
+            // 3. Update pagination UI
+            document.querySelectorAll('.page-number').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
+            });
+
+            prevBtn.disabled = page === 1;
+            nextBtn.disabled = page === totalPages || totalPages === 0;
+            prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
+            nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
+        }
+
+        // Build page number buttons
+        pageNumbersContainer.innerHTML = '';
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement('button');
+            pageBtn.className = 'page-number';
+            pageBtn.dataset.page = i;
+            pageBtn.textContent = i;
+            pageBtn.setAttribute('aria-label', `Page ${i}`);
+            pageBtn.addEventListener('click', () => {
+                currentPage = i;
+                displayPage(currentPage);
+                window.scrollTo(0, 0); // optional: scroll to top on page change
+            });
+            pageNumbersContainer.appendChild(pageBtn);
+        }
+
+        if (totalPages === 0) {
+            pageNumbersContainer.innerHTML = '';
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+        }
+
+        // Button listeners
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                displayPage(currentPage);
+                window.scrollTo(0, 0);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayPage(currentPage);
+                window.scrollTo(0, 0);
+            }
+        });
+
+        // Show first page on load
+        displayPage(currentPage);
+    }
+
+    // Run when page is ready
+    document.addEventListener('DOMContentLoaded', setupPagination);
 </script>
