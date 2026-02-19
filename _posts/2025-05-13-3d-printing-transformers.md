@@ -7,7 +7,6 @@ categories: [3D printing, additive manufacturing, transformers, power systems, s
 excerpt: Additive manufacturing transforms transformer production with efficiency, reduced waste, and design flexibility, but faces challenges in material durability and scalability for power systems.
 ---
 
-May 13, 2025
 
 Additive manufacturing, or 3D printing, is transforming the production of transformer components, offering unprecedented efficiency, reduced material waste, and design flexibility. As outlined in a ScienceDirect study, 3D printing enables the creation of complex electromechanical devices like transformers with enhanced performance and sustainability. This technology is poised to redefine power system fabrication, but challenges such as material durability and scalability must be addressed. This article explores how 3D printing is revolutionizing transformer manufacturing, its benefits, hurdles, and potential to reshape supply chains. <a href="https://www.sciencedirect.com/science/article/abs/pii/S2351978920323200" target="_blank">Read the ScienceDirect study on 3D printing transformers</a>.
 

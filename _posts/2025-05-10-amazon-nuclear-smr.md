@@ -6,7 +6,7 @@ categories: [AI, Data Centers, Nuclear Power]
 excerpt: Amazon invests $500 million in X-energy SMRs and partners on projects targeting 5 GW of carbon-free power by 2039 to fuel AI data centers, joining Google, Microsoft, and others in the nuclear pivot for reliable, sustainable energy.
 ---
 
-May 10, 2025
+
 
 Amazon is diving headfirst into nuclear energy, announcing a $500 million investment in small modular reactors (SMRs) to fuel its growing data center empire, as reported by The Register. With AI-driven energy demands soaring, the tech giant is partnering with X-energy, Energy Northwest, and Dominion Energy to develop SMR projects aiming for 5 gigawatts of carbon-free power by 2039. This article explores Amazon’s nuclear ambitions, the promise of SMRs, and the challenges ahead. <a href="https://www.theregister.com/2024/10/16/amazon_nuclear_smr/" target="_blank">Read the full Register article</a>.
 

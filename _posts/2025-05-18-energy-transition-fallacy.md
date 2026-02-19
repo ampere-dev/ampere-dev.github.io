@@ -6,8 +6,6 @@ categories: [data centers, AI, renewables, nuclear power, coal, energy]
 excerpt: Renewables like solar and wind fall short on baseload power, as shown by Spain's 2025 blackout and IEA's AI energy projections, prompting a U.S. shift to coal, LNG, and nuclear amid a 50 GW deficit.
 ---
 
-May 18, 2025
-
 A May 18, 2025, article from Watts Up With That, citing a new International Energy Agency (IEA) report and the Iberian blackout, argues that the dream of a renewable energy transition is faltering under the weight of unreliable power and surging AI-driven demand. Solar and wind, while valuable, fail to deliver the baseload power needed for grid stability, as evidenced by Spain’s 2025 blackout and the North American Electric Reliability Corporation’s (NERC) warnings. The IEA’s “Energy and AI” report underscores AI’s escalating energy needs, while the U.S. faces a ~50 GW power shortfall. This article explores the limitations of renewables, the Iberian blackout, AI’s energy demands, and the urgent need for coal, LNG, and nuclear solutions. <a href="https://wattsupwiththat.com/2025/05/18/a-new-iea-report-and-the-iberian-blackout-end-dreams-of-an-energy-transition/" target="_blank">Read the Watts Up With That article</a>.
 
 ### Renewables’ Baseload Shortfall

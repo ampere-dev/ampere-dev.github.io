@@ -6,7 +6,7 @@ categories: [AI, Data Centers, Nuclear Power, Sustainability, Energy]
 excerpt: As AI drives unprecedented energy demands, tech giants bypass traditional power grids with nuclear restarts (e.g., Microsoft’s Three Mile Island) and acquisitions (e.g., Amazon’s Susquehanna campus) for reliable, carbon-free power.
 ---
 
-May 11, 2025
+
 
 As artificial intelligence (AI) drives unprecedented energy demands, tech giants are bypassing traditional power grids to secure reliable, carbon-free energy for their data centers. Microsoft’s deal to restart Three Mile Island’s Unit 1 and Amazon’s nuclear-powered data center acquisitions highlight a growing trend of direct nuclear energy procurement. This article explores how data centers are leveraging nuclear power to meet AI’s energy needs, the challenges of grid reliability, and the implications for the energy landscape. <a href="https://www.datacenterknowledge.com/energy-power-supply/data-centers-bypassing-the-grid-to-obtain-the-power-they-need" target="_blank">Read more on grid bypass trends</a>.
 
