@@ -6,8 +6,6 @@ categories: [autonomous drones, transmission line inspections, AI data centers, 
 excerpt: Reflecting on early 2011–2013 ideas for autonomous drone inspections of transmission lines, now validated by industry advancements in AI, LiDAR, thermal/UV sensors, and regulatory progress for safer, more efficient grid maintenance.
 ---
 
-August 31, 2025
-
 I recently read an article from POWER Magazine titled "The Role of Autonomous Drones in Long-Range Transmission Line Inspections," authored by Paul Harty, director and drone pilot at Sky Scan Surveys. It transported me back to 2011–2013 when I first conceived the idea of using autonomous drones to inspect long-distance transmission lines. At the time, I was captivated by the potential of drones to revolutionize utility operations, making inspections safer, more cost-effective, and rich with actionable data. Seeing these concepts now gaining traction in the industry feels like a validation of those early musings. Back then, the technology was nascent, and regulatory hurdles seemed daunting, but I envisioned a future where drones could navigate rugged terrains, collect precise data, and reduce human risk. Today, that vision is becoming reality, and it’s exciting to reflect on how far we’ve come as of this moment. <a href="https://www.powermag.com/the-role-of-autonomous-drones-in-long-range-transmission-line-inspections">Read the POWER Magazine article</a>
 
 ### The Vision Takes Flight: Drones Transform Inspections

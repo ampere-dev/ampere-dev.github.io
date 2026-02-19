@@ -6,8 +6,6 @@ categories: [PJM Interconnection, AI data centers, grid capacity, power generati
 excerpt: Monitoring Analytics urges large data centers in PJM to generate their own power as the grid lacks capacity amid AI-driven demand surge, warning of soaring costs and blackouts without action.
 ---
 
-August 19, 2025
-
 The rapid expansion of data centers, driven by the AI boom, is pushing America’s largest power grid to its breaking point. PJM Interconnection, serving 65 million people across 13 states from Virginia to Illinois, lacks the capacity to support new data centers, according to Monitoring Analytics, the grid’s independent watchdog. In a significant escalation, their latest quarterly report recommends that large data centers be required to generate their own power, signaling a critical shift in how the industry must address its soaring energy demands.
 
 ### A Grid Under Siege: The Data Center Surge

@@ -6,8 +6,6 @@ categories: [data centers, AI, Linux, legacy Windows, building automation, stabi
 excerpt: Legacy Windows like 95 and 98 persist in critical systems, but Linux offers a stable replacement for building automation and machinery controls, providing cost savings and enhanced security for AI data centers.
 ---
 
-May 18, 2025
-
 A BBC Future article published on May 18, 2025, highlights the persistent use of decades-old Windows operating systems, such as Windows 95 and Windows 98, in critical infrastructure like San Francisco’s Muni Metro railway and German commuter systems. These legacy systems, often running on Pentium 2/3 computers with IDE drives, underscore a growing challenge: outdated technology’s reliability versus the risks of obsolescence. For young software developers, this presents a unique opportunity to modernize these systems by replacing Windows with Linux, leveraging its stability and open-source flexibility. This article explores the BBC’s findings, the potential for Linux to replace legacy Windows in building automation and machinery controls, and the business case for Linux-driven stability in automation. <a href="https://www.bbc.com/future/article/20250516-the-people-stuck-using-ancient-windows-computers" target="_blank">Read the BBC Future article</a>.
 
 ### Legacy Windows in Critical Systems

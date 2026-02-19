@@ -6,8 +6,6 @@ categories: [US grid, AI data centers, energy demand, transmission issues, LNG m
 excerpt: America's power grid faces collapse from AI data center demand, aging infrastructure, and retirements. Rapid LNG microgeneration (1-year build) and gigawatt nuclear (under 5 years) are essential alternatives to slow renewables and absurd 20-year nuclear timelines like Vogtle.
 ---
 
-September 12, 2025, 08:51 PM EDT
-
 America's power grid is on the brink of collapse, strained by skyrocketing electricity demand from AI data centers, electric vehicles, and climate-induced cooling needs, while aging infrastructure and the retirement of traditional power plants accelerate the crisis. As detailed in a recent analysis, the grid faces severe vulnerabilities from extreme weather, cybersecurity threats, and physical attacks, with policy delays and permitting hurdles worsening the situation. Key hotspots like Northern Virginia, which handles 70% of global internet traffic, exemplify the crunch, as utilities scramble to meet demands amid a projected shortage of 500,000 electricians. This article explores the grid's critical challenges, the role of AI in driving demand, transmission bottlenecks, and the imperative for swift alternative solutions like LNG-based microgeneration plants that can be built in one year and gigawatt-scale nuclear supplementation achievable in under five years—far superior to the absurd 20-year timelines seen in projects like the Vogtle Georgia plant. <a href="https://oilprice.com/Energy/Energy-General/Americas-Grid-is-Nearing-Its-Breaking-Point.html">[OilPrice.com: America's Grid is Nearing Its Breaking Point]</a>
 
 ### The Surge in Energy Demand from AI Data Centers and Beyond

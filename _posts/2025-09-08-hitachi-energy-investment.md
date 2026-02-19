@@ -6,8 +6,6 @@ categories: [Hitachi Energy, AI data centers, grid infrastructure, power transfo
 excerpt: Hitachi Energy announces a $1 billion USD investment in U.S. grid infrastructure, including a $457 million large power transformer facility in Virginia creating 825+ jobs, to meet AI data center demand and address the 45 GW energy deficit.
 ---
 
-September 08, 2025, 08:51 PM EDT
-
 Hitachi Energy, a global leader in electrification and a subsidiary of Hitachi, Ltd., has unveiled a groundbreaking $1 billion USD investment to bolster the United States' electrical grid infrastructure, announced on September 4, 2025, from Raleigh, North Carolina, and Zurich, Switzerland. This historic commitment, backed by the Trump administration, addresses the surging energy demand driven by AI data centers and aims to enhance grid reliability, security, and resilience. A cornerstone of this investment is a $457 million USD facility in South Boston, Virginia, set to become the largest large power transformer manufacturing site in the U.S. As the nation faces a 45 GW energy deficit, data centers and hyperscalers are increasingly considering localized peak shavers or fully off-grid utility systems, while exploring small modular nuclear reactors (SMRs) from at least eight manufacturers. This article delves into the investment’s scope, economic impact, and its role in powering America’s AI-driven future. <a href="https://www.hitachienergy.com/us/en/news-and-events/press-releases/2025/09/hitachi-announces-historic-1-billion-usd-manufacturing-investment-to-power-america-s-energy-future-through-production-of-critical-grid-infrastructure">[Hitachi Energy Press Release]</a>
 
 ### A Strategic Investment to Meet AI-Driven Energy Demand

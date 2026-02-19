@@ -6,8 +6,6 @@ categories: [US grid, natural gas, energy expansion, Texas, New Mexico, LNG micr
 excerpt: Xcel Energy plans over 5 GW of new capacity in Texas and New Mexico, including major gas-fired conversions and peakers, as part of a nationwide push for dispatchable power to meet AI data center demand and grid strains.
 ---
 
-October 7, 2025, 02:30 PM EDT
-
 Xcel Energy's ambitious plan to add over 5 GW of new capacity in Texas and New Mexico, including significant natural gas-fired plants, underscores the urgent need for reliable, dispatchable power across the Continental United States (CONUS). With the retirement of coal plants and skyrocketing demand from AI data centers, electric vehicles, and extreme weather events, utilities nationwide are racing to deploy gas-fired solutions. This article delves into Xcel's strategy, extrapolates similar installations across CONUS, and highlights the critical role of localized LNG-fueled stations for rapid deployment. It also emphasizes the importance of efficient commissioning processes to bring these projects online swiftly and safely, averting potential blackouts that could cost billions. Drawing from recent developments, such as over 100 proposed gas plants in Texas alone and federal pushes for fossil fuel infrastructure, the push for gas-fired power is a pragmatic response to grid strains, offering flexibility far superior to intermittent renewables in the short term. <a href="https://www.powermag.com/xcel-plans-new-gas-fired-plants-as-part-of-5-gw-expansion-in-texas-new-mexico/">[Power Magazine: Xcel Plans New Gas-Fired Plants]</a>
 
 ### Xcel's Strategic Power Expansion in Texas and New Mexico

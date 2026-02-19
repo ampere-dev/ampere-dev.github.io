@@ -6,8 +6,6 @@ categories: [AI, Data Centers, Nuclear Power, Sustainability]
 excerpt: Google partners with Elementl Power for 1.8 GW from three advanced nuclear sites and Kairos Power for 500 MW SMRs, targeting 2.3 GW of carbon-free energy by 2035 to fuel AI data centers.
 ---
 
-May 18, 2025
-
 Google is intensifying its push into nuclear energy to meet the soaring power demands of its AI-driven data centers, announcing a strategic partnership with Elementl Power to develop three advanced nuclear sites and a prior deal with Kairos Power for small modular reactors (SMRs). These initiatives aim to deliver over 2.3 gigawatts of clean, reliable energy by 2035, aligning with Google’s net-zero carbon goals. This article explores Google’s nuclear investments, the technology behind SMRs, and the implications for the AI-powered future. <a href="https://www.world-nuclear-news.org/articles/google-to-fund-elementl-to-prepare-three-nuclear-power-sites" target="_blank">Read about Google’s Elementl partnership</a>.
 
 ### Google’s Partnership with Elementl Power

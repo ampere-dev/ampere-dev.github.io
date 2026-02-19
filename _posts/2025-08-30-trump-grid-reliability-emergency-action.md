@@ -6,8 +6,6 @@ categories: [PJM Interconnection, AI data centers, grid reliability, power gener
 excerpt: Trump’s DOE emergency order extends Eddystone Generating Station units to avert PJM blackouts amid AI-driven demand surge, highlighting a ~50 GW U.S. power deficit and the need for reliable baseload sources.
 ---
 
-August 30, 2025
-
 As the United States grapples with an unprecedented surge in electricity demand driven by AI data centers, the nation’s largest power grid, PJM Interconnection, is teetering on the edge of collapse. On August 28, 2025, the Department of Energy (DOE), under President Donald Trump’s leadership, issued an emergency order to extend the operation of units at the Pennsylvania Eddystone Generating Station, a critical step to prevent blackouts in the PJM region. This move highlights a growing energy crisis, exacerbated by policies that favored intermittent renewable energy over reliable baseload sources. With hyperscale AI data centers pushing grid limits, experts estimate the U.S. needs a 100-fold increase in power plant capacity to ensure grid resiliency. This article delves into the technical and economic dimensions of the crisis and Trump’s response. <a href="https://thelibertydaily.com/trump-steps-prevent-power-grid-collapsing-because-useless/"></a>
 
 ### The Crisis: AI Data Centers and Grid Strain

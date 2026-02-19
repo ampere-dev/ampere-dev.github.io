@@ -6,8 +6,6 @@ categories: [US grid, data centers, AI volatility, battery storage, flow batteri
 excerpt: The grid faces new challenges from AI-driven volatile loads. NERC's July 2025 white paper details the risks and emerging mitigation strategies including large-scale load banks.
 ---
 
-November 16, 2025, 12:10 PM EST
-
 Energy gatherings across the country this fall—from renewable trade shows in Nevada to sustainability forums in the Northeast, Texas hubs, and Texas tech events—all circled back to a single pressure point: electricity supply. The focus wasn't just on volume, but on consistency, dependability, and the intense demands now testing systems designed decades ago. The real hurdle for expanding data centers isn't only locking in massive power allocations. It's handling consumption that shifts wildly from one moment to the next. As artificial intelligence and high-performance computing scale to unprecedented levels, the electric grid faces a fundamental transformation—one that demands new tools, new thinking, and new infrastructure.
 
 ### AI-Driven Swings: A Challenge to System Design

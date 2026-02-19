@@ -6,8 +6,6 @@ categories: [data centers, AI, cloud computing, data center construction, energy
 excerpt: The U.S. data center boom includes projects like Homer City’s 4.5 GW campus, Amazon’s $2 billion Ohio expansion, and Google’s $600 million Arizona facility, adding gigawatts to support AI and cloud demands.
 ---
 
-May 18, 2025
-
 The United States is witnessing an unprecedented surge in data center construction, fueled by the escalating demand for artificial intelligence (AI) and cloud computing infrastructure. While DataCenterKnowledge’s May 2025 roundup highlighted significant projects like Meta’s $1 billion Wisconsin investment and NTT’s Arizona expansion, numerous other developments across the country are shaping the industry’s future. This article explores new U.S. data center projects not covered in the aforementioned report, emphasizing their scale, innovation, and impact on the AI-driven digital economy. <a href="https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2025" target="_blank">Read the DataCenterKnowledge May 2025 roundup</a>.
 
 ### Homer City’s Massive 4.5 GW Campus

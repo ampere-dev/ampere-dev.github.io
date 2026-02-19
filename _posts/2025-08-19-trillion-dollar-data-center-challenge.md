@@ -6,8 +6,6 @@ categories: [data centers, AI, power infrastructure, grid constraints, sustainab
 excerpt: The data center industry faces a $1 trillion capex surge by 2030 driven by AI, with power, cooling, and talent shortages as solvable challenges through focused innovation inspired by Jobs and Musk.
 ---
 
-August 19, 2025
-
 The global data center industry is on the cusp of a transformative era, with capital expenditures projected to exceed $1 trillion by 2030, driven by the explosive growth of AI-driven workloads. At Data Center World 2025, Omdia analyst Vlad Galabov outlined the sector’s critical challenges—power distribution, cooling, and talent shortages—while emphasizing that these hurdles are solvable with innovative solutions and long-term thinking. Drawing inspiration from Steve Jobs and Elon Musk’s mastery of signal-to-noise ratio planning and relentless focus, this article explores how the data center industry can navigate this trillion-dollar challenge with clarity and precision. <a href="https://www.datacenterknowledge.com/data-center-hardware/omdia-s-vlad-galabov-on-navigating-the-trillion-dollar-data-center-challenge"></a>
 
 ### The Data Center Boom: A Trillion-Dollar Opportunity

@@ -6,8 +6,6 @@ categories: [Mitsubishi Heavy Industries, gas turbines, AI data centers, energy 
 excerpt: Mitsubishi Heavy Industries plans to double gas turbine production over the next two years to meet surging demand from AI data centers and global energy needs, amid a U.S. 45 GW deficit driving localized and off-grid solutions.
 ---
 
-September 05, 2025
-
 Mitsubishi Heavy Industries (MHI) is set to double its gas turbine production capacity over the next two years, responding to a surge in global demand driven by the rapid expansion of artificial intelligence (AI) and data centers. CEO Eisaku Ito announced the ambitious plan on August 29, 2025, emphasizing that initial targets to boost production by 30% fall short of meeting current orders. This move comes as gas turbine manufacturers worldwide report record orders, with data centers emerging as a key driver for reliable, scalable power solutions. Amid a U.S. energy deficit of 45 GW, hyperscalers are increasingly turning to localized peak shavers or fully off-grid operations, while exploring small modular nuclear reactors (SMRs) for long-term energy independence. This article examines MHI's expansion, the underlying market dynamics, and the broader implications for energy infrastructure. <a href="https://www.powermag.com/mitsubishi-will-double-gas-turbine-production-as-demand-grows/">[POWER Magazine: Mitsubishi Gas Turbine Production]</a>
 
 ### Surging Demand: The AI and Data Center Boom Fuels Gas Turbine Orders

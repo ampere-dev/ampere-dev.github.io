@@ -6,8 +6,6 @@ categories: [US grid, natural gas, nuclear power, solar energy, battery storage,
 excerpt: Duke Energy's 2025 Carolinas Resource Plan adds 9.7 GW gas, 1.1 GW nuclear, 7.9 GW solar, and 7.9 GW storage by 2033-2037, with delayed coal retirements and similar expansions in Florida, Indiana, Ohio, and Kentucky to meet AI and economic demand growth.
 ---
 
-October 7, 2025, 03:45 PM EDT
-
 Duke Energy, one of the largest utilities in the U.S., is embarking on a comprehensive overhaul of its generation portfolio to address surging electricity demand from data centers, manufacturing, and economic growth across its service territories in the Carolinas, Florida, Indiana, Ohio, and Kentucky. The company's 2025 Carolinas Resource Plan, filed October 1, highlights additions of 9.7 GW in natural gas, over 1.1 GW in nuclear, 7.9 GW in solar, and 7.9 GW in battery storage by 2033-2037, alongside delayed coal retirements. Similar initiatives in other states include solar expansions in Florida and resource planning in Indiana and Kentucky. This article explores Duke's diverse projects, the integration of localized LNG-fueled stations for reliability, and the crucial commissioning processes to bring them online efficiently amid a national grid strain projected to require 104 GW of new capacity by 2030. These efforts align with federal policies promoting fossil fuels and nuclear while ensuring affordability and resilience. <a href="https://www.powermag.com/duke-energy-plan-includes-new-gas-fired-plants-nuclear-additions-delayed-coal-retirements/">[Power Magazine: Duke Energy Plan Includes New Gas-Fired Plants]</a>
 
 ### Duke Energy's Carolinas Resource Plan: A Blueprint for Balanced Growth

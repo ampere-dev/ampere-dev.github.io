@@ -6,8 +6,6 @@ categories: [data centers, AI, hyperscale, energy, sustainability]
 excerpt: The global AI boom drives hyperscale data centre growth at 20% annually post-2028, with challenges in rack density, supply chains, sustainability, and speculative overbuild risks.
 ---
 
-August 19, 2025
-
 The global AI boom is driving an unprecedented surge in hyperscale data centre development, with Moody’s Ratings forecasting a 20% annual capacity increase after 2028. However, this rapid expansion comes with significant technical, financial, and sustainability challenges, as outlined in Data Centre Magazine’s report, “The AI Data Centre Potential: The Urgent Need for Balance.” From escalating rack densities to geopolitical trade tensions, the industry must navigate a complex landscape to sustain growth. This article explores the opportunities, risks, and future power demands shaping AI data centres. <a href="https://datacentremagazine.com/hyperscale/the-ai-data-centre-potential-the-urgent-need-for-balance" target="_blank">Read the full Data Centre Magazine report</a>.
 
 ### AI-Driven Hyperscale Expansion

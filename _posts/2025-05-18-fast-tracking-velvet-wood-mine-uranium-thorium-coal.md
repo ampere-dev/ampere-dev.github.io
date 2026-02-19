@@ -6,8 +6,6 @@ categories: [data centers, AI, uranium, thorium, coal, energy, national security
 excerpt: The expedited permitting of Utah’s Velvet-Wood mine addresses U.S. energy emergency, supplying uranium for nuclear power, thorium alternatives, and coal as interim solutions to fuel AI data centers and grid resilience.
 ---
 
-May 18, 2025
-
 The U.S. Department of the Interior’s expedited permitting of the Velvet-Wood uranium and vanadium mine in Utah, announced on May 12, 2025, signals a bold response to the national energy emergency declared by President Donald J. Trump. Coupled with discussions around thorium-based nuclear reactors and the potential revival of coal plants, this move aims to secure energy for AI data centers, strengthen the grid, and enhance national security. The Velvet-Wood project, as reported by ZeroHedge and the DOI, underscores America’s push for energy independence amid surging AI-driven power demands. This article explores the Velvet-Wood initiative, its implications for AI data centers, the role of thorium and coal, and the broader impact on the U.S. energy landscape. <a href="https://www.doi.gov/pressreleases/interior-expedites-permitting-critical-energy-project-address-national-energy" target="_blank">Read the DOI press release</a>.
 
 ### Velvet-Wood Mine: Fueling Nuclear Power
