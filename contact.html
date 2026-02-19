@@ -176,10 +176,7 @@
                             <textarea class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Your Message or Project Details" rows="6" required></textarea>
                         </div>
                         <!-- Honeypot -->
-                        <input type="text" class="form-management" id="form-management" name="_form_management">
-                        <!-- reCAPTCHA -->
-                        <div class="md:col-span-2">
-                            <div class="g-recaptcha" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
+                        <input type="text" class="form-management" id="form-management" name="_gotcha">
                         </div>
                     </div>
                     <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-md">Submit Request</button>
@@ -232,44 +229,39 @@
         });
     </script>
 
-    <!-- Form submission script (kept from your original with minor improvements) -->
     <script>
-        document.getElementById('quote-request-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const form = this;
-            const messageDiv = document.getElementById('form-message');
-            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
-            let isValid = true;
+document.getElementById('quote-request-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = this;
+    const messageDiv = document.getElementById('form-message');
 
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    field.classList.add('has-danger');
-                    isValid = false;
-                } else {
-                    field.classList.remove('has-danger');
+    // Optional: clear previous messages
+    messageDiv.innerHTML = '';
+
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),           // ← Use FormData directly (recommended)
+        headers: { 'Accept': 'application/json' }  // ← NO Content-Type header
+    })
+    .then(response => {
+        if (response.ok) {
+            messageDiv.innerHTML = '<p class="text-green-600 font-semibold">Thank you! We’ll get back to you shortly.</p>';
+            form.reset();
+            if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
+        } else {
+            return response.json().then(data => {
+                let errorMsg = 'Something went wrong. Please try again or call us directly.';
+                if (data.errors) {
+                    errorMsg = data.errors.map(err => err.message).join(', ');
                 }
+                messageDiv.innerHTML = `<p class="error-message">${errorMsg}</p>`;
             });
-
-            if (!isValid) {
-                messageDiv.innerHTML = '<p class="error-message">Please fill out all required fields.</p>';
-                return;
-            }
-
-            fetch(form.action, {
-                method: 'POST',
-                headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(new FormData(form)).toString()
-            })
-            .then(response => response.json())
-            .then(data => {
-                messageDiv.innerHTML = '<p class="text-green-600 font-semibold">Thank you! We’ll get back to you shortly.</p>';
-                form.reset();
-                if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
-            })
-            .catch(() => {
-                messageDiv.innerHTML = '<p class="error-message">Something went wrong. Please try again or call us directly.</p>';
-            });
-        });
-    </script>
+        }
+    })
+    .catch(() => {
+        messageDiv.innerHTML = '<p class="error-message">Something went wrong. Please try again or call us directly.</p>';
+    });
+});
+</script>
 </body>
 </html>
