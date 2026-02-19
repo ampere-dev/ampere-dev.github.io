@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CRITICAL FIX for Formspree 403 on GitHub Pages -->
+    <meta name="referrer" content="origin">
 
     <title>Contact Us | Ampere Development</title>
     <meta name="description" content="Contact Ampere Development for load bank rentals, Starline tapbox rentals, power testing solutions, and expert support. Call 888-345-LOAD or submit the form below.">
@@ -58,11 +60,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS v4 – Play CDN -->
+    <!-- Tailwind CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
@@ -77,7 +79,6 @@
         body { font-family: 'Ubuntu', system-ui, sans-serif; }
         .has-danger { border-color: #dc3545 !important; }
         .error-message { color: #dc3545; font-size: 0.875rem; margin-top: 0.25rem; }
-        .form-management { display: none; }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -106,7 +107,7 @@
     <!-- Hero -->
     <header class="relative text-white py-24 md:py-32 text-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/images/contact-hero.webp" alt="Contact Ampere Development team for load bank rentals and support" class="w-full h-full object-cover" loading="eager">
+            <img src="/images/contact-hero.webp" alt="Contact Ampere Development team" class="w-full h-full object-cover" loading="eager">
             <div class="absolute inset-0 bg-black opacity-65"></div>
         </div>
         <div class="relative container mx-auto px-4 z-10">
@@ -127,7 +128,7 @@
         <section class="mb-12 bg-blue-100 p-8 rounded-lg">
             <h2 class="text-4xl font-bold mb-4 text-blue-800 text-center">Let’s Power Your Next Project Together</h2>
             <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-                Whether you need a quote for load bank rentals, have questions about Starline tap boxes, or want expert advice on power testing, we’re here to help. Fill out the form below or call us directly. We respond quickly.
+                Whether you need a quote for load bank rentals, have questions about Starline tap boxes, or want expert advice on power testing, we’re here to help. Fill out the form below or call us directly.
             </p>
         </section>
 
@@ -137,50 +138,33 @@
             <div class="max-w-3xl mx-auto">
                 <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div>
-                            <input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="date_needed" placeholder="Date Needed">
-                        </div>
-                        <div>
-                            <input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="company" placeholder="Company Name" required>
-                        </div>
-                        <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required>
-                        </div>
-                        <div>
-                            <input type="tel" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="phone" placeholder="Phone Number" required>
-                        </div>
-                        <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="equipment" placeholder="Equipment Needed" required>
-                        </div>
-                        <div>
-                            <input type="email" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="_replyto" placeholder="Email Address" required>
-                        </div>
-                        <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="city_state" placeholder="City, State" required>
-                        </div>
+                        <div><input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="name" placeholder="Your Name" required></div>
+                        <div><input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="date_needed" placeholder="Date Needed"></div>
+                        <div><input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="company" placeholder="Company Name" required></div>
+                        <div><input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required></div>
+                        <div><input type="tel" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="phone" placeholder="Phone Number" required></div>
+                        <div><input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="equipment" placeholder="Equipment Needed" required></div>
+                        <div><input type="email" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="_replyto" placeholder="Email Address" required></div>
+                        <div><input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="city_state" placeholder="City, State" required></div>
                         <div class="md:col-span-2">
                             <textarea class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="message" placeholder="Your Message or Project Details" rows="6" required></textarea>
                         </div>
                     </div>
 
-                    <!-- Honeypot field (helps block spam bots) -->
+                    <!-- Honeypot -->
                     <input type="text" name="_gotcha" style="display:none;">
 
                     <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 text-base transition shadow-md">
                         Submit Request
                     </button>
                 </form>
-
                 <div id="form-message" class="mt-6 text-center"></div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="footer-links">
@@ -194,7 +178,7 @@
                     </ul>
                 </div>
                 <div class="social-icons">
-                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X">
+                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener noreferrer">
                         <img src="icons/logo-white.webp" alt="X logo" class="h-6" loading="lazy">
                     </a>
                 </div>
@@ -205,24 +189,24 @@
         </div>
     </footer>
 
-    <!-- Mobile menu toggle -->
+    <!-- Mobile menu -->
     <script>
         document.querySelector('.menuToggler').addEventListener('click', () => {
-            const navMenu = document.querySelector('.nav-menu');
-            navMenu.classList.toggle('hidden');
-            navMenu.classList.toggle('flex');
-            navMenu.classList.toggle('flex-col');
-            navMenu.classList.toggle('absolute');
-            navMenu.classList.toggle('bg-white');
-            navMenu.classList.toggle('w-full');
-            navMenu.classList.toggle('p-4');
-            navMenu.classList.toggle('top-16');
-            navMenu.classList.toggle('left-0');
-            navMenu.classList.toggle('shadow-md');
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('w-full');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('shadow-md');
         });
     </script>
 
-    <!-- Form submission handler -->
+    <!-- Fixed Form Script -->
     <script>
         document.getElementById('quote-request-form').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -233,7 +217,8 @@
             fetch(form.action, {
                 method: 'POST',
                 body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
+                headers: { 'Accept': 'application/json' },
+                referrerPolicy: 'origin'   // ← This + meta tag fixes the 403
             })
             .then(response => {
                 if (response.ok) {
@@ -241,17 +226,15 @@
                     form.reset();
                 } else {
                     return response.json().then(data => {
-                        let errorMsg = 'Something went wrong. Please try again or call us directly.';
-                        if (data.errors) {
-                            errorMsg = data.errors.map(err => err.message).join(', ');
-                        }
-                        messageDiv.innerHTML = `<p class="error-message">${errorMsg}</p>`;
+                        let msg = 'Something went wrong. Please try again or call 888-345-LOAD.';
+                        if (data.errors) msg = data.errors.map(err => err.message).join(', ');
+                        messageDiv.innerHTML = `<p class="error-message">${msg}</p>`;
                     });
                 }
             })
-            .catch(error => {
-                console.error('Form error:', error);
-                messageDiv.innerHTML = '<p class="error-message">Network error occurred. Please check your connection or call 888-345-LOAD.</p>';
+            .catch(err => {
+                console.error(err);
+                messageDiv.innerHTML = '<p class="error-message">Network error. Please try again or call 888-345-LOAD.</p>';
             });
         });
     </script>
