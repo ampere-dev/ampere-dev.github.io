@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "My Journey with Autonomous Drones in Long-Range Transmission Line Inspections"
 date: 2025-08-31
 categories: [autonomous drones, transmission line inspections, AI data centers, grid reliability, LiDAR, thermal imaging]
