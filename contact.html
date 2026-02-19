@@ -218,7 +218,7 @@
                 method: 'POST',
                 body: new FormData(form),
                 headers: { 'Accept': 'application/json' },
-                referrerPolicy: 'origin'   // ← This + meta tag fixes the 403
+                referrerPolicy: 'origin',
             })
             .then(response => {
                 if (response.ok) {
