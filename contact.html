@@ -3,36 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CRITICAL FIX for Formspree 403 on GitHub Pages -->
-    <meta name="referrer" content="origin">
-
+    <meta name="description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
+    <meta name="robots" content="index, follow">
     <title>Contact Us | Ampere Development</title>
-    <meta name="description" content="Contact Ampere Development for load bank rentals, Starline tapbox rentals, power testing solutions, and expert support. Call 888-345-LOAD or submit the form below.">
 
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="google-site-verification" content="qV8nA-fQiwFHKeddfMMFiKFbdTThNH-vY3QbeQBj1v8">
-
+    <!-- SEO -->
     <meta property="og:title" content="Contact Us | Ampere Development">
-    <meta property="og:description" content="Get in touch with Ampere Development for load bank rentals, Starline solutions, and power testing expertise. Call 888-345-LOAD or use the form.">
-    <meta property="og:url" content="https://ampere.dev/contact">
+    <meta property="og:description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ampere.dev/images/contact-hero.webp">
-    <meta property="og:image:alt" content="Contact Ampere Development team">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://ampere.dev/contact">
+    <meta property="og:image" content="https://ampere.dev/images/Ampere-Logo.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact Us | Ampere Development">
-    <meta name="twitter:description" content="Reach out to Ampere Development for rentals and support.">
-    <meta name="twitter:image" content="https://ampere.dev/images/contact-hero.webp">
-    <meta name="twitter:site" content="@LoadbankPro">
+    <meta name="twitter:description" content="Contact Ampere Development via our online form or call 888-345-LOAD for inquiries, sales, or support.">
+    <meta name="twitter:image" content="https://ampere.dev/images/Ampere-Logo.webp">
 
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Ampere Development",
-        "description": "Contact Ampere Development for load bank rentals, Starline tapbox rentals, and load testing services.",
+        "description": "Contact Ampere Development for load bank rentals, Starline tapbox rentals, and load testing services. Reach out via phone or email.",
         "url": "https://ampere.dev/contact",
         "telephone": "888-345-LOAD",
         "email": "sales@ampere.dev",
@@ -47,11 +39,31 @@
             "addressRegion": "CA",
             "postalCode": "12345",
             "addressCountry": "US"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ampere.dev"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Contact",
+                    "item": "https://ampere.dev/contact"
+                }
+            ]
         }
     }
     </script>
 
+    <!-- Canonical Tag -->
     <link rel="canonical" href="https://ampere.dev/contact">
+
+    <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
@@ -60,11 +72,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS v4 -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
@@ -75,15 +85,28 @@
         gtag('config', 'G-EX042S6MQZ');
     </script>
 
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <style>
-        body { font-family: 'Ubuntu', system-ui, sans-serif; }
-        .has-danger { border-color: #dc3545 !important; }
-        .error-message { color: #dc3545; font-size: 0.875rem; margin-top: 0.25rem; }
+        /* Form validation styles */
+        .has-danger {
+            border-color: #dc3545 !important;
+        }
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        /* Hide honeypot field */
+        .form-management {
+            display: none;
+        }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="font-ubuntu bg-gray-100 text-gray-800">
 
-    <!-- Navigation -->
+    <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div id="logo">
@@ -91,150 +114,181 @@
                     <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
                 </a>
             </div>
-            <div class="menuToggler md:hidden cursor-pointer text-3xl text-gray-700" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-            <nav id="header" class="nav-menu hidden md:flex space-x-8 text-sm font-medium">
-                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-red-600 transition-colors">LOAD BANKS</a>
-                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-red-600 transition-colors">STARLINE</a>
-                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-red-600 transition-colors">CABLES</a>
-                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-red-600 transition-colors">FLIR</a>
-                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-red-600 transition-colors">POWER QUALITY</a>
-                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-red-600 transition-colors">TRANSFORMERS</a>
-                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-red-600 transition-colors">3D FABRICATION</a>
+            <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+            <nav id="header" class="nav-menu hidden md:flex space-x-6">
+                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
+                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
+                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
+                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-blue-600 font-medium">FLIR</a>
+                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-blue-600 font-medium">POWER QUALITY</a>
+                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-blue-600 font-medium">TRANSFORMERS</a>
+                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-blue-600 font-medium">3D FABRICATION</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero -->
-    <header class="relative text-white py-24 md:py-32 text-center overflow-hidden">
-        <div class="absolute inset-0">
-            <img src="/images/contact-hero.webp" alt="Contact Ampere Development team" class="w-full h-full object-cover" loading="eager">
-            <div class="absolute inset-0 bg-black opacity-65"></div>
+    <!-- Hero Section -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+            <p class="text-xl mb-6">Connect with Ampere Development for Inquiries, Sales, or Support</p>
+            <a href="#contact-form" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Contact Us Now!</a>
         </div>
-        <div class="relative container mx-auto px-4 z-10">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">Get in Touch</h1>
-            <p class="text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
-                Connect with Ampere Development for Inquiries, Sales, or Support. Call <a href="tel:8883455623" class="underline hover:text-yellow-400">888-345-LOAD</a> or submit the form below.
-            </p>
-            <a href="#contact-form" class="inline-block bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-lg">
-                Contact Us Now!
-            </a>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Let’s Start the Conversation</h2>
+            <p class="text-lg mb-4 max-w-2xl mx-auto">Whether you have questions, need a quote, or want to explore collaboration, our team is here to assist. Fill out the form below or call us at <a href="tel:8883455623" class="text-blue-600 hover:underline">888-345-LOAD</a>. We respond promptly to ensure a seamless experience.</p>
         </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main class="container mx-auto py-12 px-4">
-
-        <!-- Intro -->
-        <section class="mb-12 bg-blue-100 p-8 rounded-lg">
-            <h2 class="text-4xl font-bold mb-4 text-blue-800 text-center">Let’s Power Your Next Project Together</h2>
-            <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
-                Whether you need a quote for load bank rentals, have questions about Starline tap boxes, or want expert advice on power testing, we’re here to help. Fill out the form below or call us directly.
-            </p>
-        </section>
-
-        <!-- Contact Form -->
-        <section id="contact-form" class="mb-12 bg-white p-8 rounded-lg shadow">
-            <h2 class="text-3xl font-bold text-center mb-8 text-blue-800">Request a Quote or Get Support</h2>
-            <div class="max-w-3xl mx-auto">
-                <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div><input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="name" placeholder="Your Name" required></div>
-                        <div><input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="date_needed" placeholder="Date Needed"></div>
-                        <div><input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="company" placeholder="Company Name" required></div>
-                        <div><input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required></div>
-                        <div><input type="tel" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="phone" placeholder="Phone Number" required></div>
-                        <div><input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="equipment" placeholder="Equipment Needed" required></div>
-                        <div><input type="email" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="_replyto" placeholder="Email Address" required></div>
-                        <div><input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" name="city_state" placeholder="City, State" required></div>
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Request a Quote</h2>
+            <p class="text-lg text-center mb-4 font-semibold">Provide Your Details</p>
+            <p class="text-lg text-center mb-6 max-w-2xl mx-auto">Please include your contact information, company details, and project requirements. We’ll get back to you swiftly with tailored solutions.</p>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+                <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromName" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="date" name="date_needed" placeholder="Date Needed" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Your Company" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required>
+                        </div>
+                        <div>
+                            <input type="tel" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed" required>
+                        </div>
+                        <div>
+                            <input type="email" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="city" name="city_state" placeholder="City, State" required>
+                        </div>
                         <div class="md:col-span-2">
-                            <textarea class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" name="message" placeholder="Your Message or Project Details" rows="6" required></textarea>
+                            <textarea class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                        </div>
+                        <!-- Honeypot Field -->
+                        <input type="text" class="form-management" id="form-management" name="_form_management">
+                        
+                        <div>
+                            <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600 uppercase">Submit Quote Request</button>
                         </div>
                     </div>
-
-                    <!-- Honeypot -->
-                    <input type="text" name="_gotcha" style="display:none;">
-
-                    <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 text-base transition shadow-md">
-                        Submit Request
-                    </button>
                 </form>
-                <div id="form-message" class="mt-6 text-center"></div>
+                <div id="form-message" class="mt-4"></div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-blue-800 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Need Immediate Assistance?</h2>
+            <p class="text-lg mb-6">Call us at 888-345-LOAD or submit the form above to connect with our team.</p>
+            <a href="#contact-form" class="bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600">Send a Message</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer id="footer" class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="footer-links">
-                    <ul class="flex flex-col md:flex-row gap-6 text-sm font-medium">
-                        <li><a href="https://ampere.dev/about" class="hover:text-yellow-400 transition-colors">ABOUT</a></li>
-                        <li><a href="https://ampere.dev/products" class="hover:text-yellow-400 transition-colors">PRODUCTS</a></li>
-                        <li><a href="https://ampere.dev/services" class="hover:text-yellow-400 transition-colors">SERVICES</a></li>
-                        <li><a href="https://ampere.dev/blog" class="hover:text-yellow-400 transition-colors">BLOG</a></li>
-                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-yellow-400 transition-colors">PRIVACY & LEGAL</a></li>
-                        <li><a href="https://ampere.dev/contact" class="hover:text-yellow-400 transition-colors">CONTACT</a></li>
+                    <ul class="flex flex-col md:flex-row gap-4">
+                        <li><a href="https://ampere.dev/about" class="hover:text-blue-400">ABOUT</a></li>
+                        <li><a href="https://ampere.dev/products" class="hover:text-blue-400">PRODUCTS</a></li>
+                        <li><a href="https://ampere.dev/services" class="hover:text-blue-400">SERVICES</a></li>
+                        <li><a href="https://ampere.dev/blog" class="hover:text-blue-400">BLOG</a></li>
+                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-blue-400">PRIVACY & LEGAL</a></li>
+                        <li><a href="https://ampere.dev/contact" class="hover:text-blue-400">CONTACT</a></li>
                     </ul>
                 </div>
-                <div class="social-icons">
-                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener noreferrer">
-                        <img src="icons/logo-white.webp" alt="X logo" class="h-6" loading="lazy">
+                <div class="social-icons flex gap-4">
+                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener">
+                        <img src="icons/logo-white.webp" alt="X logo" class="h-6">
                     </a>
                 </div>
             </div>
-            <div class="text-center mt-6 text-sm">
+            <div class="text-center mt-6">
                 <p>AMPERE © 2026</p>
             </div>
         </div>
     </footer>
 
-    <!-- Mobile menu -->
     <script>
+        // Toggle mobile menu
         document.querySelector('.menuToggler').addEventListener('click', () => {
-            const nav = document.querySelector('.nav-menu');
-            nav.classList.toggle('hidden');
-            nav.classList.toggle('flex');
-            nav.classList.toggle('flex-col');
-            nav.classList.toggle('absolute');
-            nav.classList.toggle('bg-white');
-            nav.classList.toggle('w-full');
-            nav.classList.toggle('p-4');
-            nav.classList.toggle('top-16');
-            nav.classList.toggle('left-0');
-            nav.classList.toggle('shadow-md');
+            document.querySelector('.nav-menu').classList.toggle('hidden');
         });
-    </script>
 
-    <!-- Fixed Form Script -->
-    <script>
+        // Smooth scroll to contact form
+        document.querySelectorAll('a[href="#contact-form"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#contact-form').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Form submission with client-side validation
         document.getElementById('quote-request-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = this;
             const messageDiv = document.getElementById('form-message');
-            messageDiv.innerHTML = '';
+            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+            let isValid = true;
 
+            // Client-side validation
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('has-danger');
+                    isValid = false;
+                } else {
+                    field.classList.remove('has-danger');
+                }
+            });
+
+            if (!isValid) {
+                messageDiv.innerHTML = '<p class="error-message">Please fill out all required fields.</p>';
+                return;
+            }
+
+            // Submit form via Fetch API to Formspree
             fetch(form.action, {
                 method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' },
-                referrerPolicy: 'origin',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(new FormData(form)).toString()
             })
-            .then(response => {
-                if (response.ok) {
-                    messageDiv.innerHTML = '<p class="text-green-600 font-semibold">Thank you! We’ll get back to you shortly.</p>';
-                    form.reset();
-                } else {
-                    return response.json().then(data => {
-                        let msg = 'Something went wrong. Please try again or call 888-345-LOAD.';
-                        if (data.errors) msg = data.errors.map(err => err.message).join(', ');
-                        messageDiv.innerHTML = `<p class="error-message">${msg}</p>`;
-                    });
+            .then(response => response.json())
+            .then(data => {
+                messageDiv.innerHTML = '<p class="text-green-600">Thank you for your submission! We will get back to you soon.</p>';
+                form.reset();
+                if (typeof grecaptcha !== 'undefined') {
+                    grecaptcha.reset();
                 }
             })
-            .catch(err => {
-                console.error(err);
-                messageDiv.innerHTML = '<p class="error-message">Network error. Please try again or call 888-345-LOAD.</p>';
+            .catch(error => {
+                messageDiv.innerHTML = '<p class="error-message">An error occurred. Please try again later.</p>';
+                console.error('Form submission error:', error);
             });
         });
     </script>
