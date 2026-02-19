@@ -73,9 +73,6 @@
         gtag('config', 'G-EX042S6MQZ');
     </script>
 
-    <!-- reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <style>
         body { font-family: 'Ubuntu', system-ui, sans-serif; }
         .has-danger { border-color: #dc3545 !important; }
@@ -149,19 +146,19 @@
                 <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="date" name="date_needed" placeholder="Date Needed" required>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="date" name="date_needed" placeholder="Date Needed">
                         </div>
                         <div>
                             <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Your Company" required>
                         </div>
                         <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)">
                         </div>
                         <div>
                             <input type="tel" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone" required>
                         </div>
                         <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed" required>
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed">
                         </div>
                         <div>
                             <input type="email" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="Email" required>
@@ -170,14 +167,10 @@
                             <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="city" name="city_state" placeholder="City, State" required>
                         </div>
                         <div class="md:col-span-2">
-                            <textarea class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                            <textarea class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Message" rows="5" required></textarea>
                         </div>
                         <!-- Honeypot -->
                         <input type="text" class="form-management" id="form-management" name="_form_management">
-                        <!-- reCAPTCHA -->
-                        <div class="md:col-span-2">
-                            <div class="g-recaptcha" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
-                        </div>
                     </div>
                     <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-md">Submit Request</button>
                 </form>
@@ -237,7 +230,7 @@
         });
     </script>
 
-    <!-- Form submission script (kept from your original with minor improvements) -->
+    <!-- Form submission script (reCAPTCHA removed) -->
     <script>
         document.getElementById('quote-request-form').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -269,7 +262,6 @@
             .then(data => {
                 messageDiv.innerHTML = '<p class="text-green-600 font-semibold">Thank you! We’ll get back to you shortly.</p>';
                 form.reset();
-                if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
             })
             .catch(() => {
                 messageDiv.innerHTML = '<p class="error-message">Something went wrong. Please try again or call us directly.</p>';
