@@ -73,9 +73,6 @@
         gtag('config', 'G-EX042S6MQZ');
     </script>
 
-    <!-- reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <style>
         body { font-family: 'Ubuntu', system-ui, sans-serif; }
         .has-danger { border-color: #dc3545 !important; }
@@ -85,7 +82,7 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Navigation – exact template style -->
+    <!-- Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div id="logo">
@@ -106,22 +103,14 @@
         </div>
     </header>
 
-    <!-- Hero – full-bleed with dark overlay -->
+    <!-- Hero -->
     <header class="relative text-white py-24 md:py-32 text-center overflow-hidden">
         <div class="absolute inset-0">
-            <img 
-                src="/images/contact-hero.webp" 
-                alt="Contact Ampere Development team for load bank rentals and support" 
-                class="w-full h-full object-cover"
-                loading="eager"
-            >
+            <img src="/images/contact-hero.webp" alt="Contact Ampere Development team for load bank rentals and support" class="w-full h-full object-cover" loading="eager">
             <div class="absolute inset-0 bg-black opacity-65"></div>
         </div>
-
         <div class="relative container mx-auto px-4 z-10">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
-                Get in Touch
-            </h1>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">Get in Touch</h1>
             <p class="text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
                 Connect with Ampere Development for Inquiries, Sales, or Support Call <a href="tel:8883455623" class="underline hover:text-yellow-400">888-345-LOAD</a> or submit the form below.
             </p>
@@ -134,7 +123,7 @@
     <!-- Main Content -->
     <main class="container mx-auto py-12 px-4">
 
-        <!-- Intro / Problem-style Section – blue-100 -->
+        <!-- Intro -->
         <section class="mb-12 bg-blue-100 p-8 rounded-lg">
             <h2 class="text-4xl font-bold mb-4 text-blue-800 text-center">Let’s Power Your Next Project Together</h2>
             <p class="text-gray-700 text-lg leading-relaxed text-center max-w-3xl mx-auto">
@@ -142,7 +131,7 @@
             </p>
         </section>
 
-        <!-- Contact Form Section -->
+        <!-- Contact Form -->
         <section id="contact-form" class="mb-12 bg-white p-8 rounded-lg shadow">
             <h2 class="text-3xl font-bold text-center mb-8 text-blue-800">Request a Quote or Get Support</h2>
             <div class="max-w-3xl mx-auto">
@@ -158,35 +147,38 @@
                             <input type="text" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Company Name" required>
                         </div>
                         <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required="">
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="duration" name="duration" placeholder="Duration (e.g., 10 days, 1 month)" required>
                         </div>
                         <div>
                             <input type="tel" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone Number" required>
                         </div>
                         <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed" required="">
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="equipment" name="equipment" placeholder="Equipment Needed" required>
                         </div>
                         <div>
                             <input type="email" class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="Email Address" required>
                         </div>
                         <div>
-                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="city" name="city_state" placeholder="City, State" required="">
+                            <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="city" name="city_state" placeholder="City, State" required>
                         </div>
                         <div class="md:col-span-2">
                             <textarea class="w-full p-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Your Message or Project Details" rows="6" required></textarea>
                         </div>
-                        <!-- Honeypot -->
-                        <input type="text" class="form-management" id="form-management" name="_gotcha">
-                        </div>
                     </div>
-                    <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-md">Submit Request</button>
+
+                    <!-- Honeypot -->
+                    <input type="text" class="form-management" id="form-management" name="_gotcha" style="display: none;">
+
+                    <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 text-base transition shadow-md">
+                        Submit Request
+                    </button>
                 </form>
                 <div id="form-message" class="mt-6 text-center"></div>
             </div>
         </section>
     </main>
 
-    <!-- Footer – exact template match -->
+    <!-- Footer -->
     <footer id="footer" class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -212,7 +204,7 @@
         </div>
     </footer>
 
-    <!-- Mobile menu script – exact template version -->
+    <!-- Mobile menu script -->
     <script>
         document.querySelector('.menuToggler').addEventListener('click', () => {
             const navMenu = document.querySelector('.nav-menu');
@@ -229,39 +221,35 @@
         });
     </script>
 
+    <!-- Form submission script -->
     <script>
-document.getElementById('quote-request-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const form = this;
-    const messageDiv = document.getElementById('form-message');
+        document.getElementById('quote-request-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.innerHTML = '';
 
-    // Optional: clear previous messages
-    messageDiv.innerHTML = '';
-
-    fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),           // ← Use FormData directly (recommended)
-        headers: { 'Accept': 'application/json' }  // ← NO Content-Type header
-    })
-    .then(response => {
-        if (response.ok) {
-            messageDiv.innerHTML = '<p class="text-green-600 font-semibold">Thank you! We’ll get back to you shortly.</p>';
-            form.reset();
-            if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
-        } else {
-            return response.json().then(data => {
-                let errorMsg = 'Something went wrong. Please try again or call us directly.';
-                if (data.errors) {
-                    errorMsg = data.errors.map(err => err.message).join(', ');
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                if (response.ok) {
+                    messageDiv.innerHTML = '<p class="text-green-600 font-semibold">Thank you! We’ll get back to you shortly.</p>';
+                    form.reset();
+                } else {
+                    return response.json().then(data => {
+                        let errorMsg = 'Something went wrong. Please try again or call us directly.';
+                        if (data.errors) errorMsg = data.errors.map(err => err.message).join(', ');
+                        messageDiv.innerHTML = `<p class="error-message">${errorMsg}</p>`;
+                    });
                 }
-                messageDiv.innerHTML = `<p class="error-message">${errorMsg}</p>`;
+            })
+            .catch(() => {
+                messageDiv.innerHTML = '<p class="error-message">Something went wrong. Please try again or call us directly.</p>';
             });
-        }
-    })
-    .catch(() => {
-        messageDiv.innerHTML = '<p class="error-message">Something went wrong. Please try again or call us directly.</p>';
-    });
-});
-</script>
+        });
+    </script>
 </body>
 </html>
