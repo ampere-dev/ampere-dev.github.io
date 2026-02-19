@@ -85,23 +85,10 @@
         gtag('config', 'G-EX042S6MQZ');
     </script>
 
-    <!-- reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <style>
-        /* Form validation styles */
-        .has-danger {
-            border-color: #dc3545 !important;
-        }
-        .error-message {
-            color: #dc3545;
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-        }
-        /* Hide honeypot field */
-        .form-management {
-            display: none;
-        }
+        .has-danger { border-color: #dc3545 !important; }
+        .error-message { color: #dc3545; font-size: 0.875rem; margin-top: 0.25rem; }
+        .form-management { display: none; }
     </style>
 </head>
 <body class="font-ubuntu bg-gray-100 text-gray-800">
@@ -140,7 +127,11 @@
     <section class="py-12 bg-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-6">Let’s Start the Conversation</h2>
-            <p class="text-lg mb-4 max-w-2xl mx-auto">Whether you have questions, need a quote, or want to explore collaboration, our team is here to assist. Fill out the form below or call us at <a href="tel:8883455623" class="text-blue-600 hover:underline">888-345-LOAD</a>. We respond promptly to ensure a seamless experience.</p>
+            <p class="text-lg mb-4 max-w-2xl mx-auto">
+                Whether you have questions, need a quote, or want to explore collaboration, our team is here to assist. 
+                Fill out the form below or call us at <a href="tel:8883455623" class="text-blue-600 hover:underline">888-345-LOAD</a>. 
+                We respond promptly to ensure a seamless experience.
+            </p>
         </div>
     </section>
 
@@ -149,7 +140,9 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-6">Request a Quote</h2>
             <p class="text-lg text-center mb-4 font-semibold">Provide Your Details</p>
-            <p class="text-lg text-center mb-6 max-w-2xl mx-auto">Please include your contact information, company details, and project requirements. We’ll get back to you swiftly with tailored solutions.</p>
+            <p class="text-lg text-center mb-6 max-w-2xl mx-auto">
+                Please include your contact information, company details, and project requirements. We’ll get back to you swiftly with tailored solutions.
+            </p>
             
             <div class="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
                 <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="quote-request-form" class="space-y-4">
@@ -181,13 +174,10 @@
                         <div class="md:col-span-2">
                             <textarea class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="message" name="message" placeholder="Message" rows="5"></textarea>
                         </div>
-                        <!-- Honeypot Field -->
-                        <input type="text" class="form-management" id="form-management" name="_form_management">
-                        
-                        <!-- Comment out or delete this block for testing -->
-<!-- <div>
-    <div class="g-recaptcha" id="gRecaptchaContainer" data-sitekey="6LfLJD4rAAAAAMnIwVPW5gCz_wxW8SrxbaHFe0zY" data-theme="light"></div>
-</div> -->
+
+                        <!-- Honeypot -->
+                        <input type="text" class="form-management" name="_gotcha">
+
                         <div>
                             <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded hover:bg-yellow-600 uppercase">Submit Quote Request</button>
                         </div>
@@ -234,80 +224,75 @@
     </footer>
 
     <script>
-    // Toggle mobile menu
-    document.querySelector('.menuToggler').addEventListener('click', () => {
-        document.querySelector('.nav-menu').classList.toggle('hidden');
-    });
+        // Toggle mobile menu
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            document.querySelector('.nav-menu').classList.toggle('hidden');
+        });
 
-    // Smooth scroll to contact form
-    document.querySelectorAll('a[href="#contact-form"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        // Smooth scroll to contact form
+        document.querySelectorAll('a[href="#contact-form"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('#contact-form').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Form submission
+        document.getElementById('quote-request-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            document.querySelector('#contact-form').scrollIntoView({ behavior: 'smooth' });
-        });
-    });
 
-    // Form submission with client-side validation + proper Formspree fetch
-    document.getElementById('quote-request-form').addEventListener('submit', function(e) {
-        e.preventDefault();
+            const form = this;
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.innerHTML = ''; // Clear previous messages
 
-        const form = this;
-        const messageDiv = document.getElementById('form-message');
-        const requiredFields = form.querySelectorAll('input[required], textarea[required]');
-        let isValid = true;
+            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+            let isValid = true;
 
-        // Clear previous errors
-        requiredFields.forEach(field => field.classList.remove('has-danger'));
-        messageDiv.innerHTML = '';
+            requiredFields.forEach(field => {
+                field.classList.remove('has-danger');
+                if (!field.value.trim()) {
+                    field.classList.add('has-danger');
+                    isValid = false;
+                }
+            });
 
-        // Client-side validation
-        requiredFields.forEach(field => {
-            if (!field.value.trim()) {
-                field.classList.add('has-danger');
-                isValid = false;
-            }
-        });
-
-        if (!isValid) {
-            messageDiv.innerHTML = '<p class="error-message">Please fill out all required fields.</p>';
-            return;
-        }
-
-        // Optional: Check if reCAPTCHA is completed
-        if (typeof grecaptcha !== 'undefined') {
-            const response = grecaptcha.getResponse();
-            if (response.length === 0) {
-                messageDiv.innerHTML = '<p class="error-message">Please complete the reCAPTCHA.</p>';
+            if (!isValid) {
+                messageDiv.innerHTML = '<p class="error-message">Please fill out all required fields.</p>';
                 return;
             }
-        }
 
-        // ✅ Correct way to submit to Formspree
-        fetch(form.action, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json'
-                // IMPORTANT: Do NOT set Content-Type → let browser handle it with FormData
-            },
-            body: new FormData(form)   // ← This is the key fix
-        })
-        .then(response => {
-            if (response.ok) {
-                return response.json();
-            } else {
-                throw new Error('Formspree error');
+            // Log payload for debugging (remove later if desired)
+            console.log('Form data being sent:');
+            for (let [key, value] of new FormData(form).entries()) {
+                console.log(`${key}: ${value}`);
             }
-        })
-        .then(data => {
-            messageDiv.innerHTML = '<p class="text-green-600">Thank you for your submission! We will get back to you soon.</p>';
-            form.reset();
-            if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
-        })
-        .catch(error => {
-            messageDiv.innerHTML = '<p class="error-message">An error occurred. Please try again later.</p>';
-            console.error('Form submission error:', error);
+
+            fetch(form.action, {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: new FormData(form)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(errData => {
+                        console.log('Formspree returned error:', errData);
+                        const errorMsg = errData.error || errData.message || JSON.stringify(errData) || 'Bad Request';
+                        throw new Error(errorMsg);
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                messageDiv.innerHTML = '<p class="text-green-600 font-medium">Thank you! Your quote request has been submitted. We\'ll get back to you soon.</p>';
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Form submission failed:', error);
+                messageDiv.innerHTML = `<p class="error-message">Submission failed: ${error.message || 'Please try again later.'}</p>`;
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
