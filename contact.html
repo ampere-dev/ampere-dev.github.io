@@ -233,64 +233,80 @@
     </footer>
 
     <script>
-        // Toggle mobile menu
-        document.querySelector('.menuToggler').addEventListener('click', () => {
-            document.querySelector('.nav-menu').classList.toggle('hidden');
-        });
+    // Toggle mobile menu
+    document.querySelector('.menuToggler').addEventListener('click', () => {
+        document.querySelector('.nav-menu').classList.toggle('hidden');
+    });
 
-        // Smooth scroll to contact form
-        document.querySelectorAll('a[href="#contact-form"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('#contact-form').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        // Form submission with client-side validation
-        document.getElementById('quote-request-form').addEventListener('submit', function(e) {
+    // Smooth scroll to contact form
+    document.querySelectorAll('a[href="#contact-form"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            const form = this;
-            const messageDiv = document.getElementById('form-message');
-            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
-            let isValid = true;
+            document.querySelector('#contact-form').scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 
-            // Client-side validation
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    field.classList.add('has-danger');
-                    isValid = false;
-                } else {
-                    field.classList.remove('has-danger');
-                }
-            });
+    // Form submission with client-side validation + proper Formspree fetch
+    document.getElementById('quote-request-form').addEventListener('submit', function(e) {
+        e.preventDefault();
 
-            if (!isValid) {
-                messageDiv.innerHTML = '<p class="error-message">Please fill out all required fields.</p>';
+        const form = this;
+        const messageDiv = document.getElementById('form-message');
+        const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+        let isValid = true;
+
+        // Clear previous errors
+        requiredFields.forEach(field => field.classList.remove('has-danger'));
+        messageDiv.innerHTML = '';
+
+        // Client-side validation
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                field.classList.add('has-danger');
+                isValid = false;
+            }
+        });
+
+        if (!isValid) {
+            messageDiv.innerHTML = '<p class="error-message">Please fill out all required fields.</p>';
+            return;
+        }
+
+        // Optional: Check if reCAPTCHA is completed
+        if (typeof grecaptcha !== 'undefined') {
+            const response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                messageDiv.innerHTML = '<p class="error-message">Please complete the reCAPTCHA.</p>';
                 return;
             }
+        }
 
-            // Submit form via Fetch API to Formspree
-            fetch(form.action, {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: new URLSearchParams(new FormData(form)).toString()
-            })
-            .then(response => response.json())
-            .then(data => {
-                messageDiv.innerHTML = '<p class="text-green-600">Thank you for your submission! We will get back to you soon.</p>';
-                form.reset();
-                if (typeof grecaptcha !== 'undefined') {
-                    grecaptcha.reset();
-                }
-            })
-            .catch(error => {
-                messageDiv.innerHTML = '<p class="error-message">An error occurred. Please try again later.</p>';
-                console.error('Form submission error:', error);
-            });
+        // ✅ Correct way to submit to Formspree
+        fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+                // IMPORTANT: Do NOT set Content-Type → let browser handle it with FormData
+            },
+            body: new FormData(form)   // ← This is the key fix
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Formspree error');
+            }
+        })
+        .then(data => {
+            messageDiv.innerHTML = '<p class="text-green-600">Thank you for your submission! We will get back to you soon.</p>';
+            form.reset();
+            if (typeof grecaptcha !== 'undefined') grecaptcha.reset();
+        })
+        .catch(error => {
+            messageDiv.innerHTML = '<p class="error-message">An error occurred. Please try again later.</p>';
+            console.error('Form submission error:', error);
         });
-    </script>
+    });
+</script>
 </body>
 </html>
