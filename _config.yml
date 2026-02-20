@@ -1,12 +1,9 @@
 title: Ampere Insights | Ampere Development
 description: Concise posts on power systems, load banks, transformers & 3D fabrication.
 
-permalink: /blog/:year-:month-:day/:slug/   # ← this is the active line
+permalink: /blog/:slug/          # ← clean, no date
 
-# Optional: remove .html from URLs (recommended)
+# Optional: remove .html
 permalink_style: pretty
-
-# If using a theme
-# theme: minima
 
 show_drafts: false
