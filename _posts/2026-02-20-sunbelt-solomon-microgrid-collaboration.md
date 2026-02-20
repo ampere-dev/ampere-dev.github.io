@@ -1,6 +1,11 @@
-# Recent Collaboration Discussion with Sunbelt Solomon: Enhancing Microgrid Capabilities with Transformer Fleet Insights and Advanced Testing Infrastructure
-
-**February 20, 2026**
+---
+layout: post
+title: "Recent Collaboration Discussion with Sunbelt Solomon: Enhancing Microgrid Capabilities with Transformer Fleet Insights and Advanced Testing Infrastructure"
+date: 2026-02-20
+categories: [Microgrids, Substations, Power Transformers, High-Voltage Testing, Primary Injection, Grid Resilience, DER Integration]
+excerpt: A strategic discussion with Sunbelt Solomon explored synergies in transformer rentals, high-voltage cabling, portable rental substations, and primary current injection testing to accelerate microgrid commissioning, substation tie-ins, and resilient high-voltage infrastructure projects.
+---
+**Posted by Ampere Development Team**
 
 I recently had a highly productive phone call with a sales representative from **Sunbelt Solomon**, a premier provider of new, remanufactured, and rental power transformers, substation-class equipment, switchgear, cables, and complete turnkey temporary power solutions. The conversation focused on exploring synergies between their extensive national inventory—spanning low- to high-voltage assets up to 230 kV and beyond—and our specialized expertise in **microgrid** design, integration, and operation. Our microgrids incorporate distributed energy resources (DERs) such as solar PV, battery energy storage systems (BESS), and diesel/natural gas generation, with seamless grid-parallel and islanded-mode functionality, IEEE 1547-compliant interconnection protection, automatic transfer schemes, and robust point-of-common-coupling (PCC) coordination.
 
