@@ -1,18 +1,12 @@
 title: Ampere Insights | Ampere Development
 description: Concise posts on power systems, load banks, transformers & 3D fabrication.
 
-# Important: Permalink for posts (clean URLs without date if you prefer)
-permalink: /blog/:year-:month-:day/:slug/
-# or
-# permalink: /blog/:year-:month-:day/:title/
-# Or include date: /blog/:year/:month/:day/:title/
-# Or pretty (no .html): /blog/:title
+permalink: /blog/:year-:month-:day/:slug/   # ← this is the active line
 
-# Optional: Make URLs "pretty" (no trailing .html, folder-style)
-# permalink: pretty
+# Optional: remove .html from URLs (recommended)
+permalink_style: pretty
 
-# If using a theme (optional, many skip this)
-# theme: minima   # or whatever you use
+# If using a theme
+# theme: minima
 
-# Exclude drafts if you add any
 show_drafts: false
