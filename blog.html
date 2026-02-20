@@ -2081,8 +2081,8 @@
 <script>
     function togglePost(titleElement) {
         const article = titleElement.closest('article');
-        const content = article.querySelector('.teaser-content')
-       
+        const content = article.querySelector('.teaser-content');
+        
         if (article.classList.contains('collapsed')) {
             content.style.height = content.scrollHeight + 'px';
             article.classList.remove('collapsed');
@@ -2093,54 +2093,89 @@
             }, 10);
             article.classList.add('collapsed');
         }
-       
-        content.addEventListener('transitionend', function handler() {
+
+        // Clean up transition listener once
+        const handler = function() {
             if (!article.classList.contains('collapsed')) {
                 content.style.height = 'auto';
             }
             content.removeEventListener('transitionend', handler);
-        });
+        };
+        content.addEventListener('transitionend', handler);
     }
+
+    // ────────────────────────────────────────────────
+    // Pagination
+    // ────────────────────────────────────────────────
     const articlesPerPage = 5;
     let currentPage = 1;
-    function setupPagination(visibleArticles = Array.from(document.querySelectorAll('.post'))) {
-        const totalArticles = visibleArticles.length;
+
+    // Read page from URL on first load
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageFromUrl = parseInt(urlParams.get('page'), 10);
+    if (!isNaN(pageFromUrl) && pageFromUrl >= 1) {
+        currentPage = pageFromUrl;
+    }
+
+    function setupPagination() {
+        const allPosts = Array.from(document.querySelectorAll('.post'));
+        const totalArticles = allPosts.length;
         const totalPages = Math.ceil(totalArticles / articlesPerPage);
+
         const pageNumbersContainer = document.getElementById('page-numbers');
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
+
         function displayArticles(page) {
+            // Clamp page number
+            page = Math.max(1, Math.min(page, totalPages || 1));
+
             const start = (page - 1) * articlesPerPage;
             const end = start + articlesPerPage;
-            document.querySelectorAll('.post').forEach(article => {
-                article.classList.add('hidden');
+
+            // Hide all, show only current page
+            allPosts.forEach((article, index) => {
+                article.classList.toggle('hidden', !(index >= start && index < end));
             });
-            visibleArticles.forEach((article, index) => {
-                if (index >= start && index < end) {
-                    article.classList.remove('hidden');
-                }
-            });
+
+            // Update active page button
             document.querySelectorAll('.page-number').forEach(btn => {
                 btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
             });
+
+            // Disable buttons appropriately
             prevBtn.disabled = page === 1;
             nextBtn.disabled = page === totalPages || totalPages === 0;
+
             prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
             nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
+
+            // Update URL without adding to history (cleaner UX)
+            const url = new URL(window.location);
+            if (page === 1) {
+                url.searchParams.delete('page');
+            } else {
+                url.searchParams.set('page', page);
+            }
+            window.history.replaceState(null, '', url);
         }
+
+        // Build page number buttons
         pageNumbersContainer.innerHTML = '';
         for (let i = 1; i <= totalPages; i++) {
-            const pageBtn = document.createElement('button');
-            pageBtn.className = 'page-number';
-            pageBtn.dataset.page = i;
-            pageBtn.textContent = i;
-            pageBtn.setAttribute('aria-label', `Page ${i}`);
-            pageBtn.addEventListener('click', () => {
+            const btn = document.createElement('button');
+            btn.className = 'page-number';
+            btn.dataset.page = i;
+            btn.textContent = i;
+            btn.setAttribute('aria-label', `Page ${i}`);
+            btn.addEventListener('click', () => {
                 currentPage = i;
                 displayArticles(currentPage);
             });
-            pageNumbersContainer.appendChild(pageBtn);
+            pageNumbersContainer.appendChild(btn);
         }
+
+        // Handle empty case
         if (totalPages === 0) {
             pageNumbersContainer.innerHTML = '';
             prevBtn.disabled = true;
@@ -2148,23 +2183,28 @@
             prevBtn.setAttribute('aria-disabled', 'true');
             nextBtn.setAttribute('aria-disabled', 'true');
         }
+
+        // Navigation buttons
         prevBtn.addEventListener('click', () => {
             if (currentPage > 1) {
                 currentPage--;
                 displayArticles(currentPage);
             }
         });
+
         nextBtn.addEventListener('click', () => {
             if (currentPage < totalPages) {
                 currentPage++;
                 displayArticles(currentPage);
             }
         });
+
+        // Show initial page
         displayArticles(currentPage);
     }
-    document.addEventListener('DOMContentLoaded', () => {
-        setupPagination();
-    });
+
+    // Initialize when DOM is ready
+    document.addEventListener('DOMContentLoaded', setupPagination);
 </script>
 </body>
 </html>
