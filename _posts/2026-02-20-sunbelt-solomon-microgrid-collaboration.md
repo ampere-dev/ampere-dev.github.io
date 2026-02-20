@@ -2,7 +2,6 @@
 layout: post
 title: "Recent Collaboration Discussion with Sunbelt Solomon: Enhancing Microgrid Capabilities with Transformer Fleet Insights and Advanced Testing Infrastructure"
 date: 2026-02-20
-slug: sunbelt-solomon-microgrid-collaboration
 categories: [Microgrids, Substations, Power Transformers, High-Voltage Testing, Primary Injection, Grid Resilience, DER Integration]
 excerpt: A strategic discussion with Sunbelt Solomon explored synergies in transformer rentals, high-voltage cabling, portable rental substations, and primary current injection testing to accelerate microgrid commissioning, substation tie-ins, and resilient high-voltage infrastructure projects.
 ---
