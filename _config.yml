@@ -2,7 +2,9 @@ title: Ampere Insights | Ampere Development
 description: Concise posts on power systems, load banks, transformers & 3D fabrication.
 
 # Important: Permalink for posts (clean URLs without date if you prefer)
-permalink: /blog/:title/          # Example: /blog/the-rise-of-800vdc-in-data-centers/
+permalink: /blog/:year-:month-:day/:slug/
+# or
+# permalink: /blog/:year-:month-:day/:title/
 # Or include date: /blog/:year/:month/:day/:title/
 # Or pretty (no .html): /blog/:title
 
