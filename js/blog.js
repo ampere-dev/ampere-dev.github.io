@@ -25,11 +25,12 @@ function togglePost(titleElement) {
 }
 
 // ────────────────────────────────────────────────
-// Pagination – FIXED VERSION
+// Pagination – FIXED for nested <article> wrappers
 // ────────────────────────────────────────────────
 const articlesPerPage = 5;
 let currentPage = 1;
 
+// Read ?page= from URL
 const urlParams = new URLSearchParams(window.location.search);
 const pageFromUrl = parseInt(urlParams.get('page'), 10);
 if (!isNaN(pageFromUrl) && pageFromUrl >= 1) {
@@ -37,7 +38,10 @@ if (!isNaN(pageFromUrl) && pageFromUrl >= 1) {
 }
 
 function setupPagination() {
-    const allPosts = Array.from(document.querySelectorAll('article'));
+    // THIS IS THE KEY FIX — only select real posts
+    const allPosts = Array.from(document.querySelectorAll('h2[onclick="togglePost(this)"]'))
+                         .map(h2 => h2.closest('article'));
+
     const totalArticles = allPosts.length;
     const totalPages = Math.ceil(totalArticles / articlesPerPage);
 
@@ -61,6 +65,7 @@ function setupPagination() {
             article.classList.toggle('hidden', !shouldBeVisible);
         });
 
+        // Update active page button
         document.querySelectorAll('.page-number').forEach(btn => {
             btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
         });
@@ -71,15 +76,14 @@ function setupPagination() {
         prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
         nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
 
+        // Update URL
         const url = new URL(window.location);
-        if (page === 1) {
-            url.searchParams.delete('page');
-        } else {
-            url.searchParams.set('page', page);
-        }
+        if (page === 1) url.searchParams.delete('page');
+        else url.searchParams.set('page', page);
         window.history.replaceState(null, '', url);
     }
 
+    // Build page buttons
     pageNumbersContainer.innerHTML = '';
     if (totalPages > 1) {
         for (let i = 1; i <= totalPages; i++) {
@@ -98,27 +102,17 @@ function setupPagination() {
 
     if (totalPages === 0) {
         pageNumbersContainer.innerHTML = '<span>No posts found</span>';
-        prevBtn.disabled = true;
-        nextBtn.disabled = true;
-        prevBtn.setAttribute('aria-disabled', 'true');
-        nextBtn.setAttribute('aria-disabled', 'true');
+        prevBtn.disabled = nextBtn.disabled = true;
     }
 
-    prevBtn.addEventListener('click', () => {
-        if (currentPage > 1) {
-            currentPage--;
-            displayArticles(currentPage);
-        }
-    });
+    // Button listeners
+    prevBtn.addEventListener('click', () => { if (currentPage > 1) { currentPage--; displayArticles(currentPage); } });
+    nextBtn.addEventListener('click', () => { if (currentPage < totalPages) { currentPage++; displayArticles(currentPage); } });
 
-    nextBtn.addEventListener('click', () => {
-        if (currentPage < totalPages) {
-            currentPage++;
-            displayArticles(currentPage);
-        }
-    });
-
+    // Clean initial state
     allPosts.forEach(article => article.classList.remove('hidden'));
+
+    // Show correct page
     displayArticles(currentPage);
 }
 
