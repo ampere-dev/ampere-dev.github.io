@@ -1,6 +1,11 @@
-# Transformer Shortages: Reshoring Challenges Threaten U.S. Grid and AI Data Centers
-
-**May 24, 2025**
+---
+layout: post
+title: "Transformer Shortages: Reshoring Challenges Threaten U.S. Grid and AI Data Centers"
+date: 2025-05-24
+categories: [Transformers, Grid Resilience, Reshoring, AI Data Centers, Energy Security, Supply Chain, Power Infrastructure]
+excerpt: Lead times at 120+ weeks and prices up 4–9× expose reshoring hurdles—domestic manufacturers like MGM/VanTran struggle with labor and GOES shortages while AI demand strains the grid and risks reliability.
+---
+**Posted by Ampere Development Team**
 
 A May 21, 2025 T&D World article by Jeff Postelwait details the intensifying U.S. transformer shortage, exposing deeper structural obstacles to reshoring critical grid components. Lead times have ballooned to 120+ weeks, prices have multiplied 4–9×, and domestic manufacturers like MGM Transformer Company and VanTran Transformers—while expanding—are constrained by labor shortages, specialized material scarcity, and logistics bottlenecks. As AI data centers drive explosive demand and the grid contends with aging infrastructure and a ~50 GW projected shortfall, accelerating domestic production is essential for resilience and energy security. This article examines the crisis, MGM/VanTran’s contributions, reshoring barriers, proposed remedies, and the path to a more self-reliant grid.
 

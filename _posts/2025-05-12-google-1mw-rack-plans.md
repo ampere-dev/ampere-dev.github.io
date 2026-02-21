@@ -6,8 +6,6 @@ categories: [data centers, AI, rack density, energy, cooling infrastructure]
 excerpt: Google plans 1 MW IT racks using EV supply chain components for ±400 VDC power and advanced liquid cooling, addressing AI workload demands while navigating engineering and safety challenges.
 ---
 
-
-
 Google is pushing the boundaries of data centre design with plans for 1-megawatt (MW) IT racks, leveraging the electric vehicle (EV) supply chain to revolutionize power delivery and cooling infrastructure, as detailed in a May 2025 report by The Register. This ambitious move, unveiled at the Open Compute Project (OCP) EMEA summit, addresses the soaring energy demands of AI workloads. By adopting ±400 VDC power systems and advanced cooling distribution units (CDUs), Google aims to support hyperscale AI processing while navigating significant engineering challenges. This article explores Google’s strategy, the implications of 1 MW racks, and complementary industry developments. <a href="https://www.theregister.com/2025/05/01/google_details_plans_for_1/" target="_blank">Read the full Register article</a>.
 
 ### Google’s 1 MW Rack Vision

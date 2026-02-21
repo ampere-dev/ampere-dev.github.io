@@ -6,8 +6,6 @@ categories: [AI, Data Centers, Sustainability]
 excerpt: AI fuels a $57 billion data center supercycle with 160% demand growth, driving innovations in infrastructure while raising sustainability challenges around energy, cooling, and load management.
 ---
 
-
-
 The demand for data center infrastructure is surging, driven by the explosive growth of artificial intelligence (AI). A recent <a href="https://www.colliers.com/en/newsroom/2024-data-center-market-outlook" target="_blank">Colliers report</a> projects a 160% increase in data center demand, with $57 billion invested in the sector in 2024 alone. As this “supercycle” reshapes the industry, data centers face the dual challenge of powering AI’s immense computational needs while prioritizing sustainability.
 
 ### A $57 Billion Supercycle

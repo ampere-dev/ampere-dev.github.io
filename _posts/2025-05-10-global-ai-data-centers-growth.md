@@ -6,8 +6,6 @@ categories: [AI, Data Centers]
 excerpt: Despite pauses by Amazon and Microsoft on some projects, the AI data center market remains strong with massive self-builds, $320 billion in top-four spending for 2025, and continued momentum from hyperscalers.
 ---
 
-
-
 Despite recent adjustments by tech giants Amazon and Microsoft, the global AI data center market continues its robust expansion, driven by the escalating demand for artificial intelligence (AI) infrastructure. According to a Wells Fargo research note, both companies have paused or slowed certain data center projects, yet the broader industry remains resilient. This article delves into the dynamics of this growth, Microsoft’s strategic shifts, and the enduring momentum in the AI data center sector. <a href="https://www.nextbigfuture.com/2025/05/global-ai-data-centers-keep-growing-despite-adjustments-from-amazon-and-microsoft.html" target="_blank">Read the full NextBigFuture article</a>.
 
 ### Microsoft’s Strategic Adjustments

@@ -6,8 +6,6 @@ categories: [Data Centers, Load Banks]
 excerpt: Avtron Power Solutions is featured on Planet TV Studios’ New Frontiers (Q3 2025), highlighting liquid-cooled load banks like the LC-20, SIGMA Unity software, and the growing load bank rental market amid AI-driven data center demands and liquid cooling adoption.
 ---
 
-
-
 The data center industry is undergoing a transformative shift, driven by the demands of artificial intelligence (AI) and the need for sustainable, high-performance infrastructure. In this dynamic landscape, <a href="https://www.avtronpower.com/" target="_blank">Avtron Power Solutions</a> is making waves with its innovative load bank solutions, as highlighted in an upcoming episode of Planet TV Studios’ <em><a href="https://www.planettvstudios.com/new-frontiers" target="_blank">New Frontiers</a></em>, set to air in Q3 2025. This article explores Avtron’s impact, the growing load bank rental market, and the critical role of liquid cooling in addressing data center challenges.
 
 ### Avtron Power Solutions Spotlighted on New Frontiers
