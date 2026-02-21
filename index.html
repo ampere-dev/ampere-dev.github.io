@@ -18,126 +18,199 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Ampere Development",
-                "url": "https://ampere.dev",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://ampere.dev/images/Ampere-Logo.webp"
-                },
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "name": "Ampere Development",
+            "url": "https://ampere.dev",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://ampere.dev/images/Ampere-Logo.webp"
+            },
+            "telephone": "+1-888-345-LOAD",
+            "email": "sales@ampere.dev",
+            "description": "Ampere Development provides innovative load bank rentals, Starline tapbox rentals, load testing services, power quality studies, transformers, and 3D fabrication for AC/DC low-voltage and medium-voltage projects.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
                 "telephone": "+1-888-345-LOAD",
-                "email": "sales@ampere.dev",
-                "description": "Ampere Development provides innovative load bank rentals, Starline tapbox rentals, load testing services, power quality studies, transformers, and 3D fabrication for AC/DC low-voltage and medium-voltage projects.",
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "contactType": "Customer Service",
-                    "telephone": "+1-888-345-LOAD",
-                    "email": "sales@ampere.dev"
+                "email": "sales@ampere.dev"
+            },
+            "sameAs": [
+                "https://www.facebook.com/AmpereDevelopment",
+                "https://x.com/LoadbankPro",
+                "https://www.linkedin.com/company/ampere-development",
+                "https://www.instagram.com/ampere.dev"
+            ],
+            "potentialAction": {
+                "@type": "ReserveAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://ampere.dev/booking",
+                    "inLanguage": "en",
+                    "actionPlatform": [
+                        "http://schema.org/DesktopWebPlatform",
+                        "http://schema.org/MobileWebPlatform"
+                    ]
                 },
-                "sameAs": [
-                    "https://www.facebook.com/AmpereDevelopment",
-                    "https://x.com/LoadbankPro",
-                    "https://www.linkedin.com/company/ampere-development",
-                    "https://www.instagram.com/ampere.dev"
-                ],
-                "potentialAction": {
-                    "@type": "ReserveAction",
-                    "target": {
-                        "@type": "EntryPoint",
-                        "urlTemplate": "https://ampere.dev/booking",
-                        "inLanguage": "en",
-                        "actionPlatform": [
-                            "http://schema.org/DesktopWebPlatform",
-                            "http://schema.org/MobileWebPlatform"
-                        ]
-                    },
-                    "result": {
-                        "@type": "Reservation",
-                        "name": "Book a Consultation"
-                    }
-                }
-            },
-            {
-                "@type": "WebSite",
-                "url": "https://ampere.dev",
-                "name": "Ampere Development",
-                "description": "Explore load bank rentals, Starline tapbox rentals, and load testing services at Ampere Development.",
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "Ampere Development"
-                }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://ampere.dev"
-                    }
-                ]
-            },
-            {
-                "@type": "Service",
-                "@id": "https://ampere.dev/#load-bank-rental",
-                "name": "Load Bank Rental",
-                "description": "Innovative load bank rental and load testing services for data centers, renewable energy, and industrial projects.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Ampere Development"
-                },
-                "serviceType": "Load Bank Rental & Testing",
-                "areaServed": "Nationwide"
-            },
-            {
-                "@type": "Service",
-                "@id": "https://ampere.dev/#data-center-load-testing",
-                "name": "Data Center Load Testing",
-                "description": "Specialized data center load testing and AI data center power testing for high-density power systems.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Ampere Development"
-                },
-                "serviceType": "Data Center Load Testing",
-                "areaServed": "Nationwide"
-            },
-            {
-                "@type": "Service",
-                "@id": "https://ampere.dev/#medium-voltage-load-bank",
-                "name": "Medium Voltage Load Bank Rental",
-                "description": "Medium voltage load banks (1kV–34.5kV) for comprehensive power testing.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Ampere Development"
-                },
-                "serviceType": "Medium Voltage Load Bank Rental",
-                "areaServed": "Nationwide"
-            },
-            {
-                "@type": "Product",
-                "@id": "https://ampere.dev/#starline-tapbox-rental",
-                "name": "Starline Tapbox Rental",
-                "description": "Starline tapbox rentals for seamless busway integration, starting at $125/week.",
-                "provider": {
-                    "@type": "Organization",
-                    "name": "Ampere Development"
-                },
-                "offers": {
-                    "@type": "Offer",
-                    "price": "125",
-                    "priceCurrency": "USD",
-                    "availability": "InStock"
+                "result": {
+                    "@type": "Reservation",
+                    "name": "Book a Consultation"
                 }
             }
-        ]
-    }
-    </script>
+        },
+        {
+            "@type": "WebSite",
+            "url": "https://ampere.dev",
+            "name": "Ampere Development",
+            "description": "Explore load bank rentals, Starline tapbox rentals, and load testing services at Ampere Development.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Ampere Development"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ampere.dev"
+                }
+            ]
+        },
+        {
+            "@type": "Service",
+            "@id": "https://ampere.dev/#load-bank-rental",
+            "name": "Load Bank Rental",
+            "description": "Innovative load bank rental and load testing services for data centers, renewable energy, and industrial projects.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Ampere Development"
+            },
+            "serviceType": "Load Bank Rental & Testing",
+            "areaServed": "Nationwide"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://ampere.dev/#data-center-load-testing",
+            "name": "Data Center Load Testing",
+            "description": "Specialized data center load testing and AI data center power testing for high-density power systems.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Ampere Development"
+            },
+            "serviceType": "Data Center Load Testing",
+            "areaServed": "Nationwide"
+        },
+        {
+            "@type": "Service",
+            "@id": "https://ampere.dev/#medium-voltage-load-bank",
+            "name": "Medium Voltage Load Bank Rental",
+            "description": "Medium voltage load banks (1kV–34.5kV) for comprehensive power testing.",
+            "provider": {
+                "@type": "Organization",
+                "name": "Ampere Development"
+            },
+            "serviceType": "Medium Voltage Load Bank Rental",
+            "areaServed": "Nationwide"
+        },
+        {
+            "@type": "Product",
+            "@id": "https://ampere.dev/starline-tapbox-rental",
+            "name": "Starline Tapbox Rental",
+            "description": "Starline TBT5G-250/400-4G tapbox rentals for seamless 480V busway integration. 400A plug-and-play units ideal for data center commissioning, load bank testing, UPS/generator validation, and industrial projects. Lightweight, NFPA 70E compliant, IP54-rated, tool-free install. Starting at $125/week.",
+            "brand": {
+                "@type": "Brand",
+                "name": "Starline"
+            },
+            "model": "TBT5G-250/400-4G",
+            "provider": {
+                "@type": "Organization",
+                "name": "Ampere Development"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "125",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2027-12-31"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "25"
+            },
+            "review": [
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "John D."
+                    },
+                    "reviewBody": "Ampere’s Starline Tapbox Rentals saved us days during our data center commissioning. The plug-and-play design was a game-changer!"
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Lisa R."
+                    },
+                    "reviewBody": "The Starline Tapbox was a lifesaver for our temporary power setup. Quick to install and rock-solid at 480V!"
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Sarah M."
+                    },
+                    "reviewBody": "Reliable and easy to use at 480V. We’ll be renting again for our next project."
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Emily S."
+                    },
+                    "reviewBody": "No hassle, no delays. Ampere’s tapboxes worked flawlessly for our manufacturing plant upgrade."
+                },
+                {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": "5"
+                    },
+                    "author": {
+                        "@type": "Person",
+                        "name": "Michael T."
+                    },
+                    "reviewBody": "The tapbox was perfect for our busway testing. Ampere’s support team was incredibly responsive."
+                }
+            ]
+        }
+    ]
+}
+</script>
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://ampere.dev/">
