@@ -1706,12 +1706,12 @@
     }
 
     // ────────────────────────────────────────────────
-    // Pagination
+    // Pagination – FIXED VERSION
     // ────────────────────────────────────────────────
     const articlesPerPage = 5;
     let currentPage = 1;
 
-    // Read page from URL on first load (?page=2 etc.)
+    // Read page from URL on load (?page=3 etc.)
     const urlParams = new URLSearchParams(window.location.search);
     const pageFromUrl = parseInt(urlParams.get('page'), 10);
     if (!isNaN(pageFromUrl) && pageFromUrl >= 1) {
@@ -1719,7 +1719,6 @@
     }
 
     function setupPagination() {
-        // Use 'article' selector since your posts are <article> without .post class
         const allPosts = Array.from(document.querySelectorAll('article'));
         const totalArticles = allPosts.length;
         const totalPages = Math.ceil(totalArticles / articlesPerPage);
@@ -1728,37 +1727,37 @@
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
 
-        // Safety check: if elements missing, log and exit gracefully
+        // Safety: if pagination elements are missing, warn but don't crash
         if (!pageNumbersContainer || !prevBtn || !nextBtn) {
-            console.warn('Pagination elements not found. Make sure #page-numbers, #prev-btn, #next-btn exist in HTML.');
+            console.warn('Pagination HTML elements not found (#page-numbers, #prev-btn, #next-btn).');
             return;
         }
 
         function displayArticles(page) {
-            // Clamp page
             page = Math.max(1, Math.min(page, totalPages || 1));
 
             const start = (page - 1) * articlesPerPage;
             const end = start + articlesPerPage;
 
-            // Hide/show only the current page's articles
+            // Toggle visibility based on index – this is the key fix
             allPosts.forEach((article, index) => {
-                article.classList.toggle('hidden', !(index >= start && index < end));
+                const shouldBeVisible = (index >= start && index < end);
+                article.classList.toggle('hidden', !shouldBeVisible);
             });
 
-            // Update page number buttons
+            // Update active page button
             document.querySelectorAll('.page-number').forEach(btn => {
                 btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
             });
 
-            // Update prev/next state
-            prevBtn.disabled = page === 1;
-            nextBtn.disabled = page === totalPages || totalPages === 0;
+            // Update prev/next buttons
+            prevBtn.disabled = (page === 1);
+            nextBtn.disabled = (page === totalPages || totalPages === 0);
 
             prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
             nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
 
-            // Update URL (no history push for better UX)
+            // Update URL without reloading the page
             const url = new URL(window.location);
             if (page === 1) {
                 url.searchParams.delete('page');
@@ -1768,7 +1767,7 @@
             window.history.replaceState(null, '', url);
         }
 
-        // Build page number buttons dynamically
+        // Build page number buttons
         pageNumbersContainer.innerHTML = '';
         if (totalPages > 1) {
             for (let i = 1; i <= totalPages; i++) {
@@ -1785,7 +1784,7 @@
             }
         }
 
-        // Handle no posts case
+        // Handle no posts
         if (totalPages === 0) {
             pageNumbersContainer.innerHTML = '<span>No posts found</span>';
             prevBtn.disabled = true;
@@ -1794,7 +1793,7 @@
             nextBtn.setAttribute('aria-disabled', 'true');
         }
 
-        // Wire up prev/next buttons
+        // Wire up prev/next
         prevBtn.addEventListener('click', () => {
             if (currentPage > 1) {
                 currentPage--;
@@ -1809,13 +1808,14 @@
             }
         });
 
-        // Initial display (hide all except first page)
-        // First hide everything, then show the current page
-        allPosts.forEach(article => article.classList.add('hidden'));
+        // Ensure clean initial state: remove any leftover 'hidden' classes
+        allPosts.forEach(article => article.classList.remove('hidden'));
+
+        // Show the correct page on load
         displayArticles(currentPage);
     }
 
-    // Run when DOM is fully loaded
+    // Initialize when the page is ready
     document.addEventListener('DOMContentLoaded', setupPagination);
 </script>
 </body>
