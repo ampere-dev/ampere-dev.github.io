@@ -1,6 +1,11 @@
-# Reviving Three Mile Island: A $1.6B Nuclear Restart for AI Data Centers
-
-**May 19, 2025**
+---
+layout: post
+title: "Reviving Three Mile Island: A $1.6B Nuclear Restart for AI Data Centers"
+date: 2025-05-19
+categories: [Nuclear Power, AI Data Centers, Grid Reliability, Energy Security, Baseload Power, Carbon-Free Energy, Restart Projects]
+excerpt: Microsoft and Constellation Energy plan to restart Three Mile Island Unit 1 by 2028, delivering 837 MW of carbon-free baseload power to AI data centers and helping address the U.S. ~50 GW power shortfall through reliable, high-capacity nuclear revival.
+---
+**Posted by Ampere Development Team**
 
 Microsoft’s $1.6 billion agreement with Constellation Energy to restart Three Mile Island Unit 1—the dormant reactor at the Pennsylvania site infamous for the 1979 partial meltdown—marks a major step in deploying reliable, carbon-free baseload power for AI infrastructure. Renamed the Crane Clean Energy Center, the project targets 837 MW of output by 2028, directly supporting Microsoft’s data centers and broader net-zero ambitions. This revival addresses surging AI electricity demand and the U.S.’s projected ~50 GW power shortfall. Drawing from the January 2025 Wall Street Journal video and industry reporting, this article covers the project’s scope, its critical role in AI power supply, grid reliability benefits, challenges, economic/environmental impacts, and implications for the future energy mix.
 

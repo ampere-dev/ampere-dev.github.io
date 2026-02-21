@@ -1,6 +1,11 @@
-# The Golden Dome: Bolstering Grid Resilience with Local Transformer Suppliers
-
-**May 23, 2025**
+---
+layout: post
+title: "The Golden Dome: Bolstering Grid Resilience with Local Transformer Suppliers"
+date: 2025-05-23
+categories: [Grid Resilience, Transformers, Reshoring, Energy Security, AI Data Centers, National Security, Critical Infrastructure]
+excerpt: The proposed "Golden Dome" initiative calls for Apollo-style domestic manufacturing of transformers to secure the U.S. grid against shortages, cyberattacks, and AI-driven demand—empowering local suppliers to slash lead times and enhance national energy resilience.
+---
+**Posted by Ampere Development Team**
 
 The "Golden Dome" concept, proposed in a May 16, 2025 And Magazine article, envisions a comprehensive national strategy to protect and harden U.S. critical infrastructure—particularly the electric grid—through aggressive domestic manufacturing of vital components like large power transformers. Modeled loosely on Israel’s Iron Dome missile defense, it prioritizes self-reliance to counter supply-chain vulnerabilities, cyberattacks, EMP threats, physical sabotage, and surging demand from AI data centers. With lead times for high-voltage transformers now stretching 22–33 months and many units aging past 25–40 years, local production is essential for rapid replacement, reserve stockpiling, and grid hardening. This article examines the Golden Dome proposal, the strategic role of U.S.-based transformer manufacturers, ongoing DOE initiatives, and how these efforts support AI infrastructure amid a projected ~50 GW power shortfall.
 

@@ -1,6 +1,11 @@
-# Trump’s Nuclear Renaissance: Executive Orders to Power AI and Restore Scientific Integrity
-
-**May 23, 2025**
+---
+layout: post
+title: "Trump’s Nuclear Renaissance: Executive Orders to Power AI and Restore Scientific Integrity"
+date: 2025-05-23
+categories: [Nuclear Power, AI Data Centers, Grid Resilience, Energy Security, Executive Orders, Scientific Integrity, National Security]
+excerpt: President Trump’s May 23, 2025 executive orders accelerate nuclear licensing, boost domestic uranium production, and mandate Gold Standard Science—delivering reliable baseload for AI data centers while rebuilding trust in federal energy research amid a ~50 GW grid deficit.
+---
+**Posted by Ampere Development Team**
 
 On May 23, 2025, President Donald J. Trump signed a pair of executive orders launching a nuclear energy renaissance and reinstating “Gold Standard Science” across federal research. The nuclear-focused order streamlines reactor licensing, invokes the Defense Production Act to accelerate domestic uranium and fuel-cycle production, and directs testing and deployment on federal lands. The science integrity order mandates reproducibility, transparency, and falsifiability in federally funded work to rebuild public trust. With AI data centers projected to consume up to 9% of U.S. electricity by 2030 and the grid facing a ~50 GW shortfall, these actions aim to deliver reliable baseload power while grounding energy innovation in rigorous, defensible science. This article examines the orders’ scope, benefits for AI infrastructure and grid resilience, national security implications, challenges, and long-term outlook.
 
