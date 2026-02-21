@@ -74,344 +74,344 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <style>
-        :root {
-            --primary-color: #333;
-            --accent-color: #ff0000;
-            --border-color: #ddd;
-            --background-color: #f5f5f5;
-        }
+    :root {
+        --primary-color: #333;
+        --accent-color: #ff0000;
+        --border-color: #ddd;
+        --background-color: #f5f5f5;
+    }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        body {
-            font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem 1rem;
-            line-height: 1.6;
-            color: var(--primary-color);
-            background: var(--background-color);
-        }
+    body {
+        font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem;
+        line-height: 1.6;
+        color: var(--primary-color);
+        background: var(--background-color);
+    }
 
-        #logo {
-            margin-bottom: 1.5rem;
-        }
+    #logo {
+        margin-bottom: 1.5rem;
+    }
 
-        #logo img {
-            max-width: 154px;
-            height: auto;
-        }
+    #logo img {
+        max-width: 154px;
+        height: auto;
+    }
 
-        header {
-            border-bottom: 1px solid var(--accent-color);
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
-        }
+    header {
+        border-bottom: 1px solid var(--accent-color);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
 
-        h1 {
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
+    h1 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
 
-        nav {
-            display: flex;
-            gap: 1.5rem;
-        }
+    nav {
+        display: flex;
+        gap: 1.5rem;
+    }
 
-        nav a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 0.5rem;
-            transition: color 0.2s ease, transform 0.2s ease;
-        }
+    nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0.5rem;
+        transition: color 0.2s ease, transform 0.2s ease;
+    }
 
-        nav a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-            transform: scale(1.05);
-        }
+    nav a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+        transform: scale(1.05);
+    }
 
-        .abstract {
-            font-size: 1rem;
-            color: #555;
-            margin: 1rem auto;
-            font-style: italic;
-            max-width: 900px;
-            text-align: justify;
-            line-height: 1.6;
-        }
+    .abstract {
+        font-size: 1rem;
+        color: #555;
+        margin: 1rem auto;
+        font-style: italic;
+        max-width: 900px;
+        text-align: justify;
+        line-height: 1.6;
+    }
 
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    main {
+        margin-bottom: 1.5rem;
+    }
+
+    article {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    article h2 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
+
+    article h2 a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    article h2 a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
+
+    article time {
+        display: block;
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    article p {
+        margin: 0.75rem 0;
+    }
+
+    article h3 {
+        font-family: 'Krona One', sans-serif;
+        font-size: 1rem;
+        margin: 1.5rem 0 0.5rem;
+    }
+
+    .quote {
+        font-style: italic;
+        color: #555;
+        border-left: 4px solid #007BFF;
+        padding-left: 10px;
+        margin: 15px 0;
+    }
+
+    .author {
+        text-align: right;
+        font-size: 0.9em;
+        color: #666;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin: 1.5rem 0;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    aside {
+        background: #fff;
+        padding: 1.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+    }
+
+    .sidebar-section {
+        margin-bottom: 2rem;
+    }
+
+    .sidebar-section h3 {
+        font-family: 'Krona One', sans-serif;
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .related-posts ul {
+        list-style: none;
+    }
+
+    .related-posts li {
+        margin: 0.5rem 0;
+    }
+
+    .related-posts a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .related-posts a:hover {
+        color: var(--accent-color);
+        text-decoration: underline;
+    }
+
+    .share a {
+        display: block;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+        transition: color 0.2s ease;
+    }
+
+    .share a:hover {
+        color: var(--primary-color);
+        text-decoration: underline;
+    }
+
+    footer {
+        margin-top: 2rem;
+        text-align: center;
+        color: #666;
+        font-size: 0.9rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .footer-links ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+        color: #666;
+        text-decoration: none;
+    }
+
+    .footer-links a:hover {
+        color: var(--accent-color);
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* ────────────────────────────────────────────────
+       Pagination (cleaned & aligned with JS)
+    ──────────────────────────────────────────────── */
+    .hidden {
+        display: none !important;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 3rem 0 1rem;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .pagination button {  /* Targets #prev-btn and #next-btn */
+        padding: 0.6rem 1.3rem;
+        background: var(--accent-color);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    .pagination button:hover:not(:disabled) {
+        background: var(--primary-color);
+    }
+
+    .pagination button:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+
+    #page-numbers {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .page-number {
+        padding: 0.55rem 1rem;
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        color: var(--primary-color);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1rem;
+    }
+
+    .page-number:hover {
+        background: var(--accent-color);
+        color: white;
+        border-color: var(--accent-color);
+    }
+
+    .page-number.active {
+        background: #007bff;
+        color: white;
+        border-color: #007bff;
+        font-weight: 600;
+    }
+
+    @media (max-width: 800px) {
         .content-wrapper {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-        }
-
-        main {
-            margin-bottom: 1.5rem;
-        }
-
-        article {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        article h2 {
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-        }
-
-        article h2 a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        article h2 a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-
-        article time {
-            display: block;
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-        }
-
-        article p {
-            margin: 0.75rem 0;
-        }
-
-        article h3 {
-            font-family: 'Krona One', sans-serif;
-            font-size: 1rem;
-            margin: 1.5rem 0 0.5rem;
-        }
-
-        .quote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #007BFF;
-            padding-left: 10px;
-            margin: 15px 0;
-        }
-
-        .author {
-            text-align: right;
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 1.5rem 0;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            grid-template-columns: 1fr;
         }
 
         aside {
-            background: #fff;
-            padding: 1.5rem;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-        }
-
-        .sidebar-section {
-            margin-bottom: 2rem;
-        }
-
-        .sidebar-section h3 {
-            font-family: 'Krona One', sans-serif;
-            font-size: 1.25rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .related-posts ul {
-            list-style: none;
-        }
-
-        .related-posts li {
-            margin: 0.5rem 0;
-        }
-
-        .related-posts a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .related-posts a:hover {
-            color: var(--accent-color);
-            text-decoration: underline;
-        }
-
-        .share a {
-            display: block;
-            color: var(--accent-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-            margin: 0.5rem 0;
-            transition: color 0.2s ease;
-        }
-
-        .share a:hover {
-            color: var(--primary-color);
-            text-decoration: underline;
-        }
-
-        footer {
             margin-top: 2rem;
-            text-align: center;
-            color: #666;
-            font-size: 0.9rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border-color);
+        }
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 1rem;
         }
 
-        .footer-links ul {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            list-style: none;
-            margin-bottom: 1rem;
+        h1 {
+            font-size: 1.75rem;
         }
 
-        .footer-links a {
-            color: #666;
-            text-decoration: none;
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-color);
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .social-icons img {
-            width: 24px;
-            height: 24px;
-        }
-
-        .hidden {
-            display: none !important;
-        }
-
-        .post-content {
-            height: auto;
-            overflow: hidden;
-            transition: height 0.3s ease-out;
-        }
-
-        .collapsed .post-content {
-            height: 0;
+        article h2 {
+            font-size: 1.4rem;
         }
 
         .pagination {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 2rem;
-            font-family: 'Ubuntu', sans-serif;
+            flex-wrap: wrap;
+            gap: 0.6rem;
         }
-
-        .pagination-btn {
-            padding: 0.5rem 1rem;
-            background: var(--accent-color);
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.2s ease;
-        }
-
-        .pagination-btn:hover:not(:disabled) {
-            background: var(--primary-color);
-        }
-
-        .pagination-btn:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-
-        .page-numbers {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .page-number {
-            padding: 0.5rem 1rem;
-            background: #fff;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.2s ease, color 0.2s ease;
-        }
-
-        .page-number:hover {
-            background: var(--accent-color);
-            color: #fff;
-        }
-
-        .page-number.active {
-            background: var(--accent-color);
-            color: #fff;
-            font-weight: bold;
-        }
-
-        @media (max-width: 800px) {
-            .content-wrapper {
-                grid-template-columns: 1fr;
-            }
-
-            aside {
-                margin-top: 2rem;
-            }
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 1.75rem;
-            }
-
-            article h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    }
+</style>
         <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
     <script>
@@ -446,6 +446,11 @@
 
     <div class="content-wrapper">
         <main>
+        <div class="pagination" style="text-align: center; margin: 3rem 0; padding: 1rem;">
+  <button id="prev-btn" aria-label="Previous page" disabled>← Previous</button>
+  <span id="page-numbers"></span>
+  <button id="next-btn" aria-label="Next page" disabled>Next →</button>
+</div>
 <article>
     <article class="post collapsed">
     <h2 onclick="togglePost(this)"><a href="/blog/sunbelt-solomon-microgrid-collaboration/">Recent Collaboration Discussion with Sunbelt Solomon: Enhancing Microgrid Capabilities with Transformer Fleet Insights and Advanced Testing Infrastructure</a></h2>
@@ -1710,7 +1715,7 @@
     const articlesPerPage = 5;
     let currentPage = 1;
 
-    // Read page from URL on first load
+    // Read page from URL on first load (?page=2 etc.)
     const urlParams = new URLSearchParams(window.location.search);
     const pageFromUrl = parseInt(urlParams.get('page'), 10);
     if (!isNaN(pageFromUrl) && pageFromUrl >= 1) {
@@ -1718,7 +1723,8 @@
     }
 
     function setupPagination() {
-        const allPosts = Array.from(document.querySelectorAll('.post'));
+        // Use 'article' selector since your posts are <article> without .post class
+        const allPosts = Array.from(document.querySelectorAll('article'));
         const totalArticles = allPosts.length;
         const totalPages = Math.ceil(totalArticles / articlesPerPage);
 
@@ -1726,31 +1732,37 @@
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
 
+        // Safety check: if elements missing, log and exit gracefully
+        if (!pageNumbersContainer || !prevBtn || !nextBtn) {
+            console.warn('Pagination elements not found. Make sure #page-numbers, #prev-btn, #next-btn exist in HTML.');
+            return;
+        }
+
         function displayArticles(page) {
-            // Clamp page number
+            // Clamp page
             page = Math.max(1, Math.min(page, totalPages || 1));
 
             const start = (page - 1) * articlesPerPage;
             const end = start + articlesPerPage;
 
-            // Hide all, show only current page
+            // Hide/show only the current page's articles
             allPosts.forEach((article, index) => {
                 article.classList.toggle('hidden', !(index >= start && index < end));
             });
 
-            // Update active page button
+            // Update page number buttons
             document.querySelectorAll('.page-number').forEach(btn => {
                 btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
             });
 
-            // Disable buttons appropriately
+            // Update prev/next state
             prevBtn.disabled = page === 1;
             nextBtn.disabled = page === totalPages || totalPages === 0;
 
             prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
             nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
 
-            // Update URL without adding to history (cleaner UX)
+            // Update URL (no history push for better UX)
             const url = new URL(window.location);
             if (page === 1) {
                 url.searchParams.delete('page');
@@ -1760,31 +1772,33 @@
             window.history.replaceState(null, '', url);
         }
 
-        // Build page number buttons
+        // Build page number buttons dynamically
         pageNumbersContainer.innerHTML = '';
-        for (let i = 1; i <= totalPages; i++) {
-            const btn = document.createElement('button');
-            btn.className = 'page-number';
-            btn.dataset.page = i;
-            btn.textContent = i;
-            btn.setAttribute('aria-label', `Page ${i}`);
-            btn.addEventListener('click', () => {
-                currentPage = i;
-                displayArticles(currentPage);
-            });
-            pageNumbersContainer.appendChild(btn);
+        if (totalPages > 1) {
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'page-number';
+                btn.dataset.page = i;
+                btn.textContent = i;
+                btn.setAttribute('aria-label', `Go to page ${i}`);
+                btn.addEventListener('click', () => {
+                    currentPage = i;
+                    displayArticles(currentPage);
+                });
+                pageNumbersContainer.appendChild(btn);
+            }
         }
 
-        // Handle empty case
+        // Handle no posts case
         if (totalPages === 0) {
-            pageNumbersContainer.innerHTML = '';
+            pageNumbersContainer.innerHTML = '<span>No posts found</span>';
             prevBtn.disabled = true;
             nextBtn.disabled = true;
             prevBtn.setAttribute('aria-disabled', 'true');
             nextBtn.setAttribute('aria-disabled', 'true');
         }
 
-        // Navigation buttons
+        // Wire up prev/next buttons
         prevBtn.addEventListener('click', () => {
             if (currentPage > 1) {
                 currentPage--;
@@ -1799,11 +1813,13 @@
             }
         });
 
-        // Show initial page
+        // Initial display (hide all except first page)
+        // First hide everything, then show the current page
+        allPosts.forEach(article => article.classList.add('hidden'));
         displayArticles(currentPage);
     }
 
-    // Initialize when DOM is ready
+    // Run when DOM is fully loaded
     document.addEventListener('DOMContentLoaded', setupPagination);
 </script>
 </body>
