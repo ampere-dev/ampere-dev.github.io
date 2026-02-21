@@ -70,8 +70,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
     <style>
     :root {
@@ -315,72 +315,6 @@
     .social-icons img {
         width: 24px;
         height: 24px;
-    }
-
-    /* ────────────────────────────────────────────────
-       Pagination (cleaned & aligned with JS)
-    ──────────────────────────────────────────────── */
-    .hidden {
-        display: none !important;
-    }
-
-    .pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.75rem;
-        margin: 3rem 0 1rem;
-        font-family: 'Ubuntu', sans-serif;
-    }
-
-    .pagination button {  /* Targets #prev-btn and #next-btn */
-        padding: 0.6rem 1.3rem;
-        background: var(--accent-color);
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background 0.2s ease;
-    }
-
-    .pagination button:hover:not(:disabled) {
-        background: var(--primary-color);
-    }
-
-    .pagination button:disabled {
-        background: #ccc;
-        cursor: not-allowed;
-        opacity: 0.7;
-    }
-
-    #page-numbers {
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .page-number {
-        padding: 0.55rem 1rem;
-        background: white;
-        border: 1px solid var(--border-color);
-        border-radius: 6px;
-        color: var(--primary-color);
-        cursor: pointer;
-        transition: all 0.2s ease;
-        font-size: 1rem;
-    }
-
-    .page-number:hover {
-        background: var(--accent-color);
-        color: white;
-        border-color: var(--accent-color);
-    }
-
-    .page-number.active {
-        background: #007bff;
-        color: white;
-        border-color: #007bff;
-        font-weight: 600;
     }
 
     @media (max-width: 800px) {
@@ -1679,144 +1613,6 @@
             <p>AMPERE © 2026</p>
         </div>
     </footer>
-<script>
-    function togglePost(titleElement) {
-        const article = titleElement.closest('article');
-        const content = article.querySelector('.teaser-content');
-        
-        if (article.classList.contains('collapsed')) {
-            content.style.height = content.scrollHeight + 'px';
-            article.classList.remove('collapsed');
-        } else {
-            content.style.height = content.scrollHeight + 'px';
-            setTimeout(() => {
-                content.style.height = '0';
-            }, 10);
-            article.classList.add('collapsed');
-        }
-
-        // Clean up transition listener once
-        const handler = function() {
-            if (!article.classList.contains('collapsed')) {
-                content.style.height = 'auto';
-            }
-            content.removeEventListener('transitionend', handler);
-        };
-        content.addEventListener('transitionend', handler);
-    }
-
-    // ────────────────────────────────────────────────
-    // Pagination – FIXED VERSION
-    // ────────────────────────────────────────────────
-    const articlesPerPage = 5;
-    let currentPage = 1;
-
-    // Read page from URL on load (?page=3 etc.)
-    const urlParams = new URLSearchParams(window.location.search);
-    const pageFromUrl = parseInt(urlParams.get('page'), 10);
-    if (!isNaN(pageFromUrl) && pageFromUrl >= 1) {
-        currentPage = pageFromUrl;
-    }
-
-    function setupPagination() {
-        const allPosts = Array.from(document.querySelectorAll('article'));
-        const totalArticles = allPosts.length;
-        const totalPages = Math.ceil(totalArticles / articlesPerPage);
-
-        const pageNumbersContainer = document.getElementById('page-numbers');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-
-        // Safety: if pagination elements are missing, warn but don't crash
-        if (!pageNumbersContainer || !prevBtn || !nextBtn) {
-            console.warn('Pagination HTML elements not found (#page-numbers, #prev-btn, #next-btn).');
-            return;
-        }
-
-        function displayArticles(page) {
-            page = Math.max(1, Math.min(page, totalPages || 1));
-
-            const start = (page - 1) * articlesPerPage;
-            const end = start + articlesPerPage;
-
-            // Toggle visibility based on index – this is the key fix
-            allPosts.forEach((article, index) => {
-                const shouldBeVisible = (index >= start && index < end);
-                article.classList.toggle('hidden', !shouldBeVisible);
-            });
-
-            // Update active page button
-            document.querySelectorAll('.page-number').forEach(btn => {
-                btn.classList.toggle('active', parseInt(btn.dataset.page) === page);
-            });
-
-            // Update prev/next buttons
-            prevBtn.disabled = (page === 1);
-            nextBtn.disabled = (page === totalPages || totalPages === 0);
-
-            prevBtn.setAttribute('aria-disabled', page === 1 ? 'true' : 'false');
-            nextBtn.setAttribute('aria-disabled', (page === totalPages || totalPages === 0) ? 'true' : 'false');
-
-            // Update URL without reloading the page
-            const url = new URL(window.location);
-            if (page === 1) {
-                url.searchParams.delete('page');
-            } else {
-                url.searchParams.set('page', page);
-            }
-            window.history.replaceState(null, '', url);
-        }
-
-        // Build page number buttons
-        pageNumbersContainer.innerHTML = '';
-        if (totalPages > 1) {
-            for (let i = 1; i <= totalPages; i++) {
-                const btn = document.createElement('button');
-                btn.className = 'page-number';
-                btn.dataset.page = i;
-                btn.textContent = i;
-                btn.setAttribute('aria-label', `Go to page ${i}`);
-                btn.addEventListener('click', () => {
-                    currentPage = i;
-                    displayArticles(currentPage);
-                });
-                pageNumbersContainer.appendChild(btn);
-            }
-        }
-
-        // Handle no posts
-        if (totalPages === 0) {
-            pageNumbersContainer.innerHTML = '<span>No posts found</span>';
-            prevBtn.disabled = true;
-            nextBtn.disabled = true;
-            prevBtn.setAttribute('aria-disabled', 'true');
-            nextBtn.setAttribute('aria-disabled', 'true');
-        }
-
-        // Wire up prev/next
-        prevBtn.addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                displayArticles(currentPage);
-            }
-        });
-
-        nextBtn.addEventListener('click', () => {
-            if (currentPage < totalPages) {
-                currentPage++;
-                displayArticles(currentPage);
-            }
-        });
-
-        // Ensure clean initial state: remove any leftover 'hidden' classes
-        allPosts.forEach(article => article.classList.remove('hidden'));
-
-        // Show the correct page on load
-        displayArticles(currentPage);
-    }
-
-    // Initialize when the page is ready
-    document.addEventListener('DOMContentLoaded', setupPagination);
-</script>
+<script src="/js/blog.js" defer></script>
 </body>
 </html>
