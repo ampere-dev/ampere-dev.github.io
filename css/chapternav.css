@@ -1,19 +1,24 @@
-/* Chapternav Container */
+/* Chapternav Container – base */
 .chapternav-container {
+    position: relative;
     display: flex;
-    justify-content: center;          /* good for desktop centering */
-    position: relative;               /* for arrows or fades */
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
 }
 
-/* Chapternav (base) */
+/* Chapternav – base (desktop friendly) */
 .chapternav {
     display: flex;
     align-items: center;
+    gap: 12px;
     width: 100%;
-    max-width: 100%;
+    max-width: 1200px;           /* optional – prevents ultra-wide stretch on desktop */
+    flex-wrap: wrap;             /* desktop can wrap if needed */
+    justify-content: center;
 }
 
-/* Chapternav Items (base/default) */
+/* Items – base */
 .chapternav-item {
     display: flex;
     flex-direction: column;
@@ -24,63 +29,65 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 11px;
     font-weight: bold;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 8px;
     background-color: #fff;
     text-align: center;
+    min-width: 90px;
     width: 90px;
     height: 110px;
+    box-sizing: border-box;
+    transition: transform 0.15s ease, color 0.15s ease;
 }
 
 .chapternav-item img {
     width: 40px;
     height: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     filter: grayscale(100%);
+    object-fit: contain;
 }
 
 .chapternav-item:hover {
     color: #FE0002 !important;
+    transform: scale(1.05);
 }
 
-/* Arrow Buttons (your original) */
+/* Arrow Buttons – your original */
 .chapternav-arrow {
     display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     border: none;
-    font-size: 20px;
-    padding: 8px;
+    font-size: 22px;
+    padding: 10px;
     cursor: pointer;
     z-index: 10;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.chapternav-arrow-left  { left: 5px; }
-.chapternav-arrow-right { right: 5px; }
+.chapternav-arrow-left  { left: 8px; }
+.chapternav-arrow-right { right: 8px; }
 
 .chapternav-arrow:disabled {
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: not-allowed;
 }
 
 /* ────────────────────────────────────────────────
-   MOBILE SLIDER – OVERRIDE EVERYTHING IMPORTANT
+   MOBILE – FULL HORIZONTAL SCROLL SLIDER
    ──────────────────────────────────────────────── */
 @media (max-width: 991.98px) {
 
     .chapternav-container {
-        justify-content: flex-start !important;   /* stop forced centering */
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
+        justify-content: flex-start !important;
         padding: 12px 0 !important;
-        background: #f8f9fa !important;
-        border-bottom: 1px solid #e9ecef !important;
-        overflow: hidden !important;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        overflow: hidden;
     }
 
     .chapternav {
@@ -88,9 +95,10 @@
         overflow-x: auto !important;
         overflow-y: hidden !important;
         -webkit-overflow-scrolling: touch !important;
-        scroll-snap-type: x mandatory !important;
+        scroll-snap-type: x proximity !important;
         gap: 16px !important;
-        padding: 8px 32px !important;             /* breathing room on sides */
+        padding: 8px 32px !important;          /* space for fade + first/last item */
+        justify-content: flex-start !important;
         width: auto !important;
         min-width: 100% !important;
         scrollbar-width: none !important;
@@ -102,63 +110,56 @@
     }
 
     .chapternav-item {
-        flex: 0 0 124px !important;
-        width: 124px !important;
+        flex: 0 0 110px !important;
         min-width: 110px !important;
-        height: auto !important;                  /* let content breathe */
+        width: 110px !important;
+        height: auto !important;
         padding: 12px 6px !important;
-        border-radius: 12px !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+        border-radius: 10px !important;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.08) !important;
         border: 1px solid #eee !important;
-        transition: transform 0.2s ease !important;
     }
 
     .chapternav-item img {
-        width: 54px !important;
-        height: 54px !important;
+        width: 50px !important;
+        height: 50px !important;
         margin-bottom: 8px !important;
-        filter: grayscale(100%) !important;       /* keep your grayscale if desired */
     }
 
     .chapternav-item span {
-        font-size: 0.8rem !important;
-        line-height: 1.2 !important;
+        font-size: 0.78rem !important;
+        line-height: 1.15 !important;
         white-space: nowrap !important;
     }
 
-    .chapternav-item:hover,
-    .chapternav-item:active {
-        transform: scale(1.06) !important;
-    }
-
-    /* Optional: stronger fade edges */
+    /* Fade edges to hint there's more content */
     .chapternav-container::before,
     .chapternav-container::after {
-        content: '' !important;
-        position: absolute !important;
+        content: '';
+        position: absolute;
         top: 0; bottom: 0;
-        width: 60px !important;
-        z-index: 3 !important;
-        pointer-events: none !important;
+        width: 50px;
+        z-index: 2;
+        pointer-events: none;
     }
     .chapternav-container::before {
         left: 0;
-        background: linear-gradient(to right, #f8f9fa 30%, transparent) !important;
+        background: linear-gradient(to right, #f8f9fa, transparent 70%);
     }
     .chapternav-container::after {
         right: 0;
-        background: linear-gradient(to left, #f8f9fa 30%, transparent) !important;
+        background: linear-gradient(to left, #f8f9fa, transparent 70%);
     }
 }
 
-/* Tiny screens fallback */
-@media (max-width: 360px) {
+/* Very small phones fallback */
+@media (max-width: 380px) {
     .chapternav-item {
         flex: 0 0 100px !important;
-        width: 100px !important;
+        min-width: 100px !important;
     }
     .chapternav-item img {
-        width: 48px !important;
-        height: 48px !important;
+        width: 44px !important;
+        height: 44px !important;
     }
 }
