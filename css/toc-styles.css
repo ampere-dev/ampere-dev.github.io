@@ -1,74 +1,88 @@
+/* TOC Container */
 #toc_container {
     background: #fff;
-    border: 1px solid #FE0002; /* Updated border color */
+    border: 1px solid #FE0002;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
-    padding: 15px;
+    padding: 16px;
     box-sizing: border-box;
     position: sticky;
     top: 20px;
     z-index: 100;
-    max-width: 250px; /* Restrict TOC width to avoid covering content */
-    height: fit-content; /* Height only as tall as content */
+    width: 100%;
+    max-width: 240px;               /* Narrower to prevent horizontal cutoff */
+    height: fit-content;
+    max-height: calc(100vh - 100px); /* Fits viewport minus header/footer margin */
+    overflow-y: auto;               /* Scroll internally if TOC is very long */
+    margin-right: 20px;             /* Equal space from content on right */
 }
 
+/* Wrapper for side-by-side layout */
 .toc_container_wrapper {
-    display: flex; /* Use flexbox to position TOC and content side by side */
-    margin: 0 10px; /* Small margins on left and right */
-    gap: 20px; /* Space between TOC and content */
+    display: flex;
+    margin: 0 15px;                 /* Equal left/right margin */
+    gap: 25px;                      /* Space between TOC and main content */
+    align-items: flex-start;
 }
 
+/* Main content area */
 .toc_content {
-    flex: 1; /* Content takes remaining space */
+    flex: 1;
     box-sizing: border-box;
 }
 
+/* Images in content */
 .toc_content img.ex2 {
     float: right;
     max-width: 600px;
     width: 100%;
     height: auto;
-    margin: 15px 0 15px 15px;
+    margin: 15px 0 15px 25px;       /* Equal space around image */
 }
 
+/* Headings and paragraphs in content */
 .toc_content h1,
 .toc_content h2.ex2 {
-    padding: 10px !important;
-    font-size: 1.5em !important;
+    padding: 12px 0;
+    font-size: 1.6em;
 }
 
 .toc_content p,
 .toc_content p.ex2 {
-    margin: 0 0 10px 0 !important;
-    padding: 0 !important;
+    margin: 0 0 1.2rem 0;
+    padding: 0;
 }
 
 .toc_content p.ex2 {
     text-align: justify;
+    line-height: 1.75;
 }
 
 .toc_content ul {
-    margin: 20px 0 20px 20px !important;
-    padding: 0 !important;
+    margin: 1.2rem 0 1.8rem 1.8rem;
+    padding: 0;
 }
 
+/* Fix images overlapping text */
 .toc_content p:has(img.ex2) {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 
+/* TOC Title */
 .toc_title {
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 1.05rem;
     text-align: center;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     border-bottom: 1px solid #eee;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
+/* TOC List */
 .toc_list.ex2 {
     list-style: none;
     padding: 0;
@@ -76,33 +90,47 @@
 }
 
 .toc_list.ex2 li {
-    margin: 8px 0;
+    margin: 6px 0;
 }
 
 .toc_list.ex2 li a {
     color: #333;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     display: block;
-    transition: color 0.2s ease;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
 }
 
-.toc_list.ex2 li a:hover {
-    color: #ff0000;
-    background: #f9f9f9;
+/* Active highlight - RED when section is in view */
+.toc_list.ex2 li a.active {
+    color: #fff !important;
+    background-color: #FE0002 !important;
+    font-weight: 700;
+    border-left: 5px solid #d32f2f; /* Deeper red accent bar */
+    padding-left: 7px;
 }
 
-@media screen and (max-width: 768px) {
+/* Hover (non-active) */
+.toc_list.ex2 li a:hover:not(.active) {
+    color: #FE0002;
+    background: #fff5f5;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 991.98px) {
     #toc_container {
-        max-width: 100%; /* Full width on mobile */
-        margin: 10px;
-        padding: 10px;
-        position: static; /* Disable sticky on mobile */
+        max-width: 100%;
+        margin: 15px 0;
+        padding: 12px;
+        position: static;           /* Disable sticky on mobile */
+        border-radius: 6px;
     }
 
     .toc_container_wrapper {
-        flex-direction: column; /* Stack TOC and content vertically */
+        flex-direction: column;
         margin: 0 10px;
+        gap: 15px;
     }
 
     .toc_content {
@@ -112,16 +140,8 @@
     .toc_content img.ex2 {
         float: none;
         max-width: 100%;
-        margin: 10px auto;
+        margin: 12px auto;
         display: block;
-    }
-
-    .toc_content h1,
-    .toc_content h2.ex2,
-    .toc_content p,
-    .toc_content ul {
-        margin: 10px 0 !important;
-        padding: 0 !important;
     }
 
     .toc_title {
@@ -129,7 +149,7 @@
     }
 
     .toc_list.ex2 li a {
-        font-size: 12px;
-        padding: 4px 8px;
+        font-size: 13px;
+        padding: 6px 10px;
     }
 }
