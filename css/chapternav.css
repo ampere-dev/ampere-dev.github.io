@@ -1,67 +1,51 @@
 /* Chapternav Container */
 .chapternav-container {
     display: flex;
-    justify-content: center; /* Center items */
-    position: relative; /* For absolute positioning of arrows */
+    justify-content: center;          /* good for desktop centering */
+    position: relative;               /* for arrows or fades */
 }
 
-/* Chapternav */
+/* Chapternav (base) */
 .chapternav {
     display: flex;
     align-items: center;
-    overflow: hidden;
-    width: 80%; /* Ensure full-width container */
+    width: 100%;
+    max-width: 100%;
 }
 
-/* Scrolling Area */
-.chapternav-scroll {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-behavior: smooth;
-    justify-content: center; /* Center content */
-    scrollbar-width: none; /* Firefox */
-    width: 100%; /* Full width for scrolling */
-}
-
-.chapternav-scroll::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-}
-
-/* Chapternav Items */
+/* Chapternav Items (base/default) */
 .chapternav-item {
     display: flex;
-    flex-direction: column; /* Stack icon and text */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #000000 !important;
-    font-family: 'Ubuntu', sans-serif; /* Ubuntu font */
+    font-family: 'Ubuntu', sans-serif;
     font-size: 11px;
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     text-align: center;
-    width: 90px; /* Item width */
-    height: 110px; /* Consistent height */
+    width: 90px;
+    height: 110px;
 }
 
-/* Icon Styling */
 .chapternav-item img {
-    width: 40px; /* Icon size */
-    height: 40px; /* Maintain aspect ratio */
+    width: 40px;
+    height: 40px;
     margin-bottom: 5px;
-    filter: grayscale(100%); /* Make icon black by default */
+    filter: grayscale(100%);
 }
 
-/* Hover Effect for Text */
 .chapternav-item:hover {
-    color: #FE0002 !important; /* Red hover for text */
+    color: #FE0002 !important;
 }
 
-/* Arrow Buttons */
+/* Arrow Buttons (your original) */
 .chapternav-arrow {
-    display: none; /* Hidden by default, shown via JS */
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -75,15 +59,106 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.chapternav-arrow-left {
-    left: 5px;
-}
-
-.chapternav-arrow-right {
-    right: 5px;
-}
+.chapternav-arrow-left  { left: 5px; }
+.chapternav-arrow-right { right: 5px; }
 
 .chapternav-arrow:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+/* ────────────────────────────────────────────────
+   MOBILE SLIDER – OVERRIDE EVERYTHING IMPORTANT
+   ──────────────────────────────────────────────── */
+@media (max-width: 991.98px) {
+
+    .chapternav-container {
+        justify-content: flex-start !important;   /* stop forced centering */
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 12px 0 !important;
+        background: #f8f9fa !important;
+        border-bottom: 1px solid #e9ecef !important;
+        overflow: hidden !important;
+    }
+
+    .chapternav {
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+        scroll-snap-type: x mandatory !important;
+        gap: 16px !important;
+        padding: 8px 32px !important;             /* breathing room on sides */
+        width: auto !important;
+        min-width: 100% !important;
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+
+    .chapternav::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .chapternav-item {
+        flex: 0 0 124px !important;
+        width: 124px !important;
+        min-width: 110px !important;
+        height: auto !important;                  /* let content breathe */
+        padding: 12px 6px !important;
+        border-radius: 12px !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+        border: 1px solid #eee !important;
+        transition: transform 0.2s ease !important;
+    }
+
+    .chapternav-item img {
+        width: 54px !important;
+        height: 54px !important;
+        margin-bottom: 8px !important;
+        filter: grayscale(100%) !important;       /* keep your grayscale if desired */
+    }
+
+    .chapternav-item span {
+        font-size: 0.8rem !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
+    }
+
+    .chapternav-item:hover,
+    .chapternav-item:active {
+        transform: scale(1.06) !important;
+    }
+
+    /* Optional: stronger fade edges */
+    .chapternav-container::before,
+    .chapternav-container::after {
+        content: '' !important;
+        position: absolute !important;
+        top: 0; bottom: 0;
+        width: 60px !important;
+        z-index: 3 !important;
+        pointer-events: none !important;
+    }
+    .chapternav-container::before {
+        left: 0;
+        background: linear-gradient(to right, #f8f9fa 30%, transparent) !important;
+    }
+    .chapternav-container::after {
+        right: 0;
+        background: linear-gradient(to left, #f8f9fa 30%, transparent) !important;
+    }
+}
+
+/* Tiny screens fallback */
+@media (max-width: 360px) {
+    .chapternav-item {
+        flex: 0 0 100px !important;
+        width: 100px !important;
+    }
+    .chapternav-item img {
+        width: 48px !important;
+        height: 48px !important;
+    }
 }
