@@ -71,148 +71,158 @@
     <link rel="stylesheet" href="css/toc-styles.css">
     
     <style>
-        /* Skip link */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: #2563eb;
-            color: #fff;
-            padding: 8px 16px;
-            z-index: 9999;
-            text-decoration: none;
-            border-radius: 0 0 4px 4px;
-        }
-        .skip-link:focus { top: 0; }
+    /* Skip link */
+    .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #2563eb;
+        color: #fff;
+        padding: 8px 16px;
+        z-index: 9999;
+        text-decoration: none;
+        border-radius: 0 0 4px 4px;
+    }
+    .skip-link:focus { top: 0; }
 
-        /* Table improvements */
-        .load-bank-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.9em;
-            background-color: #f9f9f9;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .load-bank-table caption {
-            font-weight: 700;
-            font-size: 1.1em;
-            padding: 12px;
-            text-align: center;
-            caption-side: top;
-        }
-        .load-bank-table th {
-            background-color: #d32f2f;
-            color: #fff;
-            padding: 12px;
-            text-align: left;
-        }
-        .load-bank-table td, .load-bank-table th {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        .load-bank-table tbody tr:nth-child(even) { background-color: #f2f2f2; }
-        .load-bank-table tbody tr:hover { background-color: #e0e0e0; }
+    /* Table improvements */
+    .load-bank-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9em;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .load-bank-table caption {
+        font-weight: 700;
+        font-size: 1.1em;
+        padding: 12px;
+        text-align: center;
+        caption-side: top;
+    }
+    .load-bank-table th {
+        background-color: #d32f2f;
+        color: #fff;
+        padding: 12px;
+        text-align: left;
+    }
+    .load-bank-table td, .load-bank-table th {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    .load-bank-table tbody tr:nth-child(even) { background-color: #f2f2f2; }
+    .load-bank-table tbody tr:hover { background-color: #e0e0e0; }
 
-        /* Featured images */
-        .featured-img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-            border-radius: 8px;
-            display: block;
-        }
-        @media (min-width: 992px) {
-            .featured-img { max-width: 480px; float: right; margin: 15px 0 15px 30px; }
-        }
+    /* Featured images */
+    .featured-img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 8px;
+        display: block;
+    }
+    @media (min-width: 992px) {
+        .featured-img { max-width: 480px; float: right; margin: 15px 0 15px 30px; }
+    }
 
-        /* Improved TOC styling */
-        .toc-nav {
-            position: sticky;
-            top: 1rem;
-            align-self: flex-start;
-        }
-        .toc_title {
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-        .toc_list {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
-        .toc_list li {
-            margin: 0.4rem 0;
-        }
-        .toc_list a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-        .toc_list a:hover,
-        .toc_list a:focus {
-            text-decoration: underline;
-        }
+    /* Improved TOC styling */
+    .toc-nav {
+        position: sticky;
+        top: 1rem;
+        align-self: flex-start;
+    }
+    .toc_title {
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+    }
+    .toc_list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .toc_list li {
+        margin: 0.4rem 0;
+    }
+    .toc_list a {
+        color: #2563eb;
+        text-decoration: none;
+    }
+    .toc_list a:hover,
+    .toc_list a:focus {
+        text-decoration: underline;
+    }
 
-        /* Load bank section – justified text + equal margins */
-        .load-bank-section {
-            padding: 0 1.5rem;
-            margin: 2.5rem 0;
-        }
+    /* Load bank section – justified text + equal margins */
+    .load-bank-section {
+        padding: 0 1.5rem;
+        margin: 2rem 0;               /* Slightly reduced vertical margin */
+    }
 
-        .load-bank-section p.ex2 {
-            text-align: justify;
-            line-height: 1.8;
-            margin: 0 0 1.8rem 0;
-            padding: 0 1.2rem;
-        }
+    .load-bank-section p.ex2 {
+        text-align: justify;
+        line-height: 1.75;
+        margin: 0 0 1.4rem 0;         /* Reduced bottom margin */
+        padding: 0 1rem;
+    }
 
-        .load-bank-section ul,
-        .load-bank-section ol {
-            margin: 1.2rem 0 1.8rem 0;
-            padding-left: 2.2rem;
-            padding-right: 1.2rem;
-        }
+    .load-bank-section ul,
+    .load-bank-section ol {
+        margin: 1rem 0 1.4rem 0;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
 
-        .load-bank-section li {
-            margin-bottom: 1rem;
-            line-height: 1.7;
-        }
+    .load-bank-section li {
+        margin-bottom: 0.8rem;        /* Tighter list spacing */
+        line-height: 1.65;
+    }
 
-        /* Accordion styling (Bootstrap 5) */
-        .accordion.accordion-flush {
-            margin: 1.8rem 0;
-        }
+    /* Accordion styling (Bootstrap 5) – tighter spacing */
+    .accordion.accordion-flush {
+        margin: 1rem 0;               /* Reduced from previous */
+    }
 
+    .accordion-item {
+        border: 1px solid #dee2e6;
+        margin-bottom: 0.6rem !important; /* Much less space between panels */
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .accordion-button {
+        font-weight: 600;
+        color: #333;
+        background-color: #f8f9fa;
+        padding: 1rem 1.5rem;         /* Reduced vertical padding */
+        font-size: 1.1rem;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #d32f2f;
+        background-color: #fff5f5;
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    }
+
+    .accordion-button:focus {
+        box-shadow: 0 0 0 0.25rem rgba(211, 47, 47, 0.25);
+    }
+
+    .accordion-body {
+        background: #fdfdfd;
+        padding: 1.2rem 1.8rem;       /* Reduced padding inside panels */
+    }
+
+    /* Optional: even tighter on mobile */
+    @media screen and (max-width: 991.98px) {
         .accordion-item {
-            border: 1px solid #dee2e6;
-            margin-bottom: 1.2rem;
-            border-radius: 10px;
-            overflow: hidden;
+            margin-bottom: 0.5rem !important;
         }
-
-        .accordion-button {
-            font-weight: 600;
-            color: #333;
-            background-color: #f8f9fa;
-            padding: 1.25rem 1.75rem;
-            font-size: 1.15rem;
-        }
-
-        .accordion-button:not(.collapsed) {
-            color: #d32f2f;
-            background-color: #fff5f5;
-            box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
-        }
-
-        .accordion-button:focus {
-            box-shadow: 0 0 0 0.25rem rgba(211, 47, 47, 0.25);
-        }
-
         .accordion-body {
-            background: #fdfdfd;
-            padding: 1.75rem 2.25rem;
+            padding: 1rem 1.5rem;
         }
-    </style>
+    }
+</style>
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>

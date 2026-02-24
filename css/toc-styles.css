@@ -5,25 +5,25 @@
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     font-family: "Ubuntu", sans-serif;
-    font-size: 14px;
-    padding: 16px;
+    font-size: 13.5px;               /* Slightly smaller base font */
+    padding: 12px 10px;              /* Reduced padding for compactness */
     box-sizing: border-box;
     position: sticky;
     top: 20px;
     z-index: 100;
     width: 100%;
-    max-width: 240px;               /* Narrower to prevent horizontal cutoff */
+    max-width: 220px;                /* Narrower to stop running off page */
     height: fit-content;
-    max-height: calc(100vh - 100px); /* Fits viewport minus header/footer margin */
-    overflow-y: auto;               /* Scroll internally if TOC is very long */
-    margin-right: 20px;             /* Equal space from content on right */
+    max-height: calc(100vh - 140px); /* Fits viewport minus header + footer margin */
+    overflow-y: auto;                /* Internal scroll if TOC is super long */
+    margin-right: 25px;              /* Better separation from content */
 }
 
 /* Wrapper for side-by-side layout */
 .toc_container_wrapper {
     display: flex;
-    margin: 0 15px;                 /* Equal left/right margin */
-    gap: 25px;                      /* Space between TOC and main content */
+    margin: 0 15px;                  /* Equal left/right margin */
+    gap: 25px;
     align-items: flex-start;
 }
 
@@ -39,19 +39,19 @@
     max-width: 600px;
     width: 100%;
     height: auto;
-    margin: 15px 0 15px 25px;       /* Equal space around image */
+    margin: 15px 0 15px 25px;
 }
 
 /* Headings and paragraphs in content */
 .toc_content h1,
 .toc_content h2.ex2 {
-    padding: 12px 0;
-    font-size: 1.6em;
+    padding: 10px 0;
+    font-size: 1.55em;
 }
 
 .toc_content p,
 .toc_content p.ex2 {
-    margin: 0 0 1.2rem 0;
+    margin: 0 0 12px 0;
     padding: 0;
 }
 
@@ -74,12 +74,12 @@
 /* TOC Title */
 .toc_title {
     font-weight: 700;
-    font-size: 1.05rem;
+    font-size: 15px;                 /* Slightly smaller title */
     text-align: center;
     color: #333;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 /* TOC List */
@@ -90,16 +90,17 @@
 }
 
 .toc_list.ex2 li {
-    margin: 6px 0;
+    margin: 5px 0;                   /* Tighter spacing between links */
 }
 
 .toc_list.ex2 li a {
     color: #333;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 5px;
     display: block;
-    padding: 8px 12px;
+    padding: 6px 10px;
     transition: all 0.2s ease;
+    font-size: 13px;                 /* Smaller link text */
 }
 
 /* Active highlight - RED when section is in view */
@@ -107,8 +108,8 @@
     color: #fff !important;
     background-color: #FE0002 !important;
     font-weight: 700;
-    border-left: 5px solid #d32f2f; /* Deeper red accent bar */
-    padding-left: 7px;
+    border-left: 5px solid #d32f2f;
+    padding-left: 5px;
 }
 
 /* Hover (non-active) */
@@ -123,7 +124,7 @@
         max-width: 100%;
         margin: 15px 0;
         padding: 12px;
-        position: static;           /* Disable sticky on mobile */
+        position: static;            /* No sticky on mobile */
         border-radius: 6px;
     }
 
@@ -149,7 +150,7 @@
     }
 
     .toc_list.ex2 li a {
-        font-size: 13px;
-        padding: 6px 10px;
+        font-size: 12.5px;
+        padding: 5px 8px;
     }
 }
