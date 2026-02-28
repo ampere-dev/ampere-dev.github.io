@@ -4,22 +4,25 @@
     padding: 16px 0;
     background: #f8f9fa;
     border-bottom: 1px solid #e0e0e0;
+    position: relative;                    /* Required for fade gradients */
 }
 
 /* Scrollable wrapper – this is what makes it a slider */
 .chapternav {
     display: flex;
-    flex-wrap: nowrap;              /* never wrap to new line */
-    overflow-x: auto;               /* enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* smooth momentum on iOS */
-    scroll-snap-type: x proximity;  /* gentle snap to items */
+    flex-wrap: nowrap;                     /* Never wrap to new line */
+    overflow-x: auto;                      /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch;    /* Smooth momentum on iOS */
+    scroll-snap-type: x proximity;         /* Gentle snap to items */
+    overscroll-behavior-x: contain;        /* Prevents page scroll interference on iOS */
+    touch-action: pan-x;                   /* Explicit horizontal panning permission */
     gap: 20px;
-    padding: 0 32px;                /* breathing room on sides */
-    scrollbar-width: thin;          /* subtle scrollbar on desktop Firefox */
+    padding: 0 32px;                       /* Breathing room on sides */
+    scrollbar-width: thin;                 /* Subtle scrollbar on desktop Firefox */
     scrollbar-color: #ccc transparent;
 }
 
-/* Hide default scrollbar on WebKit (Chrome/Safari/Edge) */
+/* Hide/customize default scrollbar on WebKit (Chrome/Safari/Edge) */
 .chapternav::-webkit-scrollbar {
     height: 6px;
 }
@@ -33,7 +36,7 @@
 
 /* Each icon + label card */
 .chapternav-item {
-    flex: 0 0 auto;                 /* don't grow/shrink */
+    flex: 0 0 auto;                        /* Don't grow/shrink */
     min-width: 100px;
     display: flex;
     flex-direction: column;
@@ -50,6 +53,7 @@
     box-shadow: 0 1px 6px rgba(0,0,0,0.08);
     border: 1px solid #eee;
     transition: transform 0.18s ease, box-shadow 0.18s ease;
+    scroll-snap-align: start;              /* Key for consistent snap behavior */
 }
 
 .chapternav-item img {
@@ -80,10 +84,6 @@
 }
 
 /* Visual hint that it's scrollable (fade on edges) */
-.chapternav-container {
-    position: relative;
-}
-
 .chapternav-container::before,
 .chapternav-container::after {
     content: '';
@@ -93,22 +93,49 @@
     width: 60px;
     z-index: 2;
     pointer-events: none;
+    user-select: none;                     /* Better touch/selection behavior */
 }
 
 .chapternav-container::before {
     left: 0;
-    background: linear-gradient(to right, #f8f9fa, transparent 70%);
+    background: linear-gradient(to right, #f8f9fa, transparent 50%);
 }
 
 .chapternav-container::after {
     right: 0;
-    background: linear-gradient(to left, #f8f9fa, transparent 70%);
+    background: linear-gradient(to left, #f8f9fa, transparent 50%);
+}
+
+/* Arrow buttons (shown/hidden by JS) */
+.chapternav-arrow-left,
+.chapternav-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    z-index: 3;
+    display: none;                         /* JS will show when overflow exists */
+}
+
+.chapternav-arrow-left  { left: 8px; }
+.chapternav-arrow-right { right: 8px; }
+
+.chapternav-arrow-left:disabled,
+.chapternav-arrow-right:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 /* Mobile – make it feel more swipe-friendly */
 @media (max-width: 991.98px) {
     .chapternav {
-        padding: 0 40px;            /* more side space for finger swipe */
+        padding: 0 40px;                   /* More side space for finger swipe */
         gap: 18px;
     }
 
@@ -138,5 +165,13 @@
     .chapternav-item img {
         width: 42px;
         height: 42px;
+    }
+}
+
+/* Hide arrows on small screens (mobile-first preference) */
+@media (max-width: 767px) {
+    .chapternav-arrow-left,
+    .chapternav-arrow-right {
+        display: none !important;
     }
 }
