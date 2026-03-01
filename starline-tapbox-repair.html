@@ -594,6 +594,53 @@
         </div>
     </footer>
 
+    <!-- Scripts – unchanged -->
+    <script>
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('flex');
+            navMenu.classList.toggle('flex-col');
+            navMenu.classList.toggle('absolute');
+            navMenu.classList.toggle('bg-white');
+            navMenu.classList.toggle('w-full');
+            navMenu.classList.toggle('p-4');
+            navMenu.classList.toggle('top-16');
+            navMenu.classList.toggle('left-0');
+            navMenu.classList.toggle('shadow-md');
+        });
+    </script>
+    <script>
+        window.addEventListener('load', () => {
+            const chapternav = document.querySelector('.chapternav');
+            if (chapternav) {
+                chapternav.scrollLeft = (chapternav.scrollWidth - chapternav.clientWidth) / 2;
+            }
+        });
+    </script>
+    <script src="/js/chapternav.js" defer></script>
+
+    <!-- New JS for hide on scroll -->
+    <script>
+        let lastScrollTop = 0;
+        const chapternavContainer = document.querySelector('.chapternav-container');
+        const headerHeight = document.querySelector('header').offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down – hide chapternav
+                chapternavContainer.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up – show chapternav
+                chapternavContainer.style.transform = 'translateY(0)';
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        }, { passive: true });
+    </script>
+
     <script>
         // Toggle mobile menu
         document.querySelector('.menuToggler').addEventListener('click', () => {
