@@ -20,15 +20,17 @@
     overscroll-behavior-x: contain;        /* Prevents page scroll interference on iOS */
     touch-action: pan-x;                   /* Explicit horizontal panning permission */
     gap: 20px;
-    padding: 0 32px;                       /* Breathing room on sides – can reduce if you want tighter centering */
+    padding: 0 64px 0 16px;                /* Balanced: small left inset, more right space for fade/arrow */
     scrollbar-width: thin;                 /* Subtle scrollbar on desktop Firefox */
     scrollbar-color: #ccc transparent;
 
-    /* ──────────────── CENTERING FIX ──────────────── */
-    justify-content: center;               /* Centers items horizontally when total width < container */
-    margin: 0 auto;                        /* Centers the entire bar block */
-    max-width: max-content;                /* Shrink-wraps to content so margin: auto works */
-    /* ─────────────────────────────────────────────── */
+    justify-content: flex-start;           /* Default: start from left – JS will override to center when short */
+    margin: 0;                             /* Prevent any auto-margins from shifting content */
+
+    /* Removed problematic centering rules that caused left-side clipping */
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    /* max-width: max-content; */
 }
 
 /* Hide/customize default scrollbar on WebKit (Chrome/Safari/Edge) */
@@ -144,7 +146,7 @@
 /* Mobile – make it feel more swipe-friendly */
 @media (max-width: 991.98px) {
     .chapternav {
-        padding: 0 40px;                   /* More side space for finger swipe */
+        padding: 0 48px 0 16px;            /* Slightly reduced right padding for mobile */
         gap: 18px;
     }
 
@@ -166,7 +168,7 @@
 @media (max-width: 380px) {
     .chapternav {
         gap: 14px;
-        padding: 0 28px;
+        padding: 0 32px 0 12px;            /* Even tighter on very small screens */
     }
     .chapternav-item {
         min-width: 80px;
