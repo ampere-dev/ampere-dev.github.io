@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scrollContainer = document.querySelector('.chapternav');
-    const leftArrow       = document.querySelector('.chapternav-arrow-left');
-    const rightArrow      = document.querySelector('.chapternav-arrow-right');
+    const leftArrow = document.querySelector('.chapternav-arrow-left');
+    const rightArrow = document.querySelector('.chapternav-arrow-right');
 
     // Early exit if critical elements are missing
     if (!scrollContainer || !leftArrow || !rightArrow) {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function toggleArrows() {
-        const hasOverflow = scrollContainer.scrollWidth > scrollContainer.clientWidth + 1;
+        const hasOverflow = scrollContainer.scrollWidth > scrollContainer.clientWidth + 1; // +1 for subpixel rounding
         leftArrow.style.display = hasOverflow ? 'block' : 'none';
         rightArrow.style.display = hasOverflow ? 'block' : 'none';
         updateArrowStates();
@@ -31,16 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateArrowStates() {
         const atStart = scrollContainer.scrollLeft <= 0;
-        const atEnd   = scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth - 1;
+        const atEnd = scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth - 1;
 
         leftArrow.disabled = atStart;
         rightArrow.disabled = atEnd;
 
-        leftArrow.style.opacity   = atStart ? '0.4' : '1';
-        rightArrow.style.opacity  = atEnd  ? '0.4' : '1';
+        // Optional: visual feedback beyond disabled
+        leftArrow.style.opacity = atStart ? '0.4' : '1';
+        rightArrow.style.opacity = atEnd ? '0.4' : '1';
     }
 
-    // Scroll functions
+    // Scroll functions with smooth behavior
     function scrollLeft() {
         if (!leftArrow.disabled) {
             scrollContainer.scrollTo({
@@ -62,42 +63,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach listeners
     leftArrow.addEventListener('click', scrollLeft);
     rightArrow.addEventListener('click', scrollRight);
+
     scrollContainer.addEventListener('scroll', updateArrowStates);
 
-    // ───────────────────────────────────────────────
-    // Justification logic (center short lists, left-align long ones)
-    function updateJustification() {
-        const hasOverflow = scrollContainer.scrollWidth > scrollContainer.clientWidth + 1;
-        if (hasOverflow) {
-            scrollContainer.style.justifyContent = 'flex-start';
-            scrollContainer.scrollLeft = 0;
-        } else {
-            scrollContainer.style.justifyContent = 'center';
-        }
-    }
-
-    // ───────────────────────────────────────────────
-    // Debounced resize handler
+    // Handle resize (with simple debounce)
     let resizeTimeout;
-    const handleResize = () => {
+    window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
             updateScrollAmount();
-            updateJustification();
             toggleArrows();
-            updateArrowStates(); // good measure after resize
         }, 150);
-    };
+    });
 
-    window.addEventListener('resize', handleResize);
-
-    // ───────────────────────────────────────────────
     // Initial setup
     updateScrollAmount();
     toggleArrows();
     updateArrowStates();
-    updateJustification();
-
-    // Optional: re-run justification after a tiny delay (helps with late-loading fonts/images)
-    setTimeout(updateJustification, 100);
 });

@@ -20,28 +20,15 @@
     overscroll-behavior-x: contain;        /* Prevents page scroll interference on iOS */
     touch-action: pan-x;                   /* Explicit horizontal panning permission */
     gap: 20px;
-    padding: 0 80px 0 80px;                /* Generous padding on both sides to prevent arrow overlap */
+    padding: 0 32px;                       /* Breathing room on sides – can reduce if you want tighter centering */
     scrollbar-width: thin;                 /* Subtle scrollbar on desktop Firefox */
     scrollbar-color: #ccc transparent;
 
-    justify-content: flex-start;           /* Default: start from left – JS overrides to center when short */
-    margin: 0;                             /* Prevent any auto-margins from shifting content */
-    transition: padding-left 0.25s ease, padding-right 0.25s ease; /* Smooth padding change when arrows appear */
-
-    /* Removed problematic centering rules that caused left-side clipping */
-    /* justify-content: center; */
-    /* margin: 0 auto; */
-    /* max-width: max-content; */
-}
-
-/* Dynamically add more left padding when left arrow is visible (prevents overlap with first item) */
-.chapternav-arrow-left[style*="display: block"] ~ .chapternav {
-    padding-left: 100px !important;        /* Extra push when left arrow is shown */
-}
-
-/* Same for right side (symmetry + prevents last item being hidden) */
-.chapternav-arrow-right[style*="display: block"] ~ .chapternav {
-    padding-right: 100px !important;
+    /* ──────────────── CENTERING FIX ──────────────── */
+    justify-content: center;               /* Centers items horizontally when total width < container */
+    margin: 0 auto;                        /* Centers the entire bar block */
+    max-width: max-content;                /* Shrink-wraps to content so margin: auto works */
+    /* ─────────────────────────────────────────────── */
 }
 
 /* Hide/customize default scrollbar on WebKit (Chrome/Safari/Edge) */
@@ -79,8 +66,8 @@
 }
 
 .chapternav-item img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 8px;
     object-fit: contain;
     filter: grayscale(80%);
@@ -112,20 +99,20 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 70px;                           /* Slightly wider fade to match increased padding */
+    width: 60px;
     z-index: 2;
     pointer-events: none;
-    user-select: none;
+    user-select: none;                     /* Better touch/selection behavior */
 }
 
 .chapternav-container::before {
     left: 0;
-    background: linear-gradient(to right, #f8f9fa, transparent 60%);
+    background: linear-gradient(to right, #f8f9fa, transparent 50%);
 }
 
 .chapternav-container::after {
     right: 0;
-    background: linear-gradient(to left, #f8f9fa, transparent 60%);
+    background: linear-gradient(to left, #f8f9fa, transparent 50%);
 }
 
 /* Arrow buttons (shown/hidden by JS) */
@@ -134,20 +121,19 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;                           /* Slightly larger for better touch target */
-    height: 40px;
-    background: rgba(255,255,255,0.95);
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.9);
     border: 1px solid #ddd;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
     z-index: 3;
-    display: none;                         /* JS controls visibility */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* subtle lift */
+    display: none;                         /* JS will show when overflow exists */
 }
 
-.chapternav-arrow-left  { left: 20px; }    /* Moved out a bit so it doesn't hug the edge */
-.chapternav-arrow-right { right: 20px; }
+.chapternav-arrow-left  { left: 8px; }
+.chapternav-arrow-right { right: 8px; }
 
 .chapternav-arrow-left:disabled,
 .chapternav-arrow-right:disabled {
@@ -158,7 +144,7 @@
 /* Mobile – make it feel more swipe-friendly */
 @media (max-width: 991.98px) {
     .chapternav {
-        padding: 0 60px 0 60px;            /* Balanced for mobile – arrows hidden anyway */
+        padding: 0 40px;                   /* More side space for finger swipe */
         gap: 18px;
     }
 
@@ -174,19 +160,13 @@
     .chapternav-item span {
         font-size: 0.76rem;
     }
-
-    /* Reduce fade width on smaller screens */
-    .chapternav-container::before,
-    .chapternav-container::after {
-        width: 50px;
-    }
 }
 
 /* Tiny screens */
 @media (max-width: 380px) {
     .chapternav {
         gap: 14px;
-        padding: 0 40px 0 40px;
+        padding: 0 28px;
     }
     .chapternav-item {
         min-width: 80px;
