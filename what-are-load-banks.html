@@ -156,13 +156,13 @@
     /* Load bank section – justified text + equal margins */
     .load-bank-section {
         padding: 0 1.5rem;
-        margin: 2rem 0;               /* Slightly reduced vertical margin */
+        margin: 2rem 0;
     }
 
     .load-bank-section p.ex2 {
         text-align: justify;
         line-height: 1.75;
-        margin: 0 0 1.4rem 0;         /* Reduced bottom margin */
+        margin: 0 0 1.4rem 0;
         padding: 0 1rem;
     }
 
@@ -174,18 +174,18 @@
     }
 
     .load-bank-section li {
-        margin-bottom: 0.8rem;        /* Tighter list spacing */
+        margin-bottom: 0.8rem;
         line-height: 1.65;
     }
 
     /* Accordion styling (Bootstrap 5) – tighter spacing */
     .accordion.accordion-flush {
-        margin: 1rem 0;               /* Reduced from previous */
+        margin: 1rem 0;
     }
 
     .accordion-item {
         border: 1px solid #dee2e6;
-        margin-bottom: 0.6rem !important; /* Much less space between panels */
+        margin-bottom: 0.6rem !important;
         border-radius: 8px;
         overflow: hidden;
     }
@@ -194,7 +194,7 @@
         font-weight: 600;
         color: #333;
         background-color: #f8f9fa;
-        padding: 1rem 1.5rem;         /* Reduced vertical padding */
+        padding: 1rem 1.5rem;
         font-size: 1.1rem;
     }
 
@@ -210,16 +210,95 @@
 
     .accordion-body {
         background: #fdfdfd;
-        padding: 1.2rem 1.8rem;       /* Reduced padding inside panels */
+        padding: 1.2rem 1.8rem;
     }
 
-    /* Optional: even tighter on mobile */
     @media screen and (max-width: 991.98px) {
         .accordion-item {
             margin-bottom: 0.5rem !important;
         }
         .accordion-body {
             padding: 1rem 1.5rem;
+        }
+    }
+
+    /* ───────────────────────────────────────────────
+       Chapter Navigation – Flush left + arrows behavior
+    ──────────────────────────────────────────────── */
+
+    .chapternav-container {
+        justify-content: flex-start !important;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .chapternav {
+        justify-content: flex-start !important;
+        text-align: left !important;
+        padding: 0 16px 0 20px !important;   /* breathing room left + right */
+        box-sizing: border-box;
+    }
+
+    /* Hide arrows completely on large/medium screens */
+    .chapternav-arrow-left,
+    .chapternav-arrow-right {
+        display: none !important;
+    }
+
+    /* On mobile/small screens: show arrows only when scrolling is needed */
+    @media (max-width: 991px) {
+        .chapternav-container {
+            padding: 0 50px;                    /* reserve space for arrows */
+        }
+
+        .chapternav {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;              /* hide scrollbar Firefox */
+            -ms-overflow-style: none;
+            padding: 0 8px;
+        }
+
+        .chapternav::-webkit-scrollbar {
+            display: none;                      /* hide scrollbar Chrome/Safari */
+        }
+
+        /* Show arrows on small screens */
+        .chapternav-arrow-left,
+        .chapternav-arrow-right {
+            display: flex !important;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            background: rgba(37, 99, 235, 0.9); /* your blue theme */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.4rem;
+            cursor: pointer;
+            z-index: 5;
+            opacity: 0.95;
+            transition: opacity 0.2s;
+        }
+
+        .chapternav-arrow-left {
+            left: 8px;
+        }
+
+        .chapternav-arrow-right {
+            right: 8px;
+        }
+
+        /* Visual feedback when disabled (your JS should add disabled attr) */
+        .chapternav-arrow-left[disabled],
+        .chapternav-arrow-right[disabled] {
+            opacity: 0.35;
+            cursor: not-allowed;
         }
     }
 </style>
