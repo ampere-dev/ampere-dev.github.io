@@ -1,10 +1,13 @@
-/* Chapternav Container – normal flow, right after header */
+/* Chapternav Container – sticky below header, with fade gradients support */
 .chapternav-container {
     width: 100%;
-    padding: 16px 0;
+    padding: 1rem 0;                       /* ~16px – consistent rem unit */
     background: #f8f9fa;
-    border-bottom: 1px solid #e0e0e0;
-    position: relative;                    /* Required for fade gradients */
+    border-bottom: 1px solid #e0e0e0;      /* subtle separator – remove if unwanted */
+    position: sticky;
+    top: 4rem;                             /* Below main header – adjust if header height changes */
+    z-index: 40;                           /* Ensures it stays above hero content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Visual separation when stuck */
 }
 
 /* Scrollable wrapper – this is what makes it a slider */
@@ -17,9 +20,15 @@
     overscroll-behavior-x: contain;        /* Prevents page scroll interference on iOS */
     touch-action: pan-x;                   /* Explicit horizontal panning permission */
     gap: 20px;
-    padding: 0 32px;                       /* Breathing room on sides */
+    padding: 0 32px;                       /* Breathing room on sides – can reduce if you want tighter centering */
     scrollbar-width: thin;                 /* Subtle scrollbar on desktop Firefox */
     scrollbar-color: #ccc transparent;
+
+    /* ──────────────── CENTERING FIX ──────────────── */
+    justify-content: center;               /* Centers items horizontally when total width < container */
+    margin: 0 auto;                        /* Centers the entire bar block */
+    max-width: max-content;                /* Shrink-wraps to content so margin: auto works */
+    /* ─────────────────────────────────────────────── */
 }
 
 /* Hide/customize default scrollbar on WebKit (Chrome/Safari/Edge) */
