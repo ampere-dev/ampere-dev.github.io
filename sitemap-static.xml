@@ -32,7 +32,13 @@
   </url>
   <url>
     <loc>https://ampere.dev/starline-tapbox-rental</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/starline-tapbox-sales</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -92,31 +98,25 @@
   </url>
   <url>
     <loc>https://ampere.dev/starline-hanger</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ampere.dev/starline-tapbox-paddle</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ampere.dev/starline-paddle-modules</loc>
-    <lastmod>2026-02-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ampere.dev/starline-busway-commissioning</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ampere.dev/starline-busbars</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -128,7 +128,7 @@
   </url>
   <url>
     <loc>https://ampere.dev/starline-tapbox-repair</loc>
-    <lastmod>2026-02-18</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
