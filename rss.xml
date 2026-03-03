@@ -4,9 +4,16 @@
     <title>Ampere Insights</title>
     <link>https://ampere.dev/blog</link>
     <description>Insights on power systems, data centers, AI energy demands, transformers, load banks and microgrids from Ampere Development</description>
-    <pubDate>Fri, 27 Feb 2026 10:38:50 +0000</pubDate>
-    <lastBuildDate>Fri, 27 Feb 2026 10:38:50 +0000</lastBuildDate>
+    <pubDate>Tue, 03 Mar 2026 10:07:41 +0000</pubDate>
+    <lastBuildDate>Tue, 03 Mar 2026 10:07:41 +0000</lastBuildDate>
     <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Revolutionizing Power Delivery: Ampere&#x27;s T5-Compatible 400A Starline Tap Box Pre-Order Is Here</title>
+      <link>https://ampere.dev/blog/ampere-t5-400a-starline-tap-box-preorder/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ampere-t5-400a-starline-tap-box-preorder/</guid>
+      <pubDate>2026-03-03 00:00:00 +0000</pubDate>
+      <description>Ampere’s new T5-compatible 400A Starline Tap Boxes are now available for pre-order—offering same-day 400A load bank testing, tool-free install, NFPA 70E compliance, and priority delivery to slash commissioning delays and avoid costly SLA penalties.</description>
+    </item>
     <item>
       <title>Bloom Energy Scales Toward $3 Billion as AI Tailwinds Intensify</title>
       <link>https://ampere.dev/blog/bloom-energy-scales-ai-tailwinds/</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="true">https://ampere.dev/blog/baba-compliance-guide/</guid>
       <pubDate>2025-07-15 00:00:00 +0000</pubDate>
       <description>BABAA mandates 55% domestic content for federally funded infrastructure projects—here’s how to achieve compliance for electrical transformers amid supply chain constraints, tariffs, and rising demand.</description>
-    </item>
-    <item>
-      <title>EGSA’s Load Bank Certification: Elevating Skills in Power Generation</title>
-      <link>https://ampere.dev/blog/egsa-load-bank-certification/</link>
-      <guid isPermaLink="true">https://ampere.dev/blog/egsa-load-bank-certification/</guid>
-      <pubDate>2025-07-02 00:00:00 +0000</pubDate>
-      <description>EGSA’s new 2.5-day Load Bank Certification course combines hands-on and classroom training to certify technicians in load bank operation, safety, and performance testing—critical for reliable on-site power systems.</description>
     </item>
   </channel>
 </rss>
