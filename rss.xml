@@ -1,221 +1,571 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
+<rss version="2.0">
   <channel>
-    <title>Ampere Insights</title>
+    <title>Ampere Insights | Ampere Development</title>
     <link>https://ampere.dev/blog</link>
-    <description>Insights on power systems, data centers, AI energy demands, transformers, load banks and microgrids from Ampere Development</description>
-    <pubDate>Wed, 04 Mar 2026 07:37:51 +0000</pubDate>
-    <lastBuildDate>Wed, 04 Mar 2026 07:37:51 +0000</lastBuildDate>
-    <atom:link href="https://ampere.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Mar 2026 05:02:41 EST</lastBuildDate>
     <item>
       <title>Solid-State Transformers: Technical Architecture, Performance Metrics, Real-World Trade-offs, and Transformative Potential for Grid Modernization</title>
       <link>https://ampere.dev/blog/solid-state-transformers-technical-architecture/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/solid-state-transformers-technical-architecture/</guid>
-      <pubDate>2026-03-04 00:00:00 +0000</pubDate>
-      <description>SSTs promise 5–15× power density, native 800 V DC output, grid-forming capability, and 60–70% lower TCO for AI campuses—yet face reliability, fault-current, and surge challenges. 2026 pilots from Heron, DG Matrix, and Amperesand signal acceleration.</description>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: SSTs promise 5–15× power density, native 800 V DC output, grid-forming capability, and 60–70% lower TCO for AI campuses—yet face reliability, fault-current, and surge challenges. 2026 pilots from Heron, DG Matrix, and Amperesand signal acceleration.</description>
     </item>
     <item>
-      <title>Revolutionizing Power Delivery: Ampere&#x27;s T5-Compatible 400A Starline Tap Box Pre-Order Is Here</title>
+      <title>Revolutionizing Power Delivery: Ampere's T5-Compatible 400A Starline Tap Box Pre-Order Is Here</title>
       <link>https://ampere.dev/blog/ampere-t5-400a-starline-tap-box-preorder/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/ampere-t5-400a-starline-tap-box-preorder/</guid>
-      <pubDate>2026-03-03 00:00:00 +0000</pubDate>
-      <description>Ampere’s new T5-compatible 400A Starline Tap Boxes are now available for pre-order—offering same-day 400A load bank testing, tool-free install, NFPA 70E compliance, and priority delivery to slash commissioning delays and avoid costly SLA penalties.</description>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: Ampere’s new T5-compatible 400A Starline Tap Boxes are now available for pre-order—offering same-day 400A load bank testing, tool-free install, NFPA 70E compliance, and priority delivery to slash commissioning delays and avoid costly SLA penalties.</description>
     </item>
     <item>
       <title>Bloom Energy Scales Toward $3 Billion as AI Tailwinds Intensify</title>
       <link>https://ampere.dev/blog/bloom-energy-scales-ai-tailwinds/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/bloom-energy-scales-ai-tailwinds/</guid>
-      <pubDate>2026-02-26 00:00:00 +0000</pubDate>
-      <description>Bloom Energy closed 2025 with $2.02B revenue (+37%), $20B backlog, and a native 800V DC fuel-cell platform—positioning itself as the “primary power layer” for AI data centers adopting “bring your own power” strategies.</description>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: Bloom Energy closed 2025 with $2.02B revenue (+37%), $20B backlog, and a native 800V DC fuel-cell platform—positioning itself as the “primary power layer” for AI data centers adopting “bring your own power” strategies.</description>
     </item>
     <item>
       <title>Recent Collaboration Discussion with Sunbelt Solomon: Enhancing Microgrid Capabilities with Transformer Fleet Insights and Advanced Testing Infrastructure</title>
       <link>https://ampere.dev/blog/sunbelt-solomon-microgrid-collaboration/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/sunbelt-solomon-microgrid-collaboration/</guid>
-      <pubDate>2026-02-20 00:00:00 +0000</pubDate>
-      <description>A productive call with Sunbelt Solomon explored synergies in transformer rentals, high-voltage cabling, portable substations, and primary current injection testing to accelerate microgrid commissioning and resilient substation tie-ins for high-voltage projects.</description>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: A productive call with Sunbelt Solomon explored synergies in transformer rentals, high-voltage cabling, portable substations, and primary current injection testing to accelerate microgrid commissioning and resilient substation tie-ins for high-voltage projects.</description>
     </item>
     <item>
-      <title>Data Centers Turn to Ex-Airliner Engines: A Stopgap Solution Amid AI&#x27;s Power Crunch</title>
+      <title>Data Centers Turn to Ex-Airliner Engines: A Stopgap Solution Amid AI's Power Crunch</title>
       <link>https://ampere.dev/blog/data-centers-ex-airliner-engines-ai-power-crunch/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/data-centers-ex-airliner-engines-ai-power-crunch/</guid>
-      <pubDate>2026-02-01 00:00:00 +0000</pubDate>
-      <description>As AI drives massive energy demand, data centers are repurposing retired jet engines into trailer-mounted generators to bridge grid delays, offering rapid deployment but raising emissions and efficiency concerns.</description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: As AI drives massive energy demand, data centers are repurposing retired jet engines into trailer-mounted generators to bridge grid delays, offering rapid deployment but raising emissions and efficiency concerns.</description>
     </item>
     <item>
       <title>The Rise of 800VDC in Data Centers: Balancing Efficiency, Scalability, and Challenges</title>
       <link>https://ampere.dev/blog/rise-of-800vdc-data-centers-ai-factories/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/rise-of-800vdc-data-centers-ai-factories/</guid>
-      <pubDate>2026-01-28 00:00:00 +0000</pubDate>
-      <description>AI workloads drive megawatt racks—800VDC slashes current by 94%, boosts efficiency 5%+, and enables dense GPU scaling. NVIDIA targets 2027 deployments, but safety, costs, and commissioning challenges remain.</description>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: AI workloads drive megawatt racks—800VDC slashes current by 94%, boosts efficiency 5%+, and enables dense GPU scaling. NVIDIA targets 2027 deployments, but safety, costs, and commissioning challenges remain.</description>
     </item>
     <item>
       <title>Understanding Electrical Load Types and Why They Matter for Load Bank Testing</title>
       <link>https://ampere.dev/blog/electrical-load-types-load-bank-testing/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/electrical-load-types-load-bank-testing/</guid>
-      <pubDate>2026-01-13 00:00:00 +0000</pubDate>
-      <description>Resistive, inductive, and capacitive loads each stress power systems differently—get them wrong in load bank testing and hidden issues like voltage dips, harmonics, or start failures stay undetected. Ampere Development explains why mixed RLC simulation is essential for reliable generators and UPS.</description>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: Resistive, inductive, and capacitive loads each stress power systems differently—get them wrong in load bank testing and hidden issues like voltage dips, harmonics, or start failures stay undetected. Ampere Development explains why mixed RLC simulation is essential for reliable generators and UPS.</description>
     </item>
     <item>
-      <title>NVIDIA&#x27;s 800-Volt Revolution: The Massive Overhaul Coming to Global Data Centers</title>
+      <title>NVIDIA's 800-Volt Revolution: The Massive Overhaul Coming to Global Data Centers</title>
       <link>https://ampere.dev/blog/nvidia-800v-revolution-data-centers/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/nvidia-800v-revolution-data-centers/</guid>
-      <pubDate>2025-12-30 00:00:00 +0000</pubDate>
-      <description>NVIDIA&#x27;s 800V DC push for GB200/Blackwell racks slashes copper by 50%, boosts efficiency 5-7%, and pairs with Bloom Energy fuel cells for resilient on-site power—but CAPEX jumps $50-100M+ per facility and commissioning gets more complex.</description>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: NVIDIA's 800V DC push for GB200/Blackwell racks slashes copper by 50%, boosts efficiency 5-7%, and pairs with Bloom Energy fuel cells for resilient on-site power—but CAPEX jumps $50-100M+ per facility and commissioning gets more complex.</description>
     </item>
     <item>
       <title>Why High-Impedance Transformers Are Becoming Essential in Data Center Projects</title>
       <link>https://ampere.dev/blog/high-impedance-transformers-data-centers/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/high-impedance-transformers-data-centers/</guid>
-      <pubDate>2025-12-30 00:00:00 +0000</pubDate>
-      <description>Data centers now demand 7–9% impedance (%Z) on transformers to cap fault currents, protect switchgear, and avoid expensive upgrades—driven by denser grids and hyperscale AI loads. A key spec shift that&#x27;s reshaping bids and designs.</description>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Data centers now demand 7–9% impedance (%Z) on transformers to cap fault currents, protect switchgear, and avoid expensive upgrades—driven by denser grids and hyperscale AI loads. A key spec shift that's reshaping bids and designs.</description>
     </item>
     <item>
       <title>North American Data Center Surge: AI-Driven Expansions and Holiday Cheer in the Industry</title>
       <link>https://ampere.dev/blog/north-america-data-center-surge-2025/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/north-america-data-center-surge-2025/</guid>
-      <pubDate>2025-12-13 00:00:00 +0000</pubDate>
-      <description>Billions pour into AI/hyperscale campuses across Virginia, North Carolina, Wisconsin, and beyond—plus Google&#x27;s nuclear reactor plans—while the 7x24 Exchange DC Chapter celebrated with its festive holiday party in Leesburg.</description>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Billions pour into AI/hyperscale campuses across Virginia, North Carolina, Wisconsin, and beyond—plus Google's nuclear reactor plans—while the 7x24 Exchange DC Chapter celebrated with its festive holiday party in Leesburg.</description>
     </item>
     <item>
-      <title>The Electric Grid&#x27;s New Era: Data Centers, Battery Storage, and Rising Volatility</title>
+      <title>The Electric Grid's New Era: Data Centers, Battery Storage, and Rising Volatility</title>
       <link>https://ampere.dev/blog/electric-grid-new-era/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/electric-grid-new-era/</guid>
-      <pubDate>2025-11-16 00:00:00 +0000</pubDate>
-      <description>AI data centers create extreme load swings that stress the grid—NERC warns of frequency risks and instability. Flow batteries and large-scale load banks emerge as key tools for mitigation and active grid support.</description>
+      <pubDate>Sun, 16 Nov 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI data centers create extreme load swings that stress the grid—NERC warns of frequency risks and instability. Flow batteries and large-scale load banks emerge as key tools for mitigation and active grid support.</description>
     </item>
     <item>
-      <title>Duke Energy&#x27;s Ambitious Resource Plans: Gas, Nuclear, Solar, and Storage Projects to Power Growth Through 2035</title>
+      <title>Duke Energy's Ambitious Resource Plans: Gas, Nuclear, Solar, and Storage Projects to Power Growth Through 2035</title>
       <link>https://ampere.dev/blog/duke-energy-resource-plans/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/duke-energy-resource-plans/</guid>
-      <pubDate>2025-10-07 00:00:00 +0000</pubDate>
-      <description>Duke Energy&#x27;s 2025 Carolinas Resource Plan adds 9.7 GW gas, 1.1 GW nuclear, 7.9 GW solar, and 7.9 GW storage by 2033-2037 with delayed coal retirements; similar expansions in Florida, Indiana, Ohio, and Kentucky to meet AI-driven demand.</description>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Duke Energy's 2025 Carolinas Resource Plan adds 9.7 GW gas, 1.1 GW nuclear, 7.9 GW solar, and 7.9 GW storage by 2033-2037 with delayed coal retirements; similar expansions in Florida, Indiana, Ohio, and Kentucky to meet AI-driven demand.</description>
     </item>
     <item>
-      <title>Xcel Energy&#x27;s 5-GW Gas-Fired Expansion: A National Model for Bolstering Grid Reliability Amid Surging Demands</title>
+      <title>Xcel Energy's 5-GW Gas-Fired Expansion: A National Model for Bolstering Grid Reliability Amid Surging Demands</title>
       <link>https://ampere.dev/blog/xcel-energy-5gw-expansion/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/xcel-energy-5gw-expansion/</guid>
-      <pubDate>2025-10-07 00:00:00 +0000</pubDate>
-      <description>Xcel Energy adds over 5 GW in Texas and New Mexico—including major gas conversions and peakers—as part of a nationwide surge in dispatchable power to meet AI data center demand and grid reliability needs.</description>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Xcel Energy adds over 5 GW in Texas and New Mexico—including major gas conversions and peakers—as part of a nationwide surge in dispatchable power to meet AI data center demand and grid reliability needs.</description>
     </item>
     <item>
-      <title>America&#x27;s Grid is Nearing Its Breaking Point: The Urgent Call for Rapid LNG and Nuclear Solutions</title>
+      <title>America's Grid is Nearing Its Breaking Point: The Urgent Call for Rapid LNG and Nuclear Solutions</title>
       <link>https://ampere.dev/blog/americas-grid-breaking-point/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/americas-grid-breaking-point/</guid>
-      <pubDate>2025-09-12 00:00:00 +0000</pubDate>
-      <description>AI data centers and retirements push the U.S. grid toward collapse. Rapid LNG microgeneration (1-year build) and gigawatt nuclear (under 5 years) are vital alternatives to slow renewables and 20-year nuclear delays like Vogtle.</description>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI data centers and retirements push the U.S. grid toward collapse. Rapid LNG microgeneration (1-year build) and gigawatt nuclear (under 5 years) are vital alternatives to slow renewables and 20-year nuclear delays like Vogtle.</description>
     </item>
     <item>
       <title>Hitachi Energy’s Historic $1 Billion Investment to Power America’s AI Future with Grid Infrastructure</title>
       <link>https://ampere.dev/blog/hitachi-energy-investment/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/hitachi-energy-investment/</guid>
-      <pubDate>2025-09-08 00:00:00 +0000</pubDate>
-      <description>Hitachi Energy commits $1 billion to U.S. grid infrastructure, including a $457 million large power transformer plant in Virginia creating 825+ jobs, to meet AI data center demand and the 45 GW energy deficit.</description>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Hitachi Energy commits $1 billion to U.S. grid infrastructure, including a $457 million large power transformer plant in Virginia creating 825+ jobs, to meet AI data center demand and the 45 GW energy deficit.</description>
     </item>
     <item>
       <title>Mitsubishi Doubles Gas Turbine Production to Meet Explosive Demand from AI Data Centers</title>
       <link>https://ampere.dev/blog/mitsubishi-doubles-gas-turbine-production/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/mitsubishi-doubles-gas-turbine-production/</guid>
-      <pubDate>2025-09-05 00:00:00 +0000</pubDate>
-      <description>Mitsubishi Heavy Industries plans to double gas turbine production over the next two years to meet surging demand from AI data centers and global energy needs, amid a U.S. 45 GW deficit driving localized and off-grid solutions.</description>
+      <pubDate>Fri, 05 Sep 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Mitsubishi Heavy Industries plans to double gas turbine production over the next two years to meet surging demand from AI data centers and global energy needs, amid a U.S. 45 GW deficit driving localized and off-grid solutions.</description>
     </item>
     <item>
       <title>My Journey with Autonomous Drones in Long-Range Transmission Line Inspections</title>
       <link>https://ampere.dev/blog/drone-inspection-journey/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/drone-inspection-journey/</guid>
-      <pubDate>2025-08-31 00:00:00 +0000</pubDate>
-      <description>Reflecting on early 2011–2013 ideas for autonomous drone inspections of transmission lines, now validated by industry advancements in AI, LiDAR, thermal/UV sensors, and regulatory progress for safer, more efficient grid maintenance.</description>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Reflecting on early 2011–2013 ideas for autonomous drone inspections of transmission lines, now validated by industry advancements in AI, LiDAR, thermal/UV sensors, and regulatory progress for safer, more efficient grid maintenance.</description>
     </item>
     <item>
       <title>Trump’s Emergency Action to Save the Grid: Addressing the AI-Driven Energy Crisis</title>
       <link>https://ampere.dev/blog/trump-grid-reliability-emergency-action/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/trump-grid-reliability-emergency-action/</guid>
-      <pubDate>2025-08-30 00:00:00 +0000</pubDate>
-      <description>Trump’s DOE emergency order extends Eddystone Generating Station units to avert PJM blackouts amid AI-driven demand surge, highlighting a ~50 GW U.S. power deficit and the need for reliable baseload sources.</description>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Trump’s DOE emergency order extends Eddystone Generating Station units to avert PJM blackouts amid AI-driven demand surge, highlighting a ~50 GW U.S. power deficit and the need for reliable baseload sources.</description>
     </item>
     <item>
       <title>Navigating the Trillion-Dollar Data Center Challenge: Lessons from Visionary Focus</title>
       <link>https://ampere.dev/blog/trillion-dollar-data-center-challenge/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/trillion-dollar-data-center-challenge/</guid>
-      <pubDate>2025-08-19 00:00:00 +0000</pubDate>
-      <description>The data center industry faces a $1 trillion capex surge by 2030 driven by AI, with power, cooling, and talent shortages as solvable challenges through focused innovation inspired by Jobs and Musk.</description>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The data center industry faces a $1 trillion capex surge by 2030 driven by AI, with power, cooling, and talent shortages as solvable challenges through focused innovation inspired by Jobs and Musk.</description>
     </item>
     <item>
       <title>US Grid Watchdog: Data Centers Must Bring Their Own Power to Ease Grid Strain</title>
       <link>https://ampere.dev/blog/us-grid-watchdog-data-centers-own-power/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/us-grid-watchdog-data-centers-own-power/</guid>
-      <pubDate>2025-08-19 00:00:00 +0000</pubDate>
-      <description>Monitoring Analytics urges large data centers in PJM to generate their own power as the grid lacks capacity amid AI-driven demand surge, warning of soaring costs and blackouts without action.</description>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Monitoring Analytics urges large data centers in PJM to generate their own power as the grid lacks capacity amid AI-driven demand surge, warning of soaring costs and blackouts without action.</description>
+    </item>
+    <item>
+      <title>The AI Data Centre Boom: Balancing Growth and Sustainability in 2025</title>
+      <link>https://ampere.dev/blog/ai-data-centre-boom-balancing-growth-sustainability/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ai-data-centre-boom-balancing-growth-sustainability/</guid>
+      <pubDate>Mon, 12 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The global AI boom drives hyperscale data centre growth at 20% annually post-2028, facing challenges in rack density, supply chains, sustainability, and speculative overbuild risks.</description>
     </item>
     <item>
       <title>HyperGrid: Powering the AI Revolution with Nuclear Energy in Texas</title>
       <link>https://ampere.dev/blog/hypergrid-ai-nuclear-campus/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/hypergrid-ai-nuclear-campus/</guid>
-      <pubDate>2025-08-04 00:00:00 +0000</pubDate>
-      <description>Fermi America and Hyundai E&amp;C partner on the 5,769-acre HyperGrid campus near Amarillo, Texas, targeting up to 11 GW of hybrid nuclear-gas-solar power by 2032 to meet AI’s massive energy needs with behind-the-meter reliability.</description>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Fermi America and Hyundai E&amp;C partner on the 5,769-acre HyperGrid campus near Amarillo, Texas, targeting up to 11 GW of hybrid nuclear-gas-solar power by 2032 to meet AI’s massive energy needs with behind-the-meter reliability.</description>
     </item>
     <item>
       <title>Grid on the Brink: PJM’s 2026/2027 Auction Signals Urgent Need for Reliable Power</title>
       <link>https://ampere.dev/blog/pjm-auction-crisis-2025/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/pjm-auction-crisis-2025/</guid>
-      <pubDate>2025-08-01 00:00:00 +0000</pubDate>
-      <description>PJM’s 2026/2027 capacity auction cleared at the FERC price cap of $329.17/MW-day, a 22% jump, reflecting surging demand, retiring coal/gas plants, and delays in new capacity—highlighting the urgent need for dispatchable power to avoid blackouts.</description>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: PJM’s 2026/2027 capacity auction cleared at the FERC price cap of $329.17/MW-day, a 22% jump, reflecting surging demand, retiring coal/gas plants, and delays in new capacity—highlighting the urgent need for dispatchable power to avoid blackouts.</description>
     </item>
     <item>
       <title>Tracking America’s Energy Evolution: Insights from the 2023 LLNL Energy Flow Chart</title>
       <link>https://ampere.dev/blog/us-energy-flows-2023/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/us-energy-flows-2023/</guid>
-      <pubDate>2025-08-01 00:00:00 +0000</pubDate>
-      <description>LLNL’s 2023 Sankey diagram shows 93.6 quads consumed with 60% rejected as waste, highlighting renewable gains, nuclear stability, and the need for efficiency amid rising AI-driven demand.</description>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: LLNL’s 2023 Sankey diagram shows 93.6 quads consumed with 60% rejected as waste, highlighting renewable gains, nuclear stability, and the need for efficiency amid rising AI-driven demand.</description>
     </item>
     <item>
       <title>The AI-Driven Data Center Revolution: Reshaping Supply Chains for High-Density Racks</title>
       <link>https://ampere.dev/blog/ai-data-center-supply-chain-evolution/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/ai-data-center-supply-chain-evolution/</guid>
-      <pubDate>2025-08-01 00:00:00 +0000</pubDate>
-      <description>AI’s push toward 1 MW racks is transforming data center architecture and supply chains, demanding high-voltage DC, advanced liquid cooling, and resilient sourcing to meet explosive compute and energy needs.</description>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI’s push toward 1 MW racks is transforming data center architecture and supply chains, demanding high-voltage DC, advanced liquid cooling, and resilient sourcing to meet explosive compute and energy needs.</description>
     </item>
     <item>
       <title>North American Data Center Boom: Hyperscalers Drive Unprecedented Expansion</title>
       <link>https://ampere.dev/blog/north-american-data-center-boom/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/north-american-data-center-boom/</guid>
-      <pubDate>2025-08-01 00:00:00 +0000</pubDate>
-      <description>Hyperscalers like Google, Amazon, and Microsoft are fueling a historic North American data center surge with multi-billion-dollar investments in Iowa, North Carolina, Pennsylvania, Virginia, and beyond—driving AI growth while straining power grids and creating thousands of jobs.</description>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Hyperscalers like Google, Amazon, and Microsoft are fueling a historic North American data center surge with multi-billion-dollar investments in Iowa, North Carolina, Pennsylvania, Virginia, and beyond—driving AI growth while straining power grids and creating thousands of jobs.</description>
     </item>
     <item>
       <title>Grid on the Brink: AI Data Centers Push U.S. Power System to the Limit</title>
       <link>https://ampere.dev/blog/grid-at-breaking-point/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/grid-at-breaking-point/</guid>
-      <pubDate>2025-07-23 00:00:00 +0000</pubDate>
-      <description>PJM’s 2026/2027 auction cleared at the FERC price cap of $329.17/MW-day—a 22% jump—amid surging AI demand, retiring coal/gas plants, and grid strain, signaling urgent need for dispatchable power to prevent blackouts and price spikes.</description>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: PJM’s 2026/2027 auction cleared at the FERC price cap of $329.17/MW-day—a 22% jump—amid surging AI demand, retiring coal/gas plants, and grid strain, signaling urgent need for dispatchable power to prevent blackouts and price spikes.</description>
     </item>
     <item>
       <title>The AI Boom Is Sending Your Electricity Bills Through the Roof</title>
       <link>https://ampere.dev/blog/ai-power-crisis/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/ai-power-crisis/</guid>
-      <pubDate>2025-07-23 00:00:00 +0000</pubDate>
-      <description>AI’s explosive growth is pushing PJM Interconnection to its limits, driving capacity auction prices to the FERC cap of $329.17/MW-day and threatening 20–30% bill hikes for consumers as data centers outpace grid capacity.</description>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI’s explosive growth is pushing PJM Interconnection to its limits, driving capacity auction prices to the FERC cap of $329.17/MW-day and threatening 20–30% bill hikes for consumers as data centers outpace grid capacity.</description>
     </item>
     <item>
       <title>America’s Looming Electricity Crisis: Rationing on the Horizon?</title>
       <link>https://ampere.dev/blog/americas-electricity-crisis/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/americas-electricity-crisis/</guid>
-      <pubDate>2025-07-20 00:00:00 +0000</pubDate>
-      <description>Global electricity demand is set to double in two decades, but U.S. aging grids, retiring baseload plants, and AI-driven surges raise fears of rationing—while China builds coal and nuclear at unprecedented speed.</description>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Global electricity demand is set to double in two decades, but U.S. aging grids, retiring baseload plants, and AI-driven surges raise fears of rationing—while China builds coal and nuclear at unprecedented speed.</description>
     </item>
     <item>
       <title>PJM Interconnection’s Maximum Generation Alert: Navigating Grid Strain Amid Soaring Temperatures</title>
       <link>https://ampere.dev/blog/pjm-maximum-generation-alert/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/pjm-maximum-generation-alert/</guid>
-      <pubDate>2025-07-16 00:00:00 +0000</pubDate>
-      <description>PJM’s July 16, 2025 Maximum Generation and Load Management Alerts highlight grid strain from heatwaves and rising demand—medium-voltage load banks and resilient infrastructure are vital to ensure substation reliability.</description>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: PJM’s July 16, 2025 Maximum Generation and Load Management Alerts highlight grid strain from heatwaves and rising demand—medium-voltage load banks and resilient infrastructure are vital to ensure substation reliability.</description>
     </item>
     <item>
       <title>Surging Transformer Demand and Aging Grids: Challenges and Solutions for America’s Power Infrastructure</title>
       <link>https://ampere.dev/blog/transformer-demand-aging-grids/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/transformer-demand-aging-grids/</guid>
-      <pubDate>2025-07-15 00:00:00 +0000</pubDate>
-      <description>With 55% of distribution transformers over 33 years old and demand set to rise 260% by 2050 due to EVs, data centers, and renewables, the U.S. grid faces a critical supply and reliability crisis—addressed by remanufacturing, smart tech, and the CIRCUIT Act.</description>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: With 55% of distribution transformers over 33 years old and demand set to rise 260% by 2050 due to EVs, data centers, and renewables, the U.S. grid faces a critical supply and reliability crisis—addressed by remanufacturing, smart tech, and the CIRCUIT Act.</description>
+    </item>
+    <item>
+      <title>Navigating the Build America, Buy America Act: A Guide for Infrastructure Projects</title>
+      <link>https://ampere.dev/blog/baba-compliance-guide/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/baba-compliance-guide/</guid>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: BABAA mandates 55% domestic content for federally funded infrastructure projects—here’s how to achieve compliance for electrical transformers amid supply chain constraints, tariffs, and rising demand.</description>
+    </item>
+    <item>
+      <title>EGSA’s Load Bank Certification: Elevating Skills in Power Generation</title>
+      <link>https://ampere.dev/blog/egsa-load-bank-certification/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/egsa-load-bank-certification/</guid>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: EGSA’s new 2.5-day Load Bank Certification course combines hands-on and classroom training to certify technicians in load bank operation, safety, and performance testing—critical for reliable on-site power systems.</description>
+    </item>
+    <item>
+      <title>Google’s Data Center Energy Surge: AI and the Path to Sustainability</title>
+      <link>https://ampere.dev/blog/google-data-center-energy/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/google-data-center-energy/</guid>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Google’s 2024 report shows data center energy doubled to 30.8 million MWh in four years due to AI, with near-optimal PUE of 1.09 and a push for 100% renewables to balance growth and sustainability.</description>
+    </item>
+    <item>
+      <title>Empowering Safety: Insights from Pam Tompkins’ SET Solutions Training</title>
+      <link>https://ampere.dev/blog/set-solutions-safety-training/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/set-solutions-safety-training/</guid>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Pam Tompkins’ SET Solutions safety training seminar delivers 40+ years of expertise in OSHA 1910.269 compliance, hazard identification, and human performance improvement—empowering utility professionals to build safer, more resilient workplaces.</description>
+    </item>
+    <item>
+      <title>Cove Architecture Unveils World’s First AI-Designed Data Center in Colorado</title>
+      <link>https://ampere.dev/blog/ai-designed-data-center-colorado/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ai-designed-data-center-colorado/</guid>
+      <pubDate>Sat, 21 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Cove Architecture completes the world’s first fully AI-designed 10,000 sq ft data center in Hartsel, Colorado, in just 30 days—demonstrating how agentic AI can slash design timelines by up to 75% for high-density AI workloads.</description>
+    </item>
+    <item>
+      <title>Data Centers Pose Threat to U.S. Electric Grids, NERC Warns</title>
+      <link>https://ampere.dev/blog/data-centers-grid-threat/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/data-centers-grid-threat/</guid>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: NERC’s 2025 report flags large AI/crypto data centers as a top near-term risk to U.S. grid stability—outages in Northern Virginia (1.5–1.8 GW losses) highlight the urgent need for better integration and forecasting to avoid blackouts.</description>
+    </item>
+    <item>
+      <title>U.S. Data Center Powerhouses: The Five Fastest-Growing Hubs Fueling AI and Cloud Computing</title>
+      <link>https://ampere.dev/blog/us-data-center-powerhouses/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/us-data-center-powerhouses/</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Las Vegas/Reno, Salt Lake City, Phoenix, Atlanta, and Northern Virginia lead the U.S. data center boom with 553–953% projected capacity growth—driven by AI demand while straining grids and spurring renewable/nuclear investments.</description>
+    </item>
+    <item>
+      <title>Project Blue: Secretive Data Center Complex Sparks Debate in Southeast Tucson</title>
+      <link>https://ampere.dev/blog/project-blue-tucson/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/project-blue-tucson/</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Pima County supervisors debate the secretive $20.8 million sale for Project Blue—a proposed 8–10 data center complex on 290 acres near Tucson’s fairgrounds—amid concerns over undisclosed water and electricity demands in a drought-prone region.</description>
+    </item>
+    <item>
+      <title>Data Centers: A Growing Factor in Arizona’s Water Budget</title>
+      <link>https://ampere.dev/blog/arizona-data-centers-water/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/arizona-data-centers-water/</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Arizona’s data centers, projected to use 905 million gallons of water in 2025, are a small but growing part of the state’s water budget—driven by AI and cloud growth in the Phoenix Valley, with reclaimed water pipelines and zero-water cooling offering mitigation.</description>
+    </item>
+    <item>
+      <title>Arizona’s Data Center Boom: Straining the Grid Amid AI-Driven Growth</title>
+      <link>https://ampere.dev/blog/arizona-data-center-boom/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/arizona-data-center-boom/</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Arizona’s Phoenix Valley is a top U.S. data center hub, with AI driving demand that could reach 16.5% of state electricity by 2030—prompting the Arizona Corporation Commission to review grid strain and explore on-site power solutions.</description>
+    </item>
+    <item>
+      <title>High-Voltage Cable Shortage: A Bottleneck for Clean Energy and Grid Resilience</title>
+      <link>https://ampere.dev/blog/high-voltage-cable-shortage/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/high-voltage-cable-shortage/</guid>
+      <pubDate>Fri, 13 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: High-voltage cable lead times stretch to 2029 amid surging renewable and AI demand, creating a critical bottleneck for grid modernization—medium-voltage load banks with three-cable efficiency help ensure substation reliability.</description>
+    </item>
+    <item>
+      <title>OpenAI’s Objection to NYT’s Data Preservation Order: Balancing AI Innovation and Privacy</title>
+      <link>https://ampere.dev/blog/openai-nyt-preservation-objection/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/openai-nyt-preservation-objection/</guid>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: OpenAI objects to a sweeping court order requiring indefinite retention of all ChatGPT logs in the NYT copyright case, citing technical infeasibility, privacy conflicts, and massive burdens on AI data center infrastructure.</description>
+    </item>
+    <item>
+      <title>U.S. Data Center Boom: Buildouts and Grid Resilience with Ampere’s Solutions</title>
+      <link>https://ampere.dev/blog/us-data-center-buildouts/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/us-data-center-buildouts/</guid>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Major U.S. data center buildouts in Arizona, Texas, Louisiana, Pennsylvania, and beyond are driven by AI demand, straining grids—Ampere’s load banks, Starline tapboxes, FLIR inspections, power quality monitoring, transformers, and 3D fabrication ensure reliability and resilience.</description>
+    </item>
+    <item>
+      <title>Is the U.S. Power Grid Becoming More Vulnerable? The Role of Medium-Voltage Load Banks</title>
+      <link>https://ampere.dev/blog/us-power-grid-vulnerability/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/us-power-grid-vulnerability/</guid>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Aging infrastructure, AI-driven demand, and renewable intermittency increase U.S. grid vulnerability—medium-voltage load banks provide critical substation testing to ensure reliability and prevent costly outages.</description>
+    </item>
+    <item>
+      <title>Trump’s Nuclear Push: 400 GW by 2050 and SMRs for AI Data Centers</title>
+      <link>https://ampere.dev/blog/trump-nuclear-expansion/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/trump-nuclear-expansion/</guid>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Trump’s plan to quadruple U.S. nuclear capacity to 400 GW by 2050, with 10 large reactors by 2030 and SMRs powering AI data centers, aims to meet surging demand and strengthen grid reliability amid a ~50 GW shortfall.</description>
+    </item>
+    <item>
+      <title>AI 2027: Forecasting a Superhuman Coder and the Dawn of Artificial Superintelligence</title>
+      <link>https://ampere.dev/blog/ai-2027-forecast/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ai-2027-forecast/</guid>
+      <pubDate>Sat, 31 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The AI 2027 report predicts a superhuman AI coder by March 2027 and ASI by late 2027, driving 10 GW+ compute demand that will severely stress data centers, grids, and national security.</description>
+    </item>
+    <item>
+      <title>Load Banks in Data Centers: Ensuring Reliability for Colocation and AI Workloads</title>
+      <link>https://ampere.dev/blog/load-banks-data-centers/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/load-banks-data-centers/</guid>
+      <pubDate>Tue, 27 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: As AI racks hit 1–5 MW and colocation SLAs tighten, load banks validate UPS, generators, and power quality—preventing $1–2M outages and enabling reliable high-density computing.</description>
+    </item>
+    <item>
+      <title>Load Bank Testing: Ensuring Solar Farm Performance and Grid Independence</title>
+      <link>https://ampere.dev/blog/solar-farm-load-bank-testing/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/solar-farm-load-bank-testing/</guid>
+      <pubDate>Sat, 24 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: With utility-scale solar at 103 GW and grid delays stalling remote projects, load bank testing enables full-capacity commissioning, revenue acceleration, and reliable power delivery for AI data centers and resilient grids.</description>
+    </item>
+    <item>
+      <title>Transformer Shortages: Reshoring Challenges Threaten U.S. Grid and AI Data Centers</title>
+      <link>https://ampere.dev/blog/transformer-shortages-reshoring/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/transformer-shortages-reshoring/</guid>
+      <pubDate>Sat, 24 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Lead times at 120+ weeks and prices up 4–9× expose reshoring hurdles—domestic players like MGM/VanTran Transformers struggle with labor and GOES shortages while AI demand strains the grid.</description>
+    </item>
+    <item>
+      <title>Liquid Cooling: Powering the Future of AI-Driven Data Centers</title>
+      <link>https://ampere.dev/blog/liquid-cooling-data-centers/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/liquid-cooling-data-centers/</guid>
+      <pubDate>Sat, 24 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: As AI racks exceed 100 kW, liquid cooling (direct-to-chip &amp; immersion) delivers 10–30% energy savings, extreme density, and heat reuse—essential for sustainable, grid-friendly hyperscale computing.</description>
+    </item>
+    <item>
+      <title>Trump’s Nuclear Renaissance: Executive Orders to Power AI and Restore Scientific Integrity</title>
+      <link>https://ampere.dev/blog/trump-nuclear-renaissance/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/trump-nuclear-renaissance/</guid>
+      <pubDate>Fri, 23 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: President Trump’s May 23, 2025 executive orders accelerate nuclear licensing, boost domestic uranium, and mandate Gold Standard Science—delivering reliable baseload for AI data centers while rebuilding trust in federal energy research.</description>
+    </item>
+    <item>
+      <title>The Golden Dome: Bolstering Grid Resilience with Local Transformer Suppliers</title>
+      <link>https://ampere.dev/blog/golden-dome-grid-resilience/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/golden-dome-grid-resilience/</guid>
+      <pubDate>Fri, 23 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The proposed &quot;Golden Dome&quot; initiative calls for Apollo-style domestic manufacturing of transformers to secure the U.S. grid against shortages, cyberattacks, and AI-driven demand—empowering local suppliers to slash lead times and enhance national energy resilience.</description>
+    </item>
+    <item>
+      <title>Data Center Outages Decline in 2025, But Power Challenges Demand Robust Testing</title>
+      <link>https://ampere.dev/blog/data-center-outages-decline/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/data-center-outages-decline/</guid>
+      <pubDate>Wed, 21 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Uptime Institute’s 2025 report shows four years of falling outage rates, yet power failures (UPS/generators) remain the top cause—making annual load bank testing essential for AI data center reliability amid surging demands and grid strain.</description>
+    </item>
+    <item>
+      <title>Reviving Three Mile Island: A $1.6B Nuclear Restart for AI Data Centers</title>
+      <link>https://ampere.dev/blog/three-mile-island-restart/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/three-mile-island-restart/</guid>
+      <pubDate>Mon, 19 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Microsoft and Constellation Energy plan to restart Three Mile Island Unit 1 by 2028, delivering 837 MW of carbon-free baseload power to AI data centers and helping address the U.S. ~50 GW power shortfall.</description>
+    </item>
+    <item>
+      <title>Power Quality Testing: Ensuring Reliability for Load Banks, Commissioning, and Generator Performance</title>
+      <link>https://ampere.dev/blog/power-quality-testing/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/power-quality-testing/</guid>
+      <pubDate>Mon, 19 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Load bank-based power quality testing during commissioning and generator maintenance is essential to validate stability and prevent failures in AI data centers and hybrid grids facing extreme demands and intermittency risks.</description>
+    </item>
+    <item>
+      <title>Tesla’s Terawatt Ambition: Powering AI and Grids with Megapack and Powerwall</title>
+      <link>https://ampere.dev/blog/tesla-energy-innovations/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/tesla-energy-innovations/</guid>
+      <pubDate>Mon, 19 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Tesla targets a 30 TW renewable future with massive Megapack deployments (31.4 GWh in 2024) to stabilize grids and power AI data centers like xAI’s Colossus, despite supply and tariff challenges.</description>
+    </item>
+    <item>
+      <title>The Rise of AI-Driven Power Quality Monitoring: Revolutionizing Grid Reliability</title>
+      <link>https://ampere.dev/blog/ai-power-quality-monitoring/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ai-power-quality-monitoring/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI-powered monitoring detects and prevents power quality issues in real time, bolstering grid stability for renewable integration and the extreme demands of AI data centers amid a growing U.S. power shortfall.</description>
+    </item>
+    <item>
+      <title>Modular Substations: The Future of Scalable Electrical Infrastructure</title>
+      <link>https://ampere.dev/blog/modular-substations-future/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/modular-substations-future/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Prefabricated modular substations offer rapid deployment, scalability, and sustainability—critical for powering AI data centers, integrating renewables, and addressing the U.S. power deficit in hybrid grids.</description>
+    </item>
+    <item>
+      <title>Load Banks in the Age of Renewables: Ensuring Stability in Hybrid Grids</title>
+      <link>https://ampere.dev/blog/load-banks-renewables/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/load-banks-renewables/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: As renewables like solar and wind grow, load banks are key to testing and stabilizing hybrid grids against intermittency—ensuring reliable power for AI data centers amid rising demands and events like the 2025 Iberian blackout.</description>
+    </item>
+    <item>
+      <title>High-Power Fiber Laser Cutting: Revolutionizing Electrical Component Fabrication</title>
+      <link>https://ampere.dev/blog/high-power-fiber-laser-cutting/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/high-power-fiber-laser-cutting/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: High-power fiber laser cutting transforms electrical component fabrication with precision and efficiency, enabling faster production and reduced waste for transformer cores, circuit boards, and battery casings.</description>
+    </item>
+    <item>
+      <title>The Energy Transition Fallacy: Renewables, AI, and America’s Power Deficit</title>
+      <link>https://ampere.dev/blog/energy-transition-fallacy/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/energy-transition-fallacy/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Renewables like solar and wind fall short on baseload power, as shown by Spain's 2025 blackout and IEA's AI energy projections, prompting a U.S. shift to coal, LNG, and nuclear amid a 50 GW deficit.</description>
+    </item>
+    <item>
+      <title>Replacing Ancient Windows with Linux: Modernizing Legacy Systems for AI and Automation</title>
+      <link>https://ampere.dev/blog/replacing-ancient-windows-linux/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/replacing-ancient-windows-linux/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Legacy Windows like 95 and 98 persist in critical systems, but Linux offers a stable replacement for building automation and machinery controls, providing cost savings and enhanced security for AI data centers.</description>
+    </item>
+    <item>
+      <title>Fast-Tracking Velvet-Wood Mine: Uranium, Thorium, and Coal in America’s AI-Driven Energy Strategy</title>
+      <link>https://ampere.dev/blog/fast-tracking-velvet-wood-mine-uranium-thorium-coal/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/fast-tracking-velvet-wood-mine-uranium-thorium-coal/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The expedited permitting of Utah’s Velvet-Wood mine addresses U.S. energy emergency, supplying uranium for nuclear power, thorium alternatives, and coal as interim solutions to fuel AI data centers and grid resilience.</description>
+    </item>
+    <item>
+      <title>AI Data Center Innovations: Stargate’s Scale and Immersion Cooling Breakthroughs</title>
+      <link>https://ampere.dev/blog/ai-data-center-innovations/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ai-data-center-innovations/</guid>
+      <pubDate>Wed, 14 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The AI revolution is driving transformative advancements in data center infrastructure, with OpenAI’s Stargate Phase 1 in Abilene, Texas, and Intel-Shell’s immersion cooling breakthrough delivering an industry-first for energy-efficient AI operations.</description>
+    </item>
+    <item>
+      <title>Fast-Tracking Velvet-Wood Mine: Powering AI Data Centers and U.S. Energy Security</title>
+      <link>https://ampere.dev/blog/velvet-wood-mine-permitting/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/velvet-wood-mine-permitting/</guid>
+      <pubDate>Wed, 14 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The expedited 14-day permitting of Utah’s Velvet-Wood uranium-vanadium mine under President Trump’s national energy emergency addresses U.S. power demands, supplying critical minerals for nuclear energy, grid infrastructure, and AI data center growth.</description>
+    </item>
+    <item>
+      <title>3D Printing Transformers: Revolutionizing Power System Fabrication</title>
+      <link>https://ampere.dev/blog/3d-printing-transformers/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/3d-printing-transformers/</guid>
+      <pubDate>Tue, 13 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Additive manufacturing transforms transformer production with efficiency, reduced waste, and design flexibility, but faces challenges in material durability and scalability for power systems.</description>
+    </item>
+    <item>
+      <title>Google’s 1 MW IT Rack Plans: Redefining AI Data Centre Power and Cooling</title>
+      <link>https://ampere.dev/blog/google-1mw-rack-plans/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/google-1mw-rack-plans/</guid>
+      <pubDate>Mon, 12 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Google plans 1 MW IT racks using EV supply chain components for ±400 VDC power and advanced liquid cooling, addressing AI workload demands while navigating engineering and safety challenges.</description>
+    </item>
+    <item>
+      <title>New Data Center Developments in the USA: Powering the AI Revolution in 2025</title>
+      <link>https://ampere.dev/blog/new-data-center-developments-usa/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/new-data-center-developments-usa/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: The U.S. data center boom includes projects like Homer City’s 4.5 GW campus, Amazon’s $2 billion Ohio expansion, and Google’s $600 million Arizona facility, adding gigawatts to support AI and cloud demands.</description>
+    </item>
+    <item>
+      <title>Google’s Nuclear Ambitions: Powering AI Data Centers with Advanced Reactors</title>
+      <link>https://ampere.dev/blog/google-nuclear-ambitions/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/google-nuclear-ambitions/</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Google partners with Elementl Power for 1.8 GW from three advanced nuclear sites and Kairos Power for 500 MW SMRs, targeting 2.3 GW of carbon-free energy by 2035 to fuel AI data centers.</description>
+    </item>
+    <item>
+      <title>Data Centers Bypassing the Grid: Nuclear Power Fuels the AI Boom</title>
+      <link>https://ampere.dev/blog/data-centers-bypassing-grid-nuclear-power/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/data-centers-bypassing-grid-nuclear-power/</guid>
+      <pubDate>Sun, 11 May 2025 00:00:00 EST</pubDate>
+      <description>As AI drives unprecedented energy demands, tech giants bypass traditional power grids with nuclear restarts (e.g., Microsoft’s Three Mile Island) and acquisitions (e.g., Amazon’s Susquehanna campus) for reliable, carbon-free power.</description>
+    </item>
+    <item>
+      <title>Amazon’s $500M Bet on Nuclear SMRs: Powering the AI Data Center Boom</title>
+      <link>https://ampere.dev/blog/amazon-nuclear-smr/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/amazon-nuclear-smr/</guid>
+      <pubDate>Sat, 10 May 2025 00:00:00 EST</pubDate>
+      <description>Amazon invests $500 million in X-energy SMRs and partners on projects targeting 5 GW of carbon-free power by 2039 to fuel AI data centers, joining Google, Microsoft, and others in the nuclear pivot for reliable, sustainable energy.</description>
+    </item>
+    <item>
+      <title>Global AI Data Centers: Growth Continues Amid Amazon and Microsoft Adjustments</title>
+      <link>https://ampere.dev/blog/global-ai-data-centers-growth/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/global-ai-data-centers-growth/</guid>
+      <pubDate>Sat, 10 May 2025 00:00:00 EST</pubDate>
+      <description>Despite pauses by Amazon and Microsoft on some projects, the AI data center market remains strong with massive self-builds, $320 billion in top-four spending for 2025, and continued momentum from hyperscalers.</description>
+    </item>
+    <item>
+      <title>2025 Global Data Center Outlook: Powering the AI Revolution</title>
+      <link>https://ampere.dev/blog/global-data-center-outlook/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/global-data-center-outlook/</guid>
+      <pubDate>Sat, 10 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI and HPC drive a 15-20% CAGR in data centers through 2027, with power scarcity, transmission delays, and sustainability challenges met by innovations like liquid cooling and nuclear energy.</description>
+    </item>
+    <item>
+      <title>The Rise of Modular Substations: Revolutionizing Power Infrastructure</title>
+      <link>https://ampere.dev/blog/modular-substations/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/modular-substations/</guid>
+      <pubDate>Mon, 05 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Modular substations deliver faster deployment, scalability, and sustainability benefits, with the market expected to grow by USD 28.84 billion at a 7.25% CAGR by 2030, led by innovations from Miller Industries, Esfro Solutions, and Flex Air.</description>
+    </item>
+    <item>
+      <title>Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers</title>
+      <link>https://ampere.dev/blog/avtron-power-solutions-new-frontiers/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/avtron-power-solutions-new-frontiers/</guid>
+      <pubDate>Sat, 03 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Avtron Power Solutions featured on New Frontiers (Q3 2025) for liquid-cooled load banks like the LC-20 and SIGMA Unity software, amid booming load bank rental market and liquid cooling adoption in AI data centers.</description>
+    </item>
+    <item>
+      <title>The AI-Driven Data Center Boom: Balancing Innovation and Sustainability</title>
+      <link>https://ampere.dev/blog/ai-data-centers/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ai-data-centers/</guid>
+      <pubDate>Fri, 02 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI drives a $57 billion data center supercycle with 160% demand growth, spurring infrastructure innovation while raising sustainability challenges in energy, cooling, and load testing.</description>
+    </item>
+    <item>
+      <title>America’s Energy Deficit and Trump’s National Energy Emergency Declaration</title>
+      <link>https://ampere.dev/blog/americas-energy-deficit-trump-coal-emergency/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/americas-energy-deficit-trump-coal-emergency/</guid>
+      <pubDate>Thu, 01 May 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: AI data centers demand an extra 45 GW while U.S. coal plants close—China surges ahead. Trump declares a national energy emergency to revive coal and tap $9 trillion in reserves.</description>
+    </item>
+    <item>
+      <title>Nvidia’s Jensen Huang Sounds the Alarm: The Infinite AI Race with China &amp; the Trade Jobs Boom!</title>
+      <link>https://ampere.dev/blog/jensen-huang-us-china-ai-race-trade-jobs-boom/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/jensen-huang-us-china-ai-race-trade-jobs-boom/</guid>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Nvidia CEO Jensen Huang warns the U.S.-China AI race is neck-and-neck and truly infinite—while spotlighting the massive resurgence of high-paying skilled trade jobs driven by the rise of gigawatt-scale AI factories.</description>
+    </item>
+    <item>
+      <title>Mr. Wonderful’s A.I. Power Play: 45 GW of North Dakota Domination!</title>
+      <link>https://ampere.dev/blog/mr-wonderfuls-ai-power-play/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/mr-wonderfuls-ai-power-play/</guid>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 EST</pubDate>
+      <description>Short teaser: Kevin O’Leary dives into A.I. with a massive 45 GW plan in North Dakota—here’s why it matters for the future of data centers and opportunity.</description>
     </item>
   </channel>
 </rss>
