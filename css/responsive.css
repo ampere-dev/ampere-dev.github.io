@@ -4,8 +4,9 @@
   --accent-color: #fe0002;
   --text-color: #000;
   --menu-width: 250px;
-  --toggler-size: 22px;
+  --toggler-size: 24px;           /* slightly larger for better touch */
   --transition-speed: 0.3s;
+  --backdrop-bg: rgba(0, 0, 0, 0.45);
 }
 
 /* Global box-sizing for consistency */
@@ -19,6 +20,17 @@ body {
   margin: 0;
 }
 
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Hide menu toggler by default */
 .menuToggler {
   display: none;
@@ -26,17 +38,24 @@ body {
 
 /* Responsive styles for screens <= 1150px */
 @media (max-width: 1150px) {
+  /* Body scroll lock when menu is open */
+  body.menu-open {
+    overflow: hidden;
+    touch-action: none;
+  }
+
   .menuToggler {
     display: block;
     background: transparent;
     position: fixed;
     top: 30px;
     right: 20px;
-    border-radius: 5px;
+    width: 44px;                /* minimum touch target size */
+    height: 44px;
     padding: 10px;
     border: 1px solid #181818;
-    z-index: 100; /* Higher z-index for visibility */
-    font-family: 'Ubuntu', sans-serif;
+    border-radius: 6px;
+    z-index: 1000;
     cursor: pointer;
     transition: background var(--transition-speed) ease;
   }
@@ -45,23 +64,24 @@ body {
     display: block;
     height: 3px;
     background: var(--text-color);
-    margin: 5px 0;
+    margin: 5px auto;
     width: var(--toggler-size);
     transition: transform var(--transition-speed) ease, opacity var(--transition-speed) ease;
   }
 
   .menuToggler:hover,
   .menuToggler:focus-visible {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.12);
   }
 
-  /* Accessibility: Focus state for keyboard navigation */
+  /* Improved focus state */
   .menuToggler:focus-visible {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+    border-radius: 8px;
   }
 
-  /* Hamburger to "X" transformation */
+  /* Hamburger → X transformation */
   .menuToggler.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
@@ -80,20 +100,43 @@ body {
 
   #header {
     position: fixed;
+    inset: 0  auto 0 0;               /* top right bottom left */
     width: var(--menu-width);
-    background: rgba(0, 0, 0, 0.9);
-    height: 100vh;
-    left: calc(-1 * var(--menu-width));
-    top: 0;
+    max-width: 85vw;                  /* safety for very narrow screens */
+    background: rgba(0, 0, 0, 0.92);
+    transform: translateX(calc(-1 * var(--menu-width)));
+    transition: transform var(--transition-speed) ease;
+    z-index: 100;
     overflow-y: auto;
     color: var(--primary-color);
-    padding-top: 50px;
-    transition: left var(--transition-speed) ease;
-    z-index: 10;
+    padding-top: 70px;
   }
 
   #header.active {
-    left: 0;
+    transform: translateX(0);
+  }
+
+  /* Backdrop overlay */
+  #header::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: var(--backdrop-bg);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+      opacity var(--transition-speed) ease,
+      visibility 0s linear var(--transition-speed);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  #header.active::before {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    pointer-events: auto;
   }
 
   #header ul {
@@ -108,22 +151,23 @@ body {
 
   #header a {
     display: block;
-    padding: 15px 20px;
+    padding: 16px 24px;
     color: var(--primary-color);
-    border-bottom: 1px solid rgba(228, 228, 228, 0.6);
-    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 1.25em;
     text-decoration: none;
-    transition: color var(--transition-speed) ease;
+    transition: color var(--transition-speed) ease, background var(--transition-speed) ease;
   }
 
   #header a:hover,
   #header a:focus-visible {
     color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.08);
   }
 
   #header a:focus-visible {
-    outline: 2px solid var(--accent-color);
-    outline-offset: 2px;
+    outline: 3px solid var(--accent-color);
+    outline-offset: -3px;
   }
 
   .bg-text {
@@ -141,7 +185,7 @@ body {
   table,
   iframe {
     max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
   }
 }
 
@@ -149,6 +193,7 @@ body {
 @media (max-width: 768px) {
   .menuToggler {
     top: 20px;
+    right: 16px;
   }
 
   body.home {
@@ -159,12 +204,12 @@ body {
   }
 
   .image-container img {
-    width: clamp(100px, 20vw, 150px); /* Responsive image sizing */
+    width: clamp(100px, 20vw, 150px);
   }
 
   p.ex2,
   h1 {
-    margin-inline: 0; /* Logical property for RTL support */
+    margin-inline: 0;
   }
 
   #toc_container {
