@@ -6,7 +6,14 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 05:02:41 EST</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 16:40:07 EST</lastBuildDate>
+    <item>
+      <title>Microgrids for Data Centers: Commissioning Up to 100 MW Using Load Banks – Enhancing Uptime While Reducing Costs</title>
+      <link>https://ampere.dev/blog/microgrids-data-centers-100mw-load-bank-commissioning/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/microgrids-data-centers-100mw-load-bank-commissioning/</guid>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: In the AI era, 100 MW+ data center microgrids integrate gas engines, BESS, and renewables for primary power and resilience—load banks enable safe, full-scale commissioning without live IT, cutting risks and accelerating deployment.</description>
+    </item>
     <item>
       <title>Solid-State Transformers: Technical Architecture, Performance Metrics, Real-World Trade-offs, and Transformative Potential for Grid Modernization</title>
       <link>https://ampere.dev/blog/solid-state-transformers-technical-architecture/</link>

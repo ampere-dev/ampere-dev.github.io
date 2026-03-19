@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ampere.dev/blog/microgrids-data-centers-100mw-load-bank-commissioning/</loc>
+    <lastmod>2026-03-19T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ampere.dev/blog/solid-state-transformers-technical-architecture/</loc>
     <lastmod>2026-03-04T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
