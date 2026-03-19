@@ -5,7 +5,7 @@ date: 2026-03-19
 categories: [Data Centers, Microgrids, Load Bank Testing, Commissioning, AI Power Demands, Grid Resilience, On-Site Generation]
 excerpt: In the AI era, 100 MW+ data center microgrids integrate gas engines, BESS, and renewables for primary power and resilience—load banks enable safe, full-scale commissioning without live IT, cutting risks and accelerating deployment.
 ---
-**Posted by Ampere Development Team**
+**Posted by Ampere Development Team** 
 
 In the era of explosive AI growth, data centers face unprecedented power demands, often exceeding 100 MW per site. Traditional reliance on the grid and diesel backups is increasingly strained by delays in grid connections, rising costs, and sustainability mandates. **Microgrids**—localized energy systems integrating on-site generation, storage, and controls—emerge as a strategic solution, providing primary power, resilience, and cost optimization.
 
