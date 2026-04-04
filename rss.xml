@@ -6,7 +6,14 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 16:40:07 EST</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2026 08:31:32 EST</lastBuildDate>
+    <item>
+      <title>The AI Data Center Boom Hits Reality: Construction Spending Shifts, But Half of 2026 Projects Face Delays or Cancellations</title>
+      <link>https://ampere.dev/blog/ai-data-center-boom-hits-reality/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/ai-data-center-boom-hits-reality/</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: Data center construction spending has now surpassed office buildings for the first time, yet nearly half of planned 2026 projects face delays or cancellations due to transformer shortages, grid bottlenecks, and long-lead electrical components.</description>
+    </item>
     <item>
       <title>Microgrids for Data Centers: Commissioning Up to 100 MW Using Load Banks – Enhancing Uptime While Reducing Costs</title>
       <link>https://ampere.dev/blog/microgrids-data-centers-100mw-load-bank-commissioning/</link>
