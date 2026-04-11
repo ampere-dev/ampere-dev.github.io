@@ -6,7 +6,14 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2026 08:31:32 EST</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 04:12:54 EST</lastBuildDate>
+    <item>
+      <title>DC Power Returns to Data Centers: Coming Full Circle from Edison to Tesla—and Back</title>
+      <link>https://ampere.dev/blog/dc-power-data-centers-edison-tesla-full-circle/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/dc-power-data-centers-edison-tesla-full-circle/</guid>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: The push for direct DC power distribution in AI data centers—especially native 800 V DC—eliminates multiple AC-DC conversion stages, slashes losses, reduces copper, and frees space for more compute. This marks a historic full circle: Edison’s DC vision, Tesla’s AC victory, and now DC’s return at rack level for hyperscale efficiency.</description>
+    </item>
     <item>
       <title>The AI Data Center Boom Hits Reality: Construction Spending Shifts, But Half of 2026 Projects Face Delays or Cancellations</title>
       <link>https://ampere.dev/blog/ai-data-center-boom-hits-reality/</link>
