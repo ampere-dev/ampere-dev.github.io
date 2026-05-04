@@ -6,7 +6,21 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 04:12:54 EST</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 23:47:40 EST</lastBuildDate>
+    <item>
+      <title>Economics of a Megawatt of AI Data Center: Granular Unit Economics</title>
+      <link>https://ampere.dev/blog/economics-megawatt-ai-data-center/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/economics-megawatt-ai-data-center/</guid>
+      <pubDate>Sun, 03 May 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: A single MW of AI data center capacity costs ~$59M upfront but can generate $15M–$30M+ in annual revenue with only $1–1.1M opex. The numbers are compelling — but the technical details behind them are even more fascinating.</description>
+    </item>
+    <item>
+      <title>Beyond Checklists: How Digital Commissioning Is Making AI Data Centers Actually Reliable</title>
+      <link>https://ampere.dev/blog/digital-commissioning-ai-data-centers/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/digital-commissioning-ai-data-centers/</guid>
+      <pubDate>Sun, 03 May 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: Traditional commissioning fails under AI-scale complexity. Digital platforms and shift-left strategies — led by players like Serban and SGS — are compressing timelines by 30–50% while dramatically improving reliability and reducing costly late-stage surprises.</description>
+    </item>
     <item>
       <title>DC Power Returns to Data Centers: Coming Full Circle from Edison to Tesla—and Back</title>
       <link>https://ampere.dev/blog/dc-power-data-centers-edison-tesla-full-circle/</link>

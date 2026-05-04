@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ampere.dev/blog/economics-megawatt-ai-data-center/</loc>
+    <lastmod>2026-05-03T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/blog/digital-commissioning-ai-data-centers/</loc>
+    <lastmod>2026-05-03T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ampere.dev/blog/dc-power-data-centers-edison-tesla-full-circle/</loc>
     <lastmod>2026-04-11T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
