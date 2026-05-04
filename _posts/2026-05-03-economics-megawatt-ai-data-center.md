@@ -66,6 +66,6 @@ At the same time, the numbers highlight the importance of execution: securing lo
 
 The AI data center boom isn’t just about GPUs — it’s about mastering the physics and economics of delivering reliable, high-density power at scale. The operators who get the granular details right will capture the biggest share of the upside.
 
-What stands out most to you in these numbers — the low opex, the power delivery challenges, or the revenue potential? I’d love to hear your thoughts in the comments.
+What stands out most to you in these numbers — the low opex, the power delivery challenges, or the revenue potential?
 
 *— Reported based on operator disclosures, industry benchmarks, and commissioning data, May 2026*
