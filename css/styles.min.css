@@ -1,4 +1,4 @@
-/* ====================== MERGED STYLES.CSS (main + header + footer + index + responsive) ====================== */
+/* ====================== MERGED STYLES.CSS (Optimized) ====================== */
 
 /* Global & Main Styles */
 html, body {
@@ -16,10 +16,19 @@ body {
     background-color: #FFFFFF;
     box-sizing: border-box;
 }
+
+/* HERO BACKGROUND - Optimized */
 body.home {
     color: #FFFFFF;
-    background: url('../images/Collage.webp') no-repeat center center fixed;
-    background-size: cover;
+    background: url('/images/Collage.webp') no-repeat center center / cover fixed;
+    position: relative;
+}
+
+/* Smaller mobile version (highly recommended for LCP) */
+@media (max-width: 768px) {
+    body.home {
+        background-image: url('/images/Collage-mobile.webp');
+    }
 }
 
 /* Dark overlay on home */
@@ -28,7 +37,7 @@ html::before {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.35);
     z-index: 1;
     pointer-events: none;
 }
@@ -70,7 +79,7 @@ h2.tagline {
     margin-bottom: 1rem;
 }
 
-/* Header */
+/* ====================== HEADER ====================== */
 header { position: relative; z-index: 10; }
 
 #logo {
@@ -115,7 +124,7 @@ header { position: relative; z-index: 10; }
 .home .nav-menu a { color: #FFFFFF; }
 .nav-menu a:hover { color: #FE0002; }
 
-/* Footer */
+/* ====================== FOOTER ====================== */
 #footer {
     flex-shrink: 0;
     display: flex;
@@ -155,9 +164,10 @@ body.home #footer * {
 }
 .social-icons img { height: 20px; }
 
-/* Buttons */
+/* ====================== BUTTONS ====================== */
 .btn-red, .btn-white, .btn-blue, .btn-slack {
     border: none;
+    text-decoration: none;
 }
 .btn-red { background-color: #ff0000 !important; color: #ffffff !important; }
 .btn-white { background-color: #ffffff !important; color: #000000 !important; border-color: #000000 !important; }
@@ -169,7 +179,56 @@ body.home #footer * {
 .btn-blue:hover { background-color: #0000cc !important; }
 .btn-slack:hover { background-color: #611F69 !important; }
 
-/* Responsive */
+/* ====================== SLACK BUTTON (Fixed Underline) ====================== */
+.slack-button-wrapper {
+    position: relative;
+    width: 490px;
+    height: 60px;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.slack-button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4A154B 0%, #2c0a2f 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: transform 0.3s ease;
+    animation: float 9s ease-in-out infinite;
+    z-index: 2;
+    padding: 14px 24px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.4;
+    border: none;
+}
+
+.slack-button:hover {
+    transform: scale(1.05);
+    text-decoration: none !important;
+}
+
+.slack-text {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    font-weight: 400;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+    50% { transform: translateY(-16px) rotateX(2.5deg) rotateY(1deg); }
+}
+
+/* ====================== RESPONSIVE ====================== */
 :root {
     --primary-color: #fff;
     --accent-color: #fe0002;
@@ -177,7 +236,6 @@ body.home #footer * {
     --menu-width: 250px;
     --toggler-size: 24px;
     --transition-speed: 0.3s;
-    --backdrop-bg: rgba(0, 0, 0, 0.45);
 }
 
 * { box-sizing: border-box; }
@@ -205,7 +263,6 @@ body.home #footer * {
         width: var(--toggler-size);
         transition: all var(--transition-speed) ease;
     }
-    /* Hamburger to X */
     .menuToggler.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .menuToggler.active span:nth-child(2) { opacity: 0; }
     .menuToggler.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
@@ -240,5 +297,8 @@ body.home #footer * {
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { transition: none !important; animation: none !important; }
+    *, *::before, *::after { 
+        transition: none !important; 
+        animation: none !important; 
+    }
 }
