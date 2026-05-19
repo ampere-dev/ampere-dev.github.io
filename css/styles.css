@@ -106,3 +106,27 @@ body:not(.home) #footer .footer-links a:hover {
     color: #FE0002 !important;
 }
 
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/ubuntu-v21-latin-regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/ubuntu-v21-latin-500.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/ubuntu-v21-latin-700.woff2') format('woff2');
+    font-display: swap;
+}
+
