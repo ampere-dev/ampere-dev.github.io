@@ -6,7 +6,14 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2026 23:47:40 EST</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 05:53:38 EST</lastBuildDate>
+    <item>
+      <title>PJM’s Emergency Curtailment Order: What It Means for Data Centers, Grid Reliability, and the AI Boom</title>
+      <link>https://ampere.dev/blog/pjm-emergency-curtailment-data-centers/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/pjm-emergency-curtailment-data-centers/</guid>
+      <pubDate>Wed, 20 May 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: The U.S. Department of Energy just issued an emergency order allowing PJM to curtail grid power to data centers and force them onto backup generators during a sudden heat wave and maintenance crunch. This is the new reality for hyperscale AI infrastructure — and operators who pause load testing and prepare for rapid fuel switches will stay ahead.</description>
+    </item>
     <item>
       <title>Economics of a Megawatt of AI Data Center: Granular Unit Economics</title>
       <link>https://ampere.dev/blog/economics-megawatt-ai-data-center/</link>
