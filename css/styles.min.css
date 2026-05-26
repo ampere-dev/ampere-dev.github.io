@@ -1,8 +1,10 @@
-/* ====================== MERGED STYLES.CSS (Optimized) ====================== */
+/* ====================== MERGED STYLES.CSS (Cleaned & Optimized) ====================== */
 
+/* ====================== HERO SECTION ====================== */
 .hero-wrapper {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .hero-image {
@@ -10,6 +12,7 @@
     height: auto;
     display: block;
     object-fit: cover;
+    min-height: 600px; /* Adjust based on your image */
 }
 
 .hero-content {
@@ -22,57 +25,34 @@
     color: white;
     padding: 20px;
     width: 100%;
+    max-width: 850px;
 }
 
 /* Dark overlay */
 .hero-wrapper::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.35);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* Slightly stronger for better contrast */
     z-index: 1;
 }
 
-/* Global & Main Styles */
+/* ====================== GLOBAL STYLES ====================== */
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
+    height: 100%;
     overflow-x: hidden;
 }
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', system-ui, sans-serif;
     color: #000000;
     background-color: #FFFFFF;
     box-sizing: border-box;
-}
-
-/* HERO BACKGROUND - Optimized */
-body.home {
-    color: #FFFFFF;
-    background: url('/images/Collage.webp') no-repeat center center / cover fixed;
-    position: relative;
-}
-
-/* Smaller mobile version (highly recommended for LCP) */
-@media (max-width: 768px) {
-    body.home {
-        background-image: url('/images/Collage-mobile.webp');
-    }
-}
-
-/* Dark overlay on home */
-html::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.35);
-    z-index: 1;
-    pointer-events: none;
 }
 
 main {
@@ -82,80 +62,88 @@ main {
     text-align: center;
     padding: 20px;
     max-width: 850px;
-    margin: 50px auto;
-    color: #FFFFFF;
+    margin: 0 auto;
 }
 
-/* Typography */
+/* ====================== TYPOGRAPHY ====================== */
 h1, h2, h3 {
     font-weight: 700;
 }
+
 main h1 {
     font-size: 2em;
     margin-bottom: 20px;
     letter-spacing: 0.1em;
 }
+
 main p {
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 20px;
     text-align: justify;
 }
+
 main h3 {
     font-size: 1.3em;
     margin: 30px 0 10px;
     letter-spacing: 0.05em;
 }
+
 h2.tagline {
-    font-style: italic !important;
-    color: #FFFFFF !important;
+    font-style: italic;
+    color: #FFFFFF;
     margin-bottom: 1rem;
 }
 
 /* ====================== HEADER ====================== */
-header { position: relative; z-index: 10; }
+header {
+    position: relative;
+    z-index: 10;
+}
 
 #logo {
     position: absolute;
     top: 25px;
     left: 35px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
     z-index: 10;
 }
-#logo img { max-width: 100%; display: block; }
+
+#logo img {
+    max-width: 100%;
+    display: block;
+}
 
 .menuToggler {
     cursor: pointer;
     font-size: 24px;
-    position: relative;
     z-index: 11;
 }
 
-.nav-menu {
-    text-align: center;
-    margin: 20px 0;
-    position: relative;
-    z-index: 2;
-}
+/* ====================== NAVIGATION ====================== */
 .nav-menu ul {
-    display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .nav-menu ul li {
     display: inline;
     margin-right: 15px;
 }
+
 .nav-menu a {
     color: #000000;
     text-decoration: none;
     font-weight: 400;
 }
-.home .nav-menu a { color: #FFFFFF; }
-.nav-menu a:hover { color: #FE0002; }
+
+.home .nav-menu a {
+    color: #FFFFFF;
+}
+
+.nav-menu a:hover {
+    color: #FE0002;
+}
 
 /* ====================== FOOTER ====================== */
 #footer {
@@ -168,42 +156,49 @@ header { position: relative; z-index: 10; }
     position: relative;
     z-index: 2;
 }
-body:not(.home) #footer {
-    color: #000000 !important;
-    background-color: #FFFFFF !important;
-}
+
 body.home #footer,
 body.home #footer * {
     color: #FFFFFF !important;
 }
 
 .footer-links ul {
-    display: inline-block;
     padding: 0;
     list-style: none;
+    display: inline-block;
 }
+
 .footer-links ul li {
     display: inline;
     margin-right: 15px;
 }
-.footer-links ul li:last-child { margin-right: 0; }
-.footer-links a { color: inherit; text-decoration: none; }
-.footer-links a:hover { color: #FE0002 !important; }
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a:hover {
+    color: #FE0002 !important;
+}
 
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-.social-icons img { height: 20px; }
+
+.social-icons img {
+    height: 20px;
+}
 
 /* ====================== BUTTONS ====================== */
 .btn-red, .btn-white, .btn-blue, .btn-slack {
     border: none;
     text-decoration: none;
 }
+
 .btn-red { background-color: #ff0000 !important; color: #ffffff !important; }
-.btn-white { background-color: #ffffff !important; color: #000000 !important; border-color: #000000 !important; }
+.btn-white { background-color: #ffffff !important; color: #000000 !important; border: 1px solid #000000 !important; }
 .btn-blue { background-color: #0000ff !important; color: #ffffff !important; }
 .btn-slack { background-color: #4A154B !important; color: white !important; }
 
@@ -212,12 +207,12 @@ body.home #footer * {
 .btn-blue:hover { background-color: #0000cc !important; }
 .btn-slack:hover { background-color: #611F69 !important; }
 
-/* ====================== SLACK BUTTON (Fixed Underline) ====================== */
+/* ====================== SLACK BUTTON ====================== */
 .slack-button-wrapper {
     position: relative;
     width: 490px;
-    height: 60px;
-    perspective: 1000px;
+    min-height: 85px;           /* Increased to prevent CLS */
+    height: auto;
     display: inline-block;
     margin: 15px 0;
 }
@@ -237,7 +232,6 @@ body.home #footer * {
     text-decoration: none !important;
     transition: transform 0.3s ease;
     animation: float 9s ease-in-out infinite;
-    z-index: 2;
     padding: 14px 24px;
     text-align: center;
     box-sizing: border-box;
@@ -247,7 +241,6 @@ body.home #footer * {
 
 .slack-button:hover {
     transform: scale(1.05);
-    text-decoration: none !important;
 }
 
 .slack-text {
@@ -263,24 +256,26 @@ body.home #footer * {
 
 /* ====================== RESPONSIVE ====================== */
 :root {
-    --primary-color: #fff;
     --accent-color: #fe0002;
-    --text-color: #000;
-    --menu-width: 250px;
-    --toggler-size: 24px;
     --transition-speed: 0.3s;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-.menuToggler { display: none; }
+.menuToggler {
+    display: none;
+}
 
 @media (max-width: 1150px) {
     .menuToggler {
         display: block;
         position: fixed;
-        top: 30px; right: 20px;
-        width: 44px; height: 44px;
+        top: 30px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
         padding: 10px;
         background: transparent;
         border: 1px solid #181818;
@@ -288,14 +283,16 @@ body.home #footer * {
         z-index: 1000;
         cursor: pointer;
     }
+
     .menuToggler span {
         display: block;
         height: 3px;
-        background: var(--text-color);
+        background: #181818;
         margin: 5px auto;
-        width: var(--toggler-size);
+        width: 24px;
         transition: all var(--transition-speed) ease;
     }
+
     .menuToggler.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .menuToggler.active span:nth-child(2) { opacity: 0; }
     .menuToggler.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
@@ -303,35 +300,43 @@ body.home #footer * {
     #header {
         position: fixed;
         inset: 0 auto 0 0;
-        width: var(--menu-width);
+        width: 250px;
         max-width: 85vw;
         background: rgba(0,0,0,0.92);
         transform: translateX(-100%);
         transition: transform var(--transition-speed) ease;
         z-index: 100;
         padding-top: 70px;
-        color: var(--primary-color);
+        color: white;
     }
-    #header.active { transform: translateX(0); }
 
-    #footer { position: static; margin-top: 50px; }
+    #header.active {
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 768px) {
-    .image-container img { width: clamp(100px, 20vw, 150px); }
-    p.ex2, h1 { margin-inline: 0; }
+    .hero-image {
+        min-height: 400px;
+    }
+    
+    main {
+        padding: 15px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 500px) {
-    .bg-text h3 { font-size: clamp(16px, 4vw, 18px); }
-    .bg-text p { font-size: clamp(14px, 3.5vw, 16px); line-height: 1.4; }
-    #footer { font-size: clamp(10px, 3vw, 12px); padding: 0; }
+    #footer {
+        font-size: clamp(10px, 3vw, 12px);
+        padding: 15px 10px;
+    }
 }
 
-/* Reduced motion */
+/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { 
-        transition: none !important; 
-        animation: none !important; 
+    *, *::before, *::after {
+        transition: none !important;
+        animation: none !important;
     }
 }
