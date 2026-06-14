@@ -22,9 +22,9 @@ What was once niche is now standard: manufacturers are delivering robust **10–
 
 These high-capacity resistive-reactive units allow precise simulation of real-world loads, including:
 
-- Full validation of generators, transformers, UPS systems, and inverters
-- Testing under realistic power factors (lagging or leading) common in AI facilities
-- Factory Acceptance Testing (FAT) and Site Acceptance Testing (SAT)
+ - Full validation of generators, transformers, UPS systems, and inverters
+ - Testing under realistic power factors (lagging or leading) common in AI facilities
+ - Factory Acceptance Testing (FAT) and Site Acceptance Testing (SAT)
 
 Most modern large units come containerized or trailer-mounted, with both air-cooled and water-cooled configurations for maximum deployment flexibility.
 
