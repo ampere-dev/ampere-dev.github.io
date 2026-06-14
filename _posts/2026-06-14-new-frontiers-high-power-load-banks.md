@@ -20,7 +20,7 @@ A recent conversation with industry experts revealed just how rapidly this techn
 
 What was once niche is now standard: manufacturers are delivering robust **10–99 MVA** load banks designed for utility-scale applications, hyperscale data centers, and complex battery energy storage systems (BESS).
 
-These high-capacity resistive-reactive units allow precise simulation of real-world loads, including:
+These high-capacity resistive units allow precise simulation of real-world loads, including:
 
     - Full validation of generators, transformers, UPS systems, and inverters
     - Testing under realistic power factors (lagging or leading) common in AI facilities
