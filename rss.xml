@@ -6,7 +6,14 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 May 2026 05:53:38 EST</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 19:35:19 EST</lastBuildDate>
+    <item>
+      <title>New Frontiers in High-Power Load Banks: Trends Shaping AI Data Centers and Grid Modernization</title>
+      <link>https://ampere.dev/blog/new-frontiers-high-power-load-banks/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/new-frontiers-high-power-load-banks/</guid>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: Large two-digit MVA load banks are now mainstream, with exciting new features like remote operation, automated load scripting, power quality monitoring, and high-voltage DC solutions (including 80V and 800V systems). These advances are transforming commissioning and testing for hyperscale AI data centers and modern power infrastructure.</description>
+    </item>
     <item>
       <title>PJM’s Emergency Curtailment Order: What It Means for Data Centers, Grid Reliability, and the AI Boom</title>
       <link>https://ampere.dev/blog/pjm-emergency-curtailment-data-centers/</link>
