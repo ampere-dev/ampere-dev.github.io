@@ -32,25 +32,25 @@ Most modern large units come containerized or trailer-mounted, with both air-coo
 
 The next generation of these systems includes several exciting enhancements that directly address the complexity of modern power infrastructure:
 
- - **Remote Operation Capabilities**: Full worldwide remote access lets operators monitor and control load banks from anywhere. This improves safety in high-power environments and enables seamless integration with central control systems across global project sites.
+    - **Remote Operation Capabilities**: Full worldwide remote access lets operators monitor and control load banks from anywhere. This improves safety in high-power environments and enables seamless integration with central control systems across global project sites.
   
- - **Advanced Load Scripting & Automation**: Users can program complex, repeatable load profiles — step loads, ramps, transients, and duty cycles. This is particularly valuable for simulating variable AI server loads or renewable intermittency, reducing manual effort while delivering auditable results.
+    - **Advanced Load Scripting & Automation**: Users can program complex, repeatable load profiles — step loads, ramps, transients, and duty cycles. This is particularly valuable for simulating variable AI server loads or renewable intermittency, reducing manual effort while delivering auditable results.
 
- - **Integrated Power Quality Monitoring**: Built-in analyzers capture real-time data on harmonics, THD, voltage flicker, power factor, imbalance, and frequency stability — helping catch issues early and prove compliance with stringent grid codes.
+    - **Integrated Power Quality Monitoring**: Built-in analyzers capture real-time data on harmonics, THD, voltage flicker, power factor, imbalance, and frequency stability — helping catch issues early and prove compliance with stringent grid codes.
 
- - **Automated Report Generation**: Professional reports with waveforms, trends, compliance summaries, and performance metrics are generated automatically, streamlining client handovers and regulatory documentation.
+    - **Automated Report Generation**: Professional reports with waveforms, trends, compliance summaries, and performance metrics are generated automatically, streamlining client handovers and regulatory documentation.
 
- - **Outdoor Lighting Packages**: Integrated LED systems with motion sensors support safe night-time commissioning and maintenance on large outdoor deployments.
+    - **Outdoor Lighting Packages**: Integrated LED systems with motion sensors support safe night-time commissioning and maintenance on large outdoor deployments.
 
 ### The Rise of High-Voltage and DC Load Bank Solutions
 
 The industry is also seeing strong momentum in DC testing:
 
- - **New 80V DC Load Banks Now Available for Rent**: Ideal for battery banks, telecom rectifiers, small-scale DC microgrids, and specialized industrial applications.
+    - **New 80V DC Load Banks Now Available for Rent**: Ideal for battery banks, telecom rectifiers, small-scale DC microgrids, and specialized industrial applications.
 
- - **Demand for Higher-Voltage DC**: Recent inquiries include **800V DC at 5 MW**, reflecting the shift toward efficient high-voltage DC distribution in hyperscale data centers and EV infrastructure. These solutions reduce conversion losses and simplify power architectures.
+    - **Demand for Higher-Voltage DC**: Recent inquiries include **800V DC at 5 MW**, reflecting the shift toward efficient high-voltage DC distribution in hyperscale data centers and EV infrastructure. These solutions reduce conversion losses and simplify power architectures.
 
- - **Massive 300–400 MVA DC Loading**: Used as a “technical brake” during commissioning or controlled ramp-down. This enables safe dissipation of excess energy, step-load testing on inverters, protection relay validation, and detailed performance data capture — all without injecting power back into the grid.
+    - **Massive 300–400 MVA DC Loading**: Used as a “technical brake” during commissioning or controlled ramp-down. This enables safe dissipation of excess energy, step-load testing on inverters, protection relay validation, and detailed performance data capture — all without injecting power back into the grid.
 
 ### Why These Advances Matter for AI Data Centers
 
