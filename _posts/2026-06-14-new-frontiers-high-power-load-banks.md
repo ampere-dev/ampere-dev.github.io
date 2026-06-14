@@ -59,7 +59,7 @@ Modern load banks are no longer just testing tools — they’re strategic enabl
     - **Precision Commissioning**: Digital controls and scripting mirror real AI workloads, ensuring facilities perform as designed before live servers come online.
     - **Grid & Reliability Compliance**: Comprehensive power quality data supports IEEE 446 and other standards for emergency and standby power systems.
     - **Operational Flexibility**: Remote capabilities, automation, and modular designs accelerate deployment while reducing personnel risk.
-    - **Future-Proofing**: As data centers adopt higher-density racks and complex microgrids, the ability to test at scale with realistic conditions becomes a competitive advantage.
+- **Future-Proofing**: As data centers adopt higher-density racks and complex microgrids, the ability to test at scale with realistic conditions becomes a competitive advantage.
 
 ### Looking Ahead
 
