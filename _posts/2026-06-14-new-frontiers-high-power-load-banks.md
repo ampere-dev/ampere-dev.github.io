@@ -32,7 +32,7 @@ Most modern large units come containerized or trailer-mounted, with both air-coo
 
 The next generation of these systems includes several exciting enhancements that directly address the complexity of modern power infrastructure:
 
-    - **Remote Operation Capabilities**: Full worldwide remote access lets operators monitor and control load banks from anywhere. This improves safety in high-power environments and enables seamless integration with central control systems across global project sites.
+    - <b>Remote Operation Capabilities</b>: Full worldwide remote access lets operators monitor and control load banks from anywhere. This improves safety in high-power environments and enables seamless integration with central control systems across global project sites.
   
     - **Advanced Load Scripting & Automation**: Users can program complex, repeatable load profiles — step loads, ramps, transients, and duty cycles. This is particularly valuable for simulating variable AI server loads or renewable intermittency, reducing manual effort while delivering auditable results.
 
