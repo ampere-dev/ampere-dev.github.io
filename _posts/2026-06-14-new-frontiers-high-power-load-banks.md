@@ -18,7 +18,7 @@ A recent conversation with industry experts revealed how rapidly this technology
 
 ### Large-Scale Load Banks Go Mainstream: The Era of Two-Digit MVA Units
 
-What was once niche is now standard. Manufacturers are delivering robust **10–99 MVA** load banks designed for utility-scale applications, hyperscale data centers, and complex battery energy storage systems (BESS).
+What was once niche is now standard. Manufacturers are delivering robust **20 MVA** load banks designed for utility-scale applications, hyperscale data centers, and complex battery energy storage systems (BESS).
 
 These high-capacity resistive units enable precise simulation of real-world loads, including:
 
@@ -50,7 +50,7 @@ The industry is also seeing strong momentum in DC testing:
 
 - **Demand for Higher-Voltage DC** — Recent inquiries include **800V DC at 5 MW**, reflecting the shift toward efficient high-voltage DC distribution in hyperscale data centers and EV infrastructure. These solutions reduce conversion losses and simplify power architectures.
 
-- **Massive 300–400 MVA DC Loading** — Used as a “technical brake” during commissioning or controlled ramp-down. This enables safe dissipation of excess energy, step-load testing on inverters, protection relay validation, and detailed performance data capture — all without injecting power back into the grid.
+- **Massive 300–400 MVA Datacenter Loading** — Used during commissioning or as a “technical brake” for controlled ramp-down. This enables safe dissipation of excess energy, step-load testing on inverters, protection relay validation, and detailed performance data capture — all without injecting power back into the grid.
 
 ### Why These Advances Matter for AI Data Centers
 
@@ -63,7 +63,7 @@ Modern load banks are no longer just testing tools — they’re strategic enabl
 
 ### Looking Ahead
 
-With AI-driven demand pushing power infrastructure to new limits, high-capacity load banks — both AC and DC — are becoming indispensable for efficient, low-risk project delivery. From 99 MVA containerized units to specialized 800V DC solutions, these tools help operators validate performance, reduce commissioning delays, and ensure long-term reliability.
+With AI-driven demand pushing power infrastructure to new limits, high-capacity load banks — both AC and DC — are becoming indispensable for efficient, low-risk project delivery. From 20 MVA containerized units to specialized 800V DC solutions, these tools help operators validate performance, reduce commissioning delays, and ensure long-term reliability.
 
 If your next project involves large-scale generation, data center commissioning, BESS integration, or high-voltage DC systems, access to the latest load bank technology can make all the difference.
 
