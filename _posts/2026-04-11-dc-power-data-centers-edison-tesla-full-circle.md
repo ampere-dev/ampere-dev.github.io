@@ -3,7 +3,7 @@ layout: post
 title: "DC Power Returns to Data Centers: Coming Full Circle from Edison to Tesla and Back"
 date: 2026-04-11
 categories: [Data Centers, DC Power Distribution, 800V DC, AI Infrastructure, Power Architecture, Commissioning, Grid Modernization]
-excerpt: The push for direct DC power distribution in AI data centers, especially native 800 V DC, eliminates multiple AC-DC conversion stages, slashes losses, reduces copper, and frees space for more compute. This marks a historic full circle: Edison’s DC vision, Tesla’s AC victory, and now DC’s return at rack level for hyperscale efficiency.
+excerpt: The push for direct DC power distribution in AI data centers, especially native 800 V DC, eliminates multiple AC-DC conversion stages, slashes losses, reduces copper, and frees space for more compute. This marks a historic full circle for Edison’s DC vision, Tesla’s AC victory, and now DC’s return at rack level for hyperscale efficiency.
 ---
 **Posted by Ampere Development Team**
 
