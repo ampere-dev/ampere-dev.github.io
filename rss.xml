@@ -6,7 +6,14 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2026 19:35:19 EST</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 05:28:00 EST</lastBuildDate>
+    <item>
+      <title>Loudoun County Load-Rejection Event: Technical Analysis of Grid Frequency Disturbances and the Growing Need for Controlled Data-Center Ramp-Down</title>
+      <link>https://ampere.dev/blog/loudoun-county-load-rejection-event/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/loudoun-county-load-rejection-event/</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: A July 2026 transmission contingency in Loudoun County triggered multi-hundred-MW data-center load rejection, sending frequency and voltage disturbances across the Eastern Interconnection. With BloombergNEF now projecting 194 GW of U.S. data-center demand by 2035, controlled ramp-down and local dissipation testing have become essential for grid-neutral transfers.</description>
+    </item>
     <item>
       <title>New Frontiers in High-Power Load Banks: Trends Shaping AI Data Centers and Grid Modernization</title>
       <link>https://ampere.dev/blog/new-frontiers-high-power-load-banks/</link>
