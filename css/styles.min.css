@@ -179,6 +179,33 @@ body.home #footer * {
 .btn-blue:hover { background-color: #0000cc !important; }
 .btn-slack:hover { background-color: #611F69 !important; }
 
+.btn-mustard {
+  background-color: #FBC02D !important;
+  color: black !important;
+  border-color: #FBC02D !important;
+}
+.btn-mustard:hover {
+  background-color: #e6ac00 !important;   /* slightly darker */
+}
+
+.btn-slate {
+  background-color: #37474F !important;
+  color: white !important;
+  border-color: #37474F !important;
+}
+.btn-slate:hover {
+  background-color: #263238 !important;
+}
+
+.btn-powder {
+  background-color: #81D4FA !important;
+  color: black !important;
+  border-color: #81D4FA !important;
+}
+.btn-powder:hover {
+  background-color: #4fc3f7 !important;
+}
+
 /* ====================== SLACK BUTTON (Fixed Underline) ====================== */
 .slack-button-wrapper {
     position: relative;
