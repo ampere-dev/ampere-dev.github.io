@@ -1,4 +1,39 @@
-/* ===== FULL-SCREEN SINGLE PAGE HOME ===== */
+/* =====================================================
+   INDEX.CSS – Homepage Only (Merged & Optimized)
+   ===================================================== */
+
+/* ---------- Reset & Full-Screen Base ---------- */
+html.home,
+body.home {
+    height: 100%;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+    overscroll-behavior: none;
+    -ms-overflow-style: none;          /* IE / Edge */
+    scrollbar-width: none;             /* Firefox */
+}
+
+body.home::-webkit-scrollbar {
+    display: none;                     /* Chrome / Safari */
+}
+
+body.home {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', system-ui, sans-serif;
+    color: #FFFFFF;
+    background: url('/images/Collage.webp') no-repeat center center / cover fixed;
+    box-sizing: border-box;
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+    body.home {
+        background-image: url('/images/Collage-mobile.webp');
+    }
+}
 
 /* Dark overlay */
 html.home::before {
@@ -13,38 +48,65 @@ html.home::before {
     pointer-events: none;
 }
 
-/* Full viewport + hide scrollbar */
-html.home,
-body.home {
-    height: 100%;
-    height: 100dvh;
+/* ---------- Header ---------- */
+header {
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    z-index: 11;
+}
+
+#logo img {
+    display: block;
+    max-width: 100%;
+    height: 30px;
+    width: auto;
+}
+
+.menuToggler {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: relative;
+    z-index: 12;
+}
+
+.nav-menu {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-menu ul {
+    display: inline-block;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    overscroll-behavior: none;
+    list-style: none;
 }
 
-/* Hide scrollbar completely */
-body.home::-webkit-scrollbar {
-    display: none;
+.nav-menu ul li {
+    display: inline;
+    margin-right: 15px;
 }
-body.home {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    display: flex;
-    flex-direction: column;
-    background: url('/images/Collage.webp') no-repeat center center / cover fixed;
+
+.nav-menu a {
     color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
 }
 
-/* Mobile background */
-@media (max-width: 768px) {
-    body.home {
-        background-image: url('/images/Collage-mobile.webp');
-    }
+.nav-menu a:hover {
+    color: #FE0002;
 }
 
-/* Main content – fills available space and centers */
+/* ---------- Main Content (Full-Screen Centered) ---------- */
 body.home main {
     flex: 1;
     display: flex;
@@ -53,9 +115,7 @@ body.home main {
     align-items: center;
     position: relative;
     z-index: 2;
-    padding: 1rem;
-    max-width: none;
-    margin: 0;
+    padding: 0.5rem 1rem;
     width: 100%;
     overflow: hidden;
 }
@@ -75,21 +135,21 @@ body.home .collage-background > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(0.8rem, 2.5vh, 1.8rem);
-    padding: 1rem;
+    gap: clamp(0.5rem, 1.8vh, 1.2rem);
+    padding: 0.5rem 1rem;
 }
 
 /* Title */
 body.home main h1 {
-    font-size: clamp(1.7rem, 5vw, 3.1rem);
+    font-size: clamp(1.6rem, 4.5vw, 2.8rem);
     font-weight: 700;
     line-height: 1.15;
-    letter-spacing: 0.05em;
-    margin: 0;
+    letter-spacing: 0.04em;
+    margin: 0 0 0.4rem 0;
     text-align: center;
 }
 
-/* ===== BUTTONS ===== */
+/* ---------- Buttons ---------- */
 .btn-red {
     background-color: #ff0000 !important;
     border-color: #ff0000 !important;
@@ -135,36 +195,165 @@ body.home main h1 {
 .btn-powder:hover  { background-color: #4fc3f7 !important; border-color: #4fc3f7 !important; }
 .btn-slack:hover   { background-color: #611F69 !important; }
 
-/* Slack button responsive */
+/* Slack Button */
 .slack-button-wrapper {
-    width: min(490px, 95vw) !important;
-    height: auto !important;
-    min-height: 58px;
-}
-.slack-button {
-    height: auto !important;
-    min-height: 58px;
-    padding: 12px 18px !important;
-    font-size: clamp(0.82rem, 2.4vw, 0.95rem) !important;
+    position: relative;
+    width: min(490px, 95vw);
+    height: auto;
+    min-height: 56px;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 0.4rem 0;
 }
 
-/* Footer stays at bottom */
+.slack-button {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 56px;
+    background: linear-gradient(135deg, #4A154B 0%, #2c0a2f 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: clamp(0.82rem, 2.4vw, 0.95rem);
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: transform 0.3s ease;
+    animation: float 9s ease-in-out infinite;
+    z-index: 2;
+    padding: 12px 18px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.4;
+    border: none;
+}
+
+.slack-button:hover {
+    transform: scale(1.05);
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.slack-text {
+    font-size: inherit;
+    line-height: 1.45;
+    font-weight: 400;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+    50%      { transform: translateY(-16px) rotateX(2.5deg) rotateY(1deg); }
+}
+
+/* Phone number */
+body.home main p {
+    margin: 0.6rem 0 0 0;
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+/* ---------- Footer ---------- */
 body.home #footer {
     flex-shrink: 0;
     position: relative;
     z-index: 2;
-    padding: 0.7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem 1rem;
     font-size: clamp(0.75rem, 2vw, 0.9rem);
+    color: #FFFFFF !important;
 }
 
-/* ===== MOBILE ===== */
+body.home #footer * {
+    color: #FFFFFF !important;
+}
+
+.footer-links ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #FE0002 !important;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 8px 0;
+}
+
+.social-icons img {
+    height: 20px;
+}
+
+/* ---------- Mobile Menu & Responsive ---------- */
+@media (max-width: 1150px) {
+    .menuToggler {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        color: #fff;
+        z-index: 1000;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        max-width: 85vw;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.92);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 100;
+        padding-top: 70px;
+        text-align: left;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .nav-menu ul {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .nav-menu ul li {
+        display: block;
+        margin: 18px 0;
+    }
+}
+
 @media (max-width: 768px) {
-    body.home main {
-        padding: 0.5rem;
-    }
     body.home main h1 {
-        font-size: clamp(1.5rem, 6.5vw, 2.1rem);
+        font-size: clamp(1.45rem, 6vw, 2rem);
     }
+
     body.home .btn {
         font-size: 0.88rem;
         padding: 0.5rem 0.9rem;
@@ -173,6 +362,14 @@ body.home #footer {
 
 @media (max-width: 400px) {
     body.home main h1 {
-        font-size: 1.45rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition: none !important;
+        animation: none !important;
     }
 }
