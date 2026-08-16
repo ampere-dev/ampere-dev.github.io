@@ -76,38 +76,45 @@
     </script>
 
     <style>
-        body { font-family: 'Ubuntu', system-ui, sans-serif; }
+    body { font-family: 'Ubuntu', system-ui, sans-serif; }
 
-        /* Chapter nav horizontal scroll */
-        .chapternav-scroll {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-        .chapternav-scroll::-webkit-scrollbar { display: none; }
+    /* Chapter nav horizontal scroll */
+    .chapternav-scroll {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .chapternav-scroll::-webkit-scrollbar { display: none; }
 
-        /* Details/summary accordion polish */
-        details > summary {
-            list-style: none;
-        }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        details[open] summary .chevron {
-            transform: rotate(180deg);
-        }
+    /* Details/summary accordion polish */
+    details > summary {
+        list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+    details[open] summary .chevron {
+        transform: rotate(180deg);
+    }
 
-        /* Table */
-        .lb-table th {
-            background-color: #b91c1c;
-            color: white;
-        }
-        .lb-table tbody tr:nth-child(even) {
-            background-color: #f3f4f6;
-        }
-        .lb-table tbody tr:hover {
-            background-color: #e5e7eb;
-        }
-    </style>
+    /* Table */
+    .lb-table th {
+        background-color: #b91c1c;
+        color: white;
+    }
+    .lb-table tbody tr:nth-child(even) {
+        background-color: #f3f4f6;
+    }
+    .lb-table tbody tr:hover {
+        background-color: #e5e7eb;
+    }
+
+    /* Prevent sticky header from covering section titles */
+    h1[id],
+    h2[id],
+    h3[id] {
+        scroll-margin-top: 110px;
+    }
+</style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
