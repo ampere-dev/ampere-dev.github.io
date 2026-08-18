@@ -1,0 +1,9 @@
+Ampere_Jobsite_Readiness_One_Pager.pdf
+Ampere_Load_Bank_Selection_Sizing_Guide.pdf
+Ampere_Load_Bank_Setup_and_Test_Procedures.pdf
+Ampere_Renting_vs_Purchasing_12_Reasons.pdf
+Ampere_Rent_vs_Buy_Load_Banks_Decision_Worksheet.pdf
+Ampere_What_Will_a_Load_Bank_Do_for_Me.pdf
+Ampere_Who_Rents_Load_Banks.pdf
+Ampere_Why_Load_Bank_to_Test_Generators.pdf
+filename.txt
