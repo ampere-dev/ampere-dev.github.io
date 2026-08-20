@@ -45,25 +45,25 @@ html.home::before {
 @media (max-width: 768px) {
     html.home,
     body.home {
-        height: auto;
-        min-height: 100dvh;
-        overflow-x: hidden;
-        overflow-y: auto;
+        height: auto !important;
+        min-height: 100dvh !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
     }
 
     body.home {
         background-image: url('/images/Collage.webp');
         background-position: center top;
         background-size: cover;
-        background-attachment: scroll; /* fixed can be janky on mobile */
+        background-attachment: scroll;
     }
 
     html.home::before {
-        background: rgba(0, 0, 0, 0.55); /* stronger overlay so text stays readable */
+        background: rgba(0, 0, 0, 0.55);
     }
 
     body.home main {
-        overflow: visible;
+        overflow: visible !important;
         flex: 1 0 auto;
         padding-bottom: 1rem;
     }
