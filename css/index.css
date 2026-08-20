@@ -28,8 +28,29 @@ body.home {
     box-sizing: border-box;
 }
 
-/* Mobile background */
+/* Dark overlay */
+html.home::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Mobile background + allow scroll */
 @media (max-width: 768px) {
+    html.home,
+    body.home {
+        height: auto;
+        min-height: 100dvh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
     body.home {
         background-image: url('/images/Collage.webp');
         background-position: center top;
@@ -39,6 +60,16 @@ body.home {
 
     html.home::before {
         background: rgba(0, 0, 0, 0.55); /* stronger overlay so text stays readable */
+    }
+
+    body.home main {
+        overflow: visible;
+        flex: 1 0 auto;
+        padding-bottom: 1rem;
+    }
+
+    body.home #footer {
+        padding-bottom: max(0.8rem, env(safe-area-inset-bottom));
     }
 }
 
@@ -189,12 +220,12 @@ body.home main h1 {
 .btn-powder:hover  { background-color: #4fc3f7 !important; border-color: #4fc3f7 !important; }
 .btn-slack:hover   { background-color: #611F69 !important; }
 
-/* Slack Button */
+/* Slack Button – narrower to match shorter text */
 .slack-button-wrapper {
     position: relative;
-    width: min(420px, 92vw);
+    width: min(300px, 88vw);
     height: auto;
-    min-height: 56px;
+    min-height: 52px;
     perspective: 1000px;
     display: inline-block;
     margin: 0.4rem 0;
@@ -211,13 +242,13 @@ body.home main h1 {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: clamp(0.8rem, 2.2vw, 0.9rem);
+    font-size: clamp(0.78rem, 2.1vw, 0.88rem);
     font-weight: 500;
     text-decoration: none !important;
     transition: transform 0.3s ease;
     animation: float 9s ease-in-out infinite;
     z-index: 2;
-    padding: 12px 16px;
+    padding: 11px 14px;
     text-align: center;
     box-sizing: border-box;
     line-height: 1.35;
@@ -232,9 +263,9 @@ body.home main h1 {
 
 .slack-text {
     font-size: inherit;
-    line-height: 1.45;
+    line-height: 1.4;
     font-weight: 400;
-    white-space: normal;   /* allow wrap */
+    white-space: normal;
 }
 
 @keyframes float {
@@ -366,19 +397,59 @@ body.home #footer * {
 }
 
 @media (max-width: 768px) {
-    body.home main h1 {
-        font-size: clamp(1.45rem, 6vw, 2rem);
+    /* Logo no longer overlaps the headline */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 16px;
+        min-height: 56px;
     }
 
+    #logo {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    #logo img {
+        height: 26px;
+    }
+
+    .menuToggler {
+        position: static;
+        top: auto;
+        right: auto;
+        font-size: 26px;
+        margin-left: auto;
+    }
+
+    body.home main h1 {
+        font-size: clamp(1.3rem, 5.2vw, 1.7rem);
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
+        padding: 0 0.5rem;
+    }
+
+    /* Easier tap targets */
     body.home .btn {
-        font-size: 0.88rem;
-        padding: 0.5rem 0.9rem;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9rem;
+        padding: 0.65rem 1rem;
     }
 }
 
 @media (max-width: 400px) {
     body.home main h1 {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
+    }
+
+    .slack-button-wrapper {
+        width: min(280px, 90vw);
     }
 }
 
