@@ -2,21 +2,14 @@
    INDEX.CSS – Homepage Only (Merged & Optimized)
    ===================================================== */
 
-/* ---------- Reset & Full-Screen Base ---------- */
+/* ---------- Base (scroll allowed by default) ---------- */
 html.home,
 body.home {
-    height: 100%;
-    height: 100dvh;
     margin: 0;
     padding: 0;
-    overflow: hidden !important;
-    overscroll-behavior: none;
-    -ms-overflow-style: none;          /* IE / Edge */
-    scrollbar-width: none;             /* Firefox */
-}
-
-body.home::-webkit-scrollbar {
-    display: none;                     /* Chrome / Safari */
+    min-height: 100%;
+    min-height: 100dvh;
+    box-sizing: border-box;
 }
 
 body.home {
@@ -24,8 +17,8 @@ body.home {
     flex-direction: column;
     font-family: 'Ubuntu', system-ui, sans-serif;
     color: #FFFFFF;
-    background: url('/images/Collage.webp') no-repeat center center / cover fixed;
-    box-sizing: border-box;
+    background: url('/images/Collage.webp') no-repeat center center / cover;
+    background-attachment: scroll;
 }
 
 /* Dark overlay */
@@ -41,7 +34,28 @@ html.home::before {
     pointer-events: none;
 }
 
-/* ---------- Allow scroll on phones + Chromebooks / tablets ---------- */
+/* ---------- Desktop only: lock to full-screen hero ---------- */
+@media (min-width: 1201px) {
+    html.home,
+    body.home {
+        height: 100%;
+        height: 100dvh;
+        overflow: hidden !important;
+        overscroll-behavior: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    body.home::-webkit-scrollbar {
+        display: none;
+    }
+
+    body.home {
+        background-attachment: fixed;
+    }
+}
+
+/* ---------- ≤1200px: allow scroll + mobile-friendly layout ---------- */
 @media (max-width: 1200px) {
     html.home,
     body.home {
@@ -49,13 +63,13 @@ html.home::before {
         min-height: 100dvh !important;
         overflow-x: hidden !important;
         overflow-y: auto !important;
+        overscroll-behavior: auto !important;
     }
 
     body.home {
-        background-image: url('/images/Collage.webp');
         background-position: center top;
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: scroll !important;
     }
 
     html.home::before {
@@ -65,14 +79,14 @@ html.home::before {
     body.home main {
         overflow: visible !important;
         flex: 1 0 auto;
-        justify-content: flex-start;   /* avoid vertical centering clipping content */
+        justify-content: flex-start !important;
         padding-top: 1rem;
         padding-bottom: 1.5rem;
     }
 
     body.home .collage-background {
-        height: auto;                  /* was 100% — that can clip the Call CTA */
-        min-height: 0;
+        height: auto !important;
+        min-height: 0 !important;
     }
 
     body.home .collage-background > div {
