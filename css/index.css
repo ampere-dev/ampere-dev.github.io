@@ -41,8 +41,8 @@ html.home::before {
     pointer-events: none;
 }
 
-/* Mobile background + allow scroll */
-@media (max-width: 768px) {
+/* ---------- Allow scroll on phones + Chromebooks / tablets ---------- */
+@media (max-width: 1200px) {
     html.home,
     body.home {
         height: auto !important;
@@ -65,11 +65,26 @@ html.home::before {
     body.home main {
         overflow: visible !important;
         flex: 1 0 auto;
-        padding-bottom: 1rem;
+        justify-content: flex-start;   /* avoid vertical centering clipping content */
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    body.home .collage-background {
+        height: auto;                  /* was 100% — that can clip the Call CTA */
+        min-height: 0;
+    }
+
+    body.home .collage-background > div {
+        padding-bottom: 1.5rem;
+    }
+
+    .phone-cta {
+        margin: 1rem 0 1.25rem;
     }
 
     body.home #footer {
-        padding-bottom: max(0.8rem, env(safe-area-inset-bottom));
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
     }
 }
 
