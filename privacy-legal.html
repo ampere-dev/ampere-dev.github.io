@@ -327,19 +327,19 @@
 </footer>
 
     <script>
-        // Toggle mobile menu
-        document.querySelector('.menuToggler').addEventListener('click', () => {
-            document.querySelector('.nav-menu').classList.toggle('hidden');
-        });
-
-        // Toggle FAQ sections
-        document.querySelectorAll('.faq-toggle').forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const content = toggle.nextElementSibling;
-                content.classList.toggle('active');
-                toggle.setAttribute('aria-expanded', content.classList.contains('active'));
-            });
-        });
-    </script>
+    document.querySelector('.menuToggler').addEventListener('click', () => {
+        const navMenu = document.querySelector('.nav-menu');
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('absolute');
+        navMenu.classList.toggle('bg-white');
+        navMenu.classList.toggle('w-full');
+        navMenu.classList.toggle('p-4');
+        navMenu.classList.toggle('top-16');
+        navMenu.classList.toggle('left-0');
+        navMenu.classList.toggle('shadow-md');
+    });
+</script>
 </body>
 </html>
