@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character Encoding -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page Metadata -->
     <title>Ampere Insights | Ampere Development</title>
     <link rel="alternate" type="application/rss+xml" title="Ampere Insights RSS Feed" href="https://ampere.dev/rss.xml" />
     <meta name="description" content="Ampere Insights by Ampere Development offers concise posts on power systems, load banks, transformers & 3D fabrication for industry pros.">
@@ -19,61 +17,56 @@
     <meta name="twitter:description" content="Explore power systems, load banks, transformers & 3D fabrication with concise, expert insights from Ampere Development’s industry blog.">
     <meta name="twitter:image" content="https://ampere.dev/images/blog_seo.webp">
 
-    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Ampere Development Blog",
-    "image": "https://ampere.dev/images/blog_seo.webp",
-    "description": "Explore articles and insights on load banks, power testing, and electrical solutions from Ampere Development.",
-    "url": "https://ampere.dev/blog",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Ampere Development",
-        "url": "https://ampere.dev",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://ampere.dev/images/Ampere-Logo.webp"
-        }
-    },
-    "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://ampere.dev"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://ampere.dev/blog"
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Ampere Development Blog",
+        "image": "https://ampere.dev/images/blog_seo.webp",
+        "description": "Explore articles and insights on load banks, power testing, and electrical solutions from Ampere Development.",
+        "url": "https://ampere.dev/blog",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ampere Development",
+            "url": "https://ampere.dev",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://ampere.dev/images/Ampere-Logo.webp"
             }
-        ]
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://ampere.dev"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://ampere.dev/blog"
+                }
+            ]
+        }
     }
-}
     </script>
 
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-
-    <!-- Canonical Tag -->
     <link rel="canonical" href="https://ampere.dev/blog">
-
-    <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <!-- Fonts and Preconnect -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/blog.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
-        <!-- Google Tag Manager -->
+    <!-- Tailwind CSS (same as portable load bank page) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -81,303 +74,159 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
-<style>
-:root {
-    --primary-color: #333;
-    --accent-color: #ff0000;
-    --border-color: #ddd;
-    --background-color: #f5f5f5;
-}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
-    line-height: 1.6;
-    color: var(--primary-color);
-    background: var(--background-color);
-}
-
-#logo {
-    margin-bottom: 1.5rem;
-}
-
-#logo img {
-    max-width: 154px;
-    height: auto;
-}
-
-header {
-    border-bottom: 1px solid var(--accent-color);
-    padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem;
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-
-nav a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-    transform: scale(1.05);
-}
-
-.abstract {
-    font-size: 1rem;
-    color: #555;
-    margin: 1rem 0 2rem;
-    font-style: italic;
-    max-width: none;
-    text-align: left;
-    line-height: 1.6;
-}
-
-.content-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-}
-
-main {
-    margin-bottom: 1.5rem;
-}
-
-article {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-}
-
-article h2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-}
-
-article h2 a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-article h2 a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-
-article time {
-    display: block;
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0.75rem;
-}
-
-article p {
-    margin: 0.75rem 0;
-}
-
-article h3 {
-    font-family: 'Krona One', sans-serif;
-    font-size: 1rem;
-    margin: 1.5rem 0 0.5rem;
-}
-
-.quote {
-    font-style: italic;
-    color: #555;
-    border-left: 4px solid #007BFF;
-    padding-left: 10px;
-    margin: 15px 0;
-}
-
-.author {
-    text-align: right;
-    font-size: 0.9em;
-    color: #666;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin: 1.5rem 0;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-aside {
-    background: #fff;
-    padding: 1.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-}
-
-.sidebar-section {
-    margin-bottom: 2rem;
-}
-
-.sidebar-section h3 {
-    font-family: 'Krona One', sans-serif;
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-}
-
-.related-posts ul {
-    list-style: none;
-}
-
-.related-posts li {
-    margin: 0.5rem 0;
-}
-
-.related-posts a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.related-posts a:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-
-.share a {
-    display: block;
-    color: var(--accent-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    transition: color 0.2s ease;
-}
-
-.share a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-footer {
-    margin-top: 2rem;
-    text-align: center;
-    color: #666;
-    font-size: 0.9rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
-}
-
-.footer-links ul {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    list-style: none;
-    margin-bottom: 1rem;
-}
-
-.footer-links a {
-    color: #666;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    color: var(--accent-color);
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-@media (max-width: 800px) {
-    .content-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    aside {
-        margin-top: 2rem;
-    }
-}
-
-@media (max-width: 600px) {
+    <style>
     body {
-        padding: 1rem;
+        font-family: 'Ubuntu', system-ui, sans-serif;
+        background: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Blog content area – constrained & centered */
+    .blog-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
     }
 
     h1 {
-        font-size: 1.75rem;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .abstract {
+        font-size: 1rem;
+        color: #555;
+        margin: 1rem 0 2rem;
+        font-style: italic;
+        line-height: 1.6;
+    }
+
+    article {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
     }
 
     article h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
     }
 
+    article time {
+        display: block;
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    article p {
+        margin: 0.75rem 0;
+    }
+
+    /* All links inside articles (titles + “Read more →”) */
+    article a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    article a:hover {
+        color: #ff0000;
+        text-decoration: underline;
+    }
+
+    /* Pagination */
     .pagination {
-        flex-wrap: wrap;
-        gap: 0.6rem;
+        text-align: center;
+        margin: 3rem 0;
+        padding: 1rem;
     }
-}
-</style>
 
+    .pagination button {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 0.5rem 1rem;
+        margin: 0 0.25rem;
+        cursor: pointer;
+        border-radius: 4px;
+        font-family: inherit;
+        color: #333;
+        transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .pagination button:hover:not(:disabled) {
+        color: #ff0000;
+        border-color: #ff0000;
+        background: #fff5f5;
+    }
+
+    .pagination button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    /* Page number buttons */
+    .pagination .page-number {
+        padding: 0.5rem 0.85rem;
+        margin: 0 0.2rem;
+    }
+
+    /* Active page – solid red */
+    .pagination .page-number.active {
+        background: #ff0000;
+        color: #fff;
+        border-color: #ff0000;
+        font-weight: 600;
+        cursor: default;
+    }
+
+    .pagination .page-number.active:hover {
+        background: #ff0000;
+        color: #fff;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 1.75rem; }
+        article h2 { font-size: 1.35rem; }
+        .blog-container { padding: 1.25rem 1rem; }
+    }
+</style>
 </head>
+<body class="bg-gray-100 text-gray-800">
 <body>
-<div id="logo">
-    <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-        <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" loading="lazy">
-    </a>
-</div>
-    <header role="banner">
-        <nav role="navigation">
-            <a href="https://ampere.dev/what-are-load-banks">LOAD BANKS</a>
-            <a href="https://ampere.dev/starline-tapbox-rental">STARLINE</a>
-            <a href="https://ampere.dev/cables">CABLES</a>
-            <a href="https://ampere.dev/flir">FLIR</a>
-            <a href="https://ampere.dev/power-quality">POWER QUALITY</a>
-            <a href="https://ampere.dev/transformers">TRANSFORMERS</a>
-            <a href="https://ampere.dev/3D-fabrication">3D FABRICATION</a>
-        </nav>
+<!-- ===== HEADER (exact match to portable load bank page) ===== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div id="logo">
+                <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                    <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
+                </a>
+            </div>
+            <div class="menuToggler md:hidden cursor-pointer text-3xl text-gray-700" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+            <nav id="header" class="nav-menu hidden md:flex space-x-8 text-sm font-medium">
+                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-red-600 transition-colors">LOAD BANKS</a>
+                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-red-600 transition-colors">STARLINE</a>
+                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-red-600 transition-colors">CABLES</a>
+                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-red-600 transition-colors">FLIR</a>
+                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-red-600 transition-colors">POWER QUALITY</a>
+                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-red-600 transition-colors">TRANSFORMERS</a>
+                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-red-600 transition-colors">3D FABRICATION</a>
+            </nav>
+        </div>
     </header>
 
-<h1>Ampere Insights</h1>
-<p class="abstract">A streamlined blog dedicated to unpacking the latest advancements and solutions in commissioning, power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</p>
+<!-- ===== BLOG CONTENT ===== -->
+    <div class="blog-container">
+        <h1>Ampere Insights</h1>
+        <p class="abstract">A streamlined blog dedicated to unpacking the latest advancements and solutions in commissioning, power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</p>
 
-<main>
+        <main>
 <article class="post collapsed">
     <h2 onclick="togglePost(this)"><a href="/blog/portable-load-banks-now-in-stock/">Portable Load Banks Now in Stock: Compact Power Testing for Generators, UPS, Marine, Aviation & More</a></h2>
     <time datetime="2026-08-23">August 23, 2026</time>
@@ -1019,33 +868,56 @@ footer {
                 <p>Short teaser: Kevin O’Leary dives into A.I. with a massive 45 GW plan in North Dakota—here’s why it matters for the future of data centers and opportunity. <a href="/blog/mr-wonderfuls-ai-power-play/">Read more →</a></p>
                 </div>
         </article>
-            <!-- Pagination Container -->
-            <div class="pagination" style="text-align: center; margin: 3rem 0; padding: 1rem;">
-            <button id="prev-btn" aria-label="Previous page" disabled>← Previous</button>
-            <span id="page-numbers"></span>
-            <button id="next-btn" aria-label="Next page" disabled>Next →</button>
+            <!-- Pagination -->
+            <div class="pagination">
+                <button id="prev-btn" aria-label="Previous page" disabled>← Previous</button>
+                <span id="page-numbers"></span>
+                <button id="next-btn" aria-label="Next page" disabled>Next →</button>
             </div>
         </main>
-    <footer id="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="https://ampere.dev/about">ABOUT</a></li>
-                <li><a href="https://ampere.dev/products">PRODUCTS</a></li>
-                <li><a href="https://ampere.dev/services">SERVICES</a></li>
-                <li><a href="https://ampere.dev/blog">BLOG</a></li>
-                <li><a href="https://ampere.dev/privacy-legal">PRIVACY & LEGAL</a></li>
-                <li><a href="https://ampere.dev/contact">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="social-icons">
-            <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener">
-                <img src="icons/logo-black.webp" alt="X logo">
-            </a>
-        </div>
-        <div>
-            <p>AMPERE © 2026</p>
+    </div>
+    <!-- ===== FOOTER (exact match to portable load bank page) ===== -->
+    <footer id="footer" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="footer-links">
+                    <ul class="flex flex-col md:flex-row gap-6 text-sm font-medium">
+                        <li><a href="https://ampere.dev/about" class="hover:text-yellow-400 transition-colors">ABOUT</a></li>
+                        <li><a href="https://ampere.dev/products" class="hover:text-yellow-400 transition-colors">PRODUCTS</a></li>
+                        <li><a href="https://ampere.dev/services" class="hover:text-yellow-400 transition-colors">SERVICES</a></li>
+                        <li><a href="https://ampere.dev/blog" class="hover:text-yellow-400 transition-colors">BLOG</a></li>
+                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-yellow-400 transition-colors">PRIVACY &amp; LEGAL</a></li>
+                        <li><a href="https://ampere.dev/contact" class="hover:text-yellow-400 transition-colors">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X">
+                        <img src="icons/logo-white.webp" alt="X logo" class="h-6" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-6 text-sm">
+                <p>AMPERE © 2026</p>
+            </div>
         </div>
     </footer>
-<script src="/js/blog.js" defer></script>
+<!-- Mobile menu toggle (required) -->
+    <script>
+        document.querySelector('.menuToggler').addEventListener('click', () => {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('flex');
+            navMenu.classList.toggle('flex-col');
+            navMenu.classList.toggle('absolute');
+            navMenu.classList.toggle('bg-white');
+            navMenu.classList.toggle('w-full');
+            navMenu.classList.toggle('p-4');
+            navMenu.classList.toggle('top-16');
+            navMenu.classList.toggle('left-0');
+            navMenu.classList.toggle('shadow-md');
+        });
+    </script>
+
+    <script src="/js/blog.js" defer></script>
 </body>
 </html>
