@@ -83,6 +83,280 @@
         gtag('js', new Date());
         gtag('config', 'G-EX042S6MQZ');
     </script>
+<style>
+:root {
+    --primary-color: #333;
+    --accent-color: #ff0000;
+    --border-color: #ddd;
+    --background-color: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background: var(--background-color);
+}
+
+#logo {
+    margin-bottom: 1.5rem;
+}
+
+#logo img {
+    max-width: 154px;
+    height: auto;
+}
+
+header {
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.abstract {
+    font-size: 1rem;
+    color: #555;
+    margin: 1rem auto;
+    font-style: italic;
+    max-width: 900px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+main {
+    margin-bottom: 1.5rem;
+}
+
+article {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+article h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+article h2 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+article h2 a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+article time {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+article p {
+    margin: 0.75rem 0;
+}
+
+article h3 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #007BFF;
+    padding-left: 10px;
+    margin: 15px 0;
+}
+
+.author {
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.related-posts ul {
+    list-style: none;
+}
+
+.related-posts li {
+    margin: 0.5rem 0;
+}
+
+.related-posts a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.related-posts a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.share a {
+    display: block;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    transition: color 0.2s ease;
+}
+
+.share a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 800px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    article h2 {
+        font-size: 1.4rem;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        gap: 0.6rem;
+    }
+}
+</style>
+
 </head>
 <body>
 <div id="logo">
@@ -105,6 +379,10 @@
 
 <h1>Ampere Insights</h1>
 <p class="abstract">A streamlined blog dedicated to unpacking the latest advancements and solutions in commissioning, power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</p>
+
+<div style="height: 3rem;"></div>
+
+<div class="content-wrapper">
 
 <main>
 <article class="post collapsed">
@@ -709,7 +987,7 @@
             <p>Short teaser: Modular substations deliver faster deployment, scalability, and sustainability benefits, with the market expected to grow by USD 28.84 billion at a 7.25% CAGR by 2030, led by innovations from Miller Industries, Esfro Solutions, and Flex Air. <a href="/blog/modular-substations/">Read more →</a></p>
             </div>
     </article>
-                <article class="post collapsed">
+    <article class="post collapsed">
                 <h2 onclick="togglePost(this)"><a href="/blog/avtron-power-solutions-new-frontiers/">Avtron Power Solutions and the Future of Data Center Testing: Insights from New Frontiers</a></h2>
                 <time datetime="2025-05-03">May 3, 2025</time>
                 <div class="teaser-content">
@@ -747,14 +1025,16 @@
                 <div class="teaser-content">
                 <p>Short teaser: Kevin O’Leary dives into A.I. with a massive 45 GW plan in North Dakota—here’s why it matters for the future of data centers and opportunity. <a href="/blog/mr-wonderfuls-ai-power-play/">Read more →</a></p>
                 </div>
-                </article>
+        </article>
             <!-- Pagination Container -->
             <div class="pagination" style="text-align: center; margin: 3rem 0; padding: 1rem;">
             <button id="prev-btn" aria-label="Previous page" disabled>← Previous</button>
             <span id="page-numbers"></span>
             <button id="next-btn" aria-label="Next page" disabled>Next →</button>
             </div>
-        </main> 
+        </main>
+        </aside>
+        </div>
     <footer id="footer">
         <div class="footer-links">
             <ul>
