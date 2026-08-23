@@ -19,6 +19,8 @@
     <meta name="twitter:description" content="Explore power systems, load banks, transformers & 3D fabrication with concise, expert insights from Ampere Development’s industry blog.">
     <meta name="twitter:image" content="https://ampere.dev/images/blog_seo.webp">
 
+    <link rel="stylesheet" href="/css/blog.css">
+
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
 {
@@ -73,279 +75,6 @@
     <link rel="stylesheet" href="/css/blog.css">
     <link rel="stylesheet" href="/css/footer.css">
 
-    <style>
-    :root {
-        --primary-color: #333;
-        --accent-color: #ff0000;
-        --border-color: #ddd;
-        --background-color: #f5f5f5;
-    }
-
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1.5rem 1rem;
-        line-height: 1.6;
-        color: var(--primary-color);
-        background: var(--background-color);
-    }
-
-    #logo {
-        margin-bottom: 1.5rem;
-    }
-
-    #logo img {
-        max-width: 154px;
-        height: auto;
-    }
-
-    header {
-        border-bottom: 1px solid var(--accent-color);
-        padding-bottom: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    h1 {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 2rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-    }
-
-    nav {
-        display: flex;
-        gap: 1.5rem;
-    }
-
-    nav a {
-        color: var(--primary-color);
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 0.5rem;
-        transition: color 0.2s ease, transform 0.2s ease;
-    }
-
-    nav a:hover {
-        color: var(--accent-color);
-        text-decoration: underline;
-        transform: scale(1.05);
-    }
-
-    .abstract {
-    font-size: 1rem;
-    color: #555;
-    margin: 1rem 0 2rem;   /* was 1rem auto */
-    font-style: italic;
-    max-width: none;       /* was 900px — remove the centering constraint */
-    text-align: left;      /* or keep justify if you prefer */
-    line-height: 1.6;
-    }
-
-    .content-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 2rem;
-    }
-
-    main {
-        margin-bottom: 1.5rem;
-    }
-
-    article {
-        margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #eee;
-    }
-
-    article h2 {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        cursor: pointer;
-    }
-
-    article h2 a {
-        color: var(--primary-color);
-        text-decoration: none;
-        transition: color 0.2s ease;
-    }
-
-    article h2 a:hover {
-        color: var(--accent-color);
-        text-decoration: underline;
-    }
-
-    article time {
-        display: block;
-        color: #666;
-        font-size: 0.9rem;
-        margin-bottom: 0.75rem;
-    }
-
-    article p {
-        margin: 0.75rem 0;
-    }
-
-    article h3 {
-        font-family: 'Krona One', sans-serif;
-        font-size: 1rem;
-        margin: 1.5rem 0 0.5rem;
-    }
-
-    .quote {
-        font-style: italic;
-        color: #555;
-        border-left: 4px solid #007BFF;
-        padding-left: 10px;
-        margin: 15px 0;
-    }
-
-    .author {
-        text-align: right;
-        font-size: 0.9em;
-        color: #666;
-    }
-
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        margin: 1.5rem 0;
-    }
-
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    aside {
-        background: #fff;
-        padding: 1.5rem;
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-    }
-
-    .sidebar-section {
-        margin-bottom: 2rem;
-    }
-
-    .sidebar-section h3 {
-        font-family: 'Krona One', sans-serif;
-        font-size: 1.25rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .related-posts ul {
-        list-style: none;
-    }
-
-    .related-posts li {
-        margin: 0.5rem 0;
-    }
-
-    .related-posts a {
-        color: var(--primary-color);
-        text-decoration: none;
-        transition: color 0.2s ease;
-    }
-
-    .related-posts a:hover {
-        color: var(--accent-color);
-        text-decoration: underline;
-    }
-
-    .share a {
-        display: block;
-        color: var(--accent-color);
-        text-decoration: none;
-        font-size: 0.9rem;
-        margin: 0.5rem 0;
-        transition: color 0.2s ease;
-    }
-
-    .share a:hover {
-        color: var(--primary-color);
-        text-decoration: underline;
-    }
-
-    footer {
-        margin-top: 2rem;
-        text-align: center;
-        color: #666;
-        font-size: 0.9rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--border-color);
-    }
-
-    .footer-links ul {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        list-style: none;
-        margin-bottom: 1rem;
-    }
-
-    .footer-links a {
-        color: #666;
-        text-decoration: none;
-    }
-
-    .footer-links a:hover {
-        color: var(--accent-color);
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .social-icons img {
-        width: 24px;
-        height: 24px;
-    }
-
-    @media (max-width: 800px) {
-        .content-wrapper {
-            grid-template-columns: 1fr;
-        }
-
-        aside {
-            margin-top: 2rem;
-        }
-    }
-
-    @media (max-width: 600px) {
-        body {
-            padding: 1rem;
-        }
-
-        h1 {
-            font-size: 1.75rem;
-        }
-
-        article h2 {
-            font-size: 1.4rem;
-        }
-
-        .pagination {
-            flex-wrap: wrap;
-            gap: 0.6rem;
-        }
-    }
-</style>
         <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EX042S6MQZ"></script>
     <script>
@@ -377,10 +106,7 @@
 <h1>Ampere Insights</h1>
 <p class="abstract">A streamlined blog dedicated to unpacking the latest advancements and solutions in commissioning, power systems, electrical infrastructure, and cutting-edge fabrication, delivering sharp, concise posts with expert perspectives on load banks, power quality, transformers, 3D fabrication, and more, empowering professionals with clear, actionable knowledge to shape the future of energy and industry.</p>
 
-<div style="height: 3rem;"></div>
-
-    <div class="content-wrapper">
-        <main>
+<main>
 <article class="post collapsed">
     <h2 onclick="togglePost(this)"><a href="/blog/portable-load-banks-now-in-stock/">Portable Load Banks Now in Stock: Compact Power Testing for Generators, UPS, Marine, Aviation & More</a></h2>
     <time datetime="2026-08-23">August 23, 2026</time>
@@ -1029,8 +755,6 @@
             <button id="next-btn" aria-label="Next page" disabled>Next →</button>
             </div>
         </main> 
-        </aside>
-    </div>
     <footer id="footer">
         <div class="footer-links">
             <ul>
