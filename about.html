@@ -56,26 +56,26 @@
     </style>
 </head>
 <body class="font-ubuntu bg-gray-100 text-gray-800">
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div id="logo">
-                <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
-                    <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
-                </a>
-            </div>
-            <div class="menuToggler md:hidden cursor-pointer text-2xl" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
-            <nav id="header" class="nav-menu hidden md:flex space-x-6">
-                <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-blue-600 font-medium">LOAD BANKS</a>
-                <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-blue-600 font-medium">STARLINE</a>
-                <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-blue-600 font-medium">CABLES</a>
-                <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-blue-600 font-medium">FLIR</a>
-                <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-blue-600 font-medium">POWER QUALITY</a>
-                <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-blue-600 font-medium">TRANSFORMERS</a>
-                <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-blue-600 font-medium">3D FABRICATION</a>
-            </nav>
+    <!-- Navigation -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div id="logo">
+            <a href="https://ampere.dev" aria-label="Return to Ampere Development Homepage">
+                <img src="/images/Ampere-Logo.webp" alt="Ampere Development Logo" width="154" height="30" class="h-8" loading="lazy">
+            </a>
         </div>
-    </header>
+        <div class="menuToggler md:hidden cursor-pointer text-3xl text-gray-700" role="button" aria-label="Toggle navigation menu" tabindex="0">☰</div>
+        <nav id="header" class="nav-menu hidden md:flex space-x-8 text-sm font-medium">
+            <a href="https://ampere.dev/what-are-load-banks" class="text-gray-600 hover:text-red-600 transition-colors">LOAD BANKS</a>
+            <a href="https://ampere.dev/starline-tapbox-rental" class="text-gray-600 hover:text-red-600 transition-colors">STARLINE</a>
+            <a href="https://ampere.dev/cables" class="text-gray-600 hover:text-red-600 transition-colors">CABLES</a>
+            <a href="https://ampere.dev/flir" class="text-gray-600 hover:text-red-600 transition-colors">FLIR</a>
+            <a href="https://ampere.dev/power-quality" class="text-gray-600 hover:text-red-600 transition-colors">POWER QUALITY</a>
+            <a href="https://ampere.dev/transformers" class="text-gray-600 hover:text-red-600 transition-colors">TRANSFORMERS</a>
+            <a href="https://ampere.dev/3D-fabrication" class="text-gray-600 hover:text-red-600 transition-colors">3D FABRICATION</a>
+        </nav>
+    </div>
+</header>
 
     <!-- Hero Section -->
     <section class="bg-blue-800 text-white py-16 text-center">
@@ -272,30 +272,30 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="footer-links">
-                    <ul class="flex flex-col md:flex-row gap-4">
-                        <li><a href="https://ampere.dev/about" class="hover:text-blue-400">ABOUT</a></li>
-                        <li><a href="https://ampere.dev/products" class="hover:text-blue-400">PRODUCTS</a></li>
-                        <li><a href="https://ampere.dev/services" class="hover:text-blue-400">SERVICES</a></li>
-                        <li><a href="https://ampere.dev/blog" class="hover:text-blue-400">BLOG</a></li>
-                        <li><a href="https://ampere.dev/privacy-legal" class="hover:text-blue-400">PRIVACY & LEGAL</a></li>
-                        <li><a href="https://ampere.dev/contact" class="hover:text-blue-400">CONTACT</a></li>
-                    </ul>
-                </div>
-                <div class="social-icons flex gap-4">
-                    <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener">
-                        <img src="icons/logo-white.webp" alt="X logo" class="h-6">
-                    </a>
-                </div>
+<footer id="footer" class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="footer-links">
+                <ul class="flex flex-col md:flex-row gap-6 text-sm font-medium">
+                    <li><a href="https://ampere.dev/about" class="hover:text-red-600 transition-colors">ABOUT</a></li>
+                    <li><a href="https://ampere.dev/products" class="hover:text-red-600 transition-colors">PRODUCTS</a></li>
+                    <li><a href="https://ampere.dev/services" class="hover:text-red-600 transition-colors">SERVICES</a></li>
+                    <li><a href="https://ampere.dev/blog" class="hover:text-red-600 transition-colors">BLOG</a></li>
+                    <li><a href="https://ampere.dev/privacy-legal" class="hover:text-red-600 transition-colors">PRIVACY &amp; LEGAL</a></li>
+                    <li><a href="https://ampere.dev/contact" class="hover:text-red-600 transition-colors">CONTACT</a></li>
+                </ul>
             </div>
-            <div class="text-center mt-6">
-                <p>AMPERE © 2026</p>
+            <div class="social-icons">
+                <a href="https://x.com/LoadbankPro" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X">
+                    <img src="icons/logo-white.webp" alt="X logo" class="h-6" loading="lazy">
+                </a>
             </div>
         </div>
-    </footer>
+        <div class="text-center mt-6 text-sm">
+            <p>AMPERE © 2026</p>
+        </div>
+    </div>
+</footer>
 
     <script>
         // Toggle mobile menu
