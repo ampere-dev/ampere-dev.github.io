@@ -505,4 +505,68 @@
         document.querySelectorAll('.download-btn').forEach((btn) => {
             btn.addEventListener('click', () => {
                 pendingFile = btn.dataset.file;
-                const title = btn.dataset.title || 'this 
+                const title = btn.dataset.title || 'this cutsheet';
+
+                if (sessionStorage.getItem(UNLOCK_KEY) === '1') {
+                    startDownload(pendingFile);
+                    return;
+                }
+
+                resetDialog();
+                documentField.value = pendingFile;
+                subjectField.value = 'Cutsheet download: ' + title;
+                dialogTitle.textContent = title;
+                dialog.showModal();
+            });
+        });
+
+        document.getElementById('dialog-close').addEventListener('click', () => dialog.close());
+        dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) dialog.close();
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const requiredFields = form.querySelectorAll('input[required]');
+            let isValid = true;
+
+            requiredFields.forEach((field) => {
+                if (!field.value.trim()) {
+                    field.classList.add('has-danger');
+                    isValid = false;
+                } else {
+                    field.classList.remove('has-danger');
+                }
+            });
+
+            if (!isValid) {
+                messageDiv.innerHTML = '<p class="text-red-600">Please fill out all required fields.</p>';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending…';
+
+            fetch(form.action, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(new FormData(form)).toString()
+            })
+            .then((response) => {
+                if (!response.ok) throw new Error('Form error');
+                return response.json();
+            })
+            .then(() => {
+                sessionStorage.setItem(UNLOCK_KEY, '1');
+                showReady(pendingFile);
+                startDownload(pendingFile);
+            })
+            .catch(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Unlock download';
+                messageDiv.innerHTML = '<p class="text-red-600">Something went wrong. Please try again or call 888-345-LOAD.</p>';
+            });
+        });
+    </script>
+</body>
+</html>
