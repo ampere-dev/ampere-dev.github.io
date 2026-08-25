@@ -91,11 +91,14 @@
 
     <style>
         body { font-family: 'Ubuntu', system-ui, sans-serif; }
+        table { border-collapse: collapse; }
+        dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
+        .has-danger { border-color: #ef4444 !important; }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Navigation – exact template style -->
+    <!-- Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div id="logo">
@@ -116,7 +119,7 @@
         </div>
     </header>
 
-    <!-- Hero – full-bleed darkened -->
+    <!-- Hero -->
     <header class="relative text-white py-24 md:py-32 text-center overflow-hidden">
         <div class="absolute inset-0">
             <img 
@@ -145,7 +148,7 @@
     <!-- Main Content -->
     <main class="container mx-auto py-12 px-4">
 
-        <!-- Problem Section – blue-100 -->
+        <!-- Problem Section -->
         <section class="mb-12 bg-blue-100 p-8 rounded-lg">
             <h2 class="text-4xl font-bold mb-4 text-blue-800">Is Your 400Hz Power System Ready for Flight?</h2>
             <p class="text-gray-700 text-lg leading-relaxed">
@@ -159,7 +162,7 @@
             </a>
         </section>
 
-        <!-- Why Rent Section – green-check grid -->
+        <!-- Why Rent Section -->
         <section class="mb-12">
             <h2 class="text-4xl font-bold mb-4 text-blue-800">Why Rent a 400Hz Load Bank?</h2>
             <p class="text-gray-700 text-lg mb-6">
@@ -178,7 +181,7 @@
             </a>
         </section>
 
-        <!-- AVAILABLE MODELS – 400 Hz (Cannon) -->
+        <!-- AVAILABLE MODELS – 400 Hz -->
         <section class="mb-16">
             <h2 class="text-4xl font-bold mb-2 text-blue-800">400 Hertz Portable Load Banks</h2>
             <p class="text-gray-600 mb-6">Units for aircraft ground power units (GPUs), gate boxes, and military applications.</p>
@@ -189,6 +192,7 @@
                         <tr>
                             <th class="px-4 py-3 font-bold">Model</th>
                             <th class="px-4 py-3 font-bold">Description</th>
+                            <th class="px-4 py-3 font-bold text-center">Cutsheet</th>
                             <th class="px-4 py-3 font-bold text-center">Action</th>
                         </tr>
                     </thead>
@@ -196,46 +200,73 @@
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-40</td>
                             <td class="px-4 py-3">400 Hz 40 kW in 4 Steps (10, 20, 30, 40 kW)</td>
+                            <td class="px-4 py-3 text-center">
+                                <button type="button" class="download-btn inline-block bg-blue-600 text-white font-semibold py-1.5 px-3 rounded hover:bg-blue-700 text-sm transition"
+                                    data-file="Cannon_L-40_Cutsheet.pdf" data-title="L-40 Cutsheet">PDF</button>
+                            </td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-45</td>
                             <td class="px-4 py-3">400 Hz 45 kW in 1 kW Steps — Preferred by US Navy</td>
+                            <td class="px-4 py-3 text-center">
+                                <button type="button" class="download-btn inline-block bg-blue-600 text-white font-semibold py-1.5 px-3 rounded hover:bg-blue-700 text-sm transition"
+                                    data-file="Cannon_L-45_Cutsheet.pdf" data-title="L-45 Cutsheet">PDF</button>
+                            </td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-72</td>
                             <td class="px-4 py-3">400 Hz 72 kW in 8 Steps (9, 18, 27, 36, 45, 54, 63, 72 kW) Continuous</td>
+                            <td class="px-4 py-3 text-center">
+                                <button type="button" class="download-btn inline-block bg-blue-600 text-white font-semibold py-1.5 px-3 rounded hover:bg-blue-700 text-sm transition"
+                                    data-file="Cannon_L-72_Cutsheet.pdf" data-title="L-72 Cutsheet">PDF</button>
+                            </td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-72-SB</td>
                             <td class="px-4 py-3">400 Hz 64 kW in 8 Steps (8–64 kW Continuous), SB Plug</td>
+                            <td class="px-4 py-3 text-center text-gray-400">—</td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-80</td>
                             <td class="px-4 py-3">400 Hz 80 kW Load in 1 kW Steps</td>
+                            <td class="px-4 py-3 text-center">
+                                <button type="button" class="download-btn inline-block bg-blue-600 text-white font-semibold py-1.5 px-3 rounded hover:bg-blue-700 text-sm transition"
+                                    data-file="Cannon_L-80_Cutsheet.pdf" data-title="L-80 Cutsheet">PDF</button>
+                            </td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-80G</td>
                             <td class="px-4 py-3">400 Hz 80 kW Load in 1 kW Steps</td>
+                            <td class="px-4 py-3 text-center text-gray-400">—</td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-100D</td>
                             <td class="px-4 py-3">400 Hz 100 kW in 12 Steps (10–100 kW)</td>
+                            <td class="px-4 py-3 text-center">
+                                <button type="button" class="download-btn inline-block bg-blue-600 text-white font-semibold py-1.5 px-3 rounded hover:bg-blue-700 text-sm transition"
+                                    data-file="Cannon_L-100-d_Cutsheet.pdf" data-title="L-100D Cutsheet">PDF</button>
+                            </td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">L-120</td>
                             <td class="px-4 py-3">400 Hz 120 kW in 1 kW Steps Continuous</td>
+                            <td class="px-4 py-3 text-center">
+                                <button type="button" class="download-btn inline-block bg-blue-600 text-white font-semibold py-1.5 px-3 rounded hover:bg-blue-700 text-sm transition"
+                                    data-file="Cannon_L-120_Cutsheet.pdf" data-title="L-120 Cutsheet">PDF</button>
+                            </td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                         <tr class="hover:bg-blue-50">
                             <td class="px-4 py-3 font-semibold text-blue-900">TB-400</td>
                             <td class="px-4 py-3">400 Hz Test Box</td>
+                            <td class="px-4 py-3 text-center text-gray-400">—</td>
                             <td class="px-4 py-3 text-center"><a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded hover:bg-yellow-600 text-sm transition">Rent</a></td>
                         </tr>
                     </tbody>
@@ -274,7 +305,7 @@
         </section>
     </main>
 
-    <!-- Footer – exact template match -->
+    <!-- Footer -->
     <footer id="footer" class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -300,7 +331,53 @@
         </div>
     </footer>
 
-    <!-- Mobile menu script – exact template version -->
+    <!-- Cutsheet download gate -->
+    <dialog id="download-dialog" class="w-[min(32rem,calc(100%-2rem))] rounded-lg shadow-xl p-0 bg-white text-gray-800">
+        <div class="p-6 md:p-8">
+            <div class="flex justify-between items-start gap-4 mb-4">
+                <h2 id="dialog-title" class="text-2xl font-bold text-blue-800">Download cutsheet</h2>
+                <button type="button" id="dialog-close" class="text-gray-500 hover:text-gray-800 text-2xl leading-none" aria-label="Close">&times;</button>
+            </div>
+            <p id="dialog-intro" class="text-gray-700 mb-6">Enter your details and we will unlock the PDF. We use this to follow up if you need a rental quote.</p>
+
+            <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="resource-form" class="space-y-4">
+                <input type="hidden" name="form_type" value="cutsheet_download">
+                <input type="hidden" name="document" id="document-field" value="">
+                <input type="hidden" name="_subject" id="subject-field" value="Cutsheet download">
+
+                <div>
+                    <label for="fromName" class="block text-sm font-medium mb-1">Name</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromName" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="fromEmail" class="block text-sm font-medium mb-1">Work email</label>
+                    <input type="email" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="name@company.com" required>
+                </div>
+                <div>
+                    <label for="company" class="block text-sm font-medium mb-1">Company</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Your Company" required>
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium mb-1">Phone <span class="text-gray-500 font-normal">(optional)</span></label>
+                    <input type="tel" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone">
+                </div>
+
+                <button type="submit" id="submit-btn" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition shadow-md">
+                    Unlock download
+                </button>
+                <div id="form-message" class="text-center"></div>
+            </form>
+
+            <div id="download-ready" class="hidden text-center">
+                <p class="text-green-700 font-semibold mb-4">Thanks — your download is ready.</p>
+                <a id="download-link" href="#" class="inline-block bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition shadow-md" download>
+                    <i class="fa-solid fa-download mr-2"></i>Download PDF
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Mobile menu script -->
     <script>
         document.querySelector('.menuToggler').addEventListener('click', () => {
             const navMenu = document.querySelector('.nav-menu');
@@ -314,6 +391,119 @@
             navMenu.classList.toggle('top-16');
             navMenu.classList.toggle('left-0');
             navMenu.classList.toggle('shadow-md');
+        });
+    </script>
+
+    <!-- Cutsheet download script -->
+    <script>
+        const RESOURCE_BASE = '/documents/Cutsheets/';
+        const UNLOCK_KEY = 'ampereCutsheetUnlock';
+        const dialog = document.getElementById('download-dialog');
+        const form = document.getElementById('resource-form');
+        const messageDiv = document.getElementById('form-message');
+        const readyBox = document.getElementById('download-ready');
+        const downloadLink = document.getElementById('download-link');
+        const documentField = document.getElementById('document-field');
+        const subjectField = document.getElementById('subject-field');
+        const dialogTitle = document.getElementById('dialog-title');
+        const submitBtn = document.getElementById('submit-btn');
+        let pendingFile = '';
+
+        function fileUrl(name) {
+            return RESOURCE_BASE + encodeURIComponent(name);
+        }
+
+        function startDownload(name) {
+            const url = fileUrl(name);
+            const a = document.createElement('a');
+            a.href = url;
+            a.setAttribute('download', name);
+            a.rel = 'noopener';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
+
+        function showReady(name) {
+            form.classList.add('hidden');
+            readyBox.classList.remove('hidden');
+            downloadLink.href = fileUrl(name);
+            downloadLink.setAttribute('download', name);
+        }
+
+        function resetDialog() {
+            form.classList.remove('hidden');
+            readyBox.classList.add('hidden');
+            messageDiv.innerHTML = '';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Unlock download';
+            form.querySelectorAll('.has-danger').forEach((el) => el.classList.remove('has-danger'));
+        }
+
+        document.querySelectorAll('.download-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                pendingFile = btn.dataset.file;
+                const title = btn.dataset.title || 'this cutsheet';
+
+                if (sessionStorage.getItem(UNLOCK_KEY) === '1') {
+                    startDownload(pendingFile);
+                    return;
+                }
+
+                resetDialog();
+                documentField.value = pendingFile;
+                subjectField.value = 'Cutsheet download: ' + title;
+                dialogTitle.textContent = title;
+                dialog.showModal();
+            });
+        });
+
+        document.getElementById('dialog-close').addEventListener('click', () => dialog.close());
+        dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) dialog.close();
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const requiredFields = form.querySelectorAll('input[required]');
+            let isValid = true;
+
+            requiredFields.forEach((field) => {
+                if (!field.value.trim()) {
+                    field.classList.add('has-danger');
+                    isValid = false;
+                } else {
+                    field.classList.remove('has-danger');
+                }
+            });
+
+            if (!isValid) {
+                messageDiv.innerHTML = '<p class="text-red-600">Please fill out all required fields.</p>';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending…';
+
+            fetch(form.action, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(new FormData(form)).toString()
+            })
+            .then((response) => {
+                if (!response.ok) throw new Error('Form error');
+                return response.json();
+            })
+            .then(() => {
+                sessionStorage.setItem(UNLOCK_KEY, '1');
+                showReady(pendingFile);
+                startDownload(pendingFile);
+            })
+            .catch(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Unlock download';
+                messageDiv.innerHTML = '<p class="text-red-600">Something went wrong. Please try again or call 888-345-LOAD.</p>';
+            });
         });
     </script>
 </body>
