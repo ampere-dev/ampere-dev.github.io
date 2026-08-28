@@ -341,11 +341,11 @@ body.home #footer {
     text-align: center;
     padding: 0.6rem 1rem;
     font-size: clamp(0.75rem, 2vw, 0.9rem);
-    color: #FFFFFF !important;
+    color: #FFFFFF;
 }
 
-body.home #footer * {
-    color: #FFFFFF !important;
+body.home #footer p {
+    color: #FFFFFF;
 }
 
 .footer-links ul {
@@ -360,13 +360,15 @@ body.home #footer * {
     margin: 0 10px;
 }
 
-.footer-links a {
-    color: inherit;
+body.home #footer .footer-links a {
+    color: #FFFFFF;
     text-decoration: none;
+    transition: color 0.15s ease;
 }
 
-.footer-links a:hover {
-    color: #FE0002 !important;
+body.home #footer .footer-links a:hover,
+body.home #footer .footer-links a:focus-visible {
+    color: #FE0002;
 }
 
 .social-icons {
