@@ -116,6 +116,8 @@
 
     <style>
         body { font-family: 'Ubuntu', system-ui, sans-serif; }
+        dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
+        .has-danger { border-color: #dc2626 !important; }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -144,9 +146,9 @@
     <!-- Hero – full-bleed with dark overlay (using your high-power 800V image) -->
     <header class="relative text-white py-24 md:py-32 text-center overflow-hidden">
         <div class="absolute inset-0">
-            <img 
-                src="/images/800Vdc.webp" 
-                alt="High-power 800V DC load bank for data center commissioning" 
+            <img
+                src="/images/800Vdc.webp"
+                alt="High-power 800V DC load bank for data center commissioning"
                 class="w-full h-full object-cover"
                 loading="eager"
             >
@@ -173,9 +175,10 @@
         <!-- Chapter Nav (kept from your original, now styled to match) -->
         <section class="py-8 bg-gray-200 sticky top-14 z-40 mb-12">
             <div class="container mx-auto px-4">
-                <nav class="flex justify-center space-x-4 md:space-x-8 text-sm font-medium">
+                <nav class="flex justify-center flex-wrap gap-y-2 space-x-4 md:space-x-8 text-sm font-medium">
                     <a href="#testing-levels" class="text-blue-900 hover:text-red-600 transition-colors">5 Levels of Testing</a>
                     <a href="#sub-options" class="text-blue-900 hover:text-red-600 transition-colors">Specialized Solutions</a>
+                    <a href="#a3000dc-datasheet" class="text-blue-900 hover:text-red-600 transition-colors">A3000DC Datasheet</a>
                     <a href="#benefits" class="text-blue-900 hover:text-red-600 transition-colors">Key Benefits</a>
                 </nav>
             </div>
@@ -226,7 +229,7 @@
                 <!-- Text content -->
                 <div class="md:w-2/3">
                     <p class="text-lg text-center mb-10 text-gray-700">800V DC load banks are essential in Levels 4 and 5, enabling realistic full-load simulation of AI/GPU workloads and complete HVDC power-chain validation before live deployment.</p>
-                    
+
                     <div class="space-y-12">
                         <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
                             <h3 class="text-2xl font-bold text-blue-800 mb-4">Levels 1–3: Factory &amp; Component Testing</h3>
@@ -350,6 +353,57 @@
             </div>
         </section>
 
+        <!-- A3000DC datasheet gate -->
+        <section id="a3000dc-datasheet" class="mb-12 bg-blue-100 p-8 rounded-lg">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-sm font-semibold tracking-wide text-blue-800 uppercase mb-2 text-center">Technical datasheet</p>
+                <h2 class="text-4xl font-bold mb-4 text-blue-800 text-center">A3000DC — 3,000 kW Stationary DC Load Bank</h2>
+                <p class="text-gray-700 text-lg text-center mb-8 max-w-3xl mx-auto">
+                    Service- and rental-grade outdoor DC testing at multi-megawatt scale. Continuous duty at 500 VDC or 1,000 VDC.
+                    At 800 VDC the unit is rated <strong>1,920 kW / 2,400 A</strong> with 25 kW steps.
+                </p>
+
+                <div class="overflow-x-auto bg-white rounded-lg shadow mb-8">
+                    <table class="min-w-full text-sm text-left">
+                        <thead class="bg-blue-800 text-white">
+                            <tr>
+                                <th class="px-4 py-3 font-bold">Rating (kW)</th>
+                                <th class="px-4 py-3 font-bold">Voltage (VDC)</th>
+                                <th class="px-4 py-3 font-bold">Current (A)</th>
+                                <th class="px-4 py-3 font-bold">Resistance (Ω)</th>
+                                <th class="px-4 py-3 font-bold">Min. step (kW)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-800">
+                            <tr class="border-b border-gray-200"><td class="px-4 py-2">3000</td><td class="px-4 py-2">500</td><td class="px-4 py-2">6000</td><td class="px-4 py-2">0.083</td><td class="px-4 py-2">25</td></tr>
+                            <tr class="border-b border-gray-200 bg-gray-50"><td class="px-4 py-2">1080</td><td class="px-4 py-2">600</td><td class="px-4 py-2">1800</td><td class="px-4 py-2">0.333</td><td class="px-4 py-2">25</td></tr>
+                            <tr class="border-b border-gray-200"><td class="px-4 py-2">1470</td><td class="px-4 py-2">700</td><td class="px-4 py-2">2100</td><td class="px-4 py-2">0.333</td><td class="px-4 py-2">25</td></tr>
+                            <tr class="border-b border-gray-200 bg-yellow-50 font-semibold"><td class="px-4 py-2">1920</td><td class="px-4 py-2">800</td><td class="px-4 py-2">2400</td><td class="px-4 py-2">0.333</td><td class="px-4 py-2">25</td></tr>
+                            <tr class="border-b border-gray-200"><td class="px-4 py-2">2430</td><td class="px-4 py-2">900</td><td class="px-4 py-2">2700</td><td class="px-4 py-2">0.333</td><td class="px-4 py-2">25</td></tr>
+                            <tr><td class="px-4 py-2">3000</td><td class="px-4 py-2">1000</td><td class="px-4 py-2">3000</td><td class="px-4 py-2">0.333</td><td class="px-4 py-2">25</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 text-gray-700 mb-8">
+                    <div class="flex items-start gap-4"><i class="fa-solid fa-check text-green-600 text-xl mt-1"></i><div>PLC + color touchscreen HMI with kW Select, Load On/Apply/Drop, and Load Profile</div></div>
+                    <div class="flex items-start gap-4"><i class="fa-solid fa-check text-green-600 text-xl mt-1"></i><div>Network up to 24 load banks from a single HMI; LoadEZ remote software</div></div>
+                    <div class="flex items-start gap-4"><i class="fa-solid fa-check text-green-600 text-xl mt-1"></i><div>NEMA 3R outdoor enclosure on a common skid with fork pockets and lift eyes</div></div>
+                    <div class="flex items-start gap-4"><i class="fa-solid fa-check text-green-600 text-xl mt-1"></i><div>146 L × 61 W × 100 H in · approx. 7,200 lb / 3,266 kg</div></div>
+                </div>
+
+                <div class="text-center">
+                    <button type="button"
+                        class="download-btn inline-block bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-md"
+                        data-file="A3000DC.pdf"
+                        data-title="A3000DC 3,000 kW DC Load Bank Datasheet">
+                        <i class="fa-solid fa-file-pdf mr-2"></i>Download A3000DC Datasheet
+                    </button>
+                    <p class="text-sm text-gray-600 mt-3">Name, work email, and company required to unlock the PDF.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Key Benefits Section -->
         <section id="benefits" class="mb-12 bg-white p-8 rounded-lg shadow">
             <h2 class="text-4xl font-bold mb-8 text-blue-800 text-center">Key Benefits of 800V DC Load Bank Commissioning</h2>
@@ -394,6 +448,51 @@
         </div>
     </footer>
 
+    <!-- Cutsheet download gate -->
+    <dialog id="download-dialog" class="w-[min(32rem,calc(100%-2rem))] rounded-lg shadow-xl p-0 bg-white text-gray-800">
+        <div class="p-6 md:p-8">
+            <div class="flex justify-between items-start gap-4 mb-4">
+                <h2 id="dialog-title" class="text-2xl font-bold text-blue-800">Download datasheet</h2>
+                <button type="button" id="dialog-close" class="text-gray-500 hover:text-gray-800 text-2xl leading-none" aria-label="Close">&times;</button>
+            </div>
+            <p id="dialog-intro" class="text-gray-700 mb-6">Enter your details and we will unlock the PDF. We use this to follow up if you need a rental quote.</p>
+
+            <form method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" id="resource-form" class="space-y-4">
+                <input type="hidden" name="form_type" value="cutsheet_download">
+                <input type="hidden" name="document" id="document-field" value="">
+                <input type="hidden" name="_subject" id="subject-field" value="Cutsheet download">
+                <input type="hidden" name="page" value="800v-dc-load-banks-data-centers">
+
+                <div>
+                    <label for="fromName" class="block text-sm font-medium mb-1">Name</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromName" name="name" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="fromEmail" class="block text-sm font-medium mb-1">Work email</label>
+                    <input type="email" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="fromEmail" name="_replyto" placeholder="name@company.com" required>
+                </div>
+                <div>
+                    <label for="company" class="block text-sm font-medium mb-1">Company</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="company" name="company" placeholder="Your Company" required>
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium mb-1">Phone <span class="text-gray-500 font-normal">(optional)</span></label>
+                    <input type="tel" class="w-full p-3 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200" id="phone" name="phone" placeholder="Phone">
+                </div>
+
+                <button type="submit" id="submit-btn" class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition">Unlock download</button>
+                <div id="form-message" class="text-center"></div>
+            </form>
+
+            <div id="download-ready" class="hidden text-center">
+                <p class="text-green-700 font-semibold mb-4">Thanks — your download is ready.</p>
+                <a id="download-link" href="#" class="inline-block bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition shadow-md" download>
+                    <i class="fa-solid fa-download mr-2"></i>Download PDF
+                </a>
+            </div>
+        </div>
+    </dialog>
+
     <!-- Mobile menu script – exact template version -->
     <script>
         document.querySelector('.menuToggler').addEventListener('click', () => {
@@ -408,6 +507,117 @@
             navMenu.classList.toggle('top-16');
             navMenu.classList.toggle('left-0');
             navMenu.classList.toggle('shadow-md');
+        });
+    </script>
+
+    <!-- Cutsheet download script -->
+    <script>
+        const RESOURCE_BASE = '/documents/Cutsheets/';
+        const UNLOCK_KEY = 'ampereCutsheetUnlock';
+        const dialog = document.getElementById('download-dialog');
+        const form = document.getElementById('resource-form');
+        const messageDiv = document.getElementById('form-message');
+        const readyBox = document.getElementById('download-ready');
+        const downloadLink = document.getElementById('download-link');
+        const documentField = document.getElementById('document-field');
+        const subjectField = document.getElementById('subject-field');
+        const dialogTitle = document.getElementById('dialog-title');
+        const submitBtn = document.getElementById('submit-btn');
+        let pendingFile = '';
+
+        function fileUrl(name) {
+            return RESOURCE_BASE + encodeURIComponent(name);
+        }
+
+        function startDownload(name) {
+            const a = document.createElement('a');
+            a.href = fileUrl(name);
+            a.setAttribute('download', name);
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
+
+        function showReady(name) {
+            form.classList.add('hidden');
+            readyBox.classList.remove('hidden');
+            downloadLink.href = fileUrl(name);
+            downloadLink.setAttribute('download', name);
+        }
+
+        function resetDialog() {
+            form.classList.remove('hidden');
+            readyBox.classList.add('hidden');
+            messageDiv.innerHTML = '';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Unlock download';
+            form.querySelectorAll('.has-danger').forEach((el) => el.classList.remove('has-danger'));
+        }
+
+        document.querySelectorAll('.download-btn').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                pendingFile = btn.dataset.file;
+                const title = btn.dataset.title || 'this datasheet';
+
+                if (sessionStorage.getItem(UNLOCK_KEY) === '1') {
+                    startDownload(pendingFile);
+                    return;
+                }
+
+                resetDialog();
+                documentField.value = pendingFile;
+                subjectField.value = 'Datasheet download: ' + title;
+                dialogTitle.textContent = title;
+                dialog.showModal();
+            });
+        });
+
+        document.getElementById('dialog-close').addEventListener('click', () => dialog.close());
+        dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) dialog.close();
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const requiredFields = form.querySelectorAll('input[required]');
+            let isValid = true;
+
+            requiredFields.forEach((field) => {
+                if (!field.value.trim()) {
+                    field.classList.add('has-danger');
+                    isValid = false;
+                } else {
+                    field.classList.remove('has-danger');
+                }
+            });
+
+            if (!isValid) {
+                messageDiv.innerHTML = '<p class="text-red-600">Please fill out all required fields.</p>';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending…';
+
+            fetch(form.action, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(new FormData(form)).toString()
+            })
+            .then((response) => {
+                if (!response.ok) throw new Error('Form error');
+                return response.json();
+            })
+            .then(() => {
+                sessionStorage.setItem(UNLOCK_KEY, '1');
+                showReady(pendingFile);
+                startDownload(pendingFile);
+            })
+            .catch(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Unlock download';
+                messageDiv.innerHTML = '<p class="text-red-600">Something went wrong. Please try again or call 888-345-LOAD.</p>';
+            });
         });
     </script>
 </body>
