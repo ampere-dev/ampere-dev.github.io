@@ -6,13 +6,20 @@
     <link>https://ampere.dev/blog</link>
     <description>Blog posts from Ampere Development on data center power infrastructure, AI energy, transformers, grid, etc.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2026 05:28:00 EST</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 02:32:42 EST</lastBuildDate>
+    <item>
+      <title>Portable Load Banks Now in Stock: Compact Power Testing for Generators, UPS, Marine, Aviation &amp; More</title>
+      <link>https://ampere.dev/blog/portable-load-banks-now-in-stock/</link>
+      <guid isPermaLink="true">https://ampere.dev/blog/portable-load-banks-now-in-stock/</guid>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 EST</pubDate>
+      <description>Short teaser: Ampere Development is now stocking a full range of ultra-compact portable load banks for DC, 60 Hz, and 400 Hz testing. Designed for small generators, UPS systems, battery strings, marine power, RV applications, and aircraft ground power, these wheeled, plug-and-play units deliver professional-grade load validation without the cost or storage burden of ownership. Nationwide delivery and 24/7 support included.</description>
+    </item>
     <item>
       <title>Loudoun County Load-Rejection Event: Technical Analysis of Grid Frequency Disturbances and the Growing Need for Controlled Data-Center Ramp-Down</title>
       <link>https://ampere.dev/blog/loudoun-county-load-rejection-event/</link>
       <guid isPermaLink="true">https://ampere.dev/blog/loudoun-county-load-rejection-event/</guid>
       <pubDate>Tue, 28 Jul 2026 00:00:00 EST</pubDate>
-      <description>Short teaser: A July 2026 transmission contingency in Loudoun County triggered multi-hundred-MW data-center load rejection, sending frequency and voltage disturbances across the Eastern Interconnection. With BloombergNEF now projecting 194 GW of U.S. data-center demand by 2035, controlled ramp-down and local dissipation testing have become essential for grid-neutral transfers.</description>
+      <description>Short teaser: A July 2026 transmission-line fault in Loudoun County caused data centers to reject load onto backup generation, producing measurable frequency and voltage disturbances across half the Eastern Interconnection. Combined with BNEF’s 194 GW forecast, transformer shortages, Ratepayer Protection policy, and summer thermal stress, the event highlights the engineering necessity of controlled ramp-down and local power dissipation.</description>
     </item>
     <item>
       <title>New Frontiers in High-Power Load Banks: Trends Shaping AI Data Centers and Grid Modernization</title>

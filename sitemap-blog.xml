@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ampere.dev/blog/portable-load-banks-now-in-stock/</loc>
+    <lastmod>2026-08-23T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ampere.dev/blog/loudoun-county-load-rejection-event/</loc>
     <lastmod>2026-07-28T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -91,13 +97,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/nvidia-800v-revolution-data-centers/</loc>
+    <loc>https://ampere.dev/blog/high-impedance-transformers-data-centers/</loc>
     <lastmod>2025-12-30T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/high-impedance-transformers-data-centers/</loc>
+    <loc>https://ampere.dev/blog/nvidia-800v-revolution-data-centers/</loc>
     <lastmod>2025-12-30T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -175,13 +181,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/pjm-auction-crisis-2025/</loc>
-    <lastmod>2025-08-01T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ampere.dev/blog/us-energy-flows-2023/</loc>
+    <loc>https://ampere.dev/blog/north-american-data-center-boom/</loc>
     <lastmod>2025-08-01T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -193,7 +193,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/north-american-data-center-boom/</loc>
+    <loc>https://ampere.dev/blog/pjm-auction-crisis-2025/</loc>
+    <lastmod>2025-08-01T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/blog/us-energy-flows-2023/</loc>
     <lastmod>2025-08-01T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -259,14 +265,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/data-centers-grid-threat/</loc>
+    <loc>https://ampere.dev/blog/north-american-data-center-boom/</loc>
     <lastmod>2025-06-16T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/us-data-center-powerhouses/</loc>
-    <lastmod>2025-06-13T00:00:00Z</lastmod>
+    <loc>https://ampere.dev/blog/data-centers-grid-threat/</loc>
+    <lastmod>2025-06-16T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -277,7 +283,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/arizona-data-centers-water/</loc>
+    <loc>https://ampere.dev/blog/us-data-center-powerhouses/</loc>
+    <lastmod>2025-06-13T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/blog/high-voltage-cable-shortage/</loc>
     <lastmod>2025-06-13T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -289,7 +301,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/high-voltage-cable-shortage/</loc>
+    <loc>https://ampere.dev/blog/arizona-data-centers-water/</loc>
     <lastmod>2025-06-13T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -367,13 +379,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/three-mile-island-restart/</loc>
+    <loc>https://ampere.dev/blog/power-quality-testing/</loc>
     <lastmod>2025-05-19T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/power-quality-testing/</loc>
+    <loc>https://ampere.dev/blog/three-mile-island-restart/</loc>
     <lastmod>2025-05-19T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -385,37 +397,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ampere.dev/blog/ai-power-quality-monitoring/</loc>
-    <lastmod>2025-05-18T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ampere.dev/blog/modular-substations-future/</loc>
-    <lastmod>2025-05-18T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://ampere.dev/blog/load-banks-renewables/</loc>
-    <lastmod>2025-05-18T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ampere.dev/blog/high-power-fiber-laser-cutting/</loc>
-    <lastmod>2025-05-18T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ampere.dev/blog/energy-transition-fallacy/</loc>
-    <lastmod>2025-05-18T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ampere.dev/blog/replacing-ancient-windows-linux/</loc>
     <lastmod>2025-05-18T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -433,7 +415,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ampere.dev/blog/replacing-ancient-windows-linux/</loc>
+    <lastmod>2025-05-18T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/blog/ai-power-quality-monitoring/</loc>
+    <lastmod>2025-05-18T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/blog/high-power-fiber-laser-cutting/</loc>
+    <lastmod>2025-05-18T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/blog/modular-substations-future/</loc>
+    <lastmod>2025-05-18T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ampere.dev/blog/google-nuclear-ambitions/</loc>
+    <lastmod>2025-05-18T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ampere.dev/blog/energy-transition-fallacy/</loc>
     <lastmod>2025-05-18T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -475,6 +487,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ampere.dev/blog/global-data-center-outlook/</loc>
+    <lastmod>2025-05-10T00:00:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ampere.dev/blog/amazon-nuclear-smr/</loc>
     <lastmod>2025-05-10T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -482,12 +500,6 @@
   </url>
   <url>
     <loc>https://ampere.dev/blog/global-ai-data-centers-growth/</loc>
-    <lastmod>2025-05-10T00:00:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ampere.dev/blog/global-data-center-outlook/</loc>
     <lastmod>2025-05-10T00:00:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
