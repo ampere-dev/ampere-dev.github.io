@@ -12,7 +12,7 @@ The power bottleneck in AI facilities is no longer only inside the accelerator. 
 
 Ampere Development is supporting that transition with true high-voltage DC load equipment, including availability of the **A3000DC — 3,000 kW Stationary DC Load Bank**. Product details and rental inquiry: [ampere.dev/800v-dc-load-banks-data-centers](https://ampere.dev/800v-dc-load-banks-data-centers).
 
-![AI factory hall with liquid-cooled high-density racks and overhead facility power distribution](/blog-images/ai-factory-800vdc-hall.webp)
+![AI factory hall with liquid-cooled high-density racks and overhead facility power distribution](/images/ai-factory-800vdc-hall.webp)
 
 *High-density AI halls concentrate megawatts into short copper runs. Raising the distribution voltage is the only practical way to keep bus current and I²R loss inside physical limits. Image context: NVIDIA-class AI factory power architecture.*
 
@@ -30,7 +30,7 @@ At 50–54 V, even liquid-cooled bus bars cannot physically deliver the current 
 
 The copper story follows immediately. For the same power, a 48 V feeder carries ~16.7× the current of an 800 V feeder. Conductor cross-section, lug heating, and bus-bar volume scale with current (and I²R loss scales with I²). Keysight’s Steven Lee notes that the legacy conversion method would simply use too much copper in an AI hall; thinner conductors at higher voltage are not a convenience, they are a thermal and mass constraint.
 
-![Power architecture evolution in AI data centers: traditional multi-stage conversion versus high-efficiency 800 VDC distribution](/blog-images/power-architecture-evolution-800vdc.webp)
+![Power architecture evolution in AI data centers: traditional multi-stage conversion versus high-efficiency 800 VDC distribution](/images/power-architecture-evolution-800vdc.webp)
 
 *Same 100 kW rack: ~2,083 A on a 48 V feeder versus 125 A on an 800 V feeder — a 16.7× current reduction. Collapsing conversion stages lifts end-to-end efficiency from ~81% to ~88–90%, so more of every incoming megawatt reaches compute instead of becoming heat.*
 
@@ -47,11 +47,11 @@ Each stage dissipates heat in magnetics, switching devices, and interconnect. Le
 
 A 1% efficiency gain on a 100 MW AI campus is 1 MW of avoided heat and purchased energy. Shenoy’s board-level example is equally concrete: dropping a processor converter input from 12 V to 6 V can save ~2% efficiency and deliver ~30% more power in the same area. Those incremental points compound from grid to gate.
 
-![Four converging technologies shifting data center power: 48 V direct-to-load, GaN VRMs, 800 VDC distribution, and on-site generation](/blog-images/four-converging-technologies-data-center-power.webp)
+![Four converging technologies shifting data center power: 48 V direct-to-load, GaN VRMs, 800 VDC distribution, and on-site generation](/images/four-converging-technologies-data-center-power.webp)
 
 *Grid-to-gate stack: MV service, 800 VDC hall distribution, late-stage DC/DC, wide-bandgap VRMs at the package, and on-site generation that bypasses multi-year grid interconnection queues. Efficiency and density are co-optimized, not sequential afterthoughts.*
 
-![800 VDC conversion chain from MV AC grid through hall and row buses to HV IBC, LV IBC, and VRM at the GPU core](/blog-images/800vdc-grid-to-gate-conversion-chain.webp)
+![800 VDC conversion chain from MV AC grid through hall and row buses to HV IBC, LV IBC, and VRM at the GPU core](/images/800vdc-grid-to-gate-conversion-chain.webp)
 
 *Facility-to-silicon partition: 800 VDC from the SiC front end, safety breakers and staged energy storage at infrastructure / hall / row, then HV IBC (800 V → 54 V), LV IBC (54 V → 12 V / 6 V), and silicon VRM at the core. GaN and SiC sit where switching frequency and voltage class demand them.*
 
