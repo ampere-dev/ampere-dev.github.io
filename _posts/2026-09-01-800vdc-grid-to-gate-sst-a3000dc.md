@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "From Grid to Gate: 800VDC Architectures, Solid-State Transformers, and MW-Scale DC Commissioning for AI Data Centers"
-permalink: /blog/800vdc-grid-to-gate-sst-a3000dc/
 date: 2026-09-01
 categories: [Load Banks, 800V DC, AI Data Centers, Solid-State Transformers, HVDC Commissioning, Data Center Power, SiC Power Electronics]
 excerpt: "AI racks are climbing toward 500 kW and 1 MW, forcing a grid-to-gate shift from 415 VAC / 48 V to 800 VDC and SiC solid-state transformers. Ampere Development now offers the A3000DC — a 3,000 kW stationary DC load bank rated 1,920 kW / 2,400 A at 800 VDC — for Level 4 and Level 5 commissioning of HVDC power chains without placing live GPU loads on an unproven bus."
