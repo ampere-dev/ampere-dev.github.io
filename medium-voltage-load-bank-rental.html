@@ -207,9 +207,62 @@
             <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
                 Limited medium voltage fleet. Secure your units now for upcoming commissioning, maintenance, or compliance projects.
             </p>
-            <a href="https://ampere.dev/contact" class="inline-block bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-lg">
+            <a href="#quote" class="inline-block bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-lg">
                 Get Your Free Quote Today!
             </a>
+        </section>
+
+        <section id="quote" class="mb-12 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-4xl font-bold mb-3 text-blue-800">Request a Medium-Voltage Load Bank Quote</h2>
+            <p class="text-gray-700 text-lg mb-6 max-w-3xl">
+                Tell us kW, kV class, site zip, and need-by date. We’ll confirm fleet and price.
+            </p>
+            <form id="quoteForm" method="post" action="https://formspree.io/f/mvoaqoya" accept-charset="UTF-8" class="grid md:grid-cols-2 gap-5" novalidate>
+                <input type="hidden" name="_subject" value="Medium-Voltage Load Bank Quote">
+                <input type="hidden" name="form_name" value="Medium-Voltage Load Bank Quote">
+                <input type="hidden" name="page" value="https://ampere.dev/medium-voltage-load-bank-rental">
+                <div>
+                    <label for="name" class="block font-bold mb-1">Name <span class="text-red-600">*</span></label>
+                    <input id="name" name="name" type="text" required autocomplete="name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label for="email" class="block font-bold mb-1">Work email <span class="text-red-600">*</span></label>
+                    <input id="email" name="email" type="email" required autocomplete="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label for="company" class="block font-bold mb-1">Company</label>
+                    <input id="company" name="company" type="text" autocomplete="organization" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label for="phone" class="block font-bold mb-1">Phone</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label for="zip" class="block font-bold mb-1">Site zip / city</label>
+                    <input id="zip" name="zip" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label for="need_by" class="block font-bold mb-1">Need by date</label>
+                    <input id="need_by" name="need_by" type="text" placeholder="Week of / exact date" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label for="capacity" class="block font-bold mb-1">Capacity needed</label>
+                    <input id="capacity" name="capacity" type="text" placeholder="e.g. 3 MW" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div>
+                    <label for="voltage" class="block font-bold mb-1">Voltage</label>
+                    <input id="voltage" name="voltage" type="text" placeholder="e.g. 13.8 kV or 34.5 kV" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="md:col-span-2">
+                    <label for="notes" class="block font-bold mb-1">Project notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Direct MV vs transformer, cables, IST vs generator test…" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <div class="md:col-span-2">
+                    <button type="submit" class="bg-yellow-500 text-black font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 text-lg transition shadow-md">Send Quote Request</button>
+                    <p class="text-sm text-gray-500 mt-3">Or call <a href="tel:+18883455623" class="font-bold text-blue-800">888-345-LOAD</a> / email <a href="mailto:sales@ampere.dev" class="font-bold text-blue-800">sales@ampere.dev</a></p>
+                </div>
+                <p id="quoteFormStatus" class="md:col-span-2 hidden text-lg font-bold" role="status"></p>
+            </form>
         </section>
     </main>
 
@@ -254,6 +307,40 @@
             navMenu.classList.toggle('top-16');
             navMenu.classList.toggle('left-0');
             navMenu.classList.toggle('shadow-md');
+        });
+
+        document.getElementById('quoteForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const status = document.getElementById('quoteFormStatus');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            if (!form.name.value.trim() || !form.email.value.trim()) {
+                status.classList.remove('hidden', 'text-green-700');
+                status.classList.add('text-red-700');
+                status.textContent = 'Please add your name and work email.';
+                return;
+            }
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending…';
+            fetch(form.action, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(new FormData(form)).toString()
+            })
+            .then((response) => { if (!response.ok) throw new Error('Form error'); return response.json(); })
+            .then(() => {
+                status.classList.remove('hidden', 'text-red-700');
+                status.classList.add('text-green-700');
+                status.textContent = 'Quote request sent. We’ll reply with availability and pricing.';
+                form.reset();
+                if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'quote', event_label: 'medium_voltage_load_bank' });
+            })
+            .catch(() => {
+                status.classList.remove('hidden', 'text-green-700');
+                status.classList.add('text-red-700');
+                status.textContent = 'Could not send the form. Email sales@ampere.dev or call 888-345-LOAD.';
+            })
+            .finally(() => { submitBtn.disabled = false; submitBtn.textContent = 'Send Quote Request'; });
         });
     </script>
 </body>
