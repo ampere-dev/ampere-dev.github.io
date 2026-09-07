@@ -234,6 +234,11 @@ body.home main h1 {
     border-color: #81D4FA !important;
     color: #000000 !important;
 }
+.btn-forest {
+    background-color: #166534 !important;
+    border-color: #166534 !important;
+    color: #ffffff !important;
+}
 .btn-slack {
     background-color: #4A154B !important;
     color: white !important;
@@ -247,7 +252,9 @@ body.home main h1 {
 .btn-mustard:hover { background-color: #e6ac00 !important; border-color: #e6ac00 !important; }
 .btn-slate:hover   { background-color: #263238 !important; border-color: #263238 !important; }
 .btn-powder:hover  { background-color: #4fc3f7 !important; border-color: #4fc3f7 !important; }
+.btn-forest:hover  { background-color: #14532d !important; border-color: #14532d !important; }
 .btn-slack:hover   { background-color: #611F69 !important; }
+
 
 /* Slack Button – narrower to match shorter text */
 .slack-button-wrapper {
